@@ -1,0 +1,22 @@
+{
+  "doc-778c6d378af0f2d63eae0ca3e28eb38f": {
+    "status": "processed",
+    "chunks_count": 1,
+    "content": "这是一个测试追加文档。\n\n内容包括：\n1. 新的机床型号介绍\n2. 维护操作指南\n3. 故障排除方法\n\n该文档用于测试向已有知识库追加内容的功能。",
+    "content_summary": "这是一个测试追加文档。\n\n内容包括：\n1. 新的机床型号介绍\n2. 维护操作指南\n3. 故障排除方法\n\n该文档用于测试向已有知识库追加内容的功能。",
+    "content_length": 73,
+    "created_at": "2025-05-24T16:41:42.925899+00:00",
+    "updated_at": "2025-05-24T16:57:19.480044+00:00",
+    "file_path": "unknown_source"
+  },
+  "doc-352e7e6642ccbe4b61bea60eca565182": {
+    "status": "processed",
+    "chunks_count": 1,
+    "content": "这是第二个测试文档，用于验证追加功能。\n\n内容包括：\n1. 高级分析算法\n2. 机器视觉应用\n3. 自动化控制系统\n\n该文档将被追加到已有的知识库中，测试LightRAG的增量插入功能。",
+    "content_summary": "这是第二个测试文档，用于验证追加功能。\n\n内容包括：\n1. 高级分析算法\n2. 机器视觉应用\n3. 自动化控制系统\n\n该文档将被追加到已有的知识库中，测试LightRAG的增量插入功能。",
+    "content_length": 93,
+    "created_at": "2025-05-24T16:56:41.292849+00:00",
+    "updated_at": "2025-05-24T16:57:13.686854+00:00",
+    "file_path": "unknown_source"
+  }
+}

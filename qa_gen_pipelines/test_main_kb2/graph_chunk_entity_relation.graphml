@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d11" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d10" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d9" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d8" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d7" for="edge" attr.name="description" attr.type="string"/>
+<key id="d6" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="新的机床型号">
+  <data key="d0">新的机床型号</data>
+  <data key="d1">category</data>
+  <data key="d2">新的机床型号refers to new models of machine tools introduced in the document.</data>
+  <data key="d3">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105835</data>
+</node>
+<node id="维护操作指南">
+  <data key="d0">维护操作指南</data>
+  <data key="d1">category</data>
+  <data key="d2">维护操作指南provides guidelines for maintenance operations of the machine tools.&lt;SEP&gt;维护操作指南provides guidelines for maintenance operations related to the machine tools.</data>
+  <data key="d3">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105835</data>
+</node>
+<node id="故障排除方法">
+  <data key="d0">故障排除方法</data>
+  <data key="d1">category</data>
+  <data key="d2">故障排除方法outlines methods for troubleshooting issues with the machine tools.</data>
+  <data key="d3">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105835</data>
+</node>
+<node id="测试追加文档">
+  <data key="d0">测试追加文档</data>
+  <data key="d1">event</data>
+  <data key="d2">测试追加文档is a test document being added to an existing knowledge base for functionality testing.</data>
+  <data key="d3">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105835</data>
+</node>
+<node id="知识库">
+  <data key="d0">知识库</data>
+  <data key="d1">organization</data>
+  <data key="d2">知识库refers to the existing knowledge base that the test document is being appended to.&lt;SEP&gt;知识库refers to the knowledge base where documents are being appended for testing purposes.&lt;SEP&gt;知识库refers to the knowledge base where this test document is being appended.&lt;SEP&gt;知识库是LightRAG系统管理和维护的信息存储库。</data>
+  <data key="d3">chunk-352e7e6642ccbe4b61bea60eca565182&lt;SEP&gt;chunk-778c6d378af0f2d63eae0ca3e28eb38f&lt;SEP&gt;chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105835</data>
+</node>
+<node id="机床">
+  <data key="d0">机床</data>
+  <data key="d1">category</data>
+  <data key="d2">机床refers to machine tools, which are the primary subject of the document's content.&lt;SEP&gt;机床represents machine tools, which are the focus of this document's content.</data>
+  <data key="d3">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105835</data>
+</node>
+<node id="新型传感器技术">
+  <data key="d0">新型传感器技术</data>
+  <data key="d1">category</data>
+  <data key="d2">新型传感器技术是一种先进的传感技术，可能涉及高精度测量或环境监测等领域。</data>
+  <data key="d3">chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105774</data>
+</node>
+<node id="数据采集与处理方法">
+  <data key="d0">数据采集与处理方法</data>
+  <data key="d1">category</data>
+  <data key="d2">数据采集与处理方法涉及从传感器或其他来源收集数据并进行预处理和分析的技术流程。</data>
+  <data key="d3">chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105774</data>
+</node>
+<node id="故障诊断解决方案">
+  <data key="d0">故障诊断解决方案</data>
+  <data key="d1">category</data>
+  <data key="d2">故障诊断解决方案提供识别和解决系统或设备故障的方法和工具。</data>
+  <data key="d3">chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105774</data>
+</node>
+<node id="LightRAG">
+  <data key="d0">LightRAG</data>
+  <data key="d1">organization</data>
+  <data key="d2">LightRAG is a system or platform being tested for its incremental insertion capability.&lt;SEP&gt;LightRAG是一个知识库管理系统，用于处理和追加新文档内容，验证其功能性和准确性。</data>
+  <data key="d3">chunk-352e7e6642ccbe4b61bea60eca565182&lt;SEP&gt;chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105830</data>
+</node>
+<node id="测试文档">
+  <data key="d0">测试文档</data>
+  <data key="d1">category</data>
+  <data key="d2">测试文档用于验证LightRAG系统的追加功能，包含技术介绍和解决方案等内容。</data>
+  <data key="d3">chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105774</data>
+</node>
+<node id="主程序">
+  <data key="d0">主程序</data>
+  <data key="d1">organization</data>
+  <data key="d2">主程序指需要被测试的LightRAG系统核心功能模块。</data>
+  <data key="d3">chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105774</data>
+</node>
+<node id="高级分析算法">
+  <data key="d0">高级分析算法</data>
+  <data key="d1">category</data>
+  <data key="d2">高级分析算法refers to advanced analytical algorithms used in data processing and decision-making.</data>
+  <data key="d3">chunk-352e7e6642ccbe4b61bea60eca565182</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105830</data>
+</node>
+<node id="机器视觉应用">
+  <data key="d0">机器视觉应用</data>
+  <data key="d1">category</data>
+  <data key="d2">机器视觉应用refers to the application of machine vision technology in various fields.</data>
+  <data key="d3">chunk-352e7e6642ccbe4b61bea60eca565182</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105830</data>
+</node>
+<node id="自动化控制系统">
+  <data key="d0">自动化控制系统</data>
+  <data key="d1">category</data>
+  <data key="d2">自动化控制系统refers to automated control systems used in industrial and technological applications.</data>
+  <data key="d3">chunk-352e7e6642ccbe4b61bea60eca565182</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105830</data>
+</node>
+<node id="第二个测试文档">
+  <data key="d0">第二个测试文档</data>
+  <data key="d1">event</data>
+  <data key="d2">第二个测试文档refers to the second test document being used to verify append functionality in the system.</data>
+  <data key="d3">chunk-352e7e6642ccbe4b61bea60eca565182</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105830</data>
+</node>
+<node id="维护操作">
+  <data key="d0">维护操作</data>
+  <data key="d1">category</data>
+  <data key="d2">维护操作refers to maintenance operations for machine tools described in the document.</data>
+  <data key="d3">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105835</data>
+</node>
+<node id="故障排除">
+  <data key="d0">故障排除</data>
+  <data key="d1">category</data>
+  <data key="d2">故障排除refers to troubleshooting methods for machine tools outlined in the document.</data>
+  <data key="d3">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1748105835</data>
+</node>
+<edge source="新的机床型号" target="机床">
+  <data key="d6">7.0</data>
+  <data key="d7">新的机床型号refers to new models within the broader category of machine tools.</data>
+  <data key="d8">product line,technical specifications</data>
+  <data key="d9">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105757</data>
+</edge>
+<edge source="维护操作指南" target="机床">
+  <data key="d6">9.0</data>
+  <data key="d7">维护操作指南provides maintenance guidelines specifically for machine tools.</data>
+  <data key="d8">equipment care,operational procedures</data>
+  <data key="d9">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105757</data>
+</edge>
+<edge source="故障排除方法" target="机床">
+  <data key="d6">9.0</data>
+  <data key="d7">故障排除方法offers troubleshooting solutions for issues with machine tools.</data>
+  <data key="d8">problem-solving,technical support</data>
+  <data key="d9">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105757</data>
+</edge>
+<edge source="测试追加文档" target="知识库">
+  <data key="d6">16.0</data>
+  <data key="d7">The test document is being added to the knowledge base for functionality testing.&lt;SEP&gt;The test document is being appended to the existing knowledge base for functionality testing.</data>
+  <data key="d8">document management,knowledge base update,system testing</data>
+  <data key="d9">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105835</data>
+</edge>
+<edge source="测试追加文档" target="机床">
+  <data key="d6">7.0</data>
+  <data key="d7">The test document contains information about new machine tool models.</data>
+  <data key="d8">product information,technical documentation</data>
+  <data key="d9">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105835</data>
+</edge>
+<edge source="测试追加文档" target="维护操作">
+  <data key="d6">9.0</data>
+  <data key="d7">The test document includes maintenance operation guidelines for machine tools.</data>
+  <data key="d8">equipment care,technical guidance</data>
+  <data key="d9">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105835</data>
+</edge>
+<edge source="测试追加文档" target="故障排除">
+  <data key="d6">9.0</data>
+  <data key="d7">The test document provides troubleshooting methods for machine tools.</data>
+  <data key="d8">problem-solving,technical support</data>
+  <data key="d9">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105835</data>
+</edge>
+<edge source="知识库" target="LightRAG">
+  <data key="d6">16.0</data>
+  <data key="d7">LightRAG interacts with the knowledge base to perform incremental document insertion.&lt;SEP&gt;知识库是LightRAG系统管理和维护的核心数据存储。</data>
+  <data key="d8">data management,system integration,信息存储,数据管理</data>
+  <data key="d9">chunk-352e7e6642ccbe4b61bea60eca565182&lt;SEP&gt;chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105830</data>
+</edge>
+<edge source="知识库" target="测试文档">
+  <data key="d6">7.0</data>
+  <data key="d7">测试文档将被追加到知识库中进行功能验证。</data>
+  <data key="d8">内容追加,系统测试</data>
+  <data key="d9">chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105774</data>
+</edge>
+<edge source="知识库" target="第二个测试文档">
+  <data key="d6">9.0</data>
+  <data key="d7">The second test document is being appended to the existing knowledge base.</data>
+  <data key="d8">data insertion,knowledge management</data>
+  <data key="d9">chunk-352e7e6642ccbe4b61bea60eca565182</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105830</data>
+</edge>
+<edge source="机床" target="维护操作">
+  <data key="d6">8.0</data>
+  <data key="d7">Machine tools require maintenance operations as described in the document.</data>
+  <data key="d8">equipment maintenance,operational procedures</data>
+  <data key="d9">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105835</data>
+</edge>
+<edge source="机床" target="故障排除">
+  <data key="d6">8.0</data>
+  <data key="d7">Machine tools may require troubleshooting as outlined in the document.</data>
+  <data key="d8">repair methods,technical issues</data>
+  <data key="d9">chunk-778c6d378af0f2d63eae0ca3e28eb38f</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105835</data>
+</edge>
+<edge source="新型传感器技术" target="数据采集与处理方法">
+  <data key="d6">8.0</data>
+  <data key="d7">新型传感器技术需要配套的数据采集与处理方法以实现其功能。</data>
+  <data key="d8">技术配套,数据流程</data>
+  <data key="d9">chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105774</data>
+</edge>
+<edge source="新型传感器技术" target="LightRAG">
+  <data key="d6">6.0</data>
+  <data key="d7">LightRAG系统用于验证和追加包含新型传感器技术内容的文档。</data>
+  <data key="d8">技术验证,知识管理</data>
+  <data key="d9">chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105774</data>
+</edge>
+<edge source="数据采集与处理方法" target="故障诊断解决方案">
+  <data key="d6">7.0</data>
+  <data key="d7">数据采集与处理方法为故障诊断解决方案提供必要的数据支持。</data>
+  <data key="d8">故障分析,数据支持</data>
+  <data key="d9">chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105774</data>
+</edge>
+<edge source="LightRAG" target="测试文档">
+  <data key="d6">9.0</data>
+  <data key="d7">测试文档专门用于验证LightRAG系统的追加功能。</data>
+  <data key="d8">功能测试,系统验证</data>
+  <data key="d9">chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105774</data>
+</edge>
+<edge source="LightRAG" target="主程序">
+  <data key="d6">8.0</data>
+  <data key="d7">主程序是LightRAG系统的核心功能模块。</data>
+  <data key="d8">核心功能,系统架构</data>
+  <data key="d9">chunk-24d17d01ff2ac729a82f8acf93289dad</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105774</data>
+</edge>
+<edge source="LightRAG" target="第二个测试文档">
+  <data key="d6">8.0</data>
+  <data key="d7">The second test document is being used to test LightRAG's incremental insertion functionality.</data>
+  <data key="d8">functionality verification,system testing</data>
+  <data key="d9">chunk-352e7e6642ccbe4b61bea60eca565182</data>
+  <data key="d10">unknown_source</data>
+  <data key="d11">1748105830</data>
+</edge>
+</graph></graphml>

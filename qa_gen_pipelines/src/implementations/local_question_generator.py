@@ -1,0 +1,440 @@
+"""本地模型问题生成器实现 - 支持Ollama"""
+
+import re
+import uuid
+import requests
+from typing import List
+from datetime import datetime
+from loguru import logger
+
+from ..interfaces.question_generator_interface import QuestionGeneratorInterface, QuestionGenerationError
+from ..models.document import DocumentChunk
+from ..models.question import Question, QuestionSet
+from ..utils.config import ConfigManager
+
+# 导入超时配置
+try:
+    from ...timeout_config import configure_global_timeouts, configure_ollama_timeout
+except ImportError:
+    # 如果导入失败，使用默认配置
+    def configure_global_timeouts():
+        return requests.Session()
+    
+    def configure_ollama_timeout():
+        return {'timeout': (60, 30000)}
+
+
+class LocalQuestionGenerator(QuestionGeneratorInterface):
+    """基于Ollama的本地问题生成器实现"""
+
+    def __init__(self, config: ConfigManager):
+        """
+        初始化本地模型问题生成器
+
+        Args:
+            config: 配置对象
+        """
+        self.config = config
+        
+        # Ollama配置
+        self.model_name = config.get("question_generator.local.model_name", "deepseek-r1:32b")
+        self.base_url = config.get("question_generator.local.base_url", "http://localhost:11434")
+        self.max_tokens = config.get("question_generator.local.max_tokens", 2048)
+        self.temperature = config.get("question_generator.local.temperature", 0.7)
+        self.timeout = config.get("question_generator.local.timeout", 120)
+        self.questions_per_chunk = config.get("question_generator.local.questions_per_chunk", 10)
+
+        # 加载提示词
+        self.system_prompt = config.get("prompts.system_prompt", "")
+        self.human_prompt = config.get("prompts.human_prompt", "")
+
+        # 测试连接
+        if not self._test_connection():
+            raise QuestionGenerationError(f"无法连接到Ollama服务: {self.base_url}")
+
+        # 配置全局超时设置
+        self.session = configure_global_timeouts()
+        self.ollama_config = configure_ollama_timeout()
+        
+        logger.info(f"本地模型问题生成器初始化完成 - 模型: {self.model_name}")
+
+    def _test_connection(self) -> bool:
+        """测试Ollama连接"""
+        try:
+            response = requests.get(f"{self.base_url}/api/tags", timeout=10)
+            return response.status_code == 200
+        except:
+            return False
+
+    def generate_questions_from_chunk(self, chunk: DocumentChunk) -> List[Question]:
+        """
+        从单个文本块生成问题
+
+        Args:
+            chunk: 要生成问题的DocumentChunk
+
+        Returns:
+            Question对象列表
+        """
+        try:
+            logger.info(f"🔍 开始为块生成问题: {chunk.chunk_id}")
+            logger.info(f"📄 文本块长度: {len(chunk.content)} 字符")
+            logger.info(f"🎯 目标问题数量: {self.questions_per_chunk}")
+
+            # 准备提示词
+            human_message = self.human_prompt.format(
+                text=chunk.content, 
+                questions_per_chunk=self.questions_per_chunk
+            )
+            
+            logger.info(f"📝 提示词长度: {len(human_message)} 字符")
+            logger.info(f"🤖 调用本地模型: {self.model_name}")
+
+            # 调用Ollama API
+            response_content = self._call_ollama_api(human_message)
+
+            logger.info(f"✅ 收到本地模型响应: {len(response_content)} 字符")
+            logger.info(f"📋 原始响应预览: {response_content[:200]}...")
+
+            # 解析问题
+            questions = self.parse_questions_from_response(response_content, chunk)
+
+            logger.info(f"🎉 成功为块 {chunk.chunk_id} 生成了 {len(questions)} 个问题")
+            
+            # 显示生成的问题
+            for i, question in enumerate(questions, 1):
+                logger.info(f"  问题{i}: {question.content[:100]}{'...' if len(question.content) > 100 else ''}")
+            
+            return questions
+
+        except Exception as e:
+            raise QuestionGenerationError(f"为块 {chunk.chunk_id} 生成问题失败: {e}")
+
+    def _call_ollama_api(self, prompt: str) -> str:
+        """调用Ollama API"""
+        try:
+            # 设置全局requests超时
+            import os
+            import time
+            os.environ['REQUESTS_TIMEOUT'] = str(self.timeout)
+            
+            payload = {
+                "model": self.model_name,
+                "prompt": f"{self.system_prompt}\n\n{prompt}",
+                "stream": False,
+                "options": {
+                    "temperature": self.temperature,
+                    "num_predict": self.max_tokens
+                }
+            }
+            
+            logger.info(f"🚀 发送请求到: {self.base_url}/api/generate")
+            logger.info(f"⏱️  超时设置: {self.timeout} 秒")
+            logger.info(f"🌡️  温度参数: {self.temperature}")
+            logger.info(f"📊 最大token数: {self.max_tokens}")
+            
+            start_time = time.time()
+            
+            # 使用配置好的session和超时设置
+            response = self.session.post(
+                f"{self.base_url}/api/generate",
+                json=payload,
+                **self.ollama_config
+            )
+            
+            end_time = time.time()
+            duration = end_time - start_time
+            
+            logger.info(f"⏰ API调用耗时: {duration:.2f} 秒")
+            logger.info(f"📡 响应状态码: {response.status_code}")
+
+            if response.status_code == 200:
+                result = response.json()
+                response_text = result.get("response", "")
+                logger.info(f"✅ API调用成功，响应长度: {len(response_text)} 字符")
+                return response_text
+            else:
+                logger.error(f"❌ API调用失败: {response.status_code}")
+                logger.error(f"📄 错误响应: {response.text}")
+                raise QuestionGenerationError(f"Ollama API调用失败: {response.status_code} - {response.text}")
+
+        except requests.exceptions.Timeout:
+            logger.error(f"⏰ API调用超时 (超过 {self.timeout} 秒)")
+            raise QuestionGenerationError("Ollama API调用超时")
+        except Exception as e:
+            logger.error(f"💥 API调用异常: {e}")
+            raise QuestionGenerationError(f"Ollama API调用异常: {e}")
+
+    def generate_questions_from_chunks(self, chunks: List[DocumentChunk]) -> QuestionSet:
+        """
+        从多个文本块生成问题
+
+        Args:
+            chunks: DocumentChunk对象列表
+
+        Returns:
+            包含所有生成问题的QuestionSet
+        """
+        try:
+            if not chunks:
+                raise QuestionGenerationError("没有提供用于问题生成的块")
+
+            document_id = chunks[0].document_id
+            logger.info(f"为文档 {document_id} 的 {len(chunks)} 个块生成问题")
+
+            all_questions = []
+
+            for chunk in chunks:
+                try:
+                    chunk_questions = self.generate_questions_from_chunk(chunk)
+                    all_questions.extend(chunk_questions)
+                except Exception as e:
+                    logger.error(f"为块 {chunk.chunk_id} 生成问题失败: {e}")
+                    continue
+
+            # 创建QuestionSet
+            question_set = QuestionSet(
+                document_id=document_id,
+                questions=all_questions,
+                created_at=datetime.now()
+            )
+
+            logger.info(f"为文档 {document_id} 总共生成了 {len(all_questions)} 个问题")
+            return question_set
+
+        except Exception as e:
+            raise QuestionGenerationError(f"从块生成问题失败: {e}")
+
+    def parse_questions_from_response(self, response: str, source_chunk: DocumentChunk) -> List[Question]:
+        """
+        从LLM响应中解析问题（只解析问题，不解析答案）
+
+        Args:
+            response: LLM的原始响应
+            source_chunk: 问题的源块
+
+        Returns:
+            解析的Question对象列表（不包含预生成的答案）
+        """
+        try:
+            # 首先清理<think>标签
+            cleaned_response = self._clean_think_tags(response)
+            
+            questions = []
+
+            # 新格式：匹配"问题N:"格式
+            # 问题1: [问题内容]
+            # 问题2: [问题内容]
+            # 改进：提取每一行，然后过滤掉无效内容
+            question_pattern = r'问题(\d+)[:\：]\s*(.+?)(?=\n\s*问题\d+[:\：]|$)'
+            question_matches = re.findall(question_pattern, cleaned_response, re.DOTALL)
+
+            if question_matches:
+                logger.info(f"✅ 找到新格式问题候选: {len(question_matches)} 个")
+                for match in question_matches:
+                    question_num = int(match[0])
+                    question_content = match[1].strip()
+
+                    # 清理问题内容（移除可能的前缀和多余空白）
+                    question_content = re.sub(r'^问题[:\：]\s*', '', question_content)
+                    question_content = re.sub(r'\n+', ' ', question_content).strip()
+                    
+                    # 过滤掉无效内容：
+                    # 1. 标题行（markdown或分类标记）
+                    # 2. 太短的内容
+                    # 3. 不包含问号的内容
+                    # 4. 明显的分类标题
+                    is_valid = (
+                        question_content and
+                        len(question_content) > 15 and
+                        ('？' in question_content or '?' in question_content) and
+                        not re.match(r'^#+\s', question_content) and
+                        not re.match(r'^(复杂|中等|简单|关联|深度|事实).*问题', question_content) and
+                        not question_content.startswith('【')
+                    )
+
+                    if is_valid:
+                        question = Question(
+                            question_id=str(uuid.uuid4()),
+                            content=question_content,
+                            source_document=source_chunk.document_id,
+                            source_chunk_id=source_chunk.chunk_id,
+                            question_index=question_num,
+                            created_at=datetime.now(),
+                            metadata={"has_answer": False}  # 不使用预生成答案
+                        )
+                        questions.append(question)
+                        logger.debug(f"✅ 有效问题 {question_num}: {question_content[:50]}...")
+                    else:
+                        logger.warning(f"⚠️ 跳过无效内容 {question_num}: {question_content[:50]}...")
+            
+            # 兼容旧格式：匹配"问答对N:"格式（但只提取问题部分）
+            if not questions:
+                logger.info("⚠️ 未找到新格式问题，尝试兼容旧格式（问答对格式）...")
+                qa_pair_pattern = r'问答对(\d+)[:\：]\s*\n\s*问题[:\：]\s*(.+?)(?:\s*\n\s*答案[:\：]|(?=\n\s*问答对\d+|$))'
+                qa_matches = re.findall(qa_pair_pattern, cleaned_response, re.DOTALL)
+
+                if qa_matches:
+                    logger.info(f"✅ 找到旧格式问答对（仅提取问题）: {len(qa_matches)} 个")
+                    for match in qa_matches:
+                        qa_num = int(match[0])
+                        question_content = match[1].strip()
+
+                        # 清理问题内容
+                        question_content = re.sub(r'^问题[:\：]\s*', '', question_content)
+
+                        if question_content:
+                            question = Question(
+                                question_id=str(uuid.uuid4()),
+                                content=question_content,
+                                source_document=source_chunk.document_id,
+                                source_chunk_id=source_chunk.chunk_id,
+                                question_index=qa_num,
+                                created_at=datetime.now(),
+                                metadata={"has_answer": False}  # 不使用预生成答案
+                            )
+                            questions.append(question)
+                            logger.debug(f"问题 {qa_num}: {question_content[:50]}...")
+
+            # 如果还是没有找到，尝试提取任何问题
+            if not questions:
+                logger.error("❌ 所有格式都未匹配，尝试fallback提取...")
+                questions = self._extract_fallback_questions(cleaned_response, source_chunk)
+
+            logger.info(f"从响应中解析出 {len(questions)} 个问题")
+            return questions
+
+        except Exception as e:
+            raise QuestionGenerationError(f"从响应解析问题失败: {e}")
+
+    def _clean_think_tags(self, text: str) -> str:
+        """
+        清理DeepSeek R1的<think>标签和内容
+        
+        Args:
+            text: 原始文本
+            
+        Returns:
+            清理后的文本
+        """
+        if not text:
+            return ""
+        
+        # 移除<think>标签及其内容
+        cleaned_text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL | re.IGNORECASE)
+        
+        # 清理多余的空行
+        cleaned_text = re.sub(r'\n\s*\n\s*\n+', '\n\n', cleaned_text)
+        
+        return cleaned_text.strip()
+
+    def validate_questions(self, questions: List[Question]) -> bool:
+        """
+        验证生成的问题
+
+        Args:
+            questions: 要验证的问题列表
+
+        Returns:
+            如果所有问题都有效则返回True，否则返回False
+        """
+        if not questions:
+            return False
+
+        for question in questions:
+            # 检查问题是否有内容
+            if not question.content or not question.content.strip():
+                logger.error(f"问题 {question.question_id} 没有内容")
+                return False
+
+            # 检查问题是否太短
+            if len(question.content.strip()) < 10:
+                logger.error(f"问题 {question.question_id} 太短")
+                return False
+
+            # 检查问题格式
+            if not question.content.startswith("问题"):
+                logger.warning(f"问题 {question.question_id} 不以'问题'开头")
+
+            # 检查必需字段
+            if not question.source_document or not question.source_chunk_id:
+                logger.error(f"问题 {question.question_id} 缺少源信息")
+                return False
+
+        return True
+
+    def set_custom_prompts(self, system_prompt: str, human_prompt: str) -> None:
+        """
+        设置自定义提示词
+
+        Args:
+            system_prompt: 系统提示词模板
+            human_prompt: 用户提示词模板
+        """
+        self.system_prompt = system_prompt
+        self.human_prompt = human_prompt
+        logger.info("自定义提示词已更新")
+
+    def _extract_fallback_questions(self, response: str, source_chunk: DocumentChunk) -> List[Question]:
+        """
+        当结构化解析失败时使用备用方法提取问题
+
+        Args:
+            response: 原始响应文本
+            source_chunk: 源块
+
+        Returns:
+            Question对象列表
+        """
+        questions = []
+
+        # 按行分割并查找类似问题的内容
+        lines = response.split('\n')
+        question_index = 1
+
+        for line in lines:
+            line = line.strip()
+
+            # 跳过空行
+            if not line:
+                continue
+            
+            # 跳过标题行（markdown标题、分类标记等）
+            if line.startswith('#') or line.startswith('【') or line.startswith('##'):
+                continue
+            
+            # 跳过问题分类标题
+            if re.match(r'^(复杂|中等|简单|关联|深度|事实).*问题', line):
+                continue
+            
+            # 跳过只包含"问题N:"但没有实际内容的行
+            if re.match(r'^问题\d+[:\：]\s*$', line):
+                continue
+
+            # 查找可能是问题的行 - 必须包含问号或以疑问词开头
+            if ('?' in line or '？' in line or
+                    line.startswith(('如何', '什么', '为什么', '怎样', '哪些', '是否', '能否', '会不会'))):
+
+                # 清理行内容
+                cleaned_line = re.sub(r'^[\d\.\-\*\s]+', '', line)  # 移除编号
+                cleaned_line = re.sub(r'^问题\d+[:\：]\s*', '', cleaned_line)  # 移除"问题N:"前缀
+
+                # 必须有实质内容且包含问号
+                if len(cleaned_line) > 15 and ('?' in cleaned_line or '？' in cleaned_line):
+                    question = Question(
+                        question_id=str(uuid.uuid4()),
+                        content=cleaned_line,
+                        source_document=source_chunk.document_id,
+                        source_chunk_id=source_chunk.chunk_id,
+                        question_index=question_index,
+                        created_at=datetime.now(),
+                        metadata={"has_answer": False}
+                    )
+                    questions.append(question)
+                    question_index += 1
+
+                    # 限制到预期的问题数量
+                    if len(questions) >= self.questions_per_chunk:
+                        break
+
+        return questions

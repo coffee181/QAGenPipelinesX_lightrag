@@ -1,0 +1,7 @@
+.env
+Docs/
+Test/
+Temporary/
+build/
+deployment/
+dist/

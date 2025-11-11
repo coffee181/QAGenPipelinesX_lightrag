@@ -1,0 +1,16 @@
+{
+  "chunk-ef0a672f29a6a49ee914cc9978596f55": {
+    "tokens": 16,
+    "content": "这是第一个测试文档。它包含关于机器学习的基础知识。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-ef0a672f29a6a49ee914cc9978596f55",
+    "file_path": "unknown_source"
+  },
+  "chunk-1f32b4d58e457b67cbcacbb4ef1273f0": {
+    "tokens": 19,
+    "content": "这是第二个测试文档。它介绍了深度学习的概念和应用。",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-1f32b4d58e457b67cbcacbb4ef1273f0",
+    "file_path": "unknown_source"
+  }
+}

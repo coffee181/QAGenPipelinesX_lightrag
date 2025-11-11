@@ -1,0 +1,856 @@
+2025-05-24 20:53:25,244 - __main__ - ERROR - Application failed: ProgressManager.__init__() got an unexpected keyword argument 'storage_path'
+2025-05-24 20:55:34,729 - __main__ - ERROR - Application failed: DeepSeek API key not found in configuration
+2025-05-24 21:00:28,695 - __main__ - ERROR - Application failed: DeepSeek API key not found in configuration
+2025-05-24 21:02:12,456 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:02:12,525 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:02:13,698 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:02:13,783 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:02:13,935 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:02:13,944 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:02:14,296 - __main__ - ERROR - Application failed: SimpleMarkdownProcessor.__init__() got an unexpected keyword argument 'logger'
+2025-05-24 21:02:39,654 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:02:39,716 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:02:40,859 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:02:40,942 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:02:41,093 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:02:41,104 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:02:41,526 - __main__ - ERROR - Application failed: PDFProcessor.__init__() got an unexpected keyword argument 'ocr'
+2025-05-24 21:04:24,577 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:04:24,640 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:04:25,771 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:04:25,851 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:04:26,003 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:04:26,014 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:04:26,427 - __main__ - INFO - Generating answers using documents from batch_output\texts
+2025-05-24 21:04:26,427 - __main__ - INFO - Setting up knowledge base from: batch_output\texts
+2025-05-24 21:04:27,962 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:04:28,039 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:04:29,217 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:04:29,300 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:04:29,447 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:04:29,457 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:04:29,532 - __main__ - INFO - Knowledge base setup complete: {'working_directory': 'D:\\Project\\lightrag\\selection_workdir', 'directory_exists': True, 'directory_size_mb': 416.45311641693115, 'lightrag_files': 8, 'files': ['kv_store_doc_status.json', 'kv_store_full_docs.json', 'kv_store_llm_response_cache.json', 'kv_store_text_chunks.json', 'vdb_chunks.json', 'vdb_entities.json', 'vdb_relationships.json', 'graph_chunk_entity_relation.graphml'], 'file_size_kv_store_doc_status.json': '5.65 MB', 'file_size_kv_store_full_docs.json': '4.30 MB', 'file_size_kv_store_llm_response_cache.json': '49.97 MB', 'file_size_kv_store_text_chunks.json': '4.96 MB', 'file_size_vdb_chunks.json': '25.38 MB', 'file_size_vdb_entities.json': '136.14 MB', 'file_size_vdb_relationships.json': '181.95 MB', 'file_size_graph_chunk_entity_relation.graphml': '8.10 MB', 'total_files_size_mb': '416.45 MB'}
+2025-05-24 21:04:29,533 - __main__ - INFO - Starting batch answer generation: lightrag_test
+2025-05-24 21:04:29,536 - __main__ - INFO - Starting answer generation session: lightrag_test_01-GSK 27i高端多通道数控系统 20250226
+2025-05-24 21:04:29,538 - __main__ - ERROR - Failed to generate answers: Failed to load questions from batch_output\questions\01-GSK 27i高端多通道数控系统 20250226_questions.jsonl: Question.__init__() got an unexpected keyword argument 'id'
+2025-05-24 21:04:29,539 - __main__ - ERROR - Failed to process batch_output\questions\01-GSK 27i高端多通道数控系统 20250226_questions.jsonl: Failed to generate answers: Failed to load questions from batch_output\questions\01-GSK 27i高端多通道数控系统 20250226_questions.jsonl: Question.__init__() got an unexpected keyword argument 'id'
+2025-05-24 21:04:29,539 - __main__ - INFO - Starting answer generation session: lightrag_test_01-宝鸡机床VMC850L
+2025-05-24 21:04:29,540 - __main__ - ERROR - Failed to generate answers: Failed to load questions from batch_output\questions\01-宝鸡机床VMC850L_questions.jsonl: Question.__init__() got an unexpected keyword argument 'id'
+2025-05-24 21:04:29,540 - __main__ - ERROR - Failed to process batch_output\questions\01-宝鸡机床VMC850L_questions.jsonl: Failed to generate answers: Failed to load questions from batch_output\questions\01-宝鸡机床VMC850L_questions.jsonl: Question.__init__() got an unexpected keyword argument 'id'
+2025-05-24 21:04:29,542 - __main__ - INFO - Batch answer generation completed: 0 files processed
+2025-05-24 21:04:29,542 - __main__ - INFO - Generated answers for 0 question files
+2025-05-24 21:06:24,039 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:06:24,102 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:06:25,229 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:06:25,314 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:06:25,464 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:06:25,474 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:06:25,891 - __main__ - INFO - Generating answers using documents from batch_output\texts
+2025-05-24 21:06:25,891 - __main__ - INFO - Setting up knowledge base from: batch_output\texts
+2025-05-24 21:06:27,414 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:06:27,475 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:06:28,668 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:06:28,767 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:06:28,924 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:06:28,935 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:06:28,945 - __main__ - INFO - Knowledge base setup complete: {'working_directory': 'D:\\Project\\lightrag\\selection_workdir', 'directory_exists': True, 'directory_size_mb': 416.45311641693115, 'lightrag_files': 8, 'files': ['kv_store_doc_status.json', 'kv_store_full_docs.json', 'kv_store_llm_response_cache.json', 'kv_store_text_chunks.json', 'vdb_chunks.json', 'vdb_entities.json', 'vdb_relationships.json', 'graph_chunk_entity_relation.graphml'], 'file_size_kv_store_doc_status.json': '5.65 MB', 'file_size_kv_store_full_docs.json': '4.30 MB', 'file_size_kv_store_llm_response_cache.json': '49.97 MB', 'file_size_kv_store_text_chunks.json': '4.96 MB', 'file_size_vdb_chunks.json': '25.38 MB', 'file_size_vdb_entities.json': '136.14 MB', 'file_size_vdb_relationships.json': '181.95 MB', 'file_size_graph_chunk_entity_relation.graphml': '8.10 MB', 'total_files_size_mb': '416.45 MB'}
+2025-05-24 21:06:28,945 - __main__ - INFO - Starting batch answer generation: lightrag_test2
+2025-05-24 21:06:28,948 - __main__ - INFO - Starting answer generation session: lightrag_test2_01-GSK 27i高端多通道数控系统 20250226
+2025-05-24 21:17:11,880 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:17:11,943 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:17:13,123 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:17:13,205 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:17:13,358 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:17:13,369 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:17:13,784 - __main__ - INFO - Found 15 sessions:
+2025-05-24 21:17:13,784 - __main__ - ERROR - Application failed: 'dict' object has no attribute 'session_id'
+2025-05-24 21:17:55,944 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:17:56,007 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:17:57,146 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:17:57,228 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:17:57,389 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:17:57,399 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:17:57,818 - __main__ - INFO - Found 15 sessions:
+2025-05-24 21:17:57,818 - __main__ - INFO -   pdf_processing_066aa52c: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:23:11.064164', 'last_update': '2025-05-24T19:24:18.125127', 'end_time': '2025-05-24T19:24:18.125127', 'duration_seconds': 67.060963}
+2025-05-24 21:17:57,819 - __main__ - INFO -   question_generation_51930e18: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:24:18.128113', 'last_update': '2025-05-24T19:26:57.566601', 'end_time': '2025-05-24T19:26:57.566601', 'duration_seconds': 159.438488}
+2025-05-24 21:17:57,819 - __main__ - INFO -   pdf_processing_cab94c3e: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:28:59.834886', 'last_update': '2025-05-24T19:30:04.194805', 'end_time': '2025-05-24T19:30:04.194805', 'duration_seconds': 64.359919}
+2025-05-24 21:17:57,819 - __main__ - INFO -   question_generation_bbbcf867: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:30:04.197805', 'last_update': '2025-05-24T19:32:42.318721', 'end_time': '2025-05-24T19:32:42.318721', 'duration_seconds': 158.120916}
+2025-05-24 21:17:57,819 - __main__ - INFO -   pdf_processing_fbcd175f: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:34:03.951377', 'last_update': '2025-05-24T19:35:07.792270', 'end_time': '2025-05-24T19:35:07.792270', 'duration_seconds': 63.840893}
+2025-05-24 21:17:57,819 - __main__ - INFO -   question_generation_d32e5462: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:35:07.795271', 'last_update': '2025-05-24T19:37:46.766724', 'end_time': '2025-05-24T19:37:46.766724', 'duration_seconds': 158.971453}
+2025-05-24 21:17:57,820 - __main__ - INFO -   pdf_processing_baab3f38: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:38:55.842784', 'last_update': '2025-05-24T19:40:00.530856', 'end_time': '2025-05-24T19:40:00.530856', 'duration_seconds': 64.688072}
+2025-05-24 21:17:57,820 - __main__ - INFO -   question_generation_8e539af8: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:40:00.533862', 'last_update': '2025-05-24T19:42:39.476504', 'end_time': '2025-05-24T19:42:39.476504', 'duration_seconds': 158.942642}
+2025-05-24 21:17:57,820 - __main__ - INFO -   answer_batch_20250524_194239: {'total_items': 2, 'completed_items': 0, 'failed_items': 0, 'remaining_items': 2, 'completion_percentage': 0.0, 'failure_percentage': 0.0, 'status': 'failed', 'start_time': '2025-05-24T19:42:39.485816', 'last_update': '2025-05-24T19:42:39.486828', 'end_time': '2025-05-24T19:42:39.486828', 'duration_seconds': 0.001012}
+2025-05-24 21:17:57,820 - __main__ - INFO -   pdf_processing_e11f8d70: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:58:57.287356', 'last_update': '2025-05-24T20:00:02.442352', 'end_time': '2025-05-24T20:00:02.442352', 'duration_seconds': 65.154996}
+2025-05-24 21:17:57,820 - __main__ - INFO -   question_generation_6411e572: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T20:00:02.444464', 'last_update': '2025-05-24T20:02:37.462861', 'end_time': '2025-05-24T20:02:37.462861', 'duration_seconds': 155.018397}
+2025-05-24 21:17:57,820 - __main__ - INFO -   answer_batch_20250524_200237: {'total_items': 2, 'completed_items': 0, 'failed_items': 2, 'remaining_items': 0, 'completion_percentage': 0.0, 'failure_percentage': 100.0, 'status': 'completed', 'start_time': '2025-05-24T20:02:37.472190', 'last_update': '2025-05-24T20:02:37.479519', 'end_time': '2025-05-24T20:02:37.479519', 'duration_seconds': 0.007329}
+2025-05-24 21:17:57,820 - __main__ - INFO -   lightrag_test: {'total_items': 2, 'completed_items': 0, 'failed_items': 2, 'remaining_items': 0, 'completion_percentage': 0.0, 'failure_percentage': 100.0, 'status': 'completed', 'start_time': '2025-05-24T21:04:29.534940', 'last_update': '2025-05-24T21:04:29.540638', 'end_time': '2025-05-24T21:04:29.540638', 'duration_seconds': 0.005698}
+2025-05-24 21:17:57,821 - __main__ - INFO -   lightrag_test2: {'total_items': 2, 'completed_items': 0, 'failed_items': 0, 'remaining_items': 2, 'completion_percentage': 0.0, 'failure_percentage': 0.0, 'status': 'running', 'start_time': '2025-05-24T21:06:28.946427', 'last_update': '2025-05-24T21:06:28.946427'}
+2025-05-24 21:17:57,821 - __main__ - INFO -   lightrag_test2_01-GSK 27i高端多通道数控系统 20250226: {'total_items': 400, 'completed_items': 10, 'failed_items': 0, 'remaining_items': 390, 'completion_percentage': 2.5, 'failure_percentage': 0.0, 'status': 'running', 'start_time': '2025-05-24T21:06:28.951665', 'last_update': '2025-05-24T21:15:34.679895'}
+2025-05-24 21:18:27,676 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:18:27,739 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:18:28,875 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:18:28,957 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:18:29,110 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:18:29,121 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:18:29,538 - __main__ - INFO - Generating answers using documents from batch_output\texts
+2025-05-24 21:18:29,538 - __main__ - INFO - Setting up knowledge base from: batch_output\texts
+2025-05-24 21:18:31,063 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:18:31,124 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:18:32,302 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:18:32,383 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:18:32,534 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:18:32,545 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:18:32,554 - __main__ - INFO - Knowledge base setup complete: {'working_directory': 'D:\\Project\\lightrag\\selection_workdir', 'directory_exists': True, 'directory_size_mb': 416.4852285385132, 'lightrag_files': 8, 'files': ['kv_store_doc_status.json', 'kv_store_full_docs.json', 'kv_store_llm_response_cache.json', 'kv_store_text_chunks.json', 'vdb_chunks.json', 'vdb_entities.json', 'vdb_relationships.json', 'graph_chunk_entity_relation.graphml'], 'file_size_kv_store_doc_status.json': '5.65 MB', 'file_size_kv_store_full_docs.json': '4.30 MB', 'file_size_kv_store_llm_response_cache.json': '50.00 MB', 'file_size_kv_store_text_chunks.json': '4.96 MB', 'file_size_vdb_chunks.json': '25.38 MB', 'file_size_vdb_entities.json': '136.14 MB', 'file_size_vdb_relationships.json': '181.95 MB', 'file_size_graph_chunk_entity_relation.graphml': '8.10 MB', 'total_files_size_mb': '416.49 MB'}
+2025-05-24 21:18:32,554 - __main__ - INFO - Starting answer generation session: test_small
+2025-05-24 21:18:32,555 - __main__ - ERROR - Failed to generate answers: Failed to load questions from test_questions.jsonl: line contains invalid json: Unexpected character found when decoding array value (2) (line 1)
+2025-05-24 21:18:32,555 - __main__ - ERROR - Application failed: Failed to generate answers: Failed to load questions from test_questions.jsonl: line contains invalid json: Unexpected character found when decoding array value (2) (line 1)
+2025-05-24 21:19:00,906 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:19:00,967 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:19:02,106 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:19:02,192 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:19:02,346 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:19:02,357 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:19:02,773 - __main__ - INFO - Generating answers using documents from batch_output\texts
+2025-05-24 21:19:02,773 - __main__ - INFO - Setting up knowledge base from: batch_output\texts
+2025-05-24 21:19:04,301 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:19:04,362 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:19:05,555 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:19:05,637 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:19:05,790 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:19:05,800 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:19:05,809 - __main__ - INFO - Knowledge base setup complete: {'working_directory': 'D:\\Project\\lightrag\\selection_workdir', 'directory_exists': True, 'directory_size_mb': 416.4852285385132, 'lightrag_files': 8, 'files': ['kv_store_doc_status.json', 'kv_store_full_docs.json', 'kv_store_llm_response_cache.json', 'kv_store_text_chunks.json', 'vdb_chunks.json', 'vdb_entities.json', 'vdb_relationships.json', 'graph_chunk_entity_relation.graphml'], 'file_size_kv_store_doc_status.json': '5.65 MB', 'file_size_kv_store_full_docs.json': '4.30 MB', 'file_size_kv_store_llm_response_cache.json': '50.00 MB', 'file_size_kv_store_text_chunks.json': '4.96 MB', 'file_size_vdb_chunks.json': '25.38 MB', 'file_size_vdb_entities.json': '136.14 MB', 'file_size_vdb_relationships.json': '181.95 MB', 'file_size_graph_chunk_entity_relation.graphml': '8.10 MB', 'total_files_size_mb': '416.49 MB'}
+2025-05-24 21:19:05,810 - __main__ - INFO - Starting answer generation session: test_small
+2025-05-24 21:19:05,811 - __main__ - ERROR - Failed to generate answers: Failed to load questions from test_questions.jsonl: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-24 21:19:05,811 - __main__ - ERROR - Application failed: Failed to generate answers: Failed to load questions from test_questions.jsonl: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+2025-05-24 21:19:46,432 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:19:46,492 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:19:47,614 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:19:47,696 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:19:47,846 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:19:47,855 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:19:48,280 - __main__ - INFO - Generating answers using documents from batch_output\texts
+2025-05-24 21:19:48,280 - __main__ - INFO - Setting up knowledge base from: batch_output\texts
+2025-05-24 21:19:49,810 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:19:49,873 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:19:51,015 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:19:51,095 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:19:51,248 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:19:51,258 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:19:51,266 - __main__ - INFO - Knowledge base setup complete: {'working_directory': 'D:\\Project\\lightrag\\selection_workdir', 'directory_exists': True, 'directory_size_mb': 416.4852285385132, 'lightrag_files': 8, 'files': ['kv_store_doc_status.json', 'kv_store_full_docs.json', 'kv_store_llm_response_cache.json', 'kv_store_text_chunks.json', 'vdb_chunks.json', 'vdb_entities.json', 'vdb_relationships.json', 'graph_chunk_entity_relation.graphml'], 'file_size_kv_store_doc_status.json': '5.65 MB', 'file_size_kv_store_full_docs.json': '4.30 MB', 'file_size_kv_store_llm_response_cache.json': '50.00 MB', 'file_size_kv_store_text_chunks.json': '4.96 MB', 'file_size_vdb_chunks.json': '25.38 MB', 'file_size_vdb_entities.json': '136.14 MB', 'file_size_vdb_relationships.json': '181.95 MB', 'file_size_graph_chunk_entity_relation.graphml': '8.10 MB', 'total_files_size_mb': '416.49 MB'}
+2025-05-24 21:19:51,266 - __main__ - INFO - Starting answer generation session: test_small
+2025-05-24 21:22:47,037 - __main__ - ERROR - Failed to generate answers: Failed to save QA set: type object 'FileUtils' has no attribute 'save_jsonl'
+2025-05-24 21:22:47,037 - __main__ - ERROR - Application failed: Failed to generate answers: Failed to save QA set: type object 'FileUtils' has no attribute 'save_jsonl'
+2025-05-24 21:23:38,754 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:23:38,816 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:23:39,954 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:23:40,035 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:23:40,189 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:23:40,199 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:23:40,621 - __main__ - INFO - Generating answers using documents from batch_output\texts
+2025-05-24 21:23:40,621 - __main__ - INFO - Setting up knowledge base from: batch_output\texts
+2025-05-24 21:23:42,139 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-24 21:23:42,200 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-24 21:23:43,344 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-24 21:23:43,427 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-24 21:23:43,578 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-24 21:23:43,588 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-24 21:23:43,597 - __main__ - INFO - Knowledge base setup complete: {'working_directory': 'D:\\Project\\lightrag\\selection_workdir', 'directory_exists': True, 'directory_size_mb': 416.49456214904785, 'lightrag_files': 8, 'files': ['kv_store_doc_status.json', 'kv_store_full_docs.json', 'kv_store_llm_response_cache.json', 'kv_store_text_chunks.json', 'vdb_chunks.json', 'vdb_entities.json', 'vdb_relationships.json', 'graph_chunk_entity_relation.graphml'], 'file_size_kv_store_doc_status.json': '5.65 MB', 'file_size_kv_store_full_docs.json': '4.30 MB', 'file_size_kv_store_llm_response_cache.json': '50.01 MB', 'file_size_kv_store_text_chunks.json': '4.96 MB', 'file_size_vdb_chunks.json': '25.38 MB', 'file_size_vdb_entities.json': '136.14 MB', 'file_size_vdb_relationships.json': '181.95 MB', 'file_size_graph_chunk_entity_relation.graphml': '8.10 MB', 'total_files_size_mb': '416.49 MB'}
+2025-05-24 21:23:43,598 - __main__ - INFO - Starting answer generation session: test_small2
+2025-05-24 21:23:43,606 - __main__ - INFO - QA set saved to: test_output.jsonl
+2025-05-24 21:23:43,608 - __main__ - INFO - Answer generation completed: 3 QA pairs generated
+2025-05-24 21:23:43,608 - __main__ - INFO - Generated 3 QA pairs
+2025-05-25 00:31:58,058 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:31:58,125 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:31:59,420 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:31:59,503 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:31:59,663 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:31:59,672 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:32:00,119 - __main__ - INFO - Inserting documents from batch_output\texts to working directory test_kb
+2025-05-25 00:32:00,119 - __main__ - INFO - Inserting documents to working directory: test_kb
+2025-05-25 00:32:00,121 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_kb\\vdb_entities.json'} 0 data
+2025-05-25 00:32:00,121 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_kb\\vdb_relationships.json'} 0 data
+2025-05-25 00:32:00,122 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_kb\\vdb_chunks.json'} 0 data
+2025-05-25 00:32:00,127 - __main__ - ERROR - Failed to insert document 01-GSK 27i高端多通道数控系统 20250226: Failed to insert document 01-GSK 27i高端多通道数控系统 20250226: 'history_messages'
+2025-05-25 00:32:00,132 - __main__ - INFO - Document insertion completed: 1 success, 1 failed
+2025-05-25 00:32:00,133 - __main__ - INFO - Document insertion completed: {'working_directory': 'test_kb', 'directory_exists': True, 'directory_size_mb': 0.0, 'lightrag_files': 0, 'files': [], 'total_files_size_mb': '0.00 MB', 'inserted_documents': 1, 'failed_documents': 1, 'total_attempted': 2}
+2025-05-25 00:32:12,379 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:32:12,441 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:32:13,585 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:32:13,666 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:32:13,817 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:32:13,827 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:32:14,247 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-25 00:32:14,247 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-25 00:32:15,800 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:32:15,860 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:32:17,045 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:32:17,126 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:32:17,277 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:32:17,288 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:32:17,303 - __main__ - INFO - QA set saved to: test_output_existing.jsonl
+2025-05-25 00:32:17,305 - __main__ - INFO - Answer generation completed: 3 QA pairs generated
+2025-05-25 00:32:17,305 - __main__ - INFO - Generated 3 QA pairs
+2025-05-25 00:32:29,649 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:32:29,709 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:32:30,881 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:32:30,961 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:32:31,115 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:32:31,124 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:32:31,538 - __main__ - INFO - Generating answers with document insertion
+2025-05-25 00:32:31,538 - __main__ - INFO - Documents: batch_output\texts, Working dir: new_kb
+2025-05-25 00:32:31,538 - __main__ - INFO - Setting up knowledge base from: batch_output\texts
+2025-05-25 00:32:33,047 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:32:33,108 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:32:34,241 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:32:34,323 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:32:34,472 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:32:34,482 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:32:34,486 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'new_kb\\vdb_entities.json'} 0 data
+2025-05-25 00:32:34,487 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'new_kb\\vdb_relationships.json'} 0 data
+2025-05-25 00:32:34,487 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'new_kb\\vdb_chunks.json'} 0 data
+2025-05-25 00:32:34,494 - __main__ - INFO - Knowledge base setup complete: {'working_directory': 'new_kb', 'directory_exists': True, 'directory_size_mb': 0.0, 'lightrag_files': 0, 'files': [], 'total_files_size_mb': '0.00 MB'}
+2025-05-25 00:32:34,495 - __main__ - INFO - Starting answer generation session: test_insert_mode
+2025-05-25 00:32:34,504 - __main__ - INFO - QA set saved to: test_output_insert.jsonl
+2025-05-25 00:32:34,506 - __main__ - INFO - Answer generation completed: 3 QA pairs generated
+2025-05-25 00:32:34,506 - __main__ - INFO - Generated 3 QA pairs
+2025-05-25 00:33:44,753 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:33:44,814 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:33:45,950 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:33:46,038 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:33:46,194 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:33:46,204 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:33:46,628 - __main__ - INFO - Generating answers with document insertion
+2025-05-25 00:33:46,628 - __main__ - INFO - Documents: batch_output\texts, Working dir: real_new_kb
+2025-05-25 00:33:46,628 - __main__ - INFO - Setting up knowledge base from: batch_output\texts
+2025-05-25 00:33:46,631 - __main__ - ERROR - Failed to setup knowledge base: Failed to clear knowledge base: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\Project\\lightrag\\selection_workdir\\kv_store_llm_response_cache.json'
+2025-05-25 00:33:46,632 - __main__ - ERROR - Application failed: Failed to setup knowledge base: Failed to clear knowledge base: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\Project\\lightrag\\selection_workdir\\kv_store_llm_response_cache.json'
+2025-05-25 00:34:16,493 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:34:16,556 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:34:17,693 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:34:17,775 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:34:17,927 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:34:17,937 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:34:18,315 - __main__ - INFO - Generating answers with document insertion
+2025-05-25 00:34:18,316 - __main__ - INFO - Documents: batch_output\texts, Working dir: real_new_kb
+2025-05-25 00:34:18,316 - __main__ - INFO - Setting up knowledge base from: batch_output\texts
+2025-05-25 00:34:18,317 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'real_new_kb\\vdb_entities.json'} 0 data
+2025-05-25 00:34:18,318 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'real_new_kb\\vdb_relationships.json'} 0 data
+2025-05-25 00:34:18,318 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'real_new_kb\\vdb_chunks.json'} 0 data
+2025-05-25 00:34:18,327 - __main__ - INFO - Knowledge base setup complete: {'working_directory': 'real_new_kb', 'directory_exists': True, 'directory_size_mb': 0.05596637725830078, 'lightrag_files': 1, 'files': ['kv_store_doc_status.json'], 'file_size_kv_store_doc_status.json': '0.06 MB', 'total_files_size_mb': '0.06 MB'}
+2025-05-25 00:34:18,327 - __main__ - INFO - Starting answer generation session: test_real_insert2
+2025-05-25 00:34:18,336 - __main__ - INFO - QA set saved to: test_output_real.jsonl
+2025-05-25 00:34:18,338 - __main__ - INFO - Answer generation completed: 3 QA pairs generated
+2025-05-25 00:34:18,338 - __main__ - INFO - Generated 3 QA pairs
+2025-05-25 00:35:12,230 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:35:12,290 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:35:13,440 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:35:13,521 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:35:13,677 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:35:13,686 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:35:14,067 - __main__ - INFO - Found 21 sessions:
+2025-05-25 00:35:14,067 - __main__ - INFO -   pdf_processing_066aa52c: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:23:11.064164', 'last_update': '2025-05-24T19:24:18.125127', 'end_time': '2025-05-24T19:24:18.125127', 'duration_seconds': 67.060963}
+2025-05-25 00:35:14,067 - __main__ - INFO -   question_generation_51930e18: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:24:18.128113', 'last_update': '2025-05-24T19:26:57.566601', 'end_time': '2025-05-24T19:26:57.566601', 'duration_seconds': 159.438488}
+2025-05-25 00:35:14,067 - __main__ - INFO -   pdf_processing_cab94c3e: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:28:59.834886', 'last_update': '2025-05-24T19:30:04.194805', 'end_time': '2025-05-24T19:30:04.194805', 'duration_seconds': 64.359919}
+2025-05-25 00:35:14,067 - __main__ - INFO -   question_generation_bbbcf867: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:30:04.197805', 'last_update': '2025-05-24T19:32:42.318721', 'end_time': '2025-05-24T19:32:42.318721', 'duration_seconds': 158.120916}
+2025-05-25 00:35:14,067 - __main__ - INFO -   pdf_processing_fbcd175f: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:34:03.951377', 'last_update': '2025-05-24T19:35:07.792270', 'end_time': '2025-05-24T19:35:07.792270', 'duration_seconds': 63.840893}
+2025-05-25 00:35:14,068 - __main__ - INFO -   question_generation_d32e5462: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:35:07.795271', 'last_update': '2025-05-24T19:37:46.766724', 'end_time': '2025-05-24T19:37:46.766724', 'duration_seconds': 158.971453}
+2025-05-25 00:35:14,068 - __main__ - INFO -   pdf_processing_baab3f38: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:38:55.842784', 'last_update': '2025-05-24T19:40:00.530856', 'end_time': '2025-05-24T19:40:00.530856', 'duration_seconds': 64.688072}
+2025-05-25 00:35:14,068 - __main__ - INFO -   question_generation_8e539af8: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:40:00.533862', 'last_update': '2025-05-24T19:42:39.476504', 'end_time': '2025-05-24T19:42:39.476504', 'duration_seconds': 158.942642}
+2025-05-25 00:35:14,068 - __main__ - INFO -   answer_batch_20250524_194239: {'total_items': 2, 'completed_items': 0, 'failed_items': 0, 'remaining_items': 2, 'completion_percentage': 0.0, 'failure_percentage': 0.0, 'status': 'failed', 'start_time': '2025-05-24T19:42:39.485816', 'last_update': '2025-05-24T19:42:39.486828', 'end_time': '2025-05-24T19:42:39.486828', 'duration_seconds': 0.001012}
+2025-05-25 00:35:14,068 - __main__ - INFO -   pdf_processing_e11f8d70: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T19:58:57.287356', 'last_update': '2025-05-24T20:00:02.442352', 'end_time': '2025-05-24T20:00:02.442352', 'duration_seconds': 65.154996}
+2025-05-25 00:35:14,068 - __main__ - INFO -   question_generation_6411e572: {'total_items': 2, 'completed_items': 2, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T20:00:02.444464', 'last_update': '2025-05-24T20:02:37.462861', 'end_time': '2025-05-24T20:02:37.462861', 'duration_seconds': 155.018397}
+2025-05-25 00:35:14,068 - __main__ - INFO -   answer_batch_20250524_200237: {'total_items': 2, 'completed_items': 0, 'failed_items': 2, 'remaining_items': 0, 'completion_percentage': 0.0, 'failure_percentage': 100.0, 'status': 'completed', 'start_time': '2025-05-24T20:02:37.472190', 'last_update': '2025-05-24T20:02:37.479519', 'end_time': '2025-05-24T20:02:37.479519', 'duration_seconds': 0.007329}
+2025-05-25 00:35:14,068 - __main__ - INFO -   lightrag_test: {'total_items': 2, 'completed_items': 0, 'failed_items': 2, 'remaining_items': 0, 'completion_percentage': 0.0, 'failure_percentage': 100.0, 'status': 'completed', 'start_time': '2025-05-24T21:04:29.534940', 'last_update': '2025-05-24T21:04:29.540638', 'end_time': '2025-05-24T21:04:29.540638', 'duration_seconds': 0.005698}
+2025-05-25 00:35:14,069 - __main__ - INFO -   lightrag_test2: {'total_items': 2, 'completed_items': 0, 'failed_items': 0, 'remaining_items': 2, 'completion_percentage': 0.0, 'failure_percentage': 0.0, 'status': 'running', 'start_time': '2025-05-24T21:06:28.946427', 'last_update': '2025-05-24T21:06:28.946427'}
+2025-05-25 00:35:14,069 - __main__ - INFO -   lightrag_test2_01-GSK 27i高端多通道数控系统 20250226: {'total_items': 400, 'completed_items': 10, 'failed_items': 0, 'remaining_items': 390, 'completion_percentage': 2.5, 'failure_percentage': 0.0, 'status': 'running', 'start_time': '2025-05-24T21:06:28.951665', 'last_update': '2025-05-24T21:15:34.679895'}
+2025-05-25 00:35:14,069 - __main__ - INFO -   test_small: {'total_items': 3, 'completed_items': 3, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'failed', 'start_time': '2025-05-24T21:19:51.267674', 'last_update': '2025-05-24T21:22:47.035591', 'end_time': '2025-05-24T21:22:47.035591', 'duration_seconds': 175.767917}
+2025-05-25 00:35:14,069 - __main__ - INFO -   test_small2: {'total_items': 3, 'completed_items': 3, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-24T21:23:43.599127', 'last_update': '2025-05-24T21:23:43.607434', 'end_time': '2025-05-24T21:23:43.607434', 'duration_seconds': 0.008307}
+2025-05-25 00:35:14,069 - __main__ - INFO -   test_insert: {'total_items': 2, 'completed_items': 1, 'failed_items': 1, 'remaining_items': 0, 'completion_percentage': 50.0, 'failure_percentage': 50.0, 'status': 'completed', 'start_time': '2025-05-25T00:32:00.124923', 'last_update': '2025-05-25T00:32:00.130240', 'end_time': '2025-05-25T00:32:00.130240', 'duration_seconds': 0.005317}
+2025-05-25 00:35:14,069 - __main__ - INFO -   test_existing_kb: {'total_items': 3, 'completed_items': 3, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-25T00:32:17.296201', 'last_update': '2025-05-25T00:32:17.303464', 'end_time': '2025-05-25T00:32:17.303464', 'duration_seconds': 0.007263}
+2025-05-25 00:35:14,069 - __main__ - INFO -   test_insert_mode: {'total_items': 3, 'completed_items': 3, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-25T00:32:34.496960', 'last_update': '2025-05-25T00:32:34.504242', 'end_time': '2025-05-25T00:32:34.504242', 'duration_seconds': 0.007282}
+2025-05-25 00:35:14,070 - __main__ - INFO -   test_real_insert2: {'total_items': 3, 'completed_items': 3, 'failed_items': 0, 'remaining_items': 0, 'completion_percentage': 100.0, 'failure_percentage': 0.0, 'status': 'completed', 'start_time': '2025-05-25T00:34:18.328969', 'last_update': '2025-05-25T00:34:18.336280', 'end_time': '2025-05-25T00:34:18.336280', 'duration_seconds': 0.007311}
+2025-05-25 00:39:29,724 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:39:29,790 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:39:30,973 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:39:31,055 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:39:31,208 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:39:31,218 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:39:31,598 - __main__ - INFO - Inserting documents from batch_output\texts to working directory append_test_kb
+2025-05-25 00:39:31,598 - __main__ - INFO - Inserting documents to working directory: append_test_kb
+2025-05-25 00:39:31,600 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_entities.json'} 0 data
+2025-05-25 00:39:31,600 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_relationships.json'} 0 data
+2025-05-25 00:39:31,601 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_chunks.json'} 0 data
+2025-05-25 00:39:31,607 - __main__ - ERROR - Failed to insert document 01-GSK 27i高端多通道数控系统 20250226: Failed to insert document 01-GSK 27i高端多通道数控系统 20250226: 'history_messages'
+2025-05-25 00:39:31,612 - __main__ - INFO - Document insertion completed: 1 success, 1 failed
+2025-05-25 00:39:31,612 - __main__ - INFO - Document insertion completed: {'working_directory': 'append_test_kb', 'directory_exists': True, 'directory_size_mb': 0.05596637725830078, 'lightrag_files': 1, 'files': ['kv_store_doc_status.json'], 'file_size_kv_store_doc_status.json': '0.06 MB', 'total_files_size_mb': '0.06 MB', 'inserted_documents': 1, 'failed_documents': 1, 'total_attempted': 2}
+2025-05-25 00:39:54,731 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:39:54,792 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:39:55,936 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:39:56,018 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:39:56,167 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:39:56,177 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:39:56,551 - __main__ - INFO - Generating answers with document insertion
+2025-05-25 00:39:56,551 - __main__ - INFO - Documents: test_append_doc.txt, Working dir: append_test_kb
+2025-05-25 00:39:56,551 - __main__ - INFO - Setting up knowledge base from: test_append_doc.txt
+2025-05-25 00:39:56,552 - __main__ - INFO - Appending to existing knowledge base: append_test_kb
+2025-05-25 00:39:56,554 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_entities.json'} 0 data
+2025-05-25 00:39:56,554 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_relationships.json'} 0 data
+2025-05-25 00:39:56,554 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_chunks.json'} 0 data
+2025-05-25 00:39:56,564 - __main__ - ERROR - Failed to setup knowledge base: Failed to insert document test_append_doc: 'history_messages'
+2025-05-25 00:39:56,564 - __main__ - ERROR - Application failed: Failed to setup knowledge base: Failed to insert document test_append_doc: 'history_messages'
+2025-05-25 00:40:27,271 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:40:27,330 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:40:28,460 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:40:28,541 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:40:28,690 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:40:28,699 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:40:29,078 - __main__ - INFO - Generating answers with document insertion
+2025-05-25 00:40:29,078 - __main__ - INFO - Documents: test_append_doc.txt, Working dir: append_test_kb
+2025-05-25 00:40:29,078 - __main__ - INFO - Setting up knowledge base from: test_append_doc.txt
+2025-05-25 00:40:29,079 - __main__ - INFO - Appending to existing knowledge base: append_test_kb
+2025-05-25 00:40:29,080 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_entities.json'} 0 data
+2025-05-25 00:40:29,081 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_relationships.json'} 0 data
+2025-05-25 00:40:29,081 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_chunks.json'} 0 data
+2025-05-25 00:40:29,086 - __main__ - ERROR - Failed to setup knowledge base: Failed to insert document test_append_doc: 'history_messages'
+2025-05-25 00:40:29,086 - __main__ - ERROR - Application failed: Failed to setup knowledge base: Failed to insert document test_append_doc: 'history_messages'
+2025-05-25 00:40:40,313 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:40:40,374 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:40:41,495 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:40:41,575 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:40:41,727 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:40:41,737 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:40:42,109 - __main__ - INFO - Inserting documents from test_append_doc.txt to working directory append_test_kb
+2025-05-25 00:40:42,110 - __main__ - INFO - Inserting documents to working directory: append_test_kb
+2025-05-25 00:40:42,111 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_entities.json'} 0 data
+2025-05-25 00:40:42,112 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_relationships.json'} 0 data
+2025-05-25 00:40:42,112 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'append_test_kb\\vdb_chunks.json'} 0 data
+2025-05-25 00:40:42,117 - __main__ - ERROR - Failed to insert document test_append_doc: Failed to insert document test_append_doc: 'history_messages'
+2025-05-25 00:40:42,120 - __main__ - INFO - Document insertion completed: 0 success, 1 failed
+2025-05-25 00:40:42,120 - __main__ - INFO - Document insertion completed: {'working_directory': 'append_test_kb', 'directory_exists': True, 'directory_size_mb': 0.0006561279296875, 'lightrag_files': 1, 'files': ['kv_store_doc_status.json'], 'file_size_kv_store_doc_status.json': '0.00 MB', 'total_files_size_mb': '0.00 MB', 'inserted_documents': 0, 'failed_documents': 1, 'total_attempted': 1}
+2025-05-25 00:41:38,774 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:41:38,834 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:41:39,975 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:41:40,056 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:41:40,208 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:41:40,217 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:41:40,597 - __main__ - INFO - Generating answers with document insertion
+2025-05-25 00:41:40,597 - __main__ - INFO - Documents: test_append_doc.txt, Working dir: D:\Project\lightrag\selection_workdir
+2025-05-25 00:41:40,598 - __main__ - INFO - Setting up knowledge base from: test_append_doc.txt
+2025-05-25 00:41:40,598 - __main__ - INFO - Appending to existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-25 00:41:41,454 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:41:41,514 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:41:42,677 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:41:42,758 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:41:42,910 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:41:42,920 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:41:42,926 - __main__ - ERROR - Failed to setup knowledge base: Failed to insert document test_append_doc: 'history_messages'
+2025-05-25 00:41:42,927 - __main__ - ERROR - Application failed: Failed to setup knowledge base: Failed to insert document test_append_doc: 'history_messages'
+2025-05-25 00:41:56,138 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:41:56,201 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:41:57,344 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:41:57,425 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:41:57,574 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:41:57,584 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:41:57,959 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-25 00:41:57,959 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-25 00:41:58,811 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:41:58,873 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:42:00,013 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:42:00,099 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:42:00,248 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:42:00,257 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:42:00,272 - __main__ - INFO - QA set saved to: test_no_insert_output.jsonl
+2025-05-25 00:42:00,275 - __main__ - INFO - Answer generation completed: 3 QA pairs generated
+2025-05-25 00:42:00,275 - __main__ - INFO - Generated 3 QA pairs
+2025-05-25 00:53:13,188 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:53:13,253 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:53:14,511 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:53:14,592 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:53:14,744 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:53:14,754 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:53:15,132 - __main__ - INFO - Inserting documents from 这是一个测试文档，用于验证主程序的LightRAG追加功能。 to working directory test_main_kb
+2025-05-25 00:53:15,132 - __main__ - INFO - Inserting documents to working directory: test_main_kb
+2025-05-25 00:53:15,134 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb\\vdb_entities.json'} 0 data
+2025-05-25 00:53:15,134 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb\\vdb_relationships.json'} 0 data
+2025-05-25 00:53:15,135 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb\\vdb_chunks.json'} 0 data
+2025-05-25 00:53:15,137 - __main__ - ERROR - Failed to insert documents: Invalid documents path: 这是一个测试文档，用于验证主程序的LightRAG追加功能。
+2025-05-25 00:53:15,137 - __main__ - ERROR - Application failed: Failed to insert documents: Invalid documents path: 这是一个测试文档，用于验证主程序的LightRAG追加功能。
+2025-05-25 00:54:02,863 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:54:02,929 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:54:04,107 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:54:04,189 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:54:04,341 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:54:04,352 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:54:04,728 - __main__ - INFO - Inserting documents from test_doc_for_append.txt to working directory test_main_kb
+2025-05-25 00:54:04,728 - __main__ - INFO - Inserting documents to working directory: test_main_kb
+2025-05-25 00:54:04,730 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb\\vdb_entities.json'} 0 data
+2025-05-25 00:54:04,730 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb\\vdb_relationships.json'} 0 data
+2025-05-25 00:54:04,731 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb\\vdb_chunks.json'} 0 data
+2025-05-25 00:54:04,739 - __main__ - ERROR - Failed to insert document test_doc_for_append: Failed to insert document test_doc_for_append: LightRAG version issue with history_messages for test_doc_for_append: 'history_messages'
+2025-05-25 00:54:04,743 - __main__ - INFO - Document insertion completed: 0 success, 1 failed
+2025-05-25 00:54:04,743 - __main__ - INFO - Document insertion completed: {'working_directory': 'test_main_kb', 'directory_exists': True, 'directory_size_mb': 0.0015354156494140625, 'lightrag_files': 1, 'files': ['kv_store_doc_status.json'], 'file_size_kv_store_doc_status.json': '0.00 MB', 'total_files_size_mb': '0.00 MB', 'inserted_documents': 0, 'failed_documents': 1, 'total_attempted': 1}
+2025-05-25 00:55:20,268 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:55:20,331 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:55:21,540 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:55:21,624 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:55:21,777 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:55:21,787 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:55:22,167 - __main__ - INFO - Inserting documents from test_doc_for_append.txt to working directory test_main_kb2
+2025-05-25 00:55:22,167 - __main__ - INFO - Inserting documents to working directory: test_main_kb2
+2025-05-25 00:55:22,169 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_entities.json'} 0 data
+2025-05-25 00:55:22,170 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_relationships.json'} 0 data
+2025-05-25 00:55:22,170 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_chunks.json'} 0 data
+2025-05-25 00:56:18,745 - __main__ - INFO - Document insertion completed: 1 success, 0 failed
+2025-05-25 00:56:18,745 - __main__ - INFO - Document insertion completed: {'working_directory': 'test_main_kb2', 'directory_exists': True, 'directory_size_mb': 55.44051647186279, 'lightrag_files': 8, 'files': ['kv_store_doc_status.json', 'kv_store_full_docs.json', 'kv_store_llm_response_cache.json', 'kv_store_text_chunks.json', 'vdb_chunks.json', 'vdb_entities.json', 'vdb_relationships.json', 'graph_chunk_entity_relation.graphml'], 'file_size_kv_store_doc_status.json': '0.00 MB', 'file_size_kv_store_full_docs.json': '0.00 MB', 'file_size_kv_store_llm_response_cache.json': '50.07 MB', 'file_size_kv_store_text_chunks.json': '4.96 MB', 'file_size_vdb_chunks.json': '0.03 MB', 'file_size_vdb_entities.json': '0.19 MB', 'file_size_vdb_relationships.json': '0.18 MB', 'file_size_graph_chunk_entity_relation.graphml': '0.01 MB', 'total_files_size_mb': '55.44 MB', 'inserted_documents': 1, 'failed_documents': 0, 'total_attempted': 1}
+2025-05-25 00:56:39,367 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:56:39,430 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:56:40,654 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:56:40,738 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:56:40,889 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:56:40,898 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:56:41,276 - __main__ - INFO - Inserting documents from test_doc_for_append2.txt to working directory test_main_kb2
+2025-05-25 00:56:41,277 - __main__ - INFO - Inserting documents to working directory: test_main_kb2
+2025-05-25 00:56:41,281 - nano-vectordb - INFO - Load (12, 3072) data
+2025-05-25 00:56:41,281 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_entities.json'} 12 data
+2025-05-25 00:56:41,282 - nano-vectordb - INFO - Load (11, 3072) data
+2025-05-25 00:56:41,282 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_relationships.json'} 11 data
+2025-05-25 00:56:41,283 - nano-vectordb - INFO - Load (2, 3072) data
+2025-05-25 00:56:41,283 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_chunks.json'} 2 data
+2025-05-25 00:57:19,923 - __main__ - INFO - Document insertion completed: 1 success, 0 failed
+2025-05-25 00:57:19,923 - __main__ - INFO - Document insertion completed: {'working_directory': 'test_main_kb2', 'directory_exists': True, 'directory_size_mb': 55.66783332824707, 'lightrag_files': 8, 'files': ['kv_store_doc_status.json', 'kv_store_full_docs.json', 'kv_store_llm_response_cache.json', 'kv_store_text_chunks.json', 'vdb_chunks.json', 'vdb_entities.json', 'vdb_relationships.json', 'graph_chunk_entity_relation.graphml'], 'file_size_kv_store_doc_status.json': '0.00 MB', 'file_size_kv_store_full_docs.json': '0.00 MB', 'file_size_kv_store_llm_response_cache.json': '50.06 MB', 'file_size_kv_store_text_chunks.json': '4.96 MB', 'file_size_vdb_chunks.json': '0.05 MB', 'file_size_vdb_entities.json': '0.29 MB', 'file_size_vdb_relationships.json': '0.29 MB', 'file_size_graph_chunk_entity_relation.graphml': '0.01 MB', 'total_files_size_mb': '55.67 MB', 'inserted_documents': 1, 'failed_documents': 0, 'total_attempted': 1}
+2025-05-25 00:57:50,358 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:57:50,419 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:57:51,620 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:57:51,703 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:57:51,853 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:57:51,863 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:57:52,259 - __main__ - INFO - Generating answers from existing knowledge base: test_main_kb2
+2025-05-25 00:57:52,260 - __main__ - INFO - Generating answers from existing knowledge base: test_main_kb2
+2025-05-25 00:57:52,264 - nano-vectordb - INFO - Load (18, 3072) data
+2025-05-25 00:57:52,266 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_entities.json'} 18 data
+2025-05-25 00:57:52,267 - nano-vectordb - INFO - Load (18, 3072) data
+2025-05-25 00:57:52,268 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_relationships.json'} 18 data
+2025-05-25 00:57:52,268 - nano-vectordb - INFO - Load (3, 3072) data
+2025-05-25 00:57:52,268 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_chunks.json'} 3 data
+2025-05-25 00:57:52,275 - __main__ - ERROR - Failed to generate answers: No questions found in test_questions_append.jsonl
+2025-05-25 00:57:52,275 - __main__ - ERROR - Application failed: Failed to generate answers: No questions found in test_questions_append.jsonl
+2025-05-25 00:58:42,897 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:58:42,959 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:58:44,192 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:58:44,275 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:58:44,425 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:58:44,435 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:58:44,816 - __main__ - INFO - Generating answers from existing knowledge base: test_main_kb2
+2025-05-25 00:58:44,817 - __main__ - INFO - Generating answers from existing knowledge base: test_main_kb2
+2025-05-25 00:58:44,822 - nano-vectordb - INFO - Load (18, 3072) data
+2025-05-25 00:58:44,822 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_entities.json'} 18 data
+2025-05-25 00:58:44,824 - nano-vectordb - INFO - Load (18, 3072) data
+2025-05-25 00:58:44,824 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_relationships.json'} 18 data
+2025-05-25 00:58:44,825 - nano-vectordb - INFO - Load (3, 3072) data
+2025-05-25 00:58:44,825 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_chunks.json'} 3 data
+2025-05-25 00:58:44,834 - __main__ - ERROR - Failed to generate answers: No questions found in test_questions_append.jsonl
+2025-05-25 00:58:44,834 - __main__ - ERROR - Application failed: Failed to generate answers: No questions found in test_questions_append.jsonl
+2025-05-25 00:59:00,263 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-25 00:59:00,326 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-25 00:59:01,518 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-25 00:59:01,598 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-25 00:59:01,751 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-25 00:59:01,761 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-25 00:59:02,142 - __main__ - INFO - Generating answers from existing knowledge base: test_main_kb2
+2025-05-25 00:59:02,143 - __main__ - INFO - Generating answers from existing knowledge base: test_main_kb2
+2025-05-25 00:59:02,147 - nano-vectordb - INFO - Load (18, 3072) data
+2025-05-25 00:59:02,148 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_entities.json'} 18 data
+2025-05-25 00:59:02,149 - nano-vectordb - INFO - Load (18, 3072) data
+2025-05-25 00:59:02,151 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_relationships.json'} 18 data
+2025-05-25 00:59:02,151 - nano-vectordb - INFO - Load (3, 3072) data
+2025-05-25 00:59:02,151 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'test_main_kb2\\vdb_chunks.json'} 3 data
+2025-05-25 00:59:02,168 - __main__ - INFO - QA set saved to: test_qa_append_output.jsonl
+2025-05-25 00:59:02,170 - __main__ - INFO - Answer generation completed: 3 QA pairs generated
+2025-05-25 00:59:02,170 - __main__ - INFO - Generated 3 QA pairs
+2025-05-26 23:13:30,944 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:13:31,015 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:13:32,382 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:13:32,470 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:13:32,627 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:13:32,639 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:13:33,065 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:13:33,065 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:13:33,955 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:13:34,015 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:13:35,168 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:13:35,249 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:13:35,398 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:13:35,408 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:21:10,031 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:21:10,106 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:21:11,439 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:21:11,533 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:21:11,690 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:21:11,701 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:21:12,112 - __main__ - ERROR - Application failed: 'ProgressManager' object has no attribute 'get_session'
+2025-05-26 23:21:49,265 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:21:49,326 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:21:50,598 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:21:50,678 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:21:50,830 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:21:50,839 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:21:51,218 - __main__ - INFO - Session qa_test: {'total_items': 680, 'completed_items': 15, 'failed_items': 0, 'remaining_items': 665, 'completion_percentage': 2.2058823529411766, 'failure_percentage': 0.0, 'status': 'running', 'start_time': '2025-05-26T23:13:35.425411', 'last_update': '2025-05-26T23:16:13.519149'}
+2025-05-26 23:25:00,038 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:25:00,101 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:25:01,333 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:25:01,415 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:25:01,565 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:25:01,574 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:25:01,965 - __main__ - INFO - Session qa_test: {'total_items': 680, 'completed_items': 15, 'failed_items': 0, 'remaining_items': 665, 'completion_percentage': 2.2058823529411766, 'failure_percentage': 0.0, 'status': 'running', 'start_time': '2025-05-26T23:13:35.425411', 'last_update': '2025-05-26T23:16:13.519149'}
+2025-05-26 23:34:14,955 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:34:15,018 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:34:16,199 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:34:16,281 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:34:16,432 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:34:16,443 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:34:16,821 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:34:16,821 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:34:17,681 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:34:17,747 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:34:18,912 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:34:18,996 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:34:19,147 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:34:19,157 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:39:32,446 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:39:32,523 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:39:33,857 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:39:33,951 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:39:34,106 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:39:34,117 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:39:34,519 - __main__ - INFO - Session qa_test_final: {'total_items': 680, 'completed_items': 10, 'failed_items': 0, 'remaining_items': 670, 'completion_percentage': 1.4705882352941175, 'failure_percentage': 0.0, 'status': 'running', 'start_time': '2025-05-26T23:34:19.166261', 'last_update': '2025-05-26T23:38:56.538411'}
+2025-05-26 23:39:48,899 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:39:48,961 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:39:50,157 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:39:50,244 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:39:50,395 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:39:50,405 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:39:50,792 - __main__ - INFO - Session qa_test_final: {'total_items': 680, 'completed_items': 10, 'failed_items': 0, 'remaining_items': 670, 'completion_percentage': 1.4705882352941175, 'failure_percentage': 0.0, 'status': 'running', 'start_time': '2025-05-26T23:34:19.166261', 'last_update': '2025-05-26T23:38:56.538411'}
+2025-05-26 23:46:17,805 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:46:17,868 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:46:19,047 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:46:19,128 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:46:19,278 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:46:19,288 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:46:19,669 - __main__ - INFO - Session qa_test: {'total_items': 680, 'completed_items': 15, 'failed_items': 0, 'remaining_items': 665, 'completion_percentage': 2.2058823529411766, 'failure_percentage': 0.0, 'status': 'running', 'start_time': '2025-05-26T23:13:35.425411', 'last_update': '2025-05-26T23:16:13.519149'}
+2025-05-26 23:46:44,154 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:46:44,217 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:46:45,440 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:46:45,524 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:46:45,680 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:46:45,689 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:46:46,094 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:46:46,094 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:46:46,990 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:46:47,056 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:46:48,198 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:46:48,282 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:46:48,433 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:46:48,443 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:46:48,449 - __main__ - ERROR - Failed to generate answers: Failed to load questions from test_small_q.jsonl: line contains invalid json: Expected object or value (line 1)
+2025-05-26 23:46:48,449 - __main__ - ERROR - Application failed: Failed to generate answers: Failed to load questions from test_small_q.jsonl: line contains invalid json: Expected object or value (line 1)
+2025-05-26 23:47:13,227 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:47:13,287 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:47:14,463 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:47:14,543 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:47:14,698 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:47:14,708 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:47:15,086 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:47:15,086 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:47:15,939 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:47:16,000 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:47:17,142 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:47:17,226 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:47:17,375 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:47:17,385 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:47:17,392 - __main__ - ERROR - Failed to generate answers: No questions found in test_small_q.jsonl
+2025-05-26 23:47:17,392 - __main__ - ERROR - Application failed: Failed to generate answers: No questions found in test_small_q.jsonl
+2025-05-26 23:48:03,780 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:48:03,841 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:48:05,049 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:48:05,137 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:48:05,293 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:48:05,304 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:48:05,690 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:48:05,690 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:48:06,538 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:48:06,601 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:48:07,772 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:48:07,853 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:48:08,004 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:48:08,014 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:49:36,294 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test_small.jsonl
+2025-05-26 23:49:36,296 - __main__ - INFO - Answer generation completed: 3 QA pairs generated
+2025-05-26 23:49:36,296 - __main__ - INFO - Generated 3 QA pairs
+2025-05-26 23:50:20,154 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:50:20,221 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:50:21,462 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:50:21,550 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:50:21,712 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:50:21,723 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:50:22,125 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:50:22,125 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:50:22,972 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:50:23,035 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:50:24,230 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:50:24,314 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:50:24,467 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:50:24,477 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:53:51,248 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:53:51,315 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:53:52,574 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:53:52,657 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:53:52,809 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:53:52,819 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:53:53,201 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:53:53,201 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:53:54,058 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:53:54,123 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:53:55,322 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:53:55,406 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:53:55,556 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:53:55,567 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:54:54,722 - __main__ - INFO - Incrementally saved 3 QA pairs to: C:\Users\26423\Desktop\testoutput\test_incremental.jsonl
+2025-05-26 23:54:54,725 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test_incremental.jsonl
+2025-05-26 23:54:54,727 - __main__ - INFO - Answer generation completed: 3 QA pairs generated
+2025-05-26 23:54:54,727 - __main__ - INFO - Generated 3 QA pairs
+2025-05-26 23:55:57,294 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:55:57,356 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:55:58,576 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:55:58,665 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:55:58,820 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:55:58,831 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:55:59,225 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:55:59,225 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-26 23:56:00,118 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-26 23:56:00,181 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-26 23:56:01,338 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-26 23:56:01,420 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-26 23:56:01,569 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-26 23:56:01,579 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-26 23:59:02,488 - __main__ - INFO - Incrementally saved 10 QA pairs to: C:\Users\26423\Desktop\testoutput\test_10.jsonl
+2025-05-26 23:59:02,492 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test_10.jsonl
+2025-05-26 23:59:02,494 - __main__ - INFO - Answer generation completed: 10 QA pairs generated
+2025-05-26 23:59:02,494 - __main__ - INFO - Generated 10 QA pairs
+2025-05-27 00:09:01,532 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 00:09:01,592 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 00:09:02,825 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 00:09:02,915 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 00:09:03,069 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 00:09:03,080 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 00:09:03,446 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 00:09:03,447 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 00:09:04,328 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 00:09:04,391 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 00:09:05,634 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 00:09:05,718 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 00:09:05,869 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 00:09:05,879 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 00:09:35,930 - __main__ - INFO - Incrementally saved 10 QA pairs to: C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 00:12:04,090 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 00:12:04,149 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 00:12:05,372 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 00:12:05,454 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 00:12:05,610 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 00:12:05,620 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 00:12:06,003 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 00:12:06,003 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 00:12:06,864 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 00:12:06,922 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 00:12:08,023 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 00:12:08,102 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 00:12:08,252 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 00:12:08,261 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 00:12:38,295 - __main__ - INFO - Incrementally saved 10 QA pairs to: C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 00:15:00,567 - __main__ - INFO - Incrementally saved 10 QA pairs to: C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 00:22:10,127 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 00:22:10,193 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 00:22:11,505 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 00:22:11,592 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 00:22:11,744 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 00:22:11,754 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 00:22:12,137 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 00:22:12,137 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 00:22:13,057 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 00:22:13,124 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 00:22:14,378 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 00:22:14,459 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 00:22:14,610 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 00:22:14,620 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 00:22:14,635 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test_fixed.jsonl (3 QA pairs in messages format)
+2025-05-27 00:22:14,637 - __main__ - INFO - Answer generation completed: 3 QA pairs generated
+2025-05-27 00:22:14,637 - __main__ - INFO - Generated 3 QA pairs
+2025-05-27 00:24:04,001 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 00:24:04,064 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 00:24:05,292 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 00:24:05,380 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 00:24:05,544 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 00:24:05,555 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 00:24:05,957 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 00:24:05,957 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 00:24:06,868 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 00:24:06,935 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 00:24:08,076 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 00:24:08,156 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 00:24:08,309 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 00:24:08,319 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 00:25:08,363 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\qa_demo.jsonl (10 QA pairs in messages format)
+2025-05-27 00:25:08,366 - __main__ - INFO - Answer generation completed: 10 QA pairs generated
+2025-05-27 00:25:08,366 - __main__ - INFO - Generated 10 QA pairs
+2025-05-27 00:25:46,415 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 00:25:46,474 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 00:25:47,600 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 00:25:47,678 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 00:25:47,823 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 00:25:47,834 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 00:25:48,196 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 00:25:48,196 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 00:25:49,039 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 00:25:49,099 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 00:25:50,228 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 00:25:50,311 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 00:25:50,453 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 00:25:50,462 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 12:29:02,598 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 12:29:02,663 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 12:29:03,864 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 12:29:03,933 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 12:29:04,074 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 12:29:04,086 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 12:29:04,458 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 12:29:04,458 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 12:29:05,257 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 12:29:05,309 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 12:29:06,415 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 12:29:06,482 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 12:29:06,623 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 12:29:06,635 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 12:29:06,655 - __main__ - INFO - Loaded 0 existing QA pairs from C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 12:29:06,655 - __main__ - INFO - Resuming from 0 existing QA pairs, 680 questions remaining
+2025-05-27 12:29:06,655 - __main__ - INFO - Continuing existing session: qa_test
+2025-05-27 12:29:12,322 - openai._base_client - INFO - Retrying request to /embeddings in 0.493219 seconds
+2025-05-27 12:29:17,834 - openai._base_client - INFO - Retrying request to /embeddings in 0.884248 seconds
+2025-05-27 12:29:23,738 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (5 QA pairs in messages format)
+2025-05-27 12:29:23,738 - __main__ - ERROR - Failed to save progress: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\Users\\26423\\Desktop\\testoutput\\test.temp.jsonl' -> 'C:\\Users\\26423\\Desktop\\testoutput\\test.jsonl'
+2025-05-27 12:29:23,754 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (10 QA pairs in messages format)
+2025-05-27 12:29:23,754 - __main__ - ERROR - Failed to save progress: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\Users\\26423\\Desktop\\testoutput\\test.temp.jsonl' -> 'C:\\Users\\26423\\Desktop\\testoutput\\test.jsonl'
+2025-05-27 12:29:28,784 - openai._base_client - INFO - Retrying request to /embeddings in 0.436127 seconds
+2025-05-27 12:29:34,230 - openai._base_client - INFO - Retrying request to /embeddings in 0.966113 seconds
+2025-05-27 12:29:45,233 - openai._base_client - INFO - Retrying request to /embeddings in 0.452315 seconds
+2025-05-27 12:29:50,712 - openai._base_client - INFO - Retrying request to /embeddings in 0.799624 seconds
+2025-05-27 12:29:56,522 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (15 QA pairs in messages format)
+2025-05-27 12:29:56,522 - __main__ - ERROR - Failed to save progress: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\Users\\26423\\Desktop\\testoutput\\test.temp.jsonl' -> 'C:\\Users\\26423\\Desktop\\testoutput\\test.jsonl'
+2025-05-27 12:30:01,562 - openai._base_client - INFO - Retrying request to /embeddings in 0.401829 seconds
+2025-05-27 12:30:06,964 - openai._base_client - INFO - Retrying request to /embeddings in 0.871320 seconds
+2025-05-27 12:30:12,852 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (20 QA pairs in messages format)
+2025-05-27 12:30:12,852 - __main__ - ERROR - Failed to save progress: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\Users\\26423\\Desktop\\testoutput\\test.temp.jsonl' -> 'C:\\Users\\26423\\Desktop\\testoutput\\test.jsonl'
+2025-05-27 12:30:17,878 - openai._base_client - INFO - Retrying request to /embeddings in 0.386828 seconds
+2025-05-27 12:30:23,273 - openai._base_client - INFO - Retrying request to /embeddings in 0.952169 seconds
+2025-05-27 12:30:34,230 - openai._base_client - INFO - Retrying request to /embeddings in 0.456237 seconds
+2025-05-27 12:30:39,683 - openai._base_client - INFO - Retrying request to /embeddings in 0.973989 seconds
+2025-05-27 12:30:50,677 - openai._base_client - INFO - Retrying request to /embeddings in 0.385556 seconds
+2025-05-27 12:30:56,082 - openai._base_client - INFO - Retrying request to /embeddings in 0.795139 seconds
+2025-05-27 12:30:56,116 - __main__ - WARNING - Received signal 2, performing graceful shutdown...
+2025-05-27 12:30:56,116 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (22 QA pairs in messages format)
+2025-05-27 12:30:56,116 - __main__ - ERROR - Failed to save progress: [WinError 183] 当文件已存在时，无法创建该文件。: 'C:\\Users\\26423\\Desktop\\testoutput\\test.temp.jsonl' -> 'C:\\Users\\26423\\Desktop\\testoutput\\test.jsonl'
+2025-05-27 12:35:11,520 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 12:35:11,568 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 12:35:12,718 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 12:35:12,797 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 12:35:12,956 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 12:35:12,965 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 12:35:13,335 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 12:35:13,337 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 12:35:14,117 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 12:35:14,168 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 12:35:15,241 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 12:35:15,304 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 12:35:15,448 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 12:35:15,448 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 12:35:15,470 - __main__ - INFO - Loaded 0 existing QA pairs from C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 12:35:15,470 - __main__ - INFO - Resuming from 0 existing QA pairs, 680 questions remaining
+2025-05-27 12:35:15,470 - __main__ - INFO - Continuing existing session: qa_test
+2025-05-27 12:35:20,788 - openai._base_client - INFO - Retrying request to /embeddings in 0.411629 seconds
+2025-05-27 12:35:26,229 - openai._base_client - INFO - Retrying request to /embeddings in 0.858891 seconds
+2025-05-27 12:35:32,101 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (5 QA pairs in messages format)
+2025-05-27 12:35:32,111 - __main__ - INFO - Progress saved: 5 QA pairs to C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 12:35:32,124 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (10 QA pairs in messages format)
+2025-05-27 12:35:32,127 - __main__ - INFO - Progress saved: 10 QA pairs to C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 12:35:37,147 - openai._base_client - INFO - Retrying request to /embeddings in 0.389577 seconds
+2025-05-27 12:35:42,551 - openai._base_client - INFO - Retrying request to /embeddings in 0.892995 seconds
+2025-05-27 12:35:53,470 - openai._base_client - INFO - Retrying request to /embeddings in 0.397397 seconds
+2025-05-27 12:35:58,888 - openai._base_client - INFO - Retrying request to /embeddings in 0.772328 seconds
+2025-05-27 12:35:58,888 - __main__ - WARNING - Received signal 2, performing graceful shutdown...
+2025-05-27 12:35:58,888 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (14 QA pairs in messages format)
+2025-05-27 12:35:58,888 - __main__ - INFO - Progress saved: 14 QA pairs to C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 12:41:11,461 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 12:41:11,509 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 12:41:12,594 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 12:41:12,674 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 12:41:12,802 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 12:41:12,802 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 12:41:13,172 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 12:41:13,172 - __main__ - INFO - Generating answers from existing knowledge base: D:\Project\lightrag\selection_workdir
+2025-05-27 12:41:14,006 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-27 12:41:14,069 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-27 12:41:15,099 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-27 12:41:15,165 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-27 12:41:15,306 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-27 12:41:15,306 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-27 12:41:15,322 - __main__ - INFO - Loaded 14 existing QA pairs from C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 12:41:15,322 - __main__ - INFO - Resuming from 14 existing QA pairs, 680 questions remaining
+2025-05-27 12:41:15,322 - __main__ - INFO - Continuing existing session: qa_test
+2025-05-27 12:41:45,338 - __main__ - ERROR - Failed to generate answer for question q_3: Invalid answer generated: 查询超时，请稍后重试或简化问题。...
+2025-05-27 12:41:45,338 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (5 QA pairs in messages format)
+2025-05-27 12:41:45,338 - __main__ - INFO - Progress saved: 5 QA pairs to C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 12:41:45,361 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (10 QA pairs in messages format)
+2025-05-27 12:41:45,361 - __main__ - INFO - Progress saved: 10 QA pairs to C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 12:42:15,382 - __main__ - ERROR - Failed to generate answer for question q_2: Invalid answer generated: 查询超时，请稍后重试或简化问题。...
+2025-05-27 12:42:45,393 - __main__ - ERROR - Failed to generate answer for question q_4: Invalid answer generated: 查询超时，请稍后重试或简化问题。...
+2025-05-27 12:43:14,976 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (15 QA pairs in messages format)
+2025-05-27 12:43:14,976 - __main__ - INFO - Progress saved: 15 QA pairs to C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-27 12:43:29,845 - __main__ - WARNING - Received signal 2, performing graceful shutdown...
+2025-05-27 12:43:29,845 - __main__ - INFO - QA set saved to: C:\Users\26423\Desktop\testoutput\test.temp.jsonl (17 QA pairs in messages format)
+2025-05-27 12:43:29,845 - __main__ - INFO - Progress saved: 17 QA pairs to C:\Users\26423\Desktop\testoutput\test.jsonl
+2025-05-28 23:50:23,064 - __main__ - INFO - TesseractOCR initialized successfully
+2025-05-28 23:50:25,414 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-28 23:50:25,488 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-28 23:50:26,796 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-28 23:50:26,888 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-28 23:50:27,045 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-28 23:50:27,057 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-28 23:50:27,436 - __main__ - INFO - Processing PDFs from example_pdfs to Temporary\test_pdf_output
+2025-05-28 23:51:30,368 - __main__ - INFO - Processed 2 PDFs
+2025-05-30 10:05:25,073 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-05-30 10:05:26,801 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-30 10:05:26,871 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-30 10:05:28,076 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-30 10:05:28,159 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-30 10:05:28,308 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-30 10:05:28,318 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-30 10:05:28,654 - src.utils.logging_utils - ERROR - Application failed: console_log() missing 1 required positional argument: 'message'
+2025-05-30 10:07:21,611 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-05-30 10:07:23,141 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-30 10:07:23,205 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-30 10:07:24,330 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-30 10:07:24,412 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-30 10:07:24,560 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-30 10:07:24,571 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-30 10:07:32,073 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-05-30 10:07:33,586 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-30 10:07:33,648 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-30 10:07:34,806 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-30 10:07:34,889 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-30 10:07:35,043 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-30 10:07:35,054 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-05-30 10:07:42,963 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-05-30 10:07:44,463 - nano-vectordb - INFO - Load (8480, 3072) data
+2025-05-30 10:07:44,527 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_entities.json'} 8480 data
+2025-05-30 10:07:45,647 - nano-vectordb - INFO - Load (11343, 3072) data
+2025-05-30 10:07:45,729 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
+2025-05-30 10:07:45,876 - nano-vectordb - INFO - Load (1309, 3072) data
+2025-05-30 10:07:45,886 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
