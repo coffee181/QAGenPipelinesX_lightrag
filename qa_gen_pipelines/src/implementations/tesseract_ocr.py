@@ -1,7 +1,7 @@
 """Tesseract OCR implementation."""
 
 import pytesseract
-from PIL import Image
+from PIL import Image, ImageFilter
 from pdf2image import convert_from_path
 from pathlib import Path
 from typing import List
@@ -28,6 +28,10 @@ class TesseractOCR(OCRInterface):
         self.lang = config.get("ocr.tesseract.lang", "chi_sim+eng")
         self.tesseract_config = config.get("ocr.tesseract.config", "--psm 6")
         self.timeout = config.get("ocr.tesseract.timeout", 30)
+        self.dpi = config.get("ocr.tesseract.dpi", 300)
+        self.enable_preprocess = config.get("ocr.tesseract.enable_preprocess", True)
+        self.binarize_threshold = config.get("ocr.tesseract.binarize_threshold", 180)
+        self.apply_median_filter = config.get("ocr.tesseract.apply_median_filter", True)
         
         # Test tesseract installation
         try:
@@ -53,7 +57,7 @@ class TesseractOCR(OCRInterface):
             logger.info(f"Starting OCR extraction for: {pdf_path}")
             
             # Convert PDF to images
-            images = convert_from_path(str(pdf_path))
+            images = convert_from_path(str(pdf_path), dpi=self.dpi)
             logger.info(f"Converted PDF to {len(images)} images")
             
             extracted_text = []
@@ -61,9 +65,15 @@ class TesseractOCR(OCRInterface):
             # Process each page
             for i, image in enumerate(tqdm(images, desc="Processing pages")):
                 try:
+                    processed_image = (
+                        self._preprocess_image(image)
+                        if self.enable_preprocess
+                        else image
+                    )
+
                     # Extract text from image
                     text = pytesseract.image_to_string(
-                        image,
+                        processed_image,
                         lang=self.lang,
                         config=self.tesseract_config,
                         timeout=self.timeout
@@ -165,6 +175,20 @@ class TesseractOCR(OCRInterface):
             
         except Exception as e:
             raise OCRError(f"Batch processing failed: {e}")
+
+    def _preprocess_image(self, image: Image.Image) -> Image.Image:
+        """
+        Preprocess image to improve OCR accuracy.
+        Converts to grayscale, optional denoising, and binarizes via threshold.
+        """
+        gray = image.convert("L")
+        if self.apply_median_filter:
+            gray = gray.filter(ImageFilter.MedianFilter(size=3))
+
+        # Binarize image using simple threshold
+        threshold = max(0, min(255, int(self.binarize_threshold)))
+        bw = gray.point(lambda x: 255 if x > threshold else 0, "1")
+        return bw
     
     def is_supported_format(self, file_path: Path) -> bool:
         """

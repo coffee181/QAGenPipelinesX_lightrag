@@ -2,10 +2,19 @@
 
 # OCR Configuration
 ocr:
+  provider: "tesseract"
   tesseract:
     lang: "chi_sim+eng"  # 支持中英文
     config: "--psm 6"    # Page segmentation mode
     timeout: 30          # 超时时间(秒)
+    dpi: 300              # PDF 转图片时的分辨率
+    enable_preprocess: true  # 是否在OCR前进行图像预处理
+    binarize_threshold: 180  # 二值化阈值(0-255)
+    apply_median_filter: true  # 是否使用中值滤波去噪
+  paddle:
+    lang: "chinese_english"  # PaddleOCR 中英混合模型
+    use_angle_cls: true
+    dpi: 300
 
 # Text Chunking Configuration
 text_chunker:
@@ -31,6 +40,12 @@ question_generator:
     temperature: 0.7
     timeout: 60
     questions_per_chunk: 30
+    enable_kg_context: true
+    max_context_entities: 3
+    max_context_relations: 2
+    max_context_snippets: 2
+    context_snippet_chars: 200
+    max_related_chunk_ids: 6
   
   # 本地模型配置
   local:
@@ -40,6 +55,12 @@ question_generator:
     temperature: 0.7
     timeout: 30000  # 本地模型需要更长时间（500分钟，约8.3小时）
     questions_per_chunk: 10  # 减少问题数量以加快生成速度
+    enable_kg_context: true
+    max_context_entities: 3
+    max_context_relations: 2
+    max_context_snippets: 2
+    context_snippet_chars: 200
+    max_related_chunk_ids: 6
 
 # RAG Configuration
 rag:
@@ -95,6 +116,8 @@ prompts:
     <文档内容>
     {text}
     </文档内容>
+
+    请同时结合“知识图谱参考”中的实体、关系与相关片段，与文档原文一起生成问题，确保覆盖多来源的关键信息。
     
     ⚠️ 【严格禁止】
     1. ❌ 绝对不要编造、虚构、推测任何文档中没有的型号、参数或信息

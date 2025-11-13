@@ -3,8 +3,9 @@
 import uuid
 import os
 import asyncio
+import re
 from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Set
 from datetime import datetime
 from loguru import logger
 from tqdm import tqdm
@@ -79,6 +80,11 @@ from ..models.document import Document
 from ..models.question import Question
 from ..models.qa_pair import QAPair, QASet
 from ..utils.config import ConfigManager
+from ..utils.lightrag_utils import (
+    compute_lightrag_chunk_id,
+    build_chunk_citation,
+    extract_chunk_ids_from_source,
+)
 
 
 class LightRAGImplementation(RAGInterface):
@@ -107,6 +113,11 @@ class LightRAGImplementation(RAGInterface):
         self.retrieval_cache = {}  # question_hash -> retrieved_context
         self.cache_hits = 0
         self.cache_misses = 0
+        self.max_citations_per_answer = int(
+            config.get("rag.lightrag.max_citations_per_answer", 5)
+        )
+        if self.max_citations_per_answer < 0:
+            self.max_citations_per_answer = 0
         
         logger.info(f"RAG cache {'enabled' if self.enable_cache else 'disabled'}")
 
@@ -546,7 +557,7 @@ class LightRAGImplementation(RAGInterface):
                 response = loop.run_until_complete(
                     asyncio.wait_for(
                         self.rag.aquery(question, param=QueryParam(mode="naive")),
-                        timeout=30.0  # 30 second timeout
+                        timeout=120.0  # extend timeout for complex queries
                     )
                 )
                 logger.info("Query completed with naive mode")
@@ -563,7 +574,7 @@ class LightRAGImplementation(RAGInterface):
                     response = loop.run_until_complete(
                         asyncio.wait_for(
                             self.rag.aquery(question, param=QueryParam(mode="local")),
-                            timeout=15.0  # Shorter timeout for fallback
+                            timeout=60.0  # extended fallback timeout
                         )
                     )
                     logger.info("Query completed with local mode")
@@ -629,53 +640,243 @@ class LightRAGImplementation(RAGInterface):
             RAGError: If QA generation fails
         """
         try:
-            logger.info(f"Generating QA pairs for {len(questions)} questions")
+            if not questions:
+                raise RAGError("No questions provided for QA generation")
 
-            qa_pairs = []
+            logger.info(f"Generating QA pairs for {len(questions)} questions via LightRAG")
+
+            qa_pairs: List[QAPair] = []
+            document_ids: set[str] = set(
+                filter(None, (getattr(q, "source_document", None) for q in questions))
+            )
 
             for question in tqdm(questions, desc="Generating QA pairs"):
                 try:
-                    # Generate answer using RAG
-                    answer = self.query_single_question(question.text)
+                    question_text = getattr(question, "content", None) or getattr(
+                        question, "text", None
+                    )
+                    if not question_text:
+                        logger.warning(
+                            f"Question {getattr(question, 'question_id', 'unknown')} missing text content; skipping"
+                        )
+                        continue
 
-                    # Create QA pair
-                    qa_pair = QAPair(
-                        question_id=question.question_id,
-                        question=question.text,
-                        answer=answer,
-                        source=question.source,
-                        confidence=0.8,  # Default confidence for LightRAG
-                        metadata={
-                            "question_type": question.question_type,
-                            "difficulty": question.difficulty,
-                            "category": question.category,
-                            "tags": question.tags
-                        }
+                    source_document = getattr(question, "source_document", None)
+                    answer = self.query_single_question(
+                        question_text, source_document=source_document
                     )
 
+                    base_metadata = getattr(question, "metadata", {}) or {}
+                    metadata: Dict[str, Any] = dict(base_metadata)
+                    if "citations" in metadata and isinstance(metadata["citations"], list):
+                        metadata["citations"] = list(metadata["citations"])
+
+                    for attr_name in ("question_type", "difficulty", "category", "tags"):
+                        value = getattr(question, attr_name, None)
+                        if value is not None and attr_name not in metadata:
+                            metadata[attr_name] = value
+
+                    chunk_id = metadata.get("lightrag_chunk_id")
+                    if not chunk_id:
+                        source_chunk_content = getattr(
+                            question, "source_chunk_content", None
+                        ) or base_metadata.get("source_chunk_content")
+                        if source_chunk_content:
+                            chunk_id = compute_lightrag_chunk_id(source_chunk_content)
+                    if chunk_id:
+                        metadata["lightrag_chunk_id"] = chunk_id
+
+                    related_chunk_ids = self._collect_related_chunk_ids(
+                        question, chunk_id
+                    )
+                    if related_chunk_ids:
+                        citations: List[Dict[str, Any]] = []
+                        for related_chunk_id in related_chunk_ids:
+                            if (
+                                self.max_citations_per_answer > 0
+                                and len(citations) >= self.max_citations_per_answer
+                            ):
+                                break
+                            chunk_data = self._fetch_chunk_data(related_chunk_id)
+                            citation = build_chunk_citation(related_chunk_id, chunk_data)
+                            if citation:
+                                citations.append(citation)
+                        if citations:
+                            metadata["citations"] = citations
+
+                    source_chunk_id = getattr(question, "source_chunk_id", None)
+                    if source_chunk_id and "source_chunk_id" not in metadata:
+                        metadata["source_chunk_id"] = source_chunk_id
+
+                    qa_pair = QAPair(
+                        question_id=getattr(question, "question_id", str(uuid.uuid4())),
+                        question=question_text,
+                        answer=answer,
+                        source_document=source_document or "unknown",
+                        confidence_score=0.8,
+                        metadata=metadata,
+                    )
                     qa_pairs.append(qa_pair)
 
                 except Exception as e:
-                    logger.error(f"Failed to generate QA pair for question {question.question_id}: {e}")
+                    logger.error(
+                        f"Failed to generate QA pair for question {getattr(question, 'question_id', 'unknown')}: {e}"
+                    )
                     continue
 
-            # Create QA set
+            if not qa_pairs:
+                raise RAGError("Failed to generate QA pairs for all questions")
+
+            if len(document_ids) == 1:
+                document_id = next(iter(document_ids))
+            elif not document_ids:
+                document_id = "unknown"
+            else:
+                document_id = "multiple_documents"
+
             qa_set = QASet(
+                document_id=document_id,
                 qa_pairs=qa_pairs,
-                source="LightRAG",
                 created_at=datetime.now(),
-                metadata={
-                    "total_questions": len(questions),
-                    "successful_pairs": len(qa_pairs),
-                    "rag_type": "LightRAG"
-                }
             )
 
-            logger.info(f"Generated {len(qa_pairs)} QA pairs")
+            logger.info(
+                f"Generated {len(qa_pairs)} QA pairs (documents: {document_id})"
+            )
             return qa_set
 
         except Exception as e:
             raise RAGError(f"Failed to generate QA pairs: {e}")
+
+    def _fetch_chunk_data(self, chunk_id: Optional[str]) -> Optional[Dict[str, Any]]:
+        """从 LightRAG text_chunks 存储中读取 chunk 信息。"""
+        if not chunk_id or not self.rag:
+            return None
+
+        text_chunks = getattr(self.rag, "text_chunks", None)
+        if text_chunks is None:
+            return None
+
+        try:
+            loop = asyncio.get_event_loop()
+            if loop.is_closed():
+                raise RuntimeError("Event loop is closed")
+        except RuntimeError:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+
+        try:
+            return loop.run_until_complete(
+                asyncio.wait_for(text_chunks.get_by_id(chunk_id), timeout=5.0)
+            )
+        except asyncio.TimeoutError:
+            logger.warning(f"Timeout while fetching chunk metadata for {chunk_id}")
+        except Exception as e:
+            logger.debug(f"Failed to fetch chunk metadata for {chunk_id}: {e}")
+        return None
+
+    def _collect_related_chunk_ids(
+        self, question: Question, primary_chunk_id: Optional[str]
+    ) -> List[str]:
+        """
+        汇总与问题相关的 chunk_id（包括主分片与实体关联分片）。
+        """
+        chunk_ids: Set[str] = set()
+        if primary_chunk_id:
+            chunk_ids.add(primary_chunk_id)
+
+        metadata = getattr(question, "metadata", {}) or {}
+
+        existing_citations = metadata.get("citations")
+        if isinstance(existing_citations, list):
+            for citation in existing_citations:
+                if isinstance(citation, dict):
+                    cid = citation.get("chunk_id")
+                    if isinstance(cid, str) and cid.startswith("chunk-"):
+                        chunk_ids.add(cid)
+
+        # 追加显式提供的 chunk 列表
+        for key in ("related_chunk_ids", "additional_chunk_ids", "chunk_ids"):
+            extra_ids = metadata.get(key)
+            if isinstance(extra_ids, (list, tuple, set)):
+                for cid in extra_ids:
+                    if isinstance(cid, str) and cid.startswith("chunk-"):
+                        chunk_ids.add(cid)
+
+        # 基于实体检索关联 chunk
+        related_entities = getattr(question, "related_entities", None)
+        if not related_entities:
+            related_entities = metadata.get("related_entities", [])
+        if isinstance(related_entities, (list, tuple, set)):
+            for entity_name in related_entities:
+                if isinstance(entity_name, str) and entity_name.strip():
+                    chunk_ids.update(self._fetch_entity_chunk_ids(entity_name.strip()))
+
+        # 确保主分片排在第一位
+        ordered_chunk_ids: List[str] = []
+        if primary_chunk_id and primary_chunk_id in chunk_ids:
+            ordered_chunk_ids.append(primary_chunk_id)
+        for cid in sorted(chunk_ids):
+            if cid == primary_chunk_id:
+                continue
+            ordered_chunk_ids.append(cid)
+
+        return ordered_chunk_ids
+
+    def _fetch_entity_chunk_ids(self, entity_name: str) -> Set[str]:
+        """
+        根据实体在知识图谱中的信息提取其关联的 chunk_id。
+        """
+        chunk_ids: Set[str] = set()
+        node_data = self._fetch_graph_node(entity_name)
+        if not node_data:
+            return chunk_ids
+
+        raw_source = node_data.get("source_id")
+        if raw_source:
+            parsed_ids = extract_chunk_ids_from_source(raw_source)
+            if (
+                self.max_citations_per_answer > 0
+                and len(parsed_ids) > self.max_citations_per_answer
+            ):
+                parsed_ids = parsed_ids[: self.max_citations_per_answer]
+            chunk_ids.update(parsed_ids)
+
+        if (
+            self.max_citations_per_answer > 0
+            and len(chunk_ids) > self.max_citations_per_answer
+        ):
+            # 避免单个实体贡献过多引用
+            chunk_ids = set(list(chunk_ids)[: self.max_citations_per_answer])
+
+        return chunk_ids
+
+    def _fetch_graph_node(self, node_id: str) -> Optional[Dict[str, Any]]:
+        """读取知识图谱中的节点数据。"""
+        if not node_id or not self.rag:
+            return None
+
+        graph = getattr(self.rag, "chunk_entity_relation_graph", None)
+        if graph is None:
+            return None
+
+        try:
+            loop = asyncio.get_event_loop()
+            if loop.is_closed():
+                raise RuntimeError("Event loop is closed")
+        except RuntimeError:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+
+        try:
+            return loop.run_until_complete(
+                asyncio.wait_for(graph.get_node(node_id), timeout=5.0)
+            )
+        except asyncio.TimeoutError:
+            logger.warning(f"Timeout while fetching entity node for {node_id}")
+        except Exception as e:
+            logger.debug(f"Failed to fetch entity node for {node_id}: {e}")
+        return None
 
     def get_knowledge_base_stats(self) -> Dict[str, Any]:
         """

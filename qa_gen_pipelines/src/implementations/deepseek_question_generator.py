@@ -2,7 +2,7 @@
 
 import re
 import uuid
-from typing import List
+from typing import Any, Dict, List, Optional, Sequence, TYPE_CHECKING
 from datetime import datetime
 from loguru import logger
 from openai import OpenAI
@@ -11,12 +11,20 @@ from ..interfaces.question_generator_interface import QuestionGeneratorInterface
 from ..models.document import DocumentChunk
 from ..models.question import Question, QuestionSet
 from ..utils.config import ConfigManager
+from ..utils.lightrag_utils import compute_lightrag_chunk_id, LightRAGContextBuilder
+
+if TYPE_CHECKING:
+    from .lightrag_rag import LightRAGImplementation
 
 
 class DeepSeekQuestionGenerator(QuestionGeneratorInterface):
     """DeepSeek-based question generation implementation."""
 
-    def __init__(self, config: ConfigManager):
+    def __init__(
+        self,
+        config: ConfigManager,
+        rag: Optional["LightRAGImplementation"] = None,
+    ):
         """
         Initialize DeepSeek question generator.
 
@@ -24,12 +32,46 @@ class DeepSeekQuestionGenerator(QuestionGeneratorInterface):
             config: Configuration object
         """
         self.config = config
+        self.rag = rag
         self.api_key = config.get("question_generator.deepseek.api_key")
         self.model = config.get("question_generator.deepseek.model", "deepseek-chat")
         self.max_tokens = config.get("question_generator.deepseek.max_tokens", 2048)
         self.temperature = config.get("question_generator.deepseek.temperature", 0.7)
         self.timeout = config.get("question_generator.deepseek.timeout", 60)
         self.questions_per_chunk = config.get("question_generator.deepseek.questions_per_chunk", 10)
+
+        self.enable_kg_context = config.get(
+            "question_generator.deepseek.enable_kg_context", True
+        )
+        self.max_context_entities = config.get(
+            "question_generator.deepseek.max_context_entities", 3
+        )
+        self.max_context_relations = config.get(
+            "question_generator.deepseek.max_context_relations", 2
+        )
+        self.max_context_snippets = config.get(
+            "question_generator.deepseek.max_context_snippets", 2
+        )
+        self.context_snippet_chars = config.get(
+            "question_generator.deepseek.context_snippet_chars", 200
+        )
+        self.max_related_chunk_ids = config.get(
+            "question_generator.deepseek.max_related_chunk_ids", 6
+        )
+
+        if not rag or not getattr(rag, "rag", None):
+            self.enable_kg_context = False
+
+        self.context_builder: Optional[LightRAGContextBuilder] = None
+        if self.enable_kg_context:
+            self.context_builder = LightRAGContextBuilder(
+                rag,
+                max_entities=self.max_context_entities,
+                max_relations=self.max_context_relations,
+                max_snippets=self.max_context_snippets,
+                snippet_chars=self.context_snippet_chars,
+                max_related_chunk_ids=self.max_related_chunk_ids,
+            )
 
         # Load prompts from config
         self.system_prompt = config.get("prompts.system_prompt", "")
@@ -62,8 +104,16 @@ class DeepSeekQuestionGenerator(QuestionGeneratorInterface):
         try:
             logger.info(f"Generating questions for chunk: {chunk.chunk_id}")
 
+            context_package = self._build_context_for_chunk(chunk)
+            prompt_text = self._compose_prompt_text(
+                chunk.content, context_package["prompt_context"]
+            )
+
             # Prepare prompt with chunk content
-            human_message = self.human_prompt.format(text=chunk.content, questions_per_chunk=self.questions_per_chunk)
+            human_message = self.human_prompt.format(
+                text=prompt_text,
+                questions_per_chunk=self.questions_per_chunk,
+            )
 
             # Call DeepSeek API
             response = self.client.chat.completions.create(
@@ -82,7 +132,11 @@ class DeepSeekQuestionGenerator(QuestionGeneratorInterface):
             logger.info(f"Received response from DeepSeek: {len(response_content)} characters")
 
             # Parse questions from response
-            questions = self.parse_questions_from_response(response_content, chunk)
+            questions = self.parse_questions_from_response(
+                response_content,
+                chunk,
+                context_package,
+            )
 
             logger.info(f"Generated {len(questions)} questions for chunk: {chunk.chunk_id}")
             return questions
@@ -133,46 +187,170 @@ class DeepSeekQuestionGenerator(QuestionGeneratorInterface):
         except Exception as e:
             raise QuestionGenerationError(f"Failed to generate questions from chunks: {e}")
 
-    def parse_questions_from_response(self, response: str, source_chunk: DocumentChunk) -> List[Question]:
+    def _extract_candidate_entities(self, text: str) -> List[str]:
+        """从问题文本中提取潜在实体或型号。"""
+        if not text:
+            return []
+
+        candidates: List[str] = []
+        patterns = [
+            r"[A-Z]{2,}\d+[A-Z]*",
+            r"[A-Z]+\d+[A-Z0-9]*",
+            r"[A-Z][A-Za-z0-9\-]{2,}",
+        ]
+
+        matched_tokens = set()
+        for pattern in patterns:
+            matched_tokens.update(re.findall(pattern, text))
+
+        for token in re.findall(r"\b[^\s]+\b", text):
+            normalized = token.strip(".,;:!?，。；：（）()[]{}“”\"'")
+            if normalized in matched_tokens and normalized not in candidates:
+                candidates.append(normalized)
+
+        return candidates
+
+    def _empty_context_package(self) -> Dict[str, Any]:
+        return {
+            "prompt_context": "",
+            "related_entities": [],
+            "related_chunk_ids": [],
+        }
+
+    def _build_context_for_chunk(self, chunk: DocumentChunk) -> Dict[str, Any]:
+        if not self.context_builder:
+            return self._empty_context_package()
+
+        chunk_id = compute_lightrag_chunk_id(chunk.content)
+        if not chunk_id:
+            return self._empty_context_package()
+
+        try:
+            context = self.context_builder.build_context(chunk_id)
+        except Exception as e:
+            logger.debug(f"Failed to build KG context for chunk {chunk.chunk_id}: {e}")
+            context = LightRAGContextBuilder._empty_context()
+
+        if not context:
+            return self._empty_context_package()
+
+        return {
+            "prompt_context": context.get("prompt_context", ""),
+            "related_entities": context.get("related_entities", []) or [],
+            "related_chunk_ids": context.get("related_chunk_ids", []) or [],
+        }
+
+    def _compose_prompt_text(self, chunk_text: str, knowledge_context: str) -> str:
+        if knowledge_context:
+            return f"{chunk_text}\n\n<知识图谱参考>\n{knowledge_context}"
+        return chunk_text
+
+    def _build_question_object(
+        self,
+        question_content: str,
+        source_chunk: DocumentChunk,
+        question_index: int,
+        base_related_entities: Sequence[str],
+        base_related_chunk_ids: Sequence[str],
+        primary_chunk_id: Optional[str],
+        knowledge_used: bool,
+    ) -> Question:
+        candidate_entities = self._extract_candidate_entities(question_content)
+        combined_entities = list(
+            dict.fromkeys(list(base_related_entities) + candidate_entities)
+        )
+
+        metadata: Dict[str, Any] = {"has_answer": False}
+        if primary_chunk_id:
+            metadata["lightrag_chunk_id"] = primary_chunk_id
+        if combined_entities:
+            metadata["related_entities"] = combined_entities
+        if base_related_chunk_ids:
+            metadata["related_chunk_ids"] = list(
+                dict.fromkeys(base_related_chunk_ids)
+            )
+        if knowledge_used:
+            metadata["knowledge_context_used"] = True
+
+        return Question(
+            question_id=str(uuid.uuid4()),
+            content=question_content,
+            source_document=source_chunk.document_id,
+            source_chunk_id=source_chunk.chunk_id,
+            question_index=question_index,
+            created_at=datetime.now(),
+            metadata=metadata,
+            source_chunk_content=source_chunk.content,
+            related_entities=combined_entities,
+        )
+
+    def _clean_think_tags(self, text: str) -> str:
+        if not text:
+            return ""
+
+        cleaned_text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL | re.IGNORECASE)
+        cleaned_text = re.sub(r"\n\s*\n\s*\n+", "\n\n", cleaned_text)
+        return cleaned_text.strip()
+
+    def parse_questions_from_response(
+        self,
+        response: str,
+        source_chunk: DocumentChunk,
+        context_package: Dict[str, Any],
+    ) -> List[Question]:
         """
         Parse questions from LLM response.
 
         Args:
             response: Raw response from LLM
             source_chunk: Source chunk for the questions
+            context_package: Knowledge graph context package
 
         Returns:
             List of parsed Question objects
-
-        Raises:
-            QuestionGenerationError: If parsing fails
         """
         try:
-            questions = []
+            cleaned_response = self._clean_think_tags(response)
+            questions: List[Question] = []
 
-            # Pattern to match questions starting with "问题N："
-            question_pattern = r'问题(\d+)：(.+?)(?=问题\d+：|$)'
+            base_related_entities = list(
+                dict.fromkeys(context_package.get("related_entities", []))
+            )
+            base_related_chunk_ids = list(
+                dict.fromkeys(context_package.get("related_chunk_ids", []))
+            )
+            primary_chunk_id = compute_lightrag_chunk_id(source_chunk.content)
+            if primary_chunk_id and primary_chunk_id not in base_related_chunk_ids:
+                base_related_chunk_ids = [primary_chunk_id] + base_related_chunk_ids
+            knowledge_used = bool(context_package.get("prompt_context"))
 
-            matches = re.findall(question_pattern, response, re.DOTALL)
+            question_pattern = r"问题(\d+)：(.+?)(?=问题\d+：|$)"
+            matches = re.findall(question_pattern, cleaned_response, re.DOTALL)
 
             for match in matches:
                 question_num = int(match[0])
                 question_content = match[1].strip()
 
                 if question_content:
-                    question = Question(
-                        question_id=str(uuid.uuid4()),
-                        content=f"问题{question_num}：{question_content}",
-                        source_document=source_chunk.document_id,
-                        source_chunk_id=source_chunk.chunk_id,
+                    formatted_content = f"问题{question_num}：{question_content}"
+                    question = self._build_question_object(
+                        question_content=formatted_content,
+                        source_chunk=source_chunk,
                         question_index=question_num,
-                        created_at=datetime.now()
+                        base_related_entities=base_related_entities,
+                        base_related_chunk_ids=base_related_chunk_ids,
+                        primary_chunk_id=primary_chunk_id,
+                        knowledge_used=knowledge_used,
                     )
                     questions.append(question)
 
-            # If no structured questions found, try to extract any questions
             if not questions:
-                questions = self._extract_fallback_questions(response, source_chunk)
+                questions = self._extract_fallback_questions(
+                    cleaned_response,
+                    source_chunk,
+                    context_package,
+                    start_index=1,
+                )
 
             logger.info(f"Parsed {len(questions)} questions from response")
             return questions
@@ -227,52 +405,59 @@ class DeepSeekQuestionGenerator(QuestionGeneratorInterface):
         self.human_prompt = human_prompt
         logger.info("Custom prompts updated")
 
-    def _extract_fallback_questions(self, response: str, source_chunk: DocumentChunk) -> List[Question]:
+    def _extract_fallback_questions(
+        self,
+        response: str,
+        source_chunk: DocumentChunk,
+        context_package: Dict[str, Any],
+        start_index: int = 1,
+    ) -> List[Question]:
         """
         Extract questions using fallback method when structured parsing fails.
-
-        Args:
-            response: Raw response text
-            source_chunk: Source chunk
-
-        Returns:
-            List of Question objects
         """
-        questions = []
+        questions: List[Question] = []
+        lines = response.split("\n")
+        question_index = start_index
 
-        # Split by lines and look for question-like content
-        lines = response.split('\n')
-        question_index = 1
+        base_related_entities = list(
+            dict.fromkeys(context_package.get("related_entities", []))
+        )
+        base_related_chunk_ids = list(
+            dict.fromkeys(context_package.get("related_chunk_ids", []))
+        )
+        primary_chunk_id = compute_lightrag_chunk_id(source_chunk.content)
+        if primary_chunk_id and primary_chunk_id not in base_related_chunk_ids:
+            base_related_chunk_ids = [primary_chunk_id] + base_related_chunk_ids
+        knowledge_used = bool(context_package.get("prompt_context"))
 
         for line in lines:
             line = line.strip()
-
-            # Skip empty lines
             if not line:
                 continue
 
-            # Look for lines that might be questions
-            if ('?' in line or '？' in line or
-                    line.startswith(('如何', '什么', '为什么', '怎样', '哪些', '是否')) or
-                    '问题' in line):
+            if (
+                "?" in line
+                or "？" in line
+                or line.startswith(("如何", "什么", "为什么", "怎样", "哪些", "是否"))
+                or "问题" in line
+            ):
+                cleaned_line = re.sub(r"^[\d\.\-\*\s]+", "", line)
 
-                # Clean up the line
-                cleaned_line = re.sub(r'^[\d\.\-\*\s]+', '', line)  # Remove numbering
-
-                if len(cleaned_line) > 10:  # Minimum question length
-                    question = Question(
-                        question_id=str(uuid.uuid4()),
-                        content=f"问题{question_index}：{cleaned_line}",
-                        source_document=source_chunk.document_id,
-                        source_chunk_id=source_chunk.chunk_id,
+                if len(cleaned_line) > 10:
+                    formatted_content = f"问题{question_index}：{cleaned_line}"
+                    question = self._build_question_object(
+                        question_content=formatted_content,
+                        source_chunk=source_chunk,
                         question_index=question_index,
-                        created_at=datetime.now()
+                        base_related_entities=base_related_entities,
+                        base_related_chunk_ids=base_related_chunk_ids,
+                        primary_chunk_id=primary_chunk_id,
+                        knowledge_used=knowledge_used,
                     )
                     questions.append(question)
                     question_index += 1
 
-                    # Limit to expected number of questions
                     if len(questions) >= self.questions_per_chunk:
                         break
 
-        return questions 
+        return questions

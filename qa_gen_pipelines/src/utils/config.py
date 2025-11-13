@@ -94,11 +94,21 @@ class ConfigManager:
         """Get default configuration."""
         return {
             "ocr": {
+                "provider": "tesseract",
                 "tesseract": {
                     "lang": "chi_sim+eng",
                     "config": "--psm 6",
-                    "timeout": 30
-                }
+                    "timeout": 30,
+                    "dpi": 300,
+                    "enable_preprocess": True,
+                    "binarize_threshold": 180,
+                    "apply_median_filter": True,
+                },
+                "paddle": {
+                    "lang": "chinese_english",  # PaddleOCR 中英混合模型
+                    "use_angle_cls": True,
+                    "dpi": 300,
+                },
             },
             "text_chunker": {
                 "max_chunk_size": 2000,

@@ -3,7 +3,7 @@
 import re
 import uuid
 import requests
-from typing import List
+from typing import Any, Dict, List, Optional, Sequence, TYPE_CHECKING
 from datetime import datetime
 from loguru import logger
 
@@ -11,6 +11,10 @@ from ..interfaces.question_generator_interface import QuestionGeneratorInterface
 from ..models.document import DocumentChunk
 from ..models.question import Question, QuestionSet
 from ..utils.config import ConfigManager
+from ..utils.lightrag_utils import compute_lightrag_chunk_id, LightRAGContextBuilder
+
+if TYPE_CHECKING:
+    from .lightrag_rag import LightRAGImplementation
 
 # 导入超时配置
 try:
@@ -27,7 +31,11 @@ except ImportError:
 class LocalQuestionGenerator(QuestionGeneratorInterface):
     """基于Ollama的本地问题生成器实现"""
 
-    def __init__(self, config: ConfigManager):
+    def __init__(
+        self,
+        config: ConfigManager,
+        rag: Optional["LightRAGImplementation"] = None,
+    ):
         """
         初始化本地模型问题生成器
 
@@ -35,6 +43,7 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
             config: 配置对象
         """
         self.config = config
+        self.rag = rag
         
         # Ollama配置
         self.model_name = config.get("question_generator.local.model_name", "deepseek-r1:32b")
@@ -43,6 +52,40 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
         self.temperature = config.get("question_generator.local.temperature", 0.7)
         self.timeout = config.get("question_generator.local.timeout", 120)
         self.questions_per_chunk = config.get("question_generator.local.questions_per_chunk", 10)
+
+        # 知识图谱上下文配置
+        self.enable_kg_context = config.get(
+            "question_generator.local.enable_kg_context", True
+        )
+        self.max_context_entities = config.get(
+            "question_generator.local.max_context_entities", 3
+        )
+        self.max_context_relations = config.get(
+            "question_generator.local.max_context_relations", 2
+        )
+        self.max_context_snippets = config.get(
+            "question_generator.local.max_context_snippets", 2
+        )
+        self.context_snippet_chars = config.get(
+            "question_generator.local.context_snippet_chars", 200
+        )
+        self.max_related_chunk_ids = config.get(
+            "question_generator.local.max_related_chunk_ids", 6
+        )
+
+        if not rag or not getattr(rag, "rag", None):
+            self.enable_kg_context = False
+
+        self.context_builder: Optional[LightRAGContextBuilder] = None
+        if self.enable_kg_context:
+            self.context_builder = LightRAGContextBuilder(
+                rag,
+                max_entities=self.max_context_entities,
+                max_relations=self.max_context_relations,
+                max_snippets=self.max_context_snippets,
+                snippet_chars=self.context_snippet_chars,
+                max_related_chunk_ids=self.max_related_chunk_ids,
+            )
 
         # 加载提示词
         self.system_prompt = config.get("prompts.system_prompt", "")
@@ -81,9 +124,14 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
             logger.info(f"📄 文本块长度: {len(chunk.content)} 字符")
             logger.info(f"🎯 目标问题数量: {self.questions_per_chunk}")
 
+            context_package = self._build_context_for_chunk(chunk)
+            prompt_text = self._compose_prompt_text(
+                chunk.content, context_package["prompt_context"]
+            )
+
             # 准备提示词
             human_message = self.human_prompt.format(
-                text=chunk.content, 
+                text=prompt_text,
                 questions_per_chunk=self.questions_per_chunk
             )
             
@@ -97,7 +145,9 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
             logger.info(f"📋 原始响应预览: {response_content[:200]}...")
 
             # 解析问题
-            questions = self.parse_questions_from_response(response_content, chunk)
+            questions = self.parse_questions_from_response(
+                response_content, chunk, context_package
+            )
 
             logger.info(f"🎉 成功为块 {chunk.chunk_id} 生成了 {len(questions)} 个问题")
             
@@ -109,6 +159,105 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
 
         except Exception as e:
             raise QuestionGenerationError(f"为块 {chunk.chunk_id} 生成问题失败: {e}")
+
+    def _extract_candidate_entities(self, text: str) -> List[str]:
+        """从问题文本中提取可能的实体名称或型号。"""
+        if not text:
+            return []
+
+        candidates: List[str] = []
+        patterns = [
+            r"[A-Z]{2,}\d+[A-Z]*",
+            r"[A-Z]+\d+[A-Z0-9]*",
+            r"[A-Z][A-Za-z0-9\-]{2,}",
+        ]
+
+        matched_tokens = set()
+        for pattern in patterns:
+            matched_tokens.update(re.findall(pattern, text))
+
+        # 按出现顺序去重
+        for token in re.findall(r"\b[^\s]+\b", text):
+            normalized = token.strip(".,;:!?，。；：（）()[]{}“”\"'")
+            if normalized in matched_tokens and normalized not in candidates:
+                candidates.append(normalized)
+
+        return candidates
+
+    def _empty_context_package(self) -> Dict[str, Any]:
+        return {
+            "prompt_context": "",
+            "related_entities": [],
+            "related_chunk_ids": [],
+        }
+
+    def _build_context_for_chunk(self, chunk: DocumentChunk) -> Dict[str, Any]:
+        if not self.context_builder:
+            return self._empty_context_package()
+
+        chunk_id = compute_lightrag_chunk_id(chunk.content)
+        if not chunk_id:
+            return self._empty_context_package()
+
+        try:
+            context = self.context_builder.build_context(chunk_id)
+        except Exception as e:
+            logger.debug(f"构建知识图谱上下文失败（chunk: {chunk.chunk_id}）: {e}")
+            context = LightRAGContextBuilder._empty_context()
+
+        if not context:
+            return self._empty_context_package()
+
+        return {
+            "prompt_context": context.get("prompt_context", ""),
+            "related_entities": context.get("related_entities", []) or [],
+            "related_chunk_ids": context.get("related_chunk_ids", []) or [],
+        }
+
+    def _compose_prompt_text(self, chunk_text: str, knowledge_context: str) -> str:
+        if knowledge_context:
+            return f"{chunk_text}\n\n<知识图谱参考>\n{knowledge_context}"
+        return chunk_text
+
+    def _build_question_object(
+        self,
+        question_content: str,
+        source_chunk: DocumentChunk,
+        question_index: int,
+        base_related_entities: Sequence[str],
+        base_related_chunk_ids: Sequence[str],
+        primary_chunk_id: Optional[str],
+        knowledge_used: bool,
+    ) -> Question:
+        candidate_entities = self._extract_candidate_entities(question_content)
+        combined_entities = list(
+            dict.fromkeys(list(base_related_entities) + candidate_entities)
+        )
+
+        metadata: Dict[str, Any] = {"has_answer": False}
+        if primary_chunk_id:
+            metadata["lightrag_chunk_id"] = primary_chunk_id
+        if combined_entities:
+            metadata["related_entities"] = combined_entities
+        if base_related_chunk_ids:
+            metadata["related_chunk_ids"] = list(
+                dict.fromkeys(base_related_chunk_ids)
+            )
+        if knowledge_used:
+            metadata["knowledge_context_used"] = True
+
+        question = Question(
+            question_id=str(uuid.uuid4()),
+            content=question_content,
+            source_document=source_chunk.document_id,
+            source_chunk_id=source_chunk.chunk_id,
+            question_index=question_index,
+            created_at=datetime.now(),
+            metadata=metadata,
+            source_chunk_content=source_chunk.content,
+            related_entities=combined_entities,
+        )
+        return question
 
     def _call_ollama_api(self, prompt: str) -> str:
         """调用Ollama API"""
@@ -205,28 +354,31 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
         except Exception as e:
             raise QuestionGenerationError(f"从块生成问题失败: {e}")
 
-    def parse_questions_from_response(self, response: str, source_chunk: DocumentChunk) -> List[Question]:
+    def parse_questions_from_response(
+        self,
+        response: str,
+        source_chunk: DocumentChunk,
+        context_package: Dict[str, Any],
+    ) -> List[Question]:
         """
         从LLM响应中解析问题（只解析问题，不解析答案）
-
-        Args:
-            response: LLM的原始响应
-            source_chunk: 问题的源块
-
-        Returns:
-            解析的Question对象列表（不包含预生成的答案）
         """
         try:
-            # 首先清理<think>标签
             cleaned_response = self._clean_think_tags(response)
-            
-            questions = []
+            questions: List[Question] = []
 
-            # 新格式：匹配"问题N:"格式
-            # 问题1: [问题内容]
-            # 问题2: [问题内容]
-            # 改进：提取每一行，然后过滤掉无效内容
-            question_pattern = r'问题(\d+)[:\：]\s*(.+?)(?=\n\s*问题\d+[:\：]|$)'
+            base_related_entities = list(
+                dict.fromkeys(context_package.get("related_entities", []))
+            )
+            base_related_chunk_ids = list(
+                dict.fromkeys(context_package.get("related_chunk_ids", []))
+            )
+            primary_chunk_id = compute_lightrag_chunk_id(source_chunk.content)
+            if primary_chunk_id and primary_chunk_id not in base_related_chunk_ids:
+                base_related_chunk_ids = [primary_chunk_id] + base_related_chunk_ids
+            knowledge_used = bool(context_package.get("prompt_context"))
+
+            question_pattern = r"问题(\d+)[:：]\s*(.+?)(?=\n\s*问题\d+[:：]|$)"
             question_matches = re.findall(question_pattern, cleaned_response, re.DOTALL)
 
             if question_matches:
@@ -234,72 +386,65 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
                 for match in question_matches:
                     question_num = int(match[0])
                     question_content = match[1].strip()
+                    question_content = re.sub(r"^问题[:：]\s*", "", question_content)
+                    question_content = re.sub(r"\n+", " ", question_content).strip()
 
-                    # 清理问题内容（移除可能的前缀和多余空白）
-                    question_content = re.sub(r'^问题[:\：]\s*', '', question_content)
-                    question_content = re.sub(r'\n+', ' ', question_content).strip()
-                    
-                    # 过滤掉无效内容：
-                    # 1. 标题行（markdown或分类标记）
-                    # 2. 太短的内容
-                    # 3. 不包含问号的内容
-                    # 4. 明显的分类标题
                     is_valid = (
-                        question_content and
-                        len(question_content) > 15 and
-                        ('？' in question_content or '?' in question_content) and
-                        not re.match(r'^#+\s', question_content) and
-                        not re.match(r'^(复杂|中等|简单|关联|深度|事实).*问题', question_content) and
-                        not question_content.startswith('【')
+                        question_content
+                        and len(question_content) > 15
+                        and ("？" in question_content or "?" in question_content)
+                        and not re.match(r"^#+\s", question_content)
+                        and not re.match(r"^(复杂|中等|简单|关联|深度|事实).*问题", question_content)
+                        and not question_content.startswith("【")
                     )
 
                     if is_valid:
-                        question = Question(
-                            question_id=str(uuid.uuid4()),
-                            content=question_content,
-                            source_document=source_chunk.document_id,
-                            source_chunk_id=source_chunk.chunk_id,
+                        question = self._build_question_object(
+                            question_content=question_content,
+                            source_chunk=source_chunk,
                             question_index=question_num,
-                            created_at=datetime.now(),
-                            metadata={"has_answer": False}  # 不使用预生成答案
+                            base_related_entities=base_related_entities,
+                            base_related_chunk_ids=base_related_chunk_ids,
+                            primary_chunk_id=primary_chunk_id,
+                            knowledge_used=knowledge_used,
                         )
                         questions.append(question)
                         logger.debug(f"✅ 有效问题 {question_num}: {question_content[:50]}...")
                     else:
                         logger.warning(f"⚠️ 跳过无效内容 {question_num}: {question_content[:50]}...")
-            
-            # 兼容旧格式：匹配"问答对N:"格式（但只提取问题部分）
+
             if not questions:
                 logger.info("⚠️ 未找到新格式问题，尝试兼容旧格式（问答对格式）...")
-                qa_pair_pattern = r'问答对(\d+)[:\：]\s*\n\s*问题[:\：]\s*(.+?)(?:\s*\n\s*答案[:\：]|(?=\n\s*问答对\d+|$))'
+                qa_pair_pattern = r"问答对(\d+)[:：]\s*\n\s*问题[:：]\s*(.+?)(?:\s*\n\s*答案[:：]|(?=\n\s*问答对\d+|$))"
                 qa_matches = re.findall(qa_pair_pattern, cleaned_response, re.DOTALL)
 
                 if qa_matches:
                     logger.info(f"✅ 找到旧格式问答对（仅提取问题）: {len(qa_matches)} 个")
                     for match in qa_matches:
                         qa_num = int(match[0])
-                        question_content = match[1].strip()
-
-                        # 清理问题内容
-                        question_content = re.sub(r'^问题[:\：]\s*', '', question_content)
+                        question_content = re.sub(r"^问题[:：]\s*", "", match[1]).strip()
 
                         if question_content:
-                            question = Question(
-                                question_id=str(uuid.uuid4()),
-                                content=question_content,
-                                source_document=source_chunk.document_id,
-                                source_chunk_id=source_chunk.chunk_id,
+                            question = self._build_question_object(
+                                question_content=question_content,
+                                source_chunk=source_chunk,
                                 question_index=qa_num,
-                                created_at=datetime.now(),
-                                metadata={"has_answer": False}  # 不使用预生成答案
+                                base_related_entities=base_related_entities,
+                                base_related_chunk_ids=base_related_chunk_ids,
+                                primary_chunk_id=primary_chunk_id,
+                                knowledge_used=knowledge_used,
                             )
                             questions.append(question)
                             logger.debug(f"问题 {qa_num}: {question_content[:50]}...")
 
-            # 如果还是没有找到，尝试提取任何问题
             if not questions:
                 logger.error("❌ 所有格式都未匹配，尝试fallback提取...")
-                questions = self._extract_fallback_questions(cleaned_response, source_chunk)
+                questions = self._extract_fallback_questions(
+                    cleaned_response,
+                    source_chunk,
+                    context_package,
+                    start_index=1,
+                )
 
             logger.info(f"从响应中解析出 {len(questions)} 个问题")
             return questions
@@ -375,7 +520,13 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
         self.human_prompt = human_prompt
         logger.info("自定义提示词已更新")
 
-    def _extract_fallback_questions(self, response: str, source_chunk: DocumentChunk) -> List[Question]:
+    def _extract_fallback_questions(
+        self,
+        response: str,
+        source_chunk: DocumentChunk,
+        context_package: Dict[str, Any],
+        start_index: int = 1,
+    ) -> List[Question]:
         """
         当结构化解析失败时使用备用方法提取问题
 
@@ -390,7 +541,18 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
 
         # 按行分割并查找类似问题的内容
         lines = response.split('\n')
-        question_index = 1
+        question_index = start_index
+
+        base_related_entities = list(
+            dict.fromkeys(context_package.get("related_entities", []))
+        )
+        base_related_chunk_ids = list(
+            dict.fromkeys(context_package.get("related_chunk_ids", []))
+        )
+        primary_chunk_id = compute_lightrag_chunk_id(source_chunk.content)
+        if primary_chunk_id and primary_chunk_id not in base_related_chunk_ids:
+            base_related_chunk_ids = [primary_chunk_id] + base_related_chunk_ids
+        knowledge_used = bool(context_package.get("prompt_context"))
 
         for line in lines:
             line = line.strip()
@@ -421,14 +583,14 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
 
                 # 必须有实质内容且包含问号
                 if len(cleaned_line) > 15 and ('?' in cleaned_line or '？' in cleaned_line):
-                    question = Question(
-                        question_id=str(uuid.uuid4()),
-                        content=cleaned_line,
-                        source_document=source_chunk.document_id,
-                        source_chunk_id=source_chunk.chunk_id,
+                    question = self._build_question_object(
+                        question_content=cleaned_line,
+                        source_chunk=source_chunk,
                         question_index=question_index,
-                        created_at=datetime.now(),
-                        metadata={"has_answer": False}
+                        base_related_entities=base_related_entities,
+                        base_related_chunk_ids=base_related_chunk_ids,
+                        primary_chunk_id=primary_chunk_id,
+                        knowledge_used=knowledge_used,
                     )
                     questions.append(question)
                     question_index += 1

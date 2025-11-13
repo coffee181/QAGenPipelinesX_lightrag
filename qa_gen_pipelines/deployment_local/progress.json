@@ -1,606 +1,279 @@
 {
   "sessions": {
-    "qa_20251101155749_9632_answers": {
-      "operation_type": "answer_generation",
-      "total_items": 20,
-      "completed_items": 10,
-      "failed_items": 10,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-11-01T16:10:27.199377",
-      "last_update": "2025-11-01T16:19:01.286864",
-      "status": "completed",
-      "metadata": {},
-      "percentage_milestones": [
-        {
-          "percentage": 10,
-          "timestamp": "2025-11-01T16:12:08.036854",
-          "completed_items": 2,
-          "total_items": 20
-        },
-        {
-          "percentage": 20,
-          "timestamp": "2025-11-01T16:12:53.577982",
-          "completed_items": 4,
-          "total_items": 20
-        },
-        {
-          "percentage": 30,
-          "timestamp": "2025-11-01T16:15:27.405240",
-          "completed_items": 6,
-          "total_items": 20
-        },
-        {
-          "percentage": 40,
-          "timestamp": "2025-11-01T16:17:16.419339",
-          "completed_items": 8,
-          "total_items": 20
-        },
-        {
-          "percentage": 50,
-          "timestamp": "2025-11-01T16:19:01.252838",
-          "completed_items": 10,
-          "total_items": 20
-        }
-      ],
-      "errors": [
-        {
-          "message": "Question 7247e507-585a-4680-8050-7a0ecf2d9849: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:10:57.207119"
-        },
-        {
-          "message": "Question 2622dcbc-708f-4a38-8fd0-63f236b7ac24: Invalid answer after 3 attempts: 根据提供的文档内容，关于GSK型号的机床，虽然提到了多个机床型号，但没有明确提供主轴转速的具体数值或加工场景信息。因此，无法确定哪些机床的主轴转速超过1000 r/min，也无法说明它们适用于哪些加工...",
-          "timestamp": "2025-11-01T16:11:14.919356"
-        },
-        {
-          "message": "Question 651bc45f-8ee7-4708-abb7-f6e4008b3ea8: Invalid answer after 3 attempts: GSK 442S JMW-M832WH 的主轴转速为 8000 r/min，功率达到6.5kW，适合加工多大尺寸的零件？在高速加工时如何优化冷却系统以提高效率？\n\n根据提供的文档信息，无法直接确定GS...",
-          "timestamp": "2025-11-01T16:13:12.402916"
-        },
-        {
-          "message": "Question e31d3143-8936-4a84-ab62-be431da4da73: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:13:42.420570"
-        },
-        {
-          "message": "Question 0217f9b4-8f17-4567-a905-1903a2a44045: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:14:12.433277"
-        },
-        {
-          "message": "Question 513cde50-985e-4a18-ae7e-5219af19d328: Invalid answer after 3 attempts: 根据提供的文档内容，没有找到明确提到工作台尺寸的数据，因此无法确定哪个GSK型号的工作台尺寸最大。同样，也没有足够的信息来说明该机床适合加工哪些类型的零件。建议查阅完整的GSK产品手册或联系制造商以获...",
-          "timestamp": "2025-11-01T16:14:39.773246"
-        },
-        {
-          "message": "Question fb29cf4d-6853-4530-8b6d-15306fa28ae5: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:16:17.386862"
-        },
-        {
-          "message": "Question 77bdcda6-c88f-43c4-85b1-3a39f0a27198: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:16:47.409884"
-        },
-        {
-          "message": "Question 783388de-0a82-4f84-a70d-3cad07595ef0: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:17:46.441098"
-        },
-        {
-          "message": "Question 5c2e68e5-973c-4273-9d2b-b8d0833ceb5a: Invalid answer after 3 attempts: 根据提供的文档内容，主轴冷却系统对加工质量有显著影响。良好的冷却可以有效控制温度，防止热变形，从而提高加工精度和工件表面质量。文档中提到442S JMW-M832WH的冷却性能包括较高的冷却效率（如每...",
-          "timestamp": "2025-11-01T16:18:12.664800"
-        }
-      ],
-      "end_time": "2025-11-01T16:19:01.286864"
-    },
-    "qa_20251101163714_4819_answers": {
-      "operation_type": "answer_generation",
-      "total_items": 13,
-      "completed_items": 0,
-      "failed_items": 13,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-11-01T16:46:31.824410",
-      "last_update": "2025-11-01T16:51:32.071985",
-      "status": "completed",
-      "metadata": {},
-      "percentage_milestones": [],
-      "errors": [
-        {
-          "message": "Question a87e96e9-3bd7-4b6c-9d04-598699380f44: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:47:01.835444"
-        },
-        {
-          "message": "Question e0690b6f-9e2e-49b9-ac25-53179af5de3b: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:47:31.854386"
-        },
-        {
-          "message": "Question 094da9ab-6714-4f29-b7e0-ce705afe7e44: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:48:01.853211"
-        },
-        {
-          "message": "Question c00f281d-ede9-4b29-a61c-d7ea5fecefa6: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:48:31.846170"
-        },
-        {
-          "message": "Question 9e75e13e-b854-4e88-b2c0-5ee6ac171c15: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:49:01.872598"
-        },
-        {
-          "message": "Question 7dba8175-abdf-4af0-840c-7ef091bab005: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:49:31.888121"
-        },
-        {
-          "message": "Question 0ed609f0-e20b-4f06-b8a5-41f8042eb787: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:50:01.906320"
-        },
-        {
-          "message": "Question 56816b04-ee3f-4ed7-8db2-97685a45c2a8: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:50:01.910318"
-        },
-        {
-          "message": "Question 9aa25f86-5c79-47c9-b8e2-16fb3602ebc7: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:50:01.953212"
-        },
-        {
-          "message": "Question e858cf90-8f63-4126-929f-c84c6531affb: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:50:01.996209"
-        },
-        {
-          "message": "Question 89c83234-4ad9-4872-9ab3-0a22c52e9d39: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:50:32.047280"
-        },
-        {
-          "message": "Question 765e0d52-b6e7-4f1f-884f-b5d687b5513a: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:51:02.060080"
-        },
-        {
-          "message": "Question 60b4c6bd-b8cf-4212-83e8-4e07ce1b22f7: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T16:51:32.071985"
-        }
-      ],
-      "end_time": "2025-11-01T16:51:32.071985"
-    },
-    "qa_20251101172207_7711_answers": {
-      "operation_type": "answer_generation",
-      "total_items": 19,
-      "completed_items": 13,
-      "failed_items": 6,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-11-01T17:29:41.031536",
-      "last_update": "2025-11-01T17:36:11.937596",
-      "status": "completed",
-      "metadata": {},
-      "percentage_milestones": [
-        {
-          "percentage": 10,
-          "timestamp": "2025-11-01T17:30:58.029187",
-          "completed_items": 2,
-          "total_items": 19
-        },
-        {
-          "percentage": 20,
-          "timestamp": "2025-11-01T17:32:47.063898",
-          "completed_items": 4,
-          "total_items": 19
-        },
-        {
-          "percentage": 30,
-          "timestamp": "2025-11-01T17:32:47.092213",
-          "completed_items": 6,
-          "total_items": 19
-        },
-        {
-          "percentage": 40,
-          "timestamp": "2025-11-01T17:33:12.858979",
-          "completed_items": 8,
-          "total_items": 19
-        },
-        {
-          "percentage": 50,
-          "timestamp": "2025-11-01T17:33:40.254094",
-          "completed_items": 10,
-          "total_items": 19
-        },
-        {
-          "percentage": 60,
-          "timestamp": "2025-11-01T17:35:17.642856",
-          "completed_items": 12,
-          "total_items": 19
-        }
-      ],
-      "errors": [
-        {
-          "message": "Question a87e96e9-3bd7-4b6c-9d04-598699380f44: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T17:30:11.032349"
-        },
-        {
-          "message": "Question 9e75e13e-b854-4e88-b2c0-5ee6ac171c15: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T17:31:52.781833"
-        },
-        {
-          "message": "Question 7dba8175-abdf-4af0-840c-7ef091bab005: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T17:32:22.784152"
-        },
-        {
-          "message": "Question 49817738-e8ea-45e4-a784-5cbf93ea0aa0: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T17:34:10.278577"
-        },
-        {
-          "message": "Question 8f128a05-4da2-47e9-ab78-300ba27fdd5f: Invalid answer after 3 attempts: 文档中未提供有关不同冷却液储液箱容量对加工过程的影响以及如何根据加工需求选择合适储液箱容量的具体信息。因此，无法基于当前提供的内容回答该问题。...",
-          "timestamp": "2025-11-01T17:34:53.940848"
-        },
-        {
-          "message": "Question 5a9db8ba-2a2e-45ae-86d0-c45d8059e7f8: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-01T17:36:11.922884"
-        }
-      ],
-      "end_time": "2025-11-01T17:36:11.937596"
-    },
-    "vectorize_20251106110450_111": {
+    "vectorize_20251112122152_2777": {
       "operation_type": "document_insertion",
       "total_items": 1,
       "completed_items": 1,
       "failed_items": 0,
       "processed_files": [],
       "failed_files": [],
-      "start_time": "2025-11-06T11:04:55.228092",
-      "last_update": "2025-11-06T11:13:31.240221",
+      "start_time": "2025-11-12T12:21:55.886684",
+      "last_update": "2025-11-12T12:27:36.708237",
       "status": "completed",
       "metadata": {},
       "percentage_milestones": [
         {
           "percentage": 10,
-          "timestamp": "2025-11-06T11:13:31.240221",
+          "timestamp": "2025-11-12T12:27:36.707232",
           "completed_items": 1,
           "total_items": 1
         }
       ],
-      "end_time": "2025-11-06T11:13:31.240221"
+      "end_time": "2025-11-12T12:27:36.708237"
     },
-    "qa_20251106111606_6057_answers": {
+    "qa_20251112123106_6092_answers": {
       "operation_type": "answer_generation",
-      "total_items": 7,
+      "total_items": 4,
+      "completed_items": 4,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-12T12:38:06.156280",
+      "last_update": "2025-11-12T12:39:55.485165",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-12T12:38:34.951839",
+          "completed_items": 1,
+          "total_items": 4
+        },
+        {
+          "percentage": 20,
+          "timestamp": "2025-11-12T12:39:04.770331",
+          "completed_items": 2,
+          "total_items": 4
+        },
+        {
+          "percentage": 30,
+          "timestamp": "2025-11-12T12:39:28.426708",
+          "completed_items": 3,
+          "total_items": 4
+        },
+        {
+          "percentage": 40,
+          "timestamp": "2025-11-12T12:39:55.472448",
+          "completed_items": 4,
+          "total_items": 4
+        }
+      ],
+      "end_time": "2025-11-12T12:39:55.485165"
+    },
+    "vectorize_20251112130123_3399": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-12T13:01:26.274541",
+      "last_update": "2025-11-12T13:02:09.368464",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-12T13:02:09.367463",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-11-12T13:02:09.368464"
+    },
+    "qa_20251112130230_391_answers": {
+      "operation_type": "answer_generation",
+      "total_items": 18,
+      "completed_items": 0,
+      "failed_items": 18,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-12T13:05:33.294793",
+      "last_update": "2025-11-12T13:14:33.531986",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [],
+      "errors": [
+        {
+          "message": "Question 12ece950-d417-42fe-9dff-110dd5555fc8: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:06:03.308007"
+        },
+        {
+          "message": "Question 1f78b51f-e20e-4c69-952a-c241d94da6ae: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:06:33.317183"
+        },
+        {
+          "message": "Question 024f42d6-1bb5-43fe-8d59-2c6b4a978885: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:07:03.324369"
+        },
+        {
+          "message": "Question ad9eb415-34f0-4bed-90bc-94b1faba6eb6: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:07:33.345925"
+        },
+        {
+          "message": "Question c9761622-ee5a-44bf-9e68-a325f417e803: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:08:03.354875"
+        },
+        {
+          "message": "Question 7909169a-6c03-4f1e-a2dd-82edd5cd62cc: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:08:33.370988"
+        },
+        {
+          "message": "Question ae64103c-3b08-4cee-a4ec-90316794c84b: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:09:03.383542"
+        },
+        {
+          "message": "Question b32a6270-7723-4c89-bcd9-0a6575ce436b: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:09:33.399771"
+        },
+        {
+          "message": "Question 56a563ce-f0f9-47e9-bdaa-6f38d5a39651: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:10:03.425222"
+        },
+        {
+          "message": "Question ed45d1dd-7063-4359-8746-304341049dd3: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:10:33.440696"
+        },
+        {
+          "message": "Question 78617e32-59d6-4b2d-aeac-4f3efbffaf87: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:11:03.450258"
+        },
+        {
+          "message": "Question 15999605-fa20-43c8-b111-e9f3ceb53735: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:11:33.464671"
+        },
+        {
+          "message": "Question 460a6493-b6c3-410c-a177-ca002940188c: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:12:03.475262"
+        },
+        {
+          "message": "Question e4c00fa9-dbc7-4ad3-861b-f1eb5eb6acce: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:12:33.501950"
+        },
+        {
+          "message": "Question 839c6c22-5da4-46e4-a2dc-29a6b58d9633: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:13:03.513356"
+        },
+        {
+          "message": "Question f44851f0-f1ef-4b6f-a515-7e1572adf765: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:13:33.519431"
+        },
+        {
+          "message": "Question 001acc6f-a237-4e87-a7b7-6bffc78cac5a: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:14:03.529963"
+        },
+        {
+          "message": "Question 0f6156c4-96e1-4fe5-b206-271e2e769b3a: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:14:33.529985"
+        }
+      ],
+      "end_time": "2025-11-12T13:14:33.531986"
+    },
+    "qa_20251112132802_2603_answers": {
+      "operation_type": "answer_generation",
+      "total_items": 25,
       "completed_items": 6,
-      "failed_items": 1,
+      "failed_items": 19,
       "processed_files": [],
       "failed_files": [],
-      "start_time": "2025-11-06T11:17:31.881883",
-      "last_update": "2025-11-06T11:20:25.563357",
+      "start_time": "2025-11-12T13:29:48.629757",
+      "last_update": "2025-11-12T13:40:35.780804",
       "status": "completed",
       "metadata": {},
       "percentage_milestones": [
         {
           "percentage": 10,
-          "timestamp": "2025-11-06T11:17:59.721422",
-          "completed_items": 1,
-          "total_items": 7
+          "timestamp": "2025-11-12T13:33:28.363886",
+          "completed_items": 3,
+          "total_items": 25
         },
         {
           "percentage": 20,
-          "timestamp": "2025-11-06T11:18:25.922438",
-          "completed_items": 2,
-          "total_items": 7
-        },
-        {
-          "percentage": 30,
-          "timestamp": "2025-11-06T11:18:55.489498",
-          "completed_items": 3,
-          "total_items": 7
-        },
-        {
-          "percentage": 40,
-          "timestamp": "2025-11-06T11:19:24.082478",
-          "completed_items": 4,
-          "total_items": 7
-        },
-        {
-          "percentage": 50,
-          "timestamp": "2025-11-06T11:19:39.916571",
+          "timestamp": "2025-11-12T13:37:17.820438",
           "completed_items": 5,
-          "total_items": 7
-        },
-        {
-          "percentage": 60,
-          "timestamp": "2025-11-06T11:20:25.548676",
-          "completed_items": 6,
-          "total_items": 7
+          "total_items": 25
         }
       ],
       "errors": [
         {
-          "message": "Question 6479bd64-b2ed-41b0-980c-59157237817e: Invalid answer after 3 attempts: 根据提供的文档内容，未明确提及该设备支持的具体CAD/CAM软件以及这些软件与VT850技术特性结合后的具体功能。然而，可以推断以下几点： 兼容性：设备可能具备广泛的CAD/CAM软件兼容性，以便于集...",
-          "timestamp": "2025-11-06T11:19:56.125939"
+          "message": "Question 12ece950-d417-42fe-9dff-110dd5555fc8: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:30:18.641179"
+        },
+        {
+          "message": "Question 1f78b51f-e20e-4c69-952a-c241d94da6ae: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:30:48.645307"
+        },
+        {
+          "message": "Question 024f42d6-1bb5-43fe-8d59-2c6b4a978885: Invalid answer after 3 attempts: 冷却系统设计对加工效率和刀具寿命的影响冷却系统的设计对于VMC850L的加工效率和刀具寿命具有重要影响。根据一般机械加工知识： 加工效率： 有效的冷却可以带走切削过程中产生的热量，减少工件和刀具的热变...",
+          "timestamp": "2025-11-12T13:31:11.385969"
+        },
+        {
+          "message": "Question c9761622-ee5a-44bf-9e68-a325f417e803: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:32:08.650647"
+        },
+        {
+          "message": "Question 7909169a-6c03-4f1e-a2dd-82edd5cd62cc: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:32:38.663501"
+        },
+        {
+          "message": "Question 56a563ce-f0f9-47e9-bdaa-6f38d5a39651: Answer contains hallucinations after 3 attempts",
+          "timestamp": "2025-11-12T13:33:56.923271"
+        },
+        {
+          "message": "Question ed45d1dd-7063-4359-8746-304341049dd3: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:34:26.929269"
+        },
+        {
+          "message": "Question 78617e32-59d6-4b2d-aeac-4f3efbffaf87: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:34:56.955070"
+        },
+        {
+          "message": "Question 15999605-fa20-43c8-b111-e9f3ceb53735: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:35:26.968623"
+        },
+        {
+          "message": "Question 460a6493-b6c3-410c-a177-ca002940188c: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:35:56.987034"
+        },
+        {
+          "message": "Question e4c00fa9-dbc7-4ad3-861b-f1eb5eb6acce: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:36:26.994739"
+        },
+        {
+          "message": "Question 001acc6f-a237-4e87-a7b7-6bffc78cac5a: Invalid answer after 3 attempts: Sorry, I'm not able to provide an answer to that question.[no-context]...",
+          "timestamp": "2025-11-12T13:37:34.082869"
+        },
+        {
+          "message": "Question 0f6156c4-96e1-4fe5-b206-271e2e769b3a: Invalid answer after 3 attempts: Sorry, I'm not able to provide an answer to that question.[no-context]...",
+          "timestamp": "2025-11-12T13:37:50.453521"
+        },
+        {
+          "message": "Question f1700d7d-2aa6-4506-b40c-553388d889cc: Invalid answer after 3 attempts: Sorry, I'm not able to provide an answer to that question.[no-context]...",
+          "timestamp": "2025-11-12T13:38:06.742567"
+        },
+        {
+          "message": "Question e8428cbc-994d-4111-903a-be9abb9c9b67: Invalid answer after 3 attempts: Sorry, I'm not able to provide an answer to that question.[no-context]...",
+          "timestamp": "2025-11-12T13:38:23.183245"
+        },
+        {
+          "message": "Question 0a741876-4844-4fb9-a3ad-615109379bbc: Invalid answer after 3 attempts: 根据提供的文档内容，目前没有足够的信息来详细描述VMC850L的定位精度±0.01mm和重复定位精度±0.005mm在什么情况下起关键作用。因此，无法提供具体的使用场景或应用情况。\n\n建议查阅相关设备...",
+          "timestamp": "2025-11-12T13:38:50.358234"
+        },
+        {
+          "message": "Question cce2622d-f737-407b-befb-765460f14ec1: Answer contains hallucinations after 3 attempts",
+          "timestamp": "2025-11-12T13:39:15.755233"
+        },
+        {
+          "message": "Question c67c45d7-9a3c-45d7-94bd-26a8b012a8cb: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
+          "timestamp": "2025-11-12T13:39:45.785177"
+        },
+        {
+          "message": "Question 9de27b29-2f33-4be5-b042-3d0f22f59438: Answer contains hallucinations after 3 attempts",
+          "timestamp": "2025-11-12T13:40:35.765927"
         }
       ],
-      "end_time": "2025-11-06T11:20:25.563357"
-    },
-    "vectorize_20251106112805_5891": {
-      "operation_type": "document_insertion",
-      "total_items": 1,
-      "completed_items": 1,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-11-06T11:28:08.750260",
-      "last_update": "2025-11-06T11:29:49.216140",
-      "status": "completed",
-      "metadata": {},
-      "percentage_milestones": [
-        {
-          "percentage": 10,
-          "timestamp": "2025-11-06T11:29:49.215139",
-          "completed_items": 1,
-          "total_items": 1
-        }
-      ],
-      "end_time": "2025-11-06T11:29:49.216140"
-    },
-    "qa_20251106113000_841_answers": {
-      "operation_type": "answer_generation",
-      "total_items": 10,
-      "completed_items": 0,
-      "failed_items": 10,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-11-06T11:32:20.516911",
-      "last_update": "2025-11-06T11:37:20.669239",
-      "status": "completed",
-      "metadata": {},
-      "percentage_milestones": [],
-      "errors": [
-        {
-          "message": "Question 03f3d26f-131d-424b-8034-c32e9bd3f15b: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:32:50.535691"
-        },
-        {
-          "message": "Question 8ec07806-4b7e-40c1-8a8c-1bd6ccfbd988: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:33:20.536989"
-        },
-        {
-          "message": "Question 4b573e50-e37c-4243-8af9-6eed309676d8: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:33:50.545587"
-        },
-        {
-          "message": "Question 51f556d5-66b2-48a5-b4d1-4f75909abab2: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:34:20.571476"
-        },
-        {
-          "message": "Question 75faf9cc-943d-414e-9c2a-cea62d552fd2: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:34:50.588248"
-        },
-        {
-          "message": "Question 3dd5176e-0c42-4ba0-837b-abb31f70a9fd: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:35:20.608729"
-        },
-        {
-          "message": "Question a4f36e47-6fb2-43ca-afa9-98f02f9f7863: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:35:50.632625"
-        },
-        {
-          "message": "Question a645b29b-832e-4b58-b811-73a5504c1c87: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:36:20.648401"
-        },
-        {
-          "message": "Question 248a6360-a114-4228-b03d-e4583407f6c6: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:36:50.641745"
-        },
-        {
-          "message": "Question 9a8dd965-a7ff-4407-a83d-a62aba1fe9b9: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:37:20.667242"
-        }
-      ],
-      "end_time": "2025-11-06T11:37:20.669239"
-    },
-    "qa_20251106114051_1181_answers": {
-      "operation_type": "answer_generation",
-      "total_items": 6,
-      "completed_items": 2,
-      "failed_items": 4,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-11-06T11:42:07.154347",
-      "last_update": "2025-11-06T11:44:34.812159",
-      "status": "completed",
-      "metadata": {},
-      "percentage_milestones": [
-        {
-          "percentage": 10,
-          "timestamp": "2025-11-06T11:42:45.293451",
-          "completed_items": 1,
-          "total_items": 6
-        },
-        {
-          "percentage": 20,
-          "timestamp": "2025-11-06T11:43:11.291669",
-          "completed_items": 2,
-          "total_items": 6
-        }
-      ],
-      "errors": [
-        {
-          "message": "Question 3ad14b09-854f-435e-973b-2232bf9b97dd: Invalid answer after 3 attempts: 根据提供的文档内容，目前没有找到有关TK36S设备的具体信息。如果您需要了解TK36S设备的性能参数及其在加工不同硬度材料时的表现，请\n\n[...",
-          "timestamp": "2025-11-06T11:42:19.575270"
-        },
-        {
-          "message": "Question 9df3dec4-7e13-4cd3-8fcd-ed06ed1456c1: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:43:41.322465"
-        },
-        {
-          "message": "Question 40ce4631-c033-4363-a709-95a25c2278ce: Invalid answer after 3 attempts: 根据提供的文档内容，没有关于TK36S的具体安装要求的直接信息。然而，基于一般工业设备的安装规范，以下是一些可能需要考虑的因素： 承重能力：由于TK36S重量为1700kg，需要确保安装区域的地基或支...",
-          "timestamp": "2025-11-06T11:44:04.775198"
-        },
-        {
-          "message": "Question 1a478adb-4b05-4584-9d4b-9a95640ea2a2: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T11:44:34.797384"
-        }
-      ],
-      "end_time": "2025-11-06T11:44:34.812159"
-    },
-    "vectorize_20251106115219_9451": {
-      "operation_type": "document_insertion",
-      "total_items": 1,
-      "completed_items": 1,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-11-06T11:52:23.166334",
-      "last_update": "2025-11-06T11:57:07.495803",
-      "status": "completed",
-      "metadata": {},
-      "percentage_milestones": [
-        {
-          "percentage": 10,
-          "timestamp": "2025-11-06T11:57:07.495760",
-          "completed_items": 1,
-          "total_items": 1
-        }
-      ],
-      "end_time": "2025-11-06T11:57:07.495803"
-    },
-    "qa_20251106125447_7511_answers": {
-      "operation_type": "answer_generation",
-      "total_items": 9,
-      "completed_items": 3,
-      "failed_items": 6,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-11-06T13:00:37.524436",
-      "last_update": "2025-11-06T13:04:10.574725",
-      "status": "completed",
-      "metadata": {},
-      "percentage_milestones": [
-        {
-          "percentage": 10,
-          "timestamp": "2025-11-06T13:01:01.589660",
-          "completed_items": 1,
-          "total_items": 9
-        },
-        {
-          "percentage": 20,
-          "timestamp": "2025-11-06T13:02:47.295941",
-          "completed_items": 2,
-          "total_items": 9
-        },
-        {
-          "percentage": 30,
-          "timestamp": "2025-11-06T13:03:04.267175",
-          "completed_items": 3,
-          "total_items": 9
-        }
-      ],
-      "errors": [
-        {
-          "message": "Question 0c2af91c-20b1-497b-82e5-12baf7fde083: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T13:01:31.592903"
-        },
-        {
-          "message": "Question f07bf955-329c-4c7f-ac1b-de11fb8adf89: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T13:02:01.616863"
-        },
-        {
-          "message": "Question 72b2b325-104c-49f7-9961-7213ac0bb228: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T13:02:31.632597"
-        },
-        {
-          "message": "Question 41f987c9-045d-41fa-8296-c622dc5267d8: Invalid answer after 3 attempts: GSK 27i的控制系统支持哪些编程语言？\n\n根据提供的文档内容，虽然没有明确提到GSK 27i的具体编程语言支持，但可以推测其控制系统可能支持常见的数控加工编程语言，例如G代码和M代码。这些语言是数...",
-          "timestamp": "2025-11-06T13:03:25.079685"
-        },
-        {
-          "message": "Question bc59d3c2-58e2-4c2d-ab82-7bd3cc75acc5: Invalid answer after 3 attempts: GSK 980TDi 和 GSK 750Di 的主要区别以及选择时需要考虑的因素如下： 主要区别功率输出： GSK 980TDi 可能具有更高的功率输出，适合处理更大的负载或更高速度的需求。\n\nGSK...",
-          "timestamp": "2025-11-06T13:03:54.368662"
-        },
-        {
-          "message": "Question d12b0eb2-7901-4390-b73a-53fb4b4c3637: Invalid answer after 3 attempts: GSK 27i的主轴转速范围在文档中没有明确提及。不过，根据类似的设备参数，主轴转速可能在一定范围内适合不同类型的零件加工。\n\n\n\n类似设备的主轴转速通常在几百到几千转每分钟之间，适用于铣削、钻孔和车...",
-          "timestamp": "2025-11-06T13:04:10.559182"
-        }
-      ],
-      "end_time": "2025-11-06T13:04:10.574725"
-    },
-    "qa_20251106145059_9596_answers": {
-      "operation_type": "answer_generation",
-      "total_items": 15,
-      "completed_items": 9,
-      "failed_items": 9,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-11-06T14:58:02.204744",
-      "last_update": "2025-11-06T15:04:27.794393",
-      "status": "completed",
-      "metadata": {},
-      "percentage_milestones": [
-        {
-          "percentage": 10,
-          "timestamp": "2025-11-06T14:58:02.205744",
-          "completed_items": 3,
-          "total_items": 15
-        },
-        {
-          "percentage": 20,
-          "timestamp": "2025-11-06T14:58:24.226331",
-          "completed_items": 4,
-          "total_items": 15
-        },
-        {
-          "percentage": 30,
-          "timestamp": "2025-11-06T15:01:15.032221",
-          "completed_items": 5,
-          "total_items": 15
-        },
-        {
-          "percentage": 40,
-          "timestamp": "2025-11-06T15:02:16.331669",
-          "completed_items": 6,
-          "total_items": 15
-        },
-        {
-          "percentage": 50,
-          "timestamp": "2025-11-06T15:03:02.709346",
-          "completed_items": 8,
-          "total_items": 15
-        },
-        {
-          "percentage": 60,
-          "timestamp": "2025-11-06T15:03:27.755186",
-          "completed_items": 9,
-          "total_items": 15
-        }
-      ],
-      "errors": [
-        {
-          "message": "Question 0c2af91c-20b1-497b-82e5-12baf7fde083: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T14:58:54.233342"
-        },
-        {
-          "message": "Question f07bf955-329c-4c7f-ac1b-de11fb8adf89: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T14:59:24.249727"
-        },
-        {
-          "message": "Question 72b2b325-104c-49f7-9961-7213ac0bb228: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T14:59:54.275696"
-        },
-        {
-          "message": "Question aecfde82-e530-494c-b2af-93de9ad8a3d9: Invalid answer after 3 attempts: 根据提供的文档内容，我没有找到关于“GSK 980TDi”的具体信息。因此，无法准确回答GSK 980TDi的最大承重能力以及处理重型工件时的稳定性影响因素。\n\n建议您查阅相关的技术手册或联系技术支持...",
-          "timestamp": "2025-11-06T15:00:17.662747"
-        },
-        {
-          "message": "Question 8fea1f85-0e36-4f66-aa91-e785d782d6d2: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T15:00:47.679941"
-        },
-        {
-          "message": "Question bc59d3c2-58e2-4c2d-ab82-7bd3cc75acc5: Invalid answer after 3 attempts: 很抱歉，我无法提供GSK 980TDi和GSK 750Di的主要区别以及选择时需要考虑的因素。根据提供的文档块，没有关于这些具体设备的信息。\n\n如果您有更多问题，请继续提问！...",
-          "timestamp": "2025-11-06T15:01:26.886022"
-        },
-        {
-          "message": "Question d12b0eb2-7901-4390-b73a-53fb4b4c3637: Invalid answer after 3 attempts: 根据提供的文档内容，我没有找到关于“GSK 27i”的详细信息。如果你指的是其他型号（如GSK 230SJM或GSK 310SJM），我可以提供相关信息。请确认一下具体型号。\n\n不过，我可以通过一般经...",
-          "timestamp": "2025-11-06T15:01:47.156208"
-        },
-        {
-          "message": "Question c3cf2272-97e7-43b3-b4a0-58ebcbc3999b: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T15:03:57.761105"
-        },
-        {
-          "message": "Question 5e2a14fe-38f2-4457-87e8-97e84b2ee2bd: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-06T15:04:27.780048"
-        }
-      ],
-      "end_time": "2025-11-06T15:04:27.794393"
+      "end_time": "2025-11-12T13:40:35.780804"
     }
   },
-  "last_updated": "2025-11-06T15:04:27.794393"
+  "last_updated": "2025-11-12T13:40:35.780804"
 }

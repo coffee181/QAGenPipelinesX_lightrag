@@ -66,6 +66,13 @@ except ImportError:
     TesseractOCR = None
     TESSERACT_AVAILABLE = False
 
+try:
+    from src.implementations.paddle_ocr import PaddleOCREngine
+    PADDLE_AVAILABLE = True
+except ImportError:
+    PaddleOCREngine = None
+    PADDLE_AVAILABLE = False
+
 
 def setup_logging(log_level: str = "INFO") -> logging.Logger:
     """Setup logging configuration with UTF-8 encoding."""
@@ -79,25 +86,40 @@ def create_services(config: ConfigManager, logger: logging.Logger) -> tuple:
     progress_manager = ProgressManager(config)
     
     # Create implementations
-    if TESSERACT_AVAILABLE:
-        ocr = TesseractOCR(config)
-        logger.info("TesseractOCR initialized successfully")
+    ocr_provider = config.get("ocr.provider", "tesseract").lower()
+    ocr = None
+
+    if ocr_provider == "paddle":
+        if PADDLE_AVAILABLE:
+            ocr = PaddleOCREngine(config)
+            logger.info("PaddleOCR initialized successfully")
+        elif TESSERACT_AVAILABLE:
+            ocr = TesseractOCR(config)
+            logger.warning("PaddleOCR unavailable, falling back to Tesseract")
+        else:
+            logger.warning("No OCR engine available - PDF processing will be disabled")
     else:
-        ocr = None
-        logger.warning("TesseractOCR not available - PDF processing will be disabled")
+        if TESSERACT_AVAILABLE:
+            ocr = TesseractOCR(config)
+            logger.info("TesseractOCR initialized successfully")
+        elif PADDLE_AVAILABLE:
+            ocr = PaddleOCREngine(config)
+            logger.warning("TesseractOCR unavailable, using PaddleOCR instead")
+        else:
+            logger.warning("No OCR engine available - PDF processing will be disabled")
     
     text_chunker = SimpleTextChunker(config)
+    
+    rag = LightRAGImplementation(config)
     
     # 根据配置选择问题生成器
     provider = config.get("question_generator.provider", "deepseek")
     if provider == "local":
-        question_generator = LocalQuestionGenerator(config)
+        question_generator = LocalQuestionGenerator(config, rag=rag)
         safe_print(f"使用本地模型: {config.get('question_generator.local.model_name', 'unknown')}")
     else:
-        question_generator = DeepSeekQuestionGenerator(config)
+        question_generator = DeepSeekQuestionGenerator(config, rag=rag)
         safe_print("使用DeepSeek API")
-    
-    rag = LightRAGImplementation(config)
     
     markdown_processor = SimpleMarkdownProcessor()
     
@@ -123,16 +145,25 @@ def create_services(config: ConfigManager, logger: logging.Logger) -> tuple:
         logger=logger
     )
     
+    pdf_processor = (
+        PDFProcessor(
+            config=config,
+            ocr_implementation=ocr,
+            progress_manager=progress_manager
+        )
+        if ocr is not None
+        else None
+    )
+    
     return pdf_processor, question_service, answer_service, progress_manager
 
 
 def process_pdfs_command(args, services, logger):
     """Handle PDF processing command."""
     pdf_processor, _, _, _ = services
-    
-    if not TESSERACT_AVAILABLE:
-        logger.error("PDF processing is not available because TesseractOCR dependencies are missing")
-        logger.error("Please install pytesseract, PIL, and pdf2image packages")
+
+    if pdf_processor is None:
+        logger.error("PDF processing is not available because no OCR engine is configured")
         return
     
     input_path = Path(args.input)
