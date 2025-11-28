@@ -854,3 +854,513 @@
 2025-05-30 10:07:45,729 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_relationships.json'} 11343 data
 2025-05-30 10:07:45,876 - nano-vectordb - INFO - Load (1309, 3072) data
 2025-05-30 10:07:45,886 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\Project\\lightrag\\selection_workdir\\vdb_chunks.json'} 1309 data
+2025-11-14 13:19:49,037 - src.utils.logging_utils - WARNING - No OCR engine available - PDF processing will be disabled
+2025-11-14 13:19:49,973 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-14 13:19:49,973 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-14 13:19:49,974 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-14 13:19:50,878 - src.utils.logging_utils - ERROR - PDF processing is not available because no OCR engine is configured
+2025-11-14 13:25:31,473 - src.utils.logging_utils - WARNING - No OCR engine available - PDF processing will be disabled
+2025-11-14 13:25:31,766 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-14 13:25:31,766 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-14 13:25:31,767 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-14 13:25:32,477 - src.utils.logging_utils - ERROR - PDF processing is not available because no OCR engine is configured
+2025-11-14 13:39:24,790 - src.utils.logging_utils - ERROR - Application failed: Failed to initialize PaddleOCR: No models are available for the language 'chinese_english' and OCR version None.
+2025-11-14 13:39:58,320 - src.utils.logging_utils - ERROR - Application failed: Failed to initialize PaddleOCR: No models are available for the language 'chinese_english' and OCR version None.
+2025-11-14 13:43:08,623 - src.utils.logging_utils - WARNING - TesseractOCR unavailable, using PaddleOCR instead
+2025-11-14 13:46:48,289 - src.utils.logging_utils - WARNING - TesseractOCR unavailable, using PaddleOCR instead
+2025-11-14 13:55:07,074 - src.utils.logging_utils - WARNING - TesseractOCR unavailable, using PaddleOCR instead
+2025-11-14 14:03:08,916 - src.utils.logging_utils - WARNING - TesseractOCR unavailable, using PaddleOCR instead
+2025-11-14 14:05:21,092 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-14 14:05:21,368 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-14 14:05:21,368 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-14 14:05:21,376 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-14 14:05:22,085 - src.utils.logging_utils - INFO - Processing PDFs from test_pdf to test_pdf
+2025-11-14 14:07:16,024 - src.utils.logging_utils - INFO - Processed 1 PDFs
+2025-11-14 14:10:26,034 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-14 14:10:26,316 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-14 14:10:26,316 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-14 14:10:26,316 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-14 14:10:27,019 - src.utils.logging_utils - INFO - Processing PDFs from test_pdf to test_pdf
+2025-11-14 14:12:20,849 - src.utils.logging_utils - INFO - Processed 1 PDFs
+2025-11-27 13:24:41,783 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-27 13:24:43,230 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-27 13:24:43,231 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-27 13:24:43,231 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-27 13:26:46,264 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-27 13:26:46,579 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-27 13:26:46,579 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-27 13:26:46,579 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-27 13:26:47,323 - src.utils.logging_utils - INFO - Processing all PDFs under directory: D:\llm-test\QAGenPipelinesX_lightrag\qa_gen_pipelines\working\raw
+2025-11-27 13:51:56,264 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-27 13:51:56,679 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-27 13:51:56,679 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-27 13:51:56,680 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-27 13:53:05,440 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-27 13:53:05,729 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-27 13:53:05,729 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-27 13:53:05,729 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-27 13:53:06,450 - src.utils.logging_utils - INFO - Processing all PDFs under directory: D:\llm-test\QAGenPipelinesX_lightrag\working\raw
+2025-11-27 13:54:58,587 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-27 13:54:58,901 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-27 13:54:58,901 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-27 13:54:58,902 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-27 13:54:59,631 - src.utils.logging_utils - INFO - Processing all PDFs under directory: D:\llm-test\QAGenPipelinesX_lightrag\working\raw
+2025-11-27 14:05:16,092 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-27 14:05:16,381 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-27 14:05:16,382 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-27 14:05:16,382 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-27 14:05:17,101 - src.utils.logging_utils - INFO - [1/4] Inserting document into vector store: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-27 14:05:17,101 - src.utils.logging_utils - INFO - Starting document insertion to working directory: D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-27 14:05:17,101 - src.utils.logging_utils - INFO - Document source: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-27 14:05:17,103 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 0 data
+2025-11-27 14:05:17,103 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 0 data
+2025-11-27 14:05:17,104 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 0 data
+2025-11-27 14:05:17,106 - src.utils.logging_utils - INFO - Validating document paths...
+2025-11-27 14:05:17,106 - src.utils.logging_utils - INFO - Loading documents...
+2025-11-27 14:05:17,106 - src.utils.logging_utils - INFO - Loaded single document: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-27 14:05:17,106 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-11-27 14:05:17,109 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-11-27 14:05:17,109 - src.utils.logging_utils - INFO - Processing document 1/1: 01-GSK 27i高端多通道数控系统 20250226.txt (0.01 MB)
+2025-11-27 14:05:33,779 - openai._base_client - INFO - Retrying request to /embeddings in 0.446269 seconds
+2025-11-27 14:09:13,961 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-27 14:09:14,252 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-27 14:09:14,252 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-27 14:09:14,253 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-27 14:09:14,969 - src.utils.logging_utils - INFO - [1/4] Inserting document into vector store: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-27 14:09:14,970 - src.utils.logging_utils - INFO - Starting document insertion to working directory: D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-27 14:09:14,970 - src.utils.logging_utils - INFO - Document source: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-27 14:09:14,971 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 0 data
+2025-11-27 14:09:14,971 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 0 data
+2025-11-27 14:09:14,972 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 0 data
+2025-11-27 14:09:14,974 - src.utils.logging_utils - INFO - Validating document paths...
+2025-11-27 14:09:14,974 - src.utils.logging_utils - INFO - Loading documents...
+2025-11-27 14:09:14,975 - src.utils.logging_utils - INFO - Loaded single document: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-27 14:09:14,975 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-11-27 14:09:14,977 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-11-27 14:09:14,977 - src.utils.logging_utils - INFO - Processing document 1/1: 01-GSK 27i高端多通道数控系统 20250226.txt (0.01 MB)
+2025-11-27 14:15:03,198 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-27 14:15:03,490 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_entities.json'} 0 data
+2025-11-27 14:15:03,491 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_relationships.json'} 0 data
+2025-11-27 14:15:03,491 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_chunks.json'} 0 data
+2025-11-28 10:37:50,937 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-28 10:37:51,798 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_entities.json'} 0 data
+2025-11-28 10:37:51,799 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_relationships.json'} 0 data
+2025-11-28 10:37:51,799 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_chunks.json'} 0 data
+2025-11-28 10:39:45,228 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_entities.json'} 0 data
+2025-11-28 10:39:45,229 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_relationships.json'} 0 data
+2025-11-28 10:39:45,229 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_chunks.json'} 0 data
+2025-11-28 10:40:43,016 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_entities.json'} 0 data
+2025-11-28 10:40:43,017 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_relationships.json'} 0 data
+2025-11-28 10:40:43,017 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_chunks.json'} 0 data
+2025-11-28 10:41:18,690 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_entities.json'} 0 data
+2025-11-28 10:41:18,691 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_relationships.json'} 0 data
+2025-11-28 10:41:18,691 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_chunks.json'} 0 data
+2025-11-28 10:41:18,771 - src.utils.logging_utils - INFO - [1/4] Inserting document into vector store: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-28 10:41:18,771 - src.utils.logging_utils - INFO - Starting document insertion to working directory: D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-28 10:41:18,771 - src.utils.logging_utils - INFO - Document source: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-28 10:41:18,773 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 0 data
+2025-11-28 10:41:18,773 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 0 data
+2025-11-28 10:41:18,773 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 0 data
+2025-11-28 10:41:18,775 - src.utils.logging_utils - INFO - Validating document paths...
+2025-11-28 10:41:18,776 - src.utils.logging_utils - INFO - Loading documents...
+2025-11-28 10:41:19,570 - src.utils.logging_utils - INFO - Loaded single document: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-28 10:41:19,571 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-11-28 10:41:19,573 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-11-28 10:41:19,573 - src.utils.logging_utils - INFO - Processing document 1/1: 01-GSK 27i高端多通道数控系统 20250226.txt (0.01 MB)
+2025-11-28 10:51:53,932 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 634.4s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-11-28 10:51:53,936 - src.utils.logging_utils - INFO - Document insertion completed in 10.6min: 1 success, 0 failed
+2025-11-28 10:51:53,937 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-11-28 10:51:53,937 - src.utils.logging_utils - INFO - [2/4] Inserting document into vector store: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-11-28 10:51:53,937 - src.utils.logging_utils - INFO - Starting document insertion to working directory: D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-28 10:51:53,937 - src.utils.logging_utils - INFO - Document source: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-11-28 10:51:54,011 - nano-vectordb - INFO - Load (7, 3072) data
+2025-11-28 10:51:54,011 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 7 data
+2025-11-28 10:51:54,024 - nano-vectordb - INFO - Load (1, 3072) data
+2025-11-28 10:51:54,024 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 1 data
+2025-11-28 10:51:54,037 - nano-vectordb - INFO - Load (8, 3072) data
+2025-11-28 10:51:54,037 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 8 data
+2025-11-28 10:51:54,040 - src.utils.logging_utils - INFO - Validating document paths...
+2025-11-28 10:51:54,040 - src.utils.logging_utils - INFO - Loading documents...
+2025-11-28 10:51:54,040 - src.utils.logging_utils - INFO - Loaded single document: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-11-28 10:51:54,040 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.00 MB
+2025-11-28 10:51:54,042 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-11-28 10:51:54,042 - src.utils.logging_utils - INFO - Processing document 1/1: 01-宝鸡机床VMC850L.txt (0.00 MB)
+2025-11-28 10:51:54,687 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-142' coro=<AsyncClient.aclose() done, defined at D:\Anaconda\Lib\site-packages\httpx\_client.py:1978> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "D:\Anaconda\Lib\site-packages\httpx\_client.py", line 1988, in aclose
+    await proxy.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpx\_transports\default.py", line 406, in aclose
+    await self._pool.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\connection_pool.py", line 353, in aclose
+    await self._close_connections(closing_connections)
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\connection_pool.py", line 345, in _close_connections
+    await connection.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\http_proxy.py", line 349, in aclose
+    await self._connection.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_backends\anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "D:\Anaconda\Lib\site-packages\anyio\streams\tls.py", line 201, in aclose
+    await self.transport_stream.aclose()
+  File "D:\Anaconda\Lib\site-packages\anyio\_backends\_asyncio.py", line 1349, in aclose
+    self._transport.close()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Anaconda\Lib\asyncio\proactor_events.py", line 109, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\Lib\asyncio\base_events.py", line 833, in call_soon
+    self._check_closed()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\Anaconda\Lib\asyncio\base_events.py", line 556, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-11-28 10:51:54,895 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-143' coro=<AsyncClient.aclose() done, defined at D:\Anaconda\Lib\site-packages\httpx\_client.py:1978> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "D:\Anaconda\Lib\site-packages\httpx\_client.py", line 1988, in aclose
+    await proxy.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpx\_transports\default.py", line 406, in aclose
+    await self._pool.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\connection_pool.py", line 353, in aclose
+    await self._close_connections(closing_connections)
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\connection_pool.py", line 345, in _close_connections
+    await connection.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\http_proxy.py", line 349, in aclose
+    await self._connection.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_backends\anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "D:\Anaconda\Lib\site-packages\anyio\streams\tls.py", line 201, in aclose
+    await self.transport_stream.aclose()
+  File "D:\Anaconda\Lib\site-packages\anyio\_backends\_asyncio.py", line 1349, in aclose
+    self._transport.close()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Anaconda\Lib\asyncio\proactor_events.py", line 109, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\Lib\asyncio\base_events.py", line 833, in call_soon
+    self._check_closed()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\Anaconda\Lib\asyncio\base_events.py", line 556, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-11-28 10:51:54,901 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-144' coro=<AsyncClient.aclose() done, defined at D:\Anaconda\Lib\site-packages\httpx\_client.py:1978> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "D:\Anaconda\Lib\site-packages\httpx\_client.py", line 1988, in aclose
+    await proxy.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpx\_transports\default.py", line 406, in aclose
+    await self._pool.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\connection_pool.py", line 353, in aclose
+    await self._close_connections(closing_connections)
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\connection_pool.py", line 345, in _close_connections
+    await connection.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\http_proxy.py", line 349, in aclose
+    await self._connection.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_async\http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "D:\Anaconda\Lib\site-packages\httpcore\_backends\anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "D:\Anaconda\Lib\site-packages\anyio\streams\tls.py", line 201, in aclose
+    await self.transport_stream.aclose()
+  File "D:\Anaconda\Lib\site-packages\anyio\_backends\_asyncio.py", line 1349, in aclose
+    self._transport.close()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Anaconda\Lib\asyncio\proactor_events.py", line 109, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\Lib\asyncio\base_events.py", line 833, in call_soon
+    self._check_closed()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\Anaconda\Lib\asyncio\base_events.py", line 556, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2025-11-28 10:54:13,940 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 139.9s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-11-28 10:54:13,944 - src.utils.logging_utils - INFO - Document insertion completed in 2.3min: 1 success, 0 failed
+2025-11-28 10:54:13,945 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-11-28 10:54:13,945 - src.utils.logging_utils - INFO - [3/4] Inserting document into vector store: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01系统综合-铣削.txt
+2025-11-28 10:54:13,945 - src.utils.logging_utils - INFO - Starting document insertion to working directory: D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-28 10:54:13,945 - src.utils.logging_utils - INFO - Document source: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01系统综合-铣削.txt
+2025-11-28 10:54:14,004 - nano-vectordb - INFO - Load (28, 3072) data
+2025-11-28 10:54:14,005 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 28 data
+2025-11-28 10:54:14,018 - nano-vectordb - INFO - Load (19, 3072) data
+2025-11-28 10:54:14,018 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 19 data
+2025-11-28 10:54:14,029 - nano-vectordb - INFO - Load (9, 3072) data
+2025-11-28 10:54:14,030 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 9 data
+2025-11-28 10:54:14,032 - src.utils.logging_utils - INFO - Validating document paths...
+2025-11-28 10:54:14,032 - src.utils.logging_utils - INFO - Loading documents...
+2025-11-28 10:54:14,033 - src.utils.logging_utils - INFO - Loaded single document: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01系统综合-铣削.txt
+2025-11-28 10:54:14,033 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.04 MB
+2025-11-28 10:54:14,035 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-11-28 10:54:14,035 - src.utils.logging_utils - INFO - Processing document 1/1: 01系统综合-铣削.txt (0.04 MB)
+2025-11-28 11:34:33,496 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-28 11:34:33,780 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-28 11:34:33,781 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-28 11:34:33,781 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-28 11:34:34,496 - src.utils.logging_utils - INFO - [1/4] Generating questions for document: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-28 11:34:35,585 - src.utils.logging_utils - INFO - Generating QA pairs for 01-GSK 27i高端多通道数控系统 20250226.txt using vector store D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-28 11:34:35,586 - src.utils.logging_utils - INFO - Generating answers from existing knowledge base: D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-28 11:34:35,596 - nano-vectordb - INFO - Load (28, 3072) data
+2025-11-28 11:34:35,596 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 28 data
+2025-11-28 11:34:35,600 - nano-vectordb - INFO - Load (19, 3072) data
+2025-11-28 11:34:35,600 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 19 data
+2025-11-28 11:34:35,602 - nano-vectordb - INFO - Load (9, 3072) data
+2025-11-28 11:34:35,603 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 9 data
+2025-11-28 11:34:35,638 - src.utils.logging_utils - ERROR - Failed to generate answers: No questions found in D:\llm-test\QAGenPipelinesX_lightrag\working\qa-pairs\questions\01-GSK 27i高端多通道数控系统 20250226_questions.jsonl
+2025-11-28 11:35:29,482 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-28 11:35:29,777 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-11-28 11:35:29,777 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-11-28 11:35:29,777 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-11-28 11:35:30,503 - src.utils.logging_utils - INFO - [1/4] Generating questions for document: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-28 11:35:31,547 - src.utils.logging_utils - INFO - Generating QA pairs for 01-GSK 27i高端多通道数控系统 20250226.txt using vector store D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-28 11:35:31,547 - src.utils.logging_utils - INFO - Generating answers from existing knowledge base: D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-28 11:35:31,555 - nano-vectordb - INFO - Load (28, 3072) data
+2025-11-28 11:35:31,556 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 28 data
+2025-11-28 11:35:31,559 - nano-vectordb - INFO - Load (19, 3072) data
+2025-11-28 11:35:31,559 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 19 data
+2025-11-28 11:35:31,561 - nano-vectordb - INFO - Load (9, 3072) data
+2025-11-28 11:35:31,561 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 9 data
+2025-11-28 11:35:31,574 - src.utils.logging_utils - ERROR - Failed to generate answers: No questions found in D:\llm-test\QAGenPipelinesX_lightrag\working\qa-pairs\questions\01-GSK 27i高端多通道数控系统 20250226_questions.jsonl
+2025-11-28 11:44:54,198 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-11-28 11:44:54,497 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_entities.json'} 0 data
+2025-11-28 11:44:54,497 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_relationships.json'} 0 data
+2025-11-28 11:44:54,498 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_chunks.json'} 0 data
+2025-11-28 11:44:54,610 - src.utils.logging_utils - INFO - [1/4] Generating questions for document: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-11-28 11:45:32,009 - src.utils.logging_utils - INFO - Generating QA pairs for 01-GSK 27i高端多通道数控系统 20250226.txt using vector store D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-28 11:45:32,009 - src.utils.logging_utils - INFO - Generating answers from existing knowledge base: D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-28 11:45:32,017 - nano-vectordb - INFO - Load (28, 3072) data
+2025-11-28 11:45:32,018 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 28 data
+2025-11-28 11:45:32,021 - nano-vectordb - INFO - Load (19, 3072) data
+2025-11-28 11:45:32,021 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 19 data
+2025-11-28 11:45:32,023 - nano-vectordb - INFO - Load (9, 3072) data
+2025-11-28 11:45:32,024 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 9 data
+2025-11-28 11:45:32,045 - src.utils.logging_utils - INFO - 🚀 开始为 7 个问题生成答案
+2025-11-28 11:45:32,045 - src.utils.logging_utils - INFO - 📝 处理问题 1/7: GSK 980TDi的工作台尺寸850×500mm配合主轴转速8000 r/min，适合加工多大尺寸的零件？精度能达到什么水平？
+2025-11-28 11:45:32,045 - src.utils.logging_utils - INFO - 🆔 问题ID: 690f45bf-d089-488a-a1ee-95af9560f555
+2025-11-28 11:45:32,046 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt]...
+2025-11-28 11:45:53,779 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_positive)
+2025-11-28 11:45:53,779 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:45:53,780 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 258 字符
+2025-11-28 11:45:53,780 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:45:53,780 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:45:53,780 - src.utils.logging_utils - INFO - 🎉 QA对 1/7 生成完成:
+2025-11-28 11:45:53,780 - src.utils.logging_utils - INFO -    📝 问题: GSK 980TDi的工作台尺寸850×500mm配合主轴转速8000 r/min，适合加工多大尺寸的零件？精度能达到什么水平？
+2025-11-28 11:45:53,781 - src.utils.logging_utils - INFO -    💬 答案: GSK 980TDi数控机床的工作台尺寸为850×500mm，因此适合加工的最大零件尺寸通常不会超过这个范围。主轴转速达到8000r/min，使其适用于高速精加...
+2025-11-28 11:45:53,781 - src.utils.logging_utils - INFO -    📊 答案长度: 258 字符
+2025-11-28 11:45:53,781 - src.utils.logging_utils - INFO -    🆔 QA对ID: 690f45bf-d089-488a-a1ee-95af9560f555
+2025-11-28 11:45:53,782 - src.utils.logging_utils - INFO - 📝 处理问题 2/7: GSK 980TDi支持双通道同步车削，这对加工整体铣刀有何优势？如何缩短生产时间？
+2025-11-28 11:45:53,782 - src.utils.logging_utils - INFO - 🆔 问题ID: 1da2cd8e-56aa-4287-830f-cb9f7e578e90
+2025-11-28 11:45:53,782 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt]...
+2025-11-28 11:46:16,430 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_negative)
+2025-11-28 11:46:16,430 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:46:16,430 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 622 字符
+2025-11-28 11:46:16,430 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:46:16,431 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:46:16,431 - src.utils.logging_utils - INFO - 🎉 QA对 2/7 生成完成:
+2025-11-28 11:46:16,431 - src.utils.logging_utils - INFO -    📝 问题: GSK 980TDi支持双通道同步车削，这对加工整体铣刀有何优势？如何缩短生产时间？
+2025-11-28 11:46:16,431 - src.utils.logging_utils - INFO -    💬 答案: GSK 980TDi数控系统支持双通道同步车削功能，这对加工整体铣刀具有以下优势： 高精度和稳定性：双通道同步车削可以实现两个车削操作的精确同步，确保加工过程中...
+2025-11-28 11:46:16,431 - src.utils.logging_utils - INFO -    📊 答案长度: 622 字符
+2025-11-28 11:46:16,431 - src.utils.logging_utils - INFO -    🆔 QA对ID: 1da2cd8e-56aa-4287-830f-cb9f7e578e90
+2025-11-28 11:46:16,432 - src.utils.logging_utils - INFO - 📝 处理问题 3/7: 数控工具磨床界面实现五轴RTCP功能后，在检测不同刀具时如何自动调整主轴速度和位置？
+2025-11-28 11:46:16,432 - src.utils.logging_utils - INFO - 🆔 问题ID: 31f20d5e-7825-4c9b-bdd5-dafccffd1da2
+2025-11-28 11:46:16,432 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt]...
+2025-11-28 11:46:46,412 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_positive)
+2025-11-28 11:46:46,412 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:46:46,412 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 359 字符
+2025-11-28 11:46:46,412 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:46:46,413 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:46:46,413 - src.utils.logging_utils - INFO - 🎉 QA对 3/7 生成完成:
+2025-11-28 11:46:46,413 - src.utils.logging_utils - INFO -    📝 问题: 数控工具磨床界面实现五轴RTCP功能后，在检测不同刀具时如何自动调整主轴速度和位置？
+2025-11-28 11:46:46,413 - src.utils.logging_utils - INFO -    💬 答案: 在数控工具磨床上实现五轴RTCP（实时坐标变换处理）功能后，当检测到不同刀具时，系统会按照以下步骤自动调整主轴速度和位置： 获取刀具参数：系统首先从刀具数据库中...
+2025-11-28 11:46:46,413 - src.utils.logging_utils - INFO -    📊 答案长度: 359 字符
+2025-11-28 11:46:46,413 - src.utils.logging_utils - INFO -    🆔 QA对ID: 31f20d5e-7825-4c9b-bdd5-dafccffd1da2
+2025-11-28 11:46:46,414 - src.utils.logging_utils - INFO - 📝 处理问题 4/7: GSK-Link总线支持多个从站设备连接，这对复杂工件的同步加工有何帮助？
+2025-11-28 11:46:46,414 - src.utils.logging_utils - INFO - 🆔 问题ID: 554142fb-5777-473b-82a0-80dc4211e9d6
+2025-11-28 11:46:46,414 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt]...
+2025-11-28 11:47:12,767 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_positive)
+2025-11-28 11:47:12,767 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:47:12,767 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 465 字符
+2025-11-28 11:47:12,767 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:47:12,768 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:47:12,768 - src.utils.logging_utils - INFO - 🎉 QA对 4/7 生成完成:
+2025-11-28 11:47:12,768 - src.utils.logging_utils - INFO -    📝 问题: GSK-Link总线支持多个从站设备连接，这对复杂工件的同步加工有何帮助？
+2025-11-28 11:47:12,768 - src.utils.logging_utils - INFO -    💬 答案: GSK-Link总线支持多个从站设备连接，这对复杂工件的同步加工具有显著帮助。以下是其主要优势： 协调控制： GSK-Link总线能够实时传递精确的控制指令，确...
+2025-11-28 11:47:12,768 - src.utils.logging_utils - INFO -    📊 答案长度: 465 字符
+2025-11-28 11:47:12,769 - src.utils.logging_utils - INFO -    🆔 QA对ID: 554142fb-5777-473b-82a0-80dc4211e9d6
+2025-11-28 11:47:12,769 - src.utils.logging_utils - INFO - 📝 处理问题 5/7: GSK 980TDi的最大支持轴数和主轴数量对定制开发刀具磨床界面有什么影响？
+2025-11-28 11:47:12,770 - src.utils.logging_utils - INFO - 🆔 问题ID: 4fa4af67-944f-4213-acbd-0e5a09c82c5e
+2025-11-28 11:47:12,770 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt]...
+2025-11-28 11:47:40,450 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_positive)
+2025-11-28 11:47:40,450 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:47:40,451 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 552 字符
+2025-11-28 11:47:40,451 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:47:40,451 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:47:40,452 - src.utils.logging_utils - INFO - QA set saved to: D:\llm-test\QAGenPipelinesX_lightrag\working\qa-pairs\01-GSK 27i高端多通道数控系统 20250226_qa_pairs.temp.jsonl (5 QA pairs in messages format)
+2025-11-28 11:47:40,453 - src.utils.logging_utils - INFO - Progress saved: 5 QA pairs to D:\llm-test\QAGenPipelinesX_lightrag\working\qa-pairs\01-GSK 27i高端多通道数控系统 20250226_qa_pairs.jsonl
+2025-11-28 11:47:40,454 - src.utils.logging_utils - INFO - 🎉 QA对 5/7 生成完成:
+2025-11-28 11:47:40,454 - src.utils.logging_utils - INFO -    📝 问题: GSK 980TDi的最大支持轴数和主轴数量对定制开发刀具磨床界面有什么影响？
+2025-11-28 11:47:40,454 - src.utils.logging_utils - INFO -    💬 答案: GSK 980TDi数控系统的最大支持轴数和主轴数量直接影响刀具磨床的定制开发需求和功能实现。
+
+最大支持轴数： GSK 980TDi通常支持多轴联动控制，具体...
+2025-11-28 11:47:40,454 - src.utils.logging_utils - INFO -    📊 答案长度: 552 字符
+2025-11-28 11:47:40,455 - src.utils.logging_utils - INFO -    🆔 QA对ID: 4fa4af67-944f-4213-acbd-0e5a09c82c5e
+2025-11-28 11:47:40,456 - src.utils.logging_utils - INFO - 📝 处理问题 6/7: GSK-Link总线支持多个从站设备连接，这对多轴同步控制有何帮助？
+2025-11-28 11:47:40,456 - src.utils.logging_utils - INFO - 🆔 问题ID: 36972ef4-64db-4d4e-9599-059c697125f7
+2025-11-28 11:47:40,457 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt]...
+2025-11-28 11:48:05,789 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_positive)
+2025-11-28 11:48:05,790 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:48:05,790 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 235 字符
+2025-11-28 11:48:05,790 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:48:05,790 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:48:05,790 - src.utils.logging_utils - INFO - 🎉 QA对 6/7 生成完成:
+2025-11-28 11:48:05,791 - src.utils.logging_utils - INFO -    📝 问题: GSK-Link总线支持多个从站设备连接，这对多轴同步控制有何帮助？
+2025-11-28 11:48:05,791 - src.utils.logging_utils - INFO -    💬 答案: GSK-Link总线通过支持多个从站设备的连接，为多轴同步控制提供了显著的优势： 高精度同步：所有轴的数据经由高速总线传输，确保动作同步无误，提升加工精度。
+
+...
+2025-11-28 11:48:05,792 - src.utils.logging_utils - INFO -    📊 答案长度: 235 字符
+2025-11-28 11:48:05,792 - src.utils.logging_utils - INFO -    🆔 QA对ID: 36972ef4-64db-4d4e-9599-059c697125f7
+2025-11-28 11:48:05,792 - src.utils.logging_utils - INFO - 📝 处理问题 7/7: 支持五轴RTCP功能的数控系统在检测不同刀具时如何调整主轴速度和位置？
+2025-11-28 11:48:05,793 - src.utils.logging_utils - INFO - 🆔 问题ID: 762e21aa-0232-4791-a669-9b3f4d982c63
+2025-11-28 11:48:05,793 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt]...
+2025-11-28 11:48:29,811 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_negative)
+2025-11-28 11:48:29,812 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:48:29,812 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 463 字符
+2025-11-28 11:48:29,812 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:48:29,812 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:48:29,812 - src.utils.logging_utils - INFO - 🎉 QA对 7/7 生成完成:
+2025-11-28 11:48:29,812 - src.utils.logging_utils - INFO -    📝 问题: 支持五轴RTCP功能的数控系统在检测不同刀具时如何调整主轴速度和位置？
+2025-11-28 11:48:29,813 - src.utils.logging_utils - INFO -    💬 答案: 支持五轴RTCP功能的数控系统在检测不同刀具时，会根据刀具的几何参数（如长度、半径和角度）以及加工需求，自动调整主轴速度和位置以优化加工过程。以下是具体的步骤：...
+2025-11-28 11:48:29,813 - src.utils.logging_utils - INFO -    📊 答案长度: 463 字符
+2025-11-28 11:48:29,813 - src.utils.logging_utils - INFO -    🆔 QA对ID: 762e21aa-0232-4791-a669-9b3f4d982c63
+2025-11-28 11:48:29,813 - src.utils.logging_utils - INFO - 💾 执行最终保存...
+2025-11-28 11:48:29,815 - src.utils.logging_utils - INFO - QA set saved to: D:\llm-test\QAGenPipelinesX_lightrag\working\qa-pairs\01-GSK 27i高端多通道数控系统 20250226_qa_pairs.temp.jsonl (7 QA pairs in messages format)
+2025-11-28 11:48:29,815 - src.utils.logging_utils - INFO - Progress saved: 7 QA pairs to D:\llm-test\QAGenPipelinesX_lightrag\working\qa-pairs\01-GSK 27i高端多通道数控系统 20250226_qa_pairs.jsonl
+2025-11-28 11:48:29,816 - src.utils.logging_utils - INFO - 📊 答案生成总结:
+2025-11-28 11:48:29,816 - src.utils.logging_utils - INFO -    ✅ 成功: 7/7 个QA对
+2025-11-28 11:48:29,817 - src.utils.logging_utils - INFO -    ❌ 失败: 0 个问题
+2025-11-28 11:48:29,817 - src.utils.logging_utils - INFO -    📈 成功率: 100.0%
+2025-11-28 11:48:29,817 - src.utils.logging_utils - INFO - 🎉 所有问题都成功生成了答案！
+2025-11-28 11:48:29,818 - src.utils.logging_utils - INFO - QA set saved to: D:\llm-test\QAGenPipelinesX_lightrag\working\qa-pairs\01-GSK 27i高端多通道数控系统 20250226_qa_pairs.jsonl (7 QA pairs in messages format)
+2025-11-28 11:48:29,820 - src.utils.logging_utils - INFO - Answer generation completed: 7 total QA pairs (0 existing + 7 new)
+2025-11-28 11:48:29,820 - src.utils.logging_utils - INFO - [2/4] Generating questions for document: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-11-28 11:48:59,447 - src.utils.logging_utils - INFO - Generating QA pairs for 01-宝鸡机床VMC850L.txt using vector store D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-28 11:48:59,447 - src.utils.logging_utils - INFO - Generating answers from existing knowledge base: D:\llm-test\QAGenPipelinesX_lightrag\working\vectorized
+2025-11-28 11:48:59,468 - nano-vectordb - INFO - Load (28, 3072) data
+2025-11-28 11:48:59,469 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 28 data
+2025-11-28 11:48:59,472 - nano-vectordb - INFO - Load (19, 3072) data
+2025-11-28 11:48:59,472 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 19 data
+2025-11-28 11:48:59,474 - nano-vectordb - INFO - Load (9, 3072) data
+2025-11-28 11:48:59,474 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 9 data
+2025-11-28 11:48:59,490 - src.utils.logging_utils - INFO - 🚀 开始为 18 个问题生成答案
+2025-11-28 11:48:59,491 - src.utils.logging_utils - INFO - 📝 处理问题 1/18: VMC850L的工作台面尺寸为1000×500mm，主轴端面至工作台面的距离为86-686mm，这些参数对加工什么样的工件最为适合？
+2025-11-28 11:48:59,491 - src.utils.logging_utils - INFO - 🆔 问题ID: c1aac99a-00f2-4e2e-977b-6400cd72fff0
+2025-11-28 11:48:59,491 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt]...
+2025-11-28 11:49:28,925 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_negative)
+2025-11-28 11:49:28,926 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:49:28,926 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 564 字符
+2025-11-28 11:49:28,926 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:49:28,927 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:49:28,927 - src.utils.logging_utils - INFO - 🎉 QA对 1/18 生成完成:
+2025-11-28 11:49:28,927 - src.utils.logging_utils - INFO -    📝 问题: VMC850L的工作台面尺寸为1000×500mm，主轴端面至工作台面的距离为86-686mm，这些参数对加工什么样的工件最为适合？
+2025-11-28 11:49:28,927 - src.utils.logging_utils - INFO -    💬 答案: 宝鸡机床 VMC850L 的工作台面尺寸为 1000×500mm，主轴端面至工作台面的距离为 86-686mm。这些参数使得 VMC850L 在加工中型到大型工...
+2025-11-28 11:49:28,927 - src.utils.logging_utils - INFO -    📊 答案长度: 564 字符
+2025-11-28 11:49:28,928 - src.utils.logging_utils - INFO -    🆔 QA对ID: c1aac99a-00f2-4e2e-977b-6400cd72fff0
+2025-11-28 11:49:28,928 - src.utils.logging_utils - INFO - 📝 处理问题 2/18: VMC850L的X/Y/Z轴行程分别为800/500/600mm，这样的设计对哪些类型的零件加工特别有利？
+2025-11-28 11:49:28,928 - src.utils.logging_utils - INFO - 🆔 问题ID: e1130a1e-5a60-45c3-b63f-9f8d81df49c0
+2025-11-28 11:49:28,928 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt]...
+2025-11-28 11:49:55,502 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_negative)
+2025-11-28 11:49:55,502 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:49:55,502 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 487 字符
+2025-11-28 11:49:55,502 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:49:55,503 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:49:55,503 - src.utils.logging_utils - INFO - 🎉 QA对 2/18 生成完成:
+2025-11-28 11:49:55,503 - src.utils.logging_utils - INFO -    📝 问题: VMC850L的X/Y/Z轴行程分别为800/500/600mm，这样的设计对哪些类型的零件加工特别有利？
+2025-11-28 11:49:55,503 - src.utils.logging_utils - INFO -    💬 答案: VMC850L的X/Y/Z轴行程分别为800/500/600mm的设计对以下类型的零件加工特别有利： 中小型机械零件： 适用于加工中型尺寸的机械部件，如齿轮、轴...
+2025-11-28 11:49:55,503 - src.utils.logging_utils - INFO -    📊 答案长度: 487 字符
+2025-11-28 11:49:55,503 - src.utils.logging_utils - INFO -    🆔 QA对ID: e1130a1e-5a60-45c3-b63f-9f8d81df49c0
+2025-11-28 11:49:55,504 - src.utils.logging_utils - INFO - 📝 处理问题 3/18: 主轴锥孔采用BT40标准，这在实际应用中有什么优势？适合安装哪些类型的刀具？
+2025-11-28 11:49:55,504 - src.utils.logging_utils - INFO - 🆔 问题ID: 7d61b9e1-7eb8-41c0-b4c2-e7bcafb9f903
+2025-11-28 11:49:55,504 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt]...
+2025-11-28 11:50:12,460 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_positive)
+2025-11-28 11:50:12,460 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:50:12,460 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 234 字符
+2025-11-28 11:50:12,461 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:50:12,461 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:50:12,461 - src.utils.logging_utils - INFO - 🎉 QA对 3/18 生成完成:
+2025-11-28 11:50:12,461 - src.utils.logging_utils - INFO -    📝 问题: 主轴锥孔采用BT40标准，这在实际应用中有什么优势？适合安装哪些类型的刀具？
+2025-11-28 11:50:12,461 - src.utils.logging_utils - INFO -    💬 答案: 主轴锥孔采用BT40标准具有以下优势： 高刚性和稳定性：BT40锥孔设计提供良好的刚性，减少振动，提高加工精度。
+
+高强度夹紧力：能够承受更大的切削力，适合重载...
+2025-11-28 11:50:12,462 - src.utils.logging_utils - INFO -    📊 答案长度: 234 字符
+2025-11-28 11:50:12,462 - src.utils.logging_utils - INFO -    🆔 QA对ID: 7d61b9e1-7eb8-41c0-b4c2-e7bcafb9f903
+2025-11-28 11:50:12,462 - src.utils.logging_utils - INFO - 📝 处理问题 4/18: VMC850L的主轴电机功率为7.5kW，转速可达8000r/min，这些参数对加工效率和质量有什么影响？
+2025-11-28 11:50:12,462 - src.utils.logging_utils - INFO - 🆔 问题ID: 3a3411f5-57d9-4419-b282-1c057a244e56
+2025-11-28 11:50:12,463 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt]...
+2025-11-28 11:50:32,070 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_positive)
+2025-11-28 11:50:32,070 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:50:32,071 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 368 字符
+2025-11-28 11:50:32,071 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:50:32,071 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:50:32,071 - src.utils.logging_utils - INFO - 🎉 QA对 4/18 生成完成:
+2025-11-28 11:50:32,071 - src.utils.logging_utils - INFO -    📝 问题: VMC850L的主轴电机功率为7.5kW，转速可达8000r/min，这些参数对加工效率和质量有什么影响？
+2025-11-28 11:50:32,072 - src.utils.logging_utils - INFO -    💬 答案: VMC850L的主轴电机功率为7.5kW，转速可达8000r/min。这两个参数对加工效率和质量有重要影响： 主轴功率（7.5kW）： 加工能力：较高的功率意味...
+2025-11-28 11:50:32,072 - src.utils.logging_utils - INFO -    📊 答案长度: 368 字符
+2025-11-28 11:50:32,072 - src.utils.logging_utils - INFO -    🆔 QA对ID: 3a3411f5-57d9-4419-b282-1c057a244e56
+2025-11-28 11:50:32,072 - src.utils.logging_utils - INFO - 📝 处理问题 5/18: X/Y/Z轴的快速移动速度分别为24/24/15m/min，在实际加工中如何平衡速度与精度的关系？
+2025-11-28 11:50:32,073 - src.utils.logging_utils - INFO - 🆔 问题ID: 83912426-7777-41d2-8183-f467b4b84733
+2025-11-28 11:50:32,073 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt]...
+2025-11-28 11:51:06,611 - src.utils.logging_utils - WARNING - ⚠️ 检测到可能的幻觉：答案中出现新型号 {'G01'}，问题只提到 set()
+2025-11-28 11:51:06,612 - src.utils.logging_utils - WARNING -    问题: X/Y/Z轴的快速移动速度分别为24/24/15m/min，在实际加工中如何平衡速度与精度的关系？
+2025-11-28 11:51:06,612 - src.utils.logging_utils - WARNING -    答案: 在X/Y/Z轴快速移动速度分别为24/24/15 m/min的情况下，要平衡加工中的速度与精度，可以从以下几个方面进行调整和优化： 根据加工阶段调整速度： 粗加工：使用较高的进给速度以快速去除材料。可
+2025-11-28 11:51:06,612 - src.utils.logging_utils - WARNING - ⚠️  第 1 次尝试检测到幻觉，拒绝答案
+2025-11-28 11:51:06,612 - src.utils.logging_utils - INFO - 🔍 第 2 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt]...
+2025-11-28 11:51:06,613 - src.utils.logging_utils - WARNING - ⚠️ 检测到可能的幻觉：答案中出现新型号 {'G01'}，问题只提到 set()
+2025-11-28 11:51:06,613 - src.utils.logging_utils - WARNING -    问题: X/Y/Z轴的快速移动速度分别为24/24/15m/min，在实际加工中如何平衡速度与精度的关系？
+2025-11-28 11:51:06,614 - src.utils.logging_utils - WARNING -    答案: 在X/Y/Z轴快速移动速度分别为24/24/15 m/min的情况下，要平衡加工中的速度与精度，可以从以下几个方面进行调整和优化： 根据加工阶段调整速度： 粗加工：使用较高的进给速度以快速去除材料。可
+2025-11-28 11:51:06,614 - src.utils.logging_utils - WARNING - ⚠️  第 2 次尝试检测到幻觉，拒绝答案
+2025-11-28 11:51:06,614 - src.utils.logging_utils - INFO - 🔍 第 3 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt]...
+2025-11-28 11:51:06,615 - src.utils.logging_utils - WARNING - ⚠️ 检测到可能的幻觉：答案中出现新型号 {'G01'}，问题只提到 set()
+2025-11-28 11:51:06,615 - src.utils.logging_utils - WARNING -    问题: X/Y/Z轴的快速移动速度分别为24/24/15m/min，在实际加工中如何平衡速度与精度的关系？
+2025-11-28 11:51:06,615 - src.utils.logging_utils - WARNING -    答案: 在X/Y/Z轴快速移动速度分别为24/24/15 m/min的情况下，要平衡加工中的速度与精度，可以从以下几个方面进行调整和优化： 根据加工阶段调整速度： 粗加工：使用较高的进给速度以快速去除材料。可
+2025-11-28 11:51:06,616 - src.utils.logging_utils - WARNING - ⚠️  第 3 次尝试检测到幻觉，拒绝答案
+2025-11-28 11:51:06,616 - src.utils.logging_utils - ERROR - ❌ 所有 3 次尝试都失败: Answer contains hallucinations after 3 attempts
+2025-11-28 11:51:06,616 - src.utils.logging_utils - ERROR - ❌ 问题 5/18 生成失败:
+2025-11-28 11:51:06,616 - src.utils.logging_utils - ERROR -    🆔 问题ID: 83912426-7777-41d2-8183-f467b4b84733
+2025-11-28 11:51:06,616 - src.utils.logging_utils - ERROR -    📝 问题内容: X/Y/Z轴的快速移动速度分别为24/24/15m/min，在实际加工中如何平衡速度与精度的关系？
+2025-11-28 11:51:06,616 - src.utils.logging_utils - ERROR -    💥 错误信息: Answer contains hallucinations after 3 attempts
+2025-11-28 11:51:06,617 - src.utils.logging_utils - INFO - 📝 处理问题 6/18: VMC850L采用台湾线性导轨BOZHI，这对机床的哪些性能有显著提升？在高速运行时稳定性如何保证？
+2025-11-28 11:51:06,617 - src.utils.logging_utils - INFO - 🆔 问题ID: cb2ca51c-7a7f-4835-aa7e-65ab4abebb7f
+2025-11-28 11:51:06,617 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt]...
+2025-11-28 11:51:43,635 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_positive)
+2025-11-28 11:51:43,635 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:51:43,635 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 541 字符
+2025-11-28 11:51:43,635 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:51:43,635 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:51:43,637 - src.utils.logging_utils - INFO - QA set saved to: D:\llm-test\QAGenPipelinesX_lightrag\working\qa-pairs\01-宝鸡机床VMC850L_qa_pairs.temp.jsonl (5 QA pairs in messages format)
+2025-11-28 11:51:43,637 - src.utils.logging_utils - INFO - Progress saved: 5 QA pairs to D:\llm-test\QAGenPipelinesX_lightrag\working\qa-pairs\01-宝鸡机床VMC850L_qa_pairs.jsonl
+2025-11-28 11:51:43,638 - src.utils.logging_utils - INFO - 🎉 QA对 6/18 生成完成:
+2025-11-28 11:51:43,638 - src.utils.logging_utils - INFO -    📝 问题: VMC850L采用台湾线性导轨BOZHI，这对机床的哪些性能有显著提升？在高速运行时稳定性如何保证？
+2025-11-28 11:51:43,639 - src.utils.logging_utils - INFO -    💬 答案: VMC850L机床采用台湾线性导轨BOZHI后，在性能上实现了显著提升，具体体现在以下几个方面： 定位精度：BOZHI线性导轨具有高刚性和低摩擦特性，使得机床在...
+2025-11-28 11:51:43,639 - src.utils.logging_utils - INFO -    📊 答案长度: 541 字符
+2025-11-28 11:51:43,639 - src.utils.logging_utils - INFO -    🆔 QA对ID: cb2ca51c-7a7f-4835-aa7e-65ab4abebb7f
+2025-11-28 11:51:43,640 - src.utils.logging_utils - INFO - 📝 处理问题 7/18: 刀库类型为24-T圆盘式刀库，这种设计对加工效率和刀具管理有什么优势？
+2025-11-28 11:51:43,641 - src.utils.logging_utils - INFO - 🆔 问题ID: 9649c76f-fa76-49e7-a32b-e8aeb874509a
+2025-11-28 11:51:43,641 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt]...
+2025-11-28 11:52:04,482 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_positive)
+2025-11-28 11:52:04,482 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-11-28 11:52:04,482 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 229 字符
+2025-11-28 11:52:04,483 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-11-28 11:52:04,483 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-11-28 11:52:04,483 - src.utils.logging_utils - INFO - 🎉 QA对 7/18 生成完成:
+2025-11-28 11:52:04,483 - src.utils.logging_utils - INFO -    📝 问题: 刀库类型为24-T圆盘式刀库，这种设计对加工效率和刀具管理有什么优势？
+2025-11-28 11:52:04,483 - src.utils.logging_utils - INFO -    💬 答案: 刀库类型为24-T圆盘式刀库的设计在加工效率和刀具管理方面具有显著优势： 高效换刀：圆盘式设计允许快速旋转，使刀具更换时间缩短，提高生产效率。
+
+空间利用率高：...
+2025-11-28 11:52:04,484 - src.utils.logging_utils - INFO -    📊 答案长度: 229 字符
+2025-11-28 11:52:04,484 - src.utils.logging_utils - INFO -    🆔 QA对ID: 9649c76f-fa76-49e7-a32b-e8aeb874509a
+2025-11-28 11:52:04,484 - src.utils.logging_utils - INFO - 📝 处理问题 8/18: 机床外形尺寸为2800×2450×2800mm，重量约为6500kg，这些参数在车间布局时需要考虑哪些因素？
+2025-11-28 11:52:04,485 - src.utils.logging_utils - INFO - 🆔 问题ID: 3f07e0c3-c7df-492b-943d-ef3d05db2aec
+2025-11-28 11:52:04,485 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt]...

@@ -1,3 +1,0 @@
-{"question_id": "test1", "text": "什么是传感器技术和分析算法？", "question_type": "general", "difficulty": "medium", "category": "technology", "tags": ["sensor", "algorithm"], "source": "test"}
-{"question_id": "test2", "text": "介绍一下数据采集和机器视觉的应用。", "question_type": "application", "difficulty": "medium", "category": "technology", "tags": ["data", "vision"], "source": "test"}
-{"question_id": "test3", "text": "故障诊断和自动化控制系统有什么关系？", "question_type": "relationship", "difficulty": "medium", "category": "technology", "tags": ["diagnosis", "automation"], "source": "test"} 

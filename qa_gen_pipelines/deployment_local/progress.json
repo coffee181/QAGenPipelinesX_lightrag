@@ -1,279 +1,440 @@
 {
   "sessions": {
-    "vectorize_20251112122152_2777": {
+    "vectorize_20251118163233_3145": {
       "operation_type": "document_insertion",
       "total_items": 1,
       "completed_items": 1,
       "failed_items": 0,
       "processed_files": [],
       "failed_files": [],
-      "start_time": "2025-11-12T12:21:55.886684",
-      "last_update": "2025-11-12T12:27:36.708237",
+      "start_time": "2025-11-18T16:32:35.821889",
+      "last_update": "2025-11-18T16:40:57.826859",
       "status": "completed",
       "metadata": {},
       "percentage_milestones": [
         {
           "percentage": 10,
-          "timestamp": "2025-11-12T12:27:36.707232",
+          "timestamp": "2025-11-18T16:40:57.826859",
           "completed_items": 1,
           "total_items": 1
         }
       ],
-      "end_time": "2025-11-12T12:27:36.708237"
+      "end_time": "2025-11-18T16:40:57.826859"
     },
-    "qa_20251112123106_6092_answers": {
+    "qa_20251118164310_890_answers": {
       "operation_type": "answer_generation",
-      "total_items": 4,
-      "completed_items": 4,
-      "failed_items": 0,
+      "total_items": 10,
+      "completed_items": 8,
+      "failed_items": 2,
       "processed_files": [],
       "failed_files": [],
-      "start_time": "2025-11-12T12:38:06.156280",
-      "last_update": "2025-11-12T12:39:55.485165",
+      "start_time": "2025-11-18T16:51:59.127434",
+      "last_update": "2025-11-18T16:56:21.215789",
       "status": "completed",
       "metadata": {},
       "percentage_milestones": [
         {
           "percentage": 10,
-          "timestamp": "2025-11-12T12:38:34.951839",
+          "timestamp": "2025-11-18T16:52:22.410499",
           "completed_items": 1,
-          "total_items": 4
+          "total_items": 10
         },
         {
           "percentage": 20,
-          "timestamp": "2025-11-12T12:39:04.770331",
+          "timestamp": "2025-11-18T16:52:48.643456",
           "completed_items": 2,
-          "total_items": 4
+          "total_items": 10
         },
         {
           "percentage": 30,
-          "timestamp": "2025-11-12T12:39:28.426708",
+          "timestamp": "2025-11-18T16:53:21.603818",
           "completed_items": 3,
-          "total_items": 4
+          "total_items": 10
         },
         {
           "percentage": 40,
-          "timestamp": "2025-11-12T12:39:55.472448",
+          "timestamp": "2025-11-18T16:53:52.202224",
           "completed_items": 4,
-          "total_items": 4
+          "total_items": 10
+        },
+        {
+          "percentage": 50,
+          "timestamp": "2025-11-18T16:54:01.928846",
+          "completed_items": 5,
+          "total_items": 10
+        },
+        {
+          "percentage": 60,
+          "timestamp": "2025-11-18T16:54:35.301258",
+          "completed_items": 6,
+          "total_items": 10
+        },
+        {
+          "percentage": 70,
+          "timestamp": "2025-11-18T16:55:04.529149",
+          "completed_items": 7,
+          "total_items": 10
+        },
+        {
+          "percentage": 80,
+          "timestamp": "2025-11-18T16:55:48.554828",
+          "completed_items": 8,
+          "total_items": 10
         }
       ],
-      "end_time": "2025-11-12T12:39:55.485165"
+      "errors": [
+        {
+          "message": "Question a4632a9a-27d6-432b-a17b-518d2df589ce: Invalid answer after 3 attempts: Sorry, I'm not able to provide an answer to that question.[no-context]...",
+          "timestamp": "2025-11-18T16:56:04.961740"
+        },
+        {
+          "message": "Question 48966451-ee9d-4487-853f-8d912e78ed17: Invalid answer after 3 attempts: Sorry, I'm not able to provide an answer to that question.[no-context]...",
+          "timestamp": "2025-11-18T16:56:21.211791"
+        }
+      ],
+      "end_time": "2025-11-18T16:56:21.215789"
     },
-    "vectorize_20251112130123_3399": {
+    "vectorize_20251118170431_1930": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 0,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-18T17:04:34.840673",
+      "last_update": "2025-11-18T17:04:34.840673",
+      "status": "running",
+      "metadata": {},
+      "percentage_milestones": []
+    },
+    "vectorize_20251118170440_359": {
       "operation_type": "document_insertion",
       "total_items": 1,
       "completed_items": 1,
       "failed_items": 0,
       "processed_files": [],
       "failed_files": [],
-      "start_time": "2025-11-12T13:01:26.274541",
-      "last_update": "2025-11-12T13:02:09.368464",
+      "start_time": "2025-11-18T17:04:43.949050",
+      "last_update": "2025-11-18T17:07:05.952908",
       "status": "completed",
       "metadata": {},
       "percentage_milestones": [
         {
           "percentage": 10,
-          "timestamp": "2025-11-12T13:02:09.367463",
+          "timestamp": "2025-11-18T17:07:05.952908",
           "completed_items": 1,
           "total_items": 1
         }
       ],
-      "end_time": "2025-11-12T13:02:09.368464"
+      "end_time": "2025-11-18T17:07:05.952908"
     },
-    "qa_20251112130230_391_answers": {
-      "operation_type": "answer_generation",
-      "total_items": 18,
-      "completed_items": 0,
-      "failed_items": 18,
+    "vectorize_20251118170731_1818": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
       "processed_files": [],
       "failed_files": [],
-      "start_time": "2025-11-12T13:05:33.294793",
-      "last_update": "2025-11-12T13:14:33.531986",
-      "status": "completed",
-      "metadata": {},
-      "percentage_milestones": [],
-      "errors": [
-        {
-          "message": "Question 12ece950-d417-42fe-9dff-110dd5555fc8: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:06:03.308007"
-        },
-        {
-          "message": "Question 1f78b51f-e20e-4c69-952a-c241d94da6ae: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:06:33.317183"
-        },
-        {
-          "message": "Question 024f42d6-1bb5-43fe-8d59-2c6b4a978885: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:07:03.324369"
-        },
-        {
-          "message": "Question ad9eb415-34f0-4bed-90bc-94b1faba6eb6: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:07:33.345925"
-        },
-        {
-          "message": "Question c9761622-ee5a-44bf-9e68-a325f417e803: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:08:03.354875"
-        },
-        {
-          "message": "Question 7909169a-6c03-4f1e-a2dd-82edd5cd62cc: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:08:33.370988"
-        },
-        {
-          "message": "Question ae64103c-3b08-4cee-a4ec-90316794c84b: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:09:03.383542"
-        },
-        {
-          "message": "Question b32a6270-7723-4c89-bcd9-0a6575ce436b: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:09:33.399771"
-        },
-        {
-          "message": "Question 56a563ce-f0f9-47e9-bdaa-6f38d5a39651: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:10:03.425222"
-        },
-        {
-          "message": "Question ed45d1dd-7063-4359-8746-304341049dd3: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:10:33.440696"
-        },
-        {
-          "message": "Question 78617e32-59d6-4b2d-aeac-4f3efbffaf87: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:11:03.450258"
-        },
-        {
-          "message": "Question 15999605-fa20-43c8-b111-e9f3ceb53735: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:11:33.464671"
-        },
-        {
-          "message": "Question 460a6493-b6c3-410c-a177-ca002940188c: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:12:03.475262"
-        },
-        {
-          "message": "Question e4c00fa9-dbc7-4ad3-861b-f1eb5eb6acce: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:12:33.501950"
-        },
-        {
-          "message": "Question 839c6c22-5da4-46e4-a2dc-29a6b58d9633: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:13:03.513356"
-        },
-        {
-          "message": "Question f44851f0-f1ef-4b6f-a515-7e1572adf765: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:13:33.519431"
-        },
-        {
-          "message": "Question 001acc6f-a237-4e87-a7b7-6bffc78cac5a: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:14:03.529963"
-        },
-        {
-          "message": "Question 0f6156c4-96e1-4fe5-b206-271e2e769b3a: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:14:33.529985"
-        }
-      ],
-      "end_time": "2025-11-12T13:14:33.531986"
-    },
-    "qa_20251112132802_2603_answers": {
-      "operation_type": "answer_generation",
-      "total_items": 25,
-      "completed_items": 6,
-      "failed_items": 19,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-11-12T13:29:48.629757",
-      "last_update": "2025-11-12T13:40:35.780804",
+      "start_time": "2025-11-18T17:07:34.564958",
+      "last_update": "2025-11-18T17:21:01.438925",
       "status": "completed",
       "metadata": {},
       "percentage_milestones": [
         {
           "percentage": 10,
-          "timestamp": "2025-11-12T13:33:28.363886",
-          "completed_items": 3,
-          "total_items": 25
+          "timestamp": "2025-11-18T17:21:01.438397",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-11-18T17:21:01.438925"
+    },
+    "vectorize_20251118172129_9746": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-18T17:21:32.405294",
+      "last_update": "2025-11-18T17:27:58.830223",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-18T17:27:58.830223",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-11-18T17:27:58.830223"
+    },
+    "vectorize_20251118173915_5543": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-18T17:39:18.206240",
+      "last_update": "2025-11-18T18:25:23.931918",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-18T18:25:23.931918",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-11-18T18:25:23.931918"
+    },
+    "qa_20251118190512_2562_answers": {
+      "operation_type": "answer_generation",
+      "total_items": 7,
+      "completed_items": 4,
+      "failed_items": 3,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-18T19:37:35.270275",
+      "last_update": "2025-11-18T19:40:22.253059",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-18T19:38:00.832285",
+          "completed_items": 1,
+          "total_items": 7
         },
         {
           "percentage": 20,
-          "timestamp": "2025-11-12T13:37:17.820438",
-          "completed_items": 5,
-          "total_items": 25
+          "timestamp": "2025-11-18T19:38:46.798291",
+          "completed_items": 2,
+          "total_items": 7
+        },
+        {
+          "percentage": 30,
+          "timestamp": "2025-11-18T19:39:09.115853",
+          "completed_items": 3,
+          "total_items": 7
+        },
+        {
+          "percentage": 40,
+          "timestamp": "2025-11-18T19:39:36.935159",
+          "completed_items": 4,
+          "total_items": 7
         }
       ],
       "errors": [
         {
-          "message": "Question 12ece950-d417-42fe-9dff-110dd5555fc8: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:30:18.641179"
+          "message": "Question 50657a6f-aeb6-4b7b-8667-5dbe34a9cb39: Answer contains hallucinations after 3 attempts",
+          "timestamp": "2025-11-18T19:38:22.396782"
         },
         {
-          "message": "Question 1f78b51f-e20e-4c69-952a-c241d94da6ae: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:30:48.645307"
+          "message": "Question 29a5a169-5199-45db-9367-82db77c7b27a: Invalid answer after 3 attempts: GSK 980MDc系统的输入输出点数在提供的文档中并未明确提及。然而，关于扩展IO单元的注意事项，可以\n\n遵循系统兼容性：使用与GSK 980MDc系统兼容的I/O模块和其他硬件，以确保稳定运行和功...",
+          "timestamp": "2025-11-18T19:39:56.048071"
         },
         {
-          "message": "Question 024f42d6-1bb5-43fe-8d59-2c6b4a978885: Invalid answer after 3 attempts: 冷却系统设计对加工效率和刀具寿命的影响冷却系统的设计对于VMC850L的加工效率和刀具寿命具有重要影响。根据一般机械加工知识： 加工效率： 有效的冷却可以带走切削过程中产生的热量，减少工件和刀具的热变...",
-          "timestamp": "2025-11-12T13:31:11.385969"
-        },
-        {
-          "message": "Question c9761622-ee5a-44bf-9e68-a325f417e803: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:32:08.650647"
-        },
-        {
-          "message": "Question 7909169a-6c03-4f1e-a2dd-82edd5cd62cc: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:32:38.663501"
-        },
-        {
-          "message": "Question 56a563ce-f0f9-47e9-bdaa-6f38d5a39651: Answer contains hallucinations after 3 attempts",
-          "timestamp": "2025-11-12T13:33:56.923271"
-        },
-        {
-          "message": "Question ed45d1dd-7063-4359-8746-304341049dd3: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:34:26.929269"
-        },
-        {
-          "message": "Question 78617e32-59d6-4b2d-aeac-4f3efbffaf87: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:34:56.955070"
-        },
-        {
-          "message": "Question 15999605-fa20-43c8-b111-e9f3ceb53735: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:35:26.968623"
-        },
-        {
-          "message": "Question 460a6493-b6c3-410c-a177-ca002940188c: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:35:56.987034"
-        },
-        {
-          "message": "Question e4c00fa9-dbc7-4ad3-861b-f1eb5eb6acce: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:36:26.994739"
-        },
-        {
-          "message": "Question 001acc6f-a237-4e87-a7b7-6bffc78cac5a: Invalid answer after 3 attempts: Sorry, I'm not able to provide an answer to that question.[no-context]...",
-          "timestamp": "2025-11-12T13:37:34.082869"
-        },
-        {
-          "message": "Question 0f6156c4-96e1-4fe5-b206-271e2e769b3a: Invalid answer after 3 attempts: Sorry, I'm not able to provide an answer to that question.[no-context]...",
-          "timestamp": "2025-11-12T13:37:50.453521"
-        },
-        {
-          "message": "Question f1700d7d-2aa6-4506-b40c-553388d889cc: Invalid answer after 3 attempts: Sorry, I'm not able to provide an answer to that question.[no-context]...",
-          "timestamp": "2025-11-12T13:38:06.742567"
-        },
-        {
-          "message": "Question e8428cbc-994d-4111-903a-be9abb9c9b67: Invalid answer after 3 attempts: Sorry, I'm not able to provide an answer to that question.[no-context]...",
-          "timestamp": "2025-11-12T13:38:23.183245"
-        },
-        {
-          "message": "Question 0a741876-4844-4fb9-a3ad-615109379bbc: Invalid answer after 3 attempts: 根据提供的文档内容，目前没有足够的信息来详细描述VMC850L的定位精度±0.01mm和重复定位精度±0.005mm在什么情况下起关键作用。因此，无法提供具体的使用场景或应用情况。\n\n建议查阅相关设备...",
-          "timestamp": "2025-11-12T13:38:50.358234"
-        },
-        {
-          "message": "Question cce2622d-f737-407b-befb-765460f14ec1: Answer contains hallucinations after 3 attempts",
-          "timestamp": "2025-11-12T13:39:15.755233"
-        },
-        {
-          "message": "Question c67c45d7-9a3c-45d7-94bd-26a8b012a8cb: Invalid answer after 3 attempts: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-11-12T13:39:45.785177"
-        },
-        {
-          "message": "Question 9de27b29-2f33-4be5-b042-3d0f22f59438: Answer contains hallucinations after 3 attempts",
-          "timestamp": "2025-11-12T13:40:35.765927"
+          "message": "Question e2bd4601-57bd-426f-a970-a06bb0398ac9: Invalid answer after 3 attempts: GSK 980MDC系统的设计特点和功能确实会影响可加工材料类型的适应性： 高精度控制：该系统支持RTCP（旋转中心点）功能，这在处理复杂形状时尤为重要，能够提升加工精度，适合需要高度精确的材料。\n\n...",
+          "timestamp": "2025-11-18T19:40:22.247055"
         }
       ],
-      "end_time": "2025-11-12T13:40:35.780804"
+      "end_time": "2025-11-18T19:40:22.253059"
+    },
+    "qa_20251118200744_4102_answers": {
+      "operation_type": "answer_generation",
+      "total_items": 27,
+      "completed_items": 21,
+      "failed_items": 10,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-18T20:36:58.711352",
+      "last_update": "2025-11-18T20:51:42.274620",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-18T20:36:58.712355",
+          "completed_items": 4,
+          "total_items": 27
+        },
+        {
+          "percentage": 20,
+          "timestamp": "2025-11-18T20:38:11.944507",
+          "completed_items": 6,
+          "total_items": 27
+        },
+        {
+          "percentage": 30,
+          "timestamp": "2025-11-18T20:39:34.667140",
+          "completed_items": 9,
+          "total_items": 27
+        },
+        {
+          "percentage": 40,
+          "timestamp": "2025-11-18T20:41:00.285668",
+          "completed_items": 11,
+          "total_items": 27
+        },
+        {
+          "percentage": 50,
+          "timestamp": "2025-11-18T20:43:45.204710",
+          "completed_items": 14,
+          "total_items": 27
+        },
+        {
+          "percentage": 60,
+          "timestamp": "2025-11-18T20:47:50.954596",
+          "completed_items": 17,
+          "total_items": 27
+        },
+        {
+          "percentage": 70,
+          "timestamp": "2025-11-18T20:48:53.026703",
+          "completed_items": 19,
+          "total_items": 27
+        }
+      ],
+      "errors": [
+        {
+          "message": "Question 50657a6f-aeb6-4b7b-8667-5dbe34a9cb39: Invalid answer after 3 attempts: 关于SSK880MDc系统的主轴转速范围以及如何选择最优转速参数的问题，根据提供的文档内容，没有直接提到SSK880MDc的具体转速范围。不过，可以\n\n一般来说，加工中心的主轴转速范围通常在几千到几十...",
+          "timestamp": "2025-11-18T20:37:42.322397"
+        },
+        {
+          "message": "Question e2bd4601-57bd-426f-a970-a06bb0398ac9: Invalid answer after 3 attempts: 很抱歉，根据提供的文档内容，没有找到GSK 980MDC系统的相关参数信息。如果您有其他问题或需要了解其他系统的信息，请随时告诉我！...",
+          "timestamp": "2025-11-18T20:39:44.815194"
+        },
+        {
+          "message": "Question ceac5ae4-9ff4-4292-8efb-9b7615bf77d8: Invalid answer after 3 attempts: 由于提供的文档中并未直接涉及“GSK 980MDC”的具体参数或应用信息，因此无法提供准确的答案。建议查阅相关的产品手册或技术资料以获取详细信息。...",
+          "timestamp": "2025-11-18T20:40:05.577682"
+        },
+        {
+          "message": "Question 6dfbfece-aa1a-4f51-9c6b-fb5d63757e58: Invalid answer after 3 attempts: 对于您的问题，我查阅了提供的文档内容，但并未找到关于GSK 980MDc主轴功率适用材料的具体信息以及不同材料加工时的转速和进给速度调整方法。这些细节通常可以在机床的操作手册、技术规格书或相关应用指南...",
+          "timestamp": "2025-11-18T20:41:59.768689"
+        },
+        {
+          "message": "Question 5022a418-a647-4f93-a031-a117af39a1ef: Invalid answer after 3 attempts: 关于SSK880MDc的各轴电机类型SJT-M150D和ZJY208-7.5B-B3的性能差异及选择因素，根据提供的文档内容，并没有具体的电机性能参数或对比信息。因此，无法直接比较这两款电机在SSK8...",
+          "timestamp": "2025-11-18T20:43:06.697500"
+        },
+        {
+          "message": "Question b4461ef7-aea4-4ab2-acdd-fd3115a7a60c: Invalid answer after 3 attempts: 根据提供的文档内容，GSK 928TD-L车床数控系统具有高性能和灵活的功能组合，可以满足复杂的加工任务需求。然而，关于GSK 980MDc的具体信息并未在当前的文档块中提及。\n\n对于PLC程序存储容...",
+          "timestamp": "2025-11-18T20:44:21.218706"
+        },
+        {
+          "message": "Question 9ec0daa3-3c57-4f9c-8de4-bcaf1a191b2a: Invalid answer after 3 attempts: 根据您提供的文档内容，没有关于“GSK 980MDC”或其梯形图监控功能的具体信息。所有提到的内容主要涉及售后服务、办事处联系方式和服务网点，并未包含任何与该设备的技术功能、应用价值或故障诊断相关的信...",
+          "timestamp": "2025-11-18T20:44:54.350505"
+        },
+        {
+          "message": "Question 441bc13c-3383-4842-be42-caf8db746ce5: Invalid answer after 3 attempts: 对于主轴转速为8000 mm/min的SSK880MDC机床，它适用于多种高精度加工任务。这种高速主轴特别适合处理需要精细表面光洁度和复杂几何形状的工件，例如精密机械部件、航空航天零件以及汽车行业的关...",
+          "timestamp": "2025-11-18T20:47:21.292578"
+        },
+        {
+          "message": "Question 98fbb7d3-adcf-4efd-9cbb-e857f6bba842: Invalid answer after 3 attempts: GSK 980MDc的主轴电机功率为15N·m，在加工不同材料厚度时，可以通过以下步骤调整转速和进给速度以优化切削效果： 调整转速确定材料特性：首先了解工件材料的硬度、强度等特性。较硬或高强度的材料通...",
+          "timestamp": "2025-11-18T20:49:37.297332"
+        },
+        {
+          "message": "Question 6003e8e6-c67c-4404-b418-01095f084d0b: Answer contains hallucinations after 3 attempts",
+          "timestamp": "2025-11-18T20:50:17.572369"
+        }
+      ],
+      "end_time": "2025-11-18T20:51:42.274620"
+    },
+    "vectorize_20251119120040_122": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-19T12:00:43.047209",
+      "last_update": "2025-11-19T13:18:48.084387",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-19T13:18:48.083386",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-11-19T13:18:48.084387"
+    },
+    "qa_20251119132342_2057_answers": {
+      "operation_type": "answer_generation",
+      "total_items": 13,
+      "completed_items": 10,
+      "failed_items": 3,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-19T14:11:56.079795",
+      "last_update": "2025-11-19T14:17:29.159556",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-19T14:12:43.803405",
+          "completed_items": 2,
+          "total_items": 13
+        },
+        {
+          "percentage": 20,
+          "timestamp": "2025-11-19T14:13:23.949633",
+          "completed_items": 3,
+          "total_items": 13
+        },
+        {
+          "percentage": 30,
+          "timestamp": "2025-11-19T14:14:14.388257",
+          "completed_items": 4,
+          "total_items": 13
+        },
+        {
+          "percentage": 40,
+          "timestamp": "2025-11-19T14:15:15.140684",
+          "completed_items": 6,
+          "total_items": 13
+        },
+        {
+          "percentage": 50,
+          "timestamp": "2025-11-19T14:15:47.032537",
+          "completed_items": 7,
+          "total_items": 13
+        },
+        {
+          "percentage": 60,
+          "timestamp": "2025-11-19T14:16:08.813795",
+          "completed_items": 8,
+          "total_items": 13
+        },
+        {
+          "percentage": 70,
+          "timestamp": "2025-11-19T14:17:03.607645",
+          "completed_items": 10,
+          "total_items": 13
+        }
+      ],
+      "errors": [
+        {
+          "message": "Question 983b224b-9ad8-4aad-b866-5ba231673bb1: Invalid answer after 3 attempts: 很抱歉，我目前没有关于 GSK 928TD-L 的具体信息，包括送料子程序的数量和设计细节。不过，在一般情况下，送料子程序的设计可以帮助提高生产效率，通过自动化物料运输减少人工干预，优化生产线流程。\n...",
+          "timestamp": "2025-11-19T14:13:01.266299"
+        },
+        {
+          "message": "Question 47a7e60f-755d-48b8-9e2f-a7fb3130a4bc: Answer contains hallucinations after 3 attempts",
+          "timestamp": "2025-11-19T14:13:51.177644"
+        },
+        {
+          "message": "Question 5ff075c9-af38-41f3-addc-3578e07c866d: Invalid answer after 3 attempts: GSK 928TA2 支持的 RS232 和 LAN 通信方式在数控机床和自动化生产中具有多种应用场景。以下是这两种通信方式的主要应用： RS232 通信的应用场景简单设备间的数据传输：RS232 是...",
+          "timestamp": "2025-11-19T14:17:29.155556"
+        }
+      ],
+      "end_time": "2025-11-19T14:17:29.159556"
     }
   },
-  "last_updated": "2025-11-12T13:40:35.780804"
+  "last_updated": "2025-11-19T14:17:29.159556"
 }

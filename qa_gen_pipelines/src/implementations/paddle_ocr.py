@@ -5,6 +5,7 @@ from __future__ import annotations
 import numpy as np
 from paddleocr import PaddleOCR
 from pdf2image import convert_from_path
+from PIL import Image
 from pathlib import Path
 from typing import List
 from datetime import datetime
@@ -31,15 +32,15 @@ class PaddleOCREngine(OCRInterface):
 
         self.lang = paddle_cfg.get("lang", "ch")
         self.use_angle_cls = paddle_cfg.get("use_angle_cls", True)
-        self.dpi = paddle_cfg.get("dpi", 300)
+        self.dpi = paddle_cfg.get("dpi", 200)  # 降低默认DPI到200，避免图片过大
 
         # Initialize PaddleOCR engine
         try:
-            self.ocr = PaddleOCR(lang=self.lang, use_angle_cls=self.use_angle_cls)
+            # 配置参数以支持高分辨率扫描文档
+            self.ocr = PaddleOCR(lang=self.lang)
             logger.info(
-                "PaddleOCR initialized (lang=%s, angle_cls=%s, dpi=%s)",
+                "PaddleOCR initialized (lang=%s, dpi=%s)",
                 self.lang,
-                self.use_angle_cls,
                 self.dpi,
             )
         except Exception as e:
@@ -78,19 +79,34 @@ class PaddleOCREngine(OCRInterface):
 
     def _extract_text_from_image(self, image) -> str:
         """Run PaddleOCR on a PIL image."""
+        # 如果图片太大，先缩小到合理尺寸
+        max_dimension = 3000  # 降低到3000避免被PaddleOCR自动缩小
+        width, height = image.size
+        if max(width, height) > max_dimension:
+            scale = max_dimension / max(width, height)
+            new_width = int(width * scale)
+            new_height = int(height * scale)
+            image = image.resize((new_width, new_height), Image.Resampling.LANCZOS)
+        
         np_img = np.array(image)
-        result = self.ocr.ocr(np_img)
+        result = self.ocr.predict(np_img)  # 使用新版 API
         if not result:
             return ""
 
         lines: List[str] = []
-        for detection in result:
-            if not detection:
-                continue
-            for line in detection:
-                text = line[1][0] if isinstance(line, (list, tuple)) else ""
-                if text and text.strip():
-                    lines.append(text.strip())
+        # 新版 PaddleOCR 3.x 返回包含 OCRResult 对象的列表
+        if isinstance(result, list):
+            for ocr_result in result:
+                # OCRResult 对象包含 rec_texts 字段（识别的文本列表）
+                if hasattr(ocr_result, 'rec_texts'):
+                    for text in ocr_result.rec_texts:
+                        if text and text.strip():
+                            lines.append(text.strip())
+                # 兼容字典格式
+                elif isinstance(ocr_result, dict) and 'rec_texts' in ocr_result:
+                    for text in ocr_result['rec_texts']:
+                        if text and text.strip():
+                            lines.append(text.strip())
 
         return "\n".join(lines)
 

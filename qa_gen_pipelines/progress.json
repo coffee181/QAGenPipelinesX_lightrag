@@ -1,674 +1,234 @@
 {
   "sessions": {
-    "pdf_processing_066aa52c": {
+    "pdf_processing_67db16cb": {
       "operation_type": "pdf_processing",
-      "total_items": 2,
-      "completed_items": 2,
+      "total_items": 4,
+      "completed_items": 4,
       "failed_items": 0,
       "processed_files": [
         {
-          "file": "example_pdfs\\01-GSK 27i高端多通道数控系统 20250226.pdf",
-          "timestamp": "2025-05-24T19:24:12.956211"
+          "file": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\raw\\01-GSK 27i高端多通道数控系统 20250226.pdf",
+          "timestamp": "2025-11-27T13:56:55.321088"
         },
         {
-          "file": "example_pdfs\\01-宝鸡机床VMC850L.pdf",
-          "timestamp": "2025-05-24T19:24:18.124113"
+          "file": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\raw\\01-宝鸡机床VMC850L.pdf",
+          "timestamp": "2025-11-27T13:57:05.648235"
+        },
+        {
+          "file": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\raw\\01系统综合-铣削.pdf",
+          "timestamp": "2025-11-27T14:03:17.417353"
+        },
+        {
+          "file": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\raw\\02-7宝鸡TK36S.pdf",
+          "timestamp": "2025-11-27T14:03:29.662891"
         }
       ],
       "failed_files": [],
-      "start_time": "2025-05-24T19:23:11.064164",
-      "last_update": "2025-05-24T19:24:18.125127",
+      "start_time": "2025-11-27T13:54:59.634196",
+      "last_update": "2025-11-27T14:03:29.665645",
       "status": "completed",
       "metadata": {
-        "input_dir": "example_pdfs",
-        "output_dir": "batch_output\\texts"
+        "input_dir": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\raw",
+        "output_dir": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed"
       },
-      "end_time": "2025-05-24T19:24:18.125127"
-    },
-    "question_generation_51930e18": {
-      "operation_type": "question_generation",
-      "total_items": 2,
-      "completed_items": 2,
-      "failed_items": 0,
-      "processed_files": [
+      "percentage_milestones": [
         {
-          "file": "batch_output\\texts\\01-GSK 27i高端多通道数控系统 20250226.txt",
-          "timestamp": "2025-05-24T19:26:40.736604"
+          "percentage": 10,
+          "timestamp": "2025-11-27T13:56:55.321107",
+          "completed_items": 1,
+          "total_items": 4
         },
         {
-          "file": "batch_output\\texts\\01-宝鸡机床VMC850L.txt",
-          "timestamp": "2025-05-24T19:26:57.566601"
-        }
-      ],
-      "failed_files": [],
-      "start_time": "2025-05-24T19:24:18.128113",
-      "last_update": "2025-05-24T19:26:57.566601",
-      "status": "completed",
-      "metadata": {
-        "input_dir": "batch_output\\texts",
-        "output_dir": "batch_output\\questions"
-      },
-      "end_time": "2025-05-24T19:26:57.566601"
-    },
-    "pdf_processing_cab94c3e": {
-      "operation_type": "pdf_processing",
-      "total_items": 2,
-      "completed_items": 2,
-      "failed_items": 0,
-      "processed_files": [
-        {
-          "file": "example_pdfs\\01-GSK 27i高端多通道数控系统 20250226.pdf",
-          "timestamp": "2025-05-24T19:29:58.992667"
+          "percentage": 20,
+          "timestamp": "2025-11-27T13:57:05.648260",
+          "completed_items": 2,
+          "total_items": 4
         },
         {
-          "file": "example_pdfs\\01-宝鸡机床VMC850L.pdf",
-          "timestamp": "2025-05-24T19:30:04.194805"
-        }
-      ],
-      "failed_files": [],
-      "start_time": "2025-05-24T19:28:59.834886",
-      "last_update": "2025-05-24T19:30:04.194805",
-      "status": "completed",
-      "metadata": {
-        "input_dir": "example_pdfs",
-        "output_dir": "batch_output\\texts"
-      },
-      "end_time": "2025-05-24T19:30:04.194805"
-    },
-    "question_generation_bbbcf867": {
-      "operation_type": "question_generation",
-      "total_items": 2,
-      "completed_items": 2,
-      "failed_items": 0,
-      "processed_files": [
-        {
-          "file": "batch_output\\texts\\01-GSK 27i高端多通道数控系统 20250226.txt",
-          "timestamp": "2025-05-24T19:32:23.551347"
+          "percentage": 30,
+          "timestamp": "2025-11-27T14:03:17.417372",
+          "completed_items": 3,
+          "total_items": 4
         },
         {
-          "file": "batch_output\\texts\\01-宝鸡机床VMC850L.txt",
-          "timestamp": "2025-05-24T19:32:42.317721"
+          "percentage": 40,
+          "timestamp": "2025-11-27T14:03:29.662917",
+          "completed_items": 4,
+          "total_items": 4
         }
       ],
-      "failed_files": [],
-      "start_time": "2025-05-24T19:30:04.197805",
-      "last_update": "2025-05-24T19:32:42.318721",
-      "status": "completed",
-      "metadata": {
-        "input_dir": "batch_output\\texts",
-        "output_dir": "batch_output\\questions"
-      },
-      "end_time": "2025-05-24T19:32:42.318721"
+      "end_time": "2025-11-27T14:03:29.665640"
     },
-    "pdf_processing_fbcd175f": {
-      "operation_type": "pdf_processing",
-      "total_items": 2,
-      "completed_items": 2,
-      "failed_items": 0,
-      "processed_files": [
-        {
-          "file": "example_pdfs\\01-GSK 27i高端多通道数控系统 20250226.pdf",
-          "timestamp": "2025-05-24T19:35:02.682893"
-        },
-        {
-          "file": "example_pdfs\\01-宝鸡机床VMC850L.pdf",
-          "timestamp": "2025-05-24T19:35:07.791271"
-        }
-      ],
-      "failed_files": [],
-      "start_time": "2025-05-24T19:34:03.951377",
-      "last_update": "2025-05-24T19:35:07.792270",
-      "status": "completed",
-      "metadata": {
-        "input_dir": "example_pdfs",
-        "output_dir": "batch_output\\texts"
-      },
-      "end_time": "2025-05-24T19:35:07.792270"
-    },
-    "question_generation_d32e5462": {
-      "operation_type": "question_generation",
-      "total_items": 2,
-      "completed_items": 2,
-      "failed_items": 0,
-      "processed_files": [
-        {
-          "file": "batch_output\\texts\\01-GSK 27i高端多通道数控系统 20250226.txt",
-          "timestamp": "2025-05-24T19:37:30.354585"
-        },
-        {
-          "file": "batch_output\\texts\\01-宝鸡机床VMC850L.txt",
-          "timestamp": "2025-05-24T19:37:46.765724"
-        }
-      ],
-      "failed_files": [],
-      "start_time": "2025-05-24T19:35:07.795271",
-      "last_update": "2025-05-24T19:37:46.766724",
-      "status": "completed",
-      "metadata": {
-        "input_dir": "batch_output\\texts",
-        "output_dir": "batch_output\\questions"
-      },
-      "end_time": "2025-05-24T19:37:46.766724"
-    },
-    "pdf_processing_baab3f38": {
-      "operation_type": "pdf_processing",
-      "total_items": 2,
-      "completed_items": 2,
-      "failed_items": 0,
-      "processed_files": [
-        {
-          "file": "example_pdfs\\01-GSK 27i高端多通道数控系统 20250226.pdf",
-          "timestamp": "2025-05-24T19:39:55.233334"
-        },
-        {
-          "file": "example_pdfs\\01-宝鸡机床VMC850L.pdf",
-          "timestamp": "2025-05-24T19:40:00.530856"
-        }
-      ],
-      "failed_files": [],
-      "start_time": "2025-05-24T19:38:55.842784",
-      "last_update": "2025-05-24T19:40:00.530856",
-      "status": "completed",
-      "metadata": {
-        "input_dir": "example_pdfs",
-        "output_dir": "batch_output\\texts"
-      },
-      "end_time": "2025-05-24T19:40:00.530856"
-    },
-    "question_generation_8e539af8": {
-      "operation_type": "question_generation",
-      "total_items": 2,
-      "completed_items": 2,
-      "failed_items": 0,
-      "processed_files": [
-        {
-          "file": "batch_output\\texts\\01-GSK 27i高端多通道数控系统 20250226.txt",
-          "timestamp": "2025-05-24T19:42:20.271202"
-        },
-        {
-          "file": "batch_output\\texts\\01-宝鸡机床VMC850L.txt",
-          "timestamp": "2025-05-24T19:42:39.475253"
-        }
-      ],
-      "failed_files": [],
-      "start_time": "2025-05-24T19:40:00.533862",
-      "last_update": "2025-05-24T19:42:39.476504",
-      "status": "completed",
-      "metadata": {
-        "input_dir": "batch_output\\texts",
-        "output_dir": "batch_output\\questions"
-      },
-      "end_time": "2025-05-24T19:42:39.476504"
-    },
-    "answer_batch_20250524_194239": {
-      "operation_type": "batch_answer_generation",
-      "total_items": 2,
-      "completed_items": 0,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-24T19:42:39.485816",
-      "last_update": "2025-05-24T19:42:39.486828",
-      "status": "failed",
-      "metadata": {},
-      "error_message": "'ProgressManager' object has no attribute 'add_error'",
-      "end_time": "2025-05-24T19:42:39.486828"
-    },
-    "pdf_processing_e11f8d70": {
-      "operation_type": "pdf_processing",
-      "total_items": 2,
-      "completed_items": 2,
-      "failed_items": 0,
-      "processed_files": [
-        {
-          "file": "example_pdfs\\01-GSK 27i高端多通道数控系统 20250226.pdf",
-          "timestamp": "2025-05-24T19:59:57.247193"
-        },
-        {
-          "file": "example_pdfs\\01-宝鸡机床VMC850L.pdf",
-          "timestamp": "2025-05-24T20:00:02.441301"
-        }
-      ],
-      "failed_files": [],
-      "start_time": "2025-05-24T19:58:57.287356",
-      "last_update": "2025-05-24T20:00:02.442352",
-      "status": "completed",
-      "metadata": {
-        "input_dir": "example_pdfs",
-        "output_dir": "batch_output\\texts"
-      },
-      "end_time": "2025-05-24T20:00:02.442352"
-    },
-    "question_generation_6411e572": {
-      "operation_type": "question_generation",
-      "total_items": 2,
-      "completed_items": 2,
-      "failed_items": 0,
-      "processed_files": [
-        {
-          "file": "batch_output\\texts\\01-GSK 27i高端多通道数控系统 20250226.txt",
-          "timestamp": "2025-05-24T20:02:21.557778"
-        },
-        {
-          "file": "batch_output\\texts\\01-宝鸡机床VMC850L.txt",
-          "timestamp": "2025-05-24T20:02:37.461797"
-        }
-      ],
-      "failed_files": [],
-      "start_time": "2025-05-24T20:00:02.444464",
-      "last_update": "2025-05-24T20:02:37.462861",
-      "status": "completed",
-      "metadata": {
-        "input_dir": "batch_output\\texts",
-        "output_dir": "batch_output\\questions"
-      },
-      "end_time": "2025-05-24T20:02:37.462861"
-    },
-    "answer_batch_20250524_200237": {
-      "operation_type": "batch_answer_generation",
-      "total_items": 2,
-      "completed_items": 0,
-      "failed_items": 2,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-24T20:02:37.472190",
-      "last_update": "2025-05-24T20:02:37.479519",
-      "status": "completed",
-      "metadata": {},
-      "errors": [
-        {
-          "message": "01-GSK 27i高端多通道数控系统 20250226_questions.jsonl: Failed to generate answers: Failed to load questions from batch_output\\questions\\01-GSK 27i高端多通道数控系统 20250226_questions.jsonl: Question.__init__() got an unexpected keyword argument 'id'",
-          "timestamp": "2025-05-24T20:02:37.478480"
-        },
-        {
-          "message": "01-宝鸡机床VMC850L_questions.jsonl: Failed to generate answers: Failed to load questions from batch_output\\questions\\01-宝鸡机床VMC850L_questions.jsonl: Question.__init__() got an unexpected keyword argument 'id'",
-          "timestamp": "2025-05-24T20:02:37.479519"
-        }
-      ],
-      "end_time": "2025-05-24T20:02:37.479519"
-    },
-    "lightrag_test": {
-      "operation_type": "batch_answer_generation",
-      "total_items": 2,
-      "completed_items": 0,
-      "failed_items": 2,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-24T21:04:29.534940",
-      "last_update": "2025-05-24T21:04:29.540638",
-      "status": "completed",
-      "metadata": {},
-      "errors": [
-        {
-          "message": "01-GSK 27i高端多通道数控系统 20250226_questions.jsonl: Failed to generate answers: Failed to load questions from batch_output\\questions\\01-GSK 27i高端多通道数控系统 20250226_questions.jsonl: Question.__init__() got an unexpected keyword argument 'id'",
-          "timestamp": "2025-05-24T21:04:29.539110"
-        },
-        {
-          "message": "01-宝鸡机床VMC850L_questions.jsonl: Failed to generate answers: Failed to load questions from batch_output\\questions\\01-宝鸡机床VMC850L_questions.jsonl: Question.__init__() got an unexpected keyword argument 'id'",
-          "timestamp": "2025-05-24T21:04:29.540135"
-        }
-      ],
-      "end_time": "2025-05-24T21:04:29.540638"
-    },
-    "lightrag_test2": {
-      "operation_type": "batch_answer_generation",
-      "total_items": 2,
-      "completed_items": 0,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-24T21:06:28.946427",
-      "last_update": "2025-05-24T21:06:28.946427",
-      "status": "running",
-      "metadata": {}
-    },
-    "lightrag_test2_01-GSK 27i高端多通道数控系统 20250226": {
-      "operation_type": "answer_generation",
-      "total_items": 400,
-      "completed_items": 10,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-24T21:06:28.951665",
-      "last_update": "2025-05-24T21:15:34.679895",
-      "status": "running",
-      "metadata": {}
-    },
-    "test_small": {
-      "operation_type": "answer_generation",
-      "total_items": 3,
-      "completed_items": 3,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-24T21:19:51.267674",
-      "last_update": "2025-05-24T21:22:47.035591",
-      "status": "failed",
-      "metadata": {},
-      "error_message": "Failed to save QA set: type object 'FileUtils' has no attribute 'save_jsonl'",
-      "end_time": "2025-05-24T21:22:47.035591"
-    },
-    "test_small2": {
-      "operation_type": "answer_generation",
-      "total_items": 3,
-      "completed_items": 3,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-24T21:23:43.599127",
-      "last_update": "2025-05-24T21:23:43.607434",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-24T21:23:43.607434"
-    },
-    "test_insert": {
-      "operation_type": "document_insertion",
-      "total_items": 2,
-      "completed_items": 1,
-      "failed_items": 1,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-25T00:32:00.124923",
-      "last_update": "2025-05-25T00:32:00.130240",
-      "status": "completed",
-      "metadata": {},
-      "errors": [
-        {
-          "message": "01-GSK 27i高端多通道数控系统 20250226: Failed to insert document 01-GSK 27i高端多通道数控系统 20250226: 'history_messages'",
-          "timestamp": "2025-05-25T00:32:00.129200"
-        }
-      ],
-      "end_time": "2025-05-25T00:32:00.130240"
-    },
-    "test_existing_kb": {
-      "operation_type": "answer_generation",
-      "total_items": 3,
-      "completed_items": 3,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-25T00:32:17.296201",
-      "last_update": "2025-05-25T00:32:17.303464",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-25T00:32:17.303464"
-    },
-    "test_insert_mode": {
-      "operation_type": "answer_generation",
-      "total_items": 3,
-      "completed_items": 3,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-25T00:32:34.496960",
-      "last_update": "2025-05-25T00:32:34.504242",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-25T00:32:34.504242"
-    },
-    "test_real_insert2": {
-      "operation_type": "answer_generation",
-      "total_items": 3,
-      "completed_items": 3,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-25T00:34:18.328969",
-      "last_update": "2025-05-25T00:34:18.336280",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-25T00:34:18.336280"
-    },
-    "create_kb": {
-      "operation_type": "document_insertion",
-      "total_items": 2,
-      "completed_items": 1,
-      "failed_items": 1,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-25T00:39:31.603536",
-      "last_update": "2025-05-25T00:39:31.609805",
-      "status": "completed",
-      "metadata": {},
-      "errors": [
-        {
-          "message": "01-GSK 27i高端多通道数控系统 20250226: Failed to insert document 01-GSK 27i高端多通道数控系统 20250226: 'history_messages'",
-          "timestamp": "2025-05-25T00:39:31.607705"
-        }
-      ],
-      "end_time": "2025-05-25T00:39:31.609805"
-    },
-    "append_via_insert": {
+    "insert_docs_20251127_140517": {
       "operation_type": "document_insertion",
       "total_items": 1,
       "completed_items": 0,
-      "failed_items": 1,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-25T00:40:42.114274",
-      "last_update": "2025-05-25T00:40:42.117418",
-      "status": "completed",
-      "metadata": {},
-      "errors": [
-        {
-          "message": "test_append_doc: Failed to insert document test_append_doc: 'history_messages'",
-          "timestamp": "2025-05-25T00:40:42.117418"
-        }
-      ],
-      "end_time": "2025-05-25T00:40:42.117418"
-    },
-    "test_without_insert": {
-      "operation_type": "answer_generation",
-      "total_items": 3,
-      "completed_items": 3,
       "failed_items": 0,
       "processed_files": [],
       "failed_files": [],
-      "start_time": "2025-05-25T00:42:00.264088",
-      "last_update": "2025-05-25T00:42:00.272335",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-25T00:42:00.272335"
-    },
-    "test_main_append": {
-      "operation_type": "document_insertion",
-      "total_items": 1,
-      "completed_items": 0,
-      "failed_items": 1,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-25T00:54:04.736872",
-      "last_update": "2025-05-25T00:54:04.739945",
-      "status": "completed",
-      "metadata": {},
-      "errors": [
-        {
-          "message": "test_doc_for_append: Failed to insert document test_doc_for_append: LightRAG version issue with history_messages for test_doc_for_append: 'history_messages'",
-          "timestamp": "2025-05-25T00:54:04.739945"
-        }
-      ],
-      "end_time": "2025-05-25T00:54:04.739945"
-    },
-    "test_main_append2": {
-      "operation_type": "document_insertion",
-      "total_items": 1,
-      "completed_items": 1,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-25T00:55:22.173489",
-      "last_update": "2025-05-25T00:56:18.740350",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-25T00:56:18.740350"
-    },
-    "test_append_to_existing": {
-      "operation_type": "document_insertion",
-      "total_items": 1,
-      "completed_items": 1,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-25T00:56:41.289753",
-      "last_update": "2025-05-25T00:57:19.919318",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-25T00:57:19.919318"
-    },
-    "test_qa_with_append": {
-      "operation_type": "answer_generation",
-      "total_items": 3,
-      "completed_items": 3,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-25T00:59:02.160710",
-      "last_update": "2025-05-25T00:59:02.169599",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-25T00:59:02.169599"
-    },
-    "qa_test": {
-      "operation_type": "answer_generation",
-      "total_items": 680,
-      "completed_items": 61,
-      "failed_items": 3,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-27T00:25:50.471899",
-      "last_update": "2025-05-27T12:43:14.976665",
+      "start_time": "2025-11-27T14:05:17.107271",
+      "last_update": "2025-11-27T14:05:17.107285",
       "status": "running",
       "metadata": {},
+      "percentage_milestones": []
+    },
+    "insert_docs_20251127_140914": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 0,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-27T14:09:14.975502",
+      "last_update": "2025-11-27T14:09:14.975514",
+      "status": "running",
+      "metadata": {},
+      "percentage_milestones": []
+    },
+    "insert_docs_20251128_104118": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-28T10:41:19.571303",
+      "last_update": "2025-11-28T10:51:53.932907",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-28T10:51:53.932351",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-11-28T10:51:53.932904"
+    },
+    "insert_docs_20251128_105153": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-28T10:51:54.041153",
+      "last_update": "2025-11-28T10:54:13.940549",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-28T10:54:13.939765",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-11-28T10:54:13.940543"
+    },
+    "insert_docs_20251128_105413": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 0,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-28T10:54:14.033947",
+      "last_update": "2025-11-28T10:54:14.033951",
+      "status": "running",
+      "metadata": {},
+      "percentage_milestones": []
+    },
+    "answer_gen_20251128_114532": {
+      "operation_type": "answer_generation",
+      "total_items": 7,
+      "completed_items": 7,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-28T11:45:32.042744",
+      "last_update": "2025-11-28T11:48:29.818659",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-28T11:45:53.781726",
+          "completed_items": 1,
+          "total_items": 7
+        },
+        {
+          "percentage": 20,
+          "timestamp": "2025-11-28T11:46:16.432101",
+          "completed_items": 2,
+          "total_items": 7
+        },
+        {
+          "percentage": 30,
+          "timestamp": "2025-11-28T11:46:46.414084",
+          "completed_items": 3,
+          "total_items": 7
+        },
+        {
+          "percentage": 40,
+          "timestamp": "2025-11-28T11:47:12.769355",
+          "completed_items": 4,
+          "total_items": 7
+        },
+        {
+          "percentage": 50,
+          "timestamp": "2025-11-28T11:47:40.455221",
+          "completed_items": 5,
+          "total_items": 7
+        },
+        {
+          "percentage": 60,
+          "timestamp": "2025-11-28T11:48:05.792505",
+          "completed_items": 6,
+          "total_items": 7
+        },
+        {
+          "percentage": 70,
+          "timestamp": "2025-11-28T11:48:29.813598",
+          "completed_items": 7,
+          "total_items": 7
+        }
+      ],
+      "end_time": "2025-11-28T11:48:29.818655"
+    },
+    "answer_gen_20251128_114859": {
+      "operation_type": "answer_generation",
+      "total_items": 18,
+      "completed_items": 5,
+      "failed_items": 1,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-11-28T11:48:59.488769",
+      "last_update": "2025-11-28T11:51:43.639651",
+      "status": "running",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-11-28T11:49:55.504102",
+          "completed_items": 2,
+          "total_items": 18
+        },
+        {
+          "percentage": 20,
+          "timestamp": "2025-11-28T11:50:32.072543",
+          "completed_items": 4,
+          "total_items": 18
+        }
+      ],
       "errors": [
         {
-          "message": "Question q_3: Invalid answer generated: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-05-27T12:41:45.338973"
-        },
-        {
-          "message": "Question q_2: Invalid answer generated: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-05-27T12:42:15.382433"
-        },
-        {
-          "message": "Question q_4: Invalid answer generated: 查询超时，请稍后重试或简化问题。...",
-          "timestamp": "2025-05-27T12:42:45.393858"
+          "message": "Question 83912426-7777-41d2-8183-f467b4b84733: Answer contains hallucinations after 3 attempts",
+          "timestamp": "2025-11-28T11:51:06.616939"
         }
       ]
-    },
-    "qa_test_final": {
-      "operation_type": "answer_generation",
-      "total_items": 680,
-      "completed_items": 10,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-26T23:50:24.486202",
-      "last_update": "2025-05-26T23:52:22.335153",
-      "status": "running",
-      "metadata": {}
-    },
-    "qa_test_small": {
-      "operation_type": "answer_generation",
-      "total_items": 3,
-      "completed_items": 3,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-26T23:48:08.021950",
-      "last_update": "2025-05-26T23:49:36.294742",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-26T23:49:36.294742"
-    },
-    "qa_test_incremental": {
-      "operation_type": "answer_generation",
-      "total_items": 3,
-      "completed_items": 3,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-26T23:53:55.573405",
-      "last_update": "2025-05-26T23:54:54.725290",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-26T23:54:54.725290"
-    },
-    "qa_test_10": {
-      "operation_type": "answer_generation",
-      "total_items": 10,
-      "completed_items": 10,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-26T23:56:01.585297",
-      "last_update": "2025-05-26T23:59:02.492125",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-26T23:59:02.492125"
-    },
-    "qa_test_fixed": {
-      "operation_type": "answer_generation",
-      "total_items": 3,
-      "completed_items": 3,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-27T00:22:14.626882",
-      "last_update": "2025-05-27T00:22:14.635792",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-27T00:22:14.635792"
-    },
-    "qa_demo": {
-      "operation_type": "answer_generation",
-      "total_items": 10,
-      "completed_items": 10,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-27T00:24:08.325542",
-      "last_update": "2025-05-27T00:25:08.364722",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-27T00:25:08.364722"
-    },
-    "pdf_processing_f5d34153": {
-      "operation_type": "pdf_processing",
-      "total_items": 2,
-      "completed_items": 2,
-      "failed_items": 0,
-      "processed_files": [
-        {
-          "file": "example_pdfs\\01-GSK 27i高端多通道数控系统 20250226.pdf",
-          "timestamp": "2025-05-28T23:51:25.314899"
-        },
-        {
-          "file": "example_pdfs\\01-宝鸡机床VMC850L.pdf",
-          "timestamp": "2025-05-28T23:51:30.364914"
-        }
-      ],
-      "failed_files": [],
-      "start_time": "2025-05-28T23:50:27.438204",
-      "last_update": "2025-05-28T23:51:30.364914",
-      "status": "completed",
-      "metadata": {
-        "input_dir": "example_pdfs",
-        "output_dir": "Temporary\\test_pdf_output"
-      },
-      "end_time": "2025-05-28T23:51:30.364914"
-    },
-    "test_session": {
-      "operation_type": "document_insertion",
-      "total_items": 1,
-      "completed_items": 1,
-      "failed_items": 0,
-      "processed_files": [],
-      "failed_files": [],
-      "start_time": "2025-05-29T17:07:26.385003",
-      "last_update": "2025-05-29T17:07:26.390004",
-      "status": "completed",
-      "metadata": {},
-      "end_time": "2025-05-29T17:07:26.390004"
     }
   },
-  "last_updated": "2025-05-29T17:07:26.390004"
+  "last_updated": "2025-11-28T11:51:43.639655"
 }

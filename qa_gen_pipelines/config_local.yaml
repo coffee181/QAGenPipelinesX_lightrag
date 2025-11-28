@@ -11,8 +11,9 @@ ocr:
     enable_preprocess: true  # 是否在OCR前进行图像预处理
     binarize_threshold: 180  # 二值化阈值(0-255)
     apply_median_filter: true  # 是否使用中值滤波去噪
+    min_confidence: 30    # 最低置信度阈值(0-100)，低于此值的识别结果将被过滤（减少图片噪声）
   paddle:
-    lang: "chinese_english"  # PaddleOCR 中英混合模型
+    lang: "ch"  # PaddleOCR 中文模型（支持中英混合）
     use_angle_cls: true
     dpi: 300
 

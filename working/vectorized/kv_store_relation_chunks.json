@@ -1,0 +1,173 @@
+{
+  "GSK 27i series high-end multi-channel CNC system<SEP>implements": {
+    "chunk_ids": [
+      "chunk-dcada036ffb579ecd0296de86c30f883"
+    ],
+    "count": 1,
+    "create_time": 1764298308,
+    "update_time": 1764298308,
+    "_id": "GSK 27i series high-end multi-channel CNC system<SEP>implements"
+  },
+  "VMC850L<SEP>工作台面尺寸长宽1000x500mm": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298404,
+    "update_time": 1764298404,
+    "_id": "VMC850L<SEP>工作台面尺寸长宽1000x500mm"
+  },
+  "VMC850L<SEP>行程X/Y/Z800/500/600": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298411,
+    "update_time": 1764298411,
+    "_id": "VMC850L<SEP>行程X/Y/Z800/500/600"
+  },
+  "VMC850L<SEP>主轴端面至工作台面距离86-686mm": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298413,
+    "update_time": 1764298413,
+    "_id": "VMC850L<SEP>主轴端面至工作台面距离86-686mm"
+  },
+  "VMC850L<SEP>主轴中心至立柱导轨距离560mm": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298416,
+    "update_time": 1764298416,
+    "_id": "VMC850L<SEP>主轴中心至立柱导轨距离560mm"
+  },
+  "VMC850L<SEP>主轴锥孔BT40": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298418,
+    "update_time": 1764298418,
+    "_id": "VMC850L<SEP>主轴锥孔BT40"
+  },
+  "VMC850L<SEP>主轴电机功率7.5kW": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298421,
+    "update_time": 1764298421,
+    "_id": "VMC850L<SEP>主轴电机功率7.5kW"
+  },
+  "VMC850L<SEP>X/Y/Z轴快速移动速度24/24/15m/min": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298423,
+    "update_time": 1764298423,
+    "_id": "VMC850L<SEP>X/Y/Z轴快速移动速度24/24/15m/min"
+  },
+  "VMC850L<SEP>刀库类型24-T/圆盘": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298426,
+    "update_time": 1764298426,
+    "_id": "VMC850L<SEP>刀库类型24-T/圆盘"
+  },
+  "VMC850L<SEP>外形尺寸长高宽2800x2450x2800mm": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298429,
+    "update_time": 1764298429,
+    "_id": "VMC850L<SEP>外形尺寸长高宽2800x2450x2800mm"
+  },
+  "VMC850L<SEP>重量约6500kg": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298431,
+    "update_time": 1764298431,
+    "_id": "VMC850L<SEP>重量约6500kg"
+  },
+  "BROWN SHARPE三坐标测量<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298434,
+    "update_time": 1764298434,
+    "_id": "BROWN SHARPE三坐标测量<SEP>VMC850L"
+  },
+  "RENISHAW双频激光干涉仪检测<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298437,
+    "update_time": 1764298437,
+    "_id": "RENISHAW双频激光干涉仪检测<SEP>VMC850L"
+  },
+  "VMC850L<SEP>高速高刚性设计": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298439,
+    "update_time": 1764298439,
+    "_id": "VMC850L<SEP>高速高刚性设计"
+  },
+  "VMC850L<SEP>滚珠线轨轴超宽硬轨": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298441,
+    "update_time": 1764298441,
+    "_id": "VMC850L<SEP>滚珠线轨轴超宽硬轨"
+  },
+  "VMC850L<SEP>配重平衡系统": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298444,
+    "update_time": 1764298444,
+    "_id": "VMC850L<SEP>配重平衡系统"
+  },
+  "VMC850L<SEP>主轴最高转速达8000rpm": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298446,
+    "update_time": 1764298446,
+    "_id": "VMC850L<SEP>主轴最高转速达8000rpm"
+  },
+  "VMC850L<SEP>台湾线轨": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298448,
+    "update_time": 1764298448,
+    "_id": "VMC850L<SEP>台湾线轨"
+  },
+  "VMC850L<SEP>加工中心关键零件和出三精度均由美国BROWN SHARPE检测": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764298451,
+    "update_time": 1764298451,
+    "_id": "VMC850L<SEP>加工中心关键零件和出三精度均由美国BROWN SHARPE检测"
+  }
+}

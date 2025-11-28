@@ -32,6 +32,7 @@ class TesseractOCR(OCRInterface):
         self.enable_preprocess = config.get("ocr.tesseract.enable_preprocess", True)
         self.binarize_threshold = config.get("ocr.tesseract.binarize_threshold", 180)
         self.apply_median_filter = config.get("ocr.tesseract.apply_median_filter", True)
+        self.min_confidence = config.get("ocr.tesseract.min_confidence", 30)  # 置信度阈值
         
         # Test tesseract installation
         try:
@@ -71,16 +72,20 @@ class TesseractOCR(OCRInterface):
                         else image
                     )
 
-                    # Extract text from image
-                    text = pytesseract.image_to_string(
+                    # 使用 image_to_data 获取置信度信息，过滤低质量识别（图片噪声）
+                    data = pytesseract.image_to_data(
                         processed_image,
                         lang=self.lang,
                         config=self.tesseract_config,
-                        timeout=self.timeout
+                        timeout=self.timeout,
+                        output_type=pytesseract.Output.DICT
                     )
                     
-                    if text.strip():
-                        extracted_text.append(f"--- Page {i + 1} ---\n{text.strip()}")
+                    # 过滤并重建文本，只保留高置信度的识别结果
+                    page_text = self._filter_text_by_confidence(data, min_conf=self.min_confidence)
+                    
+                    if page_text.strip():
+                        extracted_text.append(f"--- Page {i + 1} ---\n{page_text.strip()}")
                         
                 except Exception as e:
                     logger.warning(f"Failed to extract text from page {i + 1}: {e}")
@@ -176,6 +181,57 @@ class TesseractOCR(OCRInterface):
         except Exception as e:
             raise OCRError(f"Batch processing failed: {e}")
 
+    def _filter_text_by_confidence(self, data: dict, min_conf: float = 30) -> str:
+        """
+        过滤低置信度的识别结果，减少图片产生的噪声。
+        
+        Args:
+            data: pytesseract.image_to_data 返回的字典
+            min_conf: 最低置信度阈值（0-100），低于此值的文本将被忽略
+        
+        Returns:
+            过滤后的文本
+        """
+        import re
+        
+        lines = {}  # {block_num: {line_num: [words]}}
+        
+        for i in range(len(data['text'])):
+            conf = float(data['conf'][i])
+            text = data['text'][i].strip()
+            
+            # 跳过空文本或低置信度文本
+            if not text or conf < min_conf:
+                continue
+            
+            # 跳过纯符号/噪声（只包含特殊字符、单个字母等）
+            if len(text) <= 2 and not re.search(r'[\u4e00-\u9fff]', text):  # 不是中文且长度<=2
+                continue
+            
+            # 跳过明显的噪声模式
+            if re.match(r'^[_\-=+|/\\<>~`\'\",.;:!?@#$%^&*()[\]{}]+$', text):
+                continue
+            
+            block_num = data['block_num'][i]
+            line_num = data['line_num'][i]
+            
+            if block_num not in lines:
+                lines[block_num] = {}
+            if line_num not in lines[block_num]:
+                lines[block_num][line_num] = []
+            
+            lines[block_num][line_num].append(text)
+        
+        # 重建文本，保持原有的行结构
+        result_lines = []
+        for block_num in sorted(lines.keys()):
+            for line_num in sorted(lines[block_num].keys()):
+                line_text = ' '.join(lines[block_num][line_num])
+                if line_text.strip():
+                    result_lines.append(line_text)
+        
+        return '\n'.join(result_lines)
+    
     def _preprocess_image(self, image: Image.Image) -> Image.Image:
         """
         Preprocess image to improve OCR accuracy.

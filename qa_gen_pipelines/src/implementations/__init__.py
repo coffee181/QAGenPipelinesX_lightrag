@@ -2,14 +2,12 @@
 
 # Core implementations that are always available
 from .simple_text_chunker import SimpleTextChunker
-from .deepseek_question_generator import DeepSeekQuestionGenerator
 from .simple_rag import SimpleRAGImplementation
 from .simple_markdown_processor import SimpleMarkdownProcessor
 
 # Optional implementations that may not be available in all environments
 __all__ = [
     "SimpleTextChunker",
-    "DeepSeekQuestionGenerator", 
     "SimpleRAGImplementation",
     "SimpleMarkdownProcessor"
 ]

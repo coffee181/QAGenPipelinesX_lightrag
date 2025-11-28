@@ -53,7 +53,6 @@ from src.services.answer_service import AnswerService
 
 # Core implementations
 from src.implementations.simple_text_chunker import SimpleTextChunker
-from src.implementations.deepseek_question_generator import DeepSeekQuestionGenerator
 from src.implementations.local_question_generator import LocalQuestionGenerator
 from src.implementations.lightrag_rag import LightRAGImplementation
 from src.implementations.simple_markdown_processor import SimpleMarkdownProcessor
@@ -113,13 +112,15 @@ def create_services(config: ConfigManager, logger: logging.Logger) -> tuple:
     rag = LightRAGImplementation(config)
     
     # 根据配置选择问题生成器
-    provider = config.get("question_generator.provider", "deepseek")
+    provider = config.get("question_generator.provider", "local")
     if provider == "local":
         question_generator = LocalQuestionGenerator(config, rag=rag)
         safe_print(f"使用本地模型: {config.get('question_generator.local.model_name', 'unknown')}")
     else:
-        question_generator = DeepSeekQuestionGenerator(config, rag=rag)
-        safe_print("使用DeepSeek API")
+        # 如果不是local，需要检查是否有DeepSeek实现，暂时使用local作为fallback
+        logger.warning(f"Unknown question generator provider: {provider}, falling back to local")
+        question_generator = LocalQuestionGenerator(config, rag=rag)
+        safe_print(f"使用本地模型 (fallback): {config.get('question_generator.local.model_name', 'unknown')}")
     
     markdown_processor = SimpleMarkdownProcessor()
     

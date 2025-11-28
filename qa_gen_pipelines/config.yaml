@@ -12,7 +12,7 @@ ocr:
     binarize_threshold: 180  # 二值化阈值(0-255)
     apply_median_filter: true  # 是否使用中值滤波去噪
   paddle:
-    lang: "chinese_english"  # PaddleOCR 中英混合模型
+    lang: "ch"  # PaddleOCR 中文模型（支持中英混合）
     use_angle_cls: true
     dpi: 300
 
