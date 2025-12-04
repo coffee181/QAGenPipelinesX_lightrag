@@ -1,52 +1,20 @@
 {
+  "01-GSK 27i高端多通道数控系统 20250226": {
+    "relation_pairs": [
+      [
+        "具备",
+        "振动抑制功能"
+      ]
+    ],
+    "count": 1,
+    "create_time": 1764843911,
+    "update_time": 1764843911,
+    "_id": "01-GSK 27i高端多通道数控系统 20250226"
+  },
   "01-宝鸡机床VMC850L": {
     "relation_pairs": [
       [
-        "COMMAND THE FUTURE",
-        "VMC850L"
-      ],
-      [
-        "Dynamic Stability",
-        "VMC850L"
-      ],
-      [
-        "COMMAND THE FUTURE",
-        "Dynamic Stability"
-      ],
-      [
-        "Spindle Distance to Worktable",
-        "VMC850L"
-      ],
-      [
-        "Spindle Speed",
-        "VMC850L"
-      ],
-      [
-        "Brown & Sharp",
-        "VMC850L"
-      ],
-      [
-        "VMC850L",
-        "X/Y/Z Travel"
-      ],
-      [
-        "Renishaw",
-        "VMC850L"
-      ],
-      [
-        "VMC850L",
-        "Worktable Dimensions"
-      ],
-      [
-        "Machine Dimensions",
-        "VMC850L"
-      ],
-      [
         "High-Speed Design",
-        "VMC850L"
-      ],
-      [
-        "Spindle Motor Power",
         "VMC850L"
       ],
       [
@@ -54,21 +22,57 @@
         "VMC850L"
       ],
       [
-        "COMMAND THE FUTURE",
-        "High-Speed Design"
+        "VMC850L",
+        "Working Table Dimensions"
       ],
       [
-        "Axis Rapid Traverse Speeds",
+        "Balancing System",
         "VMC850L"
       ],
       [
-        "Tool Magazine Type",
+        "Travel Range",
+        "VMC850L"
+      ],
+      [
+        "BT40 Taper Hole",
+        "VMC850L"
+      ],
+      [
+        "Machine Outer Dimensions",
+        "VMC850L"
+      ],
+      [
+        "Spindle Center to Column Guide Rail Distance",
+        "VMC850L"
+      ],
+      [
+        "Main Spindle Speed",
+        "VMC850L"
+      ],
+      [
+        "VMC850L",
+        "X/Y/Z Axis Rails"
+      ],
+      [
+        "Spindle Motor Power",
+        "VMC850L"
+      ],
+      [
+        "Tool Magazine",
+        "VMC850L"
+      ],
+      [
+        "Spindle End Face Distance",
+        "VMC850L"
+      ],
+      [
+        "Rapid Traverse Speeds",
         "VMC850L"
       ]
     ],
-    "count": 16,
-    "create_time": 1764841807,
-    "update_time": 1764841807,
+    "count": 14,
+    "create_time": 1764844058,
+    "update_time": 1764844058,
     "_id": "01-宝鸡机床VMC850L"
   }
 }

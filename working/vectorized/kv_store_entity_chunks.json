@@ -1,137 +1,218 @@
 {
+  "USB通信接口": {
+    "chunk_ids": [
+      "chunk-74e16480543cbfdc317b5fd3f8d44359"
+    ],
+    "count": 1,
+    "create_time": 1764843903,
+    "update_time": 1764843903,
+    "_id": "USB通信接口"
+  },
+  "RJ45通信接口": {
+    "chunk_ids": [
+      "chunk-74e16480543cbfdc317b5fd3f8d44359"
+    ],
+    "count": 1,
+    "create_time": 1764843903,
+    "update_time": 1764843903,
+    "_id": "RJ45通信接口"
+  },
+  "高达8000步力矩控制": {
+    "chunk_ids": [
+      "chunk-74e16480543cbfdc317b5fd3f8d44359"
+    ],
+    "count": 1,
+    "create_time": 1764843903,
+    "update_time": 1764843903,
+    "_id": "高达8000步力矩控制"
+  },
+  "Artifact": {
+    "chunk_ids": [
+      "chunk-07892b83846b808694a9cdd99f5110e0"
+    ],
+    "count": 1,
+    "create_time": 1764843903,
+    "update_time": 1764843903,
+    "_id": "Artifact"
+  },
+  "具备": {
+    "chunk_ids": [
+      "chunk-07892b83846b808694a9cdd99f5110e0"
+    ],
+    "count": 1,
+    "create_time": 1764843907,
+    "update_time": 1764843907,
+    "_id": "具备"
+  },
+  "振动抑制功能": {
+    "chunk_ids": [
+      "chunk-07892b83846b808694a9cdd99f5110e0"
+    ],
+    "count": 1,
+    "create_time": 1764843908,
+    "update_time": 1764843908,
+    "_id": "振动抑制功能"
+  },
   "VMC850L": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841773,
-    "update_time": 1764841773,
+    "create_time": 1764844024,
+    "update_time": 1764844024,
     "_id": "VMC850L"
   },
-  "COMMAND THE FUTURE": {
+  "Working Table Dimensions": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841773,
-    "update_time": 1764841773,
-    "_id": "COMMAND THE FUTURE"
+    "create_time": 1764844024,
+    "update_time": 1764844024,
+    "_id": "Working Table Dimensions"
   },
-  "X/Y/Z Travel": {
+  "Travel Range": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841773,
-    "update_time": 1764841773,
-    "_id": "X/Y/Z Travel"
+    "create_time": 1764844024,
+    "update_time": 1764844024,
+    "_id": "Travel Range"
   },
-  "Spindle Speed": {
+  "Spindle End Face Distance": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841773,
-    "update_time": 1764841773,
-    "_id": "Spindle Speed"
+    "create_time": 1764844024,
+    "update_time": 1764844024,
+    "_id": "Spindle End Face Distance"
   },
-  "Worktable Dimensions": {
+  "Spindle Center to Column Guide Rail Distance": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841773,
-    "update_time": 1764841773,
-    "_id": "Worktable Dimensions"
+    "create_time": 1764844024,
+    "update_time": 1764844024,
+    "_id": "Spindle Center to Column Guide Rail Distance"
   },
-  "Spindle Distance to Worktable": {
+  "BT40 Taper Hole": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841773,
-    "update_time": 1764841773,
-    "_id": "Spindle Distance to Worktable"
+    "create_time": 1764844024,
+    "update_time": 1764844024,
+    "_id": "BT40 Taper Hole"
   },
   "Spindle Motor Power": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841773,
-    "update_time": 1764841773,
+    "create_time": 1764844024,
+    "update_time": 1764844024,
     "_id": "Spindle Motor Power"
   },
-  "Axis Rapid Traverse Speeds": {
+  "Main Spindle Speed": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841773,
-    "update_time": 1764841773,
-    "_id": "Axis Rapid Traverse Speeds"
+    "create_time": 1764844024,
+    "update_time": 1764844024,
+    "_id": "Main Spindle Speed"
   },
-  "Tool Magazine Type": {
+  "X/Y/Z Axis Rails": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841779,
-    "update_time": 1764841779,
-    "_id": "Tool Magazine Type"
+    "create_time": 1764844031,
+    "update_time": 1764844031,
+    "_id": "X/Y/Z Axis Rails"
   },
-  "Machine Dimensions": {
+  "Rapid Traverse Speeds": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841779,
-    "update_time": 1764841779,
-    "_id": "Machine Dimensions"
+    "create_time": 1764844032,
+    "update_time": 1764844032,
+    "_id": "Rapid Traverse Speeds"
+  },
+  "Tool Magazine": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764844032,
+    "update_time": 1764844032,
+    "_id": "Tool Magazine"
+  },
+  "Machine Outer Dimensions": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764844032,
+    "update_time": 1764844032,
+    "_id": "Machine Outer Dimensions"
   },
   "Machine Weight": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841779,
-    "update_time": 1764841779,
+    "create_time": 1764844032,
+    "update_time": 1764844032,
     "_id": "Machine Weight"
-  },
-  "Brown & Sharp": {
-    "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
-    ],
-    "count": 1,
-    "create_time": 1764841779,
-    "update_time": 1764841779,
-    "_id": "Brown & Sharp"
-  },
-  "Renishaw": {
-    "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
-    ],
-    "count": 1,
-    "create_time": 1764841779,
-    "update_time": 1764841779,
-    "_id": "Renishaw"
   },
   "High-Speed Design": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841779,
-    "update_time": 1764841779,
+    "create_time": 1764844032,
+    "update_time": 1764844032,
     "_id": "High-Speed Design"
   },
-  "Dynamic Stability": {
+  "Balancing System": {
     "chunk_ids": [
       "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
     ],
     "count": 1,
-    "create_time": 1764841779,
-    "update_time": 1764841779,
-    "_id": "Dynamic Stability"
+    "create_time": 1764844032,
+    "update_time": 1764844032,
+    "_id": "Balancing System"
+  },
+  "AER": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764844032,
+    "update_time": 1764844032,
+    "_id": "AER"
+  },
+  "Brown & Sharpe": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764844037,
+    "update_time": 1764844037,
+    "_id": "Brown & Sharpe"
+  },
+  "Renishaw Laser Interferometer": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764844038,
+    "update_time": 1764844038,
+    "_id": "Renishaw Laser Interferometer"
   }
 }

@@ -206,52 +206,6 @@ def print_with_emoji(emoji: str, message: str, level: str = "INFO") -> None:
         safe_print(f"{emoji} {message}")
 
 
-def test_console_output() -> bool:
-    """
-    测试控制台输出功能
-    
-    Returns:
-        测试是否成功
-    """
-    try:
-        # 输出编码信息
-        encoding_info = ConsoleOutputFixer.get_encoding_info()
-        safe_print("控制台编码信息:")
-        for key, value in encoding_info.items():
-            safe_print(f"  {key}: {value}")
-        
-        # 测试中文输出
-        test_messages = [
-            "测试中文字符输出",
-            "GSK 27i高端多通道系统",
-            "文件路径：D:/测试目录/中文文档.pdf",
-            "错误：无法处理包含中文的文件名"
-        ]
-        
-        safe_print("\n测试中文消息输出:")
-        for i, msg in enumerate(test_messages, 1):
-            safe_print(f"{i}. {msg}")
-        
-        # 测试emoji输出
-        safe_print("\n测试emoji输出:")
-        print_with_emoji("🚀", "程序启动")
-        print_with_emoji("✓", "操作成功") 
-        print_with_emoji("❌", "操作失败")
-        print_with_emoji("🎉", "任务完成")
-        
-        # 测试控制台日志
-        safe_print("\n测试控制台日志:")
-        console_log("INFO", "这是一条信息日志")
-        console_log("WARNING", "这是一条警告日志")
-        console_log("ERROR", "这是一条错误日志")
-        
-        return True
-        
-    except Exception as e:
-        safe_print(f"控制台输出测试失败: {e}")
-        return False
-
-
 # 模块初始化时自动修复控制台编码
 if not ConsoleOutputFixer._console_fixed:
     ConsoleOutputFixer.fix_console_encoding() 

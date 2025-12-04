@@ -12138,3 +12138,38 @@ RuntimeError: Event loop is closed
 2025-12-04 18:15:44,855 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
 2025-12-04 18:15:44,902 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
 2025-12-04 18:15:44,903 - src.utils.logging_utils - INFO - Processing document 1/1: 01-GSK 27i高端多通道数控系统 20250226.txt (0.01 MB)
+2025-12-04 18:25:11,580 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 566.6s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-04 18:25:11,630 - src.utils.logging_utils - INFO - Document insertion completed in 9.4min: 1 success, 0 failed
+2025-12-04 18:25:11,630 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-04 18:25:11,630 - src.utils.logging_utils - INFO - [2/2] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-12-04 18:25:11,631 - src.utils.logging_utils - INFO - Event loop initialized for thread 22032
+2025-12-04 18:25:11,631 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-04 18:25:11,631 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-12-04 18:25:11,901 - nano-vectordb - INFO - Load (21, 3072) data
+2025-12-04 18:25:11,902 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 21 data
+2025-12-04 18:25:11,913 - nano-vectordb - INFO - Load (17, 3072) data
+2025-12-04 18:25:11,914 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 17 data
+2025-12-04 18:25:11,924 - nano-vectordb - INFO - Load (9, 3072) data
+2025-12-04 18:25:11,925 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 9 data
+2025-12-04 18:25:11,927 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-04 18:25:11,927 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-04 18:25:11,927 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-12-04 18:25:11,927 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.00 MB
+2025-12-04 18:25:11,975 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-04 18:25:11,975 - src.utils.logging_utils - INFO - Processing document 1/1: 01-宝鸡机床VMC850L.txt (0.00 MB)
+2025-12-04 18:27:38,658 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 146.6s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-04 18:27:38,708 - src.utils.logging_utils - INFO - Document insertion completed in 2.4min: 1 success, 0 failed
+2025-12-04 18:27:38,708 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-04 18:28:00,523 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-12-04 18:28:00,539 - src.utils.logging_utils - INFO - ✅ ChunkRepository initialized successfully
+2025-12-04 18:28:01,006 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_entities.json'} 0 data
+2025-12-04 18:28:01,007 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_relationships.json'} 0 data
+2025-12-04 18:28:01,007 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_chunks.json'} 0 data
+2025-12-04 18:28:01,122 - src.utils.logging_utils - INFO - 开始QA生成流程
+2025-12-04 18:28:01,123 - src.utils.logging_utils - INFO - 输入目录: ..\working\processed
+2025-12-04 18:28:01,123 - src.utils.logging_utils - INFO - 输出目录: F:\QAGenPipelinesX_lightrag\working\qa-pairs
+2025-12-04 18:28:01,123 - src.utils.logging_utils - INFO - 向量库: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-04 18:28:01,123 - src.utils.logging_utils - INFO - 问题目录: F:\QAGenPipelinesX_lightrag\working\questions
+2025-12-04 18:28:01,124 - src.utils.logging_utils - INFO - 找到 2 个文档待处理
+2025-12-04 18:28:01,124 - src.utils.logging_utils - INFO - [1/2] 处理文档: F:\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-12-04 18:28:01,125 - src.utils.logging_utils - INFO - 步骤1: 生成问题

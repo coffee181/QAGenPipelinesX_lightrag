@@ -1,25 +1,42 @@
 {
+  "01-GSK 27i高端多通道数控系统 20250226": {
+    "entity_names": [
+      "RJ45通信接口",
+      "高达8000步力矩控制",
+      "具备",
+      "USB通信接口",
+      "振动抑制功能",
+      "Artifact"
+    ],
+    "count": 6,
+    "create_time": 1764843911,
+    "update_time": 1764843911,
+    "_id": "01-GSK 27i高端多通道数控系统 20250226"
+  },
   "01-宝鸡机床VMC850L": {
     "entity_names": [
-      "Spindle Distance to Worktable",
-      "X/Y/Z Travel",
-      "Worktable Dimensions",
-      "VMC850L",
-      "Renishaw",
+      "Renishaw Laser Interferometer",
       "Machine Weight",
-      "High-Speed Design",
-      "COMMAND THE FUTURE",
-      "Spindle Speed",
-      "Brown & Sharp",
-      "Machine Dimensions",
-      "Tool Magazine Type",
+      "VMC850L",
+      "Main Spindle Speed",
       "Spindle Motor Power",
-      "Dynamic Stability",
-      "Axis Rapid Traverse Speeds"
+      "Rapid Traverse Speeds",
+      "Balancing System",
+      "Machine Outer Dimensions",
+      "AER",
+      "Travel Range",
+      "BT40 Taper Hole",
+      "Spindle Center to Column Guide Rail Distance",
+      "Brown & Sharpe",
+      "X/Y/Z Axis Rails",
+      "High-Speed Design",
+      "Spindle End Face Distance",
+      "Working Table Dimensions",
+      "Tool Magazine"
     ],
-    "count": 15,
-    "create_time": 1764841807,
-    "update_time": 1764841807,
+    "count": 18,
+    "create_time": 1764844058,
+    "update_time": 1764844058,
     "_id": "01-宝鸡机床VMC850L"
   }
 }

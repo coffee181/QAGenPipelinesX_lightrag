@@ -22295,16 +22295,55 @@
     "insert_docs_20251204_181544": {
       "operation_type": "document_insertion",
       "total_items": 1,
-      "completed_items": 0,
+      "completed_items": 1,
       "failed_items": 0,
-      "processed_files": [],
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+          "timestamp": "2025-12-04T18:25:11.533377"
+        }
+      ],
       "failed_files": [],
       "start_time": "2025-12-04T18:15:44.855369",
-      "last_update": "2025-12-04T18:15:44.855378",
-      "status": "running",
+      "last_update": "2025-12-04T18:25:11.580946",
+      "status": "completed",
       "metadata": {},
-      "percentage_milestones": []
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T18:25:11.533393",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T18:25:11.580942"
+    },
+    "insert_docs_20251204_182511": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-宝鸡机床VMC850L.txt",
+          "timestamp": "2025-12-04T18:27:38.611552"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T18:25:11.928081",
+      "last_update": "2025-12-04T18:27:38.658957",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T18:27:38.611570",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T18:27:38.658953"
     }
   },
-  "last_updated": "2025-12-04T18:15:44.855381"
+  "last_updated": "2025-12-04T18:27:38.658959"
 }
