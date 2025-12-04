@@ -72,19 +72,17 @@ class QuestionSet:
         """Get all questions as a list of strings."""
         return [q.content for q in self.questions]
     
-    def to_jsonl_format(self) -> Dict[str, Any]:
-        """Convert to JSONL format for storage (with full metadata)."""
-        return {
-            "messages": [
-                {
-                    "question_id": q.question_id,
-                    "content": q.content,
-                    "source_document": q.source_document,
-                    "source_chunk_id": q.source_chunk_id,
-                    "question_index": q.question_index,
-                    "metadata": q.metadata,  # 保存metadata（包含预生成的答案）
-                    "created_at": q.created_at.isoformat() if q.created_at else None
-                }
-                for q in self.questions
-            ]
-        } 
+    def to_jsonl_format(self) -> List[Dict[str, Any]]:
+        """Convert to multi-line JSONL format for storage (each question as separate entry)."""
+        return [
+            {
+                "question_id": q.question_id,
+                "content": q.content,
+                "source_document": q.source_document,
+                "source_chunk_id": q.source_chunk_id,
+                "question_index": q.question_index,
+                "metadata": q.metadata,  # 保存metadata（包含预生成的答案）
+                "created_at": q.created_at.isoformat() if q.created_at else None
+            }
+            for q in self.questions
+        ]

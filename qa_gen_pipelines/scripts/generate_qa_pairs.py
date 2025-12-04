@@ -154,19 +154,24 @@ def main() -> None:
             f"Vectorized working directory does not exist: {vector_dir}"
         )
 
+    logger.info("开始QA生成流程")
+    logger.info(f"输入目录: {args.input}")
+    logger.info(f"输出目录: {output_dir}")
+    logger.info(f"向量库: {vector_dir}")
+    logger.info(f"问题目录: {questions_dir}")
+
     documents = resolve_text_paths(args.input, args.paths)
+
+    logger.info(f"找到 {len(documents)} 个文档待处理")
 
     original_questions_output = question_service.output_dir
     question_service.output_dir = questions_dir
 
     try:
         for idx, document_path in enumerate(documents, start=1):
-            logger.info(
-                "[%d/%d] Generating questions for document: %s",
-                idx,
-                len(documents),
-                document_path,
-            )
+            logger.info(f"[{idx}/{len(documents)}] 处理文档: {document_path}")
+
+            logger.info("步骤1: 生成问题")
             question_service.generate_questions_from_text_file(document_path)
 
             question_file = questions_dir / f"{document_path.stem}_questions.jsonl"
@@ -178,11 +183,8 @@ def main() -> None:
             qa_output_file = output_dir / f"{document_path.stem}_qa_pairs.jsonl"
             session_id = get_session_id(args.session_id, document_path.stem)
 
-            logger.info(
-                "Generating QA pairs for %s using vector store %s",
-                document_path.name,
-                vector_dir,
-            )
+            logger.info("步骤2: 生成答案")
+            logger.info(f"使用向量库: {vector_dir}")
             answer_service.generate_answers_from_existing_kb(
                 question_file,
                 vector_dir,

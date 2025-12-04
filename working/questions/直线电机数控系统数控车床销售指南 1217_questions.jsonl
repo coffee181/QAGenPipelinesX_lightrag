@@ -1,0 +1,2194 @@
+{
+  "question_id": "b3419f01-1833-49a9-bbbf-3662eab6f46d",
+  "content": "FSS偏心SAT HBR异形锥体火后精车jets toe aye pom工艺对加工精度有什么要求？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6cd4369d470a1306b6967a176df060af",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6cd4369d470a1306b6967a176df060af",
+    "related_chunk_ids": [
+      "chunk-6cd4369d470a1306b6967a176df060af"
+    ]
+  },
+  "created_at": "2025-11-30T13:10:43.943159"
+}
+
+{
+  "question_id": "381ed5d6-5b3d-4b90-b850-4a43cd02c6a8",
+  "content": "AVY.4直线电机装置在数控车床上的应用有哪些优势？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6cd4369d470a1306b6967a176df060af",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6cd4369d470a1306b6967a176df060af",
+    "related_chunk_ids": [
+      "chunk-6cd4369d470a1306b6967a176df060af"
+    ]
+  },
+  "created_at": "2025-11-30T13:10:43.943403"
+}
+
+{
+  "question_id": "95b5e649-80d0-4cde-82bd-44b20aadea07",
+  "content": "直驱机床的高加速度（4g）和高速度（300m/min）对加工过程有什么具体影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6cd4369d470a1306b6967a176df060af",
+  "question_index": 11,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6cd4369d470a1306b6967a176df060af",
+    "related_chunk_ids": [
+      "chunk-6cd4369d470a1306b6967a176df060af"
+    ]
+  },
+  "created_at": "2025-11-30T13:10:43.944089"
+}
+
+{
+  "question_id": "c441511c-d887-4372-8711-cf3f03f0e5cb",
+  "content": "直驱机床的移动速度最高可达300m/min，加速度最高可达4g，这些性能指标在实际加工中如何提升生产效率？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-9fd9d7b750e6947f58871fd4c39b41e7",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9fd9d7b750e6947f58871fd4c39b41e7",
+    "related_chunk_ids": [
+      "chunk-9fd9d7b750e6947f58871fd4c39b41e7"
+    ]
+  },
+  "created_at": "2025-11-30T13:11:16.647758"
+}
+
+{
+  "question_id": "e0a4a579-0322-4f3d-af13-c36a5631f343",
+  "content": "直驱机床的定位精度为2.063μm，而丝杆机床为9.8μm，这种对比在实际加工中意味着什么？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-9fd9d7b750e6947f58871fd4c39b41e7",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9fd9d7b750e6947f58871fd4c39b41e7",
+    "related_chunk_ids": [
+      "chunk-9fd9d7b750e6947f58871fd4c39b41e7"
+    ]
+  },
+  "created_at": "2025-11-30T13:11:16.648751"
+}
+
+{
+  "question_id": "b6ca1b60-dc27-427f-8e67-1aadb1ecbd95",
+  "content": "直线电机在液冷满载场景下，推力可以达到最大连续8400N，这比未接冷却时推力提升了多少倍？这种性能提升对加工能力有什么影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+    "related_chunk_ids": [
+      "chunk-69eede3eb2065e40be0340ce72984271"
+    ]
+  },
+  "created_at": "2025-11-30T13:11:51.524914"
+}
+
+{
+  "question_id": "ff59a856-d613-456d-9c49-8a3ffbc2c051",
+  "content": "直线电机的最小连续推力400N和最大连续推力8400N之间差距很大，这种设计是为了满足哪些不同应用场景的需求？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+    "related_chunk_ids": [
+      "chunk-69eede3eb2065e40be0340ce72984271"
+    ]
+  },
+  "created_at": "2025-11-30T13:11:51.525188"
+}
+
+{
+  "question_id": "4f7ce0e3-f535-474a-8407-237079aeb62e",
+  "content": "直线电机的动态刚度范围160~210 N·mm⁻¹比传统旋转电机高很多，这对加工稳定性有什么具体帮助？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+    "related_chunk_ids": [
+      "chunk-69eede3eb2065e40be0340ce72984271"
+    ]
+  },
+  "created_at": "2025-11-30T13:11:51.525451"
+}
+
+{
+  "question_id": "15979a18-0abc-49fd-9af4-d383c29fcbfb",
+  "content": "直线电机的工作台最小连续推力400N和最大峰值推力1000N的设计是为了满足哪些不同加工需求？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+    "related_chunk_ids": [
+      "chunk-69eede3eb2065e40be0340ce72984271"
+    ]
+  },
+  "created_at": "2025-11-30T13:11:51.526317"
+}
+
+{
+  "question_id": "174b9843-c11a-486c-8df1-e5e871646c19",
+  "content": "直线电机的初级线圈最大连续推力8400N和最大峰值推力21000N之间差距很大，这种设计有什么实际意义？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+  "question_index": 11,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+    "related_chunk_ids": [
+      "chunk-69eede3eb2065e40be0340ce72984271"
+    ]
+  },
+  "created_at": "2025-11-30T13:11:51.526632"
+}
+
+{
+  "question_id": "65e3b1c0-6481-41de-9f24-1923cac493ad",
+  "content": "直线电机的工作台最小连续推力400N和最大连续推力8400N之间差距很大，这种设计是为了满足哪些不同加工需求？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+  "question_index": 17,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-69eede3eb2065e40be0340ce72984271",
+    "related_chunk_ids": [
+      "chunk-69eede3eb2065e40be0340ce72984271"
+    ]
+  },
+  "created_at": "2025-11-30T13:11:51.528497"
+}
+
+{
+  "question_id": "52a28957-aaae-415b-a90f-e82efef6c00a",
+  "content": "GSK 988TA数控系统支持哪些类型的加工机床？它如何满足中高档车铣复合加工中心的需求？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.308750"
+}
+
+{
+  "question_id": "71632782-3846-468a-a076-1713ef99a916",
+  "content": "GSK 988TA系统采用的GSK-Link工业以太网总线技术有哪些优势？在实际应用中如何配置和使用这些功能？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.309028"
+}
+
+{
+  "question_id": "67394195-8430-41e1-8cc2-f92a2013fbf9",
+  "content": "GSK 988TA数控系统支持多少个进给轴和主轴？这些配置对加工效率和精度有什么影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.309349"
+}
+
+{
+  "question_id": "8291833f-9931-4026-898a-1b66f71ed4ef",
+  "content": "GSK 988TA系统支持哪些类型的光栅尺？搭配高精度光栅尺后，如何实现全闭环控制？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.309676"
+}
+
+{
+  "question_id": "804b29e9-374d-41e0-b31f-83c835014191",
+  "content": "GSK 988TA系统支持的伺服驱动器有哪些特点？如何进行在线伺服调试以优化加工性能？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.309944"
+}
+
+{
+  "question_id": "fdf312be-c9db-49bc-a2fa-0c8683c18ded",
+  "content": "GSK 988TA系统的10.4寸液晶显示界面有哪些功能？用户可以通过哪些方式进行操作？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.310179"
+}
+
+{
+  "question_id": "6cf93fb7-8860-46e9-9681-f6efb508ecb0",
+  "content": "GSK 988TA数控系统的高防护能力体现在哪些方面？这些特性在哪些恶劣环境下特别有用？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.310440"
+}
+
+{
+  "question_id": "83caee6e-79c5-4ba2-a565-1be07ab41bb3",
+  "content": "GSK 988TA系统支持的智能诊断和维护功能如何帮助用户快速定位和解决故障？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.310711"
+}
+
+{
+  "question_id": "6bb139e1-ab08-47b0-82ac-82bf4a831f9e",
+  "content": "GSK 988TA系统支持的多轴一体伺服驱动列有哪些特点？这些驱动器如何提高加工效率和精度？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.310986"
+}
+
+{
+  "question_id": "d697485f-c39d-43a8-ad01-4cfe2cacc4ae",
+  "content": "GSK 988TA系统的高过载支持能力对哪些类型的加工应用特别重要？如何配置以充分发挥这一特性？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.311263"
+}
+
+{
+  "question_id": "585a9d63-6ffa-4c7a-9714-b51a0b8374f7",
+  "content": "GSK 988TA系统支持的附加轴功能如何帮助用户扩展加工能力？这些附加轴有哪些典型应用场景？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 11,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.311513"
+}
+
+{
+  "question_id": "5b339a8f-6a07-46d4-a0f2-3cccb78f4cc3",
+  "content": "GSK 988TA系统的全阵列滤波扫描技术如何提高光栅尺的测量精度和抗污染能力？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 12,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.311749"
+}
+
+{
+  "question_id": "12707bc0-1ad9-4f0c-9b91-d42c5fdae8db",
+  "content": "GSK 988TA系统支持的智能调试功能包括哪些内容？这些功能如何简化用户的调试过程？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 13,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.312027"
+}
+
+{
+  "question_id": "b4a038f9-1084-4dfd-8484-b560bb6f21d4",
+  "content": "GSK 988TA系统的高散热设计对哪些类型的加工环境特别重要？如何确保系统的长期稳定运行？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 14,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.312306"
+}
+
+{
+  "question_id": "6fbd74c6-2eba-43f6-a35c-bc78a439f555",
+  "content": "GSK 988TA系统支持的力矩尾座功能如何帮助用户完成复杂零件的加工任务？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 15,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.312621"
+}
+
+{
+  "question_id": "b3bf812c-5b0b-497b-8f91-f6f254a481a2",
+  "content": "GSK 988TA系统的多种外观结构（如横式和竖式）如何适应不同的安装空间需求？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 16,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.312919"
+}
+
+{
+  "question_id": "c88a957f-e1ff-44cb-a278-dca29e4a040d",
+  "content": "GSK 988TA系统的高防护能力如何体现？这些特性在哪些工业环境中特别有用？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 17,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.313206"
+}
+
+{
+  "question_id": "b0b57721-112d-4258-bb45-5fe5669939aa",
+  "content": "GSK 988TA系统的智能管控功能包括哪些内容？这些功能如何帮助用户优化生产流程？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 18,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.313451"
+}
+
+{
+  "question_id": "5f1585a0-e230-492c-a7bf-c9663112b8b2",
+  "content": "GSK 988TA系统支持的多种传感器（如光栅尺、磁栅等）如何影响加工精度和可靠性？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 19,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.313783"
+}
+
+{
+  "question_id": "77f451a9-fb0b-43fd-a494-3e05ffac4af4",
+  "content": "GSK 988TA系统的高扩展性体现在哪些方面？用户可以通过哪些方式进一步定制和升级系统功能？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+  "question_index": 20,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48da0729a68c5b54afaf28a30b6520",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7d48da0729a68c5b54afaf28a30b6520"
+    ]
+  },
+  "created_at": "2025-11-30T13:12:19.314047"
+}
+
+{
+  "question_id": "f74641ed-2ddf-490c-84e9-ad57cebd046c",
+  "content": "GSK 988TA 横式和竖式的安装尺寸分别是多少？这些尺寸如何影响机床的布局设计？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.111315"
+}
+
+{
+  "question_id": "eb6612f2-34f8-4cfc-9d68-4b726b2db88a",
+  "content": "BC3751 直驱刀塔斜车床的最大回转直径是多少？GSK 永磁同步直线电机在该机床中的冷却系统是如何配置的？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "BC3751"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.111570"
+}
+
+{
+  "question_id": "6f07f3a5-785d-489e-b71b-2da14afc419b",
+  "content": "B45A 直驱数控系统的定位精度和重复定位精度分别是多少？如何校准这些参数以确保加工精度？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "B45A"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.112139"
+}
+
+{
+  "question_id": "69a9bae1-a00f-4686-ad33-5270623c995d",
+  "content": "HTM50-600 超精密直驱数控车床的双主轴对接精度为0.005mm，哪些因素可能影响这一精度？如何维护以保持高精度？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "HTM50-600"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.112408"
+}
+
+{
+  "question_id": "db27a098-8a7a-4e0f-92ad-1f9feded4ddb",
+  "content": "BC3751 机床的最大回转直径是多少？GSK 永磁同步直线电机在该机床中扮演什么角色？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "BC3751"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.112673"
+}
+
+{
+  "question_id": "5dad0808-4de9-49d0-b6d9-145cc3fcf693",
+  "content": "B45A 机床的主轴推力由哪个伺服电机提供？如何调整以适应不同材料的加工需求？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "B45A"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.113153"
+}
+
+{
+  "question_id": "ef26b1fd-22fc-4497-9690-080c575fc8c7",
+  "content": "HTM50-600 车床使用了哪种协议的光栅尺？常见故障及其解决方法是什么？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "HTM50-600"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.113390"
+}
+
+{
+  "question_id": "c386c4a1-643c-44cb-8e9b-5e6c71cd8703",
+  "content": "GSK 988TA 操作面板的具体尺寸是多少？安装时需要考虑哪些因素？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.113643"
+}
+
+{
+  "question_id": "b69e2eb8-8cba-4d22-b065-ccaa161ceb58",
+  "content": "BC3751 机床适用于加工什么类型的工件？其直驱系统的主要优势是什么？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 11,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "BC3751"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.113874"
+}
+
+{
+  "question_id": "f6bc439a-54c2-40af-8036-9298a9bb5ca0",
+  "content": "B45A 机床的伺服电机参数是多少？如何进行参数设置以优化性能？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 13,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "B45A"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.114484"
+}
+
+{
+  "question_id": "641073fd-0ba3-4352-b63e-0781ff0269d6",
+  "content": "HTM50-600 车床的双主轴对接精度受哪些因素影响？如何检测和调整以确保精度？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 14,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "HTM50-600"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.114768"
+}
+
+{
+  "question_id": "91960d04-3ab7-431f-a49b-aab8643f0d22",
+  "content": "GSK 988TA 的10.4寸显示屏支持哪些接口类型？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 15,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.115042"
+}
+
+{
+  "question_id": "d4177a90-cd1e-48ae-8770-d3805321a6f7",
+  "content": "B45A 机床的操作面板如何设置快速移动速度？这一设置对加工效率有何影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 17,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "B45A"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.115564"
+}
+
+{
+  "question_id": "dbe8044b-43ca-46b7-951c-03b3f73f44a6",
+  "content": "BC3751 机床的冷却系统如何配置？这对电机性能有什么帮助？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 18,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "BC3751"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.115875"
+}
+
+{
+  "question_id": "cff8727e-ba54-4a9f-993c-63a5687b2885",
+  "content": "HTM50-600 车床的伺服电机出现异常噪音，可能是什么原因导致的？如何排查和解决？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 19,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "HTM50-600"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.116169"
+}
+
+{
+  "question_id": "5ba1bdbc-270e-42ec-ac20-a7f8ba92003e",
+  "content": "GSK 988TA 的安装尺寸是否符合标准机床接口？需要哪些适配器以确保兼容性？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+  "question_index": 20,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6054f2db932dc8cb6bb3172a17b2ba26",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-6054f2db932dc8cb6bb3172a17b2ba26"
+    ]
+  },
+  "created_at": "2025-11-30T13:13:10.116444"
+}
+
+{
+  "question_id": "1020ce89-f099-428a-8d56-b4db3a089b3b",
+  "content": "GSK-YD(A2-6)-00主轴的定位精度和位置精度分别是多少？这两个参数在实际加工中如何影响工件的尺寸稳定性？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+    "related_chunk_ids": [
+      "chunk-7188d6f88987daacc97631155bfb3636"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:00.113153"
+}
+
+{
+  "question_id": "8afba171-81ac-47f5-98b0-0d1c2d67c2cf",
+  "content": "文档中提到的三相输入电抗参数（48A/0.29mH/50Hz）对系统的运行稳定性有什么具体影响？如何根据这些参数选择合适的电源配置？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+    "related_chunk_ids": [
+      "chunk-7188d6f88987daacc97631155bfb3636"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:00.113405"
+}
+
+{
+  "question_id": "bd1539df-3492-4777-b6e2-32f2a78acca4",
+  "content": "GSK-YD(A2-6)-00主轴的最大切削速度是多少？在实际加工中，如何通过调整进给速度和主轴转速来确保加工表面质量和效率的平衡？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+    "related_chunk_ids": [
+      "chunk-7188d6f88987daacc97631155bfb3636"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:00.113653"
+}
+
+{
+  "question_id": "559bd42f-9cfa-476e-9c7f-2b6e9e51714e",
+  "content": "在文档提到的应用案例中，GSK 988TD HU系统是如何解决高圆度要求（2um）的轴承位加工难题的？其具体的技术手段是什么？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+    "related_chunk_ids": [
+      "chunk-7188d6f88987daacc97631155bfb3636"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:00.113894"
+}
+
+{
+  "question_id": "794f439b-5fee-4d3a-924e-0b3fe50f6e55",
+  "content": "GSK-YD(A2-6)-00主轴的尺寸参数是5300x3600x2300mm，这个尺寸设计在实际应用中有什么优势和限制？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+    "related_chunk_ids": [
+      "chunk-7188d6f88987daacc97631155bfb3636"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:00.114133"
+}
+
+{
+  "question_id": "f0897492-57ea-4ee5-9ecb-d68d1c7d6389",
+  "content": "文档提到的“最高切削速度F8000”具体指的是什么？在实际加工中，如何根据工件材料和形状选择合适的切削参数？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+    "related_chunk_ids": [
+      "chunk-7188d6f88987daacc97631155bfb3636"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:00.114367"
+}
+
+{
+  "question_id": "ed2a1377-3b5a-416e-9abf-b09bfd0eb190",
+  "content": "在GSK 988TD HU系统的应用案例中，干件连续加工尺寸变化稳定在级精度，这里的“级精度”具体指什么？如何通过系统设置实现这一目标？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+    "related_chunk_ids": [
+      "chunk-7188d6f88987daacc97631155bfb3636"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:00.114657"
+}
+
+{
+  "question_id": "52fa6c23-adca-4882-8af9-717720f27a12",
+  "content": "GSK-YD(A2-6)-00主轴的双主轴对接精度是0.005mm（不含工装及卡盘误差），这个精度参数在实际应用中对加工质量有什么影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+    "related_chunk_ids": [
+      "chunk-7188d6f88987daacc97631155bfb3636"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:00.114961"
+}
+
+{
+  "question_id": "4eb34aa3-8471-45f8-890b-68efc3543b57",
+  "content": "在GSK 988TA和988TD系统的应用案例中，轴承位圆度要求高（2um）的情况下，如何通过数控系统设置优化加工过程中的振动控制？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+    "related_chunk_ids": [
+      "chunk-7188d6f88987daacc97631155bfb3636"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:00.115292"
+}
+
+{
+  "question_id": "3b2f8619-35a0-4812-95e0-ce75f72b92b9",
+  "content": "GSK-YD(A2-6)-00主轴的定位精度和位置精度分别是多少？这两个参数在实际加工中对工件表面质量有什么影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+  "question_index": 12,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7188d6f88987daacc97631155bfb3636",
+    "related_chunk_ids": [
+      "chunk-7188d6f88987daacc97631155bfb3636"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:00.116120"
+}
+
+{
+  "question_id": "71ff4035-f2b3-4f7a-abf2-c9dbf4bf203d",
+  "content": "GSK RB08机器人使用直线电机驱动，其重复定位精度和加速度分别是多少？这些性能如何影响加工质量？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.430771"
+}
+
+{
+  "question_id": "e2119852-35a8-43b9-b564-9b0dc722b99d",
+  "content": "GSK 980TDi数控系统在提高加工效率方面有哪些具体表现？它适合哪些类型的高精度加工任务？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.431234"
+}
+
+{
+  "question_id": "e4d91a88-83f3-494c-bc2b-6785505d75e9",
+  "content": "在加工零件时，GSK RB08机器人如何实现表面粗糙度Ra0.4？需要哪些配置或参数设置？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.431805"
+}
+
+{
+  "question_id": "4f26bef4-c98e-4752-bec1-49c4bc145c25",
+  "content": "GSK 988TDi数控系统在驱动高精度加工机床时有哪些优势？它适用于哪些特定类型的加工任务？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.432084"
+}
+
+{
+  "question_id": "e84a56f4-08e7-4e7a-b954-3f5ffa5c888b",
+  "content": "GSK RB08机器人的重复定位精度为0.005mm，这一指标在哪些应用场景中尤为重要？如何确保达到该精度？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.432359"
+}
+
+{
+  "question_id": "91f5ae90-a585-4b45-a103-49033b56c479",
+  "content": "在车削直径200mm的零件时，GSK RB08机器人能达到的轮廓精度是多少？加工效率相比传统铣削方式提升了多少？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.432615"
+}
+
+{
+  "question_id": "7d0db72b-4220-4625-9aaa-a65c9310778f",
+  "content": "GSK 988TA系统在高动态多轴联动加工中的表现如何？其插补速度达到F100000/min，这对复杂异形面加工有何影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.432869"
+}
+
+{
+  "question_id": "2812f075-77eb-4b36-8b88-99326e1122b3",
+  "content": "直线电机驱动的GSK RB08机器人在过象限处的表面效果是如何优化的？Ra值能达到多少？这一技术对零件质量提升有哪些具体体现？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.433113"
+}
+
+{
+  "question_id": "d8a230cf-45fd-4ea5-a58e-68492cbfd7fc",
+  "content": "GSK 980TDi数控系统与传统丝杆机床相比，在加工效率和精度上有何显著差异？它最适合哪些类型的工件加工？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.433409"
+}
+
+{
+  "question_id": "fdc7b0aa-e73c-4620-a33b-3c3da674fa28",
+  "content": "GSK RB08机器人在加工高相位角及尺寸精度要求高的零件时，如何确保加工质量？需要哪些特殊配置或参数调整？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 11,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.433741"
+}
+
+{
+  "question_id": "9698f500-be2f-4279-ad97-149f45ca8f66",
+  "content": "GSK 988TDi系统在驱动多轴联动机床时，各轴的响应配合有何特点？这对复杂工件的加工效率和精度提升有哪些帮助？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 12,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.434061"
+}
+
+{
+  "question_id": "f8584082-3334-43b5-8cb0-ccaab0df088d",
+  "content": "直线电机驱动的GSK RB08机器人在冷热机加工中如何保持尺寸稳定性？其圆柱度和表面粗糙度能得到哪些改善？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 13,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.434412"
+}
+
+{
+  "question_id": "56a15997-fe73-414a-93be-3e833f49b4a7",
+  "content": "GSK 980TDi数控系统在提高刀补次数方面有显著效果，具体减少了多少比例？这对整体加工效率有何影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 14,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.434719"
+}
+
+{
+  "question_id": "f7b0f3ff-4974-4b15-886d-3ccf71569aab",
+  "content": "在加工高难度的偏心斜锥面时，GSK RB08机器人如何实现高效的车削工艺？其效率提升的具体表现是什么？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 15,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.435031"
+}
+
+{
+  "question_id": "b1776df4-969c-44ca-a533-3b2215c16d4e",
+  "content": "GSK 988TA系统在加工高档麦克风支座时，如何利用直驱技术和多轴随动模式确保表面质量和轮廓精度？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 16,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.435337"
+}
+
+{
+  "question_id": "f338d71b-b100-4110-8dd0-2eece40bcab2",
+  "content": "直线电机驱动的GSK RB08机器人在加工铝合金材料时，其表面粗糙度Ra能达到多少？这一性能对零件应用有何意义？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 17,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.435662"
+}
+
+{
+  "question_id": "3faa598d-4746-4e34-9690-d764e036873d",
+  "content": "GSK 980TDi数控系统在提升加工效率30%的同时，如何保持高精度和低振动？其核心控制技术是什么？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 18,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.435977"
+}
+
+{
+  "question_id": "2cd6829c-fcaa-40a5-a9aa-4ae65d944edd",
+  "content": "GSK RB08机器人在加工复杂异形面时，如何利用动态插补功能提高加工质量？这一功能对表面纹路有何具体优化效果？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 19,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.436265"
+}
+
+{
+  "question_id": "da16e70e-ff6e-4ee4-bf3d-c09c56824b0e",
+  "content": "直线电机驱动的GSK RB08机器人在加工过象限处的表面平滑度如何实现？Ra值和轮廓精度的具体指标是多少？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+  "question_index": 20,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-20540198ba4df8f297c189ab34a82ca2",
+    "related_chunk_ids": [
+      "chunk-20540198ba4df8f297c189ab34a82ca2"
+    ]
+  },
+  "created_at": "2025-11-30T13:14:34.436586"
+}
+
+{
+  "question_id": "6e8374d3-f121-4033-9109-3be6943475c2",
+  "content": "在加工电饭锅发热盘时，如何通过GSK 988TA直驱机床的参数设置确保表面纹路均匀且无断振纹？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.301565"
+}
+
+{
+  "question_id": "bdbfe51d-e9a1-481c-9a95-e59dd556ebfe",
+  "content": "GSK 988TA直驱机床在高转速、高进给条件下，如何实现高效车削并保证表面粗糙度达到22hm左右？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.301815"
+}
+
+{
+  "question_id": "ca43246a-4a50-4d71-82e6-3a84c9aef44b",
+  "content": "在薄壁零件加工中，GSK 988TA直驱机床采用高精排刀设计和专用夹具的主要目的是什么？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.302106"
+}
+
+{
+  "question_id": "9af09554-09c6-445f-8c38-0c5b9011911e",
+  "content": "GSK 988TA直驱机床在处理相位角偏移及贺度要求高的工件时，如何通过多轴联动实现高精度加工？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.302386"
+}
+
+{
+  "question_id": "593d20c8-a21a-4a16-997a-8087477c40b6",
+  "content": "在加工减速器曲柄轴时，GSK 988TA直驱机床的动态随动车削模式能达到怎样的插补速度和频率？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.302868"
+}
+
+{
+  "question_id": "16fe7c0c-dcf4-469c-973d-9a69ee658ff9",
+  "content": "GSK 988TA直驱机床在偏心距误差控制方面能达到什么水平？其圆度和粗糙度分别如何表现？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.303100"
+}
+
+{
+  "question_id": "bf411c65-feca-4f08-9d14-02cab3f8c500",
+  "content": "如何通过GSK 988TA直驱机床的极速螺纹控制包实现高效率的螺纹加工，并确保退尾长度小于1/3圈？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.303352"
+}
+
+{
+  "question_id": "03712cdb-5734-4b74-81cb-bdf524266c76",
+  "content": "在螺杆泵轴加工中，GSK 988TA直驱机床如何保证螺纹有效距离误差小于5mm？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.303636"
+}
+
+{
+  "question_id": "3497411c-970c-499e-99f0-73f230999b79",
+  "content": "GSK 988TA直驱机床在高转速条件下（如F2进给速度），如何避免退尾终点与上一图牙重乱牙现象？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.303873"
+}
+
+{
+  "question_id": "a793484e-5dab-4d6f-8b10-9add4419f602",
+  "content": "GSK 988TA直驱机床的轴插补精度如何影响螺纹加工的有效距离和退尾长度控制？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 12,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.304382"
+}
+
+{
+  "question_id": "1188b67f-96c9-41a9-a19d-35696df57476",
+  "content": "在高转速条件下（如500rpm偏心距误差控制），GSK 988TA直驱机床如何保证圆度达到何种级别？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 13,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.304623"
+}
+
+{
+  "question_id": "2267f829-468f-40e7-a3b5-f7bbd9cc7423",
+  "content": "GSK 988TA直驱机床的高刚性设计在薄壁零件加工中起到哪些关键作用？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 14,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.304898"
+}
+
+{
+  "question_id": "4832da60-a15d-408c-94ec-e807cddeab0f",
+  "content": "在处理复杂曲面时，GSK 988TA直驱机床的动态随动车削模式如何保证加工精度和表面质量？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 16,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.305380"
+}
+
+{
+  "question_id": "98493d48-aeb7-40c0-a83f-da297898602b",
+  "content": "GSK 988TA直驱机床在高转速条件下（如F2进给速度），如何避免螺纹退尾终点重乱牙现象？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 17,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.305675"
+}
+
+{
+  "question_id": "8f6e6fdf-1af4-446b-afc1-473b1a057982",
+  "content": "GSK 988TA直驱机床的高转速和高进给条件下，如何实现表面纹路均匀且无断振纹的效果？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+  "question_index": 19,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b6d7de062581bdc10b746f20cbdadba8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-b6d7de062581bdc10b746f20cbdadba8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:05.306154"
+}
+
+{
+  "question_id": "7c1a6f81-720b-4d41-96ae-ad7dc744426e",
+  "content": "GSK 980TDi系统在加工多轴联动工件时，如何配置参数以满足高响应要求？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.435627"
+}
+
+{
+  "question_id": "b9e03f12-ad7d-49d3-896f-659bd096b163",
+  "content": "在使用GSK 988TA系统加工6063铝合金时，表面纹路为何会出现清晰无跳纹的特点？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.435867"
+}
+
+{
+  "question_id": "4772e721-57a3-49be-aff8-bc1eb2ab5f05",
+  "content": "直线电机和电主轴的组合配置对Ra0.8加工效果有什么影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.436102"
+}
+
+{
+  "question_id": "3d30d9e4-2b7b-4a97-ae6f-43f35f2875ec",
+  "content": "GSK 988TA系统在处理多边形车削方式时需要考虑哪些关键参数设置？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.436401"
+}
+
+{
+  "question_id": "6aa30765-2a38-4e2b-9918-4783efb7f106",
+  "content": "在加工不锈钢材料时，如何通过Ra0.088的表面粗糙度指标来判断加工质量？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.436930"
+}
+
+{
+  "question_id": "9c9c43ea-d534-4850-9e03-c3a480aa40ad",
+  "content": "GSK 988TA系统在处理相位角偏心距和圆度精度时需要哪些特殊配置？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.437205"
+}
+
+{
+  "question_id": "dffde417-20a5-4883-90b2-4e5add87af63",
+  "content": "高光端面试件的加工效果与GSK 988TA系统的精控模式有什么关系？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.437482"
+}
+
+{
+  "question_id": "e77b037c-a909-408f-a843-374c249add83",
+  "content": "在多轴随动车削过程中，动态插补速度500rpm对加工效率有什么影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.437715"
+}
+
+{
+  "question_id": "9b0d3d7e-2bdd-4ef6-9122-ddcd793a9c22",
+  "content": "GSK 980TDi系统在处理复杂曲轴加工时需要哪些特殊的响应参数设置？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 11,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.438166"
+}
+
+{
+  "question_id": "cfce072b-e263-4345-bd08-88a5a8f9e7da",
+  "content": "不锈钢材料的攻牙效果与Ra0.088表面粗糙度指标之间有什么关联？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 12,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.438387"
+}
+
+{
+  "question_id": "9ca75d94-85c4-4c10-a271-2dd337f56848",
+  "content": "GSK 988TA系统在处理多边形车削方式时需要考虑哪些材料特性参数？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 14,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.438861"
+}
+
+{
+  "question_id": "1c67a5a5-8173-4f29-ac0d-ee8b044d87d5",
+  "content": "在多轴联动加工中，GSK 980TDi系统的响应速度与材料特性之间存在什么关系？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 16,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.439396"
+}
+
+{
+  "question_id": "bef4b66d-b59e-4b35-aece-d39c3d657c14",
+  "content": "GSK 988TA系统在处理高光切削时需要哪些特殊的控制参数设置？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 17,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.439684"
+}
+
+{
+  "question_id": "8d3faac8-6d92-4d71-a7aa-6b3bec258aa7",
+  "content": "在加工铝材时，如何通过Ra0.8的表面粗糙度指标判断加工质量？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 18,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.439969"
+}
+
+{
+  "question_id": "9a83ec9a-101e-4dfc-bad6-3750f6dfe4aa",
+  "content": "直线电机和电主轴配置对GSK 988TA系统的动态性能有什么影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 19,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.440223"
+}
+
+{
+  "question_id": "2ba5c1a4-3d80-487a-97f0-2ca76bc7b804",
+  "content": "GSK 980TDi系统在处理多边形车削方式时需要考虑哪些关键参数设置？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+  "question_index": 20,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-74cc84e15a49c100b8337ffebc56d0a8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-74cc84e15a49c100b8337ffebc56d0a8"
+    ]
+  },
+  "created_at": "2025-11-30T13:15:35.440467"
+}
+
+{
+  "question_id": "08efde0e-20df-47ed-b104-0a11210b94e0",
+  "content": "GSK 988TA系统如何实现偏心圆随动车削加工模式？这种模式相比传统多定位车削加工有哪些优势？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.098822"
+}
+
+{
+  "question_id": "eba4e74f-2254-4b3c-a28a-07999d4a18d9",
+  "content": "材料GCRIS需要进行多轴加工时，应该如何选择切削参数以保持HRC 60的硬度？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.099324"
+}
+
+{
+  "question_id": "8bba208c-d7e1-4b73-9d47-c02f8459dd1a",
+  "content": "GSK 988TA系统支持C/X轴联动插补功能，这种功能对提高加工效率有什么帮助？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.099566"
+}
+
+{
+  "question_id": "2e2903a0-48a6-4775-b7d9-2d1d0f2a9a52",
+  "content": "机床直驱结构在加工尺寸为45mmx150mm的工件时，如何保证精度和稳定性？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.099804"
+}
+
+{
+  "question_id": "0e132f2a-4442-4d34-bbff-c90175b4a03f",
+  "content": "材料RY:42mm在偏心圆随动车削过程中需要注意哪些参数设置？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.100035"
+}
+
+{
+  "question_id": "21400fcf-74e7-4919-8304-7191a462391a",
+  "content": "GSK 988TA系统具备多轴联动功能，在实际加工中如何配置这些参数以达到最佳效果？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.100269"
+}
+
+{
+  "question_id": "59ed203f-c3a8-4d75-a9c2-7af9d309d1db",
+  "content": "表面粗糙度Ra0.081的实现需要哪些切削参数配合？如何通过调整进给速度和主轴转速来控制表面质量？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.100500"
+}
+
+{
+  "question_id": "1440a2a6-1f02-44c5-9d44-60dfd16a42f7",
+  "content": "椭圆车削时的切削参数Fl44000mmymin是如何确定的？这个参数对加工效率有什么影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.100766"
+}
+
+{
+  "question_id": "a3e3ccf5-86b4-447d-b407-c4b8d286e42d",
+  "content": "高速小线段插补功能在材料20Cr的加工中起到什么作用？如何优化这一功能以提高加工质量？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.100996"
+}
+
+{
+  "question_id": "7e8d0665-3c1a-477f-8899-c1e036f936bc",
+  "content": "GSK 988TA系统在处理椭圆车削任务时，如何通过动态随动控制来保证加工精度？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 11,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.101314"
+}
+
+{
+  "question_id": "103d3e3c-7c74-4c2b-929a-5ce4d109703e",
+  "content": "材料5061铝合金在多轴随动车削加工中需要特别注意哪些工艺参数？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 13,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.101875"
+}
+
+{
+  "question_id": "59d5cadb-259a-4727-a3de-ca9a4e60698e",
+  "content": "GSK 988TA系统的偏心圆随动插补图精度达到什么级别？这个精度对加工效果有什么影响？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 14,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.102130"
+}
+
+{
+  "question_id": "1405b43d-9d2e-4610-9410-03fefc3aec28",
+  "content": "在处理高动态随动车削任务时，GSK 988TA系统如何保证加工效率和精度之间的平衡？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 15,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.102410"
+}
+
+{
+  "question_id": "e898696c-13a6-4d15-94de-69945aad3fa9",
+  "content": "GSK 988TA系统的多轴联动功能在处理复杂曲面时有哪些优势？需要哪些参数配合才能达到最佳效果？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 17,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.103006"
+}
+
+{
+  "question_id": "abb29c07-17ff-4ae0-a90a-b665f6192169",
+  "content": "材料GCRIS在进行多轴加工时，应该如何选择切削速度和进给量以保持材料性能？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 18,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.103371"
+}
+
+{
+  "question_id": "d2034679-8d69-4716-afd9-0d9fd20cc61a",
+  "content": "GSK 988TA系统支持的高速小线段插补功能对提高加工效率有什么帮助？如何优化这一功能？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 19,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.103657"
+}
+
+{
+  "question_id": "7a019db6-adae-4c8f-b90b-227b79a16781",
+  "content": "在处理椭圆车削任务时，GSK 988TA系统的动态随动控制如何保证加工精度和表面质量？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+  "source_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+  "question_index": 20,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-837379d1e919672452eab41808a30790",
+    "related_chunk_ids": [
+      "chunk-837379d1e919672452eab41808a30790"
+    ]
+  },
+  "created_at": "2025-11-30T13:16:04.103957"
+}
+

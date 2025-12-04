@@ -1,254 +1,2225 @@
 {
-  "机床主轴与加工台碰撞后30ms内实现急停报警效果": {
+  "丝杆总行程": {
     "chunk_ids": [
-      "chunk-6bf0d2988328cb2b57000d35af8e28bf"
+      "chunk-3dfe9551fd1a0e9ba38d94a53d34ab85"
     ],
     "count": 1,
-    "create_time": 1764298304,
-    "update_time": 1764298304,
-    "_id": "机床主轴与加工台碰撞后30ms内实现急停报警效果"
+    "create_time": 1764759154,
+    "update_time": 1764759154,
+    "_id": "丝杆总行程"
   },
-  "GSK 27i (21寸全触屏安装尺寸)": {
+  "用户自定义的补偿段数": {
     "chunk_ids": [
-      "chunk-7d39d2e03f93b4f01044ae8fe9d4ba20"
+      "chunk-3dfe9551fd1a0e9ba38d94a53d34ab85"
     ],
     "count": 1,
-    "create_time": 1764298304,
-    "update_time": 1764298304,
-    "_id": "GSK 27i (21寸全触屏安装尺寸)"
+    "create_time": 1764759154,
+    "update_time": 1764759154,
+    "_id": "用户自定义的补偿段数"
   },
-  "安装开孔加工图": {
+  "CNC Machine": {
     "chunk_ids": [
-      "chunk-7d39d2e03f93b4f01044ae8fe9d4ba20"
+      "chunk-dcd34582b9c4594e5915f94f0ea4b762",
+      "chunk-5baa7675fb7d71da57745c12ff439035"
+    ],
+    "count": 2,
+    "create_time": 1764759154,
+    "update_time": 1764759154,
+    "_id": "CNC Machine"
+  },
+  "PLC System": {
+    "chunk_ids": [
+      "chunk-22ec89eb819cf26717bc60b4e8b4ae89",
+      "chunk-5baa7675fb7d71da57745c12ff439035"
+    ],
+    "count": 2,
+    "create_time": 1764759154,
+    "update_time": 1764759154,
+    "_id": "PLC System"
+  },
+  "SUB Function": {
+    "chunk_ids": [
+      "chunk-5baa7675fb7d71da57745c12ff439035"
     ],
     "count": 1,
-    "create_time": 1764298304,
-    "update_time": 1764298304,
-    "_id": "安装开孔加工图"
+    "create_time": 1764759154,
+    "update_time": 1764759154,
+    "_id": "SUB Function"
+  },
+  "ANDF Function": {
+    "chunk_ids": [
+      "chunk-5baa7675fb7d71da57745c12ff439035"
+    ],
+    "count": 1,
+    "create_time": 1764759154,
+    "update_time": 1764759154,
+    "_id": "ANDF Function"
+  },
+  "ORF Function": {
+    "chunk_ids": [
+      "chunk-5baa7675fb7d71da57745c12ff439035"
+    ],
+    "count": 1,
+    "create_time": 1764759154,
+    "update_time": 1764759154,
+    "_id": "ORF Function"
+  },
+  "NOT Function": {
+    "chunk_ids": [
+      "chunk-5baa7675fb7d71da57745c12ff439035"
+    ],
+    "count": 1,
+    "create_time": 1764759154,
+    "update_time": 1764759154,
+    "_id": "NOT Function"
+  },
+  "ACT Parameter": {
+    "chunk_ids": [
+      "chunk-5baa7675fb7d71da57745c12ff439035"
+    ],
+    "count": 1,
+    "create_time": 1764759160,
+    "update_time": 1764759160,
+    "_id": "ACT Parameter"
+  },
+  "Length Parameter": {
+    "chunk_ids": [
+      "chunk-5baa7675fb7d71da57745c12ff439035"
+    ],
+    "count": 1,
+    "create_time": 1764759161,
+    "update_time": 1764759161,
+    "_id": "Length Parameter"
+  },
+  "Address Parameter": {
+    "chunk_ids": [
+      "chunk-5baa7675fb7d71da57745c12ff439035"
+    ],
+    "count": 1,
+    "create_time": 1764759161,
+    "update_time": 1764759161,
+    "_id": "Address Parameter"
+  },
+  "W=0 Output": {
+    "chunk_ids": [
+      "chunk-5baa7675fb7d71da57745c12ff439035"
+    ],
+    "count": 1,
+    "create_time": 1764759161,
+    "update_time": 1764759161,
+    "_id": "W=0 Output"
+  },
+  "W=1 Output": {
+    "chunk_ids": [
+      "chunk-5baa7675fb7d71da57745c12ff439035"
+    ],
+    "count": 1,
+    "create_time": 1764759161,
+    "update_time": 1764759161,
+    "_id": "W=1 Output"
+  },
+  "GSK208D PLC": {
+    "chunk_ids": [
+      "chunk-14e80489852e2e76d68b23664eadf900",
+      "chunk-53cdb5fd8f05a33b379c8e06bde67383",
+      "chunk-94a0868f7888a5e5da71e50b1ab7c32a",
+      "chunk-2fe6653db6811864ea3893f7f827c88b",
+      "chunk-70afa256cc6c33cec3559b97e63f9084",
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
+    ],
+    "count": 6,
+    "create_time": 1764759161,
+    "update_time": 1764759161,
+    "_id": "GSK208D PLC"
+  },
+  "安装连接手册": {
+    "chunk_ids": [
+      "chunk-1f213130462dfc8745b788df37733d44",
+      "chunk-90357c549245e53a079a887b381b3b9a",
+      "chunk-70afa256cc6c33cec3559b97e63f9084",
+      "chunk-f0933622eb1f92f675855b2b98840950",
+      "chunk-76bfc1b39f2f3fb10854463f85795573",
+      "chunk-748e4c960fe434a684c2489602ecc85f"
+    ],
+    "count": 6,
+    "update_time": 1764759426,
+    "_id": "安装连接手册"
+  },
+  "RED RAE": {
+    "chunk_ids": [
+      "chunk-70afa256cc6c33cec3559b97e63f9084"
+    ],
+    "count": 1,
+    "create_time": 1764759165,
+    "update_time": 1764759165,
+    "_id": "RED RAE"
+  },
+  "表4-7-9-1": {
+    "chunk_ids": [
+      "chunk-70afa256cc6c33cec3559b97e63f9084"
+    ],
+    "count": 1,
+    "create_time": 1764759166,
+    "update_time": 1764759166,
+    "_id": "表4-7-9-1"
+  },
+  "表4-7-10-1": {
+    "chunk_ids": [
+      "chunk-70afa256cc6c33cec3559b97e63f9084"
+    ],
+    "count": 1,
+    "create_time": 1764759167,
+    "update_time": 1764759167,
+    "_id": "表4-7-10-1"
   },
   "Artifact": {
     "chunk_ids": [
-      "chunk-4db9017103fcd7f1bcfdedc684d29df4"
+      "chunk-dcada036ffb579ecd0296de86c30f883",
+      "chunk-4db9017103fcd7f1bcfdedc684d29df4",
+      "chunk-918982bf0f0572217902e6d709f452f0",
+      "chunk-b1e463d5c6ca12f09bea9bd8073646e4",
+      "chunk-37e9047b14539cfbf4d50848137e7f20",
+      "chunk-3e62c14e7927937d5caf11b2cc765855",
+      "chunk-d4ff277f79ec1ebe41b153856ab72db7",
+      "chunk-9984dd70cd3e5d6ac016443241ac7a95",
+      "chunk-bc42932ae2f4bf12f96b3ad99c19b2bd",
+      "chunk-9ab42d124ef3e086bf16f851f58d047f",
+      "chunk-e9406bbda6c090bacd494965890096b4",
+      "chunk-4b44644357d60b0b3f4cfc167d57bf6f",
+      "chunk-b7f02a2a080a20ba73325a74a9511738",
+      "chunk-2616ac8f68b1eee0494101b23dcf1d20",
+      "chunk-447eccb28ef12563a540a7ecfdd48d68",
+      "chunk-76abd1a76ade4febdad6c524ed0db869",
+      "chunk-2707086b25eae1b6b4859c52b0298db6",
+      "chunk-a4b6befa3e06c01606cfccd53bc8ad31",
+      "chunk-22ec89eb819cf26717bc60b4e8b4ae89",
+      "chunk-e64d048b1e38ef7da60d9f16952888f6",
+      "chunk-5ba5b5e8b8a60d5de1af186a0dd44098",
+      "chunk-160f87282b2434542700c4ba41300f7a",
+      "chunk-4701d54bffd279cd60dec0f45ed11694",
+      "chunk-b0e2e719f21ce5f7a762e68123f5eba3",
+      "chunk-2fe6653db6811864ea3893f7f827c88b",
+      "chunk-a327ec11d34ffd9ca15b0dc1c7751f3a",
+      "chunk-53cdb5fd8f05a33b379c8e06bde67383",
+      "chunk-92c4882df264c9c9482f154d2a33777c",
+      "chunk-435a1d798107e54d373aff069d39d0ee",
+      "chunk-d4c2662b863618965d64c719f84b93dd",
+      "chunk-d3ba9afade1dd24aaee942f0ecec031b",
+      "chunk-78e0298042660ab31a26d09cbcfe32c2"
     ],
-    "count": 1,
-    "create_time": 1764298304,
-    "update_time": 1764298304,
+    "count": 32,
+    "create_time": 1764759167,
+    "update_time": 1764759167,
     "_id": "Artifact"
   },
-  "RARE PRC RBS CIDE S96 (7) (TF": {
+  "Data": {
     "chunk_ids": [
-      "chunk-dcada036ffb579ecd0296de86c30f883"
+      "chunk-37e9047b14539cfbf4d50848137e7f20",
+      "chunk-2c38dd6a7c1b160f0edc7f839d5a6b36",
+      "chunk-3e62c14e7927937d5caf11b2cc765855",
+      "chunk-d4ff277f79ec1ebe41b153856ab72db7",
+      "chunk-e9406bbda6c090bacd494965890096b4",
+      "chunk-4b44644357d60b0b3f4cfc167d57bf6f",
+      "chunk-2707086b25eae1b6b4859c52b0298db6",
+      "chunk-435a1d798107e54d373aff069d39d0ee",
+      "chunk-22ec89eb819cf26717bc60b4e8b4ae89",
+      "chunk-e64d048b1e38ef7da60d9f16952888f6",
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f",
+      "chunk-4701d54bffd279cd60dec0f45ed11694",
+      "chunk-a327ec11d34ffd9ca15b0dc1c7751f3a",
+      "chunk-53cdb5fd8f05a33b379c8e06bde67383",
+      "chunk-a4b6befa3e06c01606cfccd53bc8ad31",
+      "chunk-160f87282b2434542700c4ba41300f7a",
+      "chunk-78e0298042660ab31a26d09cbcfe32c2"
     ],
-    "count": 1,
-    "create_time": 1764298304,
-    "update_time": 1764298304,
-    "_id": "RARE PRC RBS CIDE S96 (7) (TF"
+    "count": 17,
+    "create_time": 1764759167,
+    "update_time": 1764759167,
+    "_id": "Data"
   },
-  "GSK 27i series high-end multi-channel CNC system": {
+  "Concept": {
     "chunk_ids": [
-      "chunk-dcada036ffb579ecd0296de86c30f883"
+      "chunk-dcada036ffb579ecd0296de86c30f883",
+      "chunk-4db9017103fcd7f1bcfdedc684d29df4",
+      "chunk-918982bf0f0572217902e6d709f452f0",
+      "chunk-2c38dd6a7c1b160f0edc7f839d5a6b36",
+      "chunk-d4ff277f79ec1ebe41b153856ab72db7",
+      "chunk-bc42932ae2f4bf12f96b3ad99c19b2bd",
+      "chunk-e9406bbda6c090bacd494965890096b4",
+      "chunk-b7f02a2a080a20ba73325a74a9511738",
+      "chunk-2616ac8f68b1eee0494101b23dcf1d20",
+      "chunk-a4b6befa3e06c01606cfccd53bc8ad31",
+      "chunk-435a1d798107e54d373aff069d39d0ee",
+      "chunk-22ec89eb819cf26717bc60b4e8b4ae89",
+      "chunk-291154181ff91098d9e971675a43c743",
+      "chunk-e64d048b1e38ef7da60d9f16952888f6",
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7",
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f",
+      "chunk-160f87282b2434542700c4ba41300f7a",
+      "chunk-92c4882df264c9c9482f154d2a33777c",
+      "chunk-29479400b2830580546566178b4c7049",
+      "chunk-78e0298042660ab31a26d09cbcfe32c2"
     ],
-    "count": 1,
-    "create_time": 1764298308,
-    "update_time": 1764298308,
-    "_id": "GSK 27i series high-end multi-channel CNC system"
+    "count": 20,
+    "create_time": 1764759168,
+    "update_time": 1764759168,
+    "_id": "Concept"
   },
-  "implements": {
+  "Method": {
     "chunk_ids": [
-      "chunk-dcada036ffb579ecd0296de86c30f883"
+      "chunk-dcada036ffb579ecd0296de86c30f883",
+      "chunk-d4ff277f79ec1ebe41b153856ab72db7",
+      "chunk-e9406bbda6c090bacd494965890096b4",
+      "chunk-76abd1a76ade4febdad6c524ed0db869",
+      "chunk-a4b6befa3e06c01606cfccd53bc8ad31",
+      "chunk-e64d048b1e38ef7da60d9f16952888f6",
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7",
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f",
+      "chunk-4701d54bffd279cd60dec0f45ed11694",
+      "chunk-92c4882df264c9c9482f154d2a33777c",
+      "chunk-d4c2662b863618965d64c719f84b93dd",
+      "chunk-29479400b2830580546566178b4c7049",
+      "chunk-78e0298042660ab31a26d09cbcfe32c2"
     ],
-    "count": 1,
-    "create_time": 1764298310,
-    "update_time": 1764298310,
-    "_id": "implements"
+    "count": 13,
+    "create_time": 1764759168,
+    "update_time": 1764759168,
+    "_id": "Method"
   },
-  "VMC850L": {
+  "Content": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-593cf438adbebdec0a9503bd09f72ce1",
+      "chunk-d4ff277f79ec1ebe41b153856ab72db7",
+      "chunk-c98a1e0da695ade28d3e64a8696012ce",
+      "chunk-4b44644357d60b0b3f4cfc167d57bf6f",
+      "chunk-447eccb28ef12563a540a7ecfdd48d68",
+      "chunk-e64d048b1e38ef7da60d9f16952888f6",
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f",
+      "chunk-5ba5b5e8b8a60d5de1af186a0dd44098",
+      "chunk-a4b6befa3e06c01606cfccd53bc8ad31",
+      "chunk-160f87282b2434542700c4ba41300f7a",
+      "chunk-d4c2662b863618965d64c719f84b93dd",
+      "chunk-d3ba9afade1dd24aaee942f0ecec031b",
+      "chunk-78e0298042660ab31a26d09cbcfe32c2"
     ],
-    "count": 1,
-    "create_time": 1764298402,
-    "update_time": 1764298402,
-    "_id": "VMC850L"
+    "count": 13,
+    "create_time": 1764759168,
+    "update_time": 1764759168,
+    "_id": "Content"
   },
-  "BROWN SHARPE": {
+  "NO:": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-a327ec11d34ffd9ca15b0dc1c7751f3a"
     ],
     "count": 1,
-    "create_time": 1764298402,
-    "update_time": 1764298402,
-    "_id": "BROWN SHARPE"
+    "create_time": 1764759168,
+    "update_time": 1764759168,
+    "_id": "NO:"
   },
-  "RENISHAW": {
+  "0#0=0": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-a327ec11d34ffd9ca15b0dc1c7751f3a"
     ],
     "count": 1,
-    "create_time": 1764298402,
-    "update_time": 1764298402,
-    "_id": "RENISHAW"
+    "create_time": 1764759169,
+    "update_time": 1764759169,
+    "_id": "0#0=0"
   },
-  "工作台面尺寸长宽1000x500mm": {
+  "PRT键": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-a327ec11d34ffd9ca15b0dc1c7751f3a"
     ],
     "count": 1,
-    "create_time": 1764298404,
-    "update_time": 1764298404,
-    "_id": "工作台面尺寸长宽1000x500mm"
+    "create_time": 1764759169,
+    "update_time": 1764759169,
+    "_id": "PRT键"
   },
-  "行程X/Y/Z800/500/600": {
+  "回零减速开关": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-a327ec11d34ffd9ca15b0dc1c7751f3a"
     ],
     "count": 1,
-    "create_time": 1764298411,
-    "update_time": 1764298411,
-    "_id": "行程X/Y/Z800/500/600"
+    "create_time": 1764759169,
+    "update_time": 1764759169,
+    "_id": "回零减速开关"
   },
-  "主轴端面至工作台面距离86-686mm": {
+  "机床零点位置": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-a327ec11d34ffd9ca15b0dc1c7751f3a"
     ],
     "count": 1,
-    "create_time": 1764298413,
-    "update_time": 1764298413,
-    "_id": "主轴端面至工作台面距离86-686mm"
+    "create_time": 1764759171,
+    "update_time": 1764759171,
+    "_id": "机床零点位置"
   },
-  "主轴中心至立柱导轨距离560mm": {
+  "主轴": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-748e4c960fe434a684c2489602ecc85f",
+      "chunk-872c43c139a58e382cc3c7247fe091df",
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
     ],
-    "count": 1,
-    "create_time": 1764298416,
-    "update_time": 1764298416,
-    "_id": "主轴中心至立柱导轨距离560mm"
+    "count": 3,
+    "create_time": 1764759172,
+    "update_time": 1764759172,
+    "_id": "主轴"
   },
-  "主轴锥孔BT40": {
+  "齿轮": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
     ],
     "count": 1,
-    "create_time": 1764298418,
-    "update_time": 1764298418,
-    "_id": "主轴锥孔BT40"
+    "create_time": 1764759172,
+    "update_time": 1764759172,
+    "_id": "齿轮"
   },
-  "主轴电机功率7.5kW": {
+  "数据参数No.252~No.267": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
     ],
     "count": 1,
-    "create_time": 1764298421,
-    "update_time": 1764298421,
-    "_id": "主轴电机功率7.5kW"
+    "create_time": 1764759174,
+    "update_time": 1764759174,
+    "_id": "数据参数No.252~No.267"
   },
-  "X/Y/Z轴快速移动速度24/24/15m/min": {
+  "M3/M4 codes": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
     ],
     "count": 1,
-    "create_time": 1764298423,
-    "update_time": 1764298423,
-    "_id": "X/Y/Z轴快速移动速度24/24/15m/min"
+    "create_time": 1764759175,
+    "update_time": 1764759175,
+    "_id": "M3/M4 codes"
   },
-  "刀库类型24-T/圆盘": {
+  "SPT": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
     ],
     "count": 1,
-    "create_time": 1764298426,
-    "update_time": 1764298426,
-    "_id": "刀库类型24-T/圆盘"
+    "create_time": 1764759175,
+    "update_time": 1764759175,
+    "_id": "SPT"
   },
-  "外形尺寸长高宽2800x2450x2800mm": {
+  "变频器": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
     ],
     "count": 1,
-    "create_time": 1764298429,
-    "update_time": 1764298429,
-    "_id": "外形尺寸长高宽2800x2450x2800mm"
+    "create_time": 1764759177,
+    "update_time": 1764759177,
+    "_id": "变频器"
   },
-  "重量约6500kg": {
+  "自动换档控制": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
     ],
     "count": 1,
-    "create_time": 1764298431,
-    "update_time": 1764298431,
-    "_id": "重量约6500kg"
+    "create_time": 1764759177,
+    "update_time": 1764759177,
+    "_id": "自动换档控制"
   },
-  "BROWN SHARPE三坐标测量": {
+  "Event": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-435a1d798107e54d373aff069d39d0ee",
+      "chunk-78e0298042660ab31a26d09cbcfe32c2"
     ],
-    "count": 1,
-    "create_time": 1764298434,
-    "update_time": 1764298434,
-    "_id": "BROWN SHARPE三坐标测量"
+    "count": 2,
+    "create_time": 1764759177,
+    "update_time": 1764759177,
+    "_id": "Event"
   },
-  "RENISHAW双频激光干涉仪检测": {
+  "`Artifact`": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f"
     ],
     "count": 1,
-    "create_time": 1764298437,
-    "update_time": 1764298437,
-    "_id": "RENISHAW双频激光干涉仪检测"
+    "create_time": 1764759179,
+    "update_time": 1764759179,
+    "_id": "`Artifact`"
   },
-  "高速高刚性设计": {
+  "`Parameter`": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f"
     ],
     "count": 1,
-    "create_time": 1764298439,
-    "update_time": 1764298439,
-    "_id": "高速高刚性设计"
+    "create_time": 1764759180,
+    "update_time": 1764759180,
+    "_id": "`Parameter`"
   },
-  "滚珠线轨轴超宽硬轨": {
+  "`Table`": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f"
     ],
     "count": 1,
-    "create_time": 1764298441,
-    "update_time": 1764298441,
-    "_id": "滚珠线轨轴超宽硬轨"
+    "create_time": 1764759180,
+    "update_time": 1764759180,
+    "_id": "`Table`"
   },
-  "配重平衡系统": {
+  "GSK208D系列雕铣机数控系统": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-a4b6befa3e06c01606cfccd53bc8ad31",
+      "chunk-ad9afc7b84c2eb4349ba2654fd6d861b",
+      "chunk-1f213130462dfc8745b788df37733d44",
+      "chunk-90357c549245e53a079a887b381b3b9a",
+      "chunk-8f13812ef2a88cf88046b7ab33f91258",
+      "chunk-7259f803e01fdda287870ef12f1b85ad",
+      "chunk-2c7ec9a7c473980ea0f91bbf3fc66b4b"
     ],
-    "count": 1,
-    "create_time": 1764298444,
-    "update_time": 1764298444,
-    "_id": "配重平衡系统"
+    "count": 7,
+    "create_time": 1764759182,
+    "update_time": 1764759182,
+    "_id": "GSK208D系列雕铣机数控系统"
   },
-  "主轴最高转速达8000rpm": {
+  "PLC及安装连接手册": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-7259f803e01fdda287870ef12f1b85ad",
+      "chunk-160f87282b2434542700c4ba41300f7a"
     ],
-    "count": 1,
-    "create_time": 1764298446,
-    "update_time": 1764298446,
-    "_id": "主轴最高转速达8000rpm"
+    "count": 2,
+    "update_time": 1764759485,
+    "_id": "PLC及安装连接手册"
   },
-  "台湾线轨": {
+  "GL200-F(RJ45)": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-4db9017103fcd7f1bcfdedc684d29df4",
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
     ],
-    "count": 1,
-    "create_time": 1764298448,
-    "update_time": 1764298448,
-    "_id": "台湾线轨"
+    "count": 2,
+    "create_time": 1764759183,
+    "update_time": 1764759183,
+    "_id": "GL200-F(RJ45)"
   },
-  "加工中心关键零件和出三精度均由美国BROWN SHARPE检测": {
+  "SPINDLE主轴接口(44孔插座)": {
     "chunk_ids": [
-      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
     ],
     "count": 1,
-    "create_time": 1764298451,
-    "update_time": 1764298451,
-    "_id": "加工中心关键零件和出三精度均由美国BROWN SHARPE检测"
+    "create_time": 1764759184,
+    "update_time": 1764759184,
+    "_id": "SPINDLE主轴接口(44孔插座)"
+  },
+  "AxisALM": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759185,
+    "update_time": 1764759185,
+    "_id": "AxisALM"
+  },
+  "PULS1-": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759186,
+    "update_time": 1764759186,
+    "_id": "PULS1-"
+  },
+  "PULS2+": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759187,
+    "update_time": 1764759187,
+    "_id": "PULS2+"
+  },
+  "SIGN+": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759188,
+    "update_time": 1764759188,
+    "_id": "SIGN+"
+  },
+  "CVCMD+": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759189,
+    "update_time": 1764759189,
+    "_id": "CVCMD+"
+  },
+  "COIN": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759190,
+    "update_time": 1764759190,
+    "_id": "COIN"
+  },
+  "SRV": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759191,
+    "update_time": 1764759191,
+    "_id": "SRV"
+  },
+  "ZSL": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759192,
+    "update_time": 1764759192,
+    "_id": "ZSL"
+  },
+  "B.VCMD+": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759193,
+    "update_time": 1764759193,
+    "_id": "B.VCMD+"
+  },
+  "parameter PA156": {
+    "chunk_ids": [
+      "chunk-23a3a8cc834c60754d8a46cc7aacf026"
+    ],
+    "count": 1,
+    "create_time": 1764759194,
+    "update_time": 1764759194,
+    "_id": "parameter PA156"
+  },
+  "system bus communication": {
+    "chunk_ids": [
+      "chunk-23a3a8cc834c60754d8a46cc7aacf026"
+    ],
+    "count": 1,
+    "create_time": 1764759194,
+    "update_time": 1764759194,
+    "_id": "system bus communication"
+  },
+  "JOG进给": {
+    "chunk_ids": [
+      "chunk-bd6fd0afbf536ae44d3d6af3f1fec372"
+    ],
+    "count": 1,
+    "create_time": 1764759196,
+    "update_time": 1764759196,
+    "_id": "JOG进给"
+  },
+  "增量进给": {
+    "chunk_ids": [
+      "chunk-bd6fd0afbf536ae44d3d6af3f1fec372"
+    ],
+    "count": 1,
+    "create_time": 1764759197,
+    "update_time": 1764759197,
+    "_id": "增量进给"
+  },
+  "PLC": {
+    "chunk_ids": [
+      "chunk-fe7b7541afb53cb6e1ea6f53e4b3a6e6",
+      "chunk-1f213130462dfc8745b788df37733d44",
+      "chunk-160f87282b2434542700c4ba41300f7a",
+      "chunk-9160e166c6c49b222374db5706516690",
+      "chunk-4ce5a96ef238534390dd19d3e99e1dce",
+      "chunk-e87e902df9c3c4088375a0bc69a74eba",
+      "chunk-90357c549245e53a079a887b381b3b9a",
+      "chunk-7259f803e01fdda287870ef12f1b85ad",
+      "chunk-872c43c139a58e382cc3c7247fe091df",
+      "chunk-2c7ec9a7c473980ea0f91bbf3fc66b4b"
+    ],
+    "count": 10,
+    "create_time": 1764759197,
+    "update_time": 1764759197,
+    "_id": "PLC"
+  },
+  "紧急停止信号1432": {
+    "chunk_ids": [
+      "chunk-2c7ec9a7c473980ea0f91bbf3fc66b4b"
+    ],
+    "count": 1,
+    "create_time": 1764759198,
+    "update_time": 1764759198,
+    "_id": "紧急停止信号1432"
+  },
+  "紧急停止信号1732": {
+    "chunk_ids": [
+      "chunk-2c7ec9a7c473980ea0f91bbf3fc66b4b"
+    ],
+    "count": 1,
+    "create_time": 1764759199,
+    "update_time": 1764759199,
+    "_id": "紧急停止信号1732"
+  },
+  "信号跟踪": {
+    "chunk_ids": [
+      "chunk-2c7ec9a7c473980ea0f91bbf3fc66b4b"
+    ],
+    "count": 1,
+    "create_time": 1764759200,
+    "update_time": 1764759200,
+    "_id": "信号跟踪"
+  },
+  "G28": {
+    "chunk_ids": [
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7",
+      "chunk-a327ec11d34ffd9ca15b0dc1c7751f3a"
+    ],
+    "count": 2,
+    "update_time": 1764759424,
+    "_id": "G28"
+  },
+  "G007": {
+    "chunk_ids": [
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7"
+    ],
+    "count": 1,
+    "create_time": 1764759202,
+    "update_time": 1764759202,
+    "_id": "G007"
+  },
+  "G008": {
+    "chunk_ids": [
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7"
+    ],
+    "count": 1,
+    "create_time": 1764759203,
+    "update_time": 1764759203,
+    "_id": "G008"
+  },
+  "FIS OM": {
+    "chunk_ids": [
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7"
+    ],
+    "count": 1,
+    "create_time": 1764759204,
+    "update_time": 1764759204,
+    "_id": "FIS OM"
+  },
+  "DECI~DECS5": {
+    "chunk_ids": [
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7"
+    ],
+    "count": 1,
+    "create_time": 1764759205,
+    "update_time": 1764759205,
+    "_id": "DECI~DECS5"
+  },
+  "Function": {
+    "chunk_ids": [
+      "chunk-d4c2662b863618965d64c719f84b93dd"
+    ],
+    "count": 1,
+    "create_time": 1764759206,
+    "update_time": 1764759206,
+    "_id": "Function"
+  },
+  "INT8U": {
+    "chunk_ids": [
+      "chunk-148678713bf298065239d17bc8f871c4"
+    ],
+    "count": 1,
+    "create_time": 1764759207,
+    "update_time": 1764759207,
+    "_id": "INT8U"
+  },
+  "INT16U": {
+    "chunk_ids": [
+      "chunk-148678713bf298065239d17bc8f871c4"
+    ],
+    "count": 1,
+    "create_time": 1764759208,
+    "update_time": 1764759208,
+    "_id": "INT16U"
+  },
+  "D240~247": {
+    "chunk_ids": [
+      "chunk-148678713bf298065239d17bc8f871c4"
+    ],
+    "count": 1,
+    "create_time": 1764759209,
+    "update_time": 1764759209,
+    "_id": "D240~247"
+  },
+  "G28#4": {
+    "chunk_ids": [
+      "chunk-3053797c0be8bf5da4d8c6acb7323c02"
+    ],
+    "count": 1,
+    "create_time": 1764759210,
+    "update_time": 1764759210,
+    "_id": "G28#4"
+  },
+  "伺服单元": {
+    "chunk_ids": [
+      "chunk-593cf438adbebdec0a9503bd09f72ce1",
+      "chunk-7259f803e01fdda287870ef12f1b85ad",
+      "chunk-3053797c0be8bf5da4d8c6acb7323c02"
+    ],
+    "count": 3,
+    "create_time": 1764759211,
+    "update_time": 1764759211,
+    "_id": "伺服单元"
+  },
+  "F0946#4": {
+    "chunk_ids": [
+      "chunk-3053797c0be8bf5da4d8c6acb7323c02"
+    ],
+    "count": 1,
+    "create_time": 1764759212,
+    "update_time": 1764759212,
+    "_id": "F0946#4"
+  },
+  "伺服报警": {
+    "chunk_ids": [
+      "chunk-291154181ff91098d9e971675a43c743"
+    ],
+    "count": 1,
+    "create_time": 1764759213,
+    "update_time": 1764759213,
+    "_id": "伺服报警"
+  },
+  "超程报警": {
+    "chunk_ids": [
+      "chunk-291154181ff91098d9e971675a43c743"
+    ],
+    "count": 1,
+    "create_time": 1764759214,
+    "update_time": 1764759214,
+    "_id": "超程报警"
+  },
+  "复位信号ECLRg": {
+    "chunk_ids": [
+      "chunk-291154181ff91098d9e971675a43c743"
+    ],
+    "count": 1,
+    "create_time": 1764759214,
+    "update_time": 1764759214,
+    "_id": "复位信号ECLRg"
+  },
+  "参考点返回完成信号": {
+    "chunk_ids": [
+      "chunk-291154181ff91098d9e971675a43c743"
+    ],
+    "count": 1,
+    "create_time": 1764759216,
+    "update_time": 1764759216,
+    "_id": "参考点返回完成信号"
+  },
+  "XS30": {
+    "chunk_ids": [
+      "chunk-b022f9a2d8df64b9023ca9b1a39b07c8"
+    ],
+    "count": 1,
+    "create_time": 1764759216,
+    "update_time": 1764759216,
+    "_id": "XS30"
+  },
+  "XS31": {
+    "chunk_ids": [
+      "chunk-b022f9a2d8df64b9023ca9b1a39b07c8"
+    ],
+    "count": 1,
+    "create_time": 1764759218,
+    "update_time": 1764759218,
+    "_id": "XS31"
+  },
+  "XS32": {
+    "chunk_ids": [
+      "chunk-b022f9a2d8df64b9023ca9b1a39b07c8"
+    ],
+    "count": 1,
+    "create_time": 1764759218,
+    "update_time": 1764759218,
+    "_id": "XS32"
+  },
+  "XS33": {
+    "chunk_ids": [
+      "chunk-b022f9a2d8df64b9023ca9b1a39b07c8"
+    ],
+    "count": 1,
+    "create_time": 1764759220,
+    "update_time": 1764759220,
+    "_id": "XS33"
+  },
+  "COM": {
+    "chunk_ids": [
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 1,
+    "create_time": 1764759220,
+    "update_time": 1764759220,
+    "_id": "COM"
+  },
+  "COME": {
+    "chunk_ids": [
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 1,
+    "create_time": 1764759221,
+    "update_time": 1764759221,
+    "_id": "COME"
+  },
+  "ROT": {
+    "chunk_ids": [
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 1,
+    "create_time": 1764759222,
+    "update_time": 1764759222,
+    "_id": "ROT"
+  },
+  "CNO": {
+    "chunk_ids": [
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 1,
+    "create_time": 1764759223,
+    "update_time": 1764759223,
+    "_id": "CNO"
+  },
+  "DIR": {
+    "chunk_ids": [
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 1,
+    "create_time": 1764759224,
+    "update_time": 1764759224,
+    "_id": "DIR"
+  },
+  "POS": {
+    "chunk_ids": [
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 1,
+    "create_time": 1764759225,
+    "update_time": 1764759225,
+    "_id": "POS"
+  },
+  "INC": {
+    "chunk_ids": [
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 1,
+    "create_time": 1764759226,
+    "update_time": 1764759226,
+    "_id": "INC"
+  },
+  "GSK208D系列铣机数控系统": {
+    "chunk_ids": [
+      "chunk-160f87282b2434542700c4ba41300f7a",
+      "chunk-3dfe9551fd1a0e9ba38d94a53d34ab85",
+      "chunk-92c4882df264c9c9482f154d2a33777c",
+      "chunk-748e4c960fe434a684c2489602ecc85f",
+      "chunk-d4c2662b863618965d64c719f84b93dd"
+    ],
+    "count": 5,
+    "update_time": 1764759512,
+    "_id": "GSK208D系列铣机数控系统"
+  },
+  "图4-7-5-1": {
+    "chunk_ids": [
+      "chunk-ed85ebbb5acc420ca929fb2d74fbf2b1"
+    ],
+    "count": 1,
+    "create_time": 1764759353,
+    "update_time": 1764759353,
+    "_id": "图4-7-5-1"
+  },
+  "移动行程": {
+    "chunk_ids": [
+      "chunk-ed85ebbb5acc420ca929fb2d74fbf2b1"
+    ],
+    "count": 1,
+    "create_time": 1764759353,
+    "update_time": 1764759353,
+    "_id": "移动行程"
+  },
+  "数据参数": {
+    "chunk_ids": [
+      "chunk-160f87282b2434542700c4ba41300f7a",
+      "chunk-70afa256cc6c33cec3559b97e63f9084",
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
+    ],
+    "count": 3,
+    "update_time": 1764759432,
+    "_id": "数据参数"
+  },
+  "机床": {
+    "chunk_ids": [
+      "chunk-b1e463d5c6ca12f09bea9bd8073646e4",
+      "chunk-748e4c960fe434a684c2489602ecc85f",
+      "chunk-ed85ebbb5acc420ca929fb2d74fbf2b1"
+    ],
+    "count": 3,
+    "create_time": 1764759357,
+    "update_time": 1764759357,
+    "_id": "机床"
+  },
+  "螺距误差补偿号": {
+    "chunk_ids": [
+      "chunk-ed85ebbb5acc420ca929fb2d74fbf2b1"
+    ],
+    "count": 1,
+    "create_time": 1764759357,
+    "update_time": 1764759357,
+    "_id": "螺距误差补偿号"
+  },
+  "GSK208D": {
+    "chunk_ids": [
+      "chunk-b0e2e719f21ce5f7a762e68123f5eba3",
+      "chunk-4ce5a96ef238534390dd19d3e99e1dce",
+      "chunk-a327ec11d34ffd9ca15b0dc1c7751f3a",
+      "chunk-3011682886a630935d81104c5f56db23",
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 5,
+    "create_time": 1764759360,
+    "update_time": 1764759360,
+    "_id": "GSK208D"
+  },
+  "梯形图": {
+    "chunk_ids": [
+      "chunk-94a0868f7888a5e5da71e50b1ab7c32a",
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 2,
+    "create_time": 1764759360,
+    "update_time": 1764759360,
+    "_id": "梯形图"
+  },
+  "选区": {
+    "chunk_ids": [
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 1,
+    "create_time": 1764759363,
+    "update_time": 1764759363,
+    "_id": "选区"
+  },
+  "复制": {
+    "chunk_ids": [
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 1,
+    "create_time": 1764759366,
+    "update_time": 1764759366,
+    "_id": "复制"
+  },
+  "插入行": {
+    "chunk_ids": [
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 1,
+    "create_time": 1764759367,
+    "update_time": 1764759367,
+    "_id": "插入行"
+  },
+  "粘贴": {
+    "chunk_ids": [
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 1,
+    "create_time": 1764759367,
+    "update_time": 1764759367,
+    "_id": "粘贴"
+  },
+  "均值补偿方式": {
+    "chunk_ids": [
+      "chunk-ed85ebbb5acc420ca929fb2d74fbf2b1"
+    ],
+    "count": 1,
+    "create_time": 1764759370,
+    "update_time": 1764759370,
+    "_id": "均值补偿方式"
+  },
+  "修改注释": {
+    "chunk_ids": [
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 1,
+    "create_time": 1764759370,
+    "update_time": 1764759370,
+    "_id": "修改注释"
+  },
+  "梯形图程序": {
+    "chunk_ids": [
+      "chunk-52e5fec9add26526241a7fa67bb8d16c",
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 2,
+    "create_time": 1764759370,
+    "update_time": 1764759370,
+    "_id": "梯形图程序"
+  },
+  "删除": {
+    "chunk_ids": [
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 1,
+    "create_time": 1764759372,
+    "update_time": 1764759372,
+    "_id": "删除"
+  },
+  "编译": {
+    "chunk_ids": [
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 1,
+    "create_time": 1764759373,
+    "update_time": 1764759373,
+    "_id": "编译"
+  },
+  "符号注释": {
+    "chunk_ids": [
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 1,
+    "create_time": 1764759373,
+    "update_time": 1764759373,
+    "_id": "符号注释"
+  },
+  "网络": {
+    "chunk_ids": [
+      "chunk-fbe84cbf08b261806dbf5913a384a3aa",
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 2,
+    "create_time": 1764759373,
+    "update_time": 1764759373,
+    "_id": "网络"
+  },
+  "地址符号": {
+    "chunk_ids": [
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 1,
+    "create_time": 1764759375,
+    "update_time": 1764759375,
+    "_id": "地址符号"
+  },
+  "操作说明": {
+    "chunk_ids": [
+      "chunk-74711efd1f50e593b30763f41a34c9b8",
+      "chunk-76bfc1b39f2f3fb10854463f85795573"
+    ],
+    "count": 2,
+    "create_time": 1764759377,
+    "update_time": 1764759377,
+    "_id": "操作说明"
+  },
+  "is used to generate": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759382,
+    "update_time": 1764759382,
+    "_id": "is used to generate"
+  },
+  "is a method used in": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759384,
+    "update_time": 1764759384,
+    "_id": "is a method used in"
+  },
+  "subroutine numbers": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759385,
+    "update_time": 1764759385,
+    "_id": "subroutine numbers"
+  },
+  "SPE": {
+    "chunk_ids": [
+      "chunk-8f13812ef2a88cf88046b7ab33f91258",
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 2,
+    "create_time": 1764759386,
+    "update_time": 1764759386,
+    "_id": "SPE"
+  },
+  "marks the end of": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759386,
+    "update_time": 1764759386,
+    "_id": "marks the end of"
+  },
+  "is a method for": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759386,
+    "update_time": 1764759386,
+    "_id": "is a method for"
+  },
+  "is used to set the state of": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759386,
+    "update_time": 1764759386,
+    "_id": "is used to set the state of"
+  },
+  "SRF": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759386,
+    "update_time": 1764759386,
+    "_id": "SRF"
+  },
+  "specific addresses": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759390,
+    "update_time": 1764759390,
+    "_id": "specific addresses"
+  },
+  "label-based program jumps": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759390,
+    "update_time": 1764759390,
+    "_id": "label-based program jumps"
+  },
+  "is used in conjunction with": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759390,
+    "update_time": 1764759390,
+    "_id": "is used in conjunction with"
+  },
+  "subroutine definitions": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759390,
+    "update_time": 1764759390,
+    "_id": "subroutine definitions"
+  },
+  "uses": {
+    "chunk_ids": [
+      "chunk-918982bf0f0572217902e6d709f452f0",
+      "chunk-b1e463d5c6ca12f09bea9bd8073646e4",
+      "chunk-e25c93b505a973181024433fd354ceaa",
+      "chunk-723c592892c00aa20199a066c9176852",
+      "chunk-bc42932ae2f4bf12f96b3ad99c19b2bd",
+      "chunk-cd742f6948c9c1748a87f600204e9e29",
+      "chunk-982b39dee73aaf14526bb4e0d1418c6d",
+      "chunk-5584f261d8706aef09821d08386c5bca",
+      "chunk-53cdb5fd8f05a33b379c8e06bde67383",
+      "chunk-a4b6befa3e06c01606cfccd53bc8ad31",
+      "chunk-23a3a8cc834c60754d8a46cc7aacf026",
+      "chunk-ad9afc7b84c2eb4349ba2654fd6d861b",
+      "chunk-8f13812ef2a88cf88046b7ab33f91258",
+      "chunk-dcd34582b9c4594e5915f94f0ea4b762",
+      "chunk-7259f803e01fdda287870ef12f1b85ad",
+      "chunk-94a0868f7888a5e5da71e50b1ab7c32a",
+      "chunk-2fe6653db6811864ea3893f7f827c88b",
+      "chunk-92c4882df264c9c9482f154d2a33777c",
+      "chunk-160f87282b2434542700c4ba41300f7a",
+      "chunk-bd6fd0afbf536ae44d3d6af3f1fec372"
+    ],
+    "count": 20,
+    "update_time": 1764759499,
+    "_id": "uses"
+  },
+  "label-based jumps": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759399,
+    "update_time": 1764759399,
+    "_id": "label-based jumps"
+  },
+  "is used to reset the state of": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759400,
+    "update_time": 1764759400,
+    "_id": "is used to reset the state of"
+  },
+  "SET and RST functions": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759401,
+    "update_time": 1764759401,
+    "_id": "SET and RST functions"
+  },
+  "supports": {
+    "chunk_ids": [
+      "chunk-fe7b7541afb53cb6e1ea6f53e4b3a6e6",
+      "chunk-8da5958297d327c2b4bb23ff9407e63a",
+      "chunk-918982bf0f0572217902e6d709f452f0",
+      "chunk-723c592892c00aa20199a066c9176852",
+      "chunk-9ab42d124ef3e086bf16f851f58d047f",
+      "chunk-e9406bbda6c090bacd494965890096b4",
+      "chunk-5cca225a04f1212360cdaa74a525a026",
+      "chunk-23a3a8cc834c60754d8a46cc7aacf026",
+      "chunk-7259f803e01fdda287870ef12f1b85ad",
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 10,
+    "create_time": 1764759401,
+    "update_time": 1764759401,
+    "_id": "supports"
+  },
+  "SP and SPE": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759402,
+    "update_time": 1764759402,
+    "_id": "SP and SPE"
+  },
+  "provides": {
+    "chunk_ids": [
+      "chunk-c68bbde9452a3f3d0387c41a996333d1",
+      "chunk-e25c93b505a973181024433fd354ceaa",
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 3,
+    "create_time": 1764759404,
+    "update_time": 1764759404,
+    "_id": "provides"
+  },
+  "subroutine nesting": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759406,
+    "update_time": 1764759406,
+    "_id": "subroutine nesting"
+  },
+  "PLC功能指令代码": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759408,
+    "update_time": 1764759408,
+    "_id": "PLC功能指令代码"
+  },
+  "error handling for": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759410,
+    "update_time": 1764759410,
+    "_id": "error handling for"
+  },
+  "involves": {
+    "chunk_ids": [
+      "chunk-94a0868f7888a5e5da71e50b1ab7c32a",
+      "chunk-a4b6befa3e06c01606cfccd53bc8ad31"
+    ],
+    "count": 2,
+    "create_time": 1764759411,
+    "update_time": 1764759411,
+    "_id": "involves"
+  },
+  "SRF and SPE": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759414,
+    "update_time": 1764759414,
+    "_id": "SRF and SPE"
+  },
+  "conditional jumps": {
+    "chunk_ids": [
+      "chunk-92c4882df264c9c9482f154d2a33777c"
+    ],
+    "count": 1,
+    "create_time": 1764759414,
+    "update_time": 1764759414,
+    "_id": "conditional jumps"
+  },
+  "伺服": {
+    "chunk_ids": [
+      "chunk-a327ec11d34ffd9ca15b0dc1c7751f3a"
+    ],
+    "count": 1,
+    "create_time": 1764759415,
+    "update_time": 1764759415,
+    "_id": "伺服"
+  },
+  "requires": {
+    "chunk_ids": [
+      "chunk-53cdb5fd8f05a33b379c8e06bde67383",
+      "chunk-dcd34582b9c4594e5915f94f0ea4b762",
+      "chunk-a4b6befa3e06c01606cfccd53bc8ad31"
+    ],
+    "count": 3,
+    "create_time": 1764759416,
+    "update_time": 1764759416,
+    "_id": "requires"
+  },
+  "回零": {
+    "chunk_ids": [
+      "chunk-a327ec11d34ffd9ca15b0dc1c7751f3a"
+    ],
+    "count": 1,
+    "create_time": 1764759417,
+    "update_time": 1764759417,
+    "_id": "回零"
+  },
+  "includes": {
+    "chunk_ids": [
+      "chunk-bc42932ae2f4bf12f96b3ad99c19b2bd",
+      "chunk-c22fa67031e6b192b6378313368b0f87",
+      "chunk-e9406bbda6c090bacd494965890096b4",
+      "chunk-56b74a1baf07b04eaf19726ceb9a3b8a",
+      "chunk-5584f261d8706aef09821d08386c5bca",
+      "chunk-7259f803e01fdda287870ef12f1b85ad",
+      "chunk-748e4c960fe434a684c2489602ecc85f"
+    ],
+    "count": 7,
+    "create_time": 1764759421,
+    "update_time": 1764759421,
+    "_id": "includes"
+  },
+  "describes": {
+    "chunk_ids": [
+      "chunk-53cdb5fd8f05a33b379c8e06bde67383",
+      "chunk-22ec89eb819cf26717bc60b4e8b4ae89",
+      "chunk-748e4c960fe434a684c2489602ecc85f",
+      "chunk-160f87282b2434542700c4ba41300f7a"
+    ],
+    "count": 4,
+    "update_time": 1764759488,
+    "_id": "describes"
+  },
+  "defines": {
+    "chunk_ids": [
+      "chunk-dcd34582b9c4594e5915f94f0ea4b762",
+      "chunk-5ba5b5e8b8a60d5de1af186a0dd44098",
+      "chunk-8f13812ef2a88cf88046b7ab33f91258",
+      "chunk-748e4c960fe434a684c2489602ecc85f"
+    ],
+    "count": 4,
+    "create_time": 1764759422,
+    "update_time": 1764759422,
+    "_id": "defines"
+  },
+  "使用": {
+    "chunk_ids": [
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
+    ],
+    "count": 1,
+    "create_time": 1764759430,
+    "update_time": 1764759430,
+    "_id": "使用"
+  },
+  "定义": {
+    "chunk_ids": [
+      "chunk-8147e4608ee6191b217e0abcdac10b98",
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
+    ],
+    "count": 2,
+    "create_time": 1764759430,
+    "update_time": 1764759430,
+    "_id": "定义"
+  },
+  "ZMI3": {
+    "chunk_ids": [
+      "chunk-748e4c960fe434a684c2489602ecc85f"
+    ],
+    "count": 1,
+    "create_time": 1764759432,
+    "update_time": 1764759432,
+    "_id": "ZMI3"
+  },
+  "控制": {
+    "chunk_ids": [
+      "chunk-23bf0b5cb5fb8ed18501e3e4c8aec9dc",
+      "chunk-ef5873c39c412022a1b21b98c152ab9e",
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 3,
+    "update_time": 1764759544,
+    "_id": "控制"
+  },
+  "确定": {
+    "chunk_ids": [
+      "chunk-ef5873c39c412022a1b21b98c152ab9e",
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 2,
+    "update_time": 1764759549,
+    "_id": "确定"
+  },
+  "管理": {
+    "chunk_ids": [
+      "chunk-ef5873c39c412022a1b21b98c152ab9e"
+    ],
+    "count": 1,
+    "create_time": 1764759434,
+    "update_time": 1764759434,
+    "_id": "管理"
+  },
+  "SOM MRA": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759441,
+    "update_time": 1764759441,
+    "_id": "SOM MRA"
+  },
+  "Controls": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759441,
+    "update_time": 1764759441,
+    "_id": "Controls"
+  },
+  "Connected To": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759443,
+    "update_time": 1764759443,
+    "_id": "Connected To"
+  },
+  "MOSA": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759443,
+    "update_time": 1764759443,
+    "_id": "MOSA"
+  },
+  "Configures": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759443,
+    "update_time": 1764759443,
+    "_id": "Configures"
+  },
+  "Activated By": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759446,
+    "update_time": 1764759446,
+    "_id": "Activated By"
+  },
+  "GSK FARRER PLC": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759447,
+    "update_time": 1764759447,
+    "_id": "GSK FARRER PLC"
+  },
+  "Uses": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759447,
+    "update_time": 1764759447,
+    "_id": "Uses"
+  },
+  "Part Of": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759447,
+    "update_time": 1764759447,
+    "_id": "Part Of"
+  },
+  "Parameter 059": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759447,
+    "update_time": 1764759447,
+    "_id": "Parameter 059"
+  },
+  "XS40 Socket": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759447,
+    "update_time": 1764759447,
+    "_id": "XS40 Socket"
+  },
+  "configures": {
+    "chunk_ids": [
+      "chunk-a4b6befa3e06c01606cfccd53bc8ad31"
+    ],
+    "count": 1,
+    "create_time": 1764759449,
+    "update_time": 1764759449,
+    "_id": "configures"
+  },
+  "External Operation Panel Lock Signal (LSYS)": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759451,
+    "update_time": 1764759451,
+    "_id": "External Operation Panel Lock Signal (LSYS)"
+  },
+  "Managed By": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759453,
+    "update_time": 1764759453,
+    "_id": "Managed By"
+  },
+  "External Clamp Lock Signal (LEDT)": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759453,
+    "update_time": 1764759453,
+    "_id": "External Clamp Lock Signal (LEDT)"
+  },
+  "Modifies": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759459,
+    "update_time": 1764759459,
+    "_id": "Modifies"
+  },
+  "Adjusts": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759459,
+    "update_time": 1764759459,
+    "_id": "Adjusts"
+  },
+  "Links To": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759459,
+    "update_time": 1764759459,
+    "_id": "Links To"
+  },
+  "Connects To": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759459,
+    "update_time": 1764759459,
+    "_id": "Connects To"
+  },
+  "Monitors": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759459,
+    "update_time": 1764759459,
+    "_id": "Monitors"
+  },
+  "Y1.2 Address": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759459,
+    "update_time": 1764759459,
+    "_id": "Y1.2 Address"
+  },
+  "Parameter 4.12": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759464,
+    "update_time": 1764759464,
+    "_id": "Parameter 4.12"
+  },
+  "XS43.14 Terminal Block": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759465,
+    "update_time": 1764759465,
+    "_id": "XS43.14 Terminal Block"
+  },
+  "XS41.21 Terminal Block": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759465,
+    "update_time": 1764759465,
+    "_id": "XS41.21 Terminal Block"
+  },
+  "Y0.1 Address": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759465,
+    "update_time": 1764759465,
+    "_id": "Y0.1 Address"
+  },
+  "Parameter 4.13": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759465,
+    "update_time": 1764759465,
+    "_id": "Parameter 4.13"
+  },
+  "Manages": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759468,
+    "update_time": 1764759468,
+    "_id": "Manages"
+  },
+  "`GSK208D系列铣床数控系统`": {
+    "chunk_ids": [
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f"
+    ],
+    "count": 1,
+    "create_time": 1764759468,
+    "update_time": 1764759468,
+    "_id": "`GSK208D系列铣床数控系统`"
+  },
+  "`uses`": {
+    "chunk_ids": [
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f"
+    ],
+    "count": 1,
+    "create_time": 1764759471,
+    "update_time": 1764759471,
+    "_id": "`uses`"
+  },
+  "YL1.1 Address": {
+    "chunk_ids": [
+      "chunk-435a1d798107e54d373aff069d39d0ee"
+    ],
+    "count": 1,
+    "create_time": 1764759471,
+    "update_time": 1764759471,
+    "_id": "YL1.1 Address"
+  },
+  "`PLC及安装连接手册`": {
+    "chunk_ids": [
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f"
+    ],
+    "count": 1,
+    "create_time": 1764759477,
+    "update_time": 1764759477,
+    "_id": "`PLC及安装连接手册`"
+  },
+  "`ROT4`": {
+    "chunk_ids": [
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f"
+    ],
+    "count": 1,
+    "create_time": 1764759477,
+    "update_time": 1764759477,
+    "_id": "`ROT4`"
+  },
+  "communicates via": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759477,
+    "update_time": 1764759477,
+    "_id": "communicates via"
+  },
+  "connected via": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759477,
+    "update_time": 1764759477,
+    "_id": "connected via"
+  },
+  "contains pin": {
+    "chunk_ids": [
+      "chunk-7259f803e01fdda287870ef12f1b85ad"
+    ],
+    "count": 1,
+    "create_time": 1764759477,
+    "update_time": 1764759477,
+    "_id": "contains pin"
+  },
+  "`contains`": {
+    "chunk_ids": [
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f"
+    ],
+    "count": 1,
+    "create_time": 1764759482,
+    "update_time": 1764759482,
+    "_id": "`contains`"
+  },
+  "`sets`": {
+    "chunk_ids": [
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f"
+    ],
+    "count": 1,
+    "create_time": 1764759482,
+    "update_time": 1764759482,
+    "_id": "`sets`"
+  },
+  "`includes`": {
+    "chunk_ids": [
+      "chunk-dd1b496c56bdb7a1f043b1edb849497f"
+    ],
+    "count": 1,
+    "create_time": 1764759484,
+    "update_time": 1764759484,
+    "_id": "`includes`"
+  },
+  "GSK208D series milling machine": {
+    "chunk_ids": [
+      "chunk-23a3a8cc834c60754d8a46cc7aacf026",
+      "chunk-160f87282b2434542700c4ba41300f7a"
+    ],
+    "count": 2,
+    "create_time": 1764759484,
+    "update_time": 1764759484,
+    "_id": "GSK208D series milling machine"
+  },
+  "Fast movement speed": {
+    "chunk_ids": [
+      "chunk-160f87282b2434542700c4ba41300f7a"
+    ],
+    "count": 1,
+    "create_time": 1764759487,
+    "update_time": 1764759487,
+    "_id": "Fast movement speed"
+  },
+  "Feed rate multiplier encoding detection signal": {
+    "chunk_ids": [
+      "chunk-160f87282b2434542700c4ba41300f7a"
+    ],
+    "count": 1,
+    "create_time": 1764759491,
+    "update_time": 1764759491,
+    "_id": "Feed rate multiplier encoding detection signal"
+  },
+  "Servo units communicate with the CNC system via parameter PA156": {
+    "chunk_ids": [
+      "chunk-23a3a8cc834c60754d8a46cc7aacf026"
+    ],
+    "count": 1,
+    "create_time": 1764759493,
+    "update_time": 1764759493,
+    "_id": "Servo units communicate with the CNC system via parameter PA156"
+  },
+  "detected by": {
+    "chunk_ids": [
+      "chunk-160f87282b2434542700c4ba41300f7a"
+    ],
+    "count": 1,
+    "create_time": 1764759493,
+    "update_time": 1764759493,
+    "_id": "detected by"
+  },
+  "controlled by": {
+    "chunk_ids": [
+      "chunk-160f87282b2434542700c4ba41300f7a"
+    ],
+    "count": 1,
+    "create_time": 1764759493,
+    "update_time": 1764759493,
+    "_id": "controlled by"
+  },
+  "System bus communication is configured for multiple drive units": {
+    "chunk_ids": [
+      "chunk-23a3a8cc834c60754d8a46cc7aacf026"
+    ],
+    "count": 1,
+    "create_time": 1764759496,
+    "update_time": 1764759496,
+    "_id": "System bus communication is configured for multiple drive units"
+  },
+  "servo unit": {
+    "chunk_ids": [
+      "chunk-23a3a8cc834c60754d8a46cc7aacf026"
+    ],
+    "count": 1,
+    "create_time": 1764759498,
+    "update_time": 1764759498,
+    "_id": "servo unit"
+  },
+  "utilizes": {
+    "chunk_ids": [
+      "chunk-e25c93b505a973181024433fd354ceaa",
+      "chunk-5584f261d8706aef09821d08386c5bca",
+      "chunk-bd6fd0afbf536ae44d3d6af3f1fec372"
+    ],
+    "count": 3,
+    "create_time": 1764759501,
+    "update_time": 1764759501,
+    "_id": "utilizes"
+  },
+  "modifies": {
+    "chunk_ids": [
+      "chunk-bd6fd0afbf536ae44d3d6af3f1fec372"
+    ],
+    "count": 1,
+    "create_time": 1764759501,
+    "update_time": 1764759501,
+    "_id": "modifies"
+  },
+  "快速进给选择信号": {
+    "chunk_ids": [
+      "chunk-bd6fd0afbf536ae44d3d6af3f1fec372"
+    ],
+    "count": 1,
+    "create_time": 1764759504,
+    "update_time": 1764759504,
+    "_id": "快速进给选择信号"
+  },
+  "STL (F000#)": {
+    "chunk_ids": [
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7"
+    ],
+    "count": 1,
+    "create_time": 1764759506,
+    "update_time": 1764759506,
+    "_id": "STL (F000#)"
+  },
+  "SPL (F000#4)": {
+    "chunk_ids": [
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7"
+    ],
+    "count": 1,
+    "create_time": 1764759506,
+    "update_time": 1764759506,
+    "_id": "SPL (F000#4)"
+  },
+  "MFG 2H": {
+    "chunk_ids": [
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7"
+    ],
+    "count": 1,
+    "create_time": 1764759506,
+    "update_time": 1764759506,
+    "_id": "MFG 2H"
+  },
+  "triggers action": {
+    "chunk_ids": [
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7"
+    ],
+    "count": 1,
+    "create_time": 1764759509,
+    "update_time": 1764759509,
+    "_id": "triggers action"
+  },
+  "enables communication": {
+    "chunk_ids": [
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7"
+    ],
+    "count": 1,
+    "create_time": 1764759510,
+    "update_time": 1764759510,
+    "_id": "enables communication"
+  },
+  "indicates state": {
+    "chunk_ids": [
+      "chunk-d23dbfd05bfa448e31cd92a65747aff7"
+    ],
+    "count": 1,
+    "create_time": 1764759510,
+    "update_time": 1764759510,
+    "_id": "indicates state"
+  },
+  "PLC编程": {
+    "chunk_ids": [
+      "chunk-d4c2662b863618965d64c719f84b93dd"
+    ],
+    "count": 1,
+    "create_time": 1764759512,
+    "update_time": 1764759512,
+    "_id": "PLC编程"
+  },
+  "Ladder Diagrams": {
+    "chunk_ids": [
+      "chunk-148678713bf298065239d17bc8f871c4"
+    ],
+    "count": 1,
+    "create_time": 1764759512,
+    "update_time": 1764759512,
+    "_id": "Ladder Diagrams"
+  },
+  "demonstrates the use of": {
+    "chunk_ids": [
+      "chunk-d4c2662b863618965d64c719f84b93dd"
+    ],
+    "count": 1,
+    "create_time": 1764759515,
+    "update_time": 1764759515,
+    "_id": "demonstrates the use of"
+  },
+  "is used for": {
+    "chunk_ids": [
+      "chunk-d4c2662b863618965d64c719f84b93dd"
+    ],
+    "count": 1,
+    "create_time": 1764759515,
+    "update_time": 1764759515,
+    "_id": "is used for"
+  },
+  "PLC Code": {
+    "chunk_ids": [
+      "chunk-148678713bf298065239d17bc8f871c4"
+    ],
+    "count": 1,
+    "create_time": 1764759515,
+    "update_time": 1764759515,
+    "_id": "PLC Code"
+  },
+  "Functionality": {
+    "chunk_ids": [
+      "chunk-148678713bf298065239d17bc8f871c4"
+    ],
+    "count": 1,
+    "create_time": 1764759519,
+    "update_time": 1764759519,
+    "_id": "Functionality"
+  },
+  "Address Manipulation": {
+    "chunk_ids": [
+      "chunk-148678713bf298065239d17bc8f871c4"
+    ],
+    "count": 1,
+    "create_time": 1764759520,
+    "update_time": 1764759520,
+    "_id": "Address Manipulation"
+  },
+  "Mnemonic Codes (AND, OR)": {
+    "chunk_ids": [
+      "chunk-148678713bf298065239d17bc8f871c4"
+    ],
+    "count": 1,
+    "create_time": 1764759521,
+    "update_time": 1764759521,
+    "_id": "Mnemonic Codes (AND, OR)"
+  },
+  "G28指令": {
+    "chunk_ids": [
+      "chunk-3053797c0be8bf5da4d8c6acb7323c02"
+    ],
+    "count": 1,
+    "create_time": 1764759523,
+    "update_time": 1764759523,
+    "_id": "G28指令"
+  },
+  "使用G100#4作为进给轴方向选择信号": {
+    "chunk_ids": [
+      "chunk-3053797c0be8bf5da4d8c6acb7323c02"
+    ],
+    "count": 1,
+    "create_time": 1764759523,
+    "update_time": 1764759523,
+    "_id": "使用G100#4作为进给轴方向选择信号"
+  },
+  "定位到中点然后执行参考点操作": {
+    "chunk_ids": [
+      "chunk-3053797c0be8bf5da4d8c6acb7323c02"
+    ],
+    "count": 1,
+    "create_time": 1764759525,
+    "update_time": 1764759525,
+    "_id": "定位到中点然后执行参考点操作"
+  },
+  "WRT NOT Command": {
+    "chunk_ids": [
+      "chunk-148678713bf298065239d17bc8f871c4"
+    ],
+    "count": 1,
+    "create_time": 1764759526,
+    "update_time": 1764759526,
+    "_id": "WRT NOT Command"
+  },
+  "手动运行方式": {
+    "chunk_ids": [
+      "chunk-3053797c0be8bf5da4d8c6acb7323c02"
+    ],
+    "count": 1,
+    "create_time": 1764759527,
+    "update_time": 1764759527,
+    "_id": "手动运行方式"
+  },
+  "is a feature of": {
+    "chunk_ids": [
+      "chunk-d4c2662b863618965d64c719f84b93dd"
+    ],
+    "count": 1,
+    "create_time": 1764759528,
+    "update_time": 1764759528,
+    "_id": "is a feature of"
+  },
+  "与": {
+    "chunk_ids": [
+      "chunk-6bf0d2988328cb2b57000d35af8e28bf",
+      "chunk-291154181ff91098d9e971675a43c743"
+    ],
+    "count": 2,
+    "create_time": 1764759528,
+    "update_time": 1764759528,
+    "_id": "与"
+  },
+  "GSK208D-H": {
+    "chunk_ids": [
+      "chunk-b022f9a2d8df64b9023ca9b1a39b07c8"
+    ],
+    "count": 1,
+    "create_time": 1764759534,
+    "update_time": 1764759534,
+    "_id": "GSK208D-H"
+  },
+  "定位到中间点并执行参考点操作后": {
+    "chunk_ids": [
+      "chunk-3053797c0be8bf5da4d8c6acb7323c02"
+    ],
+    "count": 1,
+    "create_time": 1764759535,
+    "update_time": 1764759535,
+    "_id": "定位到中间点并执行参考点操作后"
+  },
+  "GSK208D-V": {
+    "chunk_ids": [
+      "chunk-b022f9a2d8df64b9023ca9b1a39b07c8"
+    ],
+    "count": 1,
+    "create_time": 1764759535,
+    "update_time": 1764759535,
+    "_id": "GSK208D-V"
+  },
+  "GL100总线扩展模块": {
+    "chunk_ids": [
+      "chunk-d3ba9afade1dd24aaee942f0ecec031b"
+    ],
+    "count": 1,
+    "create_time": 1764759535,
+    "update_time": 1764759535,
+    "_id": "GL100总线扩展模块"
+  },
+  "CNC端的总线接口与驱动单元的连接": {
+    "chunk_ids": [
+      "chunk-d3ba9afade1dd24aaee942f0ecec031b"
+    ],
+    "count": 1,
+    "create_time": 1764759535,
+    "update_time": 1764759535,
+    "_id": "CNC端的总线接口与驱动单元的连接"
+  },
+  "ACT": {
+    "chunk_ids": [
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 1,
+    "create_time": 1764759536,
+    "update_time": 1764759536,
+    "_id": "ACT"
+  },
+  "used for": {
+    "chunk_ids": [
+      "chunk-8da5958297d327c2b4bb23ff9407e63a",
+      "chunk-25975c0257fa8375caa4ae0fbbc4058f",
+      "chunk-d3ba9afade1dd24aaee942f0ecec031b"
+    ],
+    "count": 3,
+    "create_time": 1764759539,
+    "update_time": 1764759539,
+    "_id": "used for"
+  },
+  "connected to": {
+    "chunk_ids": [
+      "chunk-d3ba9afade1dd24aaee942f0ecec031b"
+    ],
+    "count": 1,
+    "create_time": 1764759540,
+    "update_time": 1764759540,
+    "_id": "connected to"
+  },
+  "执行": {
+    "chunk_ids": [
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 1,
+    "create_time": 1764759540,
+    "update_time": 1764759540,
+    "_id": "执行"
+  },
+  "涉及": {
+    "chunk_ids": [
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 1,
+    "create_time": 1764759547,
+    "update_time": 1764759547,
+    "_id": "涉及"
+  },
+  "影响": {
+    "chunk_ids": [
+      "chunk-447eccb28ef12563a540a7ecfdd48d68",
+      "chunk-f0933622eb1f92f675855b2b98840950"
+    ],
+    "count": 2,
+    "create_time": 1764759548,
+    "update_time": 1764759548,
+    "_id": "影响"
   }
 }

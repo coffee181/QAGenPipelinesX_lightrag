@@ -4,11 +4,20 @@ import uuid
 import os
 import asyncio
 import re
+import threading
 from pathlib import Path
 from typing import List, Dict, Any, Optional, Set
 from datetime import datetime
 from loguru import logger
 from tqdm import tqdm
+
+# 🔧 应用 LightRAG 关系描述补丁
+from ..utils.lightrag_relation_patch import patch_lightrag_relation_merge
+patch_lightrag_relation_merge()
+
+# 🔧 线程事件循环管理
+from ..utils.thread_event_loop import get_or_create_event_loop
+
 
 # Fix tiktoken encoding issue before importing LightRAG
 def setup_tiktoken_compatibility():
@@ -132,6 +141,11 @@ class LightRAGImplementation(RAGInterface):
         Args:
             working_dir: Path to the working directory
         """
+        # 🔧 关键修复：初始化当前线程的独立事件循环
+        # 这确保即使在不同的线程中调用，也能有各自的事件循环
+        get_or_create_event_loop()
+        logger.info(f"Event loop ready for thread {threading.current_thread().ident}")
+        
         self.working_dir = Path(working_dir)
 
         # Ensure working directory exists
@@ -139,6 +153,19 @@ class LightRAGImplementation(RAGInterface):
 
         # Initialize LightRAG with proper functions
         try:
+            # 🔧 关键修复：销毁旧实例，重新创建，避免 Lock 污染
+            # 当使用新的 working_dir 时，必须销毁旧的 LightRAG 实例
+            # 因为旧实例的 Lock 对象可能绑定到已关闭的事件循环
+            if self.rag is not None:
+                try:
+                    logger.info("Cleaning up previous LightRAG instance...")
+                    del self.rag
+                    import gc
+                    gc.collect()
+                except Exception as e:
+                    logger.debug(f"Cleanup warning: {e}")
+            
+            # 创建新的 LightRAG 实例（会绑定到当前事件循环）
             self.rag = self._create_lightrag_instance()
             logger.info(f"LightRAG initialized with working directory: {self.working_dir}")
 
@@ -337,7 +364,9 @@ class LightRAGImplementation(RAGInterface):
                 except ImportError:
                     pass
 
+            # 🔧 使用 asyncio.run 在新线程中运行（会自动创建新事件循环）
             asyncio.run(initialize_all())
+            
         except Exception as e:
             logger.error(f"FATAL: Failed to initialize LightRAG storages: {e}")
             raise RAGError(f"Failed to initialize LightRAG storages: {e}")
@@ -380,7 +409,7 @@ class LightRAGImplementation(RAGInterface):
         try:
             logger.info(f"Inserting document: {document.name}")
 
-            # Use async helper function
+            # 🔧 使用 asyncio.run 在新线程中运行（会自动创建新事件循环）
             asyncio.run(self._async_insert_document(document))
 
             logger.info(f"Successfully inserted document: {document.name}")
@@ -534,52 +563,53 @@ class LightRAGImplementation(RAGInterface):
                 else:
                     self.cache_misses += 1
 
-            # Use existing event loop if available, otherwise create new one
-            try:
-                loop = asyncio.get_event_loop()
-                if loop.is_closed():
-                    raise RuntimeError("Event loop is closed")
-            except RuntimeError:
-                loop = asyncio.new_event_loop()
-                asyncio.set_event_loop(loop)
-
             response = None
 
-            # Use naive mode directly as it gives the best results
-            # Skip other modes that are either broken (global) or don't find context (local)
+            # Use mix mode to leverage knowledge graph while maintaining reliability
+            # mix mode combines vector search with knowledge graph for better results
             try:
-                logger.info("Using naive mode for reliable results...")
+                logger.info("Using mix mode to leverage knowledge graph...")
 
-                # 🔧 不使用自定义提示词，因为它需要模板变量会导致错误
-                # 直接使用 LightRAG 的默认 naive 模式即可
+                # 🔧 使用mix模式充分利用知识图谱，同时保持查询的可靠性
+                # mix模式结合向量搜索和知识图谱，提供更准确的答案
                 
                 # Add timeout to prevent hanging queries
-                response = loop.run_until_complete(
+                response = asyncio.run(
                     asyncio.wait_for(
-                        self.rag.aquery(question, param=QueryParam(mode="naive")),
-                        timeout=120.0  # extend timeout for complex queries
+                        self.rag.aquery(question, param=QueryParam(mode="mix")),
+                        timeout=1200.0  # extend timeout for complex queries
                     )
                 )
-                logger.info("Query completed with naive mode")
-
+                logger.info("Query completed with mix mode")
             except asyncio.TimeoutError:
                 logger.warning("Query timed out after 30 seconds")
                 response = "查询超时，请稍后重试或简化问题。"
 
             except Exception as e:
-                logger.warning(f"Naive mode failed: {e}")
-                # Try local mode as last resort
+                logger.warning(f"Mix mode failed: {e}")
+                # Try naive mode as fallback
                 try:
-                    logger.info("Trying local mode as fallback...")
-                    response = loop.run_until_complete(
+                    logger.info("Trying naive mode as fallback...")
+                    response = asyncio.run(
                         asyncio.wait_for(
-                            self.rag.aquery(question, param=QueryParam(mode="local")),
-                            timeout=60.0  # extended fallback timeout
+                            self.rag.aquery(question, param=QueryParam(mode="naive")),
+                            timeout=600.0  # extended fallback timeout
                         )
                     )
-                    logger.info("Query completed with local mode")
+                    logger.info("Query completed with naive mode")
                 except Exception:
-                    response = "抱歉，无法从知识库中找到相关信息来回答这个问题。"
+                    # Try local mode as last resort
+                    try:
+                        logger.info("Trying local mode as final fallback...")
+                        response = asyncio.run(
+                            asyncio.wait_for(
+                                self.rag.aquery(question, param=QueryParam(mode="local")),
+                                timeout=600.0  # extended fallback timeout
+                            )
+                        )
+                        logger.info("Query completed with local mode")
+                    except Exception:
+                        response = "抱歉，无法从知识库中找到相关信息来回答这个问题。"
 
             if response is None:
                 response = "抱歉，查询过程中出现问题，无法生成答案。"
@@ -758,15 +788,7 @@ class LightRAGImplementation(RAGInterface):
             return None
 
         try:
-            loop = asyncio.get_event_loop()
-            if loop.is_closed():
-                raise RuntimeError("Event loop is closed")
-        except RuntimeError:
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-
-        try:
-            return loop.run_until_complete(
+            return asyncio.run(
                 asyncio.wait_for(text_chunks.get_by_id(chunk_id), timeout=5.0)
             )
         except asyncio.TimeoutError:
@@ -861,15 +883,7 @@ class LightRAGImplementation(RAGInterface):
             return None
 
         try:
-            loop = asyncio.get_event_loop()
-            if loop.is_closed():
-                raise RuntimeError("Event loop is closed")
-        except RuntimeError:
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-
-        try:
-            return loop.run_until_complete(
+            return asyncio.run(
                 asyncio.wait_for(graph.get_node(node_id), timeout=5.0)
             )
         except asyncio.TimeoutError:

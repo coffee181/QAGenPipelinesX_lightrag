@@ -208,6 +208,39 @@ class ProgressManager:
         
         logger.error(f"Added error to session {session_id}: {error_message}")
     
+    def reactivate_session(self, session_id: str, new_total_items: int = None) -> None:
+        """
+        Reactivate a completed session to continue processing.
+        
+        Args:
+            session_id: Session identifier to reactivate
+            new_total_items: New total items count (optional)
+        """
+        if session_id not in self.progress_data["sessions"]:
+            logger.warning(f"Session {session_id} not found for reactivation")
+            return
+        
+        session = self.progress_data["sessions"][session_id]
+        
+        # Update status back to running
+        session["status"] = "running"
+        
+        # Update total items if provided
+        if new_total_items and new_total_items > session["total_items"]:
+            session["total_items"] = new_total_items
+        
+        # Remove end_time if exists
+        if "end_time" in session:
+            del session["end_time"]
+        
+        session["last_update"] = datetime.now().isoformat()
+        self.progress_data["last_updated"] = datetime.now().isoformat()
+        
+        # Save immediately
+        self.save_progress()
+        
+        logger.info(f"Reactivated session {session_id} with {session['completed_items']} completed items")
+
     def complete_session(self, session_id: str, status: str = "completed") -> None:
         """
         Mark a session as completed.
@@ -596,7 +629,8 @@ class ProgressManager:
                 "completed_items": session_data["completed_items"],
                 "failed_items": session_data["failed_items"],
                 "start_time": session_data["start_time"],
-                "last_update": session_data["last_update"]
+                "last_update": session_data["last_update"],
+                "metadata": session_data.get("metadata", {})
             }
             
             if "end_time" in session_data:

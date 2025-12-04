@@ -12,6 +12,7 @@ import sys
 import atexit
 import threading
 import time
+import asyncio
 
 from ..interfaces.rag_interface import RAGInterface, RAGError
 from ..interfaces.markdown_processor_interface import MarkdownProcessorInterface
@@ -20,6 +21,7 @@ from ..models.question import Question, QuestionSet
 from ..models.qa_pair import QAPair, QASet
 from ..utils.file_utils import FileUtils
 from ..utils.path_utils import PathUtils
+from ..utils.thread_event_loop import get_or_create_event_loop, cleanup_thread_event_loop
 from .progress_manager import ProgressManager
 
 
@@ -208,50 +210,42 @@ class AnswerService:
         
         Args:
             questions_file: Path to questions JSONL file
-            output_file: Path to output QA JSONL file
+            output_file: Path to output QA pairs JSONL file
             session_id: Optional session ID for progress tracking
-            resume: Whether to resume from existing progress (default: True)
+            resume: Whether to resume from previous session
             
         Returns:
-            QASet containing generated QA pairs
+            QASet: Generated QA pairs
             
         Raises:
-            AnswerServiceError: If answer generation fails
+            AnswerServiceError: If generation fails
         """
         try:
-            # Create session if not provided
-            if session_id is None:
-                session_id = f"answer_gen_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-
-            self.logger.info(f"Starting answer generation session: {session_id}")
-
+            self.logger.info(f"Generating answers for questions file: {questions_file}")
+            
             # Load questions
             all_questions = self._load_questions_from_file(questions_file)
             if not all_questions:
-                raise AnswerServiceError(f"No questions found in {questions_file}")
-
-            # Check for resume
-            questions_to_process = all_questions
+                raise AnswerServiceError(f"No questions found in file: {questions_file}")
+            
+            self.logger.info(f"Loaded {len(all_questions)} questions from {questions_file}")
+            
+            # Create or resume session
+            if not session_id:
+                session_id = f"answer_gen_{questions_file.stem}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+            
+            # Check for existing progress
             existing_qa_pairs = []
-
             if resume and output_file.exists():
-                try:
-                    existing_qa_pairs = self._load_existing_qa_pairs(output_file)
-                    processed_question_ids = {qa.question_id for qa in existing_qa_pairs}
-                    questions_to_process = [q for q in all_questions if q.question_id not in processed_question_ids]
-
-                    self.logger.info(f"Resuming from {len(existing_qa_pairs)} existing QA pairs, "
-                                     f"{len(questions_to_process)} questions remaining")
-                except Exception as e:
-                    self.logger.warning(f"Failed to load existing progress: {e}, starting fresh")
-                    questions_to_process = all_questions
-                    existing_qa_pairs = []
-
-            # Initialize or update progress
-            if resume and self.progress_manager.get_session_progress(session_id):
-                # Session exists, continue
-                self.logger.info(f"Continuing existing session: {session_id}")
-            else:
+                existing_qa_pairs = self._load_existing_qa_pairs(output_file)
+                self.logger.info(f"Loaded {len(existing_qa_pairs)} existing QA pairs")
+            
+            # Filter out already answered questions
+            questions_to_process = self._filter_unanswered_questions(all_questions, existing_qa_pairs)
+            self.logger.info(f"Processing {len(questions_to_process)} remaining questions")
+            
+            # Start or update session
+            if not resume or not existing_qa_pairs:
                 # New session
                 self.progress_manager.start_session(
                     session_id=session_id,
@@ -265,8 +259,10 @@ class AnswerService:
 
             # Generate answers for remaining questions
             if questions_to_process:
+                self.logger.info(f"开始生成答案: {len(questions_to_process)}个问题")
                 new_qa_set = self._generate_answers_batch(questions_to_process, session_id, output_file)
                 new_qa_pairs = new_qa_set.qa_pairs
+                self.logger.info(f"答案生成完成: {len(new_qa_pairs)}个答案")
             else:
                 new_qa_pairs = []
 
@@ -450,9 +446,15 @@ class AnswerService:
         return documents
 
     def _load_questions_from_file(self, questions_file: Path) -> List[Question]:
-        """Load questions from JSONL file."""
+        """Load questions from JSONL file (supports both single-line and multi-line formats)."""
         try:
-            data = FileUtils.load_jsonl(questions_file)
+            # First try to load as standard JSONL (single line per JSON object)
+            try:
+                data = FileUtils.load_jsonl(questions_file)
+            except:
+                # If that fails, try to parse as multi-line JSONL
+                data = self._load_multiline_jsonl(questions_file)
+            
             questions = []
 
             for item in data:
@@ -508,6 +510,29 @@ class AnswerService:
 
         except Exception as e:
             raise AnswerServiceError(f"Failed to load questions from {questions_file}: {str(e)}")
+
+    def _load_multiline_jsonl(self, questions_file: Path) -> List[dict]:
+        """Load questions from multi-line JSONL file (each JSON object spans multiple lines)."""
+        import json
+        data = []
+        
+        with open(questions_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+            
+        # Split by double newlines to separate JSON objects
+            json_objects = content.strip().split('\n\n')
+            
+        for json_str in json_objects:
+            json_str = json_str.strip()
+            if json_str:
+                try:
+                    obj = json.loads(json_str)
+                    data.append(obj)
+                except json.JSONDecodeError as e:
+                    self.logger.warning(f"Failed to parse JSON object in {questions_file}: {e}")
+                    continue
+        
+        return data
 
     def _load_existing_qa_pairs(self, output_file: Path) -> List[QAPair]:
         """Load existing QA pairs from output file for resuming."""
@@ -581,6 +606,26 @@ class AnswerService:
                                 self.logger.info(f"🔍 第 {attempt + 1} 次尝试使用 LightRAG 生成答案 [文档过滤: {question.source_document}]...")
                             else:
                                 self.logger.info(f"🔍 第 {attempt + 1} 次尝试使用 LightRAG 生成答案...")
+                            
+                            # 🚀 优化：从问题 metadata 中提取 chunk_ids，优先使用精准检索
+                            chunk_ids = None
+                            metadata = getattr(question, "metadata", {}) or {}
+                            if metadata:
+                                # 获取主 chunk_id
+                                primary_chunk_id = metadata.get("lightrag_chunk_id")
+                                # 获取关联 chunk_ids
+                                related_chunk_ids = metadata.get("related_chunk_ids", [])
+                                
+                                # 合并所有 chunk_ids
+                                if primary_chunk_id or related_chunk_ids:
+                                    chunk_ids = []
+                                    if primary_chunk_id:
+                                        chunk_ids.append(primary_chunk_id)
+                                    if isinstance(related_chunk_ids, list):
+                                        chunk_ids.extend([cid for cid in related_chunk_ids if cid and cid not in chunk_ids])
+                                    
+                                    if chunk_ids:
+                                        self.logger.info(f"🎯 Using {len(chunk_ids)} chunk IDs for direct retrieval")
                             
                             raw_answer = self.rag.query_single_question(
                                 question.content,
@@ -935,35 +980,38 @@ class AnswerService:
         return AnswerType.VALID_POSITIVE
 
     def _save_qa_set(self, qa_set: QASet, output_file: Path) -> None:
-        """Save QA set to JSONL file in messages format."""
+        """Save QA set to JSONL file in readable multi-line format."""
         try:
-            # Convert QA pairs to messages format
-            messages = []
+            # Create multi-line format - each QA pair as separate lines
+            jsonl_data = []
             for qa_pair in qa_set.qa_pairs:
-                # Add user message (question)
-                messages.append({
-                    "role": "user",
-                    "content": qa_pair.question
-                })
-                # Add assistant message (answer)
-                messages.append({
-                    "role": "assistant",
-                    "content": qa_pair.answer
-                })
-
-            # Create the final format - one line with all messages
-            jsonl_data = {"messages": messages}
+                # Create a separate message pair for each QA
+                qa_data = {
+                    "question": qa_pair.question,
+                    "answer": qa_pair.answer,
+                    "source_document": qa_pair.source_document,
+                    "question_id": qa_pair.question_id,
+                    "confidence_score": qa_pair.confidence_score,
+                    "metadata": qa_pair.metadata,
+                    "created_at": qa_pair.created_at.isoformat() if qa_pair.created_at else None
+                }
+                jsonl_data.append(qa_data)
 
             # Ensure output directory exists
             FileUtils.ensure_directory(output_file.parent)
 
-            # Save to file
-            FileUtils.save_jsonl_file([jsonl_data], output_file)
+            # Save to file with pretty formatting
+            with open(output_file, 'w', encoding='utf-8') as f:
+                for qa_data in jsonl_data:
+                    # Write each QA pair as a formatted JSON object
+                    json.dump(qa_data, f, ensure_ascii=False, indent=2)
+                    f.write('\n\n')  # Add spacing between QA pairs
 
-            self.logger.info(f"QA set saved to: {output_file} ({len(qa_set.qa_pairs)} QA pairs in messages format)")
+            self.logger.info(f"QA set saved to: {output_file} ({len(qa_set.qa_pairs)} QA pairs in multi-line format)")
 
         except Exception as e:
-            raise AnswerServiceError(f"Failed to save QA set: {str(e)}")
+            self.logger.error(f"Failed to save QA set: {e}")
+            raise
 
     def insert_documents_to_working_dir(
             self,
@@ -986,6 +1034,11 @@ class AnswerService:
             AnswerServiceError: If insertion fails
         """
         try:
+            # 🔧 关键修复：初始化当前线程的事件循环
+            # 这确保该线程有独立的事件循环，不会与其他线程冲突
+            get_or_create_event_loop()
+            self.logger.info(f"Event loop initialized for thread {threading.current_thread().ident}")
+            
             # Create session if not provided
             if session_id is None:
                 session_id = f"insert_docs_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
@@ -1032,6 +1085,28 @@ class AnswerService:
             total_size = sum(doc.file_size for doc in documents if doc.file_size)
             self.logger.info(f"Documents to process: {len(documents)} files, total size: {total_size / 1024 / 1024:.2f} MB")
 
+            # Check for existing session and resume logic
+            existing_session = self.progress_manager.get_session_progress(session_id)
+            if existing_session and existing_session.get("status") == "running":
+                # Check if there are any processed files
+                processed_files = self.progress_manager.get_processed_files(session_id)
+                if processed_files:
+                    self.logger.info(f"🔄 恢复现有文档插入会话: {session_id} (已处理: {len(processed_files)}个文档)")
+                    # Filter out already processed documents
+                    documents = [doc for doc in documents if str(doc.file_path) not in processed_files]
+                    if not documents:
+                        self.logger.info(f"✅ 所有文档都已处理完成")
+                        self.progress_manager.complete_session(session_id)
+                        return {"inserted_documents": len(processed_files), "failed_documents": 0, "total_attempted": len(processed_files)}
+                else:
+                    # No files processed, but session is running, might be stuck
+                    self.logger.warning(f"⚠️ 检测到卡住的会话: {session_id}，重新开始处理")
+                    # Reset the session
+                    self.progress_manager.complete_session(session_id, status="failed")
+                    # Create new session
+                    session_id = f"insert_docs_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+                    self.logger.info(f"🚀 创建新会话: {session_id}")
+
             # Initialize progress
             self.progress_manager.start_session(
                 session_id=session_id,
@@ -1062,7 +1137,11 @@ class AnswerService:
                     success_count += 1
 
                     # Update progress
-                    self.progress_manager.update_progress(session_id, 1)
+                    self.progress_manager.update_session_progress(
+                        session_id, 
+                        str(document.file_path), 
+                        success=True
+                    )
 
                     # Calculate ETA
                     if i > 0:
@@ -1089,7 +1168,14 @@ class AnswerService:
 
                     error_msg = f"✗ Failed to insert document {i}/{len(documents)}: {safe_doc_name} in {doc_duration:.1f}s - {str(e)}"
                     self.logger.error(error_msg)
-                    self.progress_manager.add_error(session_id, f"{safe_doc_path}: {str(e)}")
+                    
+                    # Update progress with error
+                    self.progress_manager.update_session_progress(
+                        session_id, 
+                        str(safe_doc_path), 
+                        success=False, 
+                        error_message=str(e)
+                    )
                     continue
 
             # Complete session

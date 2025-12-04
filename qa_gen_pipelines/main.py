@@ -50,6 +50,7 @@ from src.services.progress_manager import ProgressManager
 from src.services.pdf_processor import PDFProcessor
 from src.services.question_service import QuestionService
 from src.services.answer_service import AnswerService
+from src.utils.chunk_repository import ChunkRepository
 
 # Core implementations
 from src.implementations.simple_text_chunker import SimpleTextChunker
@@ -107,7 +108,17 @@ def create_services(config: ConfigManager, logger: logging.Logger) -> tuple:
         else:
             logger.warning("No OCR engine available - PDF processing will be disabled")
     
-    text_chunker = SimpleTextChunker(config)
+    # 🚀 优化：初始化 ChunkRepository（如果配置了持久化）
+    chunk_repository = None
+    if config.get("text_chunker.persist_chunks", False):
+        try:
+            chunk_repository = ChunkRepository(config)
+            logger.info("✅ ChunkRepository initialized successfully")
+        except Exception as e:
+            logger.warning(f"⚠️  Failed to initialize ChunkRepository: {e}")
+    
+    # 🚀 优化：传递 chunk_repository 给 text_chunker
+    text_chunker = SimpleTextChunker(config, chunk_repository=chunk_repository)
     
     rag = LightRAGImplementation(config)
     

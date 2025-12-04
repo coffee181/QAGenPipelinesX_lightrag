@@ -19,9 +19,22 @@ ocr:
 
 # Text Chunking Configuration
 text_chunker:
-  max_chunk_size: 60000  # 最大块大小(字符数) - 优化：充分利用本地模型的上下文窗口
-  overlap_size: 3000   # 重叠大小(字符数) - 优化：保持5%重叠率
-  chunk_on_sentences: true # 按句子分块
+  # 🚀 优化：使用 token 级切分，与 LightRAG 保持一致
+  use_token_chunking: true  # 是否使用 token 级切分（推荐）
+  tokenizer_model: "cl100k_base"  # Tokenizer 模型名称
+  chunk_token_size: 1200  # 每个 chunk 的最大 token 数（与 LightRAG 默认值一致）
+  chunk_overlap_token_size: 100  # Chunk 之间的重叠 token 数（与 LightRAG 默认值一致）
+  
+  # 字符级切分（向后兼容，当 use_token_chunking=false 时使用）
+  max_chunk_size: 60000  # 最大块大小(字符数) - 仅在不使用 token 切分时生效
+  overlap_size: 3000   # 重叠大小(字符数) - 仅在不使用 token 切分时生效
+  chunk_on_sentences: true # 按句子分块（仅字符级切分时生效）
+  
+  # Chunk 持久化配置
+  persist_chunks: true  # 是否持久化 chunk 到仓库
+  chunk_store:
+    type: "json"  # 存储类型：json, sqlite, postgres, redis
+    path: "./lightrag_cache/chunks"  # 存储路径（使用已存在的lightrag_cache目录）
 
 # Question Generation Configuration - 本地模型版本
 question_generator:
@@ -33,20 +46,6 @@ question_generator:
   dedup_similarity_threshold: 0.85  # 去重相似度阈值 (0-1)
   enable_quality_filter: true  # 启用问题质量过滤
   
-  # DeepSeek API配置（备用）
-  deepseek:
-    api_key: "sk-8d1493cdaf7a4ac9aad494119b570d4e"  # 从环境变量读取
-    model: "deepseek-chat"
-    max_tokens: 2048
-    temperature: 0.7
-    timeout: 60
-    questions_per_chunk: 30
-    enable_kg_context: true
-    max_context_entities: 3
-    max_context_relations: 2
-    max_context_snippets: 2
-    context_snippet_chars: 200
-    max_related_chunk_ids: 6
   
   # 本地模型配置
   local:
@@ -57,11 +56,11 @@ question_generator:
     timeout: 30000  # 本地模型需要更长时间（500分钟，约8.3小时）
     questions_per_chunk: 20 # 减少问题数量以加快生成速度
     enable_kg_context: true
-    max_context_entities: 3
-    max_context_relations: 2
+    max_context_entities: 5
+    max_context_relations: 5
     max_context_snippets: 2
     context_snippet_chars: 200
-    max_related_chunk_ids: 6
+    max_related_chunk_ids: 10
 
 # RAG Configuration
 rag:
@@ -84,7 +83,7 @@ file_processing:
   
 # Progress Management
 progress:
-  save_interval: 5  # 每处理5个文件保存一次进度
+  save_interval: 1  # 每处理1个文件保存一次进度，确保实时更新
   progress_file: "./progress.json"
   
 # Logging Configuration

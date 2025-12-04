@@ -1,0 +1,176 @@
+{
+  "question_id": "6f5b2fc0-e9a4-485c-a546-68ae3ea53f96",
+  "content": "TK36和TK36(S)在床身上最大回转直径上有什么区别？这种差异对加工什么类型的零件更有优势？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-11-30T05:43:58.693873"
+}
+
+{
+  "question_id": "a402e461-f7e2-4f07-9c18-68868c50a732",
+  "content": "TK36(S)主轴通孔直径φ57在加工长轴类零件时有什么优势？对装卡长度有什么限制？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-11-30T05:43:58.694438"
+}
+
+{
+  "question_id": "f9803dba-4336-4ddb-9cbc-fe0a0958f2c6",
+  "content": "液压卡盘ISO702/1 A2-5和A2-6的使用有什么区别？分别适用于哪些类型的工件？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-11-30T05:43:58.694677"
+}
+
+{
+  "question_id": "5ab13aad-81d9-4285-8b48-3c5c5e2488da",
+  "content": "TK36(S)主轴转速范围140-3000 r/min在加工不同材料时如何选择合适的转速参数？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-11-30T05:43:58.694924"
+}
+
+{
+  "question_id": "4e2e92e5-bd6d-4402-9fd6-e57a82183a12",
+  "content": "TK36的最大车削直径@320和主轴通孔φ57对工件装卡有什么限制？适合加工多长的零件？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-11-30T05:43:58.695613"
+}
+
+{
+  "question_id": "c7f4a389-c209-4ff3-bd03-044167cebb39",
+  "content": "TK36(S)的六工位排式刀架在自动化加工中有什么优势？如何维护保养以保持高精度？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-11-30T05:43:58.695891"
+}
+
+{
+  "question_id": "06c2a8c1-33d3-428d-9bf1-e6be00ecd68d",
+  "content": "TK36和TK36(S)的体积差异（长宽高）对车间布局有什么影响？安装时需要考虑哪些因素？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 13,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-11-30T05:43:58.696969"
+}
+
+{
+  "question_id": "bef82129-4dc7-464a-b1be-ccb6e37db6dd",
+  "content": "TK36(S)的主轴功率5.5/7.5kW对加工不同硬度材料有什么影响？如何选择合适的功率档位？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 16,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-11-30T05:43:58.697722"
+}
+
+{
+  "question_id": "63513281-6aa6-4336-8308-2d97562ff6aa",
+  "content": "快速移动速度X/Z方向的6/8m/min在工件换刀和定位时有什么优势？如何优化路径规划提高效率？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 17,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-11-30T05:43:58.698026"
+}
+
+{
+  "question_id": "92592bfe-2c31-4a3c-a3ac-24be90ab2c05",
+  "content": "排式刀架@220的最大车削直径对加工长轴类零件有什么限制？如何通过夹具设计解决？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 18,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-11-30T05:43:58.698308"
+}
+
+{
+  "question_id": "8ff1b455-dc2b-42ac-acba-55d96e3d7d85",
+  "content": "TK36(S)的六工位排式刀架在复杂零件加工中有什么优势？如何设置参数以提高效率？",
+  "source_document": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 19,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-11-30T05:43:58.698588"
+}
+

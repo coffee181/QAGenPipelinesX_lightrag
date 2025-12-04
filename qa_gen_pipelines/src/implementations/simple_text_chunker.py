@@ -1,31 +1,92 @@
 """Simple text chunker implementation."""
 
 import re
-from typing import List
+from typing import List, Optional
 from loguru import logger
 
 from ..interfaces.text_chunker_interface import TextChunkerInterface, ChunkingError
 from ..models.document import Document, DocumentChunk
 from ..utils.config import ConfigManager
+from ..utils.lightrag_utils import compute_lightrag_chunk_id
+
+# Try to import LightRAG chunking function
+try:
+    from lightrag.operate import chunking_by_token_size
+    # 尝试导入tokenizer，如果失败则使用tiktoken
+    try:
+        from lightrag.llm import TiktokenTokenizer
+        LIGHTRAG_TOKENIZER_AVAILABLE = True
+    except ImportError:
+        try:
+            import tiktoken
+            TiktokenTokenizer = tiktoken.Encoding
+            LIGHTRAG_TOKENIZER_AVAILABLE = True
+            logger.info("使用tiktoken作为tokenizer")
+        except ImportError:
+            LIGHTRAG_TOKENIZER_AVAILABLE = False
+            logger.warning("tiktoken不可用，将使用字符切分")
+    
+    LIGHTRAG_AVAILABLE = True
+    logger.info("LightRAG chunking功能可用")
+except ImportError:
+    LIGHTRAG_AVAILABLE = False
+    LIGHTRAG_TOKENIZER_AVAILABLE = False
+    logger.warning("LightRAG not available, falling back to character-based chunking")
 
 
 class SimpleTextChunker(TextChunkerInterface):
     """Simple text chunking implementation."""
     
-    def __init__(self, config: ConfigManager):
+    def __init__(self, config: ConfigManager, chunk_repository=None):
         """
         Initialize text chunker.
         
         Args:
             config: Configuration object
+            chunk_repository: Optional ChunkRepository for persisting chunks
         """
         self.config = config
-        self.max_chunk_size = config.get("text_chunker.max_chunk_size", 2000)
-        self.overlap_size = config.get("text_chunker.overlap_size", 200)
-        self.chunk_on_sentences = config.get("text_chunker.chunk_on_sentences", True)
+        self.chunk_repository = chunk_repository
         
-        logger.info(f"Text chunker initialized: max_size={self.max_chunk_size}, "
-                   f"overlap={self.overlap_size}, sentences={self.chunk_on_sentences}")
+        # 🚀 优化：支持 token 级切分（与 LightRAG 一致）
+        self.use_token_chunking = config.get("text_chunker.use_token_chunking", False)
+        
+        if self.use_token_chunking and LIGHTRAG_AVAILABLE and LIGHTRAG_TOKENIZER_AVAILABLE:
+            # Token 级切分配置
+            self.tokenizer_model = config.get("text_chunker.tokenizer_model", "cl100k_base")
+            self.chunk_token_size = config.get("text_chunker.chunk_token_size", 1200)
+            self.chunk_overlap_token_size = config.get("text_chunker.chunk_overlap_token_size", 100)
+            
+            # Initialize tokenizer
+            try:
+                if TiktokenTokenizer == tiktoken.Encoding:
+                    # 使用tiktoken
+                    self.tokenizer = tiktoken.get_encoding(self.tokenizer_model)
+                else:
+                    # 使用LightRAG的tokenizer
+                    self.tokenizer = TiktokenTokenizer(model_name=self.tokenizer_model)
+                logger.info(f"🔧 Token切分器初始化完成: model={self.tokenizer_model}, "
+                          f"chunk_size={self.chunk_token_size} tokens, "
+                          f"overlap={self.chunk_overlap_token_size} tokens")
+            except Exception as e:
+                logger.warning(f"Failed to initialize tokenizer: {e}, falling back to character chunking")
+                self.use_token_chunking = False
+        else:
+            self.use_token_chunking = False
+        
+        # 字符级切分配置（向后兼容）
+        if not self.use_token_chunking:
+            self.max_chunk_size = config.get("text_chunker.max_chunk_size", 2000)
+            self.overlap_size = config.get("text_chunker.overlap_size", 200)
+            self.chunk_on_sentences = config.get("text_chunker.chunk_on_sentences", True)
+            logger.info(f"Character chunker initialized: max_size={self.max_chunk_size}, "
+                      f"overlap={self.overlap_size}, sentences={self.chunk_on_sentences}")
+        
+        # Chunk 持久化配置
+        self.persist_chunks = config.get("text_chunker.persist_chunks", False)
+        if self.persist_chunks and not self.chunk_repository:
+            logger.warning("persist_chunks is enabled but no chunk_repository provided")
+            self.persist_chunks = False
     
     def chunk_text(self, text: str, document_id: str) -> List[DocumentChunk]:
         """
@@ -45,14 +106,27 @@ class SimpleTextChunker(TextChunkerInterface):
             if not text.strip():
                 return []
             
-            logger.info(f"Chunking text for document: {document_id}")
+            logger.info(f" 开始文档切分: {document_id} (token切分={self.use_token_chunking})")
             
-            if self.chunk_on_sentences:
+            # 优化：优先使用 token 级切分（与 LightRAG 一致）
+            if self.use_token_chunking:
+                chunks = self._chunk_by_tokens(text, document_id)
+            elif self.chunk_on_sentences:
+                logger.info(f" 使用句子级切分")
                 chunks = self._chunk_by_sentences(text, document_id)
             else:
+                logger.info(f" 使用字符级切分")
                 chunks = self._chunk_by_characters(text, document_id)
             
-            logger.info(f"Created {len(chunks)} chunks for document: {document_id}")
+            # 优化：如果配置了持久化，保存到 ChunkRepository
+            if self.persist_chunks and chunks:
+                try:
+                    self.chunk_repository.upsert_chunks(chunks)
+                    logger.info(f" 已持久化 {len(chunks)} 个chunks到仓库")
+                except Exception as e:
+                    logger.warning(f"  Chunk持久化失败: {e}")
+            
+            logger.info(f" 文档切分完成: {document_id} → {len(chunks)}个chunks")
             return chunks
             
         except Exception as e:
@@ -280,11 +354,90 @@ class SimpleTextChunker(TextChunkerInterface):
             if matches:
                 # Use the last sentence boundary
                 last_match = matches[-1]
-                overlap = overlap[last_match.end():]
+                overlap = overlap[:last_match.start()]
         
         return overlap
     
-    def _create_chunk(self, content: str, document_id: str, start_pos: int, chunk_index: int) -> DocumentChunk:
+    def _chunk_by_tokens(self, text: str, document_id: str) -> List[DocumentChunk]:
+        """
+        Chunk text using token-based chunking with LightRAG compatibility.
+        
+        Args:
+            text: Text to chunk
+            document_id: Document identifier
+            
+        Returns:
+            List of DocumentChunk objects
+        """
+        logger.info(f"🔧 开始Token切分: document={document_id}, text_length={len(text)}字符")
+        
+        # Use LightRAG's chunking function
+        chunk_dicts = chunking_by_token_size(
+            tokenizer=self.tokenizer,
+            content=text,
+            split_by_character=None,
+            split_by_character_only=False,
+            overlap_token_size=self.chunk_overlap_token_size,
+            max_token_size=self.chunk_token_size
+        )
+        
+        logger.info(f"🔧 LightRAG切分完成: 生成 {len(chunk_dicts)} 个原始chunks")
+        
+        chunks = []
+        current_pos = 0
+        total_tokens = 0
+        
+        for idx, chunk_dict in enumerate(chunk_dicts):
+            content = chunk_dict.get("content", "").strip()
+            if not content:
+                continue
+                
+            # 计算token数量
+            tokens = len(self.tokenizer.encode(content))
+            total_tokens += tokens
+            
+            # 🚀 优化：使用 LightRAG 的 chunk_id 计算方式
+            lightrag_chunk_id = compute_lightrag_chunk_id(content)
+            if not lightrag_chunk_id:
+                # Fallback to document-based ID if computation fails
+                lightrag_chunk_id = f"{document_id}_chunk_{idx}"
+            
+            # Find position in original text
+            start_pos = text.find(content, current_pos)
+            end_pos = start_pos + len(content)
+            current_pos = start_pos
+            
+            # 🚀 优化：使用 LightRAG 兼容的 chunk_id
+            chunk = DocumentChunk(
+                document_id=document_id,
+                chunk_id=lightrag_chunk_id,
+                content=content,
+                start_position=start_pos,
+                end_position=end_pos,
+                chunk_index=chunk_dict.get("chunk_order_index", idx),
+                total_chunks=len(chunk_dicts)
+            )
+            chunks.append(chunk)
+            
+            # 详细日志：每个chunk的信息
+            logger.debug(f"🔧 Chunk {idx+1}/{len(chunk_dicts)}: "
+                        f"tokens={tokens}, chars={len(content)}, "
+                        f"id={lightrag_chunk_id[:12]}..., "
+                        f"pos={start_pos}-{end_pos}")
+        
+        # 更新总chunk数
+        for chunk in chunks:
+            chunk.total_chunks = len(chunks)
+        
+        # 总结日志
+        avg_tokens = total_tokens // len(chunks) if chunks else 0
+        logger.info(f"🔧 Token切分完成: {len(chunks)}个chunks, "
+                   f"总tokens={total_tokens}, 平均={avg_tokens}tokens/chunk")
+        
+        return chunks
+    
+    def _create_chunk(self, content: str, document_id: str, start_pos: int, chunk_index: int, 
+                     use_lightrag_id: bool = False) -> DocumentChunk:
         """
         Create a DocumentChunk object.
         
@@ -293,11 +446,19 @@ class SimpleTextChunker(TextChunkerInterface):
             document_id: Document identifier
             start_pos: Start position in original text
             chunk_index: Index of this chunk
+            use_lightrag_id: Whether to use LightRAG-compatible chunk_id
             
         Returns:
             DocumentChunk object
         """
-        chunk_id = f"{document_id}_chunk_{chunk_index}"
+        if use_lightrag_id:
+            # 🚀 优化：使用 LightRAG 的 chunk_id 计算方式
+            chunk_id = compute_lightrag_chunk_id(content)
+            if not chunk_id:
+                chunk_id = f"{document_id}_chunk_{chunk_index}"
+        else:
+            chunk_id = f"{document_id}_chunk_{chunk_index}"
+        
         end_pos = start_pos + len(content)
         
         return DocumentChunk(

@@ -155,13 +155,27 @@ class PDFProcessor:
             # Check for existing session to resume
             if resume_session:
                 existing_sessions = self.progress_manager.list_sessions()
+                best_session = None
+                max_completed = 0
+                
                 for session in existing_sessions:
                     if (session["operation_type"] == "pdf_processing" and 
-                        session["status"] == "running" and
+                        session["status"] in ["running", "completed"] and
                         session["metadata"].get("input_dir") == str(input_dir)):
-                        session_id = session["session_id"]
-                        logger.info(f"🔄 恢复现有会话: {session_id}")
-                        break
+                        
+                        # Find session with most completed files
+                        if session["completed_items"] > max_completed:
+                            max_completed = session["completed_items"]
+                            best_session = session
+                
+                if best_session:
+                    session_id = best_session["session_id"]
+                    logger.info(f"🔄 恢复现有会话: {session_id} (状态: {best_session['status']}, 已完成: {best_session['completed_items']}个文件)")
+                    
+                    # 如果会话已完成，重新激活它
+                    if best_session["status"] == "completed":
+                        self.progress_manager.reactivate_session(session_id, len(pdf_files))
+                        logger.info(f"🔄 重新激活已完成会话: {session_id}")
             
             # Get session progress or create new session
             session_progress = self.progress_manager.get_session_progress(session_id)

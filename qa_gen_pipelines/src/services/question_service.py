@@ -15,6 +15,7 @@ from ..models.document import Document
 from ..models.question import Question, QuestionSet
 from ..utils.config import ConfigManager
 from ..utils.file_utils import FileUtils
+from ..utils.chunk_repository import ChunkRepository
 from .progress_manager import ProgressManager
 
 
@@ -49,6 +50,15 @@ class QuestionService:
         self.enable_deduplication = config.get("question_generator.enable_deduplication", True)
         self.dedup_similarity_threshold = config.get("question_generator.dedup_similarity_threshold", 0.85)
         self.enable_quality_filter = config.get("question_generator.enable_quality_filter", True)
+        
+        # 🚀 优化：初始化 ChunkRepository（如果配置了持久化）
+        self.chunk_repository = None
+        if config.get("text_chunker.persist_chunks", False):
+            try:
+                self.chunk_repository = ChunkRepository(config)
+                logger.info("ChunkRepository initialized for question generation")
+            except Exception as e:
+                logger.warning(f"Failed to initialize ChunkRepository: {e}")
         
         # Ensure output directory exists
         FileUtils.ensure_directory(self.output_dir)
@@ -119,9 +129,9 @@ class QuestionService:
             if not self.question_generator.validate_questions(question_set.questions):
                 logger.warning(f"Generated questions failed validation for document: {document.name}")
             
-            # Save questions to JSONL file
+            # Save questions to JSONL file in multi-line format
             questions_file = self.output_dir / f"{document.name}_questions.jsonl"
-            FileUtils.append_to_jsonl(question_set.to_jsonl_format(), questions_file)
+            self._save_questions_multiline(question_set, questions_file)
             
             # Update progress if session provided
             if session_id:
@@ -129,7 +139,8 @@ class QuestionService:
                     session_id, str(document.file_path), True
                 )
             
-            logger.info(f"Generated {len(question_set.questions)} questions for document: {document.name}")
+            logger.info(f"✅ 问题生成完成: {document.name} → {len(question_set.questions)}个问题")
+            logger.info(f"💾 问题已保存到: {questions_file}")
             return question_set
             
         except Exception as e:
@@ -260,62 +271,6 @@ class QuestionService:
                 self.progress_manager.complete_session(session_id, "failed")
             return []
     
-    def generate_questions_from_documents(self, documents: List[Document], 
-                                        resume_session: bool = True) -> List[QuestionSet]:
-        """
-        Generate questions from a list of documents.
-        
-        Args:
-            documents: List of Document objects
-            resume_session: Whether to resume from previous session
-            
-        Returns:
-            List of QuestionSet objects
-        """
-        try:
-            if not documents:
-                logger.warning("No documents provided")
-                return []
-            
-            logger.info(f"Generating questions for {len(documents)} documents")
-            
-            # Create session ID
-            session_id = f"question_doc_generation_{uuid.uuid4().hex[:8]}"
-            
-            # Create session
-            self.progress_manager.create_session(
-                session_id=session_id,
-                operation_type="question_doc_generation",
-                total_items=len(documents),
-                metadata={
-                    "document_count": len(documents),
-                    "output_dir": str(self.output_dir)
-                }
-            )
-            
-            # Process documents
-            question_sets = []
-            
-            for document in tqdm(documents, desc="Generating questions"):
-                question_set = self.generate_questions_from_document(document, session_id)
-                if question_set:
-                    question_sets.append(question_set)
-            
-            # Complete session
-            self.progress_manager.complete_session(session_id, "completed")
-            
-            # Get final stats
-            stats = self.progress_manager.get_session_stats(session_id)
-            logger.info(f"Document question generation completed: {stats['completed_items']}/{stats['total_items']} successful")
-            
-            return question_sets
-            
-        except Exception as e:
-            logger.error(f"Failed to generate questions from documents: {e}")
-            if 'session_id' in locals():
-                self.progress_manager.complete_session(session_id, "failed")
-            return []
-    
     def get_generation_stats(self, session_id: str) -> dict:
         """
         Get question generation statistics for a session.
@@ -341,124 +296,6 @@ class QuestionService:
             if session["operation_type"] in ["question_generation", "question_doc_generation"]
         ]
         return question_sessions
-    
-    def consolidate_questions_file(self, input_dir: Path, output_file: Path) -> None:
-        """
-        Consolidate all individual question files into a single JSONL file.
-        
-        Args:
-            input_dir: Directory containing individual question files
-            output_file: Output JSONL file path
-        """
-        try:
-            # Find all question JSONL files
-            question_files = list(input_dir.glob("*_questions.jsonl"))
-            
-            if not question_files:
-                logger.warning(f"No question files found in directory: {input_dir}")
-                return
-            
-            logger.info(f"Consolidating {len(question_files)} question files")
-            
-            # Consolidate all questions
-            all_questions = []
-            
-            for question_file in question_files:
-                try:
-                    for question_data in FileUtils.read_jsonl_file(question_file):
-                        all_questions.append(question_data)
-                except Exception as e:
-                    logger.error(f"Failed to read question file {question_file}: {e}")
-                    continue
-            
-            # Save consolidated file
-            FileUtils.save_jsonl_file(all_questions, output_file)
-            
-            logger.info(f"Consolidated {len(all_questions)} question sets to: {output_file}")
-            
-        except Exception as e:
-            logger.error(f"Failed to consolidate questions: {e}")
-    
-    def generate_questions_for_document(self, text_file_path: Path, output_dir: Path, session_id: Optional[str] = None) -> Optional[QuestionSet]:
-        """
-        Generate questions for a document (alias for backward compatibility).
-        
-        Args:
-            text_file_path: Path to text file
-            output_dir: Output directory for questions
-            session_id: Optional session ID for progress tracking
-            
-        Returns:
-            QuestionSet if successful, None otherwise
-        """
-        # Set output directory temporarily
-        original_output_dir = self.output_dir
-        self.output_dir = Path(output_dir)
-        FileUtils.ensure_directory(self.output_dir)
-        
-        try:
-            # Generate questions from text file
-            return self.generate_questions_from_text_file(text_file_path, session_id)
-        finally:
-            # Restore original output directory
-            self.output_dir = original_output_dir
-    
-    def generate_questions_for_directory(self, input_dir: Path, output_dir: Path, session_id: Optional[str] = None) -> List[QuestionSet]:
-        """
-        Generate questions for all files in a directory (alias for backward compatibility).
-        
-        Args:
-            input_dir: Directory containing text files
-            output_dir: Output directory for questions
-            session_id: Optional session ID for progress tracking
-            
-        Returns:
-            List of QuestionSet objects
-        """
-        # Set output directory temporarily
-        original_output_dir = self.output_dir
-        self.output_dir = Path(output_dir)
-        FileUtils.ensure_directory(self.output_dir)
-        
-        try:
-            # Generate questions from directory
-            return self.generate_questions_from_directory(input_dir, resume_session=True)
-        finally:
-            # Restore original output directory
-            self.output_dir = original_output_dir
-    
-    def validate_questions_file(self, questions_file: Path) -> bool:
-        """
-        Validate a questions JSONL file.
-        
-        Args:
-            questions_file: Path to questions JSONL file
-            
-        Returns:
-            True if file is valid, False otherwise
-        """
-        try:
-            if not questions_file.exists():
-                return False
-            
-            question_count = 0
-            for question_data in FileUtils.read_jsonl_file(questions_file):
-                if "messages" not in question_data:
-                    logger.error(f"Invalid question format in {questions_file}")
-                    return False
-                
-                if not isinstance(question_data["messages"], list):
-                    logger.error(f"Invalid messages format in {questions_file}")
-                    return False
-                
-                question_count += len(question_data["messages"])
-            
-            logger.info(f"Validated questions file: {questions_file} ({question_count} questions)")
-            return True
-            
-        except Exception as e:
-            logger.error(f"Failed to validate questions file {questions_file}: {e}")
-            return False
     
     def _deduplicate_questions(self, questions: List[Question]) -> List[Question]:
         """
@@ -678,11 +515,6 @@ class QuestionService:
                     long_keywords = {w for w in question_words if len(w) >= 4}
                     if long_keywords:
                         has_entity_match = any(word in source_chunk.content for word in long_keywords)
-                
-                # If no long keywords, check medium-length keywords (3 chars)
-                if not has_entity_match:
-                    medium_keywords = {w for w in question_words if len(w) == 3}
-                    has_entity_match = any(word in source_chunk.content for word in medium_keywords)
             
             # Filter logic:
             # 1. If question has pronouns but no entity match - REJECT (missing model/specific name)
@@ -698,4 +530,24 @@ class QuestionService:
                 logger.debug(f"Question entities not found in source chunk: {content[:50]}")
                 return False
         
-        return True 
+        return True
+    
+    def _save_questions_multiline(self, question_set: QuestionSet, output_file: Path) -> None:
+        """Save questions to JSONL file in multi-line format."""
+        try:
+            # Ensure output directory exists
+            FileUtils.ensure_directory(output_file.parent)
+            
+            # Save to file with pretty formatting
+            import json
+            with open(output_file, 'w', encoding='utf-8') as f:
+                for question_data in question_set.to_jsonl_format():
+                    # Write each question as a formatted JSON object
+                    json.dump(question_data, f, ensure_ascii=False, indent=2)
+                    f.write('\n\n')  # Add spacing between questions
+            
+            logger.info(f"Questions saved to: {output_file} ({len(question_set.questions)} questions in multi-line format)")
+            
+        except Exception as e:
+            logger.error(f"Failed to save questions: {e}")
+            raise
