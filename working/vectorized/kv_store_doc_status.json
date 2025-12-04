@@ -1,32 +1,25 @@
 {
-  "GSK208D系列雕铣机数控系统 PLC及安装连接手册2023年4月第4版 定稿": {
-    "status": "failed",
-    "error_msg": "['RD', 'WRT']: patch_lightrag_relation_merge.<locals>.patched_merge_edges_then_upsert() takes 4 positional arguments but 13 were given",
-    "content_summary": "--- Page 1 ---\n在 本 使 用 手册 中 我 们 将 尽力 各 种 GSK208D 系列 铣 机 数控 系统 操作 相 本 使 用 手册 的 版 权 归 广 州 数控 设备 有 限 公司 所 有 任 何 单位 与 个 人 进行 出 版 或\n关 的 事项 限 于 篇 幅 限 制 及 产品 具体 使 用 等 原因 不 可 能 对 该 系列 数控 系统 中 所 有 不 必 做 复印 均 属 于 非法 行为 广 州 数控 设备 有 限 公司 将 保留 追究 其 法 律 责任 的 权利\n或 ...",
-    "content_length": 128125,
-    "created_at": "2025-12-03T16:06:53.451525+00:00",
-    "updated_at": "2025-12-04T01:39:09.019176",
-    "file_path": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\processed2\\GSK208D系列雕铣机数控系统 PLC及安装连接手册2023年4月第4版 定稿.txt",
-    "track_id": "insert_20251204_000653_b45fa96a",
+  "01-GSK 27i高端多通道数控系统 20250226": {
+    "status": "processing",
+    "chunks_count": 8,
+    "chunks_list": [
+      "chunk-74e16480543cbfdc317b5fd3f8d44359",
+      "chunk-07892b83846b808694a9cdd99f5110e0",
+      "chunk-918982bf0f0572217902e6d709f452f0",
+      "chunk-dcada036ffb579ecd0296de86c30f883",
+      "chunk-6bf0d2988328cb2b57000d35af8e28bf",
+      "chunk-4db9017103fcd7f1bcfdedc684d29df4",
+      "chunk-7d39d2e03f93b4f01044ae8fe9d4ba20",
+      "chunk-b1e463d5c6ca12f09bea9bd8073646e4"
+    ],
+    "content_summary": "--- Page 1 ---\nGor\n磨 齿 机 机 床\n一 一 一\n重庆 机 床 YS7232 高 端 多 通道 数控 系统\n应 用 领域 ‘UG GSK 27i 系 人\n适用 于 汽车 制造 船 舶 制造 风 力 发 电 矿 山 机 械 钢 铁 冶 金 YS7232 一 一\n等 领域\n用 于 加 工 汽车 变速 箱 差 速 路 传 动 轴 等 齿轮 零 部 件\n广泛 应 用 于 船舶 制造 行业 用 于 加 工 船舶 的 传动 系统 齿轮\n风力 发 电 设备 中 的 齿轮 传动 系统 也 是...",
+    "content_length": 12642,
+    "created_at": "2025-12-04T08:21:50.942320+00:00",
+    "updated_at": "2025-12-04T08:21:50.960228+00:00",
+    "file_path": "F:\\QAGenPipelinesX_lightrag\\working\\processed1\\01-GSK 27i高端多通道数控系统 20250226.txt",
+    "track_id": "insert_20251204_162150_3fd82b7b",
     "metadata": {
-      "processing_start_time": 1764783451,
-      "processing_end_time": 1764783549
-    },
-    "chunks_list": []
-  },
-  "GSK208D系列雕铣机数控系统 PLC及安装连接手册2024年2月第4版0311定": {
-    "status": "failed",
-    "error_msg": "['SUB', 'performs']: patch_lightrag_relation_merge.<locals>.patched_merge_edges_then_upsert() takes 4 positional arguments but 13 were given",
-    "content_summary": "--- Page 1 ---\n在 本 使 用 手册 中 ,我们 将 尽力 亿 各 种 GSK208D 系列 机 数控 系统 操作 相 本 使 用 手 的 版 权 归 广 州 数 控 设 备 有 限 公 司 所 有 任 何 单位 与 个 人 进行 出 版 或\n关 的 事项 限 于 篇 幅 限 制 及 产品 具体 使 用 等 原因 不 可 能 对 该 系列 数控 系统 中 所 有 不 必 做 复印 均 属 于 非法 行为 广 州 数控 设备 有 限 公司 将 保留 追究 其 法 律 责任 的 权利\n...",
-    "content_length": 128005,
-    "created_at": "2025-12-03T17:37:31.793764+00:00",
-    "updated_at": "2025-12-04T03:12:30.949335",
-    "file_path": "D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\processed\\processed2\\GSK208D系列雕铣机数控系统 PLC及安装连接手册2024年2月第4版0311定.txt",
-    "track_id": "insert_20251204_013731_ea153332",
-    "metadata": {
-      "processing_start_time": 1764783451,
-      "processing_end_time": 1764789150
-    },
-    "chunks_list": []
+      "processing_start_time": 1764836510
+    }
   }
 }

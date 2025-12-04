@@ -11082,3 +11082,29 @@ RuntimeError: Event loop is closed
 2025-12-04 11:41:39,671 - src.utils.logging_utils - INFO - 找到 2 个文档待处理
 2025-12-04 11:41:39,672 - src.utils.logging_utils - INFO - [1/2] 处理文档: D:\llm-test\QAGenPipelinesX_lightrag\working\processed\processed2\GSK208D系列雕铣机数控系统 PLC及安装连接手册2023年4月第4版 定稿.txt
 2025-12-04 11:41:39,672 - src.utils.logging_utils - INFO - 步骤1: 生成问题
+2025-12-04 16:17:16,350 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-12-04 16:17:16,639 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-12-04 16:17:16,639 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-12-04 16:17:16,640 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-12-04 16:17:16,736 - src.utils.logging_utils - INFO - Processing all PDFs under directory: F:\QAGenPipelinesX_lightrag\working\raw
+2025-12-04 16:19:10,051 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-12-04 16:19:10,351 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_entities.json'} 0 data
+2025-12-04 16:19:10,352 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_relationships.json'} 0 data
+2025-12-04 16:19:10,352 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\LLM-Project\\QAGenPipelinesX\\working\\vdb_chunks.json'} 0 data
+2025-12-04 16:19:10,447 - src.utils.logging_utils - INFO - Processing all PDFs under directory: F:\QAGenPipelinesX_lightrag\working\raw\input1
+2025-12-04 16:21:50,558 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_entities.json'} 0 data
+2025-12-04 16:21:50,559 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_relationships.json'} 0 data
+2025-12-04 16:21:50,559 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_chunks.json'} 0 data
+2025-12-04 16:21:50,665 - src.utils.logging_utils - INFO - [1/2] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed1\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-12-04 16:21:50,666 - src.utils.logging_utils - INFO - Event loop initialized for thread 20820
+2025-12-04 16:21:50,667 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-04 16:21:50,667 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed1\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-12-04 16:21:50,878 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 0 data
+2025-12-04 16:21:50,879 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 0 data
+2025-12-04 16:21:50,879 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 0 data
+2025-12-04 16:21:50,881 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-04 16:21:50,881 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-04 16:21:50,890 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed1\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-12-04 16:21:50,890 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-04 16:21:50,937 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-04 16:21:50,937 - src.utils.logging_utils - INFO - Processing document 1/1: 01-GSK 27i高端多通道数控系统 20250226.txt (0.01 MB)
