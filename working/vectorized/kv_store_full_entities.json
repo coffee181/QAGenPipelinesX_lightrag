@@ -1,0 +1,25 @@
+{
+  "01-宝鸡机床VMC850L": {
+    "entity_names": [
+      "Spindle Distance to Worktable",
+      "X/Y/Z Travel",
+      "Worktable Dimensions",
+      "VMC850L",
+      "Renishaw",
+      "Machine Weight",
+      "High-Speed Design",
+      "COMMAND THE FUTURE",
+      "Spindle Speed",
+      "Brown & Sharp",
+      "Machine Dimensions",
+      "Tool Magazine Type",
+      "Spindle Motor Power",
+      "Dynamic Stability",
+      "Axis Rapid Traverse Speeds"
+    ],
+    "count": 15,
+    "create_time": 1764841807,
+    "update_time": 1764841807,
+    "_id": "01-宝鸡机床VMC850L"
+  }
+}

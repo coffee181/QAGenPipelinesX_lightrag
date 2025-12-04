@@ -110,6 +110,8 @@ class LightRAGImplementation(RAGInterface):
             raise RAGError("LightRAG not available. Please install lightrag-hku")
 
         self.config = config
+        self.event_loop: Optional[asyncio.AbstractEventLoop] = None
+        self.loop_thread_id: Optional[int] = None
         self.working_dir = Path(config.get("rag.lightrag.working_dir", "./lightrag_cache"))
 
         # Get API keys
@@ -143,8 +145,8 @@ class LightRAGImplementation(RAGInterface):
         """
         # 🔧 关键修复：初始化当前线程的独立事件循环
         # 这确保即使在不同的线程中调用，也能有各自的事件循环
-        get_or_create_event_loop()
-        logger.info(f"Event loop ready for thread {threading.current_thread().ident}")
+        loop = self._ensure_event_loop()
+        logger.info(f"Event loop ready for thread {self.loop_thread_id}")
         
         self.working_dir = Path(working_dir)
 
@@ -197,6 +199,42 @@ class LightRAGImplementation(RAGInterface):
         # Get stats to verify it's a valid knowledge base
         stats = self.get_knowledge_base_stats()
         logger.info(f"Using existing knowledge base: {stats}")
+
+    def _ensure_event_loop(self) -> asyncio.AbstractEventLoop:
+        """Ensure there is a valid event loop bound to the current thread."""
+        current_thread = threading.get_ident()
+
+        if (
+            self.event_loop is None
+            or self.event_loop.is_closed()
+            or current_thread != self.loop_thread_id
+        ):
+            self.event_loop = get_or_create_event_loop()
+            self.loop_thread_id = current_thread
+
+        return self.event_loop
+
+    def _run_async(self, coro, timeout: Optional[float] = None):
+        """
+        Run an async coroutine inside the managed event loop.
+
+        Args:
+            coro: Coroutine to run
+            timeout: Optional timeout in seconds
+        """
+        loop = self._ensure_event_loop()
+        if timeout is not None:
+            coro = asyncio.wait_for(coro, timeout)
+
+        try:
+            return loop.run_until_complete(coro)
+        except RuntimeError as exc:
+            if "already running" in str(exc).lower():
+                raise RAGError(
+                    "LightRAG event loop is already running in this thread. "
+                    "Please call the async API directly or avoid nested event loops."
+                ) from exc
+            raise
 
     def _create_lightrag_instance(self):
         """Create LightRAG instance with proper configuration."""
@@ -329,6 +367,10 @@ class LightRAGImplementation(RAGInterface):
         if not self.deepseek_api_key:
             logger.warning("No DeepSeek API key found. LightRAG may not work for new operations.")
 
+        # Ensure LightRAG binds to the managed event loop
+        loop = self._ensure_event_loop()
+        asyncio.set_event_loop(loop)
+
         # Create LightRAG instance with explicit encoding
         try:
             rag = LightRAG(
@@ -364,8 +406,8 @@ class LightRAGImplementation(RAGInterface):
                 except ImportError:
                     pass
 
-            # 🔧 使用 asyncio.run 在新线程中运行（会自动创建新事件循环）
-            asyncio.run(initialize_all())
+            # 🔧 使用受控事件循环运行初始化逻辑，避免跨线程污染
+            self._run_async(initialize_all())
             
         except Exception as e:
             logger.error(f"FATAL: Failed to initialize LightRAG storages: {e}")
@@ -409,8 +451,8 @@ class LightRAGImplementation(RAGInterface):
         try:
             logger.info(f"Inserting document: {document.name}")
 
-            # 🔧 使用 asyncio.run 在新线程中运行（会自动创建新事件循环）
-            asyncio.run(self._async_insert_document(document))
+            # 🔧 使用受控事件循环执行异步插入，避免跨线程事件循环冲突
+            self._run_async(self._async_insert_document(document))
 
             logger.info(f"Successfully inserted document: {document.name}")
 
@@ -574,11 +616,9 @@ class LightRAGImplementation(RAGInterface):
                 # mix模式结合向量搜索和知识图谱，提供更准确的答案
                 
                 # Add timeout to prevent hanging queries
-                response = asyncio.run(
-                    asyncio.wait_for(
-                        self.rag.aquery(question, param=QueryParam(mode="mix")),
-                        timeout=1200.0  # extend timeout for complex queries
-                    )
+                response = self._run_async(
+                    self.rag.aquery(question, param=QueryParam(mode="mix")),
+                    timeout=1200.0  # extend timeout for complex queries
                 )
                 logger.info("Query completed with mix mode")
             except asyncio.TimeoutError:
@@ -590,22 +630,18 @@ class LightRAGImplementation(RAGInterface):
                 # Try naive mode as fallback
                 try:
                     logger.info("Trying naive mode as fallback...")
-                    response = asyncio.run(
-                        asyncio.wait_for(
-                            self.rag.aquery(question, param=QueryParam(mode="naive")),
-                            timeout=600.0  # extended fallback timeout
-                        )
+                    response = self._run_async(
+                        self.rag.aquery(question, param=QueryParam(mode="naive")),
+                        timeout=600.0  # extended fallback timeout
                     )
                     logger.info("Query completed with naive mode")
                 except Exception:
                     # Try local mode as last resort
                     try:
                         logger.info("Trying local mode as final fallback...")
-                        response = asyncio.run(
-                            asyncio.wait_for(
-                                self.rag.aquery(question, param=QueryParam(mode="local")),
-                                timeout=600.0  # extended fallback timeout
-                            )
+                        response = self._run_async(
+                            self.rag.aquery(question, param=QueryParam(mode="local")),
+                            timeout=600.0  # extended fallback timeout
                         )
                         logger.info("Query completed with local mode")
                     except Exception:
@@ -788,8 +824,9 @@ class LightRAGImplementation(RAGInterface):
             return None
 
         try:
-            return asyncio.run(
-                asyncio.wait_for(text_chunks.get_by_id(chunk_id), timeout=5.0)
+            return self._run_async(
+                text_chunks.get_by_id(chunk_id),
+                timeout=5.0
             )
         except asyncio.TimeoutError:
             logger.warning(f"Timeout while fetching chunk metadata for {chunk_id}")
@@ -883,8 +920,9 @@ class LightRAGImplementation(RAGInterface):
             return None
 
         try:
-            return asyncio.run(
-                asyncio.wait_for(graph.get_node(node_id), timeout=5.0)
+            return self._run_async(
+                graph.get_node(node_id),
+                timeout=5.0
             )
         except asyncio.TimeoutError:
             logger.warning(f"Timeout while fetching entity node for {node_id}")

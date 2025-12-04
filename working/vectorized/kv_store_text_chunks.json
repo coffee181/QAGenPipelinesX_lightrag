@@ -1,0 +1,16 @@
+{
+  "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c": {
+    "tokens": 527,
+    "content": "--- Page 1 ---\nmoot\nCommand the Future_ VMC8S50L VMC850L TECHNICAL PARAMETERS\nCOMMAND THE FUTURE\n项 目 单位 VMC850L\n工作 台面 尺寸 长 宽 1000 500\n行程 X/Y/Z 800/500/600\n人 600\nSOS 一 -一 主轴 端面 至 工作 台面 距离 86-686\n主轴 中 心 至 立柱 导轨 距离 560\n一 留 一 主轴 锥 孔 BT40\n主轴 电机 功率 7.5\nVMC 4501 主轴 转速 r/min 8000\nX/Y 线 轨 台湾 线\nBOZHI X、Y 、2Z 轴 快速 移动 偿 m/min 24/24/15\n刀 库 类 型 24-T/ 圆 盘\n了 机 床 外 形 尺 寸 (长 高 帘 2800 2450 2800\n‘al mit 争 重 约 6500\n到\n有\nin:\n多\n一 一\nAER 名 优 产品 质量 稳定\nPURI MAA, (SESH,\n除 工序 使 得 机 床 具 有 良好 的 刚性\n整 机 针对 高 速 高 刚性 专门 设计 主 轴 最 高 转速 达 8000wmin,X/Y 采 用 滚珠\n线 轨 轴 超 宽 硬 轨 ，XY 轴 快速 移动 达 24my/min，Z 轴 快速 移动 15m/min CLASSIC sna\n采用 配 重 平衡 系统 机 床 高 速 动态 稳定 性 好\n主办 及 工作 台面 的 方面 专 有 技术 保 证 了 其 硬度 和 精度 HOT SELLING\n定性\n加 工 中 心 关 键 零件 和 出 三 精 度 均 由 美国 布朗 夏普 BROWN SHARPE\n三 坐标 测量 和 英国 雷 尼 绍 RENISHAW 双 频 激光 干涉 仪 严格 检测 对 其 进\nseman COMMAND THE FUTURE\n热卖 爆 款 名 优 产 品 质量 稳定",
+    "chunk_order_index": 0,
+    "full_doc_id": "01-宝鸡机床VMC850L",
+    "file_path": "F:\\QAGenPipelinesX_lightrag\\working\\processed1\\01-宝鸡机床VMC850L.txt",
+    "llm_cache_list": [
+      "default:extract:b278de8205dbb6e80de6df6ba4fb8a83",
+      "default:extract:266fd75deb75331e16b33d984a25bf8a"
+    ],
+    "create_time": 1764841672,
+    "update_time": 1764841773,
+    "_id": "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+  }
+}

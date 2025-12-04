@@ -27,32 +27,48 @@ def patch_lightrag_relation_merge():
         async def patched_merge_edges_then_upsert(
             src_id: str,
             tgt_id: str,
-            edge_data: Dict[str, Any],
-            graph_db,
-            **kwargs
+            edges_data: list[Dict[str, Any]],
+            knowledge_graph_inst,
+            relationships_vdb=None,
+            entity_vdb=None,
+            global_config=None,
+            pipeline_status=None,
+            pipeline_status_lock=None,
+            llm_response_cache=None,
+            added_entities=None,
+            relation_chunks_storage=None,
+            entity_chunks_storage=None,
         ):
             """
             修补后的 _merge_edges_then_upsert 函数
             为缺失的关系描述添加默认值
             """
-            # 🔧 关键修复：如果关系没有描述，生成默认描述
-            if "description" not in edge_data or not edge_data.get("description"):
-                # 使用源和目标实体 ID 生成默认描述
-                entity1 = src_id.replace("_", " ").strip()
-                entity2 = tgt_id.replace("_", " ").strip()
-                edge_data["description"] = f"{entity1} 与 {entity2} 的关系"
-                
-                logger.warning(
-                    f"关系 {src_id}~{tgt_id} 缺少描述，使用默认值: '{edge_data['description']}'"
-                )
+            sanitized_edges: list[Dict[str, Any]] = []
+            for edge_data in edges_data:
+                if "description" not in edge_data or not edge_data.get("description"):
+                    entity1 = src_id.replace("_", " ").strip()
+                    entity2 = tgt_id.replace("_", " ").strip()
+                    edge_data["description"] = f"{entity1} 与 {entity2} 的关系"
+                    logger.warning(
+                        f"关系 {src_id}~{tgt_id} 缺少描述，使用默认值: '{edge_data['description']}'"
+                    )
+                sanitized_edges.append(edge_data)
             
             # 调用原始函数
             return await original_merge_edges(
                 src_id=src_id,
                 tgt_id=tgt_id,
-                edge_data=edge_data,
-                graph_db=graph_db,
-                **kwargs
+                edges_data=sanitized_edges,
+                knowledge_graph_inst=knowledge_graph_inst,
+                relationships_vdb=relationships_vdb,
+                entity_vdb=entity_vdb,
+                global_config=global_config,
+                pipeline_status=pipeline_status,
+                pipeline_status_lock=pipeline_status_lock,
+                llm_response_cache=llm_response_cache,
+                added_entities=added_entities,
+                relation_chunks_storage=relation_chunks_storage,
+                entity_chunks_storage=entity_chunks_storage,
             )
         
         # 应用补丁

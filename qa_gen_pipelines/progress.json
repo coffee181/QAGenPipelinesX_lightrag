@@ -21851,8 +21851,8 @@
       ],
       "failed_files": [],
       "start_time": "2025-12-04T16:19:10.449953",
-      "last_update": "2025-12-04T16:21:14.001993",
-      "status": "completed",
+      "last_update": "2025-12-04T17:44:53.967048",
+      "status": "failed",
       "metadata": {
         "input_dir": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\input1",
         "output_dir": "F:\\QAGenPipelinesX_lightrag\\working\\processed1"
@@ -21871,21 +21871,440 @@
           "total_items": 2
         }
       ],
-      "end_time": "2025-12-04T16:21:14.001989"
+      "end_time": "2025-12-04T17:44:53.967044"
     },
     "insert_docs_20251204_162150": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed1\\01-GSK 27i高端多通道数控系统 20250226.txt",
+          "timestamp": "2025-12-04T16:34:41.824093"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T16:21:50.890559",
+      "last_update": "2025-12-04T16:34:41.873870",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T16:34:41.824110",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T16:34:41.873865"
+    },
+    "insert_docs_20251204_163441": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed1\\01-宝鸡机床VMC850L.txt",
+          "timestamp": "2025-12-04T16:36:09.331483"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T16:34:42.227058",
+      "last_update": "2025-12-04T16:36:09.379571",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T16:36:09.331501",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T16:36:09.379567"
+    },
+    "answer_gen_20251204_164254": {
+      "operation_type": "answer_generation",
+      "total_items": 81,
+      "completed_items": 0,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-12-04T16:42:54.837075",
+      "last_update": "2025-12-04T16:42:54.837080",
+      "status": "running",
+      "metadata": {},
+      "percentage_milestones": []
+    },
+    "answer_gen_20251204_170107": {
+      "operation_type": "answer_generation",
+      "total_items": 19,
+      "completed_items": 0,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-12-04T17:01:07.417177",
+      "last_update": "2025-12-04T17:01:07.417182",
+      "status": "running",
+      "metadata": {},
+      "percentage_milestones": []
+    },
+    "insert_docs_20251204_170814": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed1\\01-宝鸡机床VMC850L.txt",
+          "timestamp": "2025-12-04T17:09:42.397531"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T17:08:14.907185",
+      "last_update": "2025-12-04T17:09:42.443882",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T17:09:42.397546",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T17:09:42.443878"
+    },
+    "insert_docs_20251204_172001": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed1\\01-宝鸡机床VMC850L.txt",
+          "timestamp": "2025-12-04T17:21:48.680975"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T17:20:01.216083",
+      "last_update": "2025-12-04T17:21:48.727591",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T17:21:48.680990",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T17:21:48.727587"
+    },
+    "insert_docs_20251204_172310": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed1\\01-宝鸡机床VMC850L.txt",
+          "timestamp": "2025-12-04T17:24:12.751234"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T17:23:11.128974",
+      "last_update": "2025-12-04T17:24:12.798711",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T17:24:12.751250",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T17:24:12.798707"
+    },
+    "insert_docs_20251204_172527": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed1\\01-宝鸡机床VMC850L.txt",
+          "timestamp": "2025-12-04T17:26:47.635211"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T17:25:27.459336",
+      "last_update": "2025-12-04T17:26:47.681148",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T17:26:47.635225",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T17:26:47.681144"
+    },
+    "insert_docs_20251204_173033": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed1\\01-宝鸡机床VMC850L.txt",
+          "timestamp": "2025-12-04T17:32:16.936252"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T17:30:34.224219",
+      "last_update": "2025-12-04T17:32:16.982876",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T17:32:16.936269",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T17:32:16.982870"
+    },
+    "answer_gen_20251204_173319": {
+      "operation_type": "answer_generation",
+      "total_items": 17,
+      "completed_items": 3,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-12-04T17:33:19.873623",
+      "last_update": "2025-12-04T17:34:54.548284",
+      "status": "running",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T17:34:19.537120",
+          "completed_items": 2,
+          "total_items": 17
+        }
+      ]
+    },
+    "pdf_processing_61c80e66": {
+      "operation_type": "pdf_processing",
+      "total_items": 2,
+      "completed_items": 2,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\input1\\01-GSK 27i高端多通道数控系统 20250226.pdf",
+          "timestamp": "2025-12-04T17:47:27.885182"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\input1\\01-宝鸡机床VMC850L.pdf",
+          "timestamp": "2025-12-04T17:47:37.906784"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T17:45:31.741854",
+      "last_update": "2025-12-04T17:47:37.908590",
+      "status": "completed",
+      "metadata": {
+        "input_dir": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\input1",
+        "output_dir": "F:\\QAGenPipelinesX_lightrag\\working\\processed"
+      },
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T17:47:27.885202",
+          "completed_items": 1,
+          "total_items": 2
+        },
+        {
+          "percentage": 20,
+          "timestamp": "2025-12-04T17:47:37.906805",
+          "completed_items": 2,
+          "total_items": 2
+        }
+      ],
+      "end_time": "2025-12-04T17:47:37.908586"
+    },
+    "insert_docs_20251204_174752": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed1\\01-宝鸡机床VMC850L.txt",
+          "timestamp": "2025-12-04T17:50:07.395821"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T17:47:52.830386",
+      "last_update": "2025-12-04T17:50:07.442209",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T17:50:07.395836",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T17:50:07.442204"
+    },
+    "answer_gen_20251204_175105": {
+      "operation_type": "answer_generation",
+      "total_items": 20,
+      "completed_items": 18,
+      "failed_items": 2,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-12-04T17:51:05.300249",
+      "last_update": "2025-12-04T18:00:47.753297",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T17:52:26.747535",
+          "completed_items": 2,
+          "total_items": 20
+        },
+        {
+          "percentage": 20,
+          "timestamp": "2025-12-04T17:53:23.219332",
+          "completed_items": 4,
+          "total_items": 20
+        },
+        {
+          "percentage": 30,
+          "timestamp": "2025-12-04T17:54:19.458387",
+          "completed_items": 6,
+          "total_items": 20
+        },
+        {
+          "percentage": 40,
+          "timestamp": "2025-12-04T17:55:15.308446",
+          "completed_items": 8,
+          "total_items": 20
+        },
+        {
+          "percentage": 50,
+          "timestamp": "2025-12-04T17:56:20.953888",
+          "completed_items": 10,
+          "total_items": 20
+        },
+        {
+          "percentage": 60,
+          "timestamp": "2025-12-04T17:57:09.104602",
+          "completed_items": 12,
+          "total_items": 20
+        },
+        {
+          "percentage": 70,
+          "timestamp": "2025-12-04T17:58:38.371821",
+          "completed_items": 14,
+          "total_items": 20
+        },
+        {
+          "percentage": 80,
+          "timestamp": "2025-12-04T17:59:30.768947",
+          "completed_items": 16,
+          "total_items": 20
+        },
+        {
+          "percentage": 90,
+          "timestamp": "2025-12-04T18:00:47.629977",
+          "completed_items": 18,
+          "total_items": 20
+        }
+      ],
+      "errors": [
+        {
+          "message": "Question 803e9182-0310-4416-872f-3b35bea8548a: Answer contains hallucinations after 3 attempts",
+          "timestamp": "2025-12-04T17:51:58.472282"
+        },
+        {
+          "message": "Question 4461775d-bddf-4ec8-a63b-fae684597c76: Answer contains hallucinations after 3 attempts",
+          "timestamp": "2025-12-04T17:57:38.903605"
+        }
+      ],
+      "end_time": "2025-12-04T18:00:47.753289"
+    },
+    "answer_gen_20251204_181051": {
+      "operation_type": "answer_generation",
+      "total_items": 76,
+      "completed_items": 1,
+      "failed_items": 8,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-12-04T18:10:51.994409",
+      "last_update": "2025-12-04T18:14:18.865449",
+      "status": "running",
+      "metadata": {},
+      "percentage_milestones": [],
+      "errors": [
+        {
+          "message": "Question 10ebf6b7-75f6-43a1-92b2-6b433eb7cef2: Invalid answer after 3 attempts: 根据提供的上下文，我没有找到关于YS7232数控系统的相关信息，包括其应用领域或技术参数。因此，我无法提供有关YS7232数控系统广泛应用于哪些领域的具体信息。\n\n如果您有其他问题或需要了解与VMC8...",
+          "timestamp": "2025-12-04T18:11:17.290778"
+        },
+        {
+          "message": "Question 1b3a752a-effa-424b-ae8c-663e3b421f40: Invalid answer after 3 attempts: 很抱歉，根据您提供的资料，我并没有找到关于GSK 27i系列数控系统支持哪些网络接口的相关信息。...",
+          "timestamp": "2025-12-04T18:11:42.439593"
+        },
+        {
+          "message": "Question bb85c06f-111a-40dd-9399-040ec4284ef0: Invalid answer after 3 attempts: 根据提供的上下文信息，知识图谱和文档片段主要描述了VMC850L机床的技术参数，包括轴的快速移动速度、主轴转速等，但并未提及GSK 27i系列数控系统的相关信息。因此，基于当前提供的资料，我无法回答关...",
+          "timestamp": "2025-12-04T18:12:05.736302"
+        },
+        {
+          "message": "Question e39eee21-70d9-4b57-b538-e9638f770ea3: Invalid answer after 3 attempts: 很抱歉，根据提供的上下文信息，没有关于GSK 27i系列数控系统支持的最小进给切削量的具体数据。如果您需要这方面的信息，请...",
+          "timestamp": "2025-12-04T18:12:30.400936"
+        },
+        {
+          "message": "Question 0808e365-4228-46ca-a480-49d2540d322e: Invalid answer after 3 attempts: 很抱歉，我目前没有足够的信息来回答您的问题。YS7232数控系统及其适用的齿轮零部件类型并未在提供的上下文中提及。\n\n如果您有更多相关信息或具体问题，欢迎继续提问！...",
+          "timestamp": "2025-12-04T18:12:51.962322"
+        },
+        {
+          "message": "Question ef4640b5-4dfb-42c2-b451-57edb615bd85: Invalid answer after 3 attempts: 很抱歉，我无法回答关于GSK 27i系列数控系统多通道控制功能的优势的问题。根据提供的知识库，没有相关的数据来支持这个查询。...",
+          "timestamp": "2025-12-04T18:13:14.680986"
+        },
+        {
+          "message": "Question 67ff63e5-bacf-4ec5-ae7b-3f3950053a28: Invalid answer after 3 attempts: 很抱歉，我目前的上下文中没有关于“GSK 27i系列数控系统”的相关信息，因此无法回答您的问题。如果您能提供更多相关文档或信息，我将更好地帮助您。...",
+          "timestamp": "2025-12-04T18:13:35.133821"
+        },
+        {
+          "message": "Question 6f9d06bc-fd7f-4fc6-a668-6b6e77fafafc: Invalid answer after 3 attempts: 很抱歉，根据提供的上下文信息，我无法找到关于GSK 27i系列数控系统及其极坐标插补功能的任何相关信息。因此，我无法准确回答您的问题。...",
+          "timestamp": "2025-12-04T18:13:57.057779"
+        }
+      ]
+    },
+    "insert_docs_20251204_181544": {
       "operation_type": "document_insertion",
       "total_items": 1,
       "completed_items": 0,
       "failed_items": 0,
       "processed_files": [],
       "failed_files": [],
-      "start_time": "2025-12-04T16:21:50.890559",
-      "last_update": "2025-12-04T16:21:50.890570",
+      "start_time": "2025-12-04T18:15:44.855369",
+      "last_update": "2025-12-04T18:15:44.855378",
       "status": "running",
       "metadata": {},
       "percentage_milestones": []
     }
   },
-  "last_updated": "2025-12-04T16:21:50.890574"
+  "last_updated": "2025-12-04T18:15:44.855381"
 }

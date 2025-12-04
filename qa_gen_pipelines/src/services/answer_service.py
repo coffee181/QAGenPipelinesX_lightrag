@@ -635,16 +635,11 @@ class AnswerService:
                             # Clean <think> tags before validation
                             cleaned_for_validation = self.markdown_processor.clean_llm_response(raw_answer)
                             
-                            # 🔧 新增：验证答案真实性（检测幻觉）
-                            is_authentic = self._verify_answer_authenticity(question.content, cleaned_for_validation)
-                            
-                            if not is_authentic:
-                                self.logger.warning(f"⚠️  第 {attempt + 1} 次尝试检测到幻觉，拒绝答案")
-                                if attempt < max_retries:
-                                    raw_answer = None
-                                    continue
-                                else:
-                                    raise ValueError(f"Answer contains hallucinations after {max_retries + 1} attempts")
+                            # 🔍 轻量化的幻觉检测：只记录日志，不再直接判失败
+                            if not self._verify_answer_authenticity(question.content, cleaned_for_validation):
+                                self.logger.warning(
+                                    f"⚠️ 第 {attempt + 1} 次尝试可能存在幻觉，但保留该答案以避免误杀技术术语"
+                                )
                             
                             # Classify answer type
                             answer_type = self._classify_answer_type(cleaned_for_validation)

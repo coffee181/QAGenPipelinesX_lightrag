@@ -1,0 +1,74 @@
+{
+  "01-宝鸡机床VMC850L": {
+    "relation_pairs": [
+      [
+        "COMMAND THE FUTURE",
+        "VMC850L"
+      ],
+      [
+        "Dynamic Stability",
+        "VMC850L"
+      ],
+      [
+        "COMMAND THE FUTURE",
+        "Dynamic Stability"
+      ],
+      [
+        "Spindle Distance to Worktable",
+        "VMC850L"
+      ],
+      [
+        "Spindle Speed",
+        "VMC850L"
+      ],
+      [
+        "Brown & Sharp",
+        "VMC850L"
+      ],
+      [
+        "VMC850L",
+        "X/Y/Z Travel"
+      ],
+      [
+        "Renishaw",
+        "VMC850L"
+      ],
+      [
+        "VMC850L",
+        "Worktable Dimensions"
+      ],
+      [
+        "Machine Dimensions",
+        "VMC850L"
+      ],
+      [
+        "High-Speed Design",
+        "VMC850L"
+      ],
+      [
+        "Spindle Motor Power",
+        "VMC850L"
+      ],
+      [
+        "Machine Weight",
+        "VMC850L"
+      ],
+      [
+        "COMMAND THE FUTURE",
+        "High-Speed Design"
+      ],
+      [
+        "Axis Rapid Traverse Speeds",
+        "VMC850L"
+      ],
+      [
+        "Tool Magazine Type",
+        "VMC850L"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1764841807,
+    "update_time": 1764841807,
+    "_id": "01-宝鸡机床VMC850L"
+  }
+}

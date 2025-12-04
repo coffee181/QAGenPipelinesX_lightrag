@@ -1,0 +1,146 @@
+{
+  "VMC850L<SEP>X/Y/Z Travel": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841785,
+    "update_time": 1764841785,
+    "_id": "VMC850L<SEP>X/Y/Z Travel"
+  },
+  "Spindle Speed<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841786,
+    "update_time": 1764841786,
+    "_id": "Spindle Speed<SEP>VMC850L"
+  },
+  "VMC850L<SEP>Worktable Dimensions": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841787,
+    "update_time": 1764841787,
+    "_id": "VMC850L<SEP>Worktable Dimensions"
+  },
+  "Spindle Distance to Worktable<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841789,
+    "update_time": 1764841789,
+    "_id": "Spindle Distance to Worktable<SEP>VMC850L"
+  },
+  "Spindle Motor Power<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841790,
+    "update_time": 1764841790,
+    "_id": "Spindle Motor Power<SEP>VMC850L"
+  },
+  "Axis Rapid Traverse Speeds<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841792,
+    "update_time": 1764841792,
+    "_id": "Axis Rapid Traverse Speeds<SEP>VMC850L"
+  },
+  "Tool Magazine Type<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841793,
+    "update_time": 1764841793,
+    "_id": "Tool Magazine Type<SEP>VMC850L"
+  },
+  "Machine Dimensions<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841795,
+    "update_time": 1764841795,
+    "_id": "Machine Dimensions<SEP>VMC850L"
+  },
+  "Machine Weight<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841796,
+    "update_time": 1764841796,
+    "_id": "Machine Weight<SEP>VMC850L"
+  },
+  "Brown & Sharp<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841798,
+    "update_time": 1764841798,
+    "_id": "Brown & Sharp<SEP>VMC850L"
+  },
+  "Renishaw<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841799,
+    "update_time": 1764841799,
+    "_id": "Renishaw<SEP>VMC850L"
+  },
+  "High-Speed Design<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841800,
+    "update_time": 1764841800,
+    "_id": "High-Speed Design<SEP>VMC850L"
+  },
+  "Dynamic Stability<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841802,
+    "update_time": 1764841802,
+    "_id": "Dynamic Stability<SEP>VMC850L"
+  },
+  "COMMAND THE FUTURE<SEP>VMC850L": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841803,
+    "update_time": 1764841803,
+    "_id": "COMMAND THE FUTURE<SEP>VMC850L"
+  },
+  "COMMAND THE FUTURE<SEP>High-Speed Design": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841804,
+    "update_time": 1764841804,
+    "_id": "COMMAND THE FUTURE<SEP>High-Speed Design"
+  },
+  "COMMAND THE FUTURE<SEP>Dynamic Stability": {
+    "chunk_ids": [
+      "chunk-b5a64fd96e8ffc123b36c58fe7d5a52c"
+    ],
+    "count": 1,
+    "create_time": 1764841806,
+    "update_time": 1764841806,
+    "_id": "COMMAND THE FUTURE<SEP>Dynamic Stability"
+  }
+}

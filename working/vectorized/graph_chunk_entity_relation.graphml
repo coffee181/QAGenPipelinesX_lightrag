@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="VMC850L">
+  <data key="d0">VMC850L</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The VMC850L is a machine tool model with specific technical parameters including worktable dimensions, spindle speed, and axis movements.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841773</data>
+  <data key="d6"></data>
+</node>
+<node id="COMMAND THE FUTURE">
+  <data key="d0">COMMAND THE FUTURE</data>
+  <data key="d1">concept</data>
+  <data key="d2">A marketing slogan associated with the VMC850L machine tool highlighting its advanced design features.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841773</data>
+  <data key="d6"></data>
+</node>
+<node id="X/Y/Z Travel">
+  <data key="d0">X/Y/Z Travel</data>
+  <data key="d1">data</data>
+  <data key="d2">The travel distances for the X, Y, and Z axes of the VMC850L machine tool are 800/500/600 units respectively.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841773</data>
+  <data key="d6"></data>
+</node>
+<node id="Spindle Speed">
+  <data key="d0">Spindle Speed</data>
+  <data key="d1">data</data>
+  <data key="d2">The maximum spindle speed of the VMC850L is 8000 revolutions per minute (r/min).</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841773</data>
+  <data key="d6"></data>
+</node>
+<node id="Worktable Dimensions">
+  <data key="d0">Worktable Dimensions</data>
+  <data key="d1">data</data>
+  <data key="d2">The worktable dimensions for the VMC850L are length 1000 units and width 500 units.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841773</data>
+  <data key="d6"></data>
+</node>
+<node id="Spindle Distance to Worktable">
+  <data key="d0">Spindle Distance to Worktable</data>
+  <data key="d1">data</data>
+  <data key="d2">The distance from the spindle face to the worktable is 86-686 units.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841773</data>
+  <data key="d6"></data>
+</node>
+<node id="Spindle Motor Power">
+  <data key="d0">Spindle Motor Power</data>
+  <data key="d1">data</data>
+  <data key="d2">The spindle motor power for the VMC850L is 7.5 kW.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841773</data>
+  <data key="d6"></data>
+</node>
+<node id="Axis Rapid Traverse Speeds">
+  <data key="d0">Axis Rapid Traverse Speeds</data>
+  <data key="d1">data</data>
+  <data key="d2">The rapid traverse speeds for the X/Y/Z axes of the VMC850L are 24/24/15 m/min respectively.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841773</data>
+  <data key="d6"></data>
+</node>
+<node id="Tool Magazine Type">
+  <data key="d0">Tool Magazine Type</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The tool magazine type for the VMC850L is a 24-tool circular magazine.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841779</data>
+  <data key="d6"></data>
+</node>
+<node id="Machine Dimensions">
+  <data key="d0">Machine Dimensions</data>
+  <data key="d1">data</data>
+  <data key="d2">The overall dimensions of the VMC850L are length 2800 units, height 2450 units, and width 2800 units.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841779</data>
+  <data key="d6"></data>
+</node>
+<node id="Machine Weight">
+  <data key="d0">Machine Weight</data>
+  <data key="d1">data</data>
+  <data key="d2">The approximate weight of the VMC850L is 6500 kg.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841779</data>
+  <data key="d6"></data>
+</node>
+<node id="Brown &amp; Sharp">
+  <data key="d0">Brown &amp; Sharp</data>
+  <data key="d1">organization</data>
+  <data key="d2">A company known for manufacturing precision measuring instruments, referenced in the quality control of the VMC850L.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841779</data>
+  <data key="d6"></data>
+</node>
+<node id="Renishaw">
+  <data key="d0">Renishaw</data>
+  <data key="d1">organization</data>
+  <data key="d2">A UK-based company specializing in measurement and automation products, referenced in the quality control of the VMC850L.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841779</data>
+  <data key="d6"></data>
+</node>
+<node id="High-Speed Design">
+  <data key="d0">High-Speed Design</data>
+  <data key="d1">concept</data>
+  <data key="d2">The design concept for high-speed operation in the VMC850L machine tool.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841779</data>
+  <data key="d6"></data>
+</node>
+<node id="Dynamic Stability">
+  <data key="d0">Dynamic Stability</data>
+  <data key="d1">concept</data>
+  <data key="d2">A key performance feature of the VMC850L, ensuring stability during high-speed operations.</data>
+  <data key="d3">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1764841779</data>
+  <data key="d6"></data>
+</node>
+<edge source="VMC850L" target="X/Y/Z Travel">
+  <data key="d7">1.0</data>
+  <data key="d8">The X/Y/Z travel distances are critical specifications for the VMC850L machine tool.</data>
+  <data key="d9">machine specification,technical parameter</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841785</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="Spindle Speed">
+  <data key="d7">1.0</data>
+  <data key="d8">The VMC850L's high spindle speed is a key performance feature.</data>
+  <data key="d9">performance characteristic,spindle operation</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841786</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="Worktable Dimensions">
+  <data key="d7">1.0</data>
+  <data key="d8">The worktable dimensions determine the machining capacity of the VMC850L.</data>
+  <data key="d9">machine specification,work area size</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841787</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="Spindle Distance to Worktable">
+  <data key="d7">1.0</data>
+  <data key="d8">The spindle distance to worktable is an important geometric parameter for the VMC850L.</data>
+  <data key="d9">machine geometry,spindle positioning</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841789</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="Spindle Motor Power">
+  <data key="d7">1.0</data>
+  <data key="d8">The spindle motor power ensures adequate cutting force for the VMC850L.</data>
+  <data key="d9">power specification,spindle performance</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841790</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="Axis Rapid Traverse Speeds">
+  <data key="d7">1.0</data>
+  <data key="d8">Rapid traverse speeds enhance the operational efficiency of the VMC850L.</data>
+  <data key="d9">axis movement speed,machine efficiency</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841792</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="Tool Magazine Type">
+  <data key="d7">1.0</data>
+  <data key="d8">The 24-tool circular magazine is an integral part of the VMC850L's tooling system.</data>
+  <data key="d9">automation feature,tool management</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841793</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="Machine Dimensions">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine dimensions are critical for determining the required installation space for the VMC850L.</data>
+  <data key="d9">installation requirement,overall size</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841795</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="Machine Weight">
+  <data key="d7">1.0</data>
+  <data key="d8">The weight of the VMC850L contributes to its overall stability and rigidity during machining operations.</data>
+  <data key="d9">physical characteristic,stability factor</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841796</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="Brown &amp; Sharp">
+  <data key="d7">1.0</data>
+  <data key="d8">The VMC850L utilizes Brown &amp; Sharp measuring instruments for quality control.</data>
+  <data key="d9">manufacturer collaboration,precision measurement</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841798</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="Renishaw">
+  <data key="d7">1.0</data>
+  <data key="d8">The VMC850L uses Renishaw's laser interferometry technology for accurate measurements.</data>
+  <data key="d9">manufacturer collaboration,precision measurement</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841799</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="High-Speed Design">
+  <data key="d7">1.0</data>
+  <data key="d8">The VMC850L is designed with high-speed operation in mind to enhance productivity.</data>
+  <data key="d9">design philosophy,performance optimization</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841800</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="Dynamic Stability">
+  <data key="d7">1.0</data>
+  <data key="d8">The dynamic stability of the VMC850L ensures consistent performance during high-speed machining operations.</data>
+  <data key="d9">machine reliability,operational feature</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841802</data>
+  <data key="d13"></data>
+</edge>
+<edge source="VMC850L" target="COMMAND THE FUTURE">
+  <data key="d7">1.0</data>
+  <data key="d8">The VMC850L is promoted under the "COMMAND THE FUTURE" slogan emphasizing its innovative design and performance.</data>
+  <data key="d9">marketing association,product branding</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841803</data>
+  <data key="d13"></data>
+</edge>
+<edge source="COMMAND THE FUTURE" target="High-Speed Design">
+  <data key="d7">1.0</data>
+  <data key="d8">The "COMMAND THE FUTURE" slogan reflects the VMC850L's focus on high-speed design and advanced machining capabilities.</data>
+  <data key="d9">branding theme,design philosophy</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841804</data>
+  <data key="d13"></data>
+</edge>
+<edge source="COMMAND THE FUTURE" target="Dynamic Stability">
+  <data key="d7">1.0</data>
+  <data key="d8">The "COMMAND THE FUTURE" slogan underscores the VMC850L's dynamic stability ensuring reliable performance in high-speed operations.</data>
+  <data key="d9">branding theme,operational reliability</data>
+  <data key="d10">chunk-b5a64fd96e8ffc123b36c58fe7d5a52c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed1\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1764841806</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>
