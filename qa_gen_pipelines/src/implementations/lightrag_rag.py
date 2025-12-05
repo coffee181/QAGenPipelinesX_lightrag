@@ -114,9 +114,45 @@ class LightRAGImplementation(RAGInterface):
         self.loop_thread_id: Optional[int] = None
         self.working_dir = Path(config.get("rag.lightrag.working_dir", "./lightrag_cache"))
 
-        # Get API keys
-        self.deepseek_api_key = config.get("question_generator.deepseek.api_key") or os.getenv("DEEPSEEK_API_KEY")
-        self.openai_api_key = config.get("rag.lightrag.openai.api_key") or os.getenv("OPENAI_API_KEY")
+        # Embedding provider configuration
+        embedding_cfg = config.get("rag.lightrag.embedding", {}) or {}
+        requested_provider = embedding_cfg.get("provider")
+        if requested_provider:
+            requested_provider = str(requested_provider).lower()
+
+        if requested_provider not in {"ollama"}:
+            requested_provider = "ollama"
+
+        self.embedding_provider = requested_provider
+        default_ollama_model = "bge-m3"
+
+        # Allow using shared "model" key as provider-specific override
+        shared_model = embedding_cfg.get("model")
+        self.ollama_embedding_model = embedding_cfg.get("ollama_model") or (
+            shared_model if shared_model else default_ollama_model
+        )
+
+        default_dim = 1024
+        self.embedding_dim = int(embedding_cfg.get("dim") or default_dim)
+        self.embedding_base_url = embedding_cfg.get("base_url", "http://localhost:11434")
+        self.embedding_timeout = float(embedding_cfg.get("timeout", 120))
+        self.embedding_max_retries = int(embedding_cfg.get("max_retries", 3))
+        priority_list = embedding_cfg.get("priority") or []
+        if isinstance(priority_list, list):
+            self.embedding_provider_priority = [
+                str(provider).lower() for provider in priority_list if provider
+            ]
+        else:
+            self.embedding_provider_priority = []
+
+        # Local LLM configuration for LightRAG
+        llm_cfg = config.get("rag.lightrag.llm", {}) or {}
+        self.ollama_llm_base_url = llm_cfg.get("base_url", "http://localhost:11434")
+        self.ollama_llm_model = llm_cfg.get("model", "deepseek-r1:32b")
+        self.ollama_llm_temperature = float(llm_cfg.get("temperature", 0.7))
+        self.ollama_llm_max_tokens = int(llm_cfg.get("max_tokens", 2048))
+        self.ollama_llm_timeout = float(llm_cfg.get("timeout", 1800))
+        self.ollama_llm_max_retries = int(llm_cfg.get("max_retries", 5))
 
         # Initialize retrieval cache
         self.enable_cache = config.get("rag.lightrag.enable_cache", True)
@@ -238,17 +274,12 @@ class LightRAGImplementation(RAGInterface):
 
     def _create_lightrag_instance(self):
         """Create LightRAG instance with proper configuration."""
-        # 从config中读取Ollama的配置
         # Define async LLM function
         async def llm_model_func(prompt, system_prompt=None, history_messages=None, **kwargs):
             """LLM function for LightRAG using local Ollama model."""
             import aiohttp
             import asyncio
             import json
-
-            # 使用本地Ollama模型
-            ollama_url = "http://localhost:11434/api/generate"
-            model_name = "deepseek-r1:32b"
 
             # 构建完整的提示词
             full_prompt = ""
@@ -276,26 +307,26 @@ class LightRAGImplementation(RAGInterface):
             
             # 准备Ollama请求
             payload = {
-                "model": model_name,
+                "model": self.ollama_llm_model,
                 "prompt": full_prompt,
                 "stream": False,
                 "options": {
-                    "temperature": kwargs.get("temperature", 0.7),
-                    "num_predict": kwargs.get("max_tokens", 2048)
+                    "temperature": kwargs.get("temperature", self.ollama_llm_temperature),
+                    "num_predict": kwargs.get("max_tokens", self.ollama_llm_max_tokens)
                 }
             }
             
             # 添加重试机制
-            max_retries = 5
+            max_retries = self.ollama_llm_max_retries
             retry_delay = 5
             
             for attempt in range(max_retries):
                 try:
                     async with aiohttp.ClientSession() as session:
                         async with session.post(
-                            ollama_url,
+                            f"{self.ollama_llm_base_url.rstrip('/')}/api/generate",
                             json=payload,
-                            timeout=aiohttp.ClientTimeout(total=1800)  # 30分钟超时
+                            timeout=aiohttp.ClientTimeout(total=self.ollama_llm_timeout)
                         ) as response:
                             if response.status == 200:
                                 result = await response.json()
@@ -336,36 +367,19 @@ class LightRAGImplementation(RAGInterface):
             """Embedding function for LightRAG."""
             import numpy as np
 
-            if self.openai_api_key:
-                try:
-                    import openai
+            embeddings: Optional[List[List[float]]] = None
 
-                    # Use OpenAI embeddings
-                    client = openai.AsyncOpenAI(api_key=self.openai_api_key)
+            for provider in self._get_embedding_provider_order():
+                if provider == "ollama":
+                    embeddings = await self._generate_ollama_embeddings(texts)
 
-                    response = await client.embeddings.create(
-                        model="text-embedding-3-large",  # Use large model for 3072 dimensions
-                        input=texts
-                    )
+                if embeddings is not None:
+                    break
 
-                    embeddings = [data.embedding for data in response.data]
-                    return np.array(embeddings)
-                except Exception as e:
-                    logger.warning(f"OpenAI embedding failed: {e}, using fallback")
+            if embeddings is None:
+                embeddings = self._generate_fallback_embeddings(texts)
 
-            # Simple fallback - create 3072 dimensional embeddings
-            import hashlib
-            embeddings = []
-            for text in texts:
-                hash_obj = hashlib.md5(text.encode())
-                hash_int = int(hash_obj.hexdigest(), 16)
-                embedding = [(hash_int >> i) & 1 for i in range(3072)]  # 3072 dimensions
-                embeddings.append(embedding)
             return np.array(embeddings, dtype=np.float32)
-
-        # Check if API keys are available
-        if not self.deepseek_api_key:
-            logger.warning("No DeepSeek API key found. LightRAG may not work for new operations.")
 
         # Ensure LightRAG binds to the managed event loop
         loop = self._ensure_event_loop()
@@ -377,7 +391,7 @@ class LightRAGImplementation(RAGInterface):
                 working_dir=str(self.working_dir),
                 llm_model_func=llm_model_func,
                 embedding_func=EmbeddingFunc(
-                    embedding_dim=3072,  # Match the existing knowledge base
+                    embedding_dim=self.embedding_dim,  # Match configurable embedding size
                     max_token_size=8192,
                     func=embedding_func
                 ),
@@ -390,7 +404,7 @@ class LightRAGImplementation(RAGInterface):
                 working_dir=str(self.working_dir),
                 llm_model_func=llm_model_func,
                 embedding_func=EmbeddingFunc(
-                    embedding_dim=3072,  # Match the existing knowledge base
+                    embedding_dim=self.embedding_dim,
                     max_token_size=8192,
                     func=embedding_func
                 )
@@ -437,6 +451,114 @@ class LightRAGImplementation(RAGInterface):
         cleaned_text = re.sub(r'\n\s*\n\s*\n+', '\n\n', cleaned_text)
         
         return cleaned_text.strip()
+
+    def _get_embedding_provider_order(self) -> List[str]:
+        """
+        Resolve embedding provider order based on config (local-only).
+        """
+        order: List[str] = []
+
+        def add(provider: str):
+            if provider == "ollama" and self.embedding_base_url:
+                if provider not in order:
+                    order.append(provider)
+
+        if self.embedding_provider_priority:
+            for provider in self.embedding_provider_priority:
+                add(provider)
+        else:
+            add(self.embedding_provider)
+
+        return order or ["ollama"]
+
+    async def _generate_ollama_embeddings(self, texts: List[str]) -> Optional[List[List[float]]]:
+        """
+        Generate embeddings using a local Ollama model.
+        """
+        if not self.embedding_base_url:
+            return None
+
+        try:
+            import aiohttp
+        except ImportError as exc:
+            logger.error(f"aiohttp is required for Ollama embeddings: {exc}")
+            return None
+
+        base_url = self.embedding_base_url.rstrip("/")
+        timeout = aiohttp.ClientTimeout(total=self.embedding_timeout)
+        embeddings: List[List[float]] = []
+
+        async with aiohttp.ClientSession(timeout=timeout) as session:
+            for text in texts:
+                success = False
+                delay = 1.0
+                for attempt in range(1, self.embedding_max_retries + 1):
+                    try:
+                        response = await session.post(
+                            f"{base_url}/api/embeddings",
+                            json={
+                                "model": self.ollama_embedding_model,
+                                "prompt": text
+                            }
+                        )
+                        if response.status == 200:
+                            data = await response.json()
+                            vector = data.get("embedding")
+                            if not vector:
+                                raise ValueError("Missing 'embedding' field in Ollama response")
+                            embeddings.append(self._normalize_embedding_length(vector))
+                            success = True
+                            break
+                        else:
+                            error_text = await response.text()
+                            logger.warning(
+                                f"Ollama embedding error {response.status}: {error_text}"
+                            )
+                    except asyncio.TimeoutError:
+                        logger.warning(f"Ollama embedding timeout (attempt {attempt})")
+                    except Exception as exc:
+                        logger.warning(f"Ollama embedding failure: {exc}")
+
+                    if attempt < self.embedding_max_retries:
+                        await asyncio.sleep(delay)
+                        delay = min(delay * 2, 10)
+
+                if not success:
+                    return None
+
+        return embeddings
+
+    def _generate_fallback_embeddings(self, texts: List[str]) -> List[List[float]]:
+        """
+        Generate deterministic pseudo-embeddings when all providers fail.
+        """
+        import hashlib
+        import random
+
+        embeddings: List[List[float]] = []
+        for text in texts:
+            seed = int(hashlib.sha256(text.encode("utf-8")).hexdigest(), 16)
+            rng = random.Random(seed)
+            vector = [rng.uniform(-1.0, 1.0) for _ in range(self.embedding_dim)]
+            embeddings.append(vector)
+        return embeddings
+
+    def _normalize_embedding_length(self, embedding: Any) -> List[float]:
+        """
+        Ensure embeddings conform to the configured dimensionality.
+        """
+        if embedding is None:
+            return [0.0] * self.embedding_dim
+
+        vector = list(embedding)
+        if len(vector) == self.embedding_dim:
+            return vector
+        if len(vector) > self.embedding_dim:
+            return vector[: self.embedding_dim]
+
+        # Pad with zeros if embedding is shorter than expected
+        pad_length = self.embedding_dim - len(vector)
+        return vector + [0.0] * pad_length
 
     def insert_document(self, document: Document) -> None:
         """

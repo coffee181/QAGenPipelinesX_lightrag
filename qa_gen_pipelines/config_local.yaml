@@ -12,6 +12,7 @@ ocr:
     binarize_threshold: 180  # 二值化阈值(0-255)
     apply_median_filter: true  # 是否使用中值滤波去噪
     min_confidence: 30    # 最低置信度阈值(0-100)，低于此值的识别结果将被过滤（减少图片噪声）
+    page_batch_size: 5    # PDF2Image 每批转换页数，降低内存峰值
   paddle:
     lang: "ch"  # PaddleOCR 中文模型（支持中英混合）
     use_angle_cls: true
@@ -61,18 +62,31 @@ question_generator:
     max_context_snippets: 2
     context_snippet_chars: 200
     max_related_chunk_ids: 10
-
 # RAG Configuration
 rag:
   lightrag:
     working_dir: "D:/llm-test/QAGenPipelinesX_lightrag/working" # 你可以把它改成你自己的路径，比如 "E:/llm-project/QAGenPipelinesX/working"
     llm_model: "deepseek-chat"
-    # 关键修正：所有调用本地模型的参数都放在 llm_config 中
-    embed_model: "text-embedding-3-large"
+    embed_model: "text-embedding-3-large"  # 仍然作为 OpenAI 回退模型
+    enable_cache: true          # 是否开启检索结果缓存
+    cache_similarity_threshold: 0.90  # 命中缓存所需的问题相似度阈值
+    max_citations_per_answer: 5  # 答案中最多引用的 chunk 数量
+    embedding:
+      provider: "ollama"           # 本地嵌入模型提供方
+      model: "bge-m3"              # Ollama 本地模型名称
+      dim: 1024                    # bge-m3 的向量维度
+      base_url: "http://localhost:11434"
+      timeout: 120                 # 单次调用超时（秒）
+      max_retries: 3
+      priority: ["ollama"]        # 仅本地模型
+    llm:
+      base_url: "http://localhost:11434"  # Ollama 推理服务地址
+      model: "deepseek-r1:32b"            # LightRAG 使用的本地模型
+      temperature: 0.7                    # 生成温度
+      max_tokens: 2048                    # 最多生成 token 数
+      timeout: 1800                       # 单次请求超时（秒）
+      max_retries: 5                      # LLM 调用失败后的最大重试次数
     max_context_length: 4000
-    # 我们需要在这里为 RAG 指定 OpenAI 的 Key
-    openai:
-      api_key: "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" # <--- 你的 OPENAI API KEY
 
 # File Processing Configuration
 file_processing:
@@ -85,6 +99,8 @@ file_processing:
 progress:
   save_interval: 1  # 每处理1个文件保存一次进度，确保实时更新
   progress_file: "./progress.json"
+  enable_percentage_display: true  # 是否在控制台中展示整体完成百分比
+  percentage_display_interval: 10  # 每多少条日志输出一次百分比
   
 # Logging Configuration
 logging:

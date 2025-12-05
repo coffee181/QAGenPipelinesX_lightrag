@@ -12173,3 +12173,628 @@ RuntimeError: Event loop is closed
 2025-12-04 18:28:01,124 - src.utils.logging_utils - INFO - 找到 2 个文档待处理
 2025-12-04 18:28:01,124 - src.utils.logging_utils - INFO - [1/2] 处理文档: F:\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
 2025-12-04 18:28:01,125 - src.utils.logging_utils - INFO - 步骤1: 生成问题
+2025-12-04 18:32:58,542 - src.utils.logging_utils - INFO - 步骤2: 生成答案
+2025-12-04 18:32:58,542 - src.utils.logging_utils - INFO - 使用向量库: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-04 18:32:58,542 - src.utils.logging_utils - INFO - Generating answers from existing knowledge base: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-04 18:32:58,754 - nano-vectordb - INFO - Load (35, 3072) data
+2025-12-04 18:32:58,755 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 35 data
+2025-12-04 18:32:58,759 - nano-vectordb - INFO - Load (28, 3072) data
+2025-12-04 18:32:58,759 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 28 data
+2025-12-04 18:32:58,761 - nano-vectordb - INFO - Load (9, 3072) data
+2025-12-04 18:32:58,761 - nano-vectordb - INFO - Init {'embedding_dim': 3072, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 9 data
+2025-12-04 18:32:58,824 - src.utils.logging_utils - INFO - 🚀 开始为 72 个问题生成答案
+2025-12-04 18:32:58,824 - src.utils.logging_utils - INFO - 📝 处理问题 1/72: 最大速度8m/min和最佳加工速度4m/min分别适用于什么类型的加工任务？如何选择合适的进给速度？
+2025-12-04 18:32:58,824 - src.utils.logging_utils - INFO - 🆔 问题ID: db00a2f3-7bf1-41e4-9096-02d9b6a1c52e
+2025-12-04 18:32:58,824 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: 01-GSK 27i高端多通道数控系统 20250226_questions]...
+2025-12-04 18:33:31,155 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_negative)
+2025-12-04 18:33:31,156 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-12-04 18:33:31,156 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 354 字符
+2025-12-04 18:33:31,156 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-12-04 18:33:31,156 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-12-04 18:33:31,156 - src.utils.logging_utils - INFO - 🎉 QA对 1/72 生成完成:
+2025-12-04 18:33:31,157 - src.utils.logging_utils - INFO -    📝 问题: 最大速度8m/min和最佳加工速度4m/min分别适用于什么类型的加工任务？如何选择合适的进给速度？
+2025-12-04 18:33:31,157 - src.utils.logging_utils - INFO -    💬 答案: 最大速度8m/min和最佳加工速度4m/min分别适用于不同的加工任务： 最大速度8m/min：适用于快速定位、空行程或不需要切削的移动操作。这种高速度可以提高...
+2025-12-04 18:33:31,157 - src.utils.logging_utils - INFO -    📊 答案长度: 354 字符
+2025-12-04 18:33:31,157 - src.utils.logging_utils - INFO -    🆔 QA对ID: db00a2f3-7bf1-41e4-9096-02d9b6a1c52e
+2025-12-04 18:33:31,204 - src.utils.logging_utils - INFO - 📝 处理问题 2/72: 支持的高精插补预处理段数高达1000段，这在复杂曲面加工中能带来哪些优势？
+2025-12-04 18:33:31,205 - src.utils.logging_utils - INFO - 🆔 问题ID: 2b81a72b-c8e7-4b5b-b58c-2888743e3ad1
+2025-12-04 18:33:31,205 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: 01-GSK 27i高端多通道数控系统 20250226_questions]...
+2025-12-04 18:34:06,342 - src.utils.logging_utils - INFO - ✅ 第 1 次尝试成功，答案有效且真实 (类型: valid_positive)
+2025-12-04 18:34:06,342 - src.utils.logging_utils - INFO - 🧹 开始清理答案格式...
+2025-12-04 18:34:06,343 - src.utils.logging_utils - INFO - ✅ 答案格式清理完成，最终长度: 564 字符
+2025-12-04 18:34:06,343 - src.utils.logging_utils - INFO - 📦 创建QA对...
+2025-12-04 18:34:06,343 - src.utils.logging_utils - INFO - 💾 执行增量保存...
+2025-12-04 18:34:06,343 - src.utils.logging_utils - INFO - 🎉 QA对 2/72 生成完成:
+2025-12-04 18:34:06,343 - src.utils.logging_utils - INFO -    📝 问题: 支持的高精插补预处理段数高达1000段，这在复杂曲面加工中能带来哪些优势？
+2025-12-04 18:34:06,344 - src.utils.logging_utils - INFO -    💬 答案: 支持高精插补预处理段数高达1000段的数控系统在复杂曲面加工中具有显著的优势，具体体现在以下几个方面： 提高加工精度高精插补预处理段数越多，数控系统能够更精细地...
+2025-12-04 18:34:06,344 - src.utils.logging_utils - INFO -    📊 答案长度: 564 字符
+2025-12-04 18:34:06,344 - src.utils.logging_utils - INFO -    🆔 QA对ID: 2b81a72b-c8e7-4b5b-b58c-2888743e3ad1
+2025-12-04 18:34:06,391 - src.utils.logging_utils - INFO - 📝 处理问题 3/72: GSK-LINK网络通信功能在多机床协同工作时有什么特点和优势？
+2025-12-04 18:34:06,392 - src.utils.logging_utils - INFO - 🆔 问题ID: 3d8c9b35-b2e4-43a7-b7b3-9fb991a19ccd
+2025-12-04 18:34:06,392 - src.utils.logging_utils - INFO - 🔍 第 1 次尝试使用 LightRAG 生成答案 [文档过滤: 01-GSK 27i高端多通道数控系统 20250226_questions]...
+2025-12-04 18:37:47,007 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-12-04 18:37:47,298 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_entities.json'} 0 data
+2025-12-04 18:37:47,299 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_relationships.json'} 0 data
+2025-12-04 18:37:47,299 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_chunks.json'} 0 data
+2025-12-04 18:37:47,395 - src.utils.logging_utils - INFO - Processing all PDFs under directory: F:\QAGenPipelinesX_lightrag\working\raw\input1
+2025-12-04 18:38:18,083 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-12-04 18:38:18,382 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_entities.json'} 0 data
+2025-12-04 18:38:18,383 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_relationships.json'} 0 data
+2025-12-04 18:38:18,383 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_chunks.json'} 0 data
+2025-12-04 18:38:18,479 - src.utils.logging_utils - INFO - Processing all PDFs under directory: F:\QAGenPipelinesX_lightrag\working\raw\input1
+2025-12-04 18:39:01,480 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_entities.json'} 0 data
+2025-12-04 18:39:01,481 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_relationships.json'} 0 data
+2025-12-04 18:39:01,481 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_chunks.json'} 0 data
+2025-12-04 18:39:01,572 - src.utils.logging_utils - INFO - [1/1] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-12-04 18:39:01,572 - src.utils.logging_utils - INFO - Event loop initialized for thread 20184
+2025-12-04 18:39:01,573 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-04 18:39:01,573 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-12-04 18:39:01,770 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 0 data
+2025-12-04 18:39:01,770 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 0 data
+2025-12-04 18:39:01,770 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 0 data
+2025-12-04 18:39:01,772 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-04 18:39:01,772 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-04 18:39:01,772 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-12-04 18:39:01,772 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.00 MB
+2025-12-04 18:39:01,820 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-04 18:39:01,820 - src.utils.logging_utils - INFO - Processing document 1/1: 01-宝鸡机床VMC850L.txt (0.00 MB)
+2025-12-04 18:40:44,132 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 102.3s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-04 18:40:44,182 - src.utils.logging_utils - INFO - Document insertion completed in 1.7min: 1 success, 0 failed
+2025-12-04 18:40:44,182 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-04 18:42:27,329 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-12-04 18:42:27,626 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_entities.json'} 0 data
+2025-12-04 18:42:27,626 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_relationships.json'} 0 data
+2025-12-04 18:42:27,627 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_chunks.json'} 0 data
+2025-12-04 18:42:27,725 - src.utils.logging_utils - INFO - Processing all PDFs under directory: F:\QAGenPipelinesX_lightrag\working\raw
+2025-12-04 22:45:25,483 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-12-04 22:45:26,685 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_entities.json'} 0 data
+2025-12-04 22:45:26,686 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_relationships.json'} 0 data
+2025-12-04 22:45:26,686 - nano-vectordb - INFO - Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_chunks.json'} 0 data
+2025-12-04 22:45:27,001 - src.utils.logging_utils - INFO - Processing all PDFs under directory: F:\QAGenPipelinesX_lightrag\working\raw
+2025-12-04 23:19:46,084 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_entities.json'} 0 data
+2025-12-04 23:19:46,084 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_relationships.json'} 0 data
+2025-12-04 23:19:46,084 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_chunks.json'} 0 data
+2025-12-04 23:19:46,180 - src.utils.logging_utils - INFO - [1/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-12-04 23:19:46,180 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-04 23:19:46,180 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-04 23:19:46,180 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-12-04 23:19:46,413 - nano-vectordb - INFO - Load (15, 1024) data
+2025-12-04 23:19:46,414 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 15 data
+2025-12-04 23:19:46,415 - nano-vectordb - INFO - Load (14, 1024) data
+2025-12-04 23:19:46,415 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 14 data
+2025-12-04 23:19:46,416 - nano-vectordb - INFO - Load (1, 1024) data
+2025-12-04 23:19:46,416 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 1 data
+2025-12-04 23:19:46,417 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-04 23:19:46,417 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-04 23:19:46,418 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-12-04 23:19:46,418 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-04 23:19:46,466 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-04 23:19:46,466 - src.utils.logging_utils - INFO - Processing document 1/1: 01-GSK 27i高端多通道数控系统 20250226.txt (0.01 MB)
+2025-12-04 23:29:17,452 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 570.9s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-04 23:29:17,502 - src.utils.logging_utils - INFO - Document insertion completed in 9.5min: 1 success, 0 failed
+2025-12-04 23:29:17,502 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-04 23:29:17,503 - src.utils.logging_utils - INFO - [2/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-12-04 23:29:17,503 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-04 23:29:17,503 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-04 23:29:17,503 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-12-04 23:29:17,732 - nano-vectordb - INFO - Load (34, 1024) data
+2025-12-04 23:29:17,733 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 34 data
+2025-12-04 23:29:17,744 - nano-vectordb - INFO - Load (22, 1024) data
+2025-12-04 23:29:17,745 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 22 data
+2025-12-04 23:29:17,755 - nano-vectordb - INFO - Load (9, 1024) data
+2025-12-04 23:29:17,755 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 9 data
+2025-12-04 23:29:17,757 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-04 23:29:17,757 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-04 23:29:17,757 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\01-宝鸡机床VMC850L.txt
+2025-12-04 23:29:17,757 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.00 MB
+2025-12-04 23:29:17,804 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-04 23:29:17,804 - src.utils.logging_utils - INFO - Processing document 1/1: 01-宝鸡机床VMC850L.txt (0.00 MB)
+2025-12-04 23:30:37,145 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 79.3s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-04 23:30:37,199 - src.utils.logging_utils - INFO - Document insertion completed in 1.3min: 1 success, 0 failed
+2025-12-04 23:30:37,199 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-04 23:30:37,199 - src.utils.logging_utils - INFO - [3/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\01系统综合-铣削.txt
+2025-12-04 23:30:37,199 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-04 23:30:37,199 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-04 23:30:37,200 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\01系统综合-铣削.txt
+2025-12-04 23:30:37,433 - nano-vectordb - INFO - Load (44, 1024) data
+2025-12-04 23:30:37,433 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 44 data
+2025-12-04 23:30:37,443 - nano-vectordb - INFO - Load (33, 1024) data
+2025-12-04 23:30:37,443 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 33 data
+2025-12-04 23:30:37,452 - nano-vectordb - INFO - Load (9, 1024) data
+2025-12-04 23:30:37,452 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 9 data
+2025-12-04 23:30:37,454 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-04 23:30:37,454 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-04 23:30:37,455 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\01系统综合-铣削.txt
+2025-12-04 23:30:37,455 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.04 MB
+2025-12-04 23:30:37,503 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-04 23:30:37,503 - src.utils.logging_utils - INFO - Processing document 1/1: 01系统综合-铣削.txt (0.04 MB)
+2025-12-05 00:05:53,626 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 2116.1s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 00:05:53,676 - src.utils.logging_utils - INFO - Document insertion completed in 35.3min: 1 success, 0 failed
+2025-12-05 00:05:53,676 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 00:05:53,676 - src.utils.logging_utils - INFO - [4/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\02-7宝鸡TK36S.txt
+2025-12-05 00:05:53,676 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 00:05:53,677 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 00:05:53,677 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\02-7宝鸡TK36S.txt
+2025-12-05 00:05:53,911 - nano-vectordb - INFO - Load (164, 1024) data
+2025-12-05 00:05:53,912 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 164 data
+2025-12-05 00:05:53,924 - nano-vectordb - INFO - Load (70, 1024) data
+2025-12-05 00:05:53,925 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 70 data
+2025-12-05 00:05:53,936 - nano-vectordb - INFO - Load (36, 1024) data
+2025-12-05 00:05:53,936 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 36 data
+2025-12-05 00:05:53,938 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 00:05:53,938 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 00:05:53,939 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\02-7宝鸡TK36S.txt
+2025-12-05 00:05:53,939 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.00 MB
+2025-12-05 00:05:53,986 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 00:05:53,987 - src.utils.logging_utils - INFO - Processing document 1/1: 02-7宝鸡TK36S.txt (0.00 MB)
+2025-12-05 00:07:06,001 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 72.0s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 00:07:06,056 - src.utils.logging_utils - INFO - Document insertion completed in 1.2min: 1 success, 0 failed
+2025-12-05 00:07:06,056 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 00:07:06,056 - src.utils.logging_utils - INFO - [5/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\02-GSK 25i系列五轴加工中心数控系统 20250317.txt
+2025-12-05 00:07:06,056 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 00:07:06,057 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 00:07:06,057 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\02-GSK 25i系列五轴加工中心数控系统 20250317.txt
+2025-12-05 00:07:06,316 - nano-vectordb - INFO - Load (169, 1024) data
+2025-12-05 00:07:06,316 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 169 data
+2025-12-05 00:07:06,332 - nano-vectordb - INFO - Load (74, 1024) data
+2025-12-05 00:07:06,332 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 74 data
+2025-12-05 00:07:06,345 - nano-vectordb - INFO - Load (37, 1024) data
+2025-12-05 00:07:06,345 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 37 data
+2025-12-05 00:07:06,347 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 00:07:06,348 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 00:07:06,348 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\02-GSK 25i系列五轴加工中心数控系统 20250317.txt
+2025-12-05 00:07:06,348 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.02 MB
+2025-12-05 00:07:06,403 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 00:07:06,403 - src.utils.logging_utils - INFO - Processing document 1/1: 02-GSK 25i系列五轴加工中心数控系统 20250317.txt (0.02 MB)
+2025-12-05 00:19:35,292 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 748.8s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 00:19:35,341 - src.utils.logging_utils - INFO - Document insertion completed in 12.5min: 1 success, 0 failed
+2025-12-05 00:19:35,341 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 00:19:35,341 - src.utils.logging_utils - INFO - [6/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\02-GSK 928TD-L 车床数控系统.txt
+2025-12-05 00:19:35,342 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 00:19:35,342 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 00:19:35,342 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\02-GSK 928TD-L 车床数控系统.txt
+2025-12-05 00:19:35,574 - nano-vectordb - INFO - Load (228, 1024) data
+2025-12-05 00:19:35,574 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 228 data
+2025-12-05 00:19:35,589 - nano-vectordb - INFO - Load (106, 1024) data
+2025-12-05 00:19:35,590 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 106 data
+2025-12-05 00:19:35,602 - nano-vectordb - INFO - Load (47, 1024) data
+2025-12-05 00:19:35,602 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 47 data
+2025-12-05 00:19:35,604 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 00:19:35,605 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 00:19:35,605 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\02-GSK 928TD-L 车床数控系统.txt
+2025-12-05 00:19:35,605 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-05 00:19:35,653 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 00:19:35,653 - src.utils.logging_utils - INFO - Processing document 1/1: 02-GSK 928TD-L 车床数控系统.txt (0.01 MB)
+2025-12-05 00:25:01,566 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 325.9s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 00:25:01,616 - src.utils.logging_utils - INFO - Document insertion completed in 5.4min: 1 success, 0 failed
+2025-12-05 00:25:01,616 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 00:25:01,616 - src.utils.logging_utils - INFO - [7/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\02-佛山中一CK6046（两轴）.txt
+2025-12-05 00:25:01,616 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 00:25:01,617 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 00:25:01,617 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\02-佛山中一CK6046（两轴）.txt
+2025-12-05 00:25:01,852 - nano-vectordb - INFO - Load (228, 1024) data
+2025-12-05 00:25:01,853 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 228 data
+2025-12-05 00:25:01,867 - nano-vectordb - INFO - Load (106, 1024) data
+2025-12-05 00:25:01,868 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 106 data
+2025-12-05 00:25:01,880 - nano-vectordb - INFO - Load (51, 1024) data
+2025-12-05 00:25:01,881 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 51 data
+2025-12-05 00:25:01,883 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 00:25:01,883 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 00:25:01,883 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\02-佛山中一CK6046（两轴）.txt
+2025-12-05 00:25:01,883 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.00 MB
+2025-12-05 00:25:01,930 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 00:25:01,931 - src.utils.logging_utils - INFO - Processing document 1/1: 02-佛山中一CK6046（两轴）.txt (0.00 MB)
+2025-12-05 00:26:20,478 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 78.5s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 00:26:20,528 - src.utils.logging_utils - INFO - Document insertion completed in 1.3min: 1 success, 0 failed
+2025-12-05 00:26:20,528 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 00:26:20,528 - src.utils.logging_utils - INFO - [8/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\02-烟台米兰德VT850.txt
+2025-12-05 00:26:20,529 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 00:26:20,529 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 00:26:20,529 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\02-烟台米兰德VT850.txt
+2025-12-05 00:26:20,768 - nano-vectordb - INFO - Load (242, 1024) data
+2025-12-05 00:26:20,768 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 242 data
+2025-12-05 00:26:20,785 - nano-vectordb - INFO - Load (122, 1024) data
+2025-12-05 00:26:20,785 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 122 data
+2025-12-05 00:26:20,798 - nano-vectordb - INFO - Load (52, 1024) data
+2025-12-05 00:26:20,798 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 52 data
+2025-12-05 00:26:20,801 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 00:26:20,801 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 00:26:20,801 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\02-烟台米兰德VT850.txt
+2025-12-05 00:26:20,802 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.00 MB
+2025-12-05 00:26:20,848 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 00:26:20,848 - src.utils.logging_utils - INFO - Processing document 1/1: 02-烟台米兰德VT850.txt (0.00 MB)
+2025-12-05 00:27:49,694 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 88.8s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 00:27:49,744 - src.utils.logging_utils - INFO - Document insertion completed in 1.5min: 1 success, 0 failed
+2025-12-05 00:27:49,744 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 00:27:49,744 - src.utils.logging_utils - INFO - [9/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\02系统综合-车削.txt
+2025-12-05 00:27:49,744 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 00:27:49,744 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 00:27:49,745 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\02系统综合-车削.txt
+2025-12-05 00:27:49,981 - nano-vectordb - INFO - Load (258, 1024) data
+2025-12-05 00:27:49,982 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 258 data
+2025-12-05 00:27:49,999 - nano-vectordb - INFO - Load (136, 1024) data
+2025-12-05 00:27:49,999 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 136 data
+2025-12-05 00:27:50,012 - nano-vectordb - INFO - Load (53, 1024) data
+2025-12-05 00:27:50,012 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 53 data
+2025-12-05 00:27:50,015 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 00:27:50,015 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 00:27:50,016 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\02系统综合-车削.txt
+2025-12-05 00:27:50,016 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.07 MB
+2025-12-05 00:27:50,063 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 00:27:50,063 - src.utils.logging_utils - INFO - Processing document 1/1: 02系统综合-车削.txt (0.07 MB)
+2025-12-05 01:29:32,888 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 3702.8s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 01:29:32,937 - src.utils.logging_utils - INFO - Document insertion completed in 61.7min: 1 success, 0 failed
+2025-12-05 01:29:32,938 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 01:29:32,938 - src.utils.logging_utils - INFO - [10/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\03-GSK 25Ti车铣复合数控系统 20250307.txt
+2025-12-05 01:29:32,938 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 01:29:32,938 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 01:29:32,938 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\03-GSK 25Ti车铣复合数控系统 20250307.txt
+2025-12-05 01:29:33,207 - nano-vectordb - INFO - Load (431, 1024) data
+2025-12-05 01:29:33,209 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 431 data
+2025-12-05 01:29:33,234 - nano-vectordb - INFO - Load (239, 1024) data
+2025-12-05 01:29:33,235 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 239 data
+2025-12-05 01:29:33,253 - nano-vectordb - INFO - Load (99, 1024) data
+2025-12-05 01:29:33,253 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 99 data
+2025-12-05 01:29:33,255 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 01:29:33,256 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 01:29:33,256 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\03-GSK 25Ti车铣复合数控系统 20250307.txt
+2025-12-05 01:29:33,256 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-05 01:29:33,305 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 01:29:33,305 - src.utils.logging_utils - INFO - Processing document 1/1: 03-GSK 25Ti车铣复合数控系统 20250307.txt (0.01 MB)
+2025-12-05 01:39:15,823 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 582.5s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 01:39:15,872 - src.utils.logging_utils - INFO - Document insertion completed in 9.7min: 1 success, 0 failed
+2025-12-05 01:39:15,872 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 01:39:15,873 - src.utils.logging_utils - INFO - [11/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\03-GSK 928TA2车床数控系统.txt
+2025-12-05 01:39:15,873 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 01:39:15,873 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 01:39:15,873 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\03-GSK 928TA2车床数控系统.txt
+2025-12-05 01:39:16,140 - nano-vectordb - INFO - Load (440, 1024) data
+2025-12-05 01:39:16,142 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 440 data
+2025-12-05 01:39:16,167 - nano-vectordb - INFO - Load (243, 1024) data
+2025-12-05 01:39:16,168 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 243 data
+2025-12-05 01:39:16,185 - nano-vectordb - INFO - Load (107, 1024) data
+2025-12-05 01:39:16,186 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 107 data
+2025-12-05 01:39:16,188 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 01:39:16,189 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 01:39:16,189 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\03-GSK 928TA2车床数控系统.txt
+2025-12-05 01:39:16,189 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-05 01:39:16,240 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 01:39:16,240 - src.utils.logging_utils - INFO - Processing document 1/1: 03-GSK 928TA2车床数控系统.txt (0.01 MB)
+2025-12-05 01:45:44,233 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 387.9s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 01:45:44,283 - src.utils.logging_utils - INFO - Document insertion completed in 6.5min: 1 success, 0 failed
+2025-12-05 01:45:44,283 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 01:45:44,284 - src.utils.logging_utils - INFO - [12/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\03-GSK SJM力矩电机 20231016.txt
+2025-12-05 01:45:44,284 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 01:45:44,284 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 01:45:44,284 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\03-GSK SJM力矩电机 20231016.txt
+2025-12-05 01:45:44,552 - nano-vectordb - INFO - Load (442, 1024) data
+2025-12-05 01:45:44,554 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 442 data
+2025-12-05 01:45:44,578 - nano-vectordb - INFO - Load (244, 1024) data
+2025-12-05 01:45:44,579 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 244 data
+2025-12-05 01:45:44,597 - nano-vectordb - INFO - Load (112, 1024) data
+2025-12-05 01:45:44,598 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 112 data
+2025-12-05 01:45:44,600 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 01:45:44,601 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 01:45:44,601 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\03-GSK SJM力矩电机 20231016.txt
+2025-12-05 01:45:44,601 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-05 01:45:44,648 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 01:45:44,649 - src.utils.logging_utils - INFO - Processing document 1/1: 03-GSK SJM力矩电机 20231016.txt (0.01 MB)
+2025-12-05 01:54:36,875 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 532.2s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 01:54:36,924 - src.utils.logging_utils - INFO - Document insertion completed in 8.9min: 1 success, 0 failed
+2025-12-05 01:54:36,925 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 01:54:36,925 - src.utils.logging_utils - INFO - [13/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\小功率交流伺服电动机使用说明书2015年12月第1版（二分之一的32开大小）7定稿.txt
+2025-12-05 01:54:36,925 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 01:54:36,925 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 01:54:36,925 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\小功率交流伺服电动机使用说明书2015年12月第1版（二分之一的32开大小）7定稿.txt
+2025-12-05 01:54:37,193 - nano-vectordb - INFO - Load (471, 1024) data
+2025-12-05 01:54:37,195 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 471 data
+2025-12-05 01:54:37,226 - nano-vectordb - INFO - Load (263, 1024) data
+2025-12-05 01:54:37,227 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 263 data
+2025-12-05 01:54:37,247 - nano-vectordb - INFO - Load (119, 1024) data
+2025-12-05 01:54:37,247 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 119 data
+2025-12-05 01:54:37,251 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 01:54:37,251 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 01:54:37,252 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\小功率交流伺服电动机使用说明书2015年12月第1版（二分之一的32开大小）7定稿.txt
+2025-12-05 01:54:37,252 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.00 MB
+2025-12-05 01:54:37,299 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 01:54:37,299 - src.utils.logging_utils - INFO - Processing document 1/1: 小功率交流伺服电动机使用说明书2015年12月第1版（二分之一的32开大小）7定稿.txt (0.00 MB)
+2025-12-05 01:57:07,608 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 150.3s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 01:57:07,660 - src.utils.logging_utils - INFO - Document insertion completed in 2.5min: 1 success, 0 failed
+2025-12-05 01:57:07,660 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 01:57:07,660 - src.utils.logging_utils - INFO - [14/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\注塑机用系列交流伺服电动机使用说明书（2023年9月第2版）.txt
+2025-12-05 01:57:07,661 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 01:57:07,661 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 01:57:07,661 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\注塑机用系列交流伺服电动机使用说明书（2023年9月第2版）.txt
+2025-12-05 01:57:07,964 - nano-vectordb - INFO - Load (481, 1024) data
+2025-12-05 01:57:07,966 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 481 data
+2025-12-05 01:57:07,995 - nano-vectordb - INFO - Load (267, 1024) data
+2025-12-05 01:57:07,997 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 267 data
+2025-12-05 01:57:08,018 - nano-vectordb - INFO - Load (122, 1024) data
+2025-12-05 01:57:08,018 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 122 data
+2025-12-05 01:57:08,022 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 01:57:08,022 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 01:57:08,023 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\注塑机用系列交流伺服电动机使用说明书（2023年9月第2版）.txt
+2025-12-05 01:57:08,023 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-05 01:57:08,079 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 01:57:08,079 - src.utils.logging_utils - INFO - Processing document 1/1: 注塑机用系列交流伺服电动机使用说明书（2023年9月第2版）.txt (0.01 MB)
+2025-12-05 02:06:37,922 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 569.8s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 02:06:37,971 - src.utils.logging_utils - INFO - Document insertion completed in 9.5min: 1 success, 0 failed
+2025-12-05 02:06:37,972 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 02:06:37,972 - src.utils.logging_utils - INFO - [15/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统数控车床应用手册 1217.txt
+2025-12-05 02:06:37,972 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 02:06:37,972 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 02:06:37,972 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统数控车床应用手册 1217.txt
+2025-12-05 02:06:38,247 - nano-vectordb - INFO - Load (496, 1024) data
+2025-12-05 02:06:38,249 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 496 data
+2025-12-05 02:06:38,278 - nano-vectordb - INFO - Load (276, 1024) data
+2025-12-05 02:06:38,279 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 276 data
+2025-12-05 02:06:38,300 - nano-vectordb - INFO - Load (129, 1024) data
+2025-12-05 02:06:38,300 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 129 data
+2025-12-05 02:06:38,304 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 02:06:38,305 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 02:06:38,305 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统数控车床应用手册 1217.txt
+2025-12-05 02:06:38,305 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-05 02:06:38,353 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 02:06:38,353 - src.utils.logging_utils - INFO - Processing document 1/1: 直线电机数控系统数控车床应用手册 1217.txt (0.01 MB)
+2025-12-05 02:19:41,007 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 782.6s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 02:19:41,056 - src.utils.logging_utils - INFO - Document insertion completed in 13.0min: 1 success, 0 failed
+2025-12-05 02:19:41,057 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 02:19:41,057 - src.utils.logging_utils - INFO - [16/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统数控车床销售指南 1217.txt
+2025-12-05 02:19:41,057 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 02:19:41,057 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 02:19:41,057 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统数控车床销售指南 1217.txt
+2025-12-05 02:19:41,340 - nano-vectordb - INFO - Load (553, 1024) data
+2025-12-05 02:19:41,342 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 553 data
+2025-12-05 02:19:41,371 - nano-vectordb - INFO - Load (309, 1024) data
+2025-12-05 02:19:41,373 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 309 data
+2025-12-05 02:19:41,395 - nano-vectordb - INFO - Load (137, 1024) data
+2025-12-05 02:19:41,396 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 137 data
+2025-12-05 02:19:41,400 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 02:19:41,401 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 02:19:41,401 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统数控车床销售指南 1217.txt
+2025-12-05 02:19:41,401 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-05 02:19:41,456 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 02:19:41,457 - src.utils.logging_utils - INFO - Processing document 1/1: 直线电机数控系统数控车床销售指南 1217.txt (0.01 MB)
+2025-12-05 02:28:28,670 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 527.2s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 02:28:28,719 - src.utils.logging_utils - INFO - Document insertion completed in 8.8min: 1 success, 0 failed
+2025-12-05 02:28:28,720 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 02:28:28,720 - src.utils.logging_utils - INFO - [17/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统钻铣雕磨机床应用手册 1217.txt
+2025-12-05 02:28:28,720 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 02:28:28,720 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 02:28:28,720 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统钻铣雕磨机床应用手册 1217.txt
+2025-12-05 02:28:29,002 - nano-vectordb - INFO - Load (581, 1024) data
+2025-12-05 02:28:29,003 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 581 data
+2025-12-05 02:28:29,032 - nano-vectordb - INFO - Load (316, 1024) data
+2025-12-05 02:28:29,033 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 316 data
+2025-12-05 02:28:29,054 - nano-vectordb - INFO - Load (145, 1024) data
+2025-12-05 02:28:29,055 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 145 data
+2025-12-05 02:28:29,060 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 02:28:29,060 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 02:28:29,061 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统钻铣雕磨机床应用手册 1217.txt
+2025-12-05 02:28:29,061 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-05 02:28:29,109 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 02:28:29,109 - src.utils.logging_utils - INFO - Processing document 1/1: 直线电机数控系统钻铣雕磨机床应用手册 1217.txt (0.01 MB)
+2025-12-05 02:39:00,178 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 631.0s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 02:39:00,227 - src.utils.logging_utils - INFO - Document insertion completed in 10.5min: 1 success, 0 failed
+2025-12-05 02:39:00,228 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 02:39:00,228 - src.utils.logging_utils - INFO - [18/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统钻铣雕磨机床销售指南 1217.txt
+2025-12-05 02:39:00,228 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 02:39:00,228 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 02:39:00,228 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统钻铣雕磨机床销售指南 1217.txt
+2025-12-05 02:39:00,519 - nano-vectordb - INFO - Load (621, 1024) data
+2025-12-05 02:39:00,521 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 621 data
+2025-12-05 02:39:00,555 - nano-vectordb - INFO - Load (331, 1024) data
+2025-12-05 02:39:00,556 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 331 data
+2025-12-05 02:39:00,585 - nano-vectordb - INFO - Load (153, 1024) data
+2025-12-05 02:39:00,586 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 153 data
+2025-12-05 02:39:00,592 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 02:39:00,592 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 02:39:00,593 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\直线电机数控系统钻铣雕磨机床销售指南 1217.txt
+2025-12-05 02:39:00,593 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-05 02:39:00,652 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 02:39:00,652 - src.utils.logging_utils - INFO - Processing document 1/1: 直线电机数控系统钻铣雕磨机床销售指南 1217.txt (0.01 MB)
+2025-12-05 02:47:37,879 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 517.2s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 02:47:37,929 - src.utils.logging_utils - INFO - Document insertion completed in 8.6min: 1 success, 0 failed
+2025-12-05 02:47:37,929 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 02:47:37,930 - src.utils.logging_utils - INFO - [19/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\英文 - AE-50全电动注塑机专用驱动单元使用手册 （2013年7月第2版）-2013-07-12定稿-2013-08-22定稿.txt
+2025-12-05 02:47:37,930 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 02:47:37,930 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 02:47:37,930 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\英文 - AE-50全电动注塑机专用驱动单元使用手册 （2013年7月第2版）-2013-07-12定稿-2013-08-22定稿.txt
+2025-12-05 02:47:38,234 - nano-vectordb - INFO - Load (642, 1024) data
+2025-12-05 02:47:38,237 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 642 data
+2025-12-05 02:47:38,270 - nano-vectordb - INFO - Load (349, 1024) data
+2025-12-05 02:47:38,271 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 349 data
+2025-12-05 02:47:38,302 - nano-vectordb - INFO - Load (161, 1024) data
+2025-12-05 02:47:38,303 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 161 data
+2025-12-05 02:47:38,309 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 02:47:38,309 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 02:47:38,310 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\英文 - AE-50全电动注塑机专用驱动单元使用手册 （2013年7月第2版）-2013-07-12定稿-2013-08-22定稿.txt
+2025-12-05 02:47:38,310 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.06 MB
+2025-12-05 02:47:38,369 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 02:47:38,370 - src.utils.logging_utils - INFO - Processing document 1/1: 英文 - AE-50全电动注塑机专用驱动单元使用手册 （2013年7月第2版）-2013-07-12定稿-2013-08-22定稿.txt (0.06 MB)
+2025-12-05 03:04:26,297 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 1007.9s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 03:04:26,347 - src.utils.logging_utils - INFO - Document insertion completed in 16.8min: 1 success, 0 failed
+2025-12-05 03:04:26,348 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 03:04:26,348 - src.utils.logging_utils - INFO - [20/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt
+2025-12-05 03:04:26,348 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 03:04:26,348 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 03:04:26,348 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt
+2025-12-05 03:04:26,648 - nano-vectordb - INFO - Load (678, 1024) data
+2025-12-05 03:04:26,651 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 678 data
+2025-12-05 03:04:26,692 - nano-vectordb - INFO - Load (368, 1024) data
+2025-12-05 03:04:26,693 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 368 data
+2025-12-05 03:04:26,724 - nano-vectordb - INFO - Load (175, 1024) data
+2025-12-05 03:04:26,724 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 175 data
+2025-12-05 03:04:26,727 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 03:04:26,728 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 03:04:26,729 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt
+2025-12-05 03:04:26,729 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.06 MB
+2025-12-05 03:04:26,794 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 03:04:26,795 - src.utils.logging_utils - INFO - Processing document 1/1: 英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt (0.06 MB)
+2025-12-05 03:19:10,108 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 883.3s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 03:19:10,157 - src.utils.logging_utils - INFO - Document insertion completed in 14.7min: 1 success, 0 failed
+2025-12-05 03:19:10,158 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 03:19:10,158 - src.utils.logging_utils - INFO - [21/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\英文-AE-100全电动注塑机专用驱动单元使用手册（2013年7月第3版）-2013-07-12定稿-2013-09-16-定稿.txt
+2025-12-05 03:19:10,158 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 03:19:10,158 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 03:19:10,158 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\英文-AE-100全电动注塑机专用驱动单元使用手册（2013年7月第3版）-2013-07-12定稿-2013-09-16-定稿.txt
+2025-12-05 03:19:10,476 - nano-vectordb - INFO - Load (724, 1024) data
+2025-12-05 03:19:10,479 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 724 data
+2025-12-05 03:19:10,528 - nano-vectordb - INFO - Load (395, 1024) data
+2025-12-05 03:19:10,530 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 395 data
+2025-12-05 03:19:10,565 - nano-vectordb - INFO - Load (189, 1024) data
+2025-12-05 03:19:10,566 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 189 data
+2025-12-05 03:19:10,569 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 03:19:10,569 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 03:19:10,570 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\英文-AE-100全电动注塑机专用驱动单元使用手册（2013年7月第3版）-2013-07-12定稿-2013-09-16-定稿.txt
+2025-12-05 03:19:10,570 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.06 MB
+2025-12-05 03:19:10,627 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 03:19:10,627 - src.utils.logging_utils - INFO - Processing document 1/1: 英文-AE-100全电动注塑机专用驱动单元使用手册（2013年7月第3版）-2013-07-12定稿-2013-09-16-定稿.txt (0.06 MB)
+2025-12-05 03:34:43,257 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 932.6s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 03:34:43,306 - src.utils.logging_utils - INFO - Document insertion completed in 15.5min: 1 success, 0 failed
+2025-12-05 03:34:43,307 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 03:34:43,307 - src.utils.logging_utils - INFO - [22/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\英文-GR-L系列总线式交流伺服驱动单元使用手册2019年11月第2版定 1109 - 终稿V2-2019-12-12.txt
+2025-12-05 03:34:43,307 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 03:34:43,307 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 03:34:43,307 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\英文-GR-L系列总线式交流伺服驱动单元使用手册2019年11月第2版定 1109 - 终稿V2-2019-12-12.txt
+2025-12-05 03:34:43,630 - nano-vectordb - INFO - Load (760, 1024) data
+2025-12-05 03:34:43,634 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 760 data
+2025-12-05 03:34:43,684 - nano-vectordb - INFO - Load (417, 1024) data
+2025-12-05 03:34:43,686 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 417 data
+2025-12-05 03:34:43,718 - nano-vectordb - INFO - Load (203, 1024) data
+2025-12-05 03:34:43,718 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 203 data
+2025-12-05 03:34:43,722 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 03:34:43,722 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 03:34:43,723 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\英文-GR-L系列总线式交流伺服驱动单元使用手册2019年11月第2版定 1109 - 终稿V2-2019-12-12.txt
+2025-12-05 03:34:43,724 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.22 MB
+2025-12-05 03:34:43,784 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 03:34:43,785 - src.utils.logging_utils - INFO - Processing document 1/1: 英文-GR-L系列总线式交流伺服驱动单元使用手册2019年11月第2版定 1109 - 终稿V2-2019-12-12.txt (0.22 MB)
+2025-12-05 04:31:41,758 - src.utils.lightrag_relation_patch - WARNING - 关系 PA18 speed feedback filter system~speed loop 缺少描述，使用默认值: 'PA18 speed feedback filter system 与 speed loop 的关系'
+2025-12-05 04:31:41,775 - src.utils.lightrag_relation_patch - WARNING - 关系 PA19 position loop proportional gain~position following error 缺少描述，使用默认值: 'PA19 position loop proportional gain 与 position following error 的关系'
+2025-12-05 04:31:45,279 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 3421.4s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 04:31:45,331 - src.utils.logging_utils - INFO - Document insertion completed in 57.0min: 1 success, 0 failed
+2025-12-05 04:31:45,332 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 04:31:45,332 - src.utils.logging_utils - INFO - [23/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK218MC系列 PLC安装连接手册 第5版（定稿）.txt
+2025-12-05 04:31:45,332 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 04:31:45,332 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 04:31:45,332 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK218MC系列 PLC安装连接手册 第5版（定稿）.txt
+2025-12-05 04:31:45,733 - nano-vectordb - INFO - Load (918, 1024) data
+2025-12-05 04:31:45,736 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 918 data
+2025-12-05 04:31:45,775 - nano-vectordb - INFO - Load (481, 1024) data
+2025-12-05 04:31:45,777 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 481 data
+2025-12-05 04:31:45,807 - nano-vectordb - INFO - Load (253, 1024) data
+2025-12-05 04:31:45,808 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 253 data
+2025-12-05 04:31:45,813 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 04:31:45,813 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 04:31:45,815 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK218MC系列 PLC安装连接手册 第5版（定稿）.txt
+2025-12-05 04:31:45,815 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.38 MB
+2025-12-05 04:31:45,865 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 04:31:45,865 - src.utils.logging_utils - INFO - Processing document 1/1: 英文-GSK218MC系列 PLC安装连接手册 第5版（定稿）.txt (0.38 MB)
+2025-12-05 06:16:08,460 - src.utils.lightrag_relation_patch - WARNING - 关系 Darlington tube~is part of 缺少描述，使用默认值: 'Darlington tube 与 is part of 的关系'
+2025-12-05 06:16:08,480 - src.utils.lightrag_relation_patch - WARNING - 关系 Mechanical arm operations~relate to 缺少描述，使用默认值: 'Mechanical arm operations 与 relate to 的关系'
+2025-12-05 06:16:08,530 - src.utils.lightrag_relation_patch - WARNING - 关系 Parameters~control 缺少描述，使用默认值: 'Parameters 与 control 的关系'
+2025-12-05 06:16:08,561 - src.utils.lightrag_relation_patch - WARNING - 关系 Tool magazine zero return Parameter~controls 缺少描述，使用默认值: 'Tool magazine zero return Parameter 与 controls 的关系'
+2025-12-05 06:16:08,738 - src.utils.lightrag_relation_patch - WARNING - 关系 Spindle detection closed contact~indicates 缺少描述，使用默认值: 'Spindle detection closed contact 与 indicates 的关系'
+2025-12-05 06:16:16,460 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 6270.5s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 06:16:16,510 - src.utils.logging_utils - INFO - Document insertion completed in 104.5min: 1 success, 0 failed
+2025-12-05 06:16:16,510 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 06:16:16,510 - src.utils.logging_utils - INFO - [24/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK218MC系列编程操作手册 第5版 （定稿）.txt
+2025-12-05 06:16:16,511 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 06:16:16,511 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 06:16:16,511 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK218MC系列编程操作手册 第5版 （定稿）.txt
+2025-12-05 06:16:16,944 - nano-vectordb - INFO - Load (1147, 1024) data
+2025-12-05 06:16:16,947 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 1147 data
+2025-12-05 06:16:16,992 - nano-vectordb - INFO - Load (585, 1024) data
+2025-12-05 06:16:16,994 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 585 data
+2025-12-05 06:16:17,033 - nano-vectordb - INFO - Load (343, 1024) data
+2025-12-05 06:16:17,034 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 343 data
+2025-12-05 06:16:17,039 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 06:16:17,040 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 06:16:17,042 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK218MC系列编程操作手册 第5版 （定稿）.txt
+2025-12-05 06:16:17,042 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.56 MB
+2025-12-05 06:16:17,091 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 06:16:17,092 - src.utils.logging_utils - INFO - Processing document 1/1: 英文-GSK218MC系列编程操作手册 第5版 （定稿）.txt (0.56 MB)
+2025-12-05 08:45:37,999 - src.utils.lightrag_relation_patch - WARNING - 关系 G30~intermediate points and can be combined with 缺少描述，使用默认值: 'G30 与 intermediate points and can be combined with 的关系'
+2025-12-05 08:45:38,104 - src.utils.lightrag_relation_patch - WARNING - 关系 G29~used to return from 缺少描述，使用默认值: 'G29 与 used to return from 的关系'
+2025-12-05 08:45:38,234 - src.utils.lightrag_relation_patch - WARNING - 关系 G27~testing the return of 缺少描述，使用默认值: 'G27 与 testing the return of 的关系'
+2025-12-05 08:45:59,027 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 8981.9s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 08:45:59,077 - src.utils.logging_utils - INFO - Document insertion completed in 149.7min: 1 success, 0 failed
+2025-12-05 08:45:59,077 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 08:45:59,077 - src.utils.logging_utils - INFO - [25/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK983Ma连接手册（2012年4月第2版）.txt
+2025-12-05 08:45:59,078 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 08:45:59,078 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 08:45:59,078 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK983Ma连接手册（2012年4月第2版）.txt
+2025-12-05 08:45:59,562 - nano-vectordb - INFO - Load (1510, 1024) data
+2025-12-05 08:45:59,566 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 1510 data
+2025-12-05 08:45:59,622 - nano-vectordb - INFO - Load (763, 1024) data
+2025-12-05 08:45:59,626 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 763 data
+2025-12-05 08:45:59,683 - nano-vectordb - INFO - Load (475, 1024) data
+2025-12-05 08:45:59,685 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 475 data
+2025-12-05 08:45:59,690 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 08:45:59,690 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 08:45:59,691 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK983Ma连接手册（2012年4月第2版）.txt
+2025-12-05 08:45:59,691 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.03 MB
+2025-12-05 08:45:59,740 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 08:45:59,741 - src.utils.logging_utils - INFO - Processing document 1/1: 英文-GSK983Ma连接手册（2012年4月第2版）.txt (0.03 MB)
+2025-12-05 08:54:42,575 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 522.8s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 08:54:42,625 - src.utils.logging_utils - INFO - Document insertion completed in 8.7min: 1 success, 0 failed
+2025-12-05 08:54:42,625 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 08:54:42,626 - src.utils.logging_utils - INFO - [26/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK988TA安装调试手册2022年8月第3版-已压缩.txt
+2025-12-05 08:54:42,626 - src.utils.logging_utils - INFO - Event loop initialized for thread 9688
+2025-12-05 08:54:42,626 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 08:54:42,626 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK988TA安装调试手册2022年8月第3版-已压缩.txt
+2025-12-05 08:54:43,082 - nano-vectordb - INFO - Load (1556, 1024) data
+2025-12-05 08:54:43,086 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 1556 data
+2025-12-05 08:54:43,144 - nano-vectordb - INFO - Load (788, 1024) data
+2025-12-05 08:54:43,146 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 788 data
+2025-12-05 08:54:43,196 - nano-vectordb - INFO - Load (483, 1024) data
+2025-12-05 08:54:43,197 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 483 data
+2025-12-05 08:54:43,200 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 08:54:43,200 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 08:54:43,202 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\英文-GSK988TA安装调试手册2022年8月第3版-已压缩.txt
+2025-12-05 08:54:43,202 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.50 MB
+2025-12-05 08:54:43,251 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 08:54:43,251 - src.utils.logging_utils - INFO - Processing document 1/1: 英文-GSK988TA安装调试手册2022年8月第3版-已压缩.txt (0.50 MB)
+2025-12-05 10:53:52,118 - src.utils.logging_utils - INFO - ✓ Document 1 completed in 7148.8s | Progress: 1/1 (100.0%) | ETA: 0s
+2025-12-05 10:53:52,169 - src.utils.logging_utils - INFO - Document insertion completed in 119.1min: 1 success, 0 failed
+2025-12-05 10:53:52,170 - src.utils.logging_utils - INFO - 🎉 All documents processed successfully!
+2025-12-05 11:25:14,936 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-12-05 11:25:14,937 - src.utils.logging_utils - INFO - ✅ ChunkRepository initialized successfully
+2025-12-05 11:25:47,289 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-12-05 11:27:34,176 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-12-05 11:27:34,465 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_entities.json'} 0 data
+2025-12-05 11:27:34,466 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_relationships.json'} 0 data
+2025-12-05 11:27:34,466 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'lightrag_cache\\vdb_chunks.json'} 0 data
+2025-12-05 11:27:34,562 - src.utils.logging_utils - INFO - Processing all PDFs under directory: F:\QAGenPipelinesX_lightrag\working\raw
+2025-12-05 11:27:56,728 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_entities.json'} 0 data
+2025-12-05 11:27:56,728 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_relationships.json'} 0 data
+2025-12-05 11:27:56,729 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_chunks.json'} 0 data
+2025-12-05 11:27:56,825 - src.utils.logging_utils - INFO - [1/26] Inserting document into vector store: F:\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-12-05 11:27:56,825 - src.utils.logging_utils - INFO - Event loop initialized for thread 18556
+2025-12-05 11:27:56,825 - src.utils.logging_utils - INFO - Starting document insertion to working directory: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 11:27:56,825 - src.utils.logging_utils - INFO - Document source: F:\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-12-05 11:27:57,180 - nano-vectordb - INFO - Load (1556, 1024) data
+2025-12-05 11:27:57,184 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_entities.json'} 1556 data
+2025-12-05 11:27:57,229 - nano-vectordb - INFO - Load (788, 1024) data
+2025-12-05 11:27:57,231 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_relationships.json'} 788 data
+2025-12-05 11:27:57,274 - nano-vectordb - INFO - Load (483, 1024) data
+2025-12-05 11:27:57,275 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'F:\\QAGenPipelinesX_lightrag\\working\\vectorized\\vdb_chunks.json'} 483 data
+2025-12-05 11:27:57,277 - src.utils.logging_utils - INFO - Validating document paths...
+2025-12-05 11:27:57,277 - src.utils.logging_utils - INFO - Loading documents...
+2025-12-05 11:27:57,277 - src.utils.logging_utils - INFO - Loaded single document: F:\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-12-05 11:27:57,278 - src.utils.logging_utils - INFO - Documents to process: 1 files, total size: 0.01 MB
+2025-12-05 11:27:57,327 - src.utils.logging_utils - INFO - Starting document processing (1 documents)...
+2025-12-05 11:27:57,327 - src.utils.logging_utils - INFO - Processing document 1/1: 01-GSK 27i高端多通道数控系统 20250226.txt (0.01 MB)
+2025-12-05 11:28:13,263 - src.utils.logging_utils - INFO - TesseractOCR initialized successfully
+2025-12-05 11:28:13,264 - src.utils.logging_utils - INFO - ✅ ChunkRepository initialized successfully
+2025-12-05 11:28:13,708 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_entities.json'} 0 data
+2025-12-05 11:28:13,708 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_relationships.json'} 0 data
+2025-12-05 11:28:13,709 - nano-vectordb - INFO - Init {'embedding_dim': 1024, 'metric': 'cosine', 'storage_file': 'D:\\llm-test\\QAGenPipelinesX_lightrag\\working\\vdb_chunks.json'} 0 data
+2025-12-05 11:28:13,804 - src.utils.logging_utils - INFO - 开始QA生成流程
+2025-12-05 11:28:13,804 - src.utils.logging_utils - INFO - 输入目录: ..\working\processed
+2025-12-05 11:28:13,804 - src.utils.logging_utils - INFO - 输出目录: F:\QAGenPipelinesX_lightrag\working\qa-pairs、
+2025-12-05 11:28:13,804 - src.utils.logging_utils - INFO - 向量库: F:\QAGenPipelinesX_lightrag\working\vectorized
+2025-12-05 11:28:13,805 - src.utils.logging_utils - INFO - 问题目录: F:\QAGenPipelinesX_lightrag\working\questions
+2025-12-05 11:28:13,806 - src.utils.logging_utils - INFO - 找到 26 个文档待处理
+2025-12-05 11:28:13,806 - src.utils.logging_utils - INFO - [1/26] 处理文档: F:\QAGenPipelinesX_lightrag\working\processed\01-GSK 27i高端多通道数控系统 20250226.txt
+2025-12-05 11:28:13,806 - src.utils.logging_utils - INFO - 步骤1: 生成问题

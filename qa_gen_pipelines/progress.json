@@ -22118,8 +22118,8 @@
       ],
       "failed_files": [],
       "start_time": "2025-12-04T17:45:31.741854",
-      "last_update": "2025-12-04T17:47:37.908590",
-      "status": "completed",
+      "last_update": "2025-12-04T18:37:47.494022",
+      "status": "failed",
       "metadata": {
         "input_dir": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\input1",
         "output_dir": "F:\\QAGenPipelinesX_lightrag\\working\\processed"
@@ -22138,7 +22138,7 @@
           "total_items": 2
         }
       ],
-      "end_time": "2025-12-04T17:47:37.908586"
+      "end_time": "2025-12-04T18:37:47.494016"
     },
     "insert_docs_20251204_174752": {
       "operation_type": "document_insertion",
@@ -22343,7 +22343,930 @@
         }
       ],
       "end_time": "2025-12-04T18:27:38.658953"
+    },
+    "answer_gen_20251204_183258": {
+      "operation_type": "answer_generation",
+      "total_items": 72,
+      "completed_items": 2,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-12-04T18:32:58.776828",
+      "last_update": "2025-12-04T18:34:06.344868",
+      "status": "running",
+      "metadata": {},
+      "percentage_milestones": []
+    },
+    "pdf_processing_4bf54834": {
+      "operation_type": "pdf_processing",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\input1\\01-宝鸡机床VMC850L.pdf",
+          "timestamp": "2025-12-04T18:38:29.124480"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T18:38:18.481370",
+      "last_update": "2025-12-04T18:38:29.126004",
+      "status": "completed",
+      "metadata": {
+        "input_dir": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\input1",
+        "output_dir": "F:\\QAGenPipelinesX_lightrag\\working\\processed"
+      },
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T18:38:29.124495",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T18:38:29.126000"
+    },
+    "insert_docs_20251204_183901": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-宝鸡机床VMC850L.txt",
+          "timestamp": "2025-12-04T18:40:44.082346"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T18:39:01.773098",
+      "last_update": "2025-12-04T18:40:44.132728",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T18:40:44.082360",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T18:40:44.132724"
+    },
+    "pdf_processing_42ebff7f": {
+      "operation_type": "pdf_processing",
+      "total_items": 29,
+      "completed_items": 25,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\01-GSK 27i高端多通道数控系统 20250226.pdf",
+          "timestamp": "2025-12-04T18:44:19.643677"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\01-宝鸡机床VMC850L.pdf",
+          "timestamp": "2025-12-04T18:44:29.527815"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\01系统综合-铣削.pdf",
+          "timestamp": "2025-12-04T18:50:32.112245"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\02-7宝鸡TK36S.pdf",
+          "timestamp": "2025-12-04T18:50:44.104945"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\02-GSK 25i系列五轴加工中心数控系统 20250317.pdf",
+          "timestamp": "2025-12-04T18:53:36.129455"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\02-GSK 928TD-L 车床数控系统.pdf",
+          "timestamp": "2025-12-04T18:54:06.433694"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\02-佛山中一CK6046（两轴）.pdf",
+          "timestamp": "2025-12-04T18:54:16.425522"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\02-烟台米兰德VT850.pdf",
+          "timestamp": "2025-12-04T18:54:25.676915"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\02系统综合-车削.pdf",
+          "timestamp": "2025-12-04T19:03:26.702433"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\03-GSK 25Ti车铣复合数控系统 20250307.pdf",
+          "timestamp": "2025-12-04T19:05:46.299064"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\03-GSK 928TA2车床数控系统.pdf",
+          "timestamp": "2025-12-04T19:06:14.030889"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\03-GSK SJM力矩电机 20231016.pdf",
+          "timestamp": "2025-12-04T19:07:25.295982"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\小功率交流伺服电动机使用说明书2015年12月第1版（二分之一的32开大小）7定稿.pdf",
+          "timestamp": "2025-12-04T19:07:59.147595"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\注塑机用系列交流伺服电动机使用说明书（2023年9月第2版）.pdf",
+          "timestamp": "2025-12-04T19:09:18.709408"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\直线电机数控系统数控车床应用手册 1217.pdf",
+          "timestamp": "2025-12-04T19:11:25.907538"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\直线电机数控系统数控车床销售指南 1217.pdf",
+          "timestamp": "2025-12-04T19:13:43.185266"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\直线电机数控系统钻铣雕磨机床应用手册 1217.pdf",
+          "timestamp": "2025-12-04T19:15:59.487457"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\直线电机数控系统钻铣雕磨机床销售指南 1217.pdf",
+          "timestamp": "2025-12-04T19:18:25.499397"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\英文 - AE-50全电动注塑机专用驱动单元使用手册 （2013年7月第2版）-2013-07-12定稿-2013-08-22定稿.pdf",
+          "timestamp": "2025-12-04T19:21:14.360331"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.pdf",
+          "timestamp": "2025-12-04T19:23:51.340309"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\英文-AE-100全电动注塑机专用驱动单元使用手册（2013年7月第3版）-2013-07-12定稿-2013-09-16-定稿.pdf",
+          "timestamp": "2025-12-04T19:26:27.367299"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\英文-GR-L系列总线式交流伺服驱动单元使用手册2019年11月第2版定 1109 - 终稿V2-2019-12-12.pdf",
+          "timestamp": "2025-12-04T19:38:37.421684"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\英文-GSK218MC系列 PLC安装连接手册 第5版（定稿）.pdf",
+          "timestamp": "2025-12-04T20:01:26.022257"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\英文-GSK218MC系列编程操作手册 第5版 （定稿）.pdf",
+          "timestamp": "2025-12-04T20:36:52.575368"
+        },
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\raw\\英文-GSK983Ma连接手册（2012年4月第2版）.pdf",
+          "timestamp": "2025-12-04T20:38:43.131801"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T18:42:27.735574",
+      "last_update": "2025-12-04T20:38:43.131808",
+      "status": "running",
+      "metadata": {
+        "input_dir": "F:\\QAGenPipelinesX_lightrag\\working\\raw",
+        "output_dir": "F:\\QAGenPipelinesX_lightrag\\working\\processed"
+      },
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T18:50:32.112263",
+          "completed_items": 3,
+          "total_items": 29
+        },
+        {
+          "percentage": 20,
+          "timestamp": "2025-12-04T18:54:06.433709",
+          "completed_items": 6,
+          "total_items": 29
+        },
+        {
+          "percentage": 30,
+          "timestamp": "2025-12-04T19:03:26.702448",
+          "completed_items": 9,
+          "total_items": 29
+        },
+        {
+          "percentage": 40,
+          "timestamp": "2025-12-04T19:07:25.295999",
+          "completed_items": 12,
+          "total_items": 29
+        },
+        {
+          "percentage": 50,
+          "timestamp": "2025-12-04T19:11:25.907564",
+          "completed_items": 15,
+          "total_items": 29
+        },
+        {
+          "percentage": 60,
+          "timestamp": "2025-12-04T19:18:25.499426",
+          "completed_items": 18,
+          "total_items": 29
+        },
+        {
+          "percentage": 70,
+          "timestamp": "2025-12-04T19:26:27.367318",
+          "completed_items": 21,
+          "total_items": 29
+        },
+        {
+          "percentage": 80,
+          "timestamp": "2025-12-04T20:36:52.575401",
+          "completed_items": 24,
+          "total_items": 29
+        }
+      ]
+    },
+    "insert_docs_20251204_231946": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+          "timestamp": "2025-12-04T23:29:17.404790"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T23:19:46.418704",
+      "last_update": "2025-12-04T23:29:17.452894",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T23:29:17.404807",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T23:29:17.452890"
+    },
+    "insert_docs_20251204_232917": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-宝鸡机床VMC850L.txt",
+          "timestamp": "2025-12-04T23:30:37.097892"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T23:29:17.757918",
+      "last_update": "2025-12-04T23:30:37.145652",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-04T23:30:37.097910",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-04T23:30:37.145647"
+    },
+    "insert_docs_20251204_233037": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+          "timestamp": "2025-12-05T00:05:53.579031"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-04T23:30:37.455762",
+      "last_update": "2025-12-05T00:05:53.626517",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T00:05:53.579045",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T00:05:53.626513"
+    },
+    "insert_docs_20251205_000553": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+          "timestamp": "2025-12-05T00:07:05.952811"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T00:05:53.939291",
+      "last_update": "2025-12-05T00:07:06.001643",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T00:07:05.952826",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T00:07:06.001639"
+    },
+    "insert_docs_20251205_000706": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+          "timestamp": "2025-12-05T00:19:35.245896"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T00:07:06.349044",
+      "last_update": "2025-12-05T00:19:35.292749",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T00:19:35.245910",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T00:19:35.292745"
+    },
+    "insert_docs_20251205_001935": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 928TD-L 车床数控系统.txt",
+          "timestamp": "2025-12-05T00:25:01.519176"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T00:19:35.605854",
+      "last_update": "2025-12-05T00:25:01.566305",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T00:25:01.519188",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T00:25:01.566301"
+    },
+    "insert_docs_20251205_002501": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-佛山中一CK6046（两轴）.txt",
+          "timestamp": "2025-12-05T00:26:20.431900"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T00:25:01.884045",
+      "last_update": "2025-12-05T00:26:20.479095",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T00:26:20.431912",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T00:26:20.479091"
+    },
+    "insert_docs_20251205_002620": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-烟台米兰德VT850.txt",
+          "timestamp": "2025-12-05T00:27:49.647974"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T00:26:20.802245",
+      "last_update": "2025-12-05T00:27:49.695001",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T00:27:49.647987",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T00:27:49.694997"
+    },
+    "insert_docs_20251205_002749": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02系统综合-车削.txt",
+          "timestamp": "2025-12-05T01:29:32.841778"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T00:27:50.016635",
+      "last_update": "2025-12-05T01:29:32.888826",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T01:29:32.841792",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T01:29:32.888822"
+    },
+    "insert_docs_20251205_012932": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+          "timestamp": "2025-12-05T01:39:15.776018"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T01:29:33.257023",
+      "last_update": "2025-12-05T01:39:15.823448",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T01:39:15.776031",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T01:39:15.823444"
+    },
+    "insert_docs_20251205_013915": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 928TA2车床数控系统.txt",
+          "timestamp": "2025-12-05T01:45:44.186950"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T01:39:16.189906",
+      "last_update": "2025-12-05T01:45:44.234181",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T01:45:44.186964",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T01:45:44.234177"
+    },
+    "insert_docs_20251205_014544": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+          "timestamp": "2025-12-05T01:54:36.827832"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T01:45:44.601784",
+      "last_update": "2025-12-05T01:54:36.875420",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T01:54:36.827846",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T01:54:36.875416"
+    },
+    "insert_docs_20251205_015436": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\小功率交流伺服电动机使用说明书2015年12月第1版（二分之一的32开大小）7定稿.txt",
+          "timestamp": "2025-12-05T01:57:07.559094"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T01:54:37.252512",
+      "last_update": "2025-12-05T01:57:07.608723",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T01:57:07.559127",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T01:57:07.608719"
+    },
+    "insert_docs_20251205_015707": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\注塑机用系列交流伺服电动机使用说明书（2023年9月第2版）.txt",
+          "timestamp": "2025-12-05T02:06:37.874078"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T01:57:08.023763",
+      "last_update": "2025-12-05T02:06:37.922283",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T02:06:37.874090",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T02:06:37.922279"
+    },
+    "insert_docs_20251205_020637": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床应用手册 1217.txt",
+          "timestamp": "2025-12-05T02:19:40.959622"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T02:06:38.306047",
+      "last_update": "2025-12-05T02:19:41.007398",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T02:19:40.959638",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T02:19:41.007394"
+    },
+    "insert_docs_20251205_021941": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统数控车床销售指南 1217.txt",
+          "timestamp": "2025-12-05T02:28:28.622801"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T02:19:41.401911",
+      "last_update": "2025-12-05T02:28:28.670321",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T02:28:28.622814",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T02:28:28.670317"
+    },
+    "insert_docs_20251205_022828": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+          "timestamp": "2025-12-05T02:39:00.130193"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T02:28:29.061405",
+      "last_update": "2025-12-05T02:39:00.178207",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T02:39:00.130205",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T02:39:00.178203"
+    },
+    "insert_docs_20251205_023900": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床销售指南 1217.txt",
+          "timestamp": "2025-12-05T02:47:37.832139"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T02:39:00.594032",
+      "last_update": "2025-12-05T02:47:37.879951",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T02:47:37.832151",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T02:47:37.879947"
+    },
+    "insert_docs_20251205_024737": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-50全电动注塑机专用驱动单元使用手册 （2013年7月第2版）-2013-07-12定稿-2013-08-22定稿.txt",
+          "timestamp": "2025-12-05T03:04:26.250121"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T02:47:38.311147",
+      "last_update": "2025-12-05T03:04:26.297918",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T03:04:26.250135",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T03:04:26.297914"
+    },
+    "insert_docs_20251205_030426": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+          "timestamp": "2025-12-05T03:19:10.061237"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T03:04:26.729585",
+      "last_update": "2025-12-05T03:19:10.108637",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T03:19:10.061250",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T03:19:10.108633"
+    },
+    "insert_docs_20251205_031910": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文-AE-100全电动注塑机专用驱动单元使用手册（2013年7月第3版）-2013-07-12定稿-2013-09-16-定稿.txt",
+          "timestamp": "2025-12-05T03:34:43.209824"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T03:19:10.570898",
+      "last_update": "2025-12-05T03:34:43.257324",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T03:34:43.209838",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T03:34:43.257320"
+    },
+    "insert_docs_20251205_033443": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文-GR-L系列总线式交流伺服驱动单元使用手册2019年11月第2版定 1109 - 终稿V2-2019-12-12.txt",
+          "timestamp": "2025-12-05T04:31:45.232489"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T03:34:43.724206",
+      "last_update": "2025-12-05T04:31:45.280176",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T04:31:45.232502",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T04:31:45.280172"
+    },
+    "insert_docs_20251205_043145": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文-GSK218MC系列 PLC安装连接手册 第5版（定稿）.txt",
+          "timestamp": "2025-12-05T06:16:16.412225"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T04:31:45.815997",
+      "last_update": "2025-12-05T06:16:16.460219",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T06:16:16.412237",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T06:16:16.460215"
+    },
+    "insert_docs_20251205_061616": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文-GSK218MC系列编程操作手册 第5版 （定稿）.txt",
+          "timestamp": "2025-12-05T08:45:58.978753"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T06:16:17.042896",
+      "last_update": "2025-12-05T08:45:59.027322",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T08:45:58.978767",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T08:45:59.027317"
+    },
+    "insert_docs_20251205_084559": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文-GSK983Ma连接手册（2012年4月第2版）.txt",
+          "timestamp": "2025-12-05T08:54:42.527422"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T08:45:59.691519",
+      "last_update": "2025-12-05T08:54:42.575437",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T08:54:42.527434",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T08:54:42.575432"
+    },
+    "insert_docs_20251205_085442": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 1,
+      "failed_items": 0,
+      "processed_files": [
+        {
+          "file": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文-GSK988TA安装调试手册2022年8月第3版-已压缩.txt",
+          "timestamp": "2025-12-05T10:53:52.070304"
+        }
+      ],
+      "failed_files": [],
+      "start_time": "2025-12-05T08:54:43.203018",
+      "last_update": "2025-12-05T10:53:52.118792",
+      "status": "completed",
+      "metadata": {},
+      "percentage_milestones": [
+        {
+          "percentage": 10,
+          "timestamp": "2025-12-05T10:53:52.070315",
+          "completed_items": 1,
+          "total_items": 1
+        }
+      ],
+      "end_time": "2025-12-05T10:53:52.118788"
+    },
+    "insert_docs_20251205_112756": {
+      "operation_type": "document_insertion",
+      "total_items": 1,
+      "completed_items": 0,
+      "failed_items": 0,
+      "processed_files": [],
+      "failed_files": [],
+      "start_time": "2025-12-05T11:27:57.278155",
+      "last_update": "2025-12-05T11:27:57.278164",
+      "status": "running",
+      "metadata": {},
+      "percentage_milestones": []
     }
   },
-  "last_updated": "2025-12-04T18:27:38.658959"
+  "last_updated": "2025-12-05T11:27:57.278167"
 }

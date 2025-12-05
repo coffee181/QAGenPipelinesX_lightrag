@@ -1,8 +1,9 @@
 """Tesseract OCR implementation."""
 
+import gc
 import pytesseract
 from PIL import Image, ImageFilter
-from pdf2image import convert_from_path
+from pdf2image import convert_from_path, pdfinfo_from_path
 from pathlib import Path
 from typing import List
 from datetime import datetime
@@ -33,6 +34,7 @@ class TesseractOCR(OCRInterface):
         self.binarize_threshold = config.get("ocr.tesseract.binarize_threshold", 180)
         self.apply_median_filter = config.get("ocr.tesseract.apply_median_filter", True)
         self.min_confidence = config.get("ocr.tesseract.min_confidence", 30)  # 置信度阈值
+        self.page_batch_size = max(1, int(config.get("ocr.tesseract.page_batch_size", 5)))
         
         # Test tesseract installation
         try:
@@ -57,39 +59,106 @@ class TesseractOCR(OCRInterface):
         try:
             logger.info(f"Starting OCR extraction for: {pdf_path}")
             
-            # Convert PDF to images
-            images = convert_from_path(str(pdf_path), dpi=self.dpi)
-            logger.info(f"Converted PDF to {len(images)} images")
-            
-            extracted_text = []
-            
-            # Process each page
-            for i, image in enumerate(tqdm(images, desc="Processing pages")):
-                try:
-                    processed_image = (
-                        self._preprocess_image(image)
-                        if self.enable_preprocess
-                        else image
-                    )
+            try:
+                pdf_info = pdfinfo_from_path(str(pdf_path))
+                total_pages = int(pdf_info.get("Pages", 0))
+            except Exception as info_exc:
+                logger.warning(f"Failed to inspect PDF info for {pdf_path}: {info_exc}")
+                total_pages = 0
 
-                    # 使用 image_to_data 获取置信度信息，过滤低质量识别（图片噪声）
-                    data = pytesseract.image_to_data(
-                        processed_image,
-                        lang=self.lang,
-                        config=self.tesseract_config,
-                        timeout=self.timeout,
-                        output_type=pytesseract.Output.DICT
-                    )
-                    
-                    # 过滤并重建文本，只保留高置信度的识别结果
-                    page_text = self._filter_text_by_confidence(data, min_conf=self.min_confidence)
-                    
-                    if page_text.strip():
-                        extracted_text.append(f"--- Page {i + 1} ---\n{page_text.strip()}")
-                        
-                except Exception as e:
-                    logger.warning(f"Failed to extract text from page {i + 1}: {e}")
-                    continue
+            if total_pages <= 0:
+                logger.warning(
+                    f"Unable to determine page count for {pdf_path}, falling back to single-pass conversion"
+                )
+                images = convert_from_path(str(pdf_path), dpi=self.dpi)
+                total_pages = len(images)
+
+                for i, image in enumerate(tqdm(images, desc="Processing pages")):
+                    page_number = i + 1
+                    try:
+                        processed_image = (
+                            self._preprocess_image(image)
+                            if self.enable_preprocess
+                            else image
+                        )
+                        data = pytesseract.image_to_data(
+                            processed_image,
+                            lang=self.lang,
+                            config=self.tesseract_config,
+                            timeout=self.timeout,
+                            output_type=pytesseract.Output.DICT
+                        )
+                        page_text = self._filter_text_by_confidence(
+                            data, min_conf=self.min_confidence
+                        )
+                        if page_text.strip():
+                            extracted_text.append(f"--- Page {page_number} ---\n{page_text.strip()}")
+                    except Exception as e:
+                        logger.warning(f"Failed to extract text from page {page_number}: {e}")
+                    finally:
+                        image.close()
+
+                del images
+                gc.collect()
+
+                full_text = "\n\n".join(extracted_text)
+                logger.info(f"OCR extraction completed. Total characters: {len(full_text)}")
+                return full_text
+
+            extracted_text = []
+            current_page = 1
+
+            progress_desc = "Processing pages"
+            pbar = tqdm(total=total_pages, desc=progress_desc)
+
+            while current_page <= total_pages:
+                last_page = min(current_page + self.page_batch_size - 1, total_pages)
+
+                images = convert_from_path(
+                    str(pdf_path),
+                    dpi=self.dpi,
+                    first_page=current_page,
+                    last_page=last_page
+                )
+
+                for idx, image in enumerate(images):
+                    page_number = current_page + idx
+                    try:
+                        processed_image = (
+                            self._preprocess_image(image)
+                            if self.enable_preprocess
+                            else image
+                        )
+
+                        data = pytesseract.image_to_data(
+                            processed_image,
+                            lang=self.lang,
+                            config=self.tesseract_config,
+                            timeout=self.timeout,
+                            output_type=pytesseract.Output.DICT
+                        )
+
+                        page_text = self._filter_text_by_confidence(data, min_conf=self.min_confidence)
+
+                        if page_text.strip():
+                            extracted_text.append(f"--- Page {page_number} ---\n{page_text.strip()}")
+
+                    except Exception as e:
+                        logger.warning(f"Failed to extract text from page {page_number}: {e}")
+                        continue
+                    finally:
+                        image.close()
+
+                    pbar.update(1)
+
+                del images
+                gc.collect()
+
+                if not total_pages:
+                    break
+                current_page = last_page + 1
+
+            pbar.close()
             
             full_text = "\n\n".join(extracted_text)
             logger.info(f"OCR extraction completed. Total characters: {len(full_text)}")

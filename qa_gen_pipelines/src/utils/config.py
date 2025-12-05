@@ -129,6 +129,23 @@ class ConfigManager:
                     "working_dir": "./lightrag_cache",
                     "llm_model": "deepseek-chat",
                     "embed_model": "text-embedding-3-small",
+                    "embedding": {
+                        "provider": "ollama",
+                        "model": "bge-m3",
+                        "dim": 1024,
+                        "base_url": "http://localhost:11434",
+                        "timeout": 120,
+                        "max_retries": 3,
+                        "priority": ["ollama"],
+                    },
+                    "llm": {
+                        "base_url": "http://localhost:11434",
+                        "model": "deepseek-r1:32b",
+                        "temperature": 0.7,
+                        "max_tokens": 2048,
+                        "timeout": 1800,
+                        "max_retries": 5,
+                    },
                     "max_context_length": 4000
                 }
             },

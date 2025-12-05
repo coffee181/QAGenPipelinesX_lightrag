@@ -1,0 +1,1412 @@
+--- Page 1 ---
+This user manual describes all proceedings concerning the Full Electric Injection Molding Machine detail much possible. However, This user manual the property GSK CNC Equipment Co., Ltd. All This User Manual only suitable for both power and drive modules
+impractical give particular descriptions for all unnecessary rights are reserved. against the law for any organization individual for AE-80 Full Electric Injection Molding Machine. better refer the
+unallowable system operations due the manual text limit, product specific publish reprint this manual without the express written permission GSK material object touch GSK because some different description may
+applications and other causes. Therefore, the proceedings not indicated and the latter reserves the right ascertain their legal liability. occur along with the alternation the production.
+herein should considered impractical unallowable.
+
+--- Page 2 ---
+Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual It’s our pleasure for your patronage and purchase the AE-80 Full This user manual fully described the function and operation methods SECURITY WARNING order guarantee the product safety, normal and effective very essential note the following marks when you read this 人 Warning means that the wrong operation may cause the disaster
+PREFACE Electric Injection Molding Machine Drive Unit made GSK CNC Equipment for the specified power and drive modules AE-80 Full Electric Injection operation may generate accident, the person who can operation; important read this manual before installing using user manual. result death serious injury.
+Your Excellency, Co., Ltd. Molding Machine; that the user can entirely understand the integrated operate this product with the corresponding qualification. product. 人 Caution means that the wrong operation may cause hurt the
+drive unit, and use safely and effectively. operator, well damage the equipment.
+人 Notice means that improper use may damage the product and
+device.
+
+--- Page 3 ---
+Safety Precaution The stack product cartons should less than layers. stand and place the heavy matters the cartons. not use the cable connected with the product drag transport the product. not impact, scratch the panel and the display screen. Keep away the damp, sunshine and rain the cartons. Unpacking inspection Confirm whether the product the one you purchased after unpacking. Check whether the product damaged during transporting. Confirm the components are completed and without damage based upon the list. ltis better contact our company immediately the inconsistent product type, Wiring The person who attends the wiring and inspection should the professional The product should reliably grounded, and its grounding resistance should The wiring should correct and firm, order avoid the product fault The surge absorber diode with the product should connected with the necessary cut off the product power before performing the plug open
+SAFETY PRECAUTION absent accessory damage due transportation. with corresponding ability. less than 0.10; not use the neutral conductor (zero line) instead the unexpected result occurs. specified direction; otherwise, the product may damaged. the product case.
+Transportation and storage grounding cable.
+
+--- Page 4 ---
+The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+alnspection Repair
+tis important cut off the power before inspecting.
+Check whether the machine fault when short-circuit overloading occurs.
+Restart can performed after the fault eliminated.
+not frequently perform the ON/OFF the product; better wait for 1min
+least when restarting after the power turned off.
+SECURITY RESPONSIBILITY
+Security responsibility the manufacturer
+——Manufacturer should take responsibility for the design and structure danger
+the drive unit and the accessories which have been eliminated and/or controlled.
+—Manufacturer should take responsibility for the security the drive unit and
+accessories.
+—Manufacturer should take responsibility for the offered information and
+suggestions for the user.
+Security responsibility the users
+一 一 User should know and understand about the contents security operations
+learning and training the security operations the motor.
+一 一 User should take responsibility for the security and danger because increasing,
+changing modifying the original motor accessory themselves.
+一 一 User should take responsibility for the danger without following the operations,
+maintenances, installations and storages described the manual.
+
+--- Page 5 ---
+Safety Warning The design and manufacture this product not used the machinery and system necessary consider the safety protective measure the design and Confirmation necessary store and transport based upon the products storage and not pile higher, prevent from dropping The product should packed integrally. not drag the cable, motor axis and encoder transportation servo motor. The specified drive unit AE-80 full electric injection molding machine and servo Installation The specified power module, drive module and servo motor AE-80 full electric injection molding machine: not install on/close the flammable matter avoid fire. Avoid vibration; keep away impacting not install when the components are damaged absent. The specified drive unit the AE-80 full electric injection molding machine: must installed inside the defense level 2IP43 controllable cabinet. Keep adequate space from other equipment.
+SAFETY WARNING threatening for personal safety. manufacture when the machinery and system user selects this product; prevent 人 Caution transportation environment motor can not undergo the foreign force and impact. 人 Caution
+企 Warning the unexpected accident from improper operation abnormal product. Never attemptto use the damaged faulted products.
+Transportation
+人 Caution
+
+--- Page 6 ---
+The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual should have good radiating condition. prevent the dust, corrosion gas, conductor, liquid, flammable and explosive Servo motor: The installation should firmed avoid releasing because the vibration. Prevent the motor and encoder being damaged from liquid invading. Never attempt knock the motor and motor axis, avoid the damage encoder. Motor axis can not bear the overloading. Wiring The person who attends the wiring inspection should have adequate ability for The wiring and inspection should performed after the power turned off for The power module, drive module and servo motor AE-80 full electric injection Incorrect voltage power polarity may cause explosion operation accident. The wiring can performed only when the motor power module, drive module and Ensure that the cable insulation; avoid pressing the cable, not electric The wiring should correct and firmed, otherwise, the servo motor may Servo motor and terminals can not connected reversely and the power. The servo motor should connected directly with drive module, which can not Prevent the conducting fastener and cable head from entering the drive unit. The cable and heat-resistance-matter can not close the radiator and servo motor The fly-wheel diode connected parallel the output relay can not
+matters from entering. this job. 5min. molding machine should grounded. servo motor the AE-80 full electric injection molding machine are installed. shock. operated incorrectly, well, and the device may damaged due poor connect with the capacitor, inductor filter. the drive unit. connected reversely.
+connection.
+
+--- Page 7 ---
+Safety Warning Debugging operation 个 Caution Confirm whether the power module, drive module and servo motor already The servo motor should operated without loading before debugging. The loading Usage The remaining voltage drive unit still holds for while even the power turned The person who attends the disassembly and maintenance should have the Vil
+installed, and firmed before the power turned on; and check whether its power and debugging can performed after the parameter setting confirmed. Prevent the 个 Caution off. not disassemble the cable after power off for 5min; well, not touch the corresponding professional knowledge.
+wiring are correct. machinery and equipment damage from the fault operation. ESP circuit should connected ensure that the equipment can immediately terminal.
+stopped and the power can cut off soon when unexpected accident occurs.
+necessary confirm the operation signal already turned off before alarm
+reset; otherwise, may suddenly start again.
+The specified drive unit AE-80 full electric injection molding machine should
+matched with the described servo motor.
+not frequently switch on/off the power module prevent the system from damaging.
+The specified power module, drive module and servo motor the AE-80 full electric
+injection molding machine may heated after continues operate. Never attempt
+touch the radiator and motor the drive unit when operating after the power turned
+off for while.
+not refit the power and drive modules.
+Troubleshooting
+人 Warning
+
+--- Page 8 ---
+The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual necessary remove the fault reason when alarm occurs. Perform the restart Far away from the machine when instantaneous stop occurs and after the power Option The rated torque servo motor should higher the enabled consecutive loading The moment inertia value divided the motor one, which should less than The specified drive unit AE-80 full electric injection molding machine should All specifications and designs are subject change without This manual reserved final user. Chinese version all technical documents Chinese and
+Caution alarm signal before restarting it. turned again, because the machine may suddenly start (The design the notice one. the recommended value. adapted with the servo motor. notice. English languages regarded final.
+machine should without hazard when restart. Vill
+
+--- Page 9 ---
+List CHAPTER ONE SUMMARY 1.2 Drive Unit Module 1.3 Delivered Inspection 1.4 Product Appearances 2.2 The Appearance Dimension and Installation Drive Unit 2.3 Servo Motor 3.2 Power Module Terminal Function 3.3 The Wiring Drive Modulle 3.5 Interface Circuit 3.6 The Integrated Connection Diagram Drive Unit 5.2 Alarm Troubleshooting Methogd 6.2 The Keyboard Operation Drive Module 6.3 The Monitoring Method Drive Module 6.4 Speed Dry Run and JOG Operation 6.6 Analog Torque Operation 6.7 Analog Speed Analog Torque Operation 6.8 Other Control Methods 6.9 Analog Value Input Command Zero 7.2 Inspection Before the Operation 7.3 Motor Response Adjustment 8.3 Servo Motor Specification
+LIST 1.1 Product Brief CHAPTER TWO INSTALLATION CHAPTER THREE 3.4 Drive Module Terminal Function CHAPTER FOUR PARAMETER CHAPTER SIX DISPLAY AND OPERATION 6.5 Analog Speed Operation CHAPTER SEVEN POWER-ON OPERATION CHAPTER EIGHT PRODUCT TECHNOLOGY SPECIFICATION
+2.1 Environment Condition 3.1 Power Module Wiring 4.1 Parameter List .27 6.1 Power Module Display 7.1 Power Conmecttion 8.2 The Technology Specification Drive Module
+CHAPTER FIVE ALARM AND
+5.1 Alarm
+
+--- Page 10 ---
+@r- The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+
+--- Page 11 ---
+Chapter One Summary The Specified Drive Unit AE-80 Full Electric Injection Molding Machine (it The specified power and drive modules AE-80 full electric injection molding owns more advantages comparing with the traditional control system. Low energy-consumption greatly saves the electric energy and reduces the production cost, which saves 20% ~50% High control accuracy The servo drive system and closed-loop configured 17-bit absolute encoder, and its Excellent consecutive packing and low-velocity performance The packing time servo control system longer and its pressure more stable comparing High response velocity The response velocity the servo control system fast, and the pressure response time
+CHAPTER ONE SUMMARY also called AE-80 Full-Digital Full Electric Injection Molding Machine Drive Unit) machine should matched, which used the new high-efficient and comparing with the traditional control method. repeated accuracy greatly improved. with the traditional one. stable with low velocity and its conversion speed steady. extremely short.
+1.1 Product Brief new full-digital drive unit product GSK, which used high-performance 32-bit energy-saving digital full electric injection molding machine GSK. 1.2 Drive Unit Module Explanation
+Digital Signal Processor (DSP), Field Programmable Gate Array (FPGA) and Power module Perform AC-DC conversion function, turn 3-phase AC380V into
+MITUBISHI Intelligent Power Module (IPM). owns the high integration, small size, module) DTSO2A-POW AE-80.
+completed protection, perfect reliability, and uses the optimal PID calculation
+and performs the PWM control. Its performance has been reached the advanced
+level comparing the similar product with the domestic and overseas.
+
+--- Page 12 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+Perform DC-AC conversion function, turn DC538V into alterable
+Drive module voltage and frequence 3-phase outputting the servo
+Also, lled dri dri
+(Also, itis motor. the overall the DTSO1A-50, DTSO1A-75,
+module
+DTS01A-75 and DTS01A-100 AE-80.
+Drive unit combined drive unit power module and drive module;
+(Also, called motor drive unit the overall the DTSO2A-POW, DTS0O1A-50, DTSO1A-75,
+servo drive unit) DTS01A-75, DTSO1A-100 and DTSO1A-300 AE-80.
+1.3 Delivered Inspection
+better inspect immediately based upon the following items after receiving goods.
+you have any questions, touch the supplier our company.
+Inspection item Remark
+Check the drive unit and servo motor; confirm better confirm based upon the drive unit
+whether the matched goods are the ordered one. mark and servo motor nameplate.
+Check whether the goods are damaged during Check the overall appearance the goods, and
+transportation. should integrated and perfect.
+Check whether the cable released. Check whether loosened slightly shake.
+Check whether the screw loosened. Check whether loosened screwdriver.
+Notice
+The damaged absent component the servo drive unit can not installed.
+The specified drive unit AE-80 full electric injection molding machine should
+matched with servo motor with its corresponding performance.
+Please touch the supplier our company, you have any questions after you received
+the goods.
+Type meaning
+(1) The specified power module type AE-80 full electric injection molding machine
+DTS02A- POW
+Power module
+The series code name servo drive unit
+
+--- Page 13 ---
+Chapter One Summary
+(2) The specified drive module type AE-80 full electric injection molding machine
+DTS01A- kxx|
+Power component nominal current drive module (For example: DTS0O1A-300)
+The code name servo drive series
+(3) Servo motor type
+The specified drive unit AE-80 full electric injection molding machine the motor drive
+unit matched wit the full electric injection molding machine, which developed GSK,
+well the motor. The Chapter Eight offers the data GSK SJT series servo motor; and other
+data the servo motor supplied with its servo motor.
+Accessories
+(1) The standard accessories AE-80 full electric injection molding machine drive unit
+User Manual (This manual) copy
+CN1 (50-core high density plug) sets (Note
+CN2 (26-core high density plug) sets (Note
+Note better adapted with the signal cable (3m) when matching with our control system.
+Note User can select the feedback cable (3m) when offer the servo motor.
+(2) The basis accessory servo motor supplied according the servo motor user manual
+
+--- Page 14 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+1.4 Product Appearance
+The appearance power module
+bus wiring
+terminal
+Contactor
+DTSO2A-POW
+POWER SUPPLY MODULE UNIT
+Main power alarm CN1
+interface
+CNS
+ALARM
+Control power
+interface STATES
+terminal~380AC 220V
+Brake resistance
+Wiring terminal
+bee
+Grounding
+SSS
+Fig. 1-1 The power module appearance AE-80 full electric injection molding machine
+
+--- Page 15 ---
+Chapter One Summary
+The appearance drive module
+bus wiring
+terminal
+一
+Signal terminal
+和
+Feedback terminal
+全 CN2
+Bus interface (Note
+ace
+Main power (NS
+interface (Note
+Brake resistance
+interface (Note
+CN6
+Control power
+interface
+Motor wiring DTSOLA-XXX
+terminal Note
+toy
+Fig. 1-2 The drive module appearance AE-80 full electric injection molding machine
+Note present, AE-80 full electric injection molding machine matches drive modules, red DTSO1A-XXX means
+any the DTSO1A-50, DTSO1A-75, DTSO1A-100 and DTS01A-300. The drive unit configuration may differ
+from the alterations the injection molding machines; better refer the machine touch GSK.
+Note The bus interface CN3 and CN4 are not used yet, which are reserved for upgrading later.
+Note The power module alarm interface connected with the DTS01A-300 drive module CN5, which reserved
+other type drive unit modules.
+Note The brake resistance interface CN6 DTS01A-05 reserved.
+
+--- Page 16 ---
+Qr- The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+Servo motor appearance
+Encoder socket
+Motor socket
+Motor installation face
+和
+Motor shaft extension
+人 Feedback encoder
+多 有
+CAA see
+Fig. 1-3 SJT series servo motor appearance
+
+--- Page 17 ---
+Chapter Two Installation The storage and installation the product should suitable for the environment condition. The pile quantity the product restrained, which can not pile too much, prevent The storage and transportation the product should used the original package. The damaged absent component the product can not installed. The installation the product should used the fire-proof material; not install the The AE-80 full electric injection molding machine drive unit should installed inside the AE-80 full electric injection molding machine power module, drive module and servo motor not drag the servo motor cable, motor shaft and encoder. 2.1 Environment Condition
+CHAPTER TWO_ INSTALLATION damage and drop from pressing. flammable surface neighbor avoid the fire hazard. electric cabinet prevent the dust, corrosive gas, conducting material, liquid and should avoided the vibration and impact. The specified drive unit AE-80
+flammable matter from entering. full electric injection molding GSK SJT series servo motor
+0°C ~+55°C (without freeze) -20°C ~+40°C (without freeze)
+condensation)
+Storage -40°C ~+55°C -40°C ~+70°C
+temperature/humidity
+There corrosive gas, There corrosive gas, flammable gas,
+Atmosphere
+inside the controllable cabinet. (without sunshine).
+cabinet with 2IP43
+
+--- Page 18 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual The specified drive unit AE-80 full electric injection molding machine should The specified drive unit AE-80 full electric injection molding machine should not install on/clear the flammable material avoid fire hazard. Installation environment (1) Defense The structure the specified drive unit AE-80 full electric injection molding machine (2) Temperature, humidity the 45°C. order guarantee the ambient temperature around the specified drive unit AE-80
+2.2 The Appearance Dimension and Installation Drive Unit installed inside the electric cabinet with perfect protection. installed according the specified direction and interval guarantee good radiating without defense, and therefore, should installed inside the electric cabinet with good Environment temperature 0°C~+55°C, the consecutive safety working temperature below full electric injection molding machine not consecutively raised, the draft should blown the
+condition. protective avoid touching the corrosive flammable gas; prevent the conducting material, radiator the drive unit.
+metal dust, oil mist and liquid from entering it. (3) Vibration and impacting
+The installation the specified drive unit AE-80 full electric injection molding machine can
+not vibrate; the vibration should controlled under 0.5G(4.9m/s’) with some damping measure.
+The installation the drive unit can not undertake the over-pressure and impacting.
+Appearance dimension
+The AE-80 full electric injection molding machine produced GSK suitable for one power
+module and drive modules, which separately corresponds DTSO2A-POW, DTS01A-50,
+DTS01A-75, DTS01A-100 and DTSO01A-300. User can adapt the baseplate panel installation
+methods, and the installation direction vertical the installation face upward (Refer the Fig.
+2-1 The dimension figure drive unit installation board aperture).
+
+--- Page 19 ---
+Chapter Two Installation
+县
+四
+io.
+Fig. 2-1 The aperture dimension DTSO2A-POW
+os, ang
+-一
+MOR
+es。 eo.
+Fig. 2-1(b) The aperture dimension DTSO1A-50
+
+--- Page 20 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+Law
+Fig. 2-1(c) The aperture dimension DTSO1A-75
+Fig. 2-1(d) The aperture dimension DTS01A-100
+
+--- Page 21 ---
+Chapter Two Installation
+liad
+Fig. 2-1(e) The aperture dimension DTS01A-300
+2.3 Servo Motor Installation
+企 Notice
+Never knock the motor shaft encoder, prevent the motor from vibrating impacting.
+not drag the motor shaft, leading-out cable encoder when moving the motor.
+The motor shaft can not undertaken the overloading; otherwise, the motor may
+damaged.
+The motor installation should firmed with the locking measure.
+Installation environment
+(1) Defense
+The GSK SJT series servo motor not water-proof, and therefore prevent the liquid from
+splashing the motor, and avoid the oil water entering the motor from its leading wire and
+motor shaft.
+Note: user needs the water-proof motor, better give indication.
+(2) Temperature, humidity
+The ambient temperature holds -20°C ~+40°C (without freeze). The motor may heat due
+the long-term operation; better radiating the motor the narrow space the heat
+equipment around it.
+The humidity should less than 90%RH and without condensation.
+(3) Vibration
+
+--- Page 22 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+The servo motor should avoided install the vibration situation, and the vibration
+should less than equals 0.5G (4.9m/s”).
+Installation method
+(1) Installation method
+The SJT series motor uses flange installation method, and motor installation direction
+arbitrary.
+(2) Installation notice
+Never knock the motor motor shaft when disassembling the belt wheel prevent the
+encoder from damaging. better disassemble the screw-type push/pull tool.
+SJT series motor can not endure huge axis/radial direction loading.
+recommended connect the loading with spring coupling.
+The motor should fixed check washer prevent the motor from loosening.
+
+--- Page 23 ---
+Chapter Three Wiring
+CHAPTER THREE WIRING
+A\warning
+The person who attends the wiring inspection should have adequate ability deal
+with this job.
+The wiring and inspection should performed after the power turned off for 5min
+avoid electric shock.
+个 Caution
+necessary connect based upon the terminal pressure and polarity avoid
+equipment damage personal injury.
+The specified drive unit the AE-80 full electric injection molding machine and the
+terminal the servo motor are grounded firmly.
+3.1 Power Module Wiring
+Fig. 3-1 shows the configuration DTSO2A-POW interface terminal.
+Path: PE, and terminal wire diameter (Copper wire).
+CN5 TBe
+CN1 CN7
+ALM8 ALM8
+ALM7
+ALM7
+GND GND
+ALM6 ALM6
+ALM5 ALM5
+Fig. 3-1 DTSO2A-POW electric terminal figure
+
+--- Page 24 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+3.2 Power Module Terminal Function
+Table 3-1 Terminal function explanation DTSO2A-POW
+Terminal Terminal
+Signal name
+No. mark
+Brake resistance uses the dynamic braking.
+Brake resistance Power module can normally operated after
+terminal connecting the external brake resistance;
+and can not connected directly.
+ain circuit power
+Main circuit power inputs 3-phase 380V
+est
+connected with the power grounding and
+Protective grounding motor one, and its protective grounding
+terminal resistance should less than equals
+0.10.
+TB2-1 positive terminal
+negative Output 538V
+terminal
+Contactor control
+used for controlling the main circuit power
+terminal
+input the power module. The main circuit
+Contactor control
+power turned off when drive unit fault occurs.
+terminal
+Main circuit
+Alarm signal output
+CN5-2 open-phase alarm
+CN5-3 Main circuit brake
+Alarm signal output
+term
+CN5-5 Alarm signal
+Alarm signal grounding
+sounding
+CNS-7 Main circuit
+Alarm signal output
+CN5-8 under-voltage alarm
+CN5-9 Main circuit
+Alarm signal output
+CN5-10 over-voltage alarm
+The control circuit power input/output terminal
+CN7-2 Single-phase control
+220V 50Hz connected with the the
+power
+rare]
+
+--- Page 25 ---
+Chapter Three Wiring
+3.3 The Wiring Drive Module
+The external wiring figure drive module
+Servo motor
+Motor
+Bus voltage
+一
+220V Drive module
+Analog speed command input oi)
+Analog speed groundin SPD GND
+Analog torque command inpugj anys
+Analog torque grounding GN) ——————
+GND
+一
+¥CC
+Analog value output grounding 一
+Analog
+nalog torque signal outpu
+DSL 一 小 一 一
+12V~24V 24V “19 IDMA 一 一 一 一 一 -时 Encoder
+Control method shift SEN
+Servo enabling SON
+Alarm clear —o—— ALRS
+Speed selection! SCI/ZS
+Servoready SRDY
+Servo alarm ALM
+Speedarvial COIN TPso
+Encoder signal
+Output common terminal m0:
+Shielding cable
+Fig. 3-2 The external wiring drive module
+Drive module interface explanation
+(1) The power terminal TB3, TB4 drive module
+TB3
+四
+Fig. 3-3 The power terminal drive unit
+
+--- Page 26 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+Table 3-2 The external leading-wire diameter each drive module AE-80
+Terminal name DTS01A-300 DTS01A-100 DTS01A-75 DTS01A-50
+(mm‘) 2.5 2.5 1.5
+r,t (mm’)
+Note: The abovementioned leading-wire used the copper wire.
+(2) Control signal CN1
+CN1 50-core high density plug, and its pin definition shown below:
+Absolute
+PSO+ =NC
+加 PSO- encoder S+phase
+phase
+Sheng
+grounding
+TQ_REF| command cable terminal
+input Shielding
+grounding
+SPD |Analog speed able termina
+REF signal input
+Analog torque
+signal outpu Analog value
+SEN
+四 ALRS ”Alarm clear
+SPD Analog speed Servo
+GND grounding SON enabling
+Speed
+§C1/ZS| selection
+input
+Input terminal
+COM+
+SCMP Speed arrival power
+output Output
+”DG terminal
+Servo ready common port
+加 SRDY
+Servo alarm
+ALM output
+Fig. 3-4 CN1 pin
+
+--- Page 27 ---
+Chapter Three Wiring
+Wire diameter: adopts the shielding cable (It better use the twisted shielding cable);
+its wire diameter and the shielding layer should connected with terminal.
+Wire length: The cable should shortened much possible, and the control CN1 cable
+should less than 3m.
+Wiring: better depart from the dynamic wire prevent the interference from entering.
+Install the surge absorber component the sensitive parts (coils) the corresponding
+circuit: coil reverse parallel fly-wheel diode, coil parallel resistance-capacitance
+absorption circuit.
+(3) Encoder feedback signal terminal CN2
+The encoder feedback signal terminal CN2 26-core high density plug, which matched with
+the 17bit absolute encoder; and its pin distribution shown below:
+DSL+ pst
+DSL- Encoder DSL
+input Power output DMA- Encoder
+Power output grounding Encoder DMA-output
+GND grounding DMA+ DMA+output
+Power output VCC Power output
+output output
+Shielding
+grounding
+eel
+Fig. 3-5 CN2 pin
+Wire diameter: adopts the shielding cable (It better use the twisted shielding cable);
+its wire diameter 0.12mm/’, and the shielding layer should connected with terminal.
+Wire length: The cable should shortened much possible, and the control CN2 cable
+should less than 20m.
+Wiring: better depart from the dynamic wire prevent the interference from entering.
+
+--- Page 28 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual and should connected with the motor winding one one, which can not The cable and leading-wire should fixed and can not close the specified drive unit There high-capacity electrolytic capacitor inside the specified drive unit AE-80 full 3.4 Drive Module Terminal Function
+(4) Other terminal figures performed reversely. radiator and motor AE-80 full electric injection molding machine, order avoid electric injection molding machine; the remaining voltage will still hold even the power Power terminal
+Wherein, the bus interface CN3 and CN4 are reserved. reducing the insulation performance due the heat. turned off. not touch the specified drive unit and motor AE-80 full electric injection Table 3-3 The function explanations drive module terminal
+Bus interface CN5 CN6 CN7 molding machine after the power turned off for Smin. Terminal Terminal Signal
+ALM8 No. mark name
+CN3 ALM7 bus positive
+GND PHOLD 工 ball 工 terminal Main circuit power input terminal connected
+GND bus negative with TB2 the power module unit.
+CN4 ALM6 ALM6 DHOLD 6@@ _@5 terminal
+ALM5 ALMd Protective grounding terminal; the protective
+Fig. 3-6 Other terminals Protective grounding
+Notice grounding resistance should less than 0.10,
+terminal
+servo motor output and power input common
+
+--- Page 29 ---
+Chapter Three Wiring
+eee 3-phase output should connected with the motor and
+terminal terminal one one.
+Main ciroult
+Alarm signal input
+open-phase alarm
+Main circuit brake
+Alarm signal input
+ae] Alarm signal grounding Alarm signal grounding
+Main ciroult
+Alarm signal input
+CNS-8 under-voltage alarm
+CNS-9 Main circuit
+Alarm signal input
+CNS-10 over-voltage alarm
+CN6-1 PHOLD Electric brake relay contactor output terminal, the
+relay actuates when the drive unit fault occurs
+Electric brake
+stops, external connection performed
+between brake resistance and motor
+The control circuit power input/output terminal
+CN7-2 Control power single
+220V 50Hz connected with the CN7
+CN7-5 phase input terminal
+the power module unit.
+parse wou comes
+※1: Only the injection drive unit with CN5 interface the drive unit and others are reserved.
+>X2: Different drive module types match with different brake resistance. Refer the following table
+(Wherein, there brake resistance DTS01A-50).
+Table 3-4 The brake resistance specification each drive module AE-80
+Brake resistance parameter
+Drive module Resistance value (Ohm) Power (W)
+type
+DTSDIRTS
+
+--- Page 30 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+Control terminal CN1
+Table 3-5 Control signal input/output terminal CN1
+Terminal Signal
+No. name
+Analog velocity command input terminal,
+its input voltage range -10V~+10V;
+the corresponding rotation range can
+determined the parameter No.42.
+For example: the parameter No.42
+set 3000, the top analog velocity
+command voltage corresponds the
+rotation speed (R/MIN, -3000r/min
+3000r/min). may limited top
+speed exceeds the maximum speed.
+co)
+sae
+Analog velocity grounding
+Analog velocity command input terminal,
+its input voltage range -10V~ +10V;
+the corresponding torque range can
+determined the parameter No.44.
+For example: indicates with the
+percentage the rated torque. the
+rated torque 30N-m and the setting
+value 50, and then the torque the
+maximum analog torque command
+x50 100 15N-m.
+Analog
+torque Analog torque grounding
+grounding
+Analog value
+output Analog value output grounding
+grounding
+The analog torque signal output voltage
+range -10V +10V, which
+determined the torque range the
+parameter No.44.
+For example: indicates with the
+percentage the rated torque. the
+rated torque 30N-m and the setting
+value 50, and then the analog torque
+output range 10V~+10V and its
+corresponding torque -15Nm 一
+15N-m.
+
+--- Page 31 ---
+Chapter Three Wiring Zero speed clamping enables
+Shift the input terminal with servo control analog value control. The motor rotation
+method; the shift method can can speed forcedly set when zero
+determined the parameter No.10. speed clamping enables.
+Control method shift selection:
+三 [0] not shift
+[1] Shift the analog torque control
+mode analog speed control method
+when SEN closes.
+[2] Shift analog (Speed torque)
+control mode the analog speed control
+method when SEN closes.
+[3] Shift analog speed control mode
+the analog torque control method when
+SEN closes.
+[4] Shift analog (speed torque)
+control mode analog torque control
+method when SEN closes.
+Servo enabling input terminal
+[1] SON ON: the specified drive unit
+AE-80 full electric injection molding
+machine operates.
+[2] SON OFF: the specified drive unit
+AE-80 full electric injection molding
+machine stops; the motor the free
+state after stopping operation.
+三 Note The motor should still when
+the SON OFF opened before the SON
+ON.
+Note The command can input
+waiting for least 50ms after opening
+SON ON.
+Alarm clear input terminal
+[1] ALRS ON: system alarm clears.
+[2] ALRS OFF: system alarm holds.
+Velocity selection input terminal
+the velocity control method, the
+combination SC1 and SC2 used (at
+present, the SC1 and SC2 are OFF)
+名 select different internal speed
+SC1 OFF, SC2 OFF: internal speed
+[2] SC1 ON, SC2 OFF: internal speed
+[3] SC1 OFF, SC2 ON: internal speed
+[4] SC1 OFF, SC2 ON: internal speed
+Note: The numerical value the internal
+speed 1~4 can modified
+parameter.
+
+--- Page 32 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+Servo ready output terminal
+[1] SRDY ON: Control power and power
+module are normal. There alarm for
+the specified drive unit AE-80 full
+electric injection molding machine; servo
+ready output ON.
+[2] SRDY OFF: The power module
+opens the DTSO1A injection molding
+machine unit alarms; servo ready output
+OFF.
+Servo alarm output terminal
+ALM ON: There alarm for the
+specified drive unit AE-80 full electric
+injection molding machine; servo alarm
+output ON.
+[2] ALM OFF: There alarm for the
+specified drive unit AE-80 full electric
+injection molding machine; servo alarm
+output OFF.
+Speed arrival output terminal
+Speed arrival The speed arrival outputs when the
+output speed arrives exceeds the setting
+one.
+The common
+The grounding common terminal
+terminal
+control signal output terminal (other than
+the output
+the CZ)
+one
+Shielding
+grounding Shielding grounding cable terminal
+wire
+Tents
+output
+absolute Absolute encoder signal output
+encoder
+Feedback signal terminal CN2
+Table 3-6 Encoder signal input/output terminal CN2
+Terminal
+Terminal Signal
+mark
+No. name
+CN26 Power output Servo motor photoelectricity
+CN218 encoder uses +5V power;
+CN219 Use the multi-core cable parallel
+CN23 when cable longer.
+Power output
+CN21 Encoder DSL input DSL+ Typed Encoder differential data signal
+
+--- Page 33 ---
+Chapter Three Wiring
+Encoder DMA input
+[Net put Encoder differential clock signal
+Bus terminal CN3 and CN4
+Table 3-7 bus terminal
+Terminal
+Signal name
+No.
+RJ-45
+connected with control system other units.
+Standard interface
+RJ-45
+connected with control system other units.
+Standard interface
+3.5 I/O Interface Circuit
+Switch value input interface
+COM Drive unit side
+一 一 12v-24V 4.7K
+Fig. 3-7 Type1 switch value input interface
+(1) Itis supplied user, V~DC 24V, current 2100mA;
+(2) Notice: The specified drive unit AE-80 full electric injection molding machine can not
+operated the current polarity connection reversed.
+Switch value output interface
+Drive unit side
+max 50m
+一 max 25V
+Fig. 3-8 Type2 switch value output interface
+
+--- Page 34 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual (1) The external power offered user. essential note that the specified drive unit AE-80 (2) The output open-collector type, and its maximum current 50mA; the top voltage external (3) The anti-parallel fly-wheel diode should placed both ports the loading the loading the Absolute encoder interface Drive unit side
+full electric injection molding machine may damaged its power polarity reversed. power 25V. And therefore, the loading switch value output signal should met this limit relay sensitive one. the fly-wheel diode reversed, the specified drive unit theAE-80 full SN6SLBCI79A
+requirement. The specified drive unit AE-80 full electric molding machine may damaged electric injection molding machine may damaged.
+exceeds the limit requirement the output directly connected with the power.
+Y-DMA
+Fig. 3-9 Absolute photoelectric encoder input interface
+Analog value input circuit
+The analog input signal speed command torque command input signal.
+The voltage range input signal X_REF -10V~10V.
+Analog value Drive unit side
+input side
+X-SPD.
+Fig. 3-10 Analog value input circuit
+
+--- Page 35 ---
+Chapter Three Wiring
+Analog value output circuit
+Analog output signal speed torque output signal.
+The voltage range output signal X_REF -10V~ 10V.
+Analog value
+Drive unit side
+output side
+OUT
+GND
+X-SPD.
+Fig. 3-11 Analog value output circuit
+3.6 The Integrated Connection Diagram Drive Unit
+Control
+system
+External
+electric Drive unit Injection Open-mould Plasticization Ejector
+main power drive drive drive drive
+poo po-<
+一
+(CN1 (CN1 CNI (CN1
+DTSO2A-POW
+cx2 小
+CNS
+From electric CNG CNG CNG CNG
+cabinet
+220V ONT
+DTSO1A-300 DTSOLA-100 DISOLA-75 DTSO1A-50
+PBD TPE WPE WPE WPE WPE
+Brake
+resistance From electric
+ros
+Encoder Encoder Encoder Encoder
+175SJT-M380BH(A41) 175SJT-M500BH(A41Y2) 130SJT-MI50DH(A4D)
+Fig. 3-12 The integrated connection figure drive unit
+
+--- Page 36 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual the abovementioned figure shows: The CN1 the drive module connected with the system, which used for information The CN1 the power module and the CN2 the drive module connected with the external The AC220V the CN7 interface power module and the AC380V TB1 inside the electric
+exchange; electric, which separately controlled the AC380 input power module and the UVW input cabinet are separated from the electric wire-mesh; Contact GSK for details.
+each motor;
+
+--- Page 37 ---
+Chapter Four Parameter
+CHAPTER FOUR PARAMETER
+Notice
+The person who adjusts the parameter should understood the parameter meaning; incorrect
+setting may cause the equipment damage and personal damage.
+recommended that the parameter debugging should performed case the servo
+motor without loading.
+The motor parameter adapts the GSK SJT series default. The motor may not normally
+operate uses other servo motors.
+4.1 Parameter List
+The following parameters only are suitable for the specified configuration drive
+module and servo motor AE-80 full electric injection molding machine; and the
+parameter may different other drive units servo motor are used. better refer
+the material contact the GSK.
+Table 4-1 The standard configuration drive module and servo motor AE-80
+Drive module type DTS01A-50 DTS01A-100 DTS01A-75 DTS01A-300
+Servo motor type 130SJT-M150DH 175SJT-M380BH 175SJT-M500BH 265SJT-M2000BH
+(A4l) (A4IY2) (A4IY1)
+Purpose Ejector motor Mould opening Plasticization Injection motor
+drive drive motor drive drive
+The following parameters are the corresponding parameter for the above-mentioned standard
+motor and drive module.
+Table 4-2 The default parameter list AE-80 drive module
+orsora-ton
+Softwareversion(read)
+Initial display state
+Control method selection
+Speed proportional gain 100 CLC
+Speedintegraltimeconstant 100
+Torque command filter
+Speeddetectionlow-passfiter 253 300 300
+Reserved
+
+--- Page 38 ---
+入 控 ”The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+Reserved
+Resered
+p13 Resered
+Resered
+Reserved
+Resered
+Analogspeedlow-passfiterng 800 800
+Analog torque low-pass filtering 800
+Driveprohibition inputdisabled
+JoGoperationspeed 120 120
+[22 Reservred
+Maximum speedlimit_ 2400 2400 2400 3600
+Intemalspeedl
+Intemalspeedl
+Intemalspeedl
+iinternalspeed -00
+Resered
+Resered
+[ef
+industry Ethernet
+Internal 300
+Internal torque limit_ -300 -300 -300 -300
+ExtemalCCWtorquelimit 300 300 300
+ExtermnalCWtorquelimit -300 -300 -300 -300
+Speeddry run, JOG runtorquelimit 300
+”Speedcommandreverse
+Reserved
+eee
+modification value
+[oe [ae
+analog speed command voltage
+modification value
+torque command
+The top speed controlled torque 1550 1500 1500
+
+--- Page 39 ---
+Chapter Five Alarm Troubleshooting
+CHAPTER FIVE ALARM AND TROUBLESHOOTING
+The person who inspects the machine should have the professional knowledge and ability.
+The specified drive unit and motor AE-80 full injection molding machine can touched after its
+power turned off for 5min prevent the electric shock and burn.
+The specified drive unit AE-80 full electric injection molding machine can used after the fault
+removes according the alarm code.
+Confirm that the SON (Servo enabled) signal disabled before resetting alarm prevent the
+unexpected accident from suddenly starting.
+5.1 Alarm List
+Table 5-1 Alarm list
+Alarm
+一
+Wainer nigh
+were
+Speed amplifier saturation
+COW nna OFF
+Control power
+aut
+The specified drive unit -80 full electric injection
+Overloading molding machine and the motor overloading
+jee
+
+--- Page 40 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+Motor overheating The electrothermal value the motor exceeds setting
+overloading value (I*t inspection)
+Speed response fault Speed response error excessive big
+FPGA fault FPGA version inspection error
+Heat resetting System being heat resetting
+EEPROM error EEPROM error
+Brake fault Brake circuit fault
+Encoderreaderor Fail read encoder drive module
+assw
+Encoder type error Inconsistent encoder type
+一 一
+Encoder write error Fail write encoder drive module
+5.2 Alarm Troubleshooting Method
+Table 5-2 Troubleshooting method
+Alarm Alarm
+(DChange the bigger
+power for the specified
+occurs when @Control circuit board drive unit AE-80 full
+switching the fault electric injection molding
+control power @Encoder fault machine
+@Change the serveo
+motor
+input Correctly set the command
+frequency excessive high ulse input
+Overspeed
+Acceleration/deceleration
+time constant excessive Increase
+occurs inthe small, that the speed acceleration/deceleration
+motor operation overshoot value time constant
+excessive big.
+Encoder fault Change the servo motor
+Encoder cable defective Change the encoder cable
+
+--- Page 41 ---
+Chapter Five Alarm Troubleshooting
+@Set the system related
+gain again.
+Instable servo @Reduce the loading
+causing overshoot inertia moment ratio the
+gain can not set
+available value.
+@Reduce loading inertia
+@Change_ the bigger
+Loading inertia excessive power for the specified
+big drive unit and motor the
+AE-80 full electric injection
+molding machine.
+@Change servo motor
+Encoder zero error @Change encoder cable.
+The manufacturer should
+adjust the encoder zero.
+when connection
+the motor and leading wire
+performed the @Incorrect connection Correct wiring
+beginning. encoder cable leading
+wire
+@Change the DTSO1A full
+Circuit board fault electric injection molding
+machine drive unit
+occurs when @Power voltage
+switching the excessive high Check the power supply
+@Abnormal voltage
+control power
+waveform
+power module Wiring again
+resistor
+@Brake transistor Change the bigger power
+damage for the specified drive unit
+@lInternal brake resistor the AE-80 full electric
+Main circuit damage injection molding machine
+overvoltage @Reduce on-off frequency
+@Increase _acceleration/
+occurs the deceleration time constant
+motor operation @Red torque limit
+value
+capacty @Reduce loading inertia
+@Change_ the bigger
+power for thespecified
+drive unit and motor the
+AE-80 full electric injection
+molding machine
+@Circuit board fault
+Main circui occurs when @Power insurance Change the specified drive
+ain circuit unit the AE-80 full
+undervoltage power module damage electric injection molding
+@Soft-start circuit fault
+@Rectifier damage macnine
+
+--- Page 42 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+@Power voltage low
+@Temporarily cut off more Check the power
+than 20ms
+@Power capacity
+Itoccurs the inadequate Check the power
+motor operation @Instantaneously cut off
+Radiator overheat Check the loading
+[OT
+Change the specified drive
+Circuit board fault unit AE-80 full electric
+occurs when injection molding machine
+switching the Cable disconnection
+@Relay damage inside 加 Check motor
+the motor temperature
+@Reduce loading
+Motor @Reduce on-off frequency
+overheating @Reduce torque limit
+Motor overloading value
+occurs the @Reduce the related gain
+motor operation ®Change_ the bigger
+power DTSO1A drive
+module and motor
+Internal motor fault Change the servo motor
+Check the loading
+Speed @Reduce loading
+amplifier occurs the @Change_ the bigger
+saturation motor operation Loadi ive power for the specified
+fault oading excessive Dig drive unit and motor
+AE-80 full electric injection
+molding machine
+Drive Input terminals OFF @Check wiring, input
+prohibition CCW and CW. drive terminal uses power
+abnormal rohibition @Correctly set the related
+parameter
+Resered
+Check the wiring
+Change the motor
+Defective cable encoder Change the cable
+Encoder fault
+Excessive long encoder (Shorten cable
+cable cause the @Power with multi-core
+encoder voltage low parallel
+rower control internal 15V Check the control power
+@Defective connector @Change the specified
+inside the specified drive drive unit the AE-80 full
+oltage unit the AE-80 full electric injection molding
+electric injection molding machine
+machine @Check connector
+Switch power abnormal @)Check switch power
+Chip damaged
+
+--- Page 43 ---
+Chapter Five Alarm Troubleshooting
+occurs when change
+switching the Circuit board fault the AE-
+control power electric injection molding
+machine
+@Check the specified
+drive unit the AE-80 full
+electric injection molding
+@Power supply voltage machine
+lower @Power again
+IPM module @Overheating @Change the specified
+fault drive unit the AE-80 full
+occurs the electric injection molding
+motor operation machine
+ort-circuit among the
+ClIncrease circuit filter
+interference source
+Short-circuit among the
+Overcurrent
+The specified drive unit Change the specified drive
+the AE-80 full injection unit the AE-80 full
+molding machine electric injection molding
+damaged. machine
+occurs when Change the specified drive
+switching the Circuit board fault unit the AE-80 full
+control power electric injection molding
+machine
+@Check loading
+@Reduce on-off frequency
+@Reduce torque
+Operation with excessive value
+rated torque @Change bigger power
+DSTO1A injection
+molding machine drive unit
+Overloading and motor
+occurs the
+motor operation @Adjust gain
+Motor instable oscillation @lncrease acceleration/
+deceleration time
+@Reduce loading inertia
+@One phase U,V and
+disconnected for the
+specified drive unit
+AE-80 full electric injection Check the wiring
+molding machine
+@Incorrect encoder wiring
+alarm open-phase module
+Encoder 一 一
+一
+
+--- Page 44 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+Change the specified drive
+occurs when Circuit board fault mol ding
+switching the machine
+control power Incorrect parameter Correctly set the related
+setting parameter
+@Check loading
+Motor heat on-off frequency
+overloading educe torque limi
+value
+Long time operation with Change bigger power
+occurs inthe the excessive rated torque for the specified drive unit
+motor operation and motor AE-80 full
+electric injection molding
+machine
+machinery Check the machinery part
+riving
+@Check encoder wiring
+Speed occurs inthe Speed response deviation @Check whether the
+response ive parameter configuration
+slow motor operation excessive big correct.
+@Change drive unit
+Change the specified drive
+FPGA fault FPGA version signal read unit the AE-80 full
+error electric injection molding
+machine
+Instable control power Check the control power
+input
+Heat resetting circuit filter
+interfered @Far away from
+interference source
+Change the specified drive
+unit AE-80 full electric
+injection molding machine.
+Set the specified drive unit
+EEPROM Chip circuit board type (Parameter No.1)
+Error damage AE-80 full electric injection
+molding machine again
+after alter renovating, and
+then recover the default
+parameter.
+occurs when Change the specified drive
+switching the Circuit board fault dng
+control power machine
+Brae faut ore wns
+occurs inthe @Brake transistor
+motor operation damage Change into the related
+@Internal brake resistor type drive module
+damage
+
+--- Page 45 ---
+Chapter Five Alarm Troubleshooting
+@Reduce on-off frequency
+@Increase _acceleration/
+deceleration time constant
+@Reduce torque limit
+value
+brake circuit @Reduce loading inertia
+pacily @®Change the bigger
+power for the specified
+drive unit and motor
+AE-80 full electric injection
+molding machine
+Main voltage excessive Check power module
+cable damage @Change encoder cable
+motor @Change the encoder
+Encoder read the motor
+error board damaged @Change circuit board
+foreign @Remove interference
+electromagnetism
+Change the specified drive
+AID chip error WOChip circuit board unit the AE-80
+BCcunent sensor damage electric injection molding
+machine
+Encoder type @Encoder selection error (Change encoder
+error control power @Parameter setting error @Set encoder parameter
+@Encoder cable damage (Change encoder cable
+@Encoder the motor @Change the encoder
+damaged eter
+@The interference from @Far away from
+foreign electromagnetism interference source
+
+--- Page 46 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+
+--- Page 47 ---
+Chapter Six Display and Operation
+CHAPTER SIX DISPLAY AND OPERATION
+6.1 Power Module Display
+Observe whether the main circuit operation normal the ALARM and STATUS indicators the
+power module; refer the following table.
+Table 6-1 The display information power module indicator
+Alarm Status Explanation Display information
+ero poner
+STATUS indicator flash Start resistor burnt (Unrecoverable, better change
+the resistance from factory)
+During operation Main circuit alarms (overvoltage, undervoltage,
+open-phase and brake)
+the moment power off The power during releasing the main circuit.
+means OFF, means
+6.2 The Keyboard Operation Drive Module
+The drive module panel AE-80 full electric injection molding machine composes LED
+nixie-tube displays and buttons [f}, 本 and Ente which displayed various states and setting
+parameter etc. Refer the following button functions:
+Series No. numerical value increase, option forward
+Series No. numerical value decrease, option backward
+Return the previous operation menu, cancel the operation
+Enter; Enter the next operation menu, input the confirmation.
+Note: Hold the [f] and [I], the operations are repeatedly performed; the longer the hold time is, the faster the
+repeated speed is.
+6-digit LED nixie-tube displays each state and data the system; the decimal point the overall
+nixie-tube the most right one flashes, which means the alarm occurs.
+The operation performed based upon the multilayer menu; the 1*' layer main menu, which
+includes operation methods; the one the function menu under each operation method.
+Refer Fig. 6-1 Main menu operation frame:
+
+--- Page 48 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+jwonitoring method
+PA— Parameter setting
+IEE— _|Parameter
+administration Enter
+Layer
+Speed dry run
+co— Encoder zero
+operation
+Fig. 6-1 Method operation frame
+6.3 The Monitoring Method Drive Module
+Select “dP-" the layer, then enter the monitoring method pressing Entel There are
+kinds display states, and user select the desired display mode for 几 enter the concrete display
+state the [Enter| again.
+
+--- Page 49 ---
+Chapter Six Display and Operation Note the display number reaches 6-bit (For example: -12345), the prompt character will not displayed. Note The calculation method the motor current follows: Note The rotor absolute position the one-turn means that the rotor’s position related the stator, for example, Note Figure 6-3 shows the input terminal; the Figure 6-4 indicates the output terminal.
+DP-SPd_] Motor speed (r/min) Motor speed 1000r/min (li one-turn regarded period, its range The rotor position information increase counting when
+motor positive, and decrease one negative.
+PoS Low 5-bit for current position (Pulse)
+iti Current position 1245806 pulse
+High S-bit for current position («100000 [P12]
+PuSe
+5-bit for rotor absolute position 本
+(pulse) [LC45810 ]Position command 1245810
+APo. righ for rotor absolute position pulse
+pulse) Speed analog value offering
+DP-As Analog speed command (r/min) [S150] 450r/min
+[CT 50] Analog value offering 50%
+Analog torque command Rated torque
+DP_Bs_] Bus speed command(r/min) [S150] Speed bus offering 150r/min
+Bus torque command Bus offering 50% rated torque
+Feedback torque(%) Motor torque 50%
+Feedback current (A) 加 L110] Motor current 10A
+DP_TSP_] Linear speed (m/min) Linear speed 5.000m/min
+DP-CNT Current control method [CNT Current control method
+DP-Cs_] Command speed (r/min) [r. 50] Speed command -50r/min
+DP_Ct_]| Command torque 20] Torque command -20%
+Input terminal state Input terminal
+DP-Out_] Output terminal state Outputterminal
+DP_Cod_] Encoder input signal [Cod Encoder signal
+_DP-rn Operation state [rn- on] Operation state: operating
+DP-Err_] Alarm code [Err NoQalarm
+Reserved [U0]
+Fig. 6-2 The operation frame monitoring method
+Note The pulse value unit inside the system one. For example: the pulse value expresses with high 5-bit low 5-bit
+matching with the 10000 pulse/rotation motor, the calculation method shown below:
+Pulse value =high -bit numerical value 100000 -bit numerical value
+Note Control method: 1-analog speed torque control mode; 2-analog speed control mode; -Switch value speed
+control mode; 5-Speed dry run mode; 6-JOG mode; 7-Analog torque control mode; 8-Industry Ethernet control
+mode; 10-Encoder zero; 11-Open-loop operation.
+
+--- Page 50 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual Note Operation states are shown below: “mn- oFF”: Main circuit uncharged, servo system without operation; recommended that the dry run and JOG operation are performed during motor The specified drive unit SON (Servo enabling) the AE-80 full electric injection Speed dry run method: The speed command can changed the buttons this method. The motor will operate based upon the supplied speed and direction. only used the factory. JOG operation method (JOG operation method): Press the and hold it, the motor operates
+“rn- CH”: Main circuit charged, servo system without operation (Servo without enabling with alarm); no-load, guard against the equipment accident. molding machine should enabled, and the CCW, drive prohibition should
+“rn- on”: Main circuit charged, servo system with operation. disabled.
+Note “Err --” means normal and without alarm.
+SC2(Speed selection
+(Zero clamping)
+FIL(CCW torque limit) 一 SC1 (Speed selection
+RSTP (CW drive prohibition)
+RIL(CW torque limit) FSTP(CCW drive prohibition)
+ALRS (Alarm clear)
+SEN (Function shift)
+SON (Servo enabling)
+-一 A__4 4__% 一
+Fig. 6-3 Input terminal display (Stroke lights that means ON, and vice versa)
+SCMP (Speed arrival)
+Reserved ALM (Servo alarm)
+SRDY (Servo ready)
+Fig. 6-4 Output terminal display (Stroke lights that means ON, and vice versa)
+6.4 Speed Dry Run and JOG Operation
+Notice
+
+--- Page 51 ---
+Chapter Six Display and Operation Set the parameter No.4 select the analog speed operation mode. The CN1-5(SPD_REF) pin the servo CN1 terminal connected with the external speed The servo motor operation speed the external analog voltage 10V can set the parameter For example: Parameter No.42 1500 means that the motor’s top speed 1500r/min (factory setting) when Parameter No.42 3000 means that the motor’s maximum speed 3000r/min when set Precautions: The setting the parameter No.23 will affect the actual speed the motor. The 6.6 Analog Torque Operation Set the parameter No.4 select the analog torque operation mode. The CN1-7(TQ_REF) pin the servo CN1 terminal connects with the external command input; the The servo motor torque output value corresponding the external analog voltage can set For example: Parameter No.44 100 means the setting motor the rated torque operation when set 10V Parameter No.44 300 means that the setting motor times operation the rated torque when The top torque the speed arrival determined the parameter No.45 and together. The
+according the JOG speed; the motor stops releasing this button and hold zero speed; press and command input, and the CN1-15(SPD_GND) pin connected with external analog speed signal No.42. set 10V input. 10V input. motor speed 1500, the parameter No.23 set 1500, the parameter set 3000 and the CN1-11(TQ_GND) pin connects with the external analog signal grounding. The motor torque can 10V the parameter No.44. input. (Factory setting). set 10V input. maximum speed the minimum value between parameter No.45 and 23.
+hold it, the motor reversely operates based the JOG speed; the motor stops releasing this button grounding. The motor rotation speed can controlled adjusting the external analog input value. external input set 5V. However, the motor’s speed will hold the 1500 even the analog voltage controlled adjusting the external analog input value.
+and hold zero speed. only used factory. increases consecutively. Accordingly, the setting value the parameter No.23 should modified
+6.5 Analog Speed Operation the same time meet the capacity requirements.
+
+--- Page 52 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual Set the parameter No.4 select the analog speed analog torque operation mode. The CN1-5(SPD_REF) pin the CN1 terminal connects with the external speed command input; Refer the Section 6.7 analog sped operation and the Section 6.8 analogy torque operation for 6.8 Other Control Methods The encoder zero function used only factory, user can not perform it. The open-loop method only used factory, user can not perform it. Although the command voltage set “OV”, the motor may still perform with slight speed when
+6.7 Analog Speed Analog Torque Operation the CN1-15(SPD_GND) pin connects with the external analog sped signal grounding; the the parameter setting method. 6.9 Analog Value Input Command Zero the speed and torque are controlled. This caused with the slight value (mV Unit) “offset” from the
+CN1-7(TQ_REF) pin connects with the analog speed command input; CN1-11(TQ_GND) connects with previous level equipment external command voltage. The zero modification can performed the
+the external analog torque signal grounding. The speed and torque can separately controlled this Parameter No.41 analog speed and No.43 analog torque command zero modification values; the
+control mode. external analog input value set “OV” this “offset value”; the values both the DP-As and DP-At are
+treated zero, and then the motor will not perform the slight rotation offset.
+
+--- Page 53 ---
+Chapter Seven Power-on Operation The specified drive unit and motor AE-80 full electric injection molding machine should recommended that the specified drive units power the AE-80 full electric injection The power can turned after confirming the wiring connected. necessary connect ESP circuit ensure the power can immediately stopped After the fault for the specified drive unit AE-80 full electric injection molding machine not touch the specified drive unit and motor the AE-80 full electric injection molding The specified drive unit and motor the AE-80 full electric injection molding machine may 7.1 Power Connection Refer the Fig. 7-1 for the power connection, and connect the power based upon the following sequence. The power connected the input terminal and the injection molding machine The power the control circuit connected with the power module prior the main The main circuit power delays 1.5s after turned on, servo ready signal (SRDY) ON. this The PWM circuit turned after 1.5s when servo enabling connected with the power. The soft-start and dynamic brake circuits may damaged frequently turning on/off the power;
+CHAPTER SEVEN POWER-ON OPERATION grounded, terminal should connected with the equipment grounding. molding machine supplies the isolation transformer and power filter ensure the safety when fault occurs (Refer the Fig. 7-1). alarms, important confirm that the fault removed and the SON disabled before machine after the power turned off for 5min least prevent the electric shock. heat after operates for period time avoid burnt. power module DTSO2A. The bus output terminal and the servo drive power module circuit; only the control circuit power turned on, the servo ready signal (SRDY) then case, the servo enabling (SON) signal can accepted, and then inspect effective servo times/hour and below times/day the on/off frequency. The power can turned
+and anti-interference capacity. restarting the machine. are separately connected the and input terminals the servo drive module. Wherein, OFF. enabling. The specified drive unit output the AE-80 full electric injection molding machine
+the power module and should connected with brake resistance. enabled and the motor excites the operation state. The servo enabling disabled alarms,
+the PWM circuit inside the drive module closes and the motor the electric brake state.
+
+--- Page 54 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual ESP OFF
+again after cooling 30min when the fault removed the specified drive unit motor aloo o-ep-(MC)
+the AE-80 full electric injection molding machine overheating. Tel
+NFB
+“ey
+Three-phase 个 Noise
+filter 了
+Brake
+resistance
+一 -一
+一 一 上
+220V
+王
+(RA)e 一 一 ALM
+24V Servo drive unit
+Servo drive main
+power
+Fig.7-1 Drive unit power module connection diagram
+Power-on time sequence and alarm sequence:
+Control circuit
+power
+Servo alarm
+output (ALM)
+Main circuit <15s
+power
+Servo ready output Response within 10ms
+(SRDY)
+Servo enabling
+input(SON) <10ms
+<10ms
+Servo motor
+excited
+Fig. 7-2 Power-on time sequence
+
+--- Page 55 ---
+Chapter Seven Power-on Operation
+Control circuit power
+Servo alarm output
+(ALM)
+Main circuit power
+一 、<1.5s
+Servo ready output
+(SRDY)
+人 Response
+within 10ms
+Alarm clear (ALRS)
+>50ms
+Servo enabling
+input(SON) <10ms <10ms
+Servo motor excited
+should reliably cut
+off after alarm.
+Fig. 7-3 Alarm time sequence
+7.2 Inspection Before the Operation
+Firstly, inspect the following items before the power turned on, meanwhile after the
+installation and connection are performed.
+Inspect whether the power terminal wiring correct and the input voltage reliable
+and proper.
+Inspect whether the power and motor cables are short-circuited grounded.
+Inspect whether the encoder cable connection correct.
+Inspect the control signal terminal connection accurate and the power polar and
+dimension are correct.
+Inspect the specified drive unit and motor AE-80 full electric injection molding
+machine firmly fixed.
+Inspect whether the motor shaft connected the loading.
+7.3 Motor Response Adjustment
+Notice
+Incorrect parameter setting may cause equipment damage and hazard; confirm whether the
+parameter correct before starting.
+tis recommended perform the loading debugging after the no-load one executed.
+
+--- Page 56 ---
+H18x The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual (1) [Speed proportional gain] The setting value the parameter No.5 set bigger (2) [Analog speed command modification value] The setting value the parameter No.41 (3) [Speed integral time constant] The setting value the parameter No.6 set bigger Analog torque control (2) [Analog torque command modification value] The setting the parameter No.43 zero
+Analog speed control possible without vibration. Generally, the bigger the loading inertia is, the bigger the setting the zero offset compensation value the analog speed input. The setting value the possible based upon the specified condition. The response speed may rise when the [Speed (1) Set the suitable [Speed proportional gain] and [Speed integral time constant). offset compensation analog input. The setting the parameter No.44, set the top analog
+value the [Speed proportional gain] is. parameter No.42 set the maximum analog voltage corresponding top motor rotation speed. integral time constant] set excessive big, but easy vibrate. And therefore, voltage corresponding the maximum motor torque (percentage rated torque). The setting the
+The setting value the parameter the low-pass coefficient analog speed input; the better set bigger possible without vibration condition. The speed appears bigger parameter No.19 the analog torque input low-pass filter coefficient; the bigger the setting value
+bigger the setting value is, the higher the cut-off frequency is. change along with the loading alteration when the [Speed integral time constant] set is, the higher the cut-off frequency is.
+excessive small. general, the bigger the loading inertial is, the smaller the setting value
+the [Speed integral time constant] is.
+
+--- Page 57 ---
+Chapter Eight Product Technology Specification
+CHAPTER EIGHT PRODUCT TECHNOLOGY SPECIFICATION
+Notice
+The specified drive unit the AE-80 full electric injection molding machine should
+matched with the servo motor; this manual describes the adapted GSK SJT series servo motor.
+better note before ordering user matches other factory’s servo motor.
+8.1 The Technology Specification Power Module
+Table 8-1 The specified power module parameter AE-80 full electric injection molding machine
+rene
+8.2 The Technology Specification Drive Module
+Table 8-2 The main parameter for the specified drive module AE-80 full electric injection molding
+machine
+Drive module type DTS01A-50 DTS01A-100 DTS01A-75 DTS01A-300
+Bus voltage 538V
+Working: 0°C ~55°C Storage transportation: -20°C ~+70°C
+Humidity Less than 90% (Without condensation)
+Less than 0.5G (4.9m/s Hz~60 (Non-consecutive operation)
+(1) Analog speed analog torque (2) Analog speed control mode (4) Switch
+value speed control mode (5) Speed dry run mode (6) JOG mode (7) Analog
+Control method
+torque control mode (8) SERCOS control mode (10) Encoder zero method
+(11) Open-loop mod
+
+--- Page 58 ---
+Qr-4448%4% The Specified Drive Unit AE-80 Full Electric Injection Molding Machine User Manual
+Speed wave rate: <+0.03 (Loading 100%);
+<+0.02x (0.9~1.1) Power voltage
+(The numerical value corresponds the rates speed)
+Signal input input voltage
+Torque command Command
+Internal There are internal speed modes can selected based upon the external
+@Servo enabling @Alarm clear @CCW drive prohibition @CW drive
+Control input prohibition @Speed selection 1/zero speed clamping ©Speed selection
+Acceleration/decele Parameter setting acceleration/deceleration time ms~10000ms (Or/min~
+Rotation speed, current position, motor torque, motor current, linear speed,
+Monitoring function rotor absolute position, operation status, input/output terminal signal, analog
+Protective function Overspeed, power module overvoltage/undervoltage, overcurrent,
+Available loading
+8.3 Servo Motor Specification
+The following table the parameter explanation AE-80 full electric injection molding machine
+standard configuration servo motor. The motor specifications may differ from the product alteration;
+better touch the factory refer the machine itself.
+Table 8-3 The main parameter AE-80 standard configuration motor
+Type |130SJT-M150DH| 175SJT-M380BH |175SJT-M500BH 265SJT-M20
+[ID
+
+--- Page 59 ---
+Chapter Eight Product Technology Specification
+Drive module input
+three-phase 380
+voltage (V)
+[AB
+本 而
+Rotor inertia (kg-m’) 14.8x10° 14.8x10° 43.0x10°
+Note: Refer the motor user manual for the concrete parameters and specifications.

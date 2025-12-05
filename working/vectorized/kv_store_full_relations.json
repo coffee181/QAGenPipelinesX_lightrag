@@ -2,77 +2,3297 @@
   "01-GSK 27i高端多通道数控系统 20250226": {
     "relation_pairs": [
       [
-        "具备",
-        "振动抑制功能"
+        "Servo Drive Unit",
+        "adapts"
+      ],
+      [
+        "GSK 27i Series CNC System",
+        "supports"
+      ],
+      [
+        "机床实时碰撞性检测功能",
+        "模型结构图防碰撞性检测功能"
+      ],
+      [
+        "GSK 27i Series CNC System",
+        "includes"
+      ],
+      [
+        "智能总线连接诊断圆度误差分析",
+        "智能防碰撞性检测"
+      ],
+      [
+        "GSK 27i Series CNC System",
+        "incorporates"
+      ],
+      [
+        "High-Precision Spindle Positioning",
+        "achieved by"
+      ],
+      [
+        "Five-Axis RTCP",
+        "improves"
       ]
     ],
-    "count": 1,
-    "create_time": 1764843911,
-    "update_time": 1764843911,
+    "count": 8,
+    "create_time": 1764862157,
+    "update_time": 1764862157,
     "_id": "01-GSK 27i高端多通道数控系统 20250226"
   },
   "01-宝鸡机床VMC850L": {
     "relation_pairs": [
       [
-        "High-Speed Design",
+        "Travel Distances",
         "VMC850L"
       ],
       [
-        "Machine Weight",
-        "VMC850L"
+        "Precision Measurement Tools",
+        "Renishaw"
       ],
       [
         "VMC850L",
-        "Working Table Dimensions"
+        "Worktable Dimensions"
       ],
       [
-        "Balancing System",
+        "Dynamic Stability",
         "VMC850L"
       ],
       [
-        "Travel Range",
+        "Motor Power",
         "VMC850L"
       ],
       [
-        "BT40 Taper Hole",
+        "Brown & Sharp",
+        "Precision Measurement Tools"
+      ],
+      [
+        "Taiwanese Linear Rails",
         "VMC850L"
       ],
       [
-        "Machine Outer Dimensions",
+        "High-Speed Spindle Design",
         "VMC850L"
       ],
       [
-        "Spindle Center to Column Guide Rail Distance",
+        "Counterweight Balancing System",
         "VMC850L"
       ],
       [
-        "Main Spindle Speed",
+        "Tool Magazine Type",
         "VMC850L"
       ],
       [
-        "VMC850L",
-        "X/Y/Z Axis Rails"
-      ],
-      [
-        "Spindle Motor Power",
+        "Renishaw",
         "VMC850L"
       ],
       [
-        "Tool Magazine",
+        "Spindle",
         "VMC850L"
       ],
       [
-        "Spindle End Face Distance",
-        "VMC850L"
-      ],
-      [
-        "Rapid Traverse Speeds",
+        "Brown & Sharp",
         "VMC850L"
       ]
     ],
-    "count": 14,
-    "create_time": 1764844058,
-    "update_time": 1764844058,
+    "count": 13,
+    "create_time": 1764862237,
+    "update_time": 1764862237,
     "_id": "01-宝鸡机床VMC850L"
+  },
+  "01系统综合-铣削": {
+    "relation_pairs": [
+      [
+        "PLC",
+        "提供"
+      ],
+      [
+        "支持",
+        "电子齿轮箱"
+      ],
+      [
+        "实现",
+        "轮廓控制"
+      ],
+      [
+        "solves",
+        "法线方向控制"
+      ],
+      [
+        "Y轴",
+        "支持"
+      ],
+      [
+        "implements",
+        "电子齿轮箱功能(ECB)"
+      ],
+      [
+        "GSK988MA系列铣床加工中心系统",
+        "is a type of"
+      ],
+      [
+        "Z轴",
+        "支持"
+      ],
+      [
+        "GSK",
+        "provides"
+      ],
+      [
+        "Artifact",
+        "指定的圆进行连续钻孔在轴的平行方向进行等距离的间隔离性钻孔Sig SwiadFil fal REZ --刚性攻丝IOR系列单元通过攻丝轴和主轴之间的插补进行攻丝(G76/G82/G85/G86/G87/G88/G89)有高速/标准深孔方式可供选择WH,"
+      ],
+      [
+        "SSK888MA系列",
+        "支持"
+      ],
+      [
+        "GSK 208D",
+        "controls"
+      ],
+      [
+        "Content",
+        "UG, Mastercam等编程软件生成的小线段程序"
+      ],
+      [
+        "具备",
+        "系统"
+      ],
+      [
+        "GSK 990MC",
+        "implements"
+      ],
+      [
+        "GSK 988MA series支持EtherCAT总线",
+        "支持"
+      ],
+      [
+        "S/CS轴",
+        "支持"
+      ],
+      [
+        "suppresses",
+        "机械振动抑制功能"
+      ],
+      [
+        "GSK CNC Equipment Co., Ltd.",
+        "offers"
+      ],
+      [
+        "GSK-LINK",
+        "支持"
+      ],
+      [
+        "GSK CNC Equipment Co., Ltd.",
+        "develops"
+      ],
+      [
+        "X轴",
+        "支持"
+      ],
+      [
+        "provides",
+        "光栅尺"
+      ],
+      [
+        "DXF图形文件",
+        "imports"
+      ],
+      [
+        "GSK 218MC",
+        "supports"
+      ],
+      [
+        "Artifact",
+        "支持高速小线段程序模具加工"
+      ],
+      [
+        "improve",
+        "look-ahead前瞻控制技术and高次样条拟合技术"
+      ],
+      [
+        "uses",
+        "伺服电机"
+      ],
+      [
+        "GSK218MC and GSK990MC",
+        "are used on"
+      ],
+      [
+        "Artifact",
+        "针对UG，Mastercam等编程软件生成的小线段程序实现高速度高精度C72, 226. 126P03, cut6207149. ree. 2384,以指定的参数数据作矩形运动轨迹中心点开始加工向外以加的形式"
+      ],
+      [
+        "GSK 980MDc钻铣床数控系统",
+        "支持"
+      ],
+      [
+        "GSK 2080",
+        "支持"
+      ],
+      [
+        "8.4寸和10.4寸液晶屏系统",
+        "provide"
+      ],
+      [
+        "参考点检测",
+        "确保"
+      ],
+      [
+        "GSK CNC Equipment Co., Ltd.",
+        "produces"
+      ],
+      [
+        "uses",
+        "滚齿加工"
+      ],
+      [
+        "具有",
+        "刚性攻丝"
+      ]
+    ],
+    "count": 37,
+    "create_time": 1764864353,
+    "update_time": 1764864353,
+    "_id": "01系统综合-铣削"
+  },
+  "02-7宝鸡TK36S": {
+    "relation_pairs": [
+      [
+        "Maximum Machining Diameter",
+        "TK36/TK36(S)"
+      ],
+      [
+        "Main Spindle Speed",
+        "TK36/TK36(S)"
+      ],
+      [
+        "Hydraulic Chuck",
+        "TK36/TK36(S)"
+      ],
+      [
+        "Classic Style",
+        "TK36/TK36(S)"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1764864425,
+    "update_time": 1764864425,
+    "_id": "02-7宝鸡TK36S"
+  },
+  "02-GSK 25i系列五轴加工中心数控系统 20250317": {
+    "relation_pairs": [
+      [
+        "Concept",
+        "五轴五联动(RTCP)"
+      ],
+      [
+        "Included in",
+        "自动识别功能"
+      ],
+      [
+        "Applied to",
+        "阳极氧化工艺"
+      ],
+      [
+        "THM6350",
+        "高精加工精度达IT6"
+      ],
+      [
+        "Developed by",
+        "GSK"
+      ],
+      [
+        "Included in",
+        "摩擦补偿功能"
+      ],
+      [
+        "Lianhe Machine Tool Enterprise",
+        "Ningjiang Machine Tool"
+      ],
+      [
+        "Network Function",
+        "Requires"
+      ],
+      [
+        "Representative of",
+        "机械感线条分形成其独特气质"
+      ],
+      [
+        "Developed by",
+        "多轴一体化伺服系统"
+      ],
+      [
+        "Concept",
+        "VMC80IV"
+      ],
+      [
+        "Supported by",
+        "负载惯量自动识别"
+      ],
+      [
+        "GMC1530RV",
+        "Lianhe Machine Tool Enterprise"
+      ],
+      [
+        "Featured in",
+        "独立式按键或面板设计"
+      ],
+      [
+        "Concept",
+        "直线电机力矩电机全闭环零跟随技术"
+      ],
+      [
+        "Integrated into",
+        "能量回馈配置"
+      ],
+      [
+        "Concept",
+        "THM6350"
+      ],
+      [
+        "Dongguan Yu Chi",
+        "GMC1530RV"
+      ],
+      [
+        "Related to",
+        "母线设计"
+      ],
+      [
+        "Used in",
+        "全新型高性能高响应硬件平台"
+      ],
+      [
+        "Conveyed by",
+        "扎实稳重的视觉冲击力"
+      ],
+      [
+        "Baoji Machine Tool",
+        "VMC850L"
+      ],
+      [
+        "Aluminum Alloy 6063",
+        "VMC80IV"
+      ],
+      [
+        "Ningjiang Machine Tool",
+        "VMC80IV"
+      ],
+      [
+        "GSK 25i series five-axis machining center",
+        "Has"
+      ],
+      [
+        "Used by",
+        "高分辨率编码器"
+      ],
+      [
+        "Implemented in",
+        "机械振动抑制功能"
+      ],
+      [
+        "Available in",
+        "参数自动整定功能"
+      ],
+      [
+        "GSK25iMc-H08CDC",
+        "Implements"
+      ],
+      [
+        "Characterized by",
+        "力量感设计风格"
+      ],
+      [
+        "artifact",
+        "材料aurea"
+      ],
+      [
+        "Compatible with",
+        "车铣复合加工中心"
+      ]
+    ],
+    "count": 32,
+    "create_time": 1764865175,
+    "update_time": 1764865175,
+    "_id": "02-GSK 25i系列五轴加工中心数控系统 20250317"
+  },
+  "02-佛山中一CK6046（两轴）": {
+    "relation_pairs": [
+      [
+        "CK6046",
+        "Machine Tool Dimensions (L x H x W)"
+      ],
+      [
+        "Command The Future",
+        "Efficiency"
+      ],
+      [
+        "Bed鞍Layout",
+        "CK6046"
+      ],
+      [
+        "CK6046",
+        "Precision"
+      ],
+      [
+        "High-Speed Spindle Unit",
+        "Precision"
+      ],
+      [
+        "Linear Guides",
+        "Stability"
+      ],
+      [
+        "CK6046",
+        "High Rigidity"
+      ],
+      [
+        "CK6046",
+        "Spindle Unit A2-5"
+      ],
+      [
+        "Efficiency",
+        "High-Speed Spindle Unit"
+      ],
+      [
+        "Command The Future",
+        "Precision"
+      ],
+      [
+        "Command The Future",
+        "High Rigidity"
+      ],
+      [
+        "CK6046",
+        "Speed"
+      ],
+      [
+        "Accuracy",
+        "Linear Guides"
+      ],
+      [
+        "Command The Future",
+        "Speed"
+      ],
+      [
+        "CK6046",
+        "Efficiency"
+      ],
+      [
+        "CK6046",
+        "Maximum Rotation Diameter 9300"
+      ]
+    ],
+    "count": 16,
+    "create_time": 1764865580,
+    "update_time": 1764865580,
+    "_id": "02-佛山中一CK6046（两轴）"
+  },
+  "02-烟台米兰德VT850": {
+    "relation_pairs": [
+      [
+        "SolidWorks",
+        "VT850"
+      ],
+      [
+        "Feed Rate",
+        "VT850"
+      ],
+      [
+        "VT850",
+        "Worktable Dimensions"
+      ],
+      [
+        "Stylish Appearance",
+        "VT850"
+      ],
+      [
+        "VT850",
+        "上银"
+      ],
+      [
+        "Spindle Motor Power",
+        "VT850"
+      ],
+      [
+        "BT40",
+        "VT850"
+      ],
+      [
+        "High Precision Performance",
+        "VT850"
+      ],
+      [
+        "COMMAND THE FUTURE",
+        "VT850"
+      ],
+      [
+        "Travel X/Y/Z",
+        "VT850"
+      ],
+      [
+        "VT850",
+        "银泰"
+      ],
+      [
+        "Maximum Worktable Load",
+        "VT850"
+      ],
+      [
+        "Machine Tool Dimensions",
+        "VT850"
+      ],
+      [
+        "Tool Magazine Type",
+        "VT850"
+      ]
+    ],
+    "count": 14,
+    "create_time": 1764865669,
+    "update_time": 1764865669,
+    "_id": "02-烟台米兰德VT850"
+  },
+  "02系统综合-车削": {
+    "relation_pairs": [
+      [
+        "属于",
+        "数据备份与恢复"
+      ],
+      [
+        "主轴编码器反馈",
+        "主轴转速控制"
+      ],
+      [
+        "GSK 980TC3",
+        "includes"
+      ],
+      [
+        "controlled by",
+        "machine tool with industrial robot arm"
+      ],
+      [
+        "GSK 928Ti system",
+        "related to"
+      ],
+      [
+        "enables",
+        "multi-axis interpolation"
+      ],
+      [
+        "支持",
+        "方式前加减速直线型"
+      ],
+      [
+        "ARM组",
+        "刀具长度补偿组"
+      ],
+      [
+        "Diagnosis Display Functionality",
+        "Main Spindle Frequency Converter"
+      ],
+      [
+        "实时监控加工坐标位置",
+        "属于"
+      ],
+      [
+        "支持",
+        "程序容量58MB400个程序"
+      ],
+      [
+        "主轴编码器线数设置",
+        "属于"
+      ],
+      [
+        "32 Input/Output Points",
+        "Main Spindle Frequency Converter"
+      ],
+      [
+        "属于",
+        "支持双主轴控制"
+      ],
+      [
+        "LFV (Low-frequency vibration cutting)",
+        "involves"
+      ],
+      [
+        "主轴编码器反馈",
+        "刚性攻丝"
+      ],
+      [
+        "GSK 980TB3-V",
+        "equipped with"
+      ],
+      [
+        "defines",
+        "螺纹参数设定"
+      ],
+      [
+        "provides",
+        "图形仿真"
+      ],
+      [
+        "state surveillance and document transmission",
+        "supports"
+      ],
+      [
+        "adjusts for",
+        "刀具长度补偿"
+      ],
+      [
+        "主轴伺服单元",
+        "适配"
+      ],
+      [
+        "伺服刀架",
+        "适配"
+      ],
+      [
+        "常用参数自定义界面",
+        "系统"
+      ],
+      [
+        "提高加工效率",
+        "辅助编程功能"
+      ],
+      [
+        "CUBE.退尾长度角度和速度特性可设定",
+        "极坐标插补圆柱插补"
+      ],
+      [
+        "used in",
+        "基本辅助功能"
+      ],
+      [
+        "enhances",
+        "remote monitoring function for multiple systems"
+      ],
+      [
+        "GSK 988TD系列数控系统",
+        "支持"
+      ],
+      [
+        "刀具补偿",
+        "影响"
+      ],
+      [
+        "enhances",
+        "support for high-speed rotation thread processing"
+      ],
+      [
+        "maintains",
+        "力矩控制"
+      ],
+      [
+        "快速移动速度级(IS-B)",
+        "进给轴数"
+      ],
+      [
+        "simplifies",
+        "system commonly used parameter classification"
+      ],
+      [
+        "主轴编码器传动比设定",
+        "属于"
+      ],
+      [
+        "adaptive feed control",
+        "improves"
+      ],
+      [
+        "功能可自定义用一M65535之间的代码指定一段最多个代码",
+        "影响"
+      ],
+      [
+        "achieved by",
+        "human resource cost saving"
+      ],
+      [
+        "Main Spindle Frequency Converter",
+        "Three-Color Light Indicator"
+      ],
+      [
+        "属于",
+        "零件数量监控"
+      ],
+      [
+        "GSK 928TD-L Lathe CNC System",
+        "utilizes"
+      ],
+      [
+        "主轴定向刚性攻丝",
+        "实现于"
+      ],
+      [
+        "allow",
+        "customizable feed rates"
+      ],
+      [
+        "GSK 980TDi",
+        "supports"
+      ],
+      [
+        "enhances",
+        "interpolation motion record"
+      ],
+      [
+        "Main Spindle Frequency Converter",
+        "Protective Door Mechanism"
+      ],
+      [
+        "刀架控制器",
+        "适配"
+      ],
+      [
+        "刀位信号输入方式",
+        "属于"
+      ],
+      [
+        "screw thread processing",
+        "supports"
+      ],
+      [
+        "冷却液启停润滑启停",
+        "受控于"
+      ],
+      [
+        "GSK 980TDi",
+        "employs"
+      ],
+      [
+        "achieves",
+        "high-speed motion control"
+      ],
+      [
+        "part of",
+        "螺纹加工功能"
+      ],
+      [
+        "GSK 980TC3总线式车床数控系统",
+        "属于"
+      ],
+      [
+        "依赖于",
+        "支持双主轴控制"
+      ],
+      [
+        "影响",
+        "方式前加减速直线型"
+      ],
+      [
+        "uses",
+        "刀具补偿功能"
+      ],
+      [
+        "切削时间监控",
+        "属于"
+      ],
+      [
+        "error curve data analysis",
+        "helps"
+      ],
+      [
+        "automatic tool feeding",
+        "facilitates"
+      ],
+      [
+        "多边形车削轨迹预览功能",
+        "实现于"
+      ],
+      [
+        "part of",
+        "多边形车削功能"
+      ],
+      [
+        "支持车铣复合加工",
+        "最大联动轴数"
+      ],
+      [
+        "PLC梯形图文件",
+        "used with"
+      ],
+      [
+        "主轴倍率调节",
+        "属于"
+      ],
+      [
+        "主轴编码器线数设定100-9999999pyr",
+        "配合"
+      ],
+      [
+        "Main Spindle Frequency Converter",
+        "Support for Infinite Speed Adjustment"
+      ],
+      [
+        "related to",
+        "主轴编码器"
+      ],
+      [
+        "提升",
+        "适配刀架电动刀架台达伺服六刀架烟台AK31印度电动刀架PMC轴架颖伺服刀架数据备份恢复"
+      ],
+      [
+        "uses",
+        "电子齿轮指令"
+      ],
+      [
+        "GSK 988TD",
+        "江苏某客户机"
+      ],
+      [
+        "主轴编码器传动比设置",
+        "属于"
+      ],
+      [
+        "PLC程序",
+        "属于"
+      ],
+      [
+        "GSK 988TD系列数控系统",
+        "配置"
+      ],
+      [
+        "ensures",
+        "主轴攻丝软件行程检查"
+      ],
+      [
+        "系统内部指令不可重定义",
+        "约束"
+      ],
+      [
+        "Main Spindle Frequency Converter",
+        "Spindle Mechanical Settings M41, M44"
+      ],
+      [
+        "servo running data collection",
+        "supports"
+      ],
+      [
+        "error data file",
+        "facilitates"
+      ],
+      [
+        "螺纹切削加减速直线型指数型可选",
+        "螺纹头数1~99"
+      ],
+      [
+        "电动刀架",
+        "适配"
+      ],
+      [
+        "刀具寿命管理组",
+        "刀具磨损组"
+      ],
+      [
+        "GSK980TB3i-V RJ45竖式8.4英寸屏幕面膜按键主机面板安装尺寸",
+        "兼容"
+      ],
+      [
+        "Hand Pulse Control",
+        "Main Spindle Frequency Converter"
+      ],
+      [
+        "实现于",
+        "柱插补"
+      ],
+      [
+        "Dae Dan production line",
+        "uses"
+      ],
+      [
+        "GSK刀架控制器",
+        "manages"
+      ],
+      [
+        "enables",
+        "extreme fast tailing algorithm design"
+      ],
+      [
+        "刀具信号输入方式直接输入网络端口零件程序参数等文件双向传输电脑连接监控系统加工程序坐标位置",
+        "增强"
+      ],
+      [
+        "guarantee normal retreat without tooth disorder",
+        "maintains"
+      ],
+      [
+        "GSK 928TD-L Lathe CNC System",
+        "integrates"
+      ],
+      [
+        "enabled by",
+        "production efficiency improvement"
+      ],
+      [
+        "GSK 980TC3",
+        "supports"
+      ],
+      [
+        "acceleration phase speed curve",
+        "used with"
+      ],
+      [
+        "PLC功能",
+        "used in"
+      ],
+      [
+        "双向传输",
+        "零件程序、参数等文件"
+      ],
+      [
+        "IOA-01T",
+        "移系统"
+      ],
+      [
+        "critical for",
+        "phase accuracy"
+      ],
+      [
+        "主轴编码器",
+        "属于"
+      ],
+      [
+        "GSK 980TDi",
+        "utilizes"
+      ],
+      [
+        "GSK 928TD-L Lathe CNC System",
+        "supports"
+      ],
+      [
+        "improves",
+        "rigidity tapping debugging function"
+      ],
+      [
+        "PLC信号控制",
+        "主轴转速范围9999rpm"
+      ]
+    ],
+    "count": 103,
+    "create_time": 1764869372,
+    "update_time": 1764869372,
+    "_id": "02系统综合-车削"
+  },
+  "03-GSK 25Ti车铣复合数控系统 20250307": {
+    "relation_pairs": [
+      [
+        "GSK 25Ti",
+        "支持"
+      ],
+      [
+        "GSK 25Ti",
+        "配置"
+      ],
+      [
+        "GSK 25Ti",
+        "兼容"
+      ],
+      [
+        "CNC系统",
+        "使用"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1764869955,
+    "update_time": 1764869955,
+    "_id": "03-GSK 25Ti车铣复合数控系统 20250307"
+  },
+  "03-GSK 928TA2车床数控系统": {
+    "relation_pairs": [
+      [
+        "一一",
+        "企业"
+      ]
+    ],
+    "count": 1,
+    "create_time": 1764870344,
+    "update_time": 1764870344,
+    "_id": "03-GSK 928TA2车床数控系统"
+  },
+  "03-GSK SJM力矩电机 20231016": {
+    "relation_pairs": [
+      [
+        "人",
+        "应用案例"
+      ],
+      [
+        "交流伺服电动机",
+        "额定功率(kW)"
+      ],
+      [
+        "交流伺服电动机",
+        "重量(kg)"
+      ],
+      [
+        "交流伺服电动机",
+        "冷却液最小流量(L/min)"
+      ],
+      [
+        "240SJMG-M070CH",
+        "manufactures"
+      ],
+      [
+        "ISP",
+        "应用案例"
+      ],
+      [
+        "BSR",
+        "ISP"
+      ],
+      [
+        "ISP",
+        "SPSS"
+      ],
+      [
+        "交流伺服电动机",
+        "绝缘等级"
+      ],
+      [
+        "交流伺服电动机",
+        "工作制"
+      ],
+      [
+        "交流伺服电动机",
+        "转动惯量(kg.m²)"
+      ],
+      [
+        "交流伺服电动机",
+        "最高转速(r/min)"
+      ],
+      [
+        "ISP",
+        "SWS"
+      ],
+      [
+        "ISP",
+        "TIP"
+      ],
+      [
+        "交流伺服电动机",
+        "编码器用户选配"
+      ],
+      [
+        "交流伺服电动机",
+        "冷却水箱最小制冷功率(KW)"
+      ],
+      [
+        "230SJM-M100GH",
+        "produces"
+      ],
+      [
+        "AC servo torque motor",
+        "is an instance of"
+      ],
+      [
+        "交流伺服电动机",
+        "堵转转矩(N.m)"
+      ]
+    ],
+    "count": 19,
+    "create_time": 1764870876,
+    "update_time": 1764870876,
+    "_id": "03-GSK SJM力矩电机 20231016"
+  },
+  "小功率交流伺服电动机使用说明书2015年12月第1版（二分之一的32开大小）7定稿": {
+    "relation_pairs": [
+      [
+        "describes",
+        "安装说明"
+      ],
+      [
+        "includes",
+        "使用说明书"
+      ],
+      [
+        "manufactures",
+        "广州数控设备有限公司"
+      ],
+      [
+        "include",
+        "操作注意事项"
+      ]
+    ],
+    "count": 4,
+    "create_time": 1764871027,
+    "update_time": 1764871027,
+    "_id": "小功率交流伺服电动机使用说明书2015年12月第1版（二分之一的32开大小）7定稿"
+  },
+  "注塑机用系列交流伺服电动机使用说明书（2023年9月第2版）": {
+    "relation_pairs": [
+      [
+        "Our Company",
+        "Quality Assurance"
+      ],
+      [
+        "Electric Motor",
+        "User Manual"
+      ],
+      [
+        "Injection Molding Machine",
+        "uses"
+      ],
+      [
+        "Grounding Requirements",
+        "IEC 60169"
+      ],
+      [
+        "175SJT-M380BH",
+        "uses"
+      ],
+      [
+        "Electric Motor",
+        "Our Company"
+      ],
+      [
+        "Cooling Fans",
+        "cool"
+      ],
+      [
+        "Grounding Requirements",
+        "User Manual"
+      ],
+      [
+        "GB/T 757-2010",
+        "Technical Specifications"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1764871597,
+    "update_time": 1764871597,
+    "_id": "注塑机用系列交流伺服电动机使用说明书（2023年9月第2版）"
+  },
+  "直线电机数控系统数控车床应用手册 1217": {
+    "relation_pairs": [
+      [
+        "GSK 988TA System",
+        "Multi-Axis Interpolation Function"
+      ],
+      [
+        "GSK 988TA System",
+        "High-Speed Small Segment Interpolation Function"
+      ],
+      [
+        "减少磨损",
+        "无机械部件"
+      ],
+      [
+        "C/X Axis Interpolation Effect",
+        "GSK 988TA System"
+      ],
+      [
+        "Machine Tool",
+        "V6061 Aluminum Alloy"
+      ],
+      [
+        "source: AVY.",
+        "target: 直刀塔斜车机床"
+      ],
+      [
+        "GSK 988TA System",
+        "GSK CNC Equipment Co., Ltd."
+      ],
+      [
+        "source: 动单元 \\GT-150-75/75-LAR-411",
+        "target: 直刀塔斜车机床"
+      ],
+      [
+        "source: aor",
+        "target: 直刀塔斜车机床"
+      ],
+      [
+        "source: pete",
+        "target: 直刀塔斜车机床"
+      ],
+      [
+        "加工表面质量",
+        "提升"
+      ],
+      [
+        "source: See ioe",
+        "target: 直刀塔斜车机床"
+      ],
+      [
+        "GSK 988TA System",
+        "Machine Tool"
+      ],
+      [
+        "加工精度",
+        "提高"
+      ],
+      [
+        "source: GSK永磁同步直线电机",
+        "target: 直刀塔斜车机床"
+      ],
+      [
+        "source: 直技术能精密机床",
+        "target: GSK XJT系列"
+      ],
+      [
+        "GCR15 Steel",
+        "Surface Roughness Ra0.5366hm"
+      ],
+      [
+        "Artifact",
+        "防撞装置"
+      ],
+      [
+        "source: pay",
+        "target: 直刀塔斜车机床"
+      ],
+      [
+        "GSK CNC Equipment Co., Ltd.",
+        "Guangzhou Huangpu District"
+      ],
+      [
+        "Method",
+        "液冷"
+      ],
+      [
+        "source: vas",
+        "target: 动单元 \\GT-150-75/75-LAR-411"
+      ],
+      [
+        "GSK CNC Equipment Co., Ltd.",
+        "Machine Tool"
+      ],
+      [
+        "source: 直驻技术能精密机床",
+        "target: GSK XJT系列"
+      ],
+      [
+        "GCR15 Steel",
+        "Machine Tool"
+      ],
+      [
+        "Artifact",
+        "线性编码器"
+      ],
+      [
+        "source: an. tot",
+        "target: 直刀塔斜车机床"
+      ],
+      [
+        "Method",
+        "水冷"
+      ],
+      [
+        "Cutting Parameters F144000mrnymin",
+        "Machine Tool"
+      ],
+      [
+        "source: anes...",
+        "target: 直刀塔斜车机床"
+      ],
+      [
+        "source: 直线电机数控系统数控车床应用手册",
+        "target: 直刀塔斜车机床"
+      ],
+      [
+        "source: Jie",
+        "target: 直刀塔斜车机床"
+      ],
+      [
+        "source: 直驻机床解决方案",
+        "target: 直驻技术能精密机床"
+      ]
+    ],
+    "count": 33,
+    "create_time": 1764872380,
+    "update_time": 1764872380,
+    "_id": "直线电机数控系统数控车床应用手册 1217"
+  },
+  "直线电机数控系统数控车床销售指南 1217": {
+    "relation_pairs": [
+      [
+        "GSK 988TA",
+        "机床直驱"
+      ],
+      [
+        "42mm上",
+        "GSK 988TA"
+      ],
+      [
+        "GSK 988TA",
+        "注塑机顶针丝杆"
+      ],
+      [
+        "GSK 988TA",
+        "材料"
+      ],
+      [
+        "GSK 988TA",
+        "汽车凸轮轴"
+      ],
+      [
+        "GSK CNC EQUIPMENT Co., Ltd.",
+        "广州市黄埔区观达路"
+      ],
+      [
+        "GSK 988TA",
+        "椭圆车削"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1764872908,
+    "update_time": 1764872908,
+    "_id": "直线电机数控系统数控车床销售指南 1217"
+  },
+  "直线电机数控系统钻铣雕磨机床应用手册 1217": {
+    "relation_pairs": [
+      [
+        "GSK 25IMb",
+        "utilized_for"
+      ],
+      [
+        "GSK",
+        "utilizes"
+      ],
+      [
+        "used to avoid",
+        "高强材质多板结构"
+      ],
+      [
+        "Cr13模具钢(HRC28-32)",
+        "used_in"
+      ],
+      [
+        "used_in",
+        "材料模具钢(HRC55)"
+      ],
+      [
+        "GSK 25iMc",
+        "used_for"
+      ],
+      [
+        "achieved_using",
+        "高精度轮廓铣削效果"
+      ],
+      [
+        "must have",
+        "水冷机"
+      ],
+      [
+        "has",
+        "直线电机"
+      ],
+      [
+        "selected based on",
+        "驱动单元"
+      ],
+      [
+        "Balancing Cylinder",
+        "Direct Drive Lathe"
+      ],
+      [
+        "employed_by",
+        "材料模具钢(HRC55)"
+      ],
+      [
+        "Linear Motor Applications",
+        "Precision Components"
+      ],
+      [
+        "Nanoplug Complement Technology",
+        "achieves"
+      ],
+      [
+        "Primary Magnetic Plate",
+        "Secondary Magnetic Plate"
+      ]
+    ],
+    "count": 15,
+    "create_time": 1764873539,
+    "update_time": 1764873539,
+    "_id": "直线电机数控系统钻铣雕磨机床应用手册 1217"
+  },
+  "直线电机数控系统钻铣雕磨机床销售指南 1217": {
+    "relation_pairs": [
+      [
+        "直驱机床",
+        "纳米插补技术"
+      ],
+      [
+        "GSK CNC Equipment Co., Ltd.",
+        "Telephone Numbers"
+      ],
+      [
+        "GSK CNC Equipment Co., Ltd.",
+        "Machinesales@gsk.com.cn"
+      ],
+      [
+        "H13模具钢",
+        "模具加工"
+      ],
+      [
+        "GSK 25iMc",
+        "高动态加工"
+      ],
+      [
+        "4J29可伐合金",
+        "卫星片封装环框"
+      ],
+      [
+        "XD-40A立式加工中心",
+        "uses"
+      ],
+      [
+        "GSK永磁同步直线电机",
+        "is integrated into"
+      ],
+      [
+        "直驱机床",
+        "航空材料"
+      ],
+      [
+        "GSK CNC Equipment Co., Ltd.",
+        "Guangzhou"
+      ],
+      [
+        "加工精度0.01mm合格率99%",
+        "直驱机床"
+      ],
+      [
+        "AWM1505B外磨床",
+        "employs"
+      ],
+      [
+        "(020)81993683",
+        "GSK CNC Equipment Co., Ltd."
+      ],
+      [
+        "GSK 25iMc",
+        "卫星片封装环框"
+      ],
+      [
+        "RENISHAW",
+        "provides"
+      ],
+      [
+        "GSK CNC Equipment Co., Ltd.",
+        "www.gsk.com.cn"
+      ],
+      [
+        "GSK 25iMc",
+        "高精度镶块"
+      ],
+      [
+        "直驱机床",
+        "镜面效果"
+      ]
+    ],
+    "count": 18,
+    "create_time": 1764874057,
+    "update_time": 1764874057,
+    "_id": "直线电机数控系统钻铣雕磨机床销售指南 1217"
+  },
+  "英文 - AE-50全电动注塑机专用驱动单元使用手册 （2013年7月第2版）-2013-07-12定稿-2013-08-22定稿": {
+    "relation_pairs": [
+      [
+        "Specified Drive Unit",
+        "comprises"
+      ],
+      [
+        "CCW Drive Prohibition",
+        "Servo Motor"
+      ],
+      [
+        "Protective Function",
+        "Servo Motor"
+      ],
+      [
+        "AE50 Full Electric Injection Molding Machine",
+        "delivered_with"
+      ],
+      [
+        "DC+10V Range",
+        "Servo Motor"
+      ],
+      [
+        "DC+10V Voltage Range",
+        "Drive Module Input"
+      ],
+      [
+        "Specified Drive Unit",
+        "includes"
+      ],
+      [
+        "CW Drive Prohibition",
+        "Servo Motor"
+      ],
+      [
+        "Alarm Clearing",
+        "Servo Motor"
+      ],
+      [
+        "Drive Module Input",
+        "Servo Motor"
+      ],
+      [
+        "Control Input Prohibition",
+        "Servo Motor"
+      ],
+      [
+        "Servo Enabling",
+        "Servo Motor"
+      ],
+      [
+        "AE50 Servo Motor",
+        "Injection Molding Machine"
+      ],
+      [
+        "Servo Motor",
+        "Torque Command"
+      ],
+      [
+        "Monitoring Function",
+        "Servo Motor"
+      ],
+      [
+        "AE50 Servo Motor",
+        "Rated Torque"
+      ],
+      [
+        "AE50 Full Electric Injection Molding Machine",
+        "uses"
+      ],
+      [
+        "Internal Speed Modes",
+        "Servo Motor"
+      ],
+      [
+        "AE50 Servo Motor",
+        "Rated Speed"
+      ]
+    ],
+    "count": 19,
+    "create_time": 1764875065,
+    "update_time": 1764875065,
+    "_id": "英文 - AE-50全电动注塑机专用驱动单元使用手册 （2013年7月第2版）-2013-07-12定稿-2013-08-22定稿"
+  },
+  "英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿": {
+    "relation_pairs": [
+      [
+        "AE-80 Full Electric Injection Molding Machine",
+        "Power Module"
+      ],
+      [
+        "AE-80 full electric injection molding machine",
+        "Power Module"
+      ],
+      [
+        "AE-80 full electric injection molding machine",
+        "Storage transportation: -20°C ~+70°C"
+      ],
+      [
+        "Encoder",
+        "Servo Motor"
+      ],
+      [
+        "AE-80 Full Electric Injection Molding Machine",
+        "User Manual"
+      ],
+      [
+        "Servo Motor",
+        "Torque command Command"
+      ],
+      [
+        "GSK SJT Series Servo Motor",
+        "Produced by"
+      ],
+      [
+        "AE-80 Full Electric Injection Molding Machine",
+        "Injection Molding Process"
+      ],
+      [
+        "AE-80 Full Electric Injection Molding Machine",
+        "Drive Unit"
+      ],
+      [
+        "AE-80 Drive Unit",
+        "Component of"
+      ],
+      [
+        "cut-off frequency",
+        "low-pass filter coefficient"
+      ],
+      [
+        "AE-80 full electric injection molding machine",
+        "Protective function"
+      ],
+      [
+        "AE-80 full electric injection molding machine",
+        "loading inertial"
+      ],
+      [
+        "AE-80 Full Electric Injection Molding Machine",
+        "Servo Drive System"
+      ],
+      [
+        "AE-80 full electric injection molding machine",
+        "Working: 0°C ~55°C"
+      ],
+      [
+        "Drive Module Panel",
+        "Monitoring Method"
+      ],
+      [
+        "AE-80 full electric injection molding machine",
+        "Drive Module"
+      ],
+      [
+        "Full Electric Injection Molding Machine User Manual",
+        "Refers to"
+      ],
+      [
+        "Signal input voltage",
+        "Speed wave rate"
+      ],
+      [
+        "Bus voltage",
+        "Drive Module"
+      ],
+      [
+        "Drive Module Panel",
+        "LED nixie-tube displays and buttons"
+      ],
+      [
+        "AE-80 Full Electric Injection Molding Machine",
+        "Integrated Connection Diagram"
+      ],
+      [
+        "AE-80 full electric injection molding machine",
+        "Monitoring function"
+      ],
+      [
+        "AE-80 full electric injection molding machine",
+        "Humidity"
+      ],
+      [
+        "Speed integral time constant",
+        "setting value"
+      ],
+      [
+        "AE-80 full electric injection molding machine",
+        "GSK SJT series servo motor"
+      ],
+      [
+        "AE-80 Full Electric Injection Molding Machine",
+        "Servo Motor"
+      ]
+    ],
+    "count": 27,
+    "create_time": 1764875949,
+    "update_time": 1764875949,
+    "_id": "英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿"
+  },
+  "英文-AE-100全电动注塑机专用驱动单元使用手册（2013年7月第3版）-2013-07-12定稿-2013-09-16-定稿": {
+    "relation_pairs": [
+      [
+        "IPM Module",
+        "part_of"
+      ],
+      [
+        "GSK SJT series servo motor",
+        "Rated current"
+      ],
+      [
+        "Person",
+        "troubleshoots"
+      ],
+      [
+        "AE-100 Full Electric Molding Machine",
+        "manufactured by"
+      ],
+      [
+        "Tokyo",
+        "World Athletics Championship"
+      ],
+      [
+        "Carbon-Fiber Spikes",
+        "Noah Carter"
+      ],
+      [
+        "AE-100 full electric injection molding machine",
+        "Speed integral time constant"
+      ],
+      [
+        "AE-100 full electric injection molding machine",
+        "GSK SJT series servo motor"
+      ],
+      [
+        "Noah Carter",
+        "World Athletics Championship"
+      ],
+      [
+        "AE-100 Full Electric Molding Machine",
+        "uses"
+      ],
+      [
+        "100m Sprint Record",
+        "Noah Carter"
+      ],
+      [
+        "Servo Motor",
+        "connected_to"
+      ],
+      [
+        "AE-100 full electric injection molding machine",
+        "Bus voltage"
+      ],
+      [
+        "Person",
+        "inspect"
+      ],
+      [
+        "Monitoring Method",
+        "part of"
+      ],
+      [
+        "AE-100 full electric injection molding machine",
+        "Analog speed control mode"
+      ],
+      [
+        "Nixie-tube displays",
+        "component of"
+      ],
+      [
+        "Torque Command",
+        "affects"
+      ],
+      [
+        "Operation Menu",
+        "used for"
+      ],
+      [
+        "AE-100 full electric injection molding machine",
+        "Rated output power"
+      ],
+      [
+        "Injection Mold",
+        "used_in"
+      ],
+      [
+        "Loading alteration",
+        "Speed integral time constant"
+      ]
+    ],
+    "count": 22,
+    "create_time": 1764876882,
+    "update_time": 1764876882,
+    "_id": "英文-AE-100全电动注塑机专用驱动单元使用手册（2013年7月第3版）-2013-07-12定稿-2013-09-16-定稿"
+  },
+  "英文-GR-L系列总线式交流伺服驱动单元使用手册2019年11月第2版定 1109 - 终稿V2-2019-12-12": {
+    "relation_pairs": [
+      [
+        "GR-L Series Bus-type Servo Drive Unit User Manual",
+        "provides instructions for"
+      ],
+      [
+        "Static Friction Compensation",
+        "compensates for"
+      ],
+      [
+        "CNC system",
+        "Parameter management"
+      ],
+      [
+        "Servo Tuning",
+        "involves"
+      ],
+      [
+        "Brake Release Signal",
+        "outputted by"
+      ],
+      [
+        "Megameter",
+        "Servo unit"
+      ],
+      [
+        "Insulation resistance",
+        "PA01 value"
+      ],
+      [
+        "Reverse Acceleration Compensation",
+        "adjusts based on"
+      ],
+      [
+        "Alarm too high frequency sine and cosine signal",
+        "Servo Unit"
+      ],
+      [
+        "Mechanical equipment",
+        "Servo unit"
+      ],
+      [
+        "alarm treatment method",
+        "includes"
+      ],
+      [
+        "Alarm too small sine and cosine amplitude",
+        "Servo Unit"
+      ],
+      [
+        "PA14",
+        "sets"
+      ],
+      [
+        "DZY series spindle motor",
+        "uses"
+      ],
+      [
+        "PA15, PA16, PA19",
+        "are assigned by"
+      ],
+      [
+        "Motor Response",
+        "PA28"
+      ],
+      [
+        "PA01 value",
+        "Servo motor model codes"
+      ],
+      [
+        "GR2000-L",
+        "used for"
+      ],
+      [
+        "GR-L Series Bus-type Servo Drive Unit",
+        "supports"
+      ],
+      [
+        "GR-L Series Bus-type Servo Drive Unit",
+        "used in"
+      ],
+      [
+        "Mechanical equipment",
+        "Servo motor model codes"
+      ],
+      [
+        "Appendix",
+        "Installation Dimensions"
+      ],
+      [
+        "Insulation resistance",
+        "Servo unit"
+      ],
+      [
+        "Power Dimension (mm)",
+        "RXFG 1200W-2000W"
+      ],
+      [
+        "Mechanical equipment",
+        "Noise and vibration"
+      ],
+      [
+        "GSK-LINK Communication Check",
+        "Signal Lines"
+      ],
+      [
+        "connected to",
+        "servo motor"
+      ],
+      [
+        "Setting Value",
+        "Stiffness"
+      ],
+      [
+        "motor encoder",
+        "sends signal to"
+      ],
+      [
+        "PTC130",
+        "monitors"
+      ],
+      [
+        "Err5",
+        "temperature below -20°C or above PA184"
+      ],
+      [
+        "Er-27",
+        "indicates"
+      ],
+      [
+        "CN2",
+        "motor encoder"
+      ],
+      [
+        "CN8-10 (PTC130)",
+        "PTC130"
+      ],
+      [
+        "motor characteristic correction",
+        "requires"
+      ],
+      [
+        "PA19 position loop proportional gain",
+        "position following error"
+      ],
+      [
+        "GR-L Series Bus-type Servo Drive Unit User Manual",
+        "Servo motor model codes"
+      ],
+      [
+        "Braking Unit",
+        "Installation Dimensions"
+      ],
+      [
+        "encoder",
+        "sine/cosine signals"
+      ],
+      [
+        "GSK-Link",
+        "PA4"
+      ],
+      [
+        "CNC system",
+        "GR-L Series Bus-type Servo Drive Unit"
+      ],
+      [
+        "GR-L Series Bus-type Servo Drive Unit",
+        "Status monitoring and servo rigidity adjustment"
+      ],
+      [
+        "PA18 speed feedback filter system",
+        "speed loop"
+      ],
+      [
+        "GSK-Link Servo",
+        "is used for"
+      ],
+      [
+        "Insulation resistance",
+        "Megameter"
+      ],
+      [
+        "Appendix",
+        "Braking Unit"
+      ],
+      [
+        "CN3",
+        "servo drive unit"
+      ],
+      [
+        "Err14",
+        "temperature above 130°C (PTC130)"
+      ],
+      [
+        "mechanical soft",
+        "related to"
+      ],
+      [
+        "Peripheral Device Single Spindle Servo Unit",
+        "configured with"
+      ],
+      [
+        "PA25",
+        "Position Overhoot"
+      ],
+      [
+        "Servo Drive Unit",
+        "connected via"
+      ],
+      [
+        "caused by",
+        "overload alarm"
+      ],
+      [
+        "faults and troubleshooting",
+        "involves"
+      ],
+      [
+        "PA18",
+        "controls"
+      ],
+      [
+        "CN8-9 (PTC150)",
+        "PTC150"
+      ],
+      [
+        "CN3-11 and CN8-11",
+        "KTY84+"
+      ],
+      [
+        "Daily checks",
+        "Noise and vibration"
+      ],
+      [
+        "motor shaft",
+        "spindle"
+      ],
+      [
+        "Heidenhain grating ruler",
+        "is used with"
+      ],
+      [
+        "required for",
+        "zero setting"
+      ],
+      [
+        "PA28",
+        "Setting Value"
+      ],
+      [
+        "affected by",
+        "motor encoder signal wire"
+      ],
+      [
+        "Err15",
+        "temperature above 150°C (PTC150)"
+      ]
+    ],
+    "count": 64,
+    "create_time": 1764880304,
+    "update_time": 1764880304,
+    "_id": "英文-GR-L系列总线式交流伺服驱动单元使用手册2019年11月第2版定 1109 - 终稿V2-2019-12-12"
+  },
+  "英文-GSK218MC系列 PLC安装连接手册 第5版（定稿）": {
+    "relation_pairs": [
+      [
+        "Editing Bar",
+        "contains options for"
+      ],
+      [
+        "GSK218MC Machining Center CNC System",
+        "uses"
+      ],
+      [
+        "Emergency Stop Procedure",
+        "emergency stop"
+      ],
+      [
+        "F124#0 ~#A",
+        "related to"
+      ],
+      [
+        "Block Selection",
+        "indicates"
+      ],
+      [
+        "Tool Holder Usage",
+        "tool holder"
+      ],
+      [
+        "Abnormal Tool Feed Position (A004.6)",
+        "Checking Detection Switches"
+      ],
+      [
+        "Context Menu",
+        "provides options for"
+      ],
+      [
+        "ARO002 ~AR152",
+        "used by"
+      ],
+      [
+        "IS_COMPONENT_OF",
+        "Ladder Diagram"
+      ],
+      [
+        "Modify Note",
+        "is a function in"
+      ],
+      [
+        "DATA DOWNLOAD SUCCEEDED",
+        "indicates"
+      ],
+      [
+        "Address Y5",
+        "is a type of"
+      ],
+      [
+        "Ladder Diagram Editing Software",
+        "enables"
+      ],
+      [
+        "IS_TIMING_PARAMETER_OF",
+        "TMR"
+      ],
+      [
+        "F130#0, F133#0",
+        "used by"
+      ],
+      [
+        "Clamping Tools",
+        "Tool Release State and Tool Magazine Fails Change Tool (A006.0)"
+      ],
+      [
+        "GSK218MC Machining Center CNC System",
+        "K0060"
+      ],
+      [
+        "Abnormal Tool Magazine Moving (A004.3)",
+        "User-defined Causes"
+      ],
+      [
+        "System Timer",
+        "is managed by"
+      ],
+      [
+        "Data Modification",
+        "Tool Code Repeated in Tool Table (A005.5)"
+      ],
+      [
+        "RO102~R1202",
+        "related to"
+      ],
+      [
+        "-OT1~-OT5",
+        "monitored by"
+      ],
+      [
+        "AXIS4, AXIS8",
+        "referenced by"
+      ],
+      [
+        "K010.6",
+        "Parameter Setting"
+      ],
+      [
+        "DT",
+        "stores"
+      ],
+      [
+        "Information Display Request",
+        "is managed by"
+      ],
+      [
+        "Abnormal Tool Magazine Zero Returning (A004.4)",
+        "Resetting Process"
+      ],
+      [
+        "Safety Precautions",
+        "machine operation"
+      ],
+      [
+        "Tool Change Code",
+        "cannot be executed"
+      ],
+      [
+        "Tool Change Stops Abnormally (A005.4)",
+        "Tool Count Adjustment"
+      ],
+      [
+        "Latching Relay Address",
+        "part-of"
+      ],
+      [
+        "Counter Address",
+        "part-of"
+      ],
+      [
+        "Darlington tube",
+        "is part of"
+      ],
+      [
+        "Latching Relay",
+        "is managed by"
+      ],
+      [
+        "IS_PARAMETER_OF",
+        "KPAR"
+      ],
+      [
+        "MSP00~MSP17",
+        "controlled by"
+      ],
+      [
+        "PRGZ",
+        "used by"
+      ],
+      [
+        "D240-D247",
+        "manage"
+      ],
+      [
+        "Illegal Downloading Parameter",
+        "affects"
+      ],
+      [
+        "Ladder Diagram User Guide",
+        "providesConfigurationFor"
+      ],
+      [
+        "G255",
+        "manages"
+      ],
+      [
+        "Skip Signal",
+        "Skip Signals in User Macro Programs"
+      ],
+      [
+        "Mechanical arm operations",
+        "relate to"
+      ],
+      [
+        "Four-Axle Linkage Function",
+        "isUsedIn"
+      ],
+      [
+        "IS_INTERFACE_OF",
+        "Ladder Diagram Parameter Interface"
+      ],
+      [
+        "Abnormal Tool Magazine, Zero Returning Required (A005.0)",
+        "Resetting Time Settings"
+      ],
+      [
+        "Tapping Signal",
+        "Tapping Signals and Spindle Control"
+      ],
+      [
+        "GR21~GR24",
+        "used by"
+      ],
+      [
+        "Command Table Program",
+        "is generated by"
+      ],
+      [
+        "GSK218MC Machining Center CNC System",
+        "incorporates"
+      ],
+      [
+        "BFA LZR",
+        "GSK218MC Machining Center CNC System"
+      ],
+      [
+        "GSK218MC Machining Center CNC System",
+        "LALM"
+      ],
+      [
+        "Override Cancellation",
+        "is handled by"
+      ],
+      [
+        "Shortcut Keys",
+        "facilitate"
+      ],
+      [
+        "Backlash Compensation",
+        "Dial Indicator"
+      ],
+      [
+        "+0T1~+0T5",
+        "monitored by"
+      ],
+      [
+        "Adjustment Mode",
+        "tool magazine"
+      ],
+      [
+        "Tool Magazine Original Spot Lost Zero Returning (A004.5)",
+        "Tool Magazine Zero Point Position Set Validly (A005.3)"
+      ],
+      [
+        "Fig. 4-3-2-1",
+        "illustrates"
+      ],
+      [
+        "Spindle detection closed contact",
+        "indicates"
+      ],
+      [
+        "Parameters",
+        "control"
+      ],
+      [
+        "AXIS1, AXIS2",
+        "referenced by"
+      ],
+      [
+        "Spindle Positioning",
+        "Spindle Underposition Too Position Fails Feed (A005.7)"
+      ],
+      [
+        "DC",
+        "stores"
+      ],
+      [
+        "Ladder Diagram Editing Software",
+        "allows"
+      ],
+      [
+        "Spindle Stop",
+        "is controlled by"
+      ],
+      [
+        "Ladder Diagram Editing Software",
+        "supports"
+      ],
+      [
+        "Ladder Diagram Editing Software",
+        "permits"
+      ],
+      [
+        "EACNT1~EACNT5",
+        "monitored by"
+      ],
+      [
+        "Abnormal Tool Retract (A005.2)",
+        "Output Verification"
+      ],
+      [
+        "Y13-Y23",
+        "correspond to"
+      ],
+      [
+        "DIR1-DIR5",
+        "Drive Unit Settings"
+      ],
+      [
+        "G13",
+        "GSK218MC Machining Center CNC System"
+      ],
+      [
+        "CNC System",
+        "Gear Shift Mode"
+      ],
+      [
+        "Funnel Type Tool Magazine",
+        "isIntegratedWith"
+      ],
+      [
+        "Spindle Clamping",
+        "Spindle with Tool Fail Feed Tool (A006.1)"
+      ],
+      [
+        "Gear Ratio Adjustment",
+        "P160-P169, PA12, PA13"
+      ],
+      [
+        "Tool magazine zero return Parameter",
+        "controls"
+      ],
+      [
+        "Abnormal Tool Retract Position (A004.7)",
+        "Output Signals Check"
+      ],
+      [
+        "Editing View",
+        "displays"
+      ],
+      [
+        "Abnormal Tool Magazine Rotation Motor (A004.1)",
+        "Tool Magazine Feed Position Alarm (A004.2)"
+      ],
+      [
+        "F120#0 ~#4",
+        "related to"
+      ],
+      [
+        "TEACH",
+        "enabled by"
+      ],
+      [
+        "GSK218MC Machining Center",
+        "UTILIZES"
+      ],
+      [
+        "F63",
+        "handles"
+      ],
+      [
+        "Orientation Adjustment",
+        "spindle orientation angle"
+      ],
+      [
+        "ERS",
+        "used by"
+      ],
+      [
+        "Timer Address",
+        "related-to"
+      ],
+      [
+        "Datasheet Address",
+        "related-to"
+      ],
+      [
+        "TIMER DOWNLOAD SUCCEEDED",
+        "indicates"
+      ],
+      [
+        "Funnel Type Tool Magazine",
+        "configuredUsing"
+      ],
+      [
+        "Spindle Not Consistent with Current Tool the Tool Magazine and Fail Feed Tool (A006.2)",
+        "Tool Number Matching"
+      ],
+      [
+        "Setting K010.6",
+        "Tool Magazine Zero Point Position Set Validly (A005.3)"
+      ],
+      [
+        "TL1, TL2, TL4, TL8",
+        "monitored by"
+      ],
+      [
+        "Appendix Address between PLC and CNC",
+        "includes"
+      ],
+      [
+        "F126#0 ~#4",
+        "related to"
+      ],
+      [
+        "Context Menu",
+        "provides access to"
+      ],
+      [
+        "ZRF1~ZRF5",
+        "referenced by"
+      ],
+      [
+        "Emergency Stop",
+        "is managed by"
+      ],
+      [
+        "GR1",
+        "Input Signal"
+      ],
+      [
+        "BESL",
+        "monitored by"
+      ],
+      [
+        "Axis Positioning",
+        "Out Tool Change Position, Fail Feed Tool (A005.6)"
+      ],
+      [
+        "Abnormal Tool Feed (A005.1)",
+        "Detection Switch Functionality"
+      ]
+    ],
+    "count": 104,
+    "create_time": 1764886575,
+    "update_time": 1764886575,
+    "_id": "英文-GSK218MC系列 PLC安装连接手册 第5版（定稿）"
+  },
+  "英文-GSK218MC系列编程操作手册 第5版 （定稿）": {
+    "relation_pairs": [
+      [
+        "DATA 25: skipped segment have effect the CNC coordinate values and modal values.",
+        "references"
+      ],
+      [
+        "System parameter number 043 QZA",
+        "controls deep-hole drilling operations and alarm notifications"
+      ],
+      [
+        "Main Axis (fourth-speed gear)",
+        "Tool Retraction Involves Main Axis And Tapping Axis"
+      ],
+      [
+        "Y-axis",
+        "determined by"
+      ],
+      [
+        "Program Segment Replacement",
+        "uses"
+      ],
+      [
+        "4th-axis",
+        "determined by"
+      ],
+      [
+        "5th-axis",
+        "uses"
+      ],
+      [
+        "X-axis",
+        "determined by"
+      ],
+      [
+        "Centering operation",
+        "involves"
+      ],
+      [
+        "AXS4",
+        "configures type of"
+      ],
+      [
+        "ROS1",
+        "selects coordinate system for"
+      ],
+      [
+        "Feed Hold key",
+        "interacts with"
+      ],
+      [
+        "User Macro Program",
+        "uses"
+      ],
+      [
+        "N102",
+        "defines program instruction"
+      ],
+      [
+        "ESP signal",
+        "is configured via"
+      ],
+      [
+        "Linear Acceleration/Deceleration Time Constant Applies To",
+        "Main Axis (second-speed gear)"
+      ],
+      [
+        "[Edit] function",
+        "used under"
+      ],
+      [
+        "Automatic measurement series tool length",
+        "Tool length accuracy"
+      ],
+      [
+        "ROS3",
+        "selects coordinate system for"
+      ],
+      [
+        "G28",
+        "uses"
+      ],
+      [
+        "ROS5",
+        "selects coordinate system for"
+      ],
+      [
+        "Conditional Expression",
+        "is used in"
+      ],
+      [
+        "Fast Override Adjustment",
+        "Parameter P92"
+      ],
+      [
+        "F100",
+        "affects"
+      ],
+      [
+        "Manual feed key",
+        "is part of"
+      ],
+      [
+        "GSK218MC Parameters",
+        "corresponds to"
+      ],
+      [
+        "Electronic MPG Drive (Demonstration) Function",
+        "Tool path demonstration"
+      ],
+      [
+        "Representation Variables",
+        "are utilized within"
+      ],
+      [
+        "Edit Mode",
+        "is a part of"
+      ],
+      [
+        "AXS3",
+        "configures type of"
+      ],
+      [
+        "Manual feed key",
+        "interacts with"
+      ],
+      [
+        "Sequence Number Copy",
+        "used_in"
+      ],
+      [
+        "Program Segment Cutting",
+        "uses"
+      ],
+      [
+        "Feed Hold",
+        "is part of"
+      ],
+      [
+        "Fast positioning",
+        "used with"
+      ],
+      [
+        "Coordinate setting",
+        "configures"
+      ],
+      [
+        "Linear Acceleration/Deceleration Time Constant Applies To",
+        "Main Axis (first-speed gear)"
+      ],
+      [
+        "GSK218MC Parameters",
+        "describes"
+      ],
+      [
+        "5th-axis",
+        "determined by"
+      ],
+      [
+        "G90",
+        "GSK218MC Series Machining Center CNC System"
+      ],
+      [
+        "Emergency stop",
+        "requires"
+      ],
+      [
+        "G90",
+        "G91"
+      ],
+      [
+        "Normal Incremental Zeroing",
+        "uses"
+      ],
+      [
+        "G97",
+        "feed rate"
+      ],
+      [
+        "Z-axis",
+        "determined by"
+      ],
+      [
+        "F100",
+        "applies to"
+      ],
+      [
+        "Chapter Editing Operation",
+        "contains details about"
+      ],
+      [
+        "GSK",
+        "Programming and Operation Manual"
+      ],
+      [
+        "Program Name Change",
+        "result_of"
+      ],
+      [
+        "MDLY",
+        "controls time delay in macroprogram execution"
+      ],
+      [
+        "Manual",
+        "describes"
+      ],
+      [
+        "[cop] Create New Program Name",
+        "is a function in"
+      ],
+      [
+        "Linear Acceleration/Deceleration Time Constant Applies To",
+        "Main Axis (fourth-speed gear)"
+      ],
+      [
+        "Sequence Number Cut",
+        "used_in"
+      ],
+      [
+        "Control axis executing position switching function",
+        "Position switching during machining"
+      ],
+      [
+        "Control Structure",
+        "regulates"
+      ],
+      [
+        "G90",
+        "sets absolute coordinates"
+      ],
+      [
+        "Character Sequence Cut",
+        "related_to"
+      ],
+      [
+        "Program CNT: 2000/0000",
+        "is data for"
+      ],
+      [
+        "G10",
+        "used to input"
+      ],
+      [
+        "Manual",
+        "details"
+      ],
+      [
+        "Program Restart",
+        "uses"
+      ],
+      [
+        "G99",
+        "GSK218MC Series Machining Center CNC System"
+      ],
+      [
+        "Character Sequence Copy",
+        "related_to"
+      ],
+      [
+        "Machine Zero",
+        "coincides with"
+      ],
+      [
+        "GSK218MC Series Machining Center CNC System",
+        "associated with"
+      ],
+      [
+        "Manual",
+        "explains"
+      ],
+      [
+        "Artifact",
+        "Incremental distance between two gratings"
+      ],
+      [
+        "AXS2",
+        "configures type of"
+      ],
+      [
+        "Emergency stop",
+        "prevents"
+      ],
+      [
+        "Central bias rotating disk (0426, 0485-0495)",
+        "Rotating axis adjustments"
+      ],
+      [
+        "CNC System",
+        "M codes"
+      ],
+      [
+        "Corner offset circular interpolation",
+        "is a method of"
+      ],
+      [
+        "MDI input",
+        "allows"
+      ],
+      [
+        "G87",
+        "GSK218MC Series Machining Center CNC System Programming and Operation Manual"
+      ],
+      [
+        "Main Axis (second-speed gear)",
+        "Tool Retraction Involves Main Axis And Tapping Axis"
+      ],
+      [
+        "G91",
+        "sets incremental coordinates"
+      ],
+      [
+        "G91",
+        "used for"
+      ],
+      [
+        "Preparation Function Codes",
+        "include"
+      ],
+      [
+        "N1@8 22.3",
+        "is part of"
+      ],
+      [
+        "Program display",
+        "shows"
+      ],
+      [
+        "G29",
+        "used to return from"
+      ],
+      [
+        "Reset Operation",
+        "causes"
+      ],
+      [
+        "Reset Operation",
+        "modifies"
+      ],
+      [
+        "Vertical positioning",
+        "Workpiece offset height (0430)"
+      ],
+      [
+        "Infinite Loop",
+        "can result from"
+      ],
+      [
+        "No. 206 alarm",
+        "tapping shaft"
+      ],
+      [
+        "Horizontal breakover line serial connection with node Network",
+        "network structure incomplete"
+      ],
+      [
+        "Main Axis (first-speed gear)",
+        "Tool Retraction Involves Main Axis And Tapping Axis"
+      ],
+      [
+        "SIM",
+        "manages alarm indexing and control axis code segments"
+      ],
+      [
+        "Manual speed override",
+        "is related to"
+      ],
+      [
+        "G73",
+        "G90"
+      ],
+      [
+        "Alignment",
+        "uses"
+      ],
+      [
+        "Program Segment Copying",
+        "uses"
+      ],
+      [
+        "Main Axis (third-speed gear)",
+        "Tool Retraction Involves Main Axis And Tapping Axis"
+      ],
+      [
+        "Backup axis coordinate system (Setting range: -9999.9999 to 9999.9999)",
+        "Data"
+      ],
+      [
+        "G90",
+        "used for"
+      ],
+      [
+        "G30",
+        "intermediate points and can be combined with"
+      ],
+      [
+        "[End] function",
+        "applicable in"
+      ],
+      [
+        "#1",
+        "is part of"
+      ],
+      [
+        "rigid mode",
+        "tapping shaft"
+      ],
+      [
+        "CNC System Programming and Operation Manual",
+        "describes"
+      ],
+      [
+        "Program Content Cutting",
+        "part_of"
+      ],
+      [
+        "2MI3",
+        "sets direction for"
+      ],
+      [
+        "GSK218MC Series Machining Center CNC System",
+        "uses"
+      ],
+      [
+        "Manual rotation MPG control",
+        "Part program execution"
+      ],
+      [
+        "Program Renaming",
+        "uses"
+      ],
+      [
+        "SBM",
+        "allows use of macroprogram instructions in single segments"
+      ],
+      [
+        "WHILE Statement",
+        "is a type of"
+      ],
+      [
+        "Emergency stop button",
+        "triggers"
+      ],
+      [
+        "GOTO Statement",
+        "is a type of"
+      ],
+      [
+        "Feed hold function",
+        "is related to"
+      ],
+      [
+        "RPST",
+        "determines axis movement during program restart"
+      ],
+      [
+        "Y-axis",
+        "uses"
+      ],
+      [
+        "High-Speed Incremental Zeroing",
+        "uses"
+      ],
+      [
+        "Program Content Copying",
+        "part_of"
+      ],
+      [
+        "4th-axis",
+        "uses"
+      ],
+      [
+        "X-axis",
+        "uses"
+      ],
+      [
+        "Linear Acceleration/Deceleration Time Constant Applies To",
+        "Main Axis (third-speed gear)"
+      ],
+      [
+        "[Debugging]",
+        "performed under"
+      ],
+      [
+        "AXS1",
+        "configures type of"
+      ],
+      [
+        "ZMI4",
+        "sets direction for"
+      ],
+      [
+        "REL",
+        "configures display settings for position indexing tables"
+      ],
+      [
+        "Present/module display",
+        "displays"
+      ],
+      [
+        "Movement override",
+        "is part of"
+      ],
+      [
+        "G73",
+        "G98"
+      ],
+      [
+        "Fig. 10-1-1-2-1",
+        "illustrates"
+      ],
+      [
+        "DATA do: 23",
+        "references"
+      ],
+      [
+        "Reset Operation",
+        "addresses"
+      ],
+      [
+        "ROS2",
+        "selects coordinate system for"
+      ],
+      [
+        "G39",
+        "used for"
+      ],
+      [
+        "Fig. 10-1-1-2-2",
+        "is referenced in"
+      ],
+      [
+        "Manual mode",
+        "interacts with"
+      ],
+      [
+        "MDL",
+        "sets unidirectional positioning code modality"
+      ],
+      [
+        "Edit Program",
+        "is a method described in"
+      ],
+      [
+        "ESP",
+        "is connected via"
+      ],
+      [
+        "Manual",
+        "covers"
+      ],
+      [
+        "Program Page Display",
+        "is referenced in"
+      ],
+      [
+        "Overcutting",
+        "results from"
+      ],
+      [
+        "Power off emergency",
+        "is related to"
+      ],
+      [
+        "Feed Hold",
+        "is related to"
+      ],
+      [
+        "G54",
+        "is used in"
+      ],
+      [
+        "WHILE Statement",
+        "is used in"
+      ],
+      [
+        "N106",
+        "defines program instruction"
+      ],
+      [
+        "Code Table",
+        "Help Information (Operation List)"
+      ],
+      [
+        "GOTO Statement",
+        "is used in"
+      ],
+      [
+        "Manual",
+        "includes"
+      ],
+      [
+        "Z-axis",
+        "uses"
+      ],
+      [
+        "G27",
+        "testing the return of"
+      ],
+      [
+        "TOOL MEASUREMENT",
+        "relates to"
+      ],
+      [
+        "Safety Precautions",
+        "User VII"
+      ],
+      [
+        "Precision adjustments",
+        "Small line fitting accuracy control (0412)"
+      ],
+      [
+        "Machined part quality",
+        "Roundness and smoothness control factor (0413, 0414)"
+      ],
+      [
+        "Program Content Replacement",
+        "part_of"
+      ],
+      [
+        "Encoder",
+        "Spindle Control"
+      ],
+      [
+        "GSK218MC Series Machining Center CNC System",
+        "relates to"
+      ],
+      [
+        "MPG interruption",
+        "Machine coordinate value"
+      ],
+      [
+        "#2",
+        "is part of"
+      ],
+      [
+        "AXS5",
+        "configures type of"
+      ],
+      [
+        "Internal system parameter (0424, 0425)",
+        "System operations"
+      ],
+      [
+        "G92",
+        "defines"
+      ],
+      [
+        "G64/G",
+        "are feed codes used in"
+      ],
+      [
+        "Data",
+        "Shape matching parameter (#400)"
+      ],
+      [
+        "Reset Operation",
+        "affects"
+      ],
+      [
+        "Panel key",
+        "interacts with"
+      ],
+      [
+        "Cycle start validity",
+        "depends on"
+      ],
+      [
+        "AXIS Ref. SET Ne. LIMIT Po. LIMIT GRATING",
+        "Bus Servo Parameter Display"
+      ],
+      [
+        "auxiliary lock",
+        "dry running"
+      ],
+      [
+        "G98",
+        "G99"
+      ],
+      [
+        "Fast Override Adjustment",
+        "Parameter P88"
+      ],
+      [
+        "GSK218MC Machining Center CNC System",
+        "Spline shape control factor (041)"
+      ],
+      [
+        "P294",
+        "spindle speed"
+      ],
+      [
+        "G74",
+        "left rigid tapping"
+      ],
+      [
+        "ROS4",
+        "selects coordinate system for"
+      ],
+      [
+        "CLV",
+        "manages local variable resetting after system reset"
+      ],
+      [
+        "CNC System",
+        "G codes"
+      ],
+      [
+        "CCV",
+        "handles public variable management post-reset"
+      ],
+      [
+        "Emergency Stop",
+        "is related to"
+      ]
+    ],
+    "count": 178,
+    "create_time": 1764895558,
+    "update_time": 1764895558,
+    "_id": "英文-GSK218MC系列编程操作手册 第5版 （定稿）"
+  },
+  "英文-GSK983Ma连接手册（2012年4月第2版）": {
+    "relation_pairs": [
+      [
+        "DA98D Drive Unit",
+        "HOLD-"
+      ],
+      [
+        "Connectors such as DB15 male and D-Sub male facilitate connections within the system.",
+        "DB15 male three blocks, D-Sub male"
+      ],
+      [
+        "ALM",
+        "GSK983Ma Milling Machining Center CNC System"
+      ],
+      [
+        "DA98D Drive Unit",
+        "SRDY"
+      ],
+      [
+        "COM+",
+        "DA98D Drive Unit"
+      ],
+      [
+        "GSK983Ma Milling machining center CNC system User Manual",
+        "The GSK983Ma system uses the Grating for its operation."
+      ],
+      [
+        "DA98D Drive Unit",
+        "FSTP"
+      ],
+      [
+        "GSK983Ma Milling Machining Center CNC System",
+        "PA46 Parameter"
+      ],
+      [
+        "GSK983Ma Milling Machining Center CNC System",
+        "HOLD+"
+      ],
+      [
+        "GSK983Ma Milling Machining Center CNC System",
+        "PBOUT"
+      ],
+      [
+        "DA98D Drive Unit",
+        "PCA"
+      ],
+      [
+        "GSK983Ma Milling Machining Center CNC System",
+        "PBOLT+"
+      ],
+      [
+        "GSK983Ma Milling Machining Center CNC System",
+        "PAOLT+"
+      ],
+      [
+        "DA98D Drive Unit",
+        "GSK983Ma Milling Machining Center CNC System"
+      ],
+      [
+        "DA98D Drive Unit",
+        "PAOLT-"
+      ],
+      [
+        "GSK983Ma Milling Machining Center CNC System",
+        "VCMD-"
+      ],
+      [
+        "GSK983Ma Milling Machining Center CNC System",
+        "PZOLT+"
+      ],
+      [
+        "SVX and PCX 060 are integral components of the GSK983Ma system.",
+        "SVX, PCX 060"
+      ],
+      [
+        "GSK983Ma Milling Machining Center CNC System",
+        "SVZ"
+      ],
+      [
+        "CN1",
+        "DA98D Drive Unit"
+      ],
+      [
+        "GS3000Y-NP2 SPINDLE SERVO DRIVE UNIT",
+        "The spindle servo drive unit GS3000Y-NP2 is integrated into the CNC system."
+      ],
+      [
+        "DA98D Drive Unit",
+        "PZ0UT-"
+      ],
+      [
+        "DA98D Drive Unit",
+        "SON+"
+      ],
+      [
+        "FG09",
+        "GSK983Ma Milling Machining Center CNC System"
+      ],
+      [
+        "DAP01 DAPO3 3Ma-00-785 983Ma SVS",
+        "The user manual references DAP01 DAPO3 as part of the system's configuration."
+      ]
+    ],
+    "count": 25,
+    "create_time": 1764896081,
+    "update_time": 1764896081,
+    "_id": "英文-GSK983Ma连接手册（2012年4月第2版）"
   }
 }
