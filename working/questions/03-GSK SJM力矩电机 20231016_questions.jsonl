@@ -1,0 +1,439 @@
+{
+  "question_id": "4c3c5a3e-bd56-4b82-ba71-c5986b7d7738",
+  "content": "24小时内售后人员到位率为多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-1245c6683f8aacfd4e70da8fcd821fda",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1245c6683f8aacfd4e70da8fcd821fda",
+    "related_chunk_ids": [
+      "chunk-1245c6683f8aacfd4e70da8fcd821fda"
+    ]
+  },
+  "created_at": "2025-12-05T20:24:31.986290"
+}
+
+{
+  "question_id": "1d253b24-e643-4915-a7b0-cb64e1864b5e",
+  "content": "上海松江区荣乐中路120号201室的办事处地址和联系方式是否清晰明了？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+    "related_chunk_ids": [
+      "chunk-c7bc143ad1ccc43a857c1cc201d1477f"
+    ]
+  },
+  "created_at": "2025-12-05T20:24:49.353845"
+}
+
+{
+  "question_id": "09be170d-3936-434a-820e-c969699c9f30",
+  "content": "嘉兴市阳光小区307室的具体位置在哪里？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+    "related_chunk_ids": [
+      "chunk-c7bc143ad1ccc43a857c1cc201d1477f"
+    ]
+  },
+  "created_at": "2025-12-05T20:24:49.354086"
+}
+
+{
+  "question_id": "71b3cd0f-70e7-4cbc-a04d-d642fd8de43e",
+  "content": "无锡纺城大道289号南方不锈钢市场的具体位置如何？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+    "related_chunk_ids": [
+      "chunk-c7bc143ad1ccc43a857c1cc201d1477f"
+    ]
+  },
+  "created_at": "2025-12-05T20:24:49.354318"
+}
+
+{
+  "question_id": "121439c9-3de8-4b57-ba45-4a617aa941ba",
+  "content": "杭州富阳区团结机104的联系人是谁？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+    "related_chunk_ids": [
+      "chunk-c7bc143ad1ccc43a857c1cc201d1477f"
+    ]
+  },
+  "created_at": "2025-12-05T20:24:49.354557"
+}
+
+{
+  "question_id": "a950bac4-f9e4-4f77-a283-3b50daea8483",
+  "content": "沈阳沈河区八一路4-2-1的负责人是否有多个联系方式？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+    "related_chunk_ids": [
+      "chunk-c7bc143ad1ccc43a857c1cc201d1477f"
+    ]
+  },
+  "created_at": "2025-12-05T20:24:49.354782"
+}
+
+{
+  "question_id": "56d29583-6426-403a-af3b-6f5c7659d716",
+  "content": "浙江省绍兴市新总县新大道西路215号的联系方式是否准确无误？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c7bc143ad1ccc43a857c1cc201d1477f",
+    "related_chunk_ids": [
+      "chunk-c7bc143ad1ccc43a857c1cc201d1477f"
+    ]
+  },
+  "created_at": "2025-12-05T20:24:49.355482"
+}
+
+{
+  "question_id": "6451cc73-31d7-4d55-b2c8-83654911bab2",
+  "content": "180SJM-M060GH和180SJM-M090GH这两种型号在额定功率上有何不同？分别适用于什么场景？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-65938764678598721459e48e3c6c9a4f",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65938764678598721459e48e3c6c9a4f",
+    "related_chunk_ids": [
+      "chunk-65938764678598721459e48e3c6c9a4f"
+    ]
+  },
+  "created_at": "2025-12-05T20:25:05.554395"
+}
+
+{
+  "question_id": "f3d51f9f-b493-4be7-8c27-3d4231b79c12",
+  "content": "180SJM-M060GH型号的伺服电机在使用过程中需要注意哪些事项以保证性能稳定？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-65938764678598721459e48e3c6c9a4f",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65938764678598721459e48e3c6c9a4f",
+    "related_chunk_ids": [
+      "chunk-65938764678598721459e48e3c6c9a4f"
+    ]
+  },
+  "created_at": "2025-12-05T20:25:05.555098"
+}
+
+{
+  "question_id": "864dd6fe-0220-48d3-a2ba-7b4f23d94f36",
+  "content": "180SJM-M090GH型号的伺服电机在高负载条件下能否保持稳定的运行性能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-65938764678598721459e48e3c6c9a4f",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65938764678598721459e48e3c6c9a4f",
+    "related_chunk_ids": [
+      "chunk-65938764678598721459e48e3c6c9a4f"
+    ]
+  },
+  "created_at": "2025-12-05T20:25:05.555898"
+}
+
+{
+  "question_id": "6fd82c38-6acb-42a8-89e1-cd7496300662",
+  "content": "230SJM-M100GH型号的伺服力矩电动机在连续工作制（S1）下，其最高转速可以达到多少r/min？对应的冷却水流量是多少L/min？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-7a846d59e566c3979ca663191fd42979",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7a846d59e566c3979ca663191fd42979",
+    "related_chunk_ids": [
+      "chunk-7a846d59e566c3979ca663191fd42979"
+    ]
+  },
+  "created_at": "2025-12-05T20:25:30.551211"
+}
+
+{
+  "question_id": "d83fa251-b706-4eec-94f1-03ecad0e377e",
+  "content": "310SJM-M715BH型号的伺服力矩电动机的最大输出转矩是多少N·m？其对应的驱动单元输入电压是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-7a846d59e566c3979ca663191fd42979",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7a846d59e566c3979ca663191fd42979",
+    "related_chunk_ids": [
+      "chunk-7a846d59e566c3979ca663191fd42979"
+    ]
+  },
+  "created_at": "2025-12-05T20:25:30.552096"
+}
+
+{
+  "question_id": "bdb97d84-ecff-4bdb-b28a-b25a712b4e06",
+  "content": "230SJM-M100GH型号的伺服力矩电动机的转动惯量是多少kg·m²？这一参数对系统控制精度和响应速度有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-7a846d59e566c3979ca663191fd42979",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7a846d59e566c3979ca663191fd42979",
+    "related_chunk_ids": [
+      "chunk-7a846d59e566c3979ca663191fd42979"
+    ]
+  },
+  "created_at": "2025-12-05T20:25:30.553021"
+}
+
+{
+  "question_id": "dc0853a7-3664-4ab2-a8f4-a5e3e66f13e3",
+  "content": "385SJM-M688BH型号的额定功率和最大转矩分别是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-e2f22f7624fb627c433f8359847e316e",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e2f22f7624fb627c433f8359847e316e",
+    "related_chunk_ids": [
+      "chunk-e2f22f7624fb627c433f8359847e316e"
+    ]
+  },
+  "created_at": "2025-12-05T20:25:56.846105"
+}
+
+{
+  "question_id": "68e0f549-8287-4b41-8f75-1944a1b10a28",
+  "content": "230SJM-M100GH的重量参数是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-e2f22f7624fb627c433f8359847e316e",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e2f22f7624fb627c433f8359847e316e",
+    "related_chunk_ids": [
+      "chunk-e2f22f7624fb627c433f8359847e316e"
+    ]
+  },
+  "created_at": "2025-12-05T20:25:56.847410"
+}
+
+{
+  "question_id": "f4c947bc-1e52-443a-b70e-37f7ae28d60c",
+  "content": "在GSK 980TDi设备中，驱动单元输入电压为AC380三相的情况下，如何正确连接电源以确保安全运行？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-b05be5ae505c039aebf88e1ce2c5db44",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b05be5ae505c039aebf88e1ce2c5db44",
+    "related_chunk_ids": [
+      "chunk-b05be5ae505c039aebf88e1ce2c5db44"
+    ]
+  },
+  "created_at": "2025-12-05T20:26:19.300528"
+}
+
+{
+  "question_id": "bf9a2895-2829-49d7-bf3a-f17e87742a37",
+  "content": "230SJM-MO60GH伺服电机的额定转速为100 r/min和最大转矩为0.54 N·m，在冷却液流量为2.0 L/min的情况下，适合哪些类型的负载控制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-158201450e38be469598e4ff2682e456",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-158201450e38be469598e4ff2682e456",
+    "related_chunk_ids": [
+      "chunk-158201450e38be469598e4ff2682e456"
+    ]
+  },
+  "created_at": "2025-12-05T20:26:44.555264"
+}
+
+{
+  "question_id": "2b9963ff-24f2-4662-9ca4-02a70d84cb5b",
+  "content": "180SJM-MO60GH伺服电机的最大转速为400 r/min，其对应的冷却液流量要求是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-158201450e38be469598e4ff2682e456",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-158201450e38be469598e4ff2682e456",
+    "related_chunk_ids": [
+      "chunk-158201450e38be469598e4ff2682e456"
+    ]
+  },
+  "created_at": "2025-12-05T20:26:44.555926"
+}
+
+{
+  "question_id": "3a7756c0-2a1b-4035-947c-1d75367167fd",
+  "content": "230SJM系列伺服电动机的额定电压和电流参数是什么？这些参数如何影响其在不同负载条件下的表现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-158201450e38be469598e4ff2682e456",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-158201450e38be469598e4ff2682e456",
+    "related_chunk_ids": [
+      "chunk-158201450e38be469598e4ff2682e456"
+    ]
+  },
+  "created_at": "2025-12-05T20:26:44.556469"
+}
+
+{
+  "question_id": "39984456-8940-4d1b-a6c6-cc14ca30d7f1",
+  "content": "310SJM-M325CH伺服力矩电动机的额定转速为120 r/min，在冷却液流量为多少时能够达到最佳性能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-158201450e38be469598e4ff2682e456",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-158201450e38be469598e4ff2682e456",
+    "related_chunk_ids": [
+      "chunk-158201450e38be469598e4ff2682e456"
+    ]
+  },
+  "created_at": "2025-12-05T20:26:44.556931"
+}
+
+{
+  "question_id": "6b5a14f0-d909-4996-a9d2-2fad3fd61954",
+  "content": "385SJM-M688BH伺服电动机的最大转速为1376 r/min，其对应的冷却液流量要求是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-158201450e38be469598e4ff2682e456",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-158201450e38be469598e4ff2682e456",
+    "related_chunk_ids": [
+      "chunk-158201450e38be469598e4ff2682e456"
+    ]
+  },
+  "created_at": "2025-12-05T20:26:44.557414"
+}
+
+{
+  "question_id": "c6b2034f-1ed2-420d-a7d1-6524e50764f7",
+  "content": "GSK SJM系列的230SJMW-M100EH型号交流伺服电动机的最大转矩、额定转速和最高转速分别是多少？这些参数对适用场景有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-0f52a3a24f0f246b0cf148ddfa1f2436"
+    ]
+  },
+  "created_at": "2025-12-05T20:27:07.846010"
+}
+
+{
+  "question_id": "040839aa-18a3-4441-972f-e594df257461",
+  "content": "442SJM-M832WH型号的交流伺服电动机与335SJM-M353CH-T2型号相比，最大转矩和最高转速有哪些差异？在实际应用中如何选择适合的型号？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+    "related_chunk_ids": [
+      "chunk-0f52a3a24f0f246b0cf148ddfa1f2436"
+    ]
+  },
+  "created_at": "2025-12-05T20:27:07.846307"
+}
+
+{
+  "question_id": "b00f41cf-41a7-4fdc-a199-c0650c879066",
+  "content": "GSK SJM系列交流伺服电动机的电源线规格6X01 YAY 1138具体指的是什么含义？在安装过程中需要注意哪些事项？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+    "related_entities": [
+      "GSK",
+      "YAY"
+    ],
+    "related_chunk_ids": [
+      "chunk-0f52a3a24f0f246b0cf148ddfa1f2436"
+    ]
+  },
+  "created_at": "2025-12-05T20:27:07.846558"
+}
+
+{
+  "question_id": "a921bbd4-f26e-491c-9c56-8452629779d8",
+  "content": "200SJM-M070CH型号的额定转速和最高转速分别是多少？这两个参数对电机性能有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+    "related_chunk_ids": [
+      "chunk-0f52a3a24f0f246b0cf148ddfa1f2436"
+    ]
+  },
+  "created_at": "2025-12-05T20:27:07.846789"
+}
+
+{
+  "question_id": "cfce0ea2-f5d5-4072-9d28-3b836586b36d",
+  "content": "335SJM-M353CH-T2型号的最大转矩是多少？这个参数在什么应用场景下最为重要？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+    "related_chunk_ids": [
+      "chunk-0f52a3a24f0f246b0cf148ddfa1f2436"
+    ]
+  },
+  "created_at": "2025-12-05T20:27:07.847244"
+}
+
+{
+  "question_id": "8b89be2e-fdaa-4c6d-86df-4c4b84f9e749",
+  "content": "230SJMW-M100EH型号的最大转矩、额定转速和最高转速这三个参数分别代表什么含义？对电机性能有什么具体影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK SJM力矩电机 20231016.txt",
+  "source_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0f52a3a24f0f246b0cf148ddfa1f2436",
+    "related_chunk_ids": [
+      "chunk-0f52a3a24f0f246b0cf148ddfa1f2436"
+    ]
+  },
+  "created_at": "2025-12-05T20:27:07.847954"
+}
+

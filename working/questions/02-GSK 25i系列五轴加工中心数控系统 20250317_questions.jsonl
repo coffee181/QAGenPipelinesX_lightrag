@@ -1,0 +1,1383 @@
+{
+  "question_id": "44f01cba-a6a6-4298-8faf-3c30b87e9c3c",
+  "content": "GSK 25i系列五轴加工中心支持最多扩展多少个单元从站设备，并如何实现与工业机器人等自动化设备的连接？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-9b8f905b7bca22b186180ca7fa5e146f"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:06.332792"
+}
+
+{
+  "question_id": "84df651a-0de4-4d7a-ad77-1a2c32207780",
+  "content": "GSK 25iMc和GSK 25iMb在系统启动时间、存储空间和处理时间上有哪些具体区别？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-9b8f905b7bca22b186180ca7fa5e146f"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:06.333059"
+}
+
+{
+  "question_id": "36c782d9-5bd0-4015-bea3-940bd1d47829",
+  "content": "绝对式编码器电机和伺服驱动单元在GSK 25i系统中是如何协同工作的，这对机床性能有什么提升？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+    "related_chunk_ids": [
+      "chunk-9b8f905b7bca22b186180ca7fa5e146f"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:06.333566"
+}
+
+{
+  "question_id": "77f20fc3-0c4d-47fa-b0ab-bb4e7db3fb72",
+  "content": "GSK-Link功能具体支持哪些类型的通信协议，这些协议在自动化生产线中的应用有哪些优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+    "related_chunk_ids": [
+      "chunk-9b8f905b7bca22b186180ca7fa5e146f"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:06.333804"
+}
+
+{
+  "question_id": "cbce0e64-96a1-4b87-a31e-1b1e770fc2c9",
+  "content": "五轴RTCP（刀具中心点控制）功能在复杂零件加工中有什么具体应用场景？其优势是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+    "related_chunk_ids": [
+      "chunk-9b8f905b7bca22b186180ca7fa5e146f"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:06.334275"
+}
+
+{
+  "question_id": "1dab52af-1752-47d3-a166-83e1b6c5edbe",
+  "content": "系统启动时间从30秒缩短到更短对实际生产效率有哪些提升？用户需要注意哪些事项以发挥最佳性能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9b8f905b7bca22b186180ca7fa5e146f",
+    "related_chunk_ids": [
+      "chunk-9b8f905b7bca22b186180ca7fa5e146f"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:06.334788"
+}
+
+{
+  "question_id": "f9498358-75cb-4bfa-93ad-1105f91ae302",
+  "content": "五轴RTCP控制功能如何实现刀具路径的光顺处理？在倾斜面定位加工中，这种功能具体起到什么作用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+    "related_chunk_ids": [
+      "chunk-546ec1a8d6903101d7cab677ce62ee84"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:34.624094"
+}
+
+{
+  "question_id": "a39bf320-fb8a-4ee4-b493-bf65144e7461",
+  "content": "GSK 25i系列系统中，开启RTCP控制后，用户如何通过特征坐标系设定自动实现空间坐标变换？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-546ec1a8d6903101d7cab677ce62ee84"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:34.624341"
+}
+
+{
+  "question_id": "2ddd646c-3343-43d2-97cb-51319804c18d",
+  "content": "GSK 25i支持的3+2定位加工模式和连续五轴加工模式在应用场合上有什么区别？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-546ec1a8d6903101d7cab677ce62ee84"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:34.624936"
+}
+
+{
+  "question_id": "855cab31-330f-4070-83d1-8a57c86b7d51",
+  "content": "在不同机床结构（如双转台、双摆头等）下，GSK 25i系列系统的五轴定位功能有什么差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+    "related_chunk_ids": [
+      "chunk-546ec1a8d6903101d7cab677ce62ee84"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:34.625483"
+}
+
+{
+  "question_id": "3d83fbfd-3af7-47a6-b772-846bdb089759",
+  "content": "刀具路径编程在倾斜面3+2定位加工中需要考虑哪些关键参数？如何确保刀路的准确性和安全性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+    "related_chunk_ids": [
+      "chunk-546ec1a8d6903101d7cab677ce62ee84"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:34.625744"
+}
+
+{
+  "question_id": "2a965cce-b5e4-4ff9-9943-540281e13633",
+  "content": "GSK 25i系统支持的空间平面变换功能，对复杂曲面零件的加工效率和质量有什么提升作用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-546ec1a8d6903101d7cab677ce62ee84"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:34.626006"
+}
+
+{
+  "question_id": "2af9a4d9-21bd-42e6-a84d-d923f059232d",
+  "content": "在五轴机床应用中，特征坐标系设定与RTCP控制功能是如何协同工作的？这种结合能带来什么优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-546ec1a8d6903101d7cab677ce62ee84",
+    "related_chunk_ids": [
+      "chunk-546ec1a8d6903101d7cab677ce62ee84"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:34.626259"
+}
+
+{
+  "question_id": "ea4a1a3f-b71c-4bbc-90b5-6f6226efaa56",
+  "content": "GSK 25i系列五轴加工中心的刚性攻丝功能在攻丝过程中如何实现回退跟随误差补偿？这种补偿机制对刀具寿命有何影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-696444bc079ab3fbf0bf674c15d31c6d"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:58.051152"
+}
+
+{
+  "question_id": "5219828f-7ee7-4fbd-a788-9e27f28ea03e",
+  "content": "文档中提到的G75循环和G78循环分别适用于哪些不同的表面磨削场景？它们的主要区别是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+    "related_chunk_ids": [
+      "chunk-696444bc079ab3fbf0bf674c15d31c6d"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:58.051469"
+}
+
+{
+  "question_id": "6d98abc6-3943-49e6-a4fe-b7271220e4bc",
+  "content": "文档提到的G74固定尺寸订循环与其他类似循环（如G77、G78）相比，有哪些独特的优势和适用场景？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+    "related_chunk_ids": [
+      "chunk-696444bc079ab3fbf0bf674c15d31c6d"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:58.052614"
+}
+
+{
+  "question_id": "f80d9919-8c4a-4c6c-8104-f139b65d2eb1",
+  "content": "GSK 25i系列五轴加工中心采用多电机同步驱动控制技术，这种设计对加工过程中的负载均衡和控制精度有何影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-696444bc079ab3fbf0bf674c15d31c6d"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:58.052891"
+}
+
+{
+  "question_id": "23039f89-240a-43fd-9b07-c4381cfcdd43",
+  "content": "异步荡磨（G101）和横向进给控制（G160、G161）在提升表面质量方面有哪些具体表现？它们的参数设置如何影响最终结果？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+    "related_chunk_ids": [
+      "chunk-696444bc079ab3fbf0bf674c15d31c6d"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:58.053144"
+}
+
+{
+  "question_id": "91234129-a1d8-4c08-b2ee-dcac8d9878a2",
+  "content": "GSK 25i系列加工中心支持的程序管理功能（如文件夹分类管理和多程序执行）对用户的工作效率有何帮助？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-696444bc079ab3fbf0bf674c15d31c6d"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:58.053391"
+}
+
+{
+  "question_id": "1c8a2c52-75cf-45c8-a9cd-9d9c56cbbb4b",
+  "content": "法线方向控制功能（G150/G151/G152）在复杂零件加工中如何实现简易快速编程？它能解决哪些特殊的加工需求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-696444bc079ab3fbf0bf674c15d31c6d",
+    "related_chunk_ids": [
+      "chunk-696444bc079ab3fbf0bf674c15d31c6d"
+    ]
+  },
+  "created_at": "2025-12-05T14:35:58.053652"
+}
+
+{
+  "question_id": "0d399e16-2005-4375-ba73-4b532630be84",
+  "content": "GSK 25i系列五轴加工中心如何通过文件夹分类管理功能提升程序查找效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-e12c71edb0241805216fe33c92f37d61",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e12c71edb0241805216fe33c92f37d61",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-e12c71edb0241805216fe33c92f37d61"
+    ]
+  },
+  "created_at": "2025-12-05T14:36:14.789632"
+}
+
+{
+  "question_id": "5b855f54-13fc-45bc-bfcd-355ee0df4614",
+  "content": "GSK 25i系列五轴加工中心采用网络传输进行程序上传下载和DNC加工，相比传统RS232接口有哪些优势？适合什么类型的生产环境？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-812eb3bf823f42f8b99e4009876e91e2"
+    ]
+  },
+  "created_at": "2025-12-05T14:36:41.315806"
+}
+
+{
+  "question_id": "9027c52e-f6d1-4c46-863b-5591df27e73b",
+  "content": "PLC的基本指令处理时间为0.20ms/步，在开放式的编辑修改环境下，这对程序开发效率有什么影响？如何优化复杂程序的运行速度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+    "related_chunk_ids": [
+      "chunk-812eb3bf823f42f8b99e4009876e91e2"
+    ]
+  },
+  "created_at": "2025-12-05T14:36:41.316228"
+}
+
+{
+  "question_id": "188f5016-09c5-417c-84a1-436b28a5a798",
+  "content": "GSK-Link高速现场总线具有哪些特点？在多轴伺服驱动应用中如何保证数据传输的安全性和可靠性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+    "related_chunk_ids": [
+      "chunk-812eb3bf823f42f8b99e4009876e91e2"
+    ]
+  },
+  "created_at": "2025-12-05T14:36:41.317691"
+}
+
+{
+  "question_id": "4d4f1b97-ceef-4c5f-9d5a-5b71e5a6d6fe",
+  "content": "196伺服驱动单元支持海德汉Endat2.2、BISS-C等多种编码器协议，这些不同类型的编码器在实际应用中有何区别和适用场景？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+    "related_chunk_ids": [
+      "chunk-812eb3bf823f42f8b99e4009876e91e2"
+    ]
+  },
+  "created_at": "2025-12-05T14:36:41.318129"
+}
+
+{
+  "question_id": "17e73d07-018b-4633-9e03-491c2fdad834",
+  "content": "GSK新一代伺服驱动单元采用25bit分辨率绝对式编码器，这对机床加工精度带来什么提升？如何充分发挥其性能优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+    "related_chunk_ids": [
+      "chunk-812eb3bf823f42f8b99e4009876e91e2"
+    ]
+  },
+  "created_at": "2025-12-05T14:36:41.318547"
+}
+
+{
+  "question_id": "a356259e-cc0c-4012-8d3a-f8aa8acf7b76",
+  "content": "PLC程序的最大扩展能力为1024/1024点，这对大型复杂设备的控制有什么实际意义？在编程时需要注意哪些事项？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+    "related_chunk_ids": [
+      "chunk-812eb3bf823f42f8b99e4009876e91e2"
+    ]
+  },
+  "created_at": "2025-12-05T14:36:41.319455"
+}
+
+{
+  "question_id": "5ea34d8d-c01f-4db4-93a9-b605dd866599",
+  "content": "GSK 25i系列采用开放式网络系统构建智能工厂，如何实现生产现场CNC控制器的数据采集、文件传送和多台系统运行状态监控？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-812eb3bf823f42f8b99e4009876e91e2",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-812eb3bf823f42f8b99e4009876e91e2"
+    ]
+  },
+  "created_at": "2025-12-05T14:36:41.319874"
+}
+
+{
+  "question_id": "8e1de3bc-fd82-407b-9142-e583980376ea",
+  "content": "新一代GSK 25iMc数控系统如何通过纯金属结构机箱和一体化低功耗散热方式提升抗干扰性能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-00c78b853b6797293d3cfc7984e5ed26",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-00c78b853b6797293d3cfc7984e5ed26",
+    "related_chunk_ids": [
+      "chunk-00c78b853b6797293d3cfc7984e5ed26"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:02.531644"
+}
+
+{
+  "question_id": "b7e1bcf3-8a0c-43f9-b029-98b36de19aad",
+  "content": "GSK 25i系列五轴加工中心的高响应硬件平台设计，在复杂曲面加工中能实现怎样的动态性能提升？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-00c78b853b6797293d3cfc7984e5ed26",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-00c78b853b6797293d3cfc7984e5ed26",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-00c78b853b6797293d3cfc7984e5ed26"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:02.533044"
+}
+
+{
+  "question_id": "1ece71ba-c9d0-4aa3-90c5-b9e91bb089e1",
+  "content": "GSK 25iMc数控系统的独立式按键设计和金属质感面板如何提升人机交互体验？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-00c78b853b6797293d3cfc7984e5ed26",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-00c78b853b6797293d3cfc7984e5ed26",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-00c78b853b6797293d3cfc7984e5ed26"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:02.534216"
+}
+
+{
+  "question_id": "4cbf33a0-a611-4995-9fe4-cf20fcb75e30",
+  "content": "GSK 25i系列五轴加工中心的最小指令单位为0.001mm，如何影响其加工精度？最大进给速度200r/min对效率有什么提升？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-4d9715f0a485a5819f617fbef512a8a9"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:27.120535"
+}
+
+{
+  "question_id": "f33781b1-ba43-47c7-9e6e-96fbefe50d50",
+  "content": "五轴控制功能中的RTCP（刀具中心点控制）和G43.4功能在复杂零件加工中各起到什么作用？它们之间如何协同工作？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+    "related_chunk_ids": [
+      "chunk-4d9715f0a485a5819f617fbef512a8a9"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:27.120805"
+}
+
+{
+  "question_id": "cd3ad72d-5d72-498c-ac34-71993d77fc7a",
+  "content": "最小指令单位为0.001mm、快速倍率最小指令单位为0.0001mm，这些参数对加工质量和效率有什么具体影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+    "related_chunk_ids": [
+      "chunk-4d9715f0a485a5819f617fbef512a8a9"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:27.121066"
+}
+
+{
+  "question_id": "9099523f-eba7-484e-bd58-40dbdbb4683c",
+  "content": "GSK 25i系列支持五轴手动进给功能，在实际操作中如何实现刀具中心点的旋转方向控制？有哪些注意事项？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-4d9715f0a485a5819f617fbef512a8a9"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:27.121347"
+}
+
+{
+  "question_id": "02b1fa36-8f7f-4aff-959b-254f74e929a5",
+  "content": "刚性攻丝功能在GSK 25i系统中如何实现？其回退参数设置对加工质量有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+    "related_chunk_ids": [
+      "chunk-4d9715f0a485a5819f617fbef512a8a9"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:27.121638"
+}
+
+{
+  "question_id": "5e995109-b792-49e7-a631-045cde1be216",
+  "content": "系统支持的最大指令值为+999999.9999mm，这对其适用工件尺寸范围有什么限制？实际应用中需要注意什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+    "related_chunk_ids": [
+      "chunk-4d9715f0a485a5819f617fbef512a8a9"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:27.121895"
+}
+
+{
+  "question_id": "460fe56d-9e64-4ee1-9bf3-dde9cb043a96",
+  "content": "最大进给速度200r/min与高精度加工G05功能结合使用时，需要考虑哪些参数设置？如何平衡速度与精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+    "related_chunk_ids": [
+      "chunk-4d9715f0a485a5819f617fbef512a8a9"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:27.122443"
+}
+
+{
+  "question_id": "1b75c2de-368b-411a-b2c3-b33debcc7ce2",
+  "content": "五轴定位（3+2加工）与G68.2功能在实际应用中有什么区别？选择哪种方式更合适取决于什么因素？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4d9715f0a485a5819f617fbef512a8a9",
+    "related_chunk_ids": [
+      "chunk-4d9715f0a485a5819f617fbef512a8a9"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:27.122735"
+}
+
+{
+  "question_id": "c413f7b8-691f-4682-902a-c40c86faa8b5",
+  "content": "设备支持的400组刀具补偿参数如何设置？这种多刀具补偿功能对提高加工效率和质量有何作用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-58579fec8cfbf6777fff9576c642f6f5",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-58579fec8cfbf6777fff9576c642f6f5",
+    "related_chunk_ids": [
+      "chunk-58579fec8cfbf6777fff9576c642f6f5"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:52.465812"
+}
+
+{
+  "question_id": "119a74ad-344a-413a-b7d5-036c0d08193f",
+  "content": "GSK 25i系列的伺服驱动接口适配哪种类型的编码器？闭环控制和位置反馈机制对定位精度有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-58579fec8cfbf6777fff9576c642f6f5",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-58579fec8cfbf6777fff9576c642f6f5",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-58579fec8cfbf6777fff9576c642f6f5"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:52.466050"
+}
+
+{
+  "question_id": "da4e1f58-9523-41ec-b33e-bbc60d4b3edb",
+  "content": "设备支持的19种特殊固定循环和复合循环指令在什么场景下使用更有效？它们相比普通循环有何优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-58579fec8cfbf6777fff9576c642f6f5",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-58579fec8cfbf6777fff9576c642f6f5",
+    "related_chunk_ids": [
+      "chunk-58579fec8cfbf6777fff9576c642f6f5"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:52.466287"
+}
+
+{
+  "question_id": "714d4860-fae9-4e34-80fe-82af7f34c730",
+  "content": "GSK 25i系列支持的子程序调用级数为多少？这种多层嵌套结构在复杂零件编程中有什么优势和注意事项？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-58579fec8cfbf6777fff9576c642f6f5",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-58579fec8cfbf6777fff9576c642f6f5",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-58579fec8cfbf6777fff9576c642f6f5"
+    ]
+  },
+  "created_at": "2025-12-05T14:37:52.466820"
+}
+
+{
+  "question_id": "740becd8-6a8b-4fd5-bced-34e8b0d1bf4c",
+  "content": "GSK 25iMc MPU H08BDC型号的编程指令表中包含多少条基本指令和功能指令？这些指令在执行时的基本扫描周期是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+    "related_entities": [
+      "GSK",
+      "MPU"
+    ],
+    "related_chunk_ids": [
+      "chunk-7353b7c3da1f8dd7ca5a434df9c18655"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:16.649268"
+}
+
+{
+  "question_id": "c8801e25-10f4-400b-bc0b-32959e1b5ad3",
+  "content": "在GSK 25iMc系统中，第一级程序的最大扫描周期是多少？每一步基本指令的执行时间是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+    "related_chunk_ids": [
+      "chunk-7353b7c3da1f8dd7ca5a434df9c18655"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:16.649533"
+}
+
+{
+  "question_id": "c1f9ba1b-9243-467c-b52b-97e17834fc91",
+  "content": "GSK 25iMc MPU H08BDC型号支持的最大程序步数是多少？梯形图功能是否支持在线动态显示和编辑操作？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+    "related_entities": [
+      "GSK",
+      "MPU"
+    ],
+    "related_chunk_ids": [
+      "chunk-7353b7c3da1f8dd7ca5a434df9c18655"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:16.649792"
+}
+
+{
+  "question_id": "b1d6c649-678f-4817-9ecd-51aff7f97113",
+  "content": "GSK 25iMc系统中提供了多少个中间继电器（R）和保持型继电器（K）？这些继电器的地址范围是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7353b7c3da1f8dd7ca5a434df9c18655"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:16.650052"
+}
+
+{
+  "question_id": "acd90861-dd41-43ef-8190-960b367145b5",
+  "content": "GSK 25iMc MPU H10BDC型号配备了多大的显示屏？它的独立按键操作面板有哪些具体功能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+    "related_entities": [
+      "GSK",
+      "MPU"
+    ],
+    "related_chunk_ids": [
+      "chunk-7353b7c3da1f8dd7ca5a434df9c18655"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:16.650309"
+}
+
+{
+  "question_id": "b638e48e-bef8-4d1b-a3f8-c4deff760d73",
+  "content": "在GSK 25iMc系统中，计数器（C）和定时器（T）的数量分别是多少？它们的地址范围是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+    "related_chunk_ids": [
+      "chunk-7353b7c3da1f8dd7ca5a434df9c18655"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:16.650564"
+}
+
+{
+  "question_id": "ea6681b4-796f-49d0-bc52-fab5a1059e32",
+  "content": "GSK 25iMc MPU V10B型号支持的最大子程序标号是多少？这些标号是如何命名的？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+    "related_entities": [
+      "GSK",
+      "MPU"
+    ],
+    "related_chunk_ids": [
+      "chunk-7353b7c3da1f8dd7ca5a434df9c18655"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:16.650821"
+}
+
+{
+  "question_id": "0d0918cc-f91d-48a8-a4a4-668b08ef9fd7",
+  "content": "GSK 25iMc系统中提供了哪些安全功能？主轴和进给的安全速度监控有什么具体作用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7353b7c3da1f8dd7ca5a434df9c18655"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:16.651070"
+}
+
+{
+  "question_id": "425b0c1f-4f9b-445a-8bc2-d78066863f1c",
+  "content": "GSK 25iMc系统支持哪些维护诊断功能？如何实现对伺服系统的状态监视与诊断？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-7353b7c3da1f8dd7ca5a434df9c18655"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:16.651317"
+}
+
+{
+  "question_id": "a315a070-e7b5-4833-a559-85101f753b0d",
+  "content": "在GSK 25iMc MPU H10BMC型号中，独立按键操作面板的安装尺寸数据是怎样的？这些尺寸参数在实际应用中有何意义？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7353b7c3da1f8dd7ca5a434df9c18655",
+    "related_entities": [
+      "MPU"
+    ],
+    "related_chunk_ids": [
+      "chunk-7353b7c3da1f8dd7ca5a434df9c18655"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:16.651593"
+}
+
+{
+  "question_id": "5d6f4658-49ae-49be-aa21-ec3795a5bfd8",
+  "content": "GSK25iMc竖式和横式的屏幕尺寸都是10.4寸，但在安装方式上有什么不同？适合的应用场景有哪些？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+    "related_chunk_ids": [
+      "chunk-30487920ba6313b51790be55fb7fc2c4"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:53.246140"
+}
+
+{
+  "question_id": "ceea4507-8391-4959-a76a-ff1897229e55",
+  "content": "GSK25iMc-MPU-V10BDC和GSK25iMc-MPU-V10BMC这两个型号在功能配置上有何区别？分别适用于什么类型的加工任务？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+    "related_chunk_ids": [
+      "chunk-30487920ba6313b51790be55fb7fc2c4"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:53.246411"
+}
+
+{
+  "question_id": "4c556403-fd68-4556-89d7-cd38515620ac",
+  "content": "GSK25iMc竖式操作面板的安装开孔尺寸是多少？如何确保安装的稳定性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+    "related_chunk_ids": [
+      "chunk-30487920ba6313b51790be55fb7fc2c4"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:53.246642"
+}
+
+{
+  "question_id": "50c8692d-b624-4d13-b647-b97ee4713dfc",
+  "content": "在五轴联动加工中，RTCP功能如何保证刀尖点和刀轴矢量的精确控制？对避免过切和欠切有什么帮助？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+    "related_chunk_ids": [
+      "chunk-30487920ba6313b51790be55fb7fc2c4"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:53.246894"
+}
+
+{
+  "question_id": "70abd3b3-7519-436d-9618-ab07736f35cb",
+  "content": "GSK25iMc-MPU-H10BJMC和GSK25iMc-MPU-V10BJDC这两个型号在参数配置上有哪些不同之处？分别适合哪些类型的加工任务？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+    "related_chunk_ids": [
+      "chunk-30487920ba6313b51790be55fb7fc2c4"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:53.247147"
+}
+
+{
+  "question_id": "261ca759-961c-4685-a183-d93862f15686",
+  "content": "GSK25i系列五轴加工中心如何处理复杂零件的空间特征？RTCP功能在此过程中起到什么作用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+    "related_chunk_ids": [
+      "chunk-30487920ba6313b51790be55fb7fc2c4"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:53.247368"
+}
+
+{
+  "question_id": "d9850c77-4046-42b6-b66e-6c9a4814c349",
+  "content": "GSK25iMc竖式操作面板的独立按键设计有什么优势？在实际操作中如何提高效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+    "related_chunk_ids": [
+      "chunk-30487920ba6313b51790be55fb7fc2c4"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:53.247615"
+}
+
+{
+  "question_id": "2d68317f-9452-4347-a9ec-bdad8bf7a7f4",
+  "content": "在前瞻速度平滑处理功能下，GSK25iMc系统如何优化刀具路径的尖角和大曲率区域加工？这对加工质量有什么提升？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+    "related_chunk_ids": [
+      "chunk-30487920ba6313b51790be55fb7fc2c4"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:53.247864"
+}
+
+{
+  "question_id": "987c648d-432f-4646-b9e0-542f06543e90",
+  "content": "GSK25iMc-MPU-V10CJMC(G)和GSK25iMc-MPU-V10CJDC(G)这两个型号在安装尺寸上有什么不同？如何选择合适的安装方式？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+    "related_chunk_ids": [
+      "chunk-30487920ba6313b51790be55fb7fc2c4"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:53.248116"
+}
+
+{
+  "question_id": "5b496cf5-2f43-4d38-b2ab-17a012f2181d",
+  "content": "GSK25iMc竖式主机单元的紧凑型设计对空间利用率有什么帮助？适合哪些类型的加工环境？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-30487920ba6313b51790be55fb7fc2c4",
+    "related_chunk_ids": [
+      "chunk-30487920ba6313b51790be55fb7fc2c4"
+    ]
+  },
+  "created_at": "2025-12-05T14:38:53.248335"
+}
+
+{
+  "question_id": "6d136c34-f1c1-4116-8b8a-1f5729e57405",
+  "content": "YHMC GB6555SF5的主轴转速为24000RPM，适合加工哪些类型的零件？其高转速对加工效率和精度有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+    "related_entities": [
+      "YHMC"
+    ],
+    "related_chunk_ids": [
+      "chunk-52c8abb6959bfdf0151b806c3b2989e9"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:14.035698"
+}
+
+{
+  "question_id": "290b729b-365e-4ca1-83a8-63962a0b0354",
+  "content": "GSK 25iMc的竖式安装面板尺寸是多少？在实际操作中如何确保安装的稳定性和操作便利性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-52c8abb6959bfdf0151b806c3b2989e9"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:14.035954"
+}
+
+{
+  "question_id": "8baff43c-06db-43a4-89bb-ef5b132fc1bd",
+  "content": "PML普锐 Miller GT18-5X采用双头结构，HSK A63主轴适合加工哪些材料？其高转速对光洁度有何贡献？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+    "related_entities": [
+      "Miller"
+    ],
+    "related_chunk_ids": [
+      "chunk-52c8abb6959bfdf0151b806c3b2989e9"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:14.036206"
+}
+
+{
+  "question_id": "6c4b817e-91ff-4b85-8e24-3087b7b805a3",
+  "content": "宁江机床五轴联动加工中心的工作台尺寸为1800×1400mm，这种大工作台设计在加工大型模具时有哪些优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+    "related_chunk_ids": [
+      "chunk-52c8abb6959bfdf0151b806c3b2989e9"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:14.036456"
+}
+
+{
+  "question_id": "2795510e-6b32-4474-ab1a-965e054a7dac",
+  "content": "YHMC GB6555SF5的双转台结构如何提高加工效率？各轴的最大移动速度对复杂零件加工有何影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+    "related_entities": [
+      "YHMC"
+    ],
+    "related_chunk_ids": [
+      "chunk-52c8abb6959bfdf0151b806c3b2989e9"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:14.036700"
+}
+
+{
+  "question_id": "f216e6c0-1742-4a5f-97d7-7723e37b3944",
+  "content": "GSK 25iMc-MPU-V15BDC的操作面板尺寸是多少？在安装过程中需要注意哪些事项以确保兼容性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-52c8abb6959bfdf0151b806c3b2989e9"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:14.036943"
+}
+
+{
+  "question_id": "09dab47c-a3b2-47c2-8ae9-faaca5dc3507",
+  "content": "PML普锐 Miller GT18-5X的双驱技术如何实现一次装夹完成多面精密加工？这种设计对减少装夹误差有何帮助？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+    "related_entities": [
+      "Miller"
+    ],
+    "related_chunk_ids": [
+      "chunk-52c8abb6959bfdf0151b806c3b2989e9"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:14.037184"
+}
+
+{
+  "question_id": "8d86e449-5092-4b1b-a53e-b18366d64d0d",
+  "content": "YHMC GB6555SF5的电主轴转速高达24000RPM，在加工铝合金材料时对刀具寿命有什么影响？如何优化刀具选择以提高效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+    "related_entities": [
+      "YHMC"
+    ],
+    "related_chunk_ids": [
+      "chunk-52c8abb6959bfdf0151b806c3b2989e9"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:14.037690"
+}
+
+{
+  "question_id": "2508dc6d-f77f-4949-96eb-0d0179b539b1",
+  "content": "GSK 25iMc在汽车模具加工中能达到的光洁度为Ra0.8μm，这种高光洁度对后续表面处理有什么好处？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-52c8abb6959bfdf0151b806c3b2989e9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-52c8abb6959bfdf0151b806c3b2989e9"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:14.037928"
+}
+
+{
+  "question_id": "b815aab9-d649-4f36-a77e-bf9b44ef9f6d",
+  "content": "东莞钰池T_700元TI/采用无丝杆传动和直线电机直驱运动技术，其全闭环零跟随技术如何确保加工精度达到IT6级？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+    "related_chunk_ids": [
+      "chunk-c634b890ed9cde4d30362a1751f1f7b3"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:35.958404"
+}
+
+{
+  "question_id": "f34f8846-9f5b-4334-a94e-e8745d38adbc",
+  "content": "THM6350和GMC1530RV两种机床在高刚性和重负载特性上有哪些差异？它们分别适合哪些类型的零件加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+    "related_chunk_ids": [
+      "chunk-c634b890ed9cde4d30362a1751f1f7b3"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:35.958672"
+}
+
+{
+  "question_id": "65c14333-0f8f-4e42-bffa-374abff21a22",
+  "content": "VMC850L的高速小线段插补功能如何与主轴切削力配合，实现高效动态铣削？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+    "related_chunk_ids": [
+      "chunk-c634b890ed9cde4d30362a1751f1f7b3"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:35.958925"
+}
+
+{
+  "question_id": "f9d582fb-f241-4daa-9552-9a04d18b63c9",
+  "content": "东莞钰池T_700元TI/的直线电机传动系统如何提高加工效率和减少装夹次数？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+    "related_chunk_ids": [
+      "chunk-c634b890ed9cde4d30362a1751f1f7b3"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:35.959422"
+}
+
+{
+  "question_id": "122bbbc7-d742-4eda-8330-4887afc2c9b4",
+  "content": "在铝合金球体镜面加工中，Ra0.02微米的表面粗糙度是如何实现的？需要哪些关键设备或技术支撑？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+    "related_chunk_ids": [
+      "chunk-c634b890ed9cde4d30362a1751f1f7b3"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:35.959665"
+}
+
+{
+  "question_id": "f83707dc-69cf-4aa6-970b-cf2d26c68778",
+  "content": "VMC850L在加工304不锈钢时，其主轴切削力大和高速插补功能如何协同工作以提高加工效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+    "related_chunk_ids": [
+      "chunk-c634b890ed9cde4d30362a1751f1f7b3"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:35.959918"
+}
+
+{
+  "question_id": "419ede1b-ad63-44ac-a89d-2515d895043c",
+  "content": "THM6350和GMC1530RV在船舶、汽车、水利和风力发电等行业中的适用性分别体现在哪些方面？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+    "related_chunk_ids": [
+      "chunk-c634b890ed9cde4d30362a1751f1f7b3"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:35.960432"
+}
+
+{
+  "question_id": "67bbb67c-c5ae-4d8a-b769-bda00ddde80a",
+  "content": "东莞钰池T_700元TI/采用直线电机直驱运动技术，其零跟随技术如何提高加工精度和稳定性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-GSK 25i系列五轴加工中心数控系统 20250317.txt",
+  "source_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c634b890ed9cde4d30362a1751f1f7b3",
+    "related_chunk_ids": [
+      "chunk-c634b890ed9cde4d30362a1751f1f7b3"
+    ]
+  },
+  "created_at": "2025-12-05T14:39:35.960687"
+}
+

@@ -1,0 +1,1481 @@
+{
+  "question_id": "e419cdce-1e9e-451d-88ff-d918066b0c43",
+  "content": "AE-80全电动注塑机驱动单元的安装环境需要满足哪些条件？如何防止设备受潮或受到阳光直射？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+    "related_chunk_ids": [
+      "chunk-6d1f1618696381553f798e55d1835093"
+    ]
+  },
+  "created_at": "2025-12-06T00:32:52.923088"
+}
+
+{
+  "question_id": "35cd8a52-76c6-4fec-8813-04d676a41b15",
+  "content": "在AE-80全电动注塑机的运输过程中，如何避免设备受损？有哪些具体措施可以保护电缆和伺服电机轴不被拖拽或撞击？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+    "related_chunk_ids": [
+      "chunk-6d1f1618696381553f798e55d1835093"
+    ]
+  },
+  "created_at": "2025-12-06T00:32:52.923393"
+}
+
+{
+  "question_id": "c7064303-9fdc-4967-a479-077da371155e",
+  "content": "AE-80驱动单元要求接地电阻不超过0.10欧姆，为什么不能使用中性线代替地线？如果违反这一规定可能会导致哪些后果？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+    "related_chunk_ids": [
+      "chunk-6d1f1618696381553f798e55d1835093"
+    ]
+  },
+  "created_at": "2025-12-06T00:32:52.923668"
+}
+
+{
+  "question_id": "6082ee73-edbe-4e5c-8ca0-2bebc469ce5e",
+  "content": "在安装AE-80驱动单元时，为什么必须将其置于IP43防护等级的控制柜内？这种防护等级具体能提供哪些保护？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+    "related_chunk_ids": [
+      "chunk-6d1f1618696381553f798e55d1835093"
+    ]
+  },
+  "created_at": "2025-12-06T00:32:52.924229"
+}
+
+{
+  "question_id": "34cfc0f7-3c9d-49f3-a902-273b6947556a",
+  "content": "安装AE-80伺服电机时需要注意哪些事项？如何避免因振动导致的设备损坏以及编码器的故障？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+    "related_chunk_ids": [
+      "chunk-6d1f1618696381553f798e55d1835093"
+    ]
+  },
+  "created_at": "2025-12-06T00:32:52.924752"
+}
+
+{
+  "question_id": "c983e96b-a1fe-46c8-9f7a-35773c53147e",
+  "content": "在AE-80全电动注塑机中，为什么不能使用超过规定电压或错误接线方式供电？这会导致哪些严重后果？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+    "related_chunk_ids": [
+      "chunk-6d1f1618696381553f798e55d1835093"
+    ]
+  },
+  "created_at": "2025-12-06T00:32:52.925038"
+}
+
+{
+  "question_id": "c0a159cc-963f-4cb8-b526-39d42205b863",
+  "content": "操作AE-80全电动注塑机时，为什么必须避免频繁开关电源？重启设备时需要等待至少1分钟，这一要求是基于什么考虑？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6d1f1618696381553f798e55d1835093",
+    "related_chunk_ids": [
+      "chunk-6d1f1618696381553f798e55d1835093"
+    ]
+  },
+  "created_at": "2025-12-06T00:32:52.925667"
+}
+
+{
+  "question_id": "d3dfffdc-78a1-49be-a563-83ea13133cba",
+  "content": "在安装AE-80伺服电机和驱动单元时，如何防止液体侵入导致损坏？有哪些具体的预防措施需要特别注意？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+    "related_chunk_ids": [
+      "chunk-43da0c5e0c75e76f0642ce64eaa8980e"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:14.857803"
+}
+
+{
+  "question_id": "5e04dc67-b337-478d-8e9c-db7b4318d375",
+  "content": "如果在断电后立即进行接线检查而没有等待5分钟，可能会导致哪些严重的后果？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+    "related_chunk_ids": [
+      "chunk-43da0c5e0c75e76f0642ce64eaa8980e"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:14.858049"
+}
+
+{
+  "question_id": "7c8c6aca-1c71-4556-a99b-150ec2e659b3",
+  "content": "AE-80伺服电机的高响应速度和低速性能对其在注射成型中的应用有哪些具体优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+    "related_chunk_ids": [
+      "chunk-43da0c5e0c75e76f0642ce64eaa8980e"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:14.858733"
+}
+
+{
+  "question_id": "2d7e6467-5d8f-4c77-aec2-ec2f317412b8",
+  "content": "为什么AE-80伺服驱动系统要特别强调与指定伺服电机的匹配使用？不按照这一要求执行可能带来哪些风险？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+    "related_chunk_ids": [
+      "chunk-43da0c5e0c75e76f0642ce64eaa8980e"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:14.858966"
+}
+
+{
+  "question_id": "4ccc4d0e-19db-4178-8698-e97004e5dd00",
+  "content": "AE-80伺服系统的报警排除需要先分析故障原因，如果直接重启而不排除故障可能会导致什么后果？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+    "related_chunk_ids": [
+      "chunk-43da0c5e0c75e76f0642ce64eaa8980e"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:14.859418"
+}
+
+{
+  "question_id": "ac7516f3-622e-471f-af33-45d84033939f",
+  "content": "为什么AE-80伺服电机的额定扭矩要高于连续负载值？过载运行会有哪些危害？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-43da0c5e0c75e76f0642ce64eaa8980e",
+    "related_chunk_ids": [
+      "chunk-43da0c5e0c75e76f0642ce64eaa8980e"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:14.859644"
+}
+
+{
+  "question_id": "d106b4a5-33f6-4471-90ad-239c03a3828a",
+  "content": "GSK AE-80全数字伺服驱动单元的性能特点有哪些？它如何与传统控制方法相比？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-da1b0d458c27b4b91ca5c24aa1a4b897"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:35.479389"
+}
+
+{
+  "question_id": "2bb96668-5b37-4122-8329-036a438c8b79",
+  "content": "在GSK AE-80系统中，DTSO1A-50和DTSO1A-300驱动模块在输出功率和适用场景上有何不同？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+    "related_chunk_ids": [
+      "chunk-da1b0d458c27b4b91ca5c24aa1a4b897"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:35.479632"
+}
+
+{
+  "question_id": "d538230c-3c22-426e-b756-01de74065e91",
+  "content": "GSK AE-80伺服电机的反馈精度对注射成型机的重复定位精度有何影响？如何优化这一性能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-da1b0d458c27b4b91ca5c24aa1a4b897"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:35.479874"
+}
+
+{
+  "question_id": "c701c6fe-74a3-4041-aa9c-d5859883bc08",
+  "content": "电源模块DTSO2A-POW如何实现AC-DC转换？其输入电压范围是什么？输出稳定性如何保证？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+    "related_chunk_ids": [
+      "chunk-da1b0d458c27b4b91ca5c24aa1a4b897"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:35.480235"
+}
+
+{
+  "question_id": "b015d448-bd99-4484-ab8b-0fbd469c36e3",
+  "content": "CN1接口在GSK AE-80驱动单元中主要用于什么功能？它与其他接口有什么区别？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+    "related_chunk_ids": [
+      "chunk-da1b0d458c27b4b91ca5c24aa1a4b897"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:35.480617"
+}
+
+{
+  "question_id": "a4754e95-c38d-4199-a998-7639305259e1",
+  "content": "在GSK AE-80伺服控制中，PID控制算法如何影响系统响应速度和压力稳定性？其优化参数有哪些？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+    "related_chunk_ids": [
+      "chunk-da1b0d458c27b4b91ca5c24aa1a4b897"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:35.481236"
+}
+
+{
+  "question_id": "27362910-2f9d-43c6-a52b-ea9bba6c0094",
+  "content": "CN5接口在驱动模块中的预留用途是什么？未来升级可能涉及哪些功能扩展？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+    "related_chunk_ids": [
+      "chunk-da1b0d458c27b4b91ca5c24aa1a4b897"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:35.481509"
+}
+
+{
+  "question_id": "7ac82f97-540a-4d9a-8884-eb50112cef1b",
+  "content": "GSK AE-80的伺服电机与驱动单元之间的匹配原则是什么？用户在选择时需要注意哪些事项？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-da1b0d458c27b4b91ca5c24aa1a4b897"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:35.481748"
+}
+
+{
+  "question_id": "ff88bf1e-48ab-444d-b7ab-aaba950b45b4",
+  "content": "为什么GSK强调AE-80系统的高集成度和小型化设计？这对实际应用有什么好处？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-da1b0d458c27b4b91ca5c24aa1a4b897",
+    "related_chunk_ids": [
+      "chunk-da1b0d458c27b4b91ca5c24aa1a4b897"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:35.481982"
+}
+
+{
+  "question_id": "a8fef341-c3ad-45e2-8a33-5072b53200a2",
+  "content": "在AE-80全电动注塑机驱动单元的安装过程中，如何确保伺服电机电缆、电机轴和编码器不受拖拽损坏？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+    "related_chunk_ids": [
+      "chunk-51393de518b0a75415e872f79eaaf438"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:54.125045"
+}
+
+{
+  "question_id": "7d7c293f-40ae-47f2-88ea-af4a7bd18b6d",
+  "content": "AE-80全电动注塑机驱动单元的工作环境温度范围是多少？在不同温度条件下，设备的性能会受到哪些影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+    "related_chunk_ids": [
+      "chunk-51393de518b0a75415e872f79eaaf438"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:54.125309"
+}
+
+{
+  "question_id": "5acd5b42-4b64-47e9-b7f8-a9287245f611",
+  "content": "在AE-80全电动注塑机中，DTSO2A-POW和DTS01A-50驱动模块的安装有何不同？需要哪些特定的保护措施？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+    "related_chunk_ids": [
+      "chunk-51393de518b0a75415e872f79eaaf438"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:54.125782"
+}
+
+{
+  "question_id": "e1d5a5f2-cb5d-486e-a61c-6f7ee7de1ff4",
+  "content": "AE-80全电动注塑机伺服电机的温度范围是多少？在长期运行时，如何确保其散热良好以避免过热？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+    "related_chunk_ids": [
+      "chunk-51393de518b0a75415e872f79eaaf438"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:54.126009"
+}
+
+{
+  "question_id": "8882713a-3b5d-48fb-9664-74add23bb19b",
+  "content": "安装AE-80全电动注塑机驱动单元时，振动和冲击的具体限制是什么？需要采取哪些防振措施？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+    "related_chunk_ids": [
+      "chunk-51393de518b0a75415e872f79eaaf438"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:54.126291"
+}
+
+{
+  "question_id": "26957d49-d480-48f2-ac97-f7826b1eef9e",
+  "content": "AE-80全电动注塑机的伺服电机编码器接口预留了哪些类型？升级时需要注意哪些事项？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+    "related_chunk_ids": [
+      "chunk-51393de518b0a75415e872f79eaaf438"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:54.126536"
+}
+
+{
+  "question_id": "1a09186b-67e1-4c68-bef9-6208c331bf6b",
+  "content": "在AE-80全电动注塑机中，DTSO1A-300驱动模块的安装要求是什么？需要避免哪些环境因素以确保其正常运行？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+    "related_chunk_ids": [
+      "chunk-51393de518b0a75415e872f79eaaf438"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:54.126770"
+}
+
+{
+  "question_id": "7a40f3c6-1b2d-47cc-85fb-2212390c9e9f",
+  "content": "在AE-80全电动注塑机中，如何正确安装伺服电机以避免液体进入电机内部？需要采取哪些防护措施？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-51393de518b0a75415e872f79eaaf438",
+    "related_chunk_ids": [
+      "chunk-51393de518b0a75415e872f79eaaf438"
+    ]
+  },
+  "created_at": "2025-12-06T00:33:54.127231"
+}
+
+{
+  "question_id": "e1ad3aee-cbfb-4d0f-b9df-da8c498f32ce",
+  "content": "编码器反馈信号终端CN2的针脚分配是怎样的？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-d712d5743658fa0395be870cbfbc207d",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-d712d5743658fa0395be870cbfbc207d",
+    "related_chunk_ids": [
+      "chunk-d712d5743658fa0395be870cbfbc207d"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:08.192271"
+}
+
+{
+  "question_id": "27421acc-8294-4892-82d3-96c72ea5a391",
+  "content": "AE-80全电动注塑机驱动单元的编码器反馈信号终端CN2使用了哪些具体的针脚分配和连接要求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+    "related_chunk_ids": [
+      "chunk-6f13342437edd117167e8eee3728435b"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:30.491141"
+}
+
+{
+  "question_id": "c194e981-a31f-4813-902d-b257be957ef3",
+  "content": "在安装AE-80驱动单元时，如何正确配置浪涌吸收器组件以保护敏感部件如线圈免受干扰？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+    "related_chunk_ids": [
+      "chunk-6f13342437edd117167e8eee3728435b"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:30.491391"
+}
+
+{
+  "question_id": "49c17ed1-76e4-4784-bca4-e84e69644822",
+  "content": "AE-80全电动注塑机驱动模块的编码器信号电缆应采用哪种屏蔽类型及长度限制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+    "related_chunk_ids": [
+      "chunk-6f13342437edd117167e8eee3728435b"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:30.491629"
+}
+
+{
+  "question_id": "2b14c16b-cee4-44a5-8d37-712d086b0fba",
+  "content": "CN1控制终端在AE-80驱动模块中包含哪些关键功能及其对伺服控制性能的影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+    "related_chunk_ids": [
+      "chunk-6f13342437edd117167e8eee3728435b"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:30.491868"
+}
+
+{
+  "question_id": "005af999-c034-493c-a7db-af17017c2f98",
+  "content": "AE-80驱动单元中的过压和欠压报警（CNS-8、CNS-9）如何确保系统运行安全？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+    "related_chunk_ids": [
+      "chunk-6f13342437edd117167e8eee3728435b"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:30.492115"
+}
+
+{
+  "question_id": "f85e08a8-82e1-40be-848b-7ff2b9991567",
+  "content": "不同型号的制动电阻（如DTS01A-50）在AE-80驱动模块中是如何选择和配置的？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+    "related_chunk_ids": [
+      "chunk-6f13342437edd117167e8eee3728435b"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:30.492363"
+}
+
+{
+  "question_id": "bdbfb1c5-e5fe-48f5-b8a7-a78c4ea2bf78",
+  "content": "AE-80全电动注塑机中的伺服使能输入终端SON对设备的操作状态有何影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+    "related_chunk_ids": [
+      "chunk-6f13342437edd117167e8eee3728435b"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:30.492635"
+}
+
+{
+  "question_id": "98c28552-f219-41ed-8984-4fb7585b7789",
+  "content": "在AE-80驱动单元中，如何通过参数设置实现模拟速度与扭矩控制模式之间的切换？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+    "related_chunk_ids": [
+      "chunk-6f13342437edd117167e8eee3728435b"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:30.492899"
+}
+
+{
+  "question_id": "171b3a21-33a1-4761-88df-24e401b92541",
+  "content": "CN5预留接口在AE-80驱动模块中未来可能支持哪些扩展功能或特定应用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+    "related_chunk_ids": [
+      "chunk-6f13342437edd117167e8eee3728435b"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:30.493205"
+}
+
+{
+  "question_id": "4a10d573-f6ea-49eb-9292-3d29cd82bfa3",
+  "content": "AE-80全电动注塑机的主电路报警信号输入终端如何与其他控制信号协同工作以确保系统稳定性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6f13342437edd117167e8eee3728435b",
+    "related_chunk_ids": [
+      "chunk-6f13342437edd117167e8eee3728435b"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:30.493548"
+}
+
+{
+  "question_id": "335c780d-6690-467b-8804-719b074fb4eb",
+  "content": "在AE-80全电动注塑机中，伺服使能输入终端SON在ON和OFF状态下分别对驱动单元的操作有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+    "related_chunk_ids": [
+      "chunk-65d802037ab1d8ec7a16eb4e95453bc7"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:50.625498"
+}
+
+{
+  "question_id": "da19bcd7-dd23-4b04-9d0f-b5c6684a2f4e",
+  "content": "AE-80全电动注塑机的伺服报警输出终端ALM在ON和OFF状态下如何反映系统状态？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+    "related_chunk_ids": [
+      "chunk-65d802037ab1d8ec7a16eb4e95453bc7"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:50.625740"
+}
+
+{
+  "question_id": "9c039eda-4f08-415c-b18d-de6101f4eeb4",
+  "content": "速度选择输入终端SC1和SC2的不同组合（如SC1 ON/SC2 OFF）如何影响内部速度设置？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+    "related_chunk_ids": [
+      "chunk-65d802037ab1d8ec7a16eb4e95453bc7"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:50.625981"
+}
+
+{
+  "question_id": "d46af27c-6f6d-4b61-ace2-4403b8f8320a",
+  "content": "在AE-80全电动注塑机中，Servo ready输出终端SRDY在ON和OFF状态下分别代表什么系统状态？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+    "related_chunk_ids": [
+      "chunk-65d802037ab1d8ec7a16eb4e95453bc7"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:50.626215"
+}
+
+{
+  "question_id": "d241ca48-349a-4a9a-a0e6-7ad8f3aa8b7d",
+  "content": "AE-80全电动注塑机的速度到达输出信号在什么情况下触发？其电压范围是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+    "related_chunk_ids": [
+      "chunk-65d802037ab1d8ec7a16eb4e95453bc7"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:50.626442"
+}
+
+{
+  "question_id": "bf0b03bb-f30e-481a-9559-291e350b232d",
+  "content": "绝对编码器信号输出终端CN2的信号类型和电源供应方式是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+    "related_chunk_ids": [
+      "chunk-65d802037ab1d8ec7a16eb4e95453bc7"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:50.626725"
+}
+
+{
+  "question_id": "78cfe628-40d1-46ae-97f2-12b444e8c5e9",
+  "content": "在AE-80全电动注塑机中，模拟速度控制模式和模拟扭矩控制模式在SEN关闭时如何切换？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+    "related_chunk_ids": [
+      "chunk-65d802037ab1d8ec7a16eb4e95453bc7"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:50.626973"
+}
+
+{
+  "question_id": "18c56acb-57f8-437e-b014-f2ebcae1d7d3",
+  "content": "AE-80全电动注塑机的速度到达输出信号的触发条件是什么？其电压范围是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+    "related_chunk_ids": [
+      "chunk-65d802037ab1d8ec7a16eb4e95453bc7"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:50.627204"
+}
+
+{
+  "question_id": "06d8d1a3-c4d7-4990-81ba-9df21a878116",
+  "content": "在AE-80全电动注塑机中，报警清除输入终端ALRS ON和OFF状态下系统分别执行什么操作？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+    "related_chunk_ids": [
+      "chunk-65d802037ab1d8ec7a16eb4e95453bc7"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:50.627433"
+}
+
+{
+  "question_id": "c62bd0f4-dc0e-4a14-8529-ee6e04fea0db",
+  "content": "伺服电机反馈信号终端CN2的电源供应方式及其功能是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-65d802037ab1d8ec7a16eb4e95453bc7",
+    "related_chunk_ids": [
+      "chunk-65d802037ab1d8ec7a16eb4e95453bc7"
+    ]
+  },
+  "created_at": "2025-12-06T00:34:50.627661"
+}
+
+{
+  "question_id": "f32475aa-52b6-44aa-ac7b-ddcd8bc76089",
+  "content": "DTSO2A-POW驱动模块与伺服电机的连接方式是什么？如何确保它们在系统中的正常通信？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-e31a6f90f0b3da527e76db7511806801",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e31a6f90f0b3da527e76db7511806801",
+    "related_chunk_ids": [
+      "chunk-e31a6f90f0b3da527e76db7511806801"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:16.075194"
+}
+
+{
+  "question_id": "ba9e4bb8-e746-4d97-aae1-097746a29a3d",
+  "content": "在AE-80全电动注塑机中，DTSO1A-50、DTSO1A-75等不同型号的驱动模块分别适用于哪些具体的运动控制任务？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-e31a6f90f0b3da527e76db7511806801",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e31a6f90f0b3da527e76db7511806801",
+    "related_chunk_ids": [
+      "chunk-e31a6f90f0b3da527e76db7511806801"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:16.075457"
+}
+
+{
+  "question_id": "660359dc-082b-468e-8b01-fe3a3865612f",
+  "content": "伺服电机如175SJT-M380BH在参数设置时，默认的速度比例增益和积分时间常数分别是多少？这些参数对系统性能有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-e31a6f90f0b3da527e76db7511806801",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e31a6f90f0b3da527e76db7511806801",
+    "related_chunk_ids": [
+      "chunk-e31a6f90f0b3da527e76db7511806801"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:16.075704"
+}
+
+{
+  "question_id": "46d0404f-7093-45e0-818b-32b985e6e60a",
+  "content": "在进行AE-80注塑机的参数调试时，为什么建议先在伺服电机无负载的情况下进行，并且需要特别注意哪些参数设置以避免设备损坏？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-e31a6f90f0b3da527e76db7511806801",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e31a6f90f0b3da527e76db7511806801",
+    "related_chunk_ids": [
+      "chunk-e31a6f90f0b3da527e76db7511806801"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:16.075942"
+}
+
+{
+  "question_id": "4559d304-38ab-4acd-8e11-4123124dd2c1",
+  "content": "DTSO1A-300驱动模块与265SJT-M2000BH伺服电机的组合在注塑机中主要用于哪些高负载应用场景？它们的参数设置有什么特别之处？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-e31a6f90f0b3da527e76db7511806801",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e31a6f90f0b3da527e76db7511806801",
+    "related_chunk_ids": [
+      "chunk-e31a6f90f0b3da527e76db7511806801"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:16.076677"
+}
+
+{
+  "question_id": "7f7c7380-674c-40b1-ac3c-a7148cb1d9f6",
+  "content": "AE-80全电动注塑机的DTSO1A驱动模块在出现电路板故障时，如何通过检查电源电压和控制波形来排查问题？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-112fa56d2059f5538a269b3b59397dab",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-112fa56d2059f5538a269b3b59397dab",
+    "related_chunk_ids": [
+      "chunk-112fa56d2059f5538a269b3b59397dab"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:34.758744"
+}
+
+{
+  "question_id": "b51abd86-4998-4d7d-b328-ba23d33103eb",
+  "content": "AE-80全电动注塑机在出现编码器电缆断开故障时，如何通过检查接线和更换缺陷连接器来解决问题？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-112fa56d2059f5538a269b3b59397dab",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-112fa56d2059f5538a269b3b59397dab",
+    "related_chunk_ids": [
+      "chunk-112fa56d2059f5538a269b3b59397dab"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:34.759426"
+}
+
+{
+  "question_id": "d8c8e3ae-a88a-4da4-a7fb-90f6f9fe80c1",
+  "content": "AE-80全电动注塑机在出现控制电源异常时，如何通过远离干扰源或更换驱动单元来解决问题？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-112fa56d2059f5538a269b3b59397dab",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-112fa56d2059f5538a269b3b59397dab",
+    "related_chunk_ids": [
+      "chunk-112fa56d2059f5538a269b3b59397dab"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:34.760102"
+}
+
+{
+  "question_id": "fda15051-876d-49c7-88ed-3a329538c3b2",
+  "content": "当AE-80全电动注塑机的FPGA故障发生时，如何通过重新设置EEPROM芯片参数和恢复默认配置来解决此问题？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-112fa56d2059f5538a269b3b59397dab",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-112fa56d2059f5538a269b3b59397dab",
+    "related_chunk_ids": [
+      "chunk-112fa56d2059f5538a269b3b59397dab"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:34.760330"
+}
+
+{
+  "question_id": "07a5be43-e7c7-4eb2-8b09-8e7ae55fedd4",
+  "content": "当AE-80全电动注塑机的编码器电缆损坏时，如何正确更换以避免电机控制错误？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+    "related_chunk_ids": [
+      "chunk-93c86fc51e5005c00f9dfd403bf70d76"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:55.706715"
+}
+
+{
+  "question_id": "7102a3c5-09ee-42ea-8877-6af0d838cc8c",
+  "content": "在处理AE-80全电动注塑机的制动电阻模块故障时，哪些因素可能导致驱动单元损坏，并如何预防？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+    "related_chunk_ids": [
+      "chunk-93c86fc51e5005c00f9dfd403bf70d76"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:55.706958"
+}
+
+{
+  "question_id": "c40380f4-7229-4cbe-adba-4164179961b4",
+  "content": "AE-80全电动注塑机的主电压过高的情况下，应检查哪些部件以确定问题根源并进行修复？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+    "related_chunk_ids": [
+      "chunk-93c86fc51e5005c00f9dfd403bf70d76"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:55.707193"
+}
+
+{
+  "question_id": "42d514bb-a5e2-477c-adf3-77c909e1f0a0",
+  "content": "更换AE-80全电动注塑机的指定驱动单元时，需要考虑哪些参数设置和操作步骤以确保设备正常运行？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+    "related_chunk_ids": [
+      "chunk-93c86fc51e5005c00f9dfd403bf70d76"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:55.707422"
+}
+
+{
+  "question_id": "856f8af3-d4b9-4bfc-93d9-4caed22d41ce",
+  "content": "当AE-80全电动注塑机显示编码器读取错误时，如何通过改变编码器类型或调整参数来解决问题？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+    "related_chunk_ids": [
+      "chunk-93c86fc51e5005c00f9dfd403bf70d76"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:55.707675"
+}
+
+{
+  "question_id": "b08185f6-7f02-4730-8c05-90b616afe565",
+  "content": "在减少AE-80全电动注塑机的开关频率时，如何平衡加速/减速时间和负载惯性以优化性能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+    "related_chunk_ids": [
+      "chunk-93c86fc51e5005c00f9dfd403bf70d76"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:55.707914"
+}
+
+{
+  "question_id": "9fbbce42-f956-43b8-8670-edbee183f972",
+  "content": "AE-80全电动注塑机的操作菜单中，“速度干运行”和“编码器零操作”分别适用于哪些具体的应用场景？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+    "related_chunk_ids": [
+      "chunk-93c86fc51e5005c00f9dfd403bf70d76"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:55.708143"
+}
+
+{
+  "question_id": "5ee392be-2e85-48da-a3c2-8cdc0d8e0037",
+  "content": "当AE-80全电动注塑机的电流传感器损坏时，如何通过更换或调整电路板来恢复设备功能并避免进一步损坏？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+    "related_chunk_ids": [
+      "chunk-93c86fc51e5005c00f9dfd403bf70d76"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:55.708371"
+}
+
+{
+  "question_id": "f77a537b-27aa-42bc-b158-d1e48deb9666",
+  "content": "在AE-80全电动注塑机的操作过程中，如何通过调节编码器参数和减少干扰源来提高系统稳定性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+    "related_chunk_ids": [
+      "chunk-93c86fc51e5005c00f9dfd403bf70d76"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:55.708599"
+}
+
+{
+  "question_id": "f4b914d0-ee41-4007-a923-dbe921dfb92e",
+  "content": "更换AE-80全电动注塑机的指定驱动模块时，需要考虑哪些电源模块和电机参数以确保兼容性和性能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-93c86fc51e5005c00f9dfd403bf70d76",
+    "related_chunk_ids": [
+      "chunk-93c86fc51e5005c00f9dfd403bf70d76"
+    ]
+  },
+  "created_at": "2025-12-06T00:35:55.708825"
+}
+
+{
+  "question_id": "b67891b2-1ba8-45d9-9825-c91431775c90",
+  "content": "参数No.42在伺服电机的最大转速设置中起到什么作用？如果将参数No.42设置为3000，会对电机的性能产生什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+    "related_chunk_ids": [
+      "chunk-8f46c2a50ebffa6977792bdc6f003ab5"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:20.349869"
+}
+
+{
+  "question_id": "9b3a4d66-8500-4d55-a18f-c65797082657",
+  "content": "参数No.44设置为100时，伺服电机的输出扭矩处于什么状态？如果将参数No.44增加到300，会发生什么变化？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+    "related_chunk_ids": [
+      "chunk-8f46c2a50ebffa6977792bdc6f003ab5"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:20.350747"
+}
+
+{
+  "question_id": "26b54e6f-ad21-46df-a863-4feeb7c0dbb4",
+  "content": "在模拟速度操作中，为什么需要将CN1-5(SPDREF)和CN1-15(SPDGND)连接到外部模拟信号输入端？这对系统的稳定性有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+    "related_chunk_ids": [
+      "chunk-8f46c2a50ebffa6977792bdc6f003ab5"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:20.351040"
+}
+
+{
+  "question_id": "0d819d77-a00a-4747-a361-d3842bf177c9",
+  "content": "伺服系统在\"rn- on\"状态下表示什么意思？这种状态下 servo 系统的状态如何？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+    "related_chunk_ids": [
+      "chunk-8f46c2a50ebffa6977792bdc6f003ab5"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:20.351324"
+}
+
+{
+  "question_id": "0c4dc209-44dc-45cc-a662-38db588471d5",
+  "content": "在进行速度干运转操作时，参数No.42和参数No.23之间存在什么关系？它们是如何共同作用的？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+    "related_chunk_ids": [
+      "chunk-8f46c2a50ebffa6977792bdc6f003ab5"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:20.351609"
+}
+
+{
+  "question_id": "dbf49532-4fd9-44d4-b1ce-6abf16f88ad7",
+  "content": "在模拟扭矩控制模式下，CN1-7(TQREF)和CN1-11(TQGND)分别起什么作用？如何确保这两点的正确连接？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+    "related_chunk_ids": [
+      "chunk-8f46c2a50ebffa6977792bdc6f003ab5"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:20.351897"
+}
+
+{
+  "question_id": "8ffd223a-3b67-4a27-a959-92ac7eb0821e",
+  "content": "为什么在进行伺服报警清除操作时需要使用ALRS信号？这个过程需要注意哪些事项？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+    "related_chunk_ids": [
+      "chunk-8f46c2a50ebffa6977792bdc6f003ab5"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:20.352178"
+}
+
+{
+  "question_id": "9a08e2be-5853-4136-98d4-95633a45278d",
+  "content": "在同时使用模拟速度和扭矩控制模式时，参数No.42、No.44和No.45是如何相互影响并共同决定电机性能的？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8f46c2a50ebffa6977792bdc6f003ab5",
+    "related_chunk_ids": [
+      "chunk-8f46c2a50ebffa6977792bdc6f003ab5"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:20.352459"
+}
+
+{
+  "question_id": "54f880d4-ac24-4a69-b266-ebd3ff9ad2a4",
+  "content": "在AE-80全电动注塑机中，如何调整模拟速度命令偏置值（参数No.41）和模拟扭矩命令偏置值（参数No.43），以确保电机不会出现微小旋转偏差？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+    "related_chunk_ids": [
+      "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:47.858432"
+}
+
+{
+  "question_id": "16a5d52b-b967-4556-874f-23ae0bc11f1a",
+  "content": "AE-80全电动注塑机的电源连接顺序是怎样的？为什么主电路电源要在控制电路电源开启后延迟1.5秒才通电？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+    "related_chunk_ids": [
+      "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:47.858735"
+}
+
+{
+  "question_id": "ca9687ed-f64c-44a4-9881-e1fa722f4226",
+  "content": "AE-80全电动注塑机的伺服使能信号（SON）在什么情况下会被接受？伺服准备信号（SRDY）输出后，需要等待多久才能输入伺服使能信号？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+    "related_chunk_ids": [
+      "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:47.859327"
+}
+
+{
+  "question_id": "fb4c083e-213c-460e-a515-010fe2ae50b3",
+  "content": "在AE-80全电动注塑机中，如何通过调整参数No.41和No.43来消除外部模拟信号的偏移值（mV单位），以确保速度和扭矩控制的准确性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+    "related_chunk_ids": [
+      "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:47.859584"
+}
+
+{
+  "question_id": "56492395-eea5-4d24-a556-67361ddc5933",
+  "content": "在AE-80全电动注塑机中，模拟速度命令偏置值（参数No.41）和模拟扭矩命令偏置值（参数No.43）的设置对系统控制精度有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+    "related_chunk_ids": [
+      "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:47.860093"
+}
+
+{
+  "question_id": "84a679b9-3f78-4b3a-9aca-3c1e90163afa",
+  "content": "AE-80全电动注塑机的伺服驱动模块在什么情况下会进入电动制动状态？如何通过调整参数避免这种情况发生？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+    "related_chunk_ids": [
+      "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:47.860370"
+}
+
+{
+  "question_id": "2fc9d8ab-a1c7-49ef-8a5c-e4637f844818",
+  "content": "在AE-80全电动注塑机中，如何正确连接外部模拟速度信号接地（CN1-15）和外部模拟扭矩信号接地（CN1-11），以确保信号传输的稳定性和准确性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659",
+    "related_chunk_ids": [
+      "chunk-9cca6cbfb6b814e3b2c7f16a44dcd659"
+    ]
+  },
+  "created_at": "2025-12-06T00:36:47.860635"
+}
+
+{
+  "question_id": "0490df46-effc-49dc-8e9f-154dc9d89233",
+  "content": "在AE-80全电动注塑机的伺服控制系统中，参数No.5（比例增益）和No.6（速度积分时间常数）如何影响系统的响应特性？在不同负载惯性条件下，这两个参数应如何调整以避免振动并确保稳定运行？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+    "related_chunk_ids": [
+      "chunk-b542f950267e583bf3ec4e1b4759e6e9"
+    ]
+  },
+  "created_at": "2025-12-06T00:37:22.804693"
+}
+
+{
+  "question_id": "9d7ad5a5-d95d-4af1-8338-fb1abc8f67bc",
+  "content": "参数No.41（模拟速度命令修正值）和No.43（模拟转矩命令修正值）在AE-80注塑机中分别起到什么作用？它们的设置对系统性能有何具体影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+    "related_chunk_ids": [
+      "chunk-b542f950267e583bf3ec4e1b4759e6e9"
+    ]
+  },
+  "created_at": "2025-12-06T00:37:22.804938"
+}
+
+{
+  "question_id": "877c1d38-84e9-4771-bfb7-b7d3ea7d7a12",
+  "content": "在AE-80全电动注塑机中，当负载惯性较大时，参数No.5（比例增益）和零偏移补偿值应如何调整以优化速度控制性能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+    "related_chunk_ids": [
+      "chunk-b542f950267e583bf3ec4e1b4759e6e9"
+    ]
+  },
+  "created_at": "2025-12-06T00:37:22.805166"
+}
+
+{
+  "question_id": "9c0c4ec3-5366-44eb-ae07-d49cfec07a5a",
+  "content": "参数No.42（最大模拟电压对应电机转速）和No.44（速度比例增益的顶部值）在AE-80注塑机中分别代表什么含义？它们之间存在怎样的关联关系？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+    "related_chunk_ids": [
+      "chunk-b542f950267e583bf3ec4e1b4759e6e9"
+    ]
+  },
+  "created_at": "2025-12-06T00:37:22.805414"
+}
+
+{
+  "question_id": "80a4d122-1bde-416a-841a-1dd9fd1ff705",
+  "content": "AE-80全电动注塑机中，参数No.19（模拟扭矩输入低通滤波系数）和No.6（速度积分时间常数）的设置对系统截止频率有何影响？在不同工况下应如何选择合适的设置值？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+    "related_chunk_ids": [
+      "chunk-b542f950267e583bf3ec4e1b4759e6e9"
+    ]
+  },
+  "created_at": "2025-12-06T00:37:22.805652"
+}
+
+{
+  "question_id": "b1c090f6-62a1-496a-a82b-6edd3b3adc84",
+  "content": "AE-80全电动注塑机的驱动模块DTS01A系列有哪些主要技术规格？它们的工作温度范围和湿度条件对设备运行有什么具体要求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+    "related_chunk_ids": [
+      "chunk-b542f950267e583bf3ec4e1b4759e6e9"
+    ]
+  },
+  "created_at": "2025-12-06T00:37:22.805883"
+}
+
+{
+  "question_id": "a57ed34d-f236-40fb-94c1-06906fe64bb0",
+  "content": "在AE-80注塑机中，参数No.44（速度比例增益顶部值）的设置需要考虑哪些因素？过大的设置值可能会带来什么负面影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\英文 - AE-80全电动注塑机专用驱动单元使用手册 （2013年7月第3版）-2013-07-12定稿-2013-08-26-定稿.txt",
+  "source_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b542f950267e583bf3ec4e1b4759e6e9",
+    "related_chunk_ids": [
+      "chunk-b542f950267e583bf3ec4e1b4759e6e9"
+    ]
+  },
+  "created_at": "2025-12-06T00:37:22.806109"
+}
+

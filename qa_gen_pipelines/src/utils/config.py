@@ -146,6 +146,22 @@ class ConfigManager:
                         "timeout": 1800,
                         "max_retries": 5,
                     },
+                    "query": {
+                        "top_k": 40,
+                        "chunk_top_k": 20,
+                        "max_entity_tokens": 10000,
+                        "max_relation_tokens": 10000,
+                        "max_total_tokens": 40000,
+                        "cosine_threshold": 0.2,
+                        "related_chunk_number": 2,
+                        "history_turns": 0,
+                        "enable_rerank": True,
+                        "timeouts": {
+                            "mix": 1200,
+                            "naive": 600,
+                            "local": 600,
+                        },
+                    },
                     "max_context_length": 4000
                 }
             },

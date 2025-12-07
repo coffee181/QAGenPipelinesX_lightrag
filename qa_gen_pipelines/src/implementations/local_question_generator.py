@@ -125,13 +125,13 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
             logger.info(f"🎯 目标问题数量: {self.questions_per_chunk}")
 
             context_package = self._build_context_for_chunk(chunk)
-            prompt_text = self._compose_prompt_text(
-                chunk.content, context_package["prompt_context"]
-            )
+            prompt_text = self._compose_prompt_text(chunk.content)
+            prompt_context = context_package.get("prompt_context", "")
 
             # 准备提示词
             human_message = self.human_prompt.format(
                 text=prompt_text,
+                prompt_context=prompt_context,
                 questions_per_chunk=self.questions_per_chunk
             )
             
@@ -214,10 +214,8 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
             "related_chunk_ids": context.get("related_chunk_ids", []) or [],
         }
 
-    def _compose_prompt_text(self, chunk_text: str, knowledge_context: str) -> str:
-        if knowledge_context:
-            return f"{chunk_text}\n\n<知识图谱参考>\n{knowledge_context}"
-        return chunk_text
+    def _compose_prompt_text(self, chunk_text: str) -> str:
+        return (chunk_text or "").strip()
 
     def _build_question_object(
         self,

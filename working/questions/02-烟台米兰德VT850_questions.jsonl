@@ -1,0 +1,160 @@
+{
+  "question_id": "4f7dc55c-8bc3-4b13-9e4a-44bd5c5b23e2",
+  "content": "VT850的工作台尺寸为1000x500mm，最大负重500kg，适合加工哪些类型的零件？其主轴端面至工作台面的距离为120-620mm，如何根据不同的加工需求选择合适的位置？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-烟台米兰德VT850.txt",
+  "source_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+    "related_chunk_ids": [
+      "chunk-6a9b1f2927abf8efc88a4df5e2950f7f"
+    ]
+  },
+  "created_at": "2025-12-05T15:53:16.251833"
+}
+
+{
+  "question_id": "ae1cfedf-7422-4bde-87ce-0fdf2a804d93",
+  "content": "VT850的三轴均采用线性滚柱导轨，这种设计在提高移动速度的同时，对机床的刚性和稳定性有什么影响？与传统滑动导轨相比，有哪些优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-烟台米兰德VT850.txt",
+  "source_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+    "related_chunk_ids": [
+      "chunk-6a9b1f2927abf8efc88a4df5e2950f7f"
+    ]
+  },
+  "created_at": "2025-12-05T15:53:16.252331"
+}
+
+{
+  "question_id": "9f7412e4-ffd6-4b6d-bc06-3cedfc818b54",
+  "content": "VT850的主轴锥孔为BT40，转速可达12000rpm，这种配置适合加工哪些材料和硬度范围的工件？在实际应用中需要注意哪些事项以确保加工精度和效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-烟台米兰德VT850.txt",
+  "source_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+    "related_chunk_ids": [
+      "chunk-6a9b1f2927abf8efc88a4df5e2950f7f"
+    ]
+  },
+  "created_at": "2025-12-05T15:53:16.252777"
+}
+
+{
+  "question_id": "6fe18781-eec9-4837-89d1-10ab39a659ec",
+  "content": "VT850采用台湾上银或银泰品牌的线轨，其最大进给速度为48mm/min，如何结合主轴转速和其他参数优化高速加工过程中的切削效果？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-烟台米兰德VT850.txt",
+  "source_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+    "related_chunk_ids": [
+      "chunk-6a9b1f2927abf8efc88a4df5e2950f7f"
+    ]
+  },
+  "created_at": "2025-12-05T15:53:16.253124"
+}
+
+{
+  "question_id": "c76f9f8d-a0be-405c-8328-3fccef058717",
+  "content": "VT850的刀库类型为24-T，这种配置在多工序加工中有什么优势？适合处理哪些类型的工件和应用场景？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-烟台米兰德VT850.txt",
+  "source_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+    "related_chunk_ids": [
+      "chunk-6a9b1f2927abf8efc88a4df5e2950f7f"
+    ]
+  },
+  "created_at": "2025-12-05T15:53:16.253476"
+}
+
+{
+  "question_id": "5a087dbb-e802-4976-bc7d-b1a29013f5c8",
+  "content": "VT850的最大行程X/Y/Z分别为800/500/500mm，在实际使用中如何根据不同的零件尺寸选择合适的行程范围以确保加工效率和精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-烟台米兰德VT850.txt",
+  "source_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+    "related_chunk_ids": [
+      "chunk-6a9b1f2927abf8efc88a4df5e2950f7f"
+    ]
+  },
+  "created_at": "2025-12-05T15:53:16.253793"
+}
+
+{
+  "question_id": "68e706f3-41e5-4b46-9a5a-bfb3dea9177d",
+  "content": "VT850的主轴电机功率为7.5kw，转速可达12000rpm，这种配置在切削不同材料时对刀具寿命有什么影响？如何选择合适的刀具参数？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-烟台米兰德VT850.txt",
+  "source_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+    "related_chunk_ids": [
+      "chunk-6a9b1f2927abf8efc88a4df5e2950f7f"
+    ]
+  },
+  "created_at": "2025-12-05T15:53:16.254070"
+}
+
+{
+  "question_id": "5b5a6f8d-ae65-4054-aaad-11bcf34a5bf3",
+  "content": "VT850的机床外形尺寸为长2800mm、高2340mm、宽2600mm，净重约5400kg，在实际安装和使用中需要考虑哪些空间和负载因素？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-烟台米兰德VT850.txt",
+  "source_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+    "related_chunk_ids": [
+      "chunk-6a9b1f2927abf8efc88a4df5e2950f7f"
+    ]
+  },
+  "created_at": "2025-12-05T15:53:16.254393"
+}
+
+{
+  "question_id": "0bb1d05c-0a2d-426c-b401-7b4c5e06cab6",
+  "content": "VT850采用三维设计软件SolidWorks进行优化设计，这种设计方法在提高机床刚度和稳定性方面有什么具体优势？对抑制振动和变形有什么帮助？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-烟台米兰德VT850.txt",
+  "source_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+    "related_chunk_ids": [
+      "chunk-6a9b1f2927abf8efc88a4df5e2950f7f"
+    ]
+  },
+  "created_at": "2025-12-05T15:53:16.254688"
+}
+
+{
+  "question_id": "acd71919-d302-460c-91fc-ada4ee0fcc4d",
+  "content": "VT850的关键外购件采用进口品牌，在实际使用中这些部件的可靠性和耐用性如何保证？在维护和保养过程中需要注意哪些事项以延长设备寿命？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-烟台米兰德VT850.txt",
+  "source_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6a9b1f2927abf8efc88a4df5e2950f7f",
+    "related_chunk_ids": [
+      "chunk-6a9b1f2927abf8efc88a4df5e2950f7f"
+    ]
+  },
+  "created_at": "2025-12-05T15:53:16.254974"
+}
+

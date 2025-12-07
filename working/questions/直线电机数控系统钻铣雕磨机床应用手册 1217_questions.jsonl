@@ -1,0 +1,587 @@
+{
+  "question_id": "38d3a63a-e5d6-4253-b4d2-e1371d44545d",
+  "content": "直线电机直驱技术在精密机床设计中有哪些具体要求？以某厂家的VD500直驱数控系统为例，其主轴中心至滑轨面距离是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-f14f2c9cec56b9fae65e6bc010324f2c",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f14f2c9cec56b9fae65e6bc010324f2c",
+    "related_chunk_ids": [
+      "chunk-f14f2c9cec56b9fae65e6bc010324f2c"
+    ]
+  },
+  "created_at": "2025-12-05T22:29:20.360319"
+}
+
+{
+  "question_id": "0a4566cd-3796-4e9c-93f6-241a637fe7aa",
+  "content": "某厂家XD-40AY加工中心配置了GSK永磁同步直线电机，快速移动速度达到多少？这一参数对加工效率有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-f14f2c9cec56b9fae65e6bc010324f2c",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f14f2c9cec56b9fae65e6bc010324f2c",
+    "related_chunk_ids": [
+      "chunk-f14f2c9cec56b9fae65e6bc010324f2c"
+    ]
+  },
+  "created_at": "2025-12-05T22:29:20.360558"
+}
+
+{
+  "question_id": "71179726-0faa-4695-99a9-85c8ba8e67bb",
+  "content": "直线电机的定位精度和重复定位精度在垂直平面内分别能达到什么水平？以某厂家JD-50L直驱数控系统为例说明。",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-f14f2c9cec56b9fae65e6bc010324f2c",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f14f2c9cec56b9fae65e6bc010324f2c",
+    "related_chunk_ids": [
+      "chunk-f14f2c9cec56b9fae65e6bc010324f2c"
+    ]
+  },
+  "created_at": "2025-12-05T22:29:20.360784"
+}
+
+{
+  "question_id": "212734a8-e33c-4cd4-be72-8f6e702528bd",
+  "content": "GSK永磁同步直线电机的不同配置（如134XJT1K8M10W与340XJT04KM05W）有什么区别？这些参数差异对机床性能有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-f14f2c9cec56b9fae65e6bc010324f2c",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f14f2c9cec56b9fae65e6bc010324f2c",
+    "related_chunk_ids": [
+      "chunk-f14f2c9cec56b9fae65e6bc010324f2c"
+    ]
+  },
+  "created_at": "2025-12-05T22:29:20.361011"
+}
+
+{
+  "question_id": "cf31c3b5-bf76-4727-95f6-d5aee5b86bd8",
+  "content": "RENISHAW球杆仪诊断值在机床校准中起到什么作用？以2019年某厂家的校准记录为例说明。",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-f14f2c9cec56b9fae65e6bc010324f2c",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f14f2c9cec56b9fae65e6bc010324f2c",
+    "related_chunk_ids": [
+      "chunk-f14f2c9cec56b9fae65e6bc010324f2c"
+    ]
+  },
+  "created_at": "2025-12-05T22:29:20.361733"
+}
+
+{
+  "question_id": "9e1d93b9-5286-4c64-a407-651084d4d04b",
+  "content": "GSK 25iMc加工中心的定位精度和重复定位精度分别是多少？这些精度对于模具制造有何重要意义？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-26d2713ef0b39c50e212fcdbfb949bc1",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-26d2713ef0b39c50e212fcdbfb949bc1",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-26d2713ef0b39c50e212fcdbfb949bc1"
+    ]
+  },
+  "created_at": "2025-12-05T22:29:41.861543"
+}
+
+{
+  "question_id": "48721fcf-7b7b-450b-b953-74ac2cc08340",
+  "content": "在使用RENISHAW球杆仪进行诊断时，F200和F3000的校准值分别代表什么含义？如何通过这些数据判断机床的精度状态？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-26d2713ef0b39c50e212fcdbfb949bc1",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-26d2713ef0b39c50e212fcdbfb949bc1",
+    "related_chunk_ids": [
+      "chunk-26d2713ef0b39c50e212fcdbfb949bc1"
+    ]
+  },
+  "created_at": "2025-12-05T22:29:41.862245"
+}
+
+{
+  "question_id": "292e0d66-73a7-4d2b-b284-ea4079b31954",
+  "content": "广州数控提供的光栅尺可以根据客户需求选择Endat协议绝对式光栅或SS协议的RSE，这两种协议在性能上有什么区别？分别适合哪些应用场合？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-83d146fdfc6a9382188e361be9bce28f",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-83d146fdfc6a9382188e361be9bce28f",
+    "related_chunk_ids": [
+      "chunk-83d146fdfc6a9382188e361be9bce28f"
+    ]
+  },
+  "created_at": "2025-12-05T22:30:29.468982"
+}
+
+{
+  "question_id": "44b4cc3c-08aa-42f3-96d0-6972373b5623",
+  "content": "磁性材料距离次级磁板必须保证大于100mm，如果不遵守这一规定可能会导致什么问题？有什么防护措施可以避免这种情况发生？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-83d146fdfc6a9382188e361be9bce28f",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-83d146fdfc6a9382188e361be9bce28f",
+    "related_chunk_ids": [
+      "chunk-83d146fdfc6a9382188e361be9bce28f"
+    ]
+  },
+  "created_at": "2025-12-05T22:30:29.470292"
+}
+
+{
+  "question_id": "58220c02-208b-4c2b-ab7e-b9fade00d40b",
+  "content": "在装配次级磁板时为什么要求至少两人操作？相互之间保持200mm间距并严禁并排堆放的目的是什么？在实际操作中如何确保这些安全规范得到执行？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-83d146fdfc6a9382188e361be9bce28f",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-83d146fdfc6a9382188e361be9bce28f",
+    "related_chunk_ids": [
+      "chunk-83d146fdfc6a9382188e361be9bce28f"
+    ]
+  },
+  "created_at": "2025-12-05T22:30:29.470567"
+}
+
+{
+  "question_id": "4c59183c-0ea2-4851-b736-d86c90e70e78",
+  "content": "在选择直线电动机的驱动单元时，如何根据峰值电流计算所需驱动单元的最小电流？以134XJTIK2M10W为例，其峰值电流为21A，为何推荐使用50A的驱动单元？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-76ebf3aa62bb67a2c8c83565ebf891ed",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-76ebf3aa62bb67a2c8c83565ebf891ed",
+    "related_chunk_ids": [
+      "chunk-76ebf3aa62bb67a2c8c83565ebf891ed"
+    ]
+  },
+  "created_at": "2025-12-05T22:30:52.055327"
+}
+
+{
+  "question_id": "5c4ab7b6-8650-433b-b122-be31e8f277cf",
+  "content": "结构设计中提到磁吸力一般为推力的五倍，以10200N的磁吸力为例，对应的推力是多少？这种设计对移动部件的稳定性有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-76ebf3aa62bb67a2c8c83565ebf891ed",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-76ebf3aa62bb67a2c8c83565ebf891ed",
+    "related_chunk_ids": [
+      "chunk-76ebf3aa62bb67a2c8c83565ebf891ed"
+    ]
+  },
+  "created_at": "2025-12-05T22:30:52.056017"
+}
+
+{
+  "question_id": "11f87b9c-2080-4d3e-afeb-fc039e3c240d",
+  "content": "直线电动机的磁吸力为10200N，对应的推力是多少？这种设计对机床的刚性和稳定性有什么帮助？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-76ebf3aa62bb67a2c8c83565ebf891ed",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-76ebf3aa62bb67a2c8c83565ebf891ed",
+    "related_chunk_ids": [
+      "chunk-76ebf3aa62bb67a2c8c83565ebf891ed"
+    ]
+  },
+  "created_at": "2025-12-05T22:30:52.057385"
+}
+
+{
+  "question_id": "a41e8463-3689-4a24-9f56-8fdada40ed31",
+  "content": "磁吸力为10200N的磁吸上结构次级安装基面在加工时需要保证与直线导轨安装面的平行度在多少以内？如何避免初级与次级之间的间隙不均匀影响精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-83956410673a78e9704874c1c701a099",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-83956410673a78e9704874c1c701a099",
+    "related_chunk_ids": [
+      "chunk-83956410673a78e9704874c1c701a099"
+    ]
+  },
+  "created_at": "2025-12-05T22:31:21.783468"
+}
+
+{
+  "question_id": "c734b822-e6d2-4d17-bc71-84273cecdf74",
+  "content": "使用134XJT1K8M10WW型号的工作台设计时，抗力必须达到多少以上才能确保整体强度和刚性？同时需要考虑哪些因素以减轻重量并保持加工精度稳定？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-83956410673a78e9704874c1c701a099",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-83956410673a78e9704874c1c701a099",
+    "related_chunk_ids": [
+      "chunk-83956410673a78e9704874c1c701a099"
+    ]
+  },
+  "created_at": "2025-12-05T22:31:21.783711"
+}
+
+{
+  "question_id": "d3b74755-9b84-47b2-a93e-0950d8fd7aa4",
+  "content": "直线导轨安装面与次级基面的平行度要求在0.02mm以内，这种高精度设计对机床的整体性能有什么影响？如果不满足这个要求可能会导致哪些问题？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-83956410673a78e9704874c1c701a099",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-83956410673a78e9704874c1c701a099",
+    "related_chunk_ids": [
+      "chunk-83956410673a78e9704874c1c701a099"
+    ]
+  },
+  "created_at": "2025-12-05T22:31:21.785473"
+}
+
+{
+  "question_id": "a79e9ad5-eace-40b5-846f-04770a228fa9",
+  "content": "在直驱机床加工中，使用4J29可伐合金材料时，GSK纳米插补技术和伺服高跟随性技术如何协同工作以实现表面粗糙度Ra<0.2um？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-0d4a30496311dea51d41f8de372e520a",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0d4a30496311dea51d41f8de372e520a",
+    "related_chunk_ids": [
+      "chunk-0d4a30496311dea51d41f8de372e520a"
+    ]
+  },
+  "created_at": "2025-12-05T22:31:43.204037"
+}
+
+{
+  "question_id": "3eae7ce5-5293-4b01-95e3-a14e596d1ec2",
+  "content": "GSK 25iMc机床在加工HRC55模具钢时，其直驱技术与丝杆机床相比，如何在关键面无倒角和塌边的情况下达到更高的合格率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-0d4a30496311dea51d41f8de372e520a",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0d4a30496311dea51d41f8de372e520a",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-0d4a30496311dea51d41f8de372e520a"
+    ]
+  },
+  "created_at": "2025-12-05T22:31:43.204285"
+}
+
+{
+  "question_id": "19022fc7-dae5-4d50-aa89-cbba10a8d8fc",
+  "content": "GSK 25iMc机床在高动态响应下的表面处理能力如何体现在细节处的合格率提升中？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-0d4a30496311dea51d41f8de372e520a",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0d4a30496311dea51d41f8de372e520a",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-0d4a30496311dea51d41f8de372e520a"
+    ]
+  },
+  "created_at": "2025-12-05T22:31:43.205912"
+}
+
+{
+  "question_id": "74c6d0a6-493d-4190-80f6-27ac37bd28a1",
+  "content": "GSK 25iMc Wan机床在镜面球体加工中达到了Ra0.005um的粗糙度，这得益于哪些关键技术的应用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-3fff7154481eca7f46ace512043084cd"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:05.228725"
+}
+
+{
+  "question_id": "b5158f8a-272f-4352-a4c2-b3d735757b5d",
+  "content": "GSK 7400rpm和F450mm/min的参数组合在高精度镜面浮雕加工中如何影响表面质量和加工效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-3fff7154481eca7f46ace512043084cd"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:05.229203"
+}
+
+{
+  "question_id": "3371073f-9103-4cd2-ab39-6436f38a1805",
+  "content": "矿物铸件直驱加工中心GSK 25iMc Wan如何实现Ra0.02um的表面粗糙度，适用于哪些高精度零件加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+    "related_chunk_ids": [
+      "chunk-3fff7154481eca7f46ace512043084cd"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:05.229431"
+}
+
+{
+  "question_id": "7ca0b9cc-85ef-48cf-a2ac-e932158823fa",
+  "content": "GSK直驱技术在镜面浮雕字符高度达到1.797um的情况下，实际应用中需要注意哪些工艺参数设置？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+    "related_chunk_ids": [
+      "chunk-3fff7154481eca7f46ace512043084cd"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:05.229991"
+}
+
+{
+  "question_id": "d6d27f17-ec1e-4231-a3a7-c082c4834d48",
+  "content": "高速微孔钻过程中，单个孔的效率达到455的具体实现方法是什么，对材料类型有何要求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+    "related_chunk_ids": [
+      "chunk-3fff7154481eca7f46ace512043084cd"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:05.230522"
+}
+
+{
+  "question_id": "a50db1a7-ea59-4f54-a265-d9e37c21bd4d",
+  "content": "在镜面球体和浮雕测试中，GSK 25iMc机床如何确保尺寸精度达到-0.0006的公差范围？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3fff7154481eca7f46ace512043084cd",
+    "related_chunk_ids": [
+      "chunk-3fff7154481eca7f46ace512043084cd"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:05.231047"
+}
+
+{
+  "question_id": "127f28b9-c683-4948-8a41-b4cee22074ce",
+  "content": "GSK 25iMc系统在镜面加工中达到Ra0.02um的表面粗糙度时，采用了哪些关键参数设置？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-10854e7fc38c8dfbdb5548e3938a9476"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:27.343025"
+}
+
+{
+  "question_id": "affbc6b6-f43f-4541-84f6-a37e67efc20c",
+  "content": "在使用GSK 25iMc系统加工直径为120mm的零件时，如何确保表面粗糙度达到Ra0.4um并提高效率至2分钟完成涡旋面加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+    "related_chunk_ids": [
+      "chunk-10854e7fc38c8dfbdb5548e3938a9476"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:27.343264"
+}
+
+{
+  "question_id": "6ff9e075-f23f-4e99-aa30-11a78c53a38b",
+  "content": "GSK 25iMc系统在处理材料7075航空铝时，最小刀具尺寸为0.2mm的情况下，如何确保轮廓清晰且成形精准？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-10854e7fc38c8dfbdb5548e3938a9476"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:27.343490"
+}
+
+{
+  "question_id": "9e65c292-ae5e-4ed1-ae60-c4b2307922ab",
+  "content": "系统GSK 25iMc如何实现Ra0.08um的高精度加工，并保证抛光后无粗糙度Ra0.06hm？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+    "related_chunk_ids": [
+      "chunk-10854e7fc38c8dfbdb5548e3938a9476"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:27.343769"
+}
+
+{
+  "question_id": "517c27f9-78d9-472e-b93f-11a6beda7b3f",
+  "content": "在使用PCD刀具进行连续加工时，GSK 25iMc系统如何控制磨损量在1hm以内以确保球体镜面加工质量？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+    "related_chunk_ids": [
+      "chunk-10854e7fc38c8dfbdb5548e3938a9476"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:27.344013"
+}
+
+{
+  "question_id": "831917ff-4cea-4a81-bff5-2a9f2717afe8",
+  "content": "GSK 25iMc系统的高速高精功能在处理HRC55模具钢时，如何实现Ra0.08um的表面粗糙度并满足抛光需求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-10854e7fc38c8dfbdb5548e3938a9476"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:27.344245"
+}
+
+{
+  "question_id": "e8155448-af02-4373-9704-b3beb8d1e982",
+  "content": "系统GSK 25iMc如何通过轮廓流畅和肌肉线条清晰的加工效果，呈现马的精气神？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+    "related_chunk_ids": [
+      "chunk-10854e7fc38c8dfbdb5548e3938a9476"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:27.344469"
+}
+
+{
+  "question_id": "15e75779-f3b0-4a46-9b12-cbffea20eda4",
+  "content": "在使用CBN刀具进行高硬度材料（如HRC55）加工时，GSK 25iMc系统如何确保Ra0.06hm的表面粗糙度并满足配模精度Sum的要求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+    "related_chunk_ids": [
+      "chunk-10854e7fc38c8dfbdb5548e3938a9476"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:27.344698"
+}
+
+{
+  "question_id": "7e0081fb-1b9c-4444-a51c-24cd08598bbe",
+  "content": "GSK 25iMc系统在处理直径为120mm的铸件直驱加工中心时，采用哪些参数设置以实现高光效表面和高效涡旋面加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-10854e7fc38c8dfbdb5548e3938a9476"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:27.344923"
+}
+
+{
+  "question_id": "7b4d9327-9803-4f04-8c21-e27956741ef3",
+  "content": "系统GSK 25iMc如何通过多棱面上浮现字符Ra0.02um的镜面级精度，确保互配测试件模的高质量加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\直线电机数控系统钻铣雕磨机床应用手册 1217.txt",
+  "source_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-10854e7fc38c8dfbdb5548e3938a9476",
+    "related_chunk_ids": [
+      "chunk-10854e7fc38c8dfbdb5548e3938a9476"
+    ]
+  },
+  "created_at": "2025-12-05T22:32:27.345146"
+}
+

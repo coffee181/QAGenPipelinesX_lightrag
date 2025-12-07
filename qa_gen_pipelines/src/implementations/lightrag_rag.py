@@ -154,6 +154,22 @@ class LightRAGImplementation(RAGInterface):
         self.ollama_llm_timeout = float(llm_cfg.get("timeout", 1800))
         self.ollama_llm_max_retries = int(llm_cfg.get("max_retries", 5))
 
+        # Query execution configuration
+        query_cfg = config.get("rag.lightrag.query", {}) or {}
+        self.query_top_k = int(query_cfg.get("top_k", 40))
+        self.query_chunk_top_k = int(query_cfg.get("chunk_top_k", 20))
+        self.query_max_entity_tokens = int(query_cfg.get("max_entity_tokens", 10000))
+        self.query_max_relation_tokens = int(query_cfg.get("max_relation_tokens", 10000))
+        self.query_max_total_tokens = int(query_cfg.get("max_total_tokens", 40000))
+        self.query_cosine_threshold = float(query_cfg.get("cosine_threshold", 0.2))
+        self.query_related_chunk_number = int(query_cfg.get("related_chunk_number", 2))
+        self.query_history_turns = int(query_cfg.get("history_turns", 0))
+        self.query_enable_rerank = bool(query_cfg.get("enable_rerank", True))
+        timeout_cfg = query_cfg.get("timeouts", {}) or {}
+        self.query_timeout_mix = float(timeout_cfg.get("mix", 1200.0))
+        self.query_timeout_naive = float(timeout_cfg.get("naive", 600.0))
+        self.query_timeout_local = float(timeout_cfg.get("local", 600.0))
+
         # Initialize retrieval cache
         self.enable_cache = config.get("rag.lightrag.enable_cache", True)
         self.cache_similarity_threshold = config.get("rag.lightrag.cache_similarity_threshold", 0.90)
@@ -396,7 +412,14 @@ class LightRAGImplementation(RAGInterface):
                     func=embedding_func
                 ),
                 # Use a compatible encoding
-                encoding_model="cl100k_base"  # Use cl100k_base instead of o200k_base
+                encoding_model="cl100k_base",  # Use cl100k_base instead of o200k_base
+                top_k=self.query_top_k,
+                chunk_top_k=self.query_chunk_top_k,
+                max_entity_tokens=self.query_max_entity_tokens,
+                max_relation_tokens=self.query_max_relation_tokens,
+                max_total_tokens=self.query_max_total_tokens,
+                cosine_threshold=self.query_cosine_threshold,
+                related_chunk_number=self.query_related_chunk_number,
             )
         except TypeError:
             # If encoding_model parameter is not supported, try without it
@@ -407,7 +430,14 @@ class LightRAGImplementation(RAGInterface):
                     embedding_dim=self.embedding_dim,
                     max_token_size=8192,
                     func=embedding_func
-                )
+                ),
+                top_k=self.query_top_k,
+                chunk_top_k=self.query_chunk_top_k,
+                max_entity_tokens=self.query_max_entity_tokens,
+                max_relation_tokens=self.query_max_relation_tokens,
+                max_total_tokens=self.query_max_total_tokens,
+                cosine_threshold=self.query_cosine_threshold,
+                related_chunk_number=self.query_related_chunk_number,
             )
 
         # Initialize storages in async context if possible
@@ -451,6 +481,21 @@ class LightRAGImplementation(RAGInterface):
         cleaned_text = re.sub(r'\n\s*\n\s*\n+', '\n\n', cleaned_text)
         
         return cleaned_text.strip()
+
+    def _build_query_param(self, mode: str) -> QueryParam:
+        """
+        Build a QueryParam object based on configuration.
+        """
+        return QueryParam(
+            mode=mode,
+            top_k=self.query_top_k,
+            chunk_top_k=self.query_chunk_top_k,
+            max_entity_tokens=self.query_max_entity_tokens,
+            max_relation_tokens=self.query_max_relation_tokens,
+            max_total_tokens=self.query_max_total_tokens,
+            history_turns=self.query_history_turns,
+            enable_rerank=self.query_enable_rerank,
+        )
 
     def _get_embedding_provider_order(self) -> List[str]:
         """
@@ -739,8 +784,8 @@ class LightRAGImplementation(RAGInterface):
                 
                 # Add timeout to prevent hanging queries
                 response = self._run_async(
-                    self.rag.aquery(question, param=QueryParam(mode="mix")),
-                    timeout=1200.0  # extend timeout for complex queries
+                    self.rag.aquery(question, param=self._build_query_param("mix")),
+                    timeout=self.query_timeout_mix
                 )
                 logger.info("Query completed with mix mode")
             except asyncio.TimeoutError:
@@ -753,8 +798,8 @@ class LightRAGImplementation(RAGInterface):
                 try:
                     logger.info("Trying naive mode as fallback...")
                     response = self._run_async(
-                        self.rag.aquery(question, param=QueryParam(mode="naive")),
-                        timeout=600.0  # extended fallback timeout
+                        self.rag.aquery(question, param=self._build_query_param("naive")),
+                        timeout=self.query_timeout_naive
                     )
                     logger.info("Query completed with naive mode")
                 except Exception:
@@ -762,8 +807,8 @@ class LightRAGImplementation(RAGInterface):
                     try:
                         logger.info("Trying local mode as final fallback...")
                         response = self._run_async(
-                            self.rag.aquery(question, param=QueryParam(mode="local")),
-                            timeout=600.0  # extended fallback timeout
+                            self.rag.aquery(question, param=self._build_query_param("local")),
+                            timeout=self.query_timeout_local
                         )
                         logger.info("Query completed with local mode")
                     except Exception:
