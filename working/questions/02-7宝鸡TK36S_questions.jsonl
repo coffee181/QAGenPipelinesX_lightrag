@@ -1,6 +1,6 @@
 {
-  "question_id": "0157477a-f1bf-4edd-befd-fa4a576817a6",
-  "content": "TK36和TK36(S)的最大回转直径分别是多少？这些参数在实际加工中有什么影响？",
+  "question_id": "0c1efd4e-f09e-4e94-a353-4a38ba9daeca",
+  "content": "TK36(S)的床身上最大回转直径©180与工件夹持能力之间的关系是什么？",
   "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
   "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
   "question_index": 1,
@@ -11,12 +11,12 @@
       "chunk-bb53a4328ecf0f393ce13df61b686717"
     ]
   },
-  "created_at": "2025-12-05T14:30:00.333905"
+  "created_at": "2025-12-10T02:23:35.614432"
 }
 
 {
-  "question_id": "c044f950-7b9d-422c-9dd0-d7b2322c4a43",
-  "content": "为什么TK36(S)的主轴转速范围是140-3000 r/min，这个设计对加工效率有什么帮助？",
+  "question_id": "8061b7cb-62f4-4d1a-afb7-4e77a1e8c4bf",
+  "content": "排式刀架XPS 0120的最大车削直径@320如何影响加工效率？",
   "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
   "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
   "question_index": 2,
@@ -27,31 +27,15 @@
       "chunk-bb53a4328ecf0f393ce13df61b686717"
     ]
   },
-  "created_at": "2025-12-05T14:30:00.334213"
+  "created_at": "2025-12-10T02:23:35.614694"
 }
 
 {
-  "question_id": "1f38c2a2-2c35-45c3-98c1-55cbe6f74495",
-  "content": "TK36和TK36(S)分别采用哪种类型的刀架结构？这种设计在实际应用中有什么优势？",
+  "question_id": "15bdec17-8b2d-4ff2-825e-3a640c6ce0a3",
+  "content": "主轴通孔规格057 A2-6 FER在TK36(S)中的适用场景是什么？",
   "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
   "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
   "question_index": 3,
-  "metadata": {
-    "has_answer": false,
-    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
-    "related_chunk_ids": [
-      "chunk-bb53a4328ecf0f393ce13df61b686717"
-    ]
-  },
-  "created_at": "2025-12-05T14:30:00.334460"
-}
-
-{
-  "question_id": "0a3c133d-167f-4e2f-8ccd-4f87bd6b4991",
-  "content": "为什么TK36(S)的主轴通孔直径是Φ57 A2-6 FER？这个参数对加工材料的选择有什么限制？",
-  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
-  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
-  "question_index": 4,
   "metadata": {
     "has_answer": false,
     "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
@@ -62,12 +46,28 @@
       "chunk-bb53a4328ecf0f393ce13df61b686717"
     ]
   },
-  "created_at": "2025-12-05T14:30:00.334711"
+  "created_at": "2025-12-10T02:23:35.614928"
 }
 
 {
-  "question_id": "2c8ffe18-6705-4626-9782-cb082e30a565",
-  "content": "TK36和TK36(S)的最大车削直径分别是多少？这些参数在加工不同工件时如何选择使用？",
+  "question_id": "e456035e-68d8-4c6c-9626-6aace614a780",
+  "content": "TK36和TK36(S)的主轴转速范围140-3000 r/min与功率5.5/7.5之间的参数约束如何优化加工性能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
+  "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
+    "related_chunk_ids": [
+      "chunk-bb53a4328ecf0f393ce13df61b686717"
+    ]
+  },
+  "created_at": "2025-12-10T02:23:35.615238"
+}
+
+{
+  "question_id": "f28f9fa5-70b0-4f6d-baab-b7461cbbc77d",
+  "content": "排式刀架XPS 0120的最大车削直径@320和六工位500*的适用场景有何不同？",
   "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
   "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
   "question_index": 5,
@@ -78,12 +78,12 @@
       "chunk-bb53a4328ecf0f393ce13df61b686717"
     ]
   },
-  "created_at": "2025-12-05T14:30:00.334957"
+  "created_at": "2025-12-10T02:23:35.615547"
 }
 
 {
-  "question_id": "3b21ad20-8e65-4455-b6c5-2d0be353e7a6",
-  "content": "为什么TK36的快速移动速度设计为X/Z轴6/8 m/min？这种速度设置对加工效率有什么影响？",
+  "question_id": "40729335-319d-499c-bd92-b064b06d4068",
+  "content": "液压卡盘ISO702/1 A2-5与A2-6在夹持能力上有什么差异？",
   "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
   "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
   "question_index": 6,
@@ -94,12 +94,12 @@
       "chunk-bb53a4328ecf0f393ce13df61b686717"
     ]
   },
-  "created_at": "2025-12-05T14:30:00.335250"
+  "created_at": "2025-12-10T02:23:35.615803"
 }
 
 {
-  "question_id": "49e8890a-4d6c-48b7-8202-0899fc7621ab",
-  "content": "TK36(S)配备的分离式冷却水箱有什么特点？这种设计对设备维护和清理有什么帮助？",
+  "question_id": "02fd879a-7022-475a-a230-150d2d16ed0c",
+  "content": "主轴通孔规格057 A2-5在TK36中的设计如何影响加工精度？",
   "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
   "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
   "question_index": 7,
@@ -110,12 +110,12 @@
       "chunk-bb53a4328ecf0f393ce13df61b686717"
     ]
   },
-  "created_at": "2025-12-05T14:30:00.335662"
+  "created_at": "2025-12-10T02:23:35.616055"
 }
 
 {
-  "question_id": "e2f65ad8-07a6-49e4-8c17-3cb6ad2c519e",
-  "content": "当TK36(S)主轴出现异响时，可能是什么原因导致的？应该如何处理？",
+  "question_id": "8ae22e24-a0aa-4ff3-b814-bf1b811719c1",
+  "content": "快速移动速度X/Z 6/8对加工效率的具体提升体现在哪些方面？",
   "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
   "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
   "question_index": 8,
@@ -126,12 +126,12 @@
       "chunk-bb53a4328ecf0f393ce13df61b686717"
     ]
   },
-  "created_at": "2025-12-05T14:30:00.336078"
+  "created_at": "2025-12-10T02:23:35.616296"
 }
 
 {
-  "question_id": "a8db056d-35da-4c35-905c-531c65cc7cab",
-  "content": "为什么TK36采用立式电动刀架设计？这种结构在实际加工中有什么优势？",
+  "question_id": "f4ed2f7d-a3a0-4220-bb59-7e66130ccf8e",
+  "content": "排式刀架的最大车削直径@220与工件长度限制之间的关系是什么？",
   "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
   "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
   "question_index": 9,
@@ -142,12 +142,12 @@
       "chunk-bb53a4328ecf0f393ce13df61b686717"
     ]
   },
-  "created_at": "2025-12-05T14:30:00.336359"
+  "created_at": "2025-12-10T02:23:35.616540"
 }
 
 {
-  "question_id": "bc230a7c-621d-4207-b730-b8bf29cfa0ba",
-  "content": "TK36和TK36(S)分别适合哪些类型的有色金属加工？这些设备的设计特点如何支持这些应用场景？",
+  "question_id": "35a69066-4b09-48e1-9bca-c6bb43e5104f",
+  "content": "主轴转速无级调速范围140-3000 r/min在有色金属加工中如何优化工艺参数？",
   "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\02-7宝鸡TK36S.txt",
   "source_chunk_id": "chunk-bb53a4328ecf0f393ce13df61b686717",
   "question_index": 10,
@@ -158,6 +158,6 @@
       "chunk-bb53a4328ecf0f393ce13df61b686717"
     ]
   },
-  "created_at": "2025-12-05T14:30:00.336646"
+  "created_at": "2025-12-10T02:23:35.616776"
 }
 

@@ -1,0 +1,609 @@
+{
+  "question_id": "29a274f3-6121-4b7a-ac97-dba24c97b642",
+  "content": "售后人员到位率在24小时和48小时内分别达到多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-49f3a69342bdb9d5376e46844319ea37",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-49f3a69342bdb9d5376e46844319ea37",
+    "related_chunk_ids": [
+      "chunk-49f3a69342bdb9d5376e46844319ea37"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:04.427918"
+}
+
+{
+  "question_id": "9e407ffd-bd44-48a1-8bd8-1095d4cd1a9d",
+  "content": "电话号码13808892746和13566755677对应的办事处是哪些？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-49f3a69342bdb9d5376e46844319ea37",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-49f3a69342bdb9d5376e46844319ea37",
+    "related_chunk_ids": [
+      "chunk-49f3a69342bdb9d5376e46844319ea37"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:04.428391"
+}
+
+{
+  "question_id": "18652496-0d45-4d36-bd9c-610672c0d086",
+  "content": "电话13822335346和地址江门市区德街204m是否属于同一服务网点？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-49f3a69342bdb9d5376e46844319ea37",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-49f3a69342bdb9d5376e46844319ea37",
+    "related_chunk_ids": [
+      "chunk-49f3a69342bdb9d5376e46844319ea37"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:04.429347"
+}
+
+{
+  "question_id": "0d1b9bf1-1f51-441b-9fd6-9d180b4d626b",
+  "content": "电话号码13808843850和地址诸暨店口镇池江东路临江花园楼单元401室是否对应同一个服务点？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-49f3a69342bdb9d5376e46844319ea37",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-49f3a69342bdb9d5376e46844319ea37",
+    "related_chunk_ids": [
+      "chunk-49f3a69342bdb9d5376e46844319ea37"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:04.430088"
+}
+
+{
+  "question_id": "c0b6f0c7-cef9-4896-a930-2e29f8a852e9",
+  "content": "浙江省绍兴市总县新吕大道西路215号的电话号码是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+    "related_chunk_ids": [
+      "chunk-5ea9a20fdb5b97efd25b01215b7deb9f"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:30.310831"
+}
+
+{
+  "question_id": "45f41f92-1aad-44c1-ad7b-2e8dceeafa01",
+  "content": "辽宁RDB办事处在江苏省无锡市新吴区城区纺城大道289号南方不锈钢市场的具体位置是哪里？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+    "related_chunk_ids": [
+      "chunk-5ea9a20fdb5b97efd25b01215b7deb9f"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:30.311084"
+}
+
+{
+  "question_id": "e14219b8-23ae-46a7-a3f7-8837f4de9333",
+  "content": "江苏省南京市建邺区金纺园二单元403室的Biz号码是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+    "related_chunk_ids": [
+      "chunk-5ea9a20fdb5b97efd25b01215b7deb9f"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:30.311625"
+}
+
+{
+  "question_id": "376d4a80-63bd-4f6a-8b39-3c21f9a72f56",
+  "content": "江苏盐城办事处在盐城市亭湖区文港路显小小区康居范号楼404室的电话号码是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+    "related_chunk_ids": [
+      "chunk-5ea9a20fdb5b97efd25b01215b7deb9f"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:30.312507"
+}
+
+{
+  "question_id": "70de086c-fee5-4a04-88d4-1e5dc40ac28c",
+  "content": "成都办事处在成都市成华区双庆路干居朝阳栋单元902室的具体位置是哪里？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+    "related_chunk_ids": [
+      "chunk-5ea9a20fdb5b97efd25b01215b7deb9f"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:30.312794"
+}
+
+{
+  "question_id": "838930f1-a875-4d99-9189-f2b0019adaec",
+  "content": "浙江省玉环市玉城街道蓝天苑204单元的联系方式是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5ea9a20fdb5b97efd25b01215b7deb9f",
+    "related_chunk_ids": [
+      "chunk-5ea9a20fdb5b97efd25b01215b7deb9f"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:30.313151"
+}
+
+{
+  "question_id": "b849be8c-89ed-4623-afed-20047f66167f",
+  "content": "GSK 980TDc 车床数控系统在调试过程中如何分类调试步骤？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-af1c7e907dc901cc243d38b7f5bb19dd"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:50.777676"
+}
+
+{
+  "question_id": "a95ab334-2f9e-47bb-be31-b424233c34d1",
+  "content": "GSK 980TDc 系统中的行程限位正向最大值是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-af1c7e907dc901cc243d38b7f5bb19dd"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:50.777959"
+}
+
+{
+  "question_id": "f3a55401-2595-4817-bf2a-e9203d17c627",
+  "content": "数控机床调试工作中，GSK 980TDc 系统提供哪些直观的调试选项？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+    "related_chunk_ids": [
+      "chunk-af1c7e907dc901cc243d38b7f5bb19dd"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:50.778641"
+}
+
+{
+  "question_id": "f0ce72f1-d310-4d29-a903-485347dd281f",
+  "content": "BES iS 和 BAER Nees 在不同地区的办事处地址和服务电话分别是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+    "related_entities": [
+      "BES",
+      "BAER",
+      "Nees"
+    ],
+    "related_chunk_ids": [
+      "chunk-af1c7e907dc901cc243d38b7f5bb19dd"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:50.778898"
+}
+
+{
+  "question_id": "1d6c85b1-bdeb-49de-8e6f-e1bceec53e91",
+  "content": "RMX NTG74 系统的安全防护与外接开关说明系统的基本功能有哪些？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+    "related_entities": [
+      "RMX",
+      "NTG74"
+    ],
+    "related_chunk_ids": [
+      "chunk-af1c7e907dc901cc243d38b7f5bb19dd"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:50.779146"
+}
+
+{
+  "question_id": "b0ff399c-7ed3-4684-ba87-80844aed253b",
+  "content": "GSK 980TDc 系统在完成调试后，如何实现机床的正常运行？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-af1c7e907dc901cc243d38b7f5bb19dd",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-af1c7e907dc901cc243d38b7f5bb19dd"
+    ]
+  },
+  "created_at": "2025-12-10T15:09:50.779392"
+}
+
+{
+  "question_id": "a0bc13cb-d253-4a91-bb47-554b8d7bb2d3",
+  "content": "最小控制精度为0.1μm时，最高移动速度能达到多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-57d97d8534ec13d4ca1a89166e3a0e0e",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-57d97d8534ec13d4ca1a89166e3a0e0e",
+    "related_chunk_ids": [
+      "chunk-57d97d8534ec13d4ca1a89166e3a0e0e"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:09.041665"
+}
+
+{
+  "question_id": "596d3c44-6a54-4c75-ae34-e967a4835c4c",
+  "content": "伺服单元GS2000T-N系列具备哪些过载能力特性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-57d97d8534ec13d4ca1a89166e3a0e0e",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-57d97d8534ec13d4ca1a89166e3a0e0e",
+    "related_chunk_ids": [
+      "chunk-57d97d8534ec13d4ca1a89166e3a0e0e"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:09.041897"
+}
+
+{
+  "question_id": "433bbada-dfaf-4762-a65c-82d92a3dda60",
+  "content": "程序存储空间为40M时，最多支持多少个零件程序？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-57d97d8534ec13d4ca1a89166e3a0e0e",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-57d97d8534ec13d4ca1a89166e3a0e0e",
+    "related_chunk_ids": [
+      "chunk-57d97d8534ec13d4ca1a89166e3a0e0e"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:09.042374"
+}
+
+{
+  "question_id": "516551d6-bbbe-4e5e-b865-d714689df194",
+  "content": "G71 加工交工路径和 G73 加工时间对比中，分秒的具体数值差异是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+    "related_entities": [
+      "G71",
+      "G73"
+    ],
+    "related_chunk_ids": [
+      "chunk-56754dd3ab17df99ede2ad877f734c8f"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:29.276377"
+}
+
+{
+  "question_id": "fe93c7de-3557-4248-8d9d-6d453bdb4aad",
+  "content": "在多边形车削加工中，传统动力铣刀与G42 X20 78:9-20 F209程序运行轨迹有何区别？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+    "related_entities": [
+      "X20"
+    ],
+    "related_chunk_ids": [
+      "chunk-56754dd3ab17df99ede2ad877f734c8f"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:29.276649"
+}
+
+{
+  "question_id": "71b07c15-e1ad-4f1b-a173-57b4b49b4479",
+  "content": "刀补轨迹F161 PLL止槽加工在多边形车削中的具体应用场景是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+    "related_chunk_ids": [
+      "chunk-56754dd3ab17df99ede2ad877f734c8f"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:29.276944"
+}
+
+{
+  "question_id": "d88d8a3a-4737-4b03-b967-0b45913c0380",
+  "content": "网关R485在连接数控系统时，如何实现远程对刀补件程序的管理功能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+    "related_chunk_ids": [
+      "chunk-56754dd3ab17df99ede2ad877f734c8f"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:29.277545"
+}
+
+{
+  "question_id": "2b431b39-2658-43b5-820b-a755a288fa16",
+  "content": "加工转速为196时，主轴电机GS2075的驱动速度和移动距离参数是如何设置的？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+    "related_chunk_ids": [
+      "chunk-56754dd3ab17df99ede2ad877f734c8f"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:29.277831"
+}
+
+{
+  "question_id": "0ca2b676-9f09-4888-88c2-899fbfdf869e",
+  "content": "G01 X50 Q120000线角度倒角编程方式与传统坐标换算方法相比有何优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+    "related_entities": [
+      "G01",
+      "X50"
+    ],
+    "related_chunk_ids": [
+      "chunk-56754dd3ab17df99ede2ad877f734c8f"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:29.278673"
+}
+
+{
+  "question_id": "e787124f-9dec-4fe4-980c-37f2e87b836e",
+  "content": "主轴转速为4000 mm/min时，径向进给运动的扭距和移动距离参数如何匹配以确保加工精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-56754dd3ab17df99ede2ad877f734c8f",
+    "related_chunk_ids": [
+      "chunk-56754dd3ab17df99ede2ad877f734c8f"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:29.278921"
+}
+
+{
+  "question_id": "94079eed-469c-4929-a6a8-57670bbeecf0",
+  "content": "工件坐标系 G54 到 G59 的设定与转换方式分别是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-bad0a58e8a473947c69d6b57048d3a8d",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bad0a58e8a473947c69d6b57048d3a8d",
+    "related_entities": [
+      "G54",
+      "G59"
+    ],
+    "related_chunk_ids": [
+      "chunk-bad0a58e8a473947c69d6b57048d3a8d"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:49.227001"
+}
+
+{
+  "question_id": "27a916ef-a119-40d0-9a39-3070c3c4d268",
+  "content": "980TDc 和 980TDc-H 的输入输出端口数量有何差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-bad0a58e8a473947c69d6b57048d3a8d",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bad0a58e8a473947c69d6b57048d3a8d",
+    "related_chunk_ids": [
+      "chunk-bad0a58e8a473947c69d6b57048d3a8d"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:49.227247"
+}
+
+{
+  "question_id": "06ad8b58-bc4c-48cb-9fae-3a09cc9bbd0b",
+  "content": "反向间隙补偿的范围是多少（mm 或 inch 单位）？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-bad0a58e8a473947c69d6b57048d3a8d",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bad0a58e8a473947c69d6b57048d3a8d",
+    "related_chunk_ids": [
+      "chunk-bad0a58e8a473947c69d6b57048d3a8d"
+    ]
+  },
+  "created_at": "2025-12-10T15:10:49.227958"
+}
+
+{
+  "question_id": "8ec54308-a3fc-4f7c-8496-4ccd590ffdd2",
+  "content": "螺纹头数的范围是1~99，具体如何实现多头螺纹加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-c08b1a0f47546fbe47703b20b6af8a84",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c08b1a0f47546fbe47703b20b6af8a84",
+    "related_chunk_ids": [
+      "chunk-c08b1a0f47546fbe47703b20b6af8a84"
+    ]
+  },
+  "created_at": "2025-12-10T15:11:10.292913"
+}
+
+{
+  "question_id": "b54a09a8-08e8-4c77-a58e-4ab06e27cd50",
+  "content": "操作面板的安装尺寸250x10mm适用于哪些应用场景？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+    "related_chunk_ids": [
+      "chunk-fbe6936ee304bd63ea9f47934109db28"
+    ]
+  },
+  "created_at": "2025-12-10T15:11:32.592874"
+}
+
+{
+  "question_id": "d3fdbc3e-7f86-4392-b800-8d5fc8b97727",
+  "content": "980TDc-H操作面板的具体参数有哪些？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+    "related_chunk_ids": [
+      "chunk-fbe6936ee304bd63ea9f47934109db28"
+    ]
+  },
+  "created_at": "2025-12-10T15:11:32.593148"
+}
+
+{
+  "question_id": "46557264-da20-439f-8a61-15a450a5904b",
+  "content": "如何正确安装980TDc-H的操作面板以确保最佳使用体验？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+    "related_chunk_ids": [
+      "chunk-fbe6936ee304bd63ea9f47934109db28"
+    ]
+  },
+  "created_at": "2025-12-10T15:11:32.593378"
+}
+
+{
+  "question_id": "31292e9f-c0a9-4a00-9adf-5de8f9939779",
+  "content": "安装尺寸为250x10mm的面板是否可以定制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+    "related_chunk_ids": [
+      "chunk-fbe6936ee304bd63ea9f47934109db28"
+    ]
+  },
+  "created_at": "2025-12-10T15:11:32.594016"
+}
+
+{
+  "question_id": "5f48e405-8ea1-4493-9a2f-2dc32a4e37ad",
+  "content": "如何校准安装后的980TDc-H操作面板？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+    "related_chunk_ids": [
+      "chunk-fbe6936ee304bd63ea9f47934109db28"
+    ]
+  },
+  "created_at": "2025-12-10T15:11:32.594284"
+}
+
+{
+  "question_id": "e6348b7a-2220-43f7-a24e-371694130135",
+  "content": "与其他类似型号相比，980TDc-H的操作面板有哪些优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK 980TDc车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fbe6936ee304bd63ea9f47934109db28",
+    "related_chunk_ids": [
+      "chunk-fbe6936ee304bd63ea9f47934109db28"
+    ]
+  },
+  "created_at": "2025-12-10T15:11:32.594961"
+}
+

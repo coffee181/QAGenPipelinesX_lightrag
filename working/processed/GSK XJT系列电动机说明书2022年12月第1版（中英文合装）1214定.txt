@@ -1,0 +1,1601 @@
+--- Page 1 ---
+在 本 使 用 说 明 书 中 我 们 将 尽力 叙述 各 种 与 XJT 系列 交流 永 磁 同步 本 使 用 说 明 书 的 版 权 归 广 州 数 控 设备 有 限 公司 所 有 任 何 单位 与
+直线 电动 机 相关 的 事项 限 于 篇 幅 限 制 及 产品 具体 使 用 等 原因 不 可 能 对 所 个 人 进行 出 版 或 复印 均 属 于 非法 行为 数 控 设 备 有 限 公司 将 保留 追究 其
+有 不 必 做 和 /或 不 能 做 的 操作 进行 详细 的 述 因 此 本 使 用 说 明 书 中 没有 法 律 责 任 的 权利
+特别 指明 的 事项 均 视 为 “不 可 能 ”或 “不 允许 ”进行 的 操作
+
+--- Page 2 ---
+GSK XJT 系列 交流 永 磁 同步 直线 电动 机 “使 用 说 明 书
+前 高
+尊敬 的 客户
+对 您 惠顾 选用 广州 数控 设备 有 限 公 司 的 GSK XJT 系列 交流 永 磁 同步 直
+线 电 动机 《以 下 简称 直线 电动 机 本 公司 深 感 荣幸 并 深 表 感 谢
+为 了 保证 电动 机 产品 安全 正 常 与 有 效 地 运行 工作 请 您 务必 在 安装
+使 用 产品 前 仔细 阅读 本 使 用 说 明 书
+
+--- Page 3 ---
+前 言 安 全 警告 及 安全 责任
+安全 警告 及 注意 事项
+安装 及 操作 不 当 易 引起 意外 事故
+请 安装 使 用 之 前 务 仔细 阅 读本 使 用 说 明 书
+ARR:
+公 高 温 危 险 人 外 高 压 危险
+靠近 著 示
+其 他 注意 事项
+“请 于 安装 使 用 前 先 确认 直线 电动 机 包 含 初级 组 件 和 次 级 组 件 及 冷却 附件 是
+否 有 破损 或 毁坏 若 有 任何 破损 情况 请 及 时 与 本 司 或 经 销 商 联络
+”在 正常 气候 条 件 下 用 兆 欧 表 测量 初级 组 件 绕组 三 相 U、V、W 对 地 线 及
+外 的 绝缘 电阻 其 值 应 不 小 于
+”组 装 和 操作 时 必 须 交 由 专业 人 员 进 行
+次 级 组 件 拆 装 时 应 避免 金属 物件 拷 机 并 特别 注意 手 部 夹 伤 风险 务 必 谨 处
+理
+”接线 时 请 按 电源 线 标识 的 U、V、W 与 驱动 单元 U、V、W 对 应 接线 并 确保 接
+地 牢固 可 靠
+对 产品 的 任何 私自 改动 本 公司 将 不 承担 任何 责任 产 品 的 保修 单 将 因此 作
+RR.
+所 有 型 号 规格 和 设计 如 有 变化 不 另行 通知
+
+--- Page 4 ---
+GSK XJT 系列 交流 永 磁 同步 直线 电动 机 ”使 用 说 明 书
+安全 责任
+制造 者 的 安全 责任
+一 一 制造 者 应 对 所 提供 的 直线 电动 机 及 随行 供应 的 附件 在 设计 和 结构 上 已 消除 和 /或 控
+制 的 危险 负责
+一 一 制造 者 应 对 所 提供 的 直线 电动 机 及 随行 供应 的 附件 的 安全 负责
+一 一 制造 者 应 对 提供 给 使 用 者 的 使 用 信息 和 建议 负责
+使 用 者 的 安全 责任
+一 一 使 用 者 应 通过 直线 电动 机 安全 操作 的 学 习 和 培训 并 和 掌握 安全 操作 的 内 容
+一 一 使 用 者 应 对 自己 增加 变 换 或 修改 原 直线 电动 机 附 件 后 的 安全 及 造成 的 危险 负
+责
+一 一 使 用 者 应 对 未 按 使 用 说 明文 件 的 规定 操作 调 整 维 护 安 装 和 储 运 产品 造成 的
+危险 负责
+本 手册 由 最 终 用 户 收藏
+诚挚 的 感谢 一 一 您 在 使 用 广州 数控 设备 有 限 公司 的 产品 时
+对 我 们 的 友好 支持
+
+--- Page 5 ---
+产 唱 特 点
+主要 技术 参数
+3.1 88XJT 系列 电动 机 的 主要 技术
+3.2 100XJT 系列 中 动机 的 主要 技术 参数
+3.3 134XJT 系列 中 动机 的 主要 技术 参数
+3.4 182XJT 系列 中 动机 的 主要 技术 参数
+3.5 242XJT 系列 中 动机 的 主要 技术 参数
+3.6 334XJT 系列 中 动机 的 主要 技术 参数
+3.7 340XJT 系列 中 动机 的 主要 技术 参数
+外 形 及 安装 寺
+4.1 88XJT 系列 电动 机 外 形 及 安装 及 十
+4.2 100XJT 系列 电动 机 外 形 及 安装 及 十
+4.3 134XJT 系列 电动 机 外 形 及 安装 及 十
+182XJT 系列 电动 机 外 形 及 安装 及 十
+242XJT 系列 电动 机 外 形 及 安装 及 十
+4.6 334XJT 系列 电动 机 外 形 及 安装 及 十
+4.7 340XJT 系列 电动 机 外 形 及 安装 及 十
+安装 要 求 及 注意 事项
+5.5 对 连续 推力 的 影响
+直线 电动 机 选 型
+6.1 者 电动 机 的 选 型 计算 方法
+6.2 PEER PLZ ALB
+7.1
+7.2 线 动机 发 热 功率 计算
+直线 电动 机 线 缆
+8.1 温度 保护 配置
+
+--- Page 6 ---
+Qr- GSK XJT 系列 交流 永 磁 同 步 直 线 电 动机 “使 用 说 明 书
+BAL KTY84/130 热 敏 阻
+8.1.2 PTC130 过 热 保 护 温 度 传感器
+温 控 信 和 线
+电源 线
+电动 机 的 贮存
+”电动 机 的 运输
+质量 保证 期
+订货 说 明
+
+--- Page 7 ---
+产品 技术 参数
+产品 特点
+广州 数控 设备 有 限 公司 自 主 开发 及 制造 的 XJT 系列 永 磁 交 流 同步 直线 电动 机 ,采用 高
+性 能 的 稀土 永 磁 材 料 具 有 高 功率 密度 高 动态 响应 低 推力 波动 高 可 靠 性 等 特点 能
+满足 数控 机 床 及 自动 化 设备 等 方面 的 广泛 需求
+直线 电动 机 因 其 原理 和 结构 上 的 特点 与 丝 杆 旋转 电动 机 结构 相 比 其 优势 主
+要 表现 为 以 下 方面
+结构 简单 :机械 结构 相对 简单 机 械 传动 件 部 件 少
+高 速度 初 级 部 件 安装 在 可 高 速 送 行 的 导轨 上 不 受 传统 的 丝 村 轴 承 等 机 械 配
+件 使 用 限 的 制约 可 获得 较 高 稳 的 速度 和 加 速度 可 达 4g)
+高 动态 响应 驶 动力 传递 实 现 了 在 具有 很 高 的 动态 性 能 的 同时 达到 很 好 的
+高 精度 配 备 高 精度 编码 器 使 各 个 速度 段 均 能 获得 很 高 的 精度
+精度 保持 性 取 消 了 丝 杆 轴 承 等 易 件 理 论 上 使 精度 保持 性
+无 限制 不 受 丝 杆 长 度 自 身 刚度 的 影响 在 行程
+型 号 说 明
+示例
+134 XIT 1k2
+dns 50N, 645 645N; HOKO 4s, 1K2 44s 1200N, 8KL 81L00N;
+10000N, HOOK &ys, 13K, Kays 13000N, 17K 17000N)
+{n, 20X0.1=2 m/s, 13X0.1=1.3 m/s)
+
+--- Page 8 ---
+GSK XJT 系列 交流 永 磁 同 步 直 线 电动 机 ”使 用 说 明 书
+”主要 技术 参数
+3.1 88XJT 系列 直线 电动 机 的 主要 技术 参数
+表
+ama
+mi)
+Woo
+iia
+Docf
+TKR (kg) 0.7 CHL 120mm)
+推力 一 速度 特性 图 (F-n) CA: 连续 工作 区 ，B: 短 时 工作
+88XJT260L20N/88XJT260M20N
+速度 (m/s)
+?上 一 一 二 六 一 一 上 一 一 十 一 一
+200 400 600 600 1000
+推力
+
+--- Page 9 ---
+产品 技术 参数
+3.2 100XJT 系列 直线 电动 机 的 主要 技术 参数
+表
+rzr
+驱动 输入 电压 “=A AC380
+连续 推力 (CN 400 (200) 600 (300)
+Docfm
+Linin)|
+初级 规格 100XJT400M20-00 100XJT600M20-00
+2017)
+防护 等 级 IP65 (GB/T 4208—2017/IEC 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+次 级 重 基 件 (kg) 0.7 120mm)
+Cage Ad) 100XJT400-02 100XJT600-02
+注 括 内 为 不 通 水 时 连续 推力 指
+推力 一 速度 特性 图 (F-n) 连续 BEAT
+100XJT400M20W 100XJT600M20W
+速度 (m/s) 速度 (m/s)
+一
+(Bil Bil
+200 400 600 800 1000 300 @00 900 1200 1800
+推力 (N) (N)
+
+--- Page 10 ---
+3.3 134XJT 系列 直线 电动 机 的 主要 技术 参数
+表
+和
+300
+rr，
+ago
+Hit aloe
+推力 一 速度 特性 图 (F-n) 连续 BEAT
+134XJTIK2L1IOW 1B4&XJTIKBLIOW 134XJT2K4L10W
+速度 (m/s 速度 (a/s 速度 (9/s
+一 一 一 一 一 一 一 一 一
+本
+一 一 上 上 一 一 一 上 一直 一 一
+us} o--T-- 二
+1B|
+o3f- —-4--— —-4-- o3f-
+600 1200 1800 2400 3000 900 1800 2700 3000 4500 1200 2400 3000 4800 6000
+推力 推力 CN) 推力 (N)
+
+--- Page 11 ---
+产品 技术 参数
+moe awl
+和
+wow
+”和
+推力 一 速度 特性 图 (F-n) CA: 连续 工作 区
+134XJT 人 K2M10W 134XJTIKEM10W 134XJT2K4M10W
+速度 (a/s) 速度 (o/s)
+一 一 一 一 一 一 一 -Fr 一 一 一 一 于 一 一
+oof
+INE
+apt ptf
+600 1200 1800 2400 3000 900 1800 2700 3000 1200 2400 3000 4800 000
+推力 (ON) 推力 CN) (N)
+
+--- Page 12 ---
+3.4 182XJT 系列 直线 电动 机 的 主要 技术 参数
+表
+mime
+和
+和
+awe
+mai man
+推力 一 速度 特性 图 (F-n) 连续 BEAT
+182XJTIKSLOSW 182XJT2K8LOSW 182XJT3K8LO5W
+速度 (a/s) 速度 (m/s) IKE (m/s)
+一 nm- 一 -mr 一 一
+eft
+ROOT
+六 一 一 下 一 一 司 一 一 一 厂 一 一 一 一 一 一 一 一 一 厂 一 一 下
+ees ees
+450 1900 2850 3300 4750 1400 200 4200 5600 7000 1900 3300 5700 7e00 9500
+推力 (R) ON)
+
+--- Page 13 ---
+产品 技术 参数
+和
+eol
+推力 一 速度 特性 图 (F-n) CA: 连续 工作 区
+182XJTIK9MOSW 182XJT2K8M0SW 182XJT3K8M0SW
+速度 (m/s) 速度 (a/s) 速度 (m/s
+bette
+AGH
+中
+“PONE
+由]
+450 1900 2850 3300 4750 1400 2000 4200 5600 7000 1900 3000 5700 7000 9500
+推力 (CN) 推力 CN) 推力 (N)
+
+--- Page 14 ---
+GSK XJT 系列 交流 永 磁 同 步 直 线 电动 机 ”使 用 说 明 书
+3.5 242XJT 系列 直线 电动 机 的 主要 技术 参数
+表
+Dll
+ml。
+CV) 单 相 220V “AH 380V
+连续 推力 (CN 2600 (1300)
+uve anw
+Aug
+Docf
+初级 规格 242XJT2K6L05-00 242XJT2K6M05-00
+mak
+2017)
+防护 等 级 IP65 (GB/T 4208—2017/IEC 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+次 级 重量 件 (kg) 4.6 CHEK 184mm)
+SE:
+推力 一 速度 特性 图 (F-n) (A: 连续 工作 多; 短 时 工作 IX)
+242X JT2K6LOSW/242XJT2K6MOSW 242XJT2K6M10W
+速度 (a/s) 速 (a/s)
+-Fr 一
+--4+--4
+Nee
+上 一 上 一 一 一 -上 -一 一 上 一 一
+tin fe!
+一 一 一 一 一 一 上 一 一 二 一 一
+1300 2000 300 5200 1300 2000 300 5200 e500
+推力 (N) 推力 (N)
+
+--- Page 15 ---
+产品 技术 参数
+续
+mee
+CV) “AH 380V
+连续 推力 3900 (1950) 3900 (1950)
+Wai
+WERE
+Hage
+Docf sa，
+初级 规格
+wae 和
+COBIT 2017)
+防护 等 级 IP65 (GB/T 4208—2017/IEC 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+次 级 重量 件 (kg) 4.6 184mm)
+Bey Cie Ai) 242XJT3K9-02
+FRAN
+推力 一 速度 特性 图 (F-n) (CA: 短 时
+242XJT3KIMOSW 242XJT3K9MIOW
+速度 (a/s) 速度 (a/s)
+一 一 一
+上 上
+ott
+Bil 太一 一 一 一 一
+4-—
+1950 3200 9750 1960 3300 5850 THO 9750
+推力 推力 (N)
+
+--- Page 16 ---
+GSK XJT 系列 交流 永 磁 同 步 直 线 电动 机 ”使 用 说 明 书
+3.6 334XJT 系列 直线 电动 机 的 主要 技术 参数
+表
+mee
+CV) “AH 380V
+连续 推力 4000 (2000) 4000 (2000)
+Mie 和 和
+meme
+von
+Docf
+初级 规格 334XJT04KM05-00
+COBIT 2017)
+防护 等 级 IP65 (GB/T 4208—2017/IEC 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+TKR (kg) 7.5 (AFIS 184mm)
+Bey Cie Ai) 334XJTO4K-02
+注 括 内 为 不 通 水 时 连续 推力 指标
+推力 一 速度 特性 图 (F-n) CA: 连续 工作 区 ，B: 短 时 工作
+334XJT04KM05W 334XJTOSKMIOW
+(a/s) 速度 (a/s
+一 一 一 一 一 一 一
+上
+上 一 十 及 一 一 一 一 一 十 一 一
+ryt
+一 一 一 一
+--4--
+中 一 一 一 一 了 -一 -FF 一 一 一 一
+2000 4000 6000 8000 10000 2000 4000 4000 8000 10000
+推力 (N) 推力 (CN
+
+--- Page 17 ---
+产品 技术 参数
+表 续
+CV) “AH 380V
+连续 推力 6000 (3000) 6000 (3000)
+velit)
+miei
+aaE
+初级 规格 334XJTO6KM05-00 334XJTO6KM10-00
+和 和
+755-2019EC 2017)
+防护 等 级 IP65 (GB/T 4208—2017/IEC 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+TKR (kg) 7.5 (ARIS 184mm)
+Bey Cie Ai) 334XJT06K-02
+注 括 内 为 不 通 水 时 连续 推力 指标
+推力 一 速度 特性 图 (F-n) (CA: 连续 人 区 ，B: 短 时
+334X JTO6KMOSW 334XJTO6KM10W
+建 度 (mAs R/En
+iat
+上
+NTN ryt
+中 一 上 -人
+1B!
+ost
+—-—4+-—
+3000 9000 12000 18000 300 6000 9006 12000 15000
+推力 CN) MHP CN)
+
+--- Page 18 ---
+ERS
+3.7 340XJT 系列 直线 电动 机 的 主要 技术 参数
+表
+rzr 中
+ou，
+aoc
+(kg) 7.5 184mm)
+CBA)
+注 括 号 内 为 不 通 水 时 连续 推力 指标
+排 力 一 速度 特性 图 (F-n) CA: 连续 工作 区 短 时 工作 区
+340X JTOBKMOSW 340XJT08KM10W
+带 度 (@/s 未 上 度 (a/s)
+——+——¥—--}--4--
+——+——-J—-—-}+ —-4-—
+4000 3000 12000 16000 20000 4000 8000 12000 10000 20000
+MHP ON) 推力 ON)
+
+--- Page 19 ---
+外 形 及 安装 尺寸
+外 形 及 安装 尺寸
+4.1 88XJT 系列 直线 电动 机 外 形 及 安装 尺寸
+和
+图
+4.2 100XJT 系列 直线 电动 机 外 形 及 安装 尺寸
+whe
+图
+
+--- Page 20 ---
+GSK XJT 系列 交流 永 磁 同步 直线 电动 机 ”使 用 说 明 书
+coh
+“oe “or
+whe
+图
+4.3 134XJT 系列 直线 电动 机 外 形 及 安装 尺寸
+soe
+esp.
+图
+
+--- Page 21 ---
+外 形 及 安装 尺寸
+ore ie:
+图
+4.4 182XJT 系列 直线 电动 机 外 形 及 安装 尺寸
+ede
+MET
+让
+图
+
+--- Page 22 ---
+Qr~ GSK XJT 系列 交流 永 磁 同 步 直 线 电 动机 “使 用 说 明 书
+BN.
+ess
+woe
+图
+4.5 242XJT 系列 直线 电动 机 外 形 及 安装 十
+git. 了 abe ope
+S46
+TEs
+lie. whe
+图
+
+--- Page 23 ---
+外 形 及 安装 尺寸
+Loa wiht 加
+tous
+图
+4.6 334XJT 系列 直线 电动 机 外 形 及 安装 尺寸
+一
+cone
+图
+
+--- Page 24 ---
+GSK XJT 系列 交流 永 磁 同 步 直线 电动 机 ”使 用 说 明 书
+yet
+ope
+aye
+图
+4.7 340XJT 系列 直线 电动 机 外 形 及 安装 尺寸
+一 一 一
+一
+入
+了
+图
+
+--- Page 25 ---
+外 形 及 安装 尺寸
+tos
+一
+eos
+一 一 全 人
+全 人
+图
+安 要 求 及 注意 事项
+5.1 直线 电动 机 组 成
+精密
+冷却
+初级
+钢
+图
+MRA: Mim rit
+FFP Lab
+HAZ AY, FSR BIT
+BARS: BON
+精度
+
+--- Page 26 ---
+GSK XJT 系列 交流 永 磁 同 步 直线 电动 机 “使 用 说 明 书
+5.2 安装 结构
+直线 电动 机 安装 使 用 时 除 了 基础 的 底座 拖 板 及 站 外 必 须 包 含 线 编码 器 以 及
+必要 的 防 撞 装 置 布 局 如 图 Aras.
+让
+线 图 线性
+编码 器
+aes
+次 级
+SSIES ‘ow 磁 钢
+,之
+SS:
+图
+线性 编码 器 线 电动 机 控制 中 不 可 或 缺 的 组 成 部 分 是 运行 控制 和 位 置 检测 与 反馈 的 关
+键 部 件 目 前 用 的 有 CHUAN. GW),
+选 目 前 本 公司 可 适 配 海德 汉 Endat 协议 绝对 式 光 栅 法 格 SSI 协议 绝
+EAH GIVI 和 长 春 衡 BiSS 〈C) 协 议 绝对 式 光 栅 等
+防 撞 装 置 为 防止 调试 运行 时 的 误 操作 或 其 他 意外 情况， 避免 或 减 小 机 械 部 件 特 别
+是 线性 编码 器 的
+5.3 安装 要 求
+图
+
+--- Page 27 ---
+直线 电动 机 的 安装 选 型
+SE: 为 避免 中 心 线 偏 移 过 大 导致 单 边 做 拉力 不 平衡 而 引起 除 88XJT 为 特意 偏 移 2mm Fh,
+余 规格 需 控 制 在 Imm LAW.
+安装 顺序
+通 下 先 安装 初级 组 件 和 精密 冷却 选 配 装 次 级 组 件 次 级 组 件 采
+用 分 段 安装 法 先 将 滑板 排 一 边 在 路 出 部 分 安装 次 级 组 件 装 完 再 推 癌 另 一 端 安
+装 另 一 端的 级 组 件 如 图 所 示
+注 推 动 初级 组 件 时 请 U、V、W 相 电 缆 无 接 否 则 会 无 法 推动
+spit
+pts
+ath
+S&S
+图
+5.5 隙 对 连续 推力 的 影响
+直线 电动 机 的 推力 百分比 见 志 和 图 18。
+表
+106.60% 105.10% 105.41% 105.37% 105.35%
+Poa 104.30% 103.33% 103.53% 103.45% 103.48%
+P12 102.13% 101.61% 101.70% 101.67% 101.68%
+100.00% 100.00% 100.00% 100.00% 100.00%
+97.83% 98.33% 98.28% 98.29% 98.28%
+95.79% 96.73% 96.59% 96.65% 96.61%
+ase [osm
+
+--- Page 28 ---
+GSK XJT 系列 交流 永 磁 同 步 直 线 电动 机 ”使 用 说 明 书
+108 .00%
+106 00%
+104 00%
+102.00%
+100 00%
+00%
+00%
+94.00%
+00%
+1.3
+—O@— —@— 一 一 182XJT 一 参 一
+图
+5.5 并 联 使 用
+fiat
+上 四
+村
+图
+二
+arm
+
+--- Page 29 ---
+直线 电动 机 的 安装 选 型
+5.6 其 他 安装 注意 事项
+5.6.1 首 线 电动 机 初级 和 次 级 组 件 之 问 存 企 较 大 的 正 向 吸力 一 般 为 站 线 电 动机 连续 排
+力 的 5~6 倍 收 导轨 选 和 请 座 设 计时 应 考虑 足够 的 刚度 和 强度 外 为 提高 运动 轴
+DOS CHA, SUM 所 示
+Ite
+直线 电机
+图
+5.6.2 首 线 电动 机 应 用 于 天 所 或 俩 斜 时 企 无 使 能 状态 由 于 重力 作用 线 动机 会
+落 放 设 计 半 衡 和 和 车 装置 其 体 和 和 装置 选用 证 参 考 《GSK XJT 系列 永 磁
+同步 线 电 动机 应 用 指南
+直线 电动 机 选 型
+直线 电动 机 的 选 型 计算 方法
+四 线 动机 的 选 型 计算 与 旋 园 电动 机 较 人 差异 其 通 如 下
+结合 机 床 结构 预 所 线 电 动机 安装 空间 对 站 线 动机 分 进 行 限定
+根据 机 床 移 动 部 件 重 量 运 行 速 度 及 加 速度 等 指标 对 线 电动 机 进行 预选 定
+根据 预选 所 线 电 动机 参数 复核 最 终 确定 所 线 电 动机 规格
+计算 方式 较为 复杂 可 先 确 定 机 械 参 数 填 入 本 公司 提供 的 选 分 析 表 格 进行 核实
+分 析 表 如 图 所 示 呐 单 元 格 中 填 入 机 械 和 运行 参数 信息 并 站 线 电 动机 模
+即 可 对 线 中 动机 的 适 配 性 进行 自动 核算
+
+--- Page 30 ---
+GSK XJT 系列 交流 永 磁 同 步 直线 电动 机 “使 用 说 明 书
+直线 电机 选 型 分
+EL,
+项 目 电机 各 分 析 结果 比值
+最 快速 度 ayain 150 33%
+3000 1653 55%
+持续 1200 ?779 65%
+备注 及 让
+移 动 部 件 140 TIAN
+行程 0.45
+最 大 运动 m/min
+最 大 加 速度 981 n's*s
+度
+make 0.02 02/ TAO.
+pan MEM
+安全
+cece 无 装置 为 完 全 平衡 时 为
+电机 型 呈 下 拉 选 反
+电机 安装 方式 初级 运动 -次 如 定 下拉 选 和
+电机 选择 初级 规格
+次 级 规格
+持续 推力
+WRI
+最 高 速度
+运动 部 分
+图
+6.2 直线 电动 机 配套 驱动 的 选 型
+电动 机 配套 7c, 380V 的 站 线 电动 机 配置 GR3000 Ska) 7c,
+VATE LWA
+驱动 模块 电流 ate pte tases
+"O85
+1.414
+如 134XJTIK2M10W 21A, GR3050 5X2)
+(50*0.85) /1.414=30>21,
+
+--- Page 31 ---
+直线 电动 机 的 安装 选 型
+发 热 功 率 计 算 及 水 冷 机 选用
+7.1 直线 电动 机 冷却 水 路 安装
+当 多 轴 使 用 水 冷 直 线 电动 机 时 冷 却 管 路 必须 以 并 联 方式 安装
+由 于 340XJT 系列 直线 电动 机 发 热 功 较 大 改 单个 站 线 电动 机 路 循环 如 图
+所 示
+”一
+图
+7.2 直线 电动 机 发 热 功率 计算
+由 于 线 电动 机 运行 时 主要 以 铜 耗 为 故 计算 发 热 功 时 可 近似 为 其 铜 耗 计 算 公
+式 如 下
+Poy
+如 按 6.1 站 线 动机 选 计算 所 得 的 计算 持续 推力 F=779N， 线 电动 机
+134XJTIK2M10W 的 Fn=1200N，In=8A，120C 时 的 R=4.73 则 选用 该 款 所 线 电 动机 在
+计算 况 下 的 铜 耗 如 下
+上 “ep 119 一
+Poy 可
+7.3 冷水 机 的 选用
+冷水 机 的 选用 主要 依据 以 下 两 点
+
+--- Page 32 ---
+GSK XJT 系列 交流 永 磁 同步 直线 电动 机 ”使 用 说 明 书
+了 Pou
+”最 小 流量 要 大 于 电动 机 最 小 流量 总 和
+直线 电动 机 线 缆
+8.1 温度 保护 配置
+上 直线 电动 机 共 埋 有 两 组 度 传 感 器 一 组 为 KTY84/130
+度 灾 化 另 一 组 为 PTC130 过 热 保 护 度 传 感 器 用 于 绕组 内 部 温度 过 热 断 电 保 护
+8.1.1 KTY84/130 硅 热 敏 电阻
+KTY84/130 竺 敏 电阻 电气 参数 见 表 10， 阻 温 特 性 曲线 及 配置 图 如 图 所 示
+表
+[as [sm
+[tie vow
+[om fff
+Beh KTY84-130 KTY84-150 R-T CHART
+ttt tte
+woo
+-_Lt ttt ttt
+eee 从
+ttt
+eee
+tpt
+tet ttt
+ttt
+i]t
+ume ces
+图
+
+--- Page 33 ---
+直线 电动 机 的 安装 选 型
+8.1.2 PTC130 过 热 保 护 温 度 传感器
+PTC130 过 热 保 护 度 传 感 器 由 数 表 11， 阻 温 特 性 曲线 及 配置 图 如 图 所 示
+表
+BEF 电压 <2.5V/ 电 流 <2mA
+107
+T2+C4)
+108
+TET
+104
+103
+Soe
+二
+10?
+eee
+100180" 200°C 250
+Tot
+图
+
+--- Page 34 ---
+GSK XJT 系列 交流 永 磁 同步 直线 电动 机 ”使 用 说 明 书
+8.2 温 控 信号 线 (XJT-00-701)
+图
+8.3 电源 线
+图
+表
+ase
+Soran se)
+
+--- Page 35 ---
+直线 电动 机 的 贮存 运 输 质 量 保证 期 订 货 说 明 直线 电动 机 的 贮存 电动 机 应 存放 在 环境 温度 为 -40'C 相 对 度 不 人 于 95% 的 清洁 过 程 中 应 小 心经 放 吉 免 撞 和 冲击 严 禁 与 酸 碱 等 腐蚀 性 物质 放 在 一 起 用 户 在 符合 产品 运输 储 存 安 装 调 试 维 修 及 遵守 使 用 规程 的 条 件 下 自 本 公司 本 使 用 说 明 书 所 列 所 线 电 动机 为 本 公司 推荐 型 号 规 格 可 适应 多 数 应 用 场合 如 果 您
+风 好 的 库房 内 空 不 得 含有 腐蚀 性 应 置 于 起 天 环境 中 进行 运输 注 意 防水 防 十 防 侍 和 机 械 损伤 发 货 之 日 起 依 发 货 赁 证 为 据 个 月 内 凡 直线 电动 机 因 制 造 质量 不 良 而 发 生 损坏 或 不 有 其 他 求 我 们 可 按 您 的 需求 提供 其 他 规格 的 直线 电动 机
+直线 电动 机 的 运输 质量 保证 期 能 正常 使 用 时 本 公司 负责 免费 修理
+订货 说 明
+
+--- Page 36 ---
+GSK XJT 系列 交流 永 磁 同步 直线 电动 机 ”使 用 说 明 书
+
+--- Page 37 ---
+this Operating Manual, will describe various matters related
+XJT Series Permanent Magnet Synchronous Linear Motor the
+greatest extent. not possible describe detail all the operations that
+need not done and/or cannot done due length constraints and
+specific product usage. Therefore, anything not specifically indicated this
+Operating Manual shall deemed the operation that "impossible"
+"not permitted".
+The copyright this Operating Manual belongs GSK CNC
+Equipment Co., Ltd., and illegal for any units individuals publish
+copy it. GSK CNC Equipment Co., Ltd. reserves the right investigate
+their legal liabilities.
+
+--- Page 38 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor The Company honored and grateful you for choosing XJT Series Please read this Operating Manual carefully before installing and using
+Foreword Permanent Magnet Synchronous Linear Motor (hereafter referred the the product order ensure the motor safety and the normal and effective
+Dear customer: Linear Motor) from GSK CNC Equipment Co., Ltd. operation.
+
+--- Page 39 ---
+Preface, Safety Warnings and Safety Responsibilities Improper installation and operation may cause accidents! Other precautions: Prior installation and use, please confirm whether the linear motor (including Under normal climatic conditions, use 500V megameter measure the Assembly and operation must implemented professionals. During disassembly and assembly secondary assemblies, approaching metal When wiring, please connect the power cords marked with "UVW" with the The Company will not assume any responsibility for any unauthorized All models, specifications and designs are subject change without notice!
+Prior installation and use, the operation instructions must primary and secondary assemblies and cooling accessories) damaged insulation resistance values three phases and primary assembly objects should avoided, and special attention shall paid the risk hand corresponding UVW wires the drive unit, and ensure that the earthing firm modification the product the user, and the warranty the product will
+Safety Warnings and Precautions read carefully. destroyed. there any damage, please contact our company the dealer winding the ground and the equipment housing, which should not less than clamping injury, this must handled discreetly. and reliable. invalidated accordingly.
+Warning sign for primary assembly: time. MQ.
+High Temperature High Voltage
+Warning sign for secondary assembly: Approach Warning:
+
+--- Page 40 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor Manufacturer's responsibility for safety —The manufacturer shall responsible for the hazard the supplied linear motor ——The manufacturer shall responsible for the safety the supplied linear motor ——The manufacturer shall responsible for the use information and advice provided User's responsibilities for safety —Users shall familiar with and master the safe operation through learning and 一 一 Users shall responsible for the safety and hazards result adding, maintain, install, store and transport the Product accordance with the
+Safety Responsibility and accompanying accessories that have been eliminated and/or controlled and accompanying accessories. for the user. training linear motor safety operation. changing modifying the original linear motor and accessories themselves. Operation Instructions.
+design and structure. 一 一 Users shall responsible for any hazard caused failure operate, adjust, This Operation Instructions should kept end users.
+Thank you very much——Thank you very much for using the products
+GSK CNC Equipment Co., Ltd.
+and your friendly support for us!
+
+--- Page 41 ---
+Contents 3.1 Main Technical Parameters 88XJT Series Linear Outline and Installation Dimensions Installation Requirements and PreCaUtiONS
+3.2. Main Technical Parameters 100XJT Series Linear Motor 4.1 Outline and Installation Dimensions 88XJT Series Linear Motor 5.1 Structure linear MOtOr
+Product FeaturesS…… 3.3. Main Technical Parameters 134XJT Series Linear Motor 4.2 Outline and Installation Dimensions 100XJT Series Linear Motor 5.2 Installation 1]ayguUt
+Model Description 3.4. Main Technical Parameters 182XJT Series Linear Motor 4.3 Outline and Installation Dimensions 134XJT Series Linear Motor 5.3 Installation requirements
+Main Technical Parameters ree 3.5 Main Technical Parameters 242XJT Series Linear Motor 4.4 Outline and Installation Dimensions 182XJT Series Linear Motor 5.4 Order
+3.6 Main Technical Parameters 334XJT Series Linear Motor 4.5 Outline and Installation Dimensions 242XJT Series Linear Motor 5.5 Influence air gap CONTINUOUS Thrust
+3.7 Main Technical Parameters 340XJT Series Linear Motor 4.6 Outline and Installation Dimensions 334XJT Series Linear Motor 5.5 Parallel
+4.7 Outline and Installation Dimensions 340XJT Series Linear Motor 5.6 Other installation precautions
+Type Selection Limear
+6.1 Calculation method for type selection linear motgr ppp
+6.2 Type selection linear motor matching drive
+Calculation Heating Power and Selection Water Cooler
+7.1 Installation cooling water pipelines for the linear motor
+7.2 Calculation heating power linear motor
+7.3 Selection Water COOler
+Cables Linear
+8.1 Temperature protection
+
+--- Page 42 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor Storage Linear Motor Transportation Linear Motgr Warranty Period Order Description
+8.1.2 PTC130 overheat protection temperature
+8.2 Temperature control signal line
+Power Cord
+
+--- Page 43 ---
+Technical parameters products Due its principle and structural characteristics, linear motor has built-in advantages over "screw rotating motor structure", mainly shown the following aspects: Simple structure: its mechanical structure relatively simple, with few mechanical High speed: the primary components are installed the guide rail that can run High dynamic response: the direct delivery driving force achieves both high High precision: has excellent dynamic response performance and equipped Precision retention ability: the easily worn parts such lead screw rod and Unlimited travel: the travel not affected the length the lead screw and its
+Product Features transmission parts and components. high speed, and they are not restricted the use limit traditional lead screw, dynamic performance and good accuracy without overshoot. with high-precision linear encoder, that high precision can obtained each bearing are canceled, and the "Zero Wear Rate" theory makes the precision own stiffness, and can extended infinitely.
+The XJT series permanent magnet synchronous linear motors independently bearing and other mechanical accessories. easy get high and stable speed speed segment. retention ability more excellent.
+developed and manufactured GSK CNC Equipment Co., Ltd. are made and acceleration (up when measured)
+high-performance rare earth permanent magnet materials, characterized high power
+density, high dynamic response, low thrust fluctuation and high reliability, which can meet
+the extensive demands such CNC machine and automation equipment.
+
+--- Page 44 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+Model Description
+For example:
+134 XJT 1K2
+Permanent magnet synchronous linear motor.
+Rated thrust linear motor (denoted three digits, unit: less than 1000N, directly
+denoted three digits, for example, 050 represents 50N, and 645 represents 645N; greater
+than 1000N, denoted OKO, for example, 1K2 represents 1200N, 8K1 represents 8100N;
+greater than 10000N, denoted for example, 13K represents 13000N, 17K
+represents 17000N).
+Input voltage drive unit (L: 220V, 380V).
+Rated speed code (denoted two digits, and its value two digits x0.1, unit: m/s.
+For example, 20x0.1=2 m/s, 130.1=1.3 m/s).
+Cooling method (W: water cooling, self-cooling).
+
+--- Page 45 ---
+Technical parameters products Table
+Main Technical Parameters WPS
+3.1 Main Technical Parameters 88XJT Series Linear Motor Polar
+Input voltage drive unit Single phase 220V Three-phase 380V
+Conimoustinst
+Contimouscuren
+Peak thst
+Peak care
+Mex seal
+Phase resistance
+Specifications primary assembly 88XJT260L20-00 88XJT260M20-00
+Insulation grade (GB/T 755—2019/IEC 60034-1: 2017)
+IP65 (GB/T 4208—2017/IEC 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+Specifications secondary assembly 100XJTS4-00
+Weight secondary assembly (kg 0.7 (single piece length 120mm
+Thrust-Speed characteristic diagram (F-n) (A: continuous duty zone; intermittent duty zone)
+88XJT260L20N/88XJT260M20N
+Speed n(m/s)
+ees
+二- 一 -村 -一 一 一
+一 二 一 一 一 上 一 一 十 一 一
+有 一 十 并 二 一 一 一 一 一 十 一 一
+200 400 €00 800 1000
+Thrust (N)
+
+--- Page 46 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+3.2. Main Technical Parameters 100XJT Series Linear Motor
+Table
+100XJT400M20W 100XJT600M20W
+Input voltage drive unit Three-phase AC380
+Continuous thrust 400 (200) 600 (300)
+Peak
+Peak care
+Rated
+(Vsm)[
+Phase resitancet 250
+Min
+Specifications ofprimary assembly 100XJT400M20-00 100XJT600M20-00
+Insulation grade (GB/T 755—2019/IEC 60034-1: 2017)
+IP65 (GB/T 7/1 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+Specifications secondary assembly 100XJTS4-00
+Weight secondary assembly (kg 0.7 (single piece length 120mm
+Precision cooling cover (optional) 100XJT400-02 100XJT600-02
+Thrust-Speed characteristic diagram (F-n) (A: continuous duty zone; intermittent duty zone)
+100XJT400M20W 100XJT600M20W
+Speed n(m/s) Speed n(m/s)
+一
+一 一 十 及 一 一 一 一 一 人 一 一 一 十 及 一 一 上 一 十 一 一 于
+see
+200 400 600 800 1000 300 600 900 1200 1500
+Thrust (N) Thrust (N)
+
+--- Page 47 ---
+Technical parameters products
+3.3 Main Technical Parameters 134XJT Series Linear Motor
+Table
+eet
+Dll
+Peak curt
+ms}
+1200
+‘Min.
+Thrust-Speed characteristic diagram (F-n) (A: continuous duty zone; intermittent duty zone)
+Speed 134XJTIK2LIOW Speed 1B4XITIKBLIOW Speed 134XJT2K4L10W
+一 一 一 一 一 一 一 一 一
+--+-NH---F-- 和
+tet
+中
+600 1200 18600 2400 3000 900 1800 2700 3000 1200 2400 3000 4800 e000
+Thrust (N) Thrust (N) Thrust (N)
+
+--- Page 48 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+Table Ccontinued
+its
+Raw
+SSS
+和
+eol
+[Max.specd
+Dll
+中
+Thrust-Speed characteristic diagram (F-n) (A: continuous duty zone; intermittent duty zone)
+134XJTIKBM10W 134XJT2K4M10W
+Speed n(m/s) Speed n(m/s) Speed n(m/s)
+一 一 一
+中
+STATIN PTA
+opt
+ao0 1200 $800 2400 3000 900 1800 2700 3000 #00 1200 2400 300 4800 9000
+Thrust (N) Thrust (N) Thrust (N)
+
+--- Page 49 ---
+Technical parameters products
+3.4 Main Technical Parameters 182XJT Series Linear Motor
+Table
+its
+earm
+[Max
+Two
+120
+asiatw (Limin)
+Thrust-Speed characteristic diagram (F-n) (A: continuous duty zone; intermittent duty zone)
+speed ims) speed speed mms)
+一 一 一 一 一 一 一 一 一 一 一 一
+“TONE INTINNR
+1900 300 4750 1400 4200 5600 7000 1900 3300 7600 9500
+Thrust (N) Thrust (N) Thrust (N)
+
+--- Page 50 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+Table Ccontinued
+its
+erm tay
+Wsim)|
+Phase
+Thrust-Speed characteristic diagram (F-n) (A: continuous duty zone; intermittent duty zone)
+Speed 182XJTIK9MOSW Speed 182XJT2K8M0SW Speed 182XJT3K8M0SW
+nm- 一- rr- 一
+ee)
+ION
+中 中 中
+1BI|
+--4-- ——+——4---+--4--
+450 1900 2550 3300 4750 1400 200 4200 sano 7000 1900 3000 5700 7000 9500
+Thrust (N) Thrust (N) Thrust (N)
+
+--- Page 51 ---
+Technical parameters products
+3.5 Main Technical Parameters 242XJT Series Linear Motor
+Table
+tem 242XJT2K6L05W 242XJT2K6M05W 242XJT2K6M10W
+Polardisance
+Input voltage drive unit Single phase 220V Three-phase 380V
+Continuous thrust (N) 2600 (1300)
+Conimouscuren
+Peak thst
+Peak care wanw
+Mex seal
+Phase resistance
+Phaseresitneeat
+Meetw
+Specifications ofprimary assembly 242XJT2K6L05-00 242XJT2K6M05-00
+Insulation grade (GB/T 755—2019/IEC 60034-1: 2017)
+IP65 (GB/T 4208 一 2017/IEC 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+Specifications secondary assembly 248XJTS4-00
+Weight secondary assembly (kg 4.6 (single piece length 184mm)
+Precision cooling cover (optional) 242XJT2K6-02
+Thrust-Speed characteristic diagram (F-n) (A: continuous duty zone; intermittent duty zone)
+242XJTZ2K6LOSW/242XJT2K6MOSW 242XJT2K6M10W
+Speed n(m/s) Speed n(m/s)
+-rr 一 一
+—--e --4+--4
+ome»
+上 一 一 二 一 一 一 一 一 一 十 一 一
+Ao] fe!
+一 一 十 一 一 一 一 一 上- 一 一 十 一 一
+--+-—
+1300 2000 3900 5200 1300 2000 300 5200 6500
+Thrust (N) Thrust (N)
+
+--- Page 52 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+Table Ccontinued
+tem 242XJT3K9MOSW 242XJT3K9M10W
+SCS
+Input voltage drive unit Three-phase 380V
+Continuous thrust 3900 〈1950) 3900 (1950)
+Peak thst
+Peak care
+aeuwed
+Phase resitancet (0)
+(NY
+Min, cooling low (Limin)
+Specifications primary assembly 242XJT3K9M05-00 242XJT3K9M10-00
+Insulation grade (GB/T 755—2019/IEC 60034-1: 2017)
+IP65 (GB/T 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+Specifications secondary assembly 248XJTS4-00
+Weight secondary assembly (kg 4.6 (single piece length 184mm)
+Precision cooling cover (optional) 242XJT3K9-02
+Thrust-Speed characteristic diagram (F-n) (A: continuous duty zone; intermittent duty zone)
+242XJTIKIMOSW
+Speed n(m/s) Speed n(m/s)
+一 一 一
+--4+-A4-+-F--
+有 一 一 十 一 -一 一 一 一 二 一 一
+中 一 -人 fa!
+180 300 9750 1950 3000 5850 7800 9750
+Thrust (N) Thrust (N)
+
+--- Page 53 ---
+Technical parameters products Table
+tem 334XJTO4KMO0SW 334XJTO4KM10W
+3.6 Main Technical Parameters 334XJT Series Linear Motor
+Polardisance
+Input voltage drive unit Three-phase 380V
+Continuous thrust (N) 4000 (2000) 4000 (2000)
+Peak thst
+Peak care
+Rated pend
+imsy[
+Thrastconsint
+Phase resitanceat 250
+Min, low
+Specifications primary assembly 334XJT04KM05-00 334XJT04KM10-00
+”和
+Insulation grade (GB/T 755—2019/IEC 60034-1: 2017)
+IP65 (GB/T 4208 一 2017/IEC 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+Specifications secondary assembly 340XJTS4-00
+Weight secondary assembly (kg 7.5 (single piece length 184mm
+Precision cooling cover (optional) 334XJT04K-02
+Thrust-Speed characteristic diagram (F-n) (A: continuous duty zone; intermittent duty zone)
+334X JTOSKMOSW 334XJTOLKMIOW
+Speed n(m/s) Speed n(m/s)
+一 一 一 了 一 一 一
+上 上
+一 十 一 一 一 一 十 一 一 二
+ees
+--4-—
+中 一 全
+2000 4000 6000 e000 10000 2000 4000 8000 10000
+Thrust (N) Thrust (N)
+
+--- Page 54 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+Table Ccontinued
+tem 334XJTO6KMOSW 334XJTO6KM10W
+和
+Input voltage drive unit Three-phase 380V
+Continuous thrust (N) 6000 (3000) 6000 (3000)
+和
+Peak
+Peak care
+Phase 250 (0)
+(OV
+(N)
+Min,
+Specifications primary assembly 334XJTO6KM05-00 334XJT06KM10-00
+Insulation grade (GB/T 755—2019/IEC 60034-1: 2017)
+IP65 (GB/T 4208—201 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+Specifications secondary assembly 340XJTS4-00
+Weight secondary assembly (kg 7.5 (single piece length 184mm
+Precision cooling cover (optional) 334XJT06K-02
+Thrust-Speed characteristic diagram (F-n) (A: continuous duty zone; intermittent duty zone)
+334X JTO6KMOSW 334XJTOGKM10W
+Speed n(m/s) Speed n(m/s)
+一 一
+——+\-4---r\-t--4
+一 一 一 下
+eee
+Bil 上 一 一 一 了 一 一 一 和 一 一 一 一
+a3f- ——4+——4---+
+3000 9000 12000 18000 3000 0000 9000 12000 15000
+Thrust (N) Thrust (N)
+
+--- Page 55 ---
+Technical parameters products
+3.7 Main Technical Parameters 340XJT Series Linear Motor
+Table
+tem 340XJTOSKMOSW 340XJTO8SKM10W
+Polardisance
+Input voltage drive unit Three-phase 380V
+Continuous thrust (N) 8000 (4000) 8000 (4000)
+Coninmowscurent (AY
+Peak thst 器
+Peal care
+Mex seal
+(sim)
+Phase resistance (0)
+Phaseresitnceat (0)
+(N)
+Min cooling
+Specifications primary assembly 340XJTO8KM05-00 334XJTO8KM10-00
+Weigh ofpimayasemby
+Insulation grade (GB/T 755—2019/IEC 60034-1: 2017)
+IP65 (GB/T 60529: 2013, GB/T 4942—2021/ IEC 60034-5: 2020)
+Specifications secondary assembly 340XJTS4-00
+Weight secondary assembly (kg 7.5 (single piece length 184mm
+Precision cooling cover (optional) 340XJTO8K-02
+Thrust-Speed characteristic diagram (F-n) (A: continuous duty zone; intermittent duty zone)
+340XJTOBKMOSW 340XJTOSKMIOW
+Speed (m/s) Speed (m/s)
+一 一 一
+上 上 一 一 十 一 一 当 一 一 一 上 一 一 十 一 一
+“三
+上
+——4+——4—-—-}+ —-4-—
+4000 8000 12000 16000 20000 4000 8000 12000 10000 20000
+Thrust (N) Thrust (N)
+
+--- Page 56 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+Outline and Installation Dimensions
+4.1 and Installation Dimensions 88XJT Series Linear Motor
+212 (Length effective part) primary assembly
+linear motor
+120 (Length single
+secondary magnet)
+Secondary part linear motor
+common use with 100XJT
+一 ”6m
+depth
+四
+wie
+全 ‘ie
+ale
+the number secondary magnets required
+Figure
+4.2 Outline and Installation Dimensions 100XJT Series Linear Motor
+With cooling cover
+(Length effective part) Primary assembly
+一 一 linear motor lee
+EtG
+Lie
+(Length single
+secondary
+Secondary part
+linear motor
+depth
+Specifications and
+加 Dimensions:
+Sart
+wade
+An.
+eee
+Figure
+
+--- Page 57 ---
+Installation and selection linear motor
+Without precision cooling cover
+L-42 (Length effective part) Primary assembly
+一 一 linear motor
+ri.
+bo.
+120 (Length single
+secondary magnet)
+Secondary part
+depth linear motor Specifications and
+Dimensions:
+Number secondary magnets
+(depends actual travel)
+Figure
+4.3 Qutline and Installation Dimensions 134XJT Series Linear Motor
+With precision cooling cover
+L-41 (Length effective part) Primary assembly
+”一 linear motor
+meee
+184 (Length single
+magnet)
+一 Secondary part
+linear motor
+depth
+Specifications and
+Dimensions:
+tos {depends actual travel)
+Figure
+
+--- Page 58 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+Without precision cooling cover
+Primary assembly
+L-41 (Length effective part) linear motor
+tes rat
+184 (Length single
+secondary magnet)
+Secondary part
+一 linear motor
+depth
+Specifications and
+Dimensions:
+Number magnets
+actual travel)
+Figure
+4.4 and Installation Dimensions 182XJT Series Linear Motor
+With precision cooling cover
+L-41 (Length effective part) Primary assembly
+linear motor
+VE!
+184 (Length single
+secondary
+一 一 Secondary part
+linear motor
+depth
+Specifications and
+和 Dimensions:
+nae
+“Number secendar
+‘(depends actual travel)
+Figure
+
+--- Page 59 ---
+Installation and selection linear motor
+Without precision cooling cover
+Primary assembly
+L-41 (Length effective part) linear motor
+rae
+本 sat big cape
+caren
+184 (Length single
+secondary magnet)
+一 Secondary part
+linear motor
+depth
+Specifications and
+Dimensions:
+tn:
+本
+上
+magnets
+(depends actual travel)
+Figure
+4.5 Outline and Installation Dimensions 242XJT Series Linear Motor
+With precision cooling cover
+L-41 (Length effective part) “Primary assembly
+十 一 linear motor
+PES
+Pek cae
+184 (Length single
+“secondary magnet)
+Secondary part
+linear motor
+一 一 201n depth
+Specifications and
+peg Dimensions:
+本
+Number secondary magnets
+(depends actual travel)
+Figure
+
+--- Page 60 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+Without ecision cooling cover
+一 Primary assembly
+L-41 (Length effective part) linear motor
+Mer
+BER
+184 (Length single
+secondary magnet)
+Secondary part
+linear motor
+一 一
+Seg Specifications and
+ane Dimensions:
+Number secomtary magnets
+(depends actual travel)
+Figure
+4.6 Outline and Installation Dimensions 334XJT Series Linear Motor
+With precision cooling cover
+一 1.-41 (Length effective part) 一 Primary assembly 一
+一 一 linear motor
+tke OTE Sin
+tok
+ras
+四 hag gph
+{Length single
+secondary magnet) 一 一
+一 Secondary part
+linear motor
+一 -20mndeph
+SEV Specifications and
+“Poa Dimensions:
+Loo sey sagt
+(depends actual travel)
+het
+Figure
+
+--- Page 61 ---
+Installation and selection linear motor
+eee
+Without precision cooling cover
+Primary assembly
+(Length effective part) linear motor
+age
+一
+air
+_184 (Length single
+secondary magnet)
+Secondary part
+linear motor
+fe:
+Specifications and
+Dimensions:
+人 四
+secondary magnets
+(depends actual travel)
+Figure
+4.7 Outline and Installation Dimensions 340XJT Series Linear Motor
+With precision cooling Primary
+assembly
+646 (Length effective part) linear motor
+wer
+引
+cee
+184 (Length
+“single
+magnet)
+Secondary part
+linear motor
+一 一 一 depth
+te. eyo:
+一 一 (4xN-1)x46 the number secondary magnets)
+Figure
+
+--- Page 62 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+Without precision cooling cover Primary assembly
+646 (Leneth effective nart) linear motor 一
+:DT yet
+win
+HES
+_184 (Length fen
+single secondary ote!
+Secondary part
+一 linear motor
+一 depth oo,
+六
+人 了
+Figure
+Installation Requirements and Precautions
+5.1 Structure linear motor
+Precision
+cooling
+cover
+全
+Primary
+coil
+Secondary
+magnet
+stee
+Figure
+The permanent magnet synchronous linear motor mainly composed primary assembly
+and secondary assembly.
+Primary assemblies: mainly includes linear motor winding, temperature measuring
+elements and internal cooling assemblies.
+Secondary assembly: The secondary permanent magnet, namely magnetic steel, used for
+motor excitation.
+multi-block splicing structure, and the specific length
+
+--- Page 63 ---
+Installation and selection linear motor Precision cooling cover: the cooling cover optional, which prevents the heat the motor 5.2 Installation layout Anti-collision device: used prevent misoperation other accidents during
+determined required the travel. from being transmitted the workbench not affect the When the linear motor installed for use, addition the base, the carriage and the guide commissioning and operation, and avoid reduce the damage
+machining precision. rail the foundation, the linear encoder and necessary protective anti-collision devices must mechanical parts (especially linear encoder).
+included. The layout shown Figure 15.
+到
+Primary
+coil Linear
+SSS pom ton encoder
+.这
+SHIGE
+Secondary
+Woy? magnet
+steel
+LED. en,
+“Sw
+SSS
+AAA
+Figure
+Linear encoder: indispensable part for linear motor control and the key component
+for operation control, position detection and feedback. Now, the commonly
+used linear encoders include grating ruler and magnetic grid ruler. They
+are usually provided the customer himself and selected according the
+use requirement. present, our company can provide Heidenhain Endat
+absolute grating ruler, Fargo SSI absolute grating ruler, Italy GIVI and
+Changchun Yuheng BiSS(C) absolute grating rulers.
+
+--- Page 64 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+5.3 Installation requirements
+XJT Series Model
+Dimensions (mm)
+Combination Without precision
+Height With precision
+Centerline
+Figure
+Notes: order avoid vibration caused unbalanced unilateral magnetic pull caused excessive
+centerline offset, except that the 88XJT deliberately enabled have the offset 2mm, other
+offset should controlled within Imm.
+5.4 Order installation
+Generally, the primary assembly and precision cooling cover (optional) should installed
+first, and then the secondary assembly follows it. The secondary assembly installed sections.
+First, push the sliding plate one side, install the secondary assembly the exposed part, and
+push the other end after installation, and then install the secondary assembly the other
+end, See Figure 17.
+Note: when pushing the primary assembly, please make sure that the UVW three-phase cable not
+shorted, otherwise impossible push it.
+了
+eo.
+7-7
+ee”
+oan
+Figure
+
+--- Page 65 ---
+Installation and selection linear motor
+5.5 Influence air gap continuous thrust
+The thrust percentage linear motor shown Table and Figure 18.
+Table
+[peur
+106.60% 105.10% 105.41% 105.37% 105.35%
+Poa 104.30% 103.33% 103.53% 103.45% 103.48%
+P12 102.13% 101.61% 101.70% 101.67% 101.68%
+100.00% 100.00% 100.00% 100.00% 100.00%
+97.83% 98.33% 98.28% 98.29% 98.28%
+95.79% 96.73% 96.59% 96.65% 96.61%
+sae
+Thrust
+108 .00%
+106 00%
+104 00%
+102.00%
+100 .00%
+00%
+96.00%
+94.00%
+00%
+1.1 1.2 1.6
+—O@— —@— 一 全 —@— —@—
+Figure
+
+--- Page 66 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+5.5 Parallel connection
+全 一
+上 wos 站
+全
+Outgoing lines are
+the same side 一 一
+fos
+Outgoing lines
+face outward 了 一
+他 村
+人 四
+Outgoing lines face
+inward 一
+Figure
+Table
+Outgoing lines are Outgoing lines Outgoing lines
+Phase Sequence
+the same side face outward face inward
+Spacing Polar distance 2=30mm 2180 >30
+fom)
+5.6 Other installation precautions
+5.6.1 There large positive suction between primary and secondary assemblies the linear
+motor, generally equal five six times the continuous thrust the linear motor. Therefore,
+sufficient stiffness and strength should considered the selection the guide rail and the
+design the sliding seat. addition, order improve the dynamic characteristics the
+moving shaft, the mechanical center gravity should placed within the range the linear
+motor far possible, shown Figure 20.
+
+--- Page 67 ---
+Installation and selection linear motor 5.6.2 When the linear motor applied vertical inclined shaft, without the "Servo-On", Calculation for type selection the linear motor greatly different from that the combination with the structure the machine, the installation space the linear motor estimated, and the linear motor frame No. restricted; The linear motor pre-selected according weight, operation speed, acceleration and other indicators the moving parts the machine; The motor model and its specification are finally determined per the pre-selected linear motor parameters. The calculation method relatively complex. You can first determine the mechanical
+Workbench Center gravity the motor will fall due the action gravity, necessary design balancing and braking rotating motor, and the common steps are given follows: parameters and fill the type selection analysis form provided our company for verification,
+Linear motor devices. (Please refer Application Guide GSK XJT Series Permanent Magnet Synchronous shown Figure 21. The analysis form shown below. Please fill the mechanical and
+Linear Motor for selection specific balancing and braking devices.) operating parameter information the yellow cells, and select the motor model,
+Figure Type Selection Linear Motor automatically calculate the adaptability the motor.
+6.1 Calculation method for type selection linear motor
+
+--- Page 68 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+Type selection analysis linear motor
+Selection Result
+Motor Analysis
+Item
+parameters] result
+35%
+Peak isin 3000 163 55%
+Continuous thrust 779 65%
+item Remarks and description
+Weight shaft
+Mass shaft moving components, excluding
+moving 140
+motor
+components:
+Travel 0.45
+Maximum
+m/min
+movement speed
+Service
+Maximum
+conditions 9.81 m/s*s
+acceleration
+Inclination angle 30° Fill for horizontal shaft
+Friction coefficient 0.02 Linear guide rail: 0.02/hard rail: 0.1
+Estimate the resistance cable, drag chain and
+Resistance
+protective cover
+Safety factor 1.2
+Option balancing device
+Yes Select via dropdown list
+inclined equipped?
+Balance
+vertical coefficient for balancing device, for full balance.
+axis (balance ratio)
+Motor model 134XJTIK2MIOW Select via dropdown list
+Primary assembly
+Installation mode
+movable secondary Select via dropdown list
+motor
+assembly fixed
+Motor Specifications
+selection primary assembly
+Specifications
+Secondary assembly
+Quantity secondary
+assembly
+Rated power
+Continuous thrust
+Motor
+Peak thrust
+parameter
+Magnetic attraction
+Maximum speed
+Weight moving part:
+Figure
+
+--- Page 69 ---
+Installation and selection linear motor
+0.2 Type selection linear motor matching drive
+The linear motor shall equipped with the series drive unit, and the 380V linear motor shall
+equipped with the GR3000 drive unit. The type selection based the peak current the linear motor:
+Drive module voltage 0.85
+>Peak current linear motor
+1.414
+For example, the 134XJT1K2M10W linear motor has peak current 21A, the GR3050 drive unit can
+selected,
+(50*0.85)/1.414=30>21, meets the requirement.
+Calculation Heating Power and Selection Water Cooler
+7.1 Installation cooling water pipelines for the linear motor
+When water-cooled linear motor used for multiple shafts, the cooling pipelines must
+installed parallel. Besides.
+Due the high heating power the 340XJT series, single motor needs two loops,
+shown the figure below, shown Figure 22.
+”一
+Figure
+
+--- Page 70 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+7.2 Calculation heating power linear motor
+Since the energy consumption linear motor during operation mainly copper
+consumption, the heating power can approximated its copper consumption. The calculation
+formula follows.
+Po, —*Ty
+For example, the continuous thrust calculated per the type selection the linear motor
+Section 6.1 equal 779N, the 134XJTIK2MIOW motor equals 1200N, In=8A,
+R=4.73 120 the copper consumption this motor under the calculation working
+condition derived follows.
+779
+Po, =3*1°
+Fy. 1200
+7.3 Selection water cooler
+The water cooler selected based the following two criteria:
+The refrigerating power shall greater than the total heating power the linear
+motor:
+Prefrigeration Pew
+|The minimum flow the water cooler shall greater than the sum the minimum
+flows the linear motors:
+Qwater Cooler Quotor
+Cables Linear Motor
+8.1 Temperature protection
+Two sets temperature sensors are embedded the linear motor. One the KTY84/130
+silicon thermistor, mainly used monitor temperature changes; the other PTC130 overheat
+protection temperature sensor, used for overheat and power-off protection the internal
+winding.
+
+--- Page 71 ---
+Installation and selection linear motor The electrical parameters KTY84/130 silicon thermistor are shown Table 10, and the
+temperature resistance characteristic curve and configuration diagram are shown Figure 23.
+8.1.1 KTY84/130 silicon thermistor Table
+Electrical
+Test condition Minimal Standard
+parameters
+Resistance value Constant temperature
+25°C
+Resistance value Constant temperature
+100°C 100°C+0.05°C
+Insulation
+DC=100V
+resistance
+Max. operating
+current
+Rated operating
+current
+Operating
+-40°C~210°C
+temperature
+Temperature-Resistance Characteristic Curve Wiring layout
+KTY&4-130 KTY84-150 R-T CHART
+Peak value
+T1+ (Yellow) (Green)
+Teer
+300 $0) 60) «100 110 120 130 140 150 160 170 180 190 200 emperature
+Figure
+
+--- Page 72 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor
+8.1.2 PTC130 overheat protection temperature sensor
+The electrical parameters the PTC130 overheating protection temperature sensor are
+shown Table 11, and the temperature resistance characteristic curve and configuration diagram
+are shown Figure 24.
+Table
+Wes
+voltage/current during normal use Voltage<2.5V/ Current<2mA
+convo
+Resistance room temperature
+Insulation strength (AC) 2.5kV/60s
+Led
+Temperature-Resistance Characteristic Curve Wiring Layout
+to®
+上
+二
+Soe
+T2+ (Red) T2- (Black)
+办 本
+EERE
+[yt
+104
+pis fetes
+Tt-
+10?
+六 二
+100 150 200
+一 Tete
+Figure
+
+--- Page 73 ---
+Installation and selection linear motor
+8.2 Temperature control signal line (XJT-00-701)
+Wiring Table
+Sensor model
+Sheath color Yellow Green Red Black
+Plug pin No.
+Figure
+8.3. Power cord
+Yellow
+Red
+Wiring Table
+Color power Yellow Red(V)
+Plug pin No.
+Figure
+Table
+Available Continuous Current Cable Diameter Minimum Bending Radius
+Power Cord
+(A) (mm) (mm)
+
+--- Page 74 ---
+Operation Instructions for GSK XJT Series Permanent Magnet Synchronous Linear Motor The linear motor shall stored clean and well ventilated warehouse with ambient During transportation, please handle products with care and avoid collision and impact. Under the condition that the user complies with transportation, storage, installation, The linear motors listed these operation instructions are the models and specifications
+Storage Linear Motor temperature -40 ~55 anda relative humidity not more than 95% (no condensation), strictly forbidden put them together with corrosive substances such acid and alkali; shall commissioning and repair the product and with the use procedures, the Company recommended the Company, which can applicable most applications. you have other
+and the air shall not contain corrosive gases. not transported the open air, and attention shall paid waterproof, rain and snow proof, responsible for repairing the linear motor free charge damaged cannot used demands, can provide linear motors other specifications according your demands.
+Transportation Linear Motor dust-proof prevention and mechanical damage. normally due poor manufacturing quality within months from the date delivery
+Warranty Period (based the delivery certificate).
+Order Description
