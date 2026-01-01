@@ -4,16 +4,14 @@
 from .simple_text_chunker import SimpleTextChunker
 from .simple_markdown_processor import SimpleMarkdownProcessor
 
-# Optional implementations that may not be available in all environments
+# Optional implementations
 __all__ = [
     "SimpleTextChunker",
-    "SimpleMarkdownProcessor"
+    "SimpleMarkdownProcessor",
 ]
 
-# Try to import TesseractOCR, but don't fail if dependencies are missing
 try:
-    from .tesseract_ocr import TesseractOCR
-    __all__.append("TesseractOCR")
+    from .paddle_ocr import PaddleOCREngine
+    __all__.append("PaddleOCREngine")
 except ImportError:
-    # pytesseract or other dependencies not available
-    TesseractOCR = None 
+    PaddleOCREngine = None

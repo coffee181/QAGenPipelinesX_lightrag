@@ -7,11 +7,6 @@ from typing import List, Dict, Any, Optional
 from datetime import datetime
 from enum import Enum
 import json
-import signal
-import sys
-import atexit
-import threading
-import time
 import asyncio
 
 from ..interfaces.rag_interface import RAGInterface, RAGError
@@ -21,7 +16,7 @@ from ..models.question import Question, QuestionSet
 from ..models.qa_pair import QAPair, QASet
 from ..utils.file_utils import FileUtils
 from ..utils.path_utils import PathUtils
-from ..utils.thread_event_loop import get_or_create_event_loop, cleanup_thread_event_loop
+from ..utils.thread_event_loop import get_or_create_event_loop
 from .progress_manager import ProgressManager
 
 
@@ -34,7 +29,7 @@ class AnswerType(Enum):
 
 
 class AnswerService:
-    """Service for generating answers using RAG with incremental saving."""
+    """Service for generating answers using RAG."""
 
     def __init__(
             self,
@@ -56,77 +51,6 @@ class AnswerService:
         self.markdown_processor = markdown_processor
         self.progress_manager = progress_manager
         self.logger = logger or logging.getLogger(__name__)
-
-        # Incremental saving state
-        self._current_qa_pairs = []
-        self._current_output_file = None
-        self._current_session_id = None
-        self._save_interval = 5  # Save every 5 QA pairs
-        self._autosave_lock = threading.Lock()
-
-        # Setup signal handlers for graceful shutdown
-        self._setup_signal_handlers()
-
-        # Register cleanup function
-        atexit.register(self._cleanup_on_exit)
-
-    def _setup_signal_handlers(self):
-        """Setup signal handlers for graceful shutdown."""
-        def signal_handler(signum, frame):
-            self.logger.warning(f"Received signal {signum}, performing graceful shutdown...")
-            self._save_current_progress()
-            sys.exit(0)
-
-        # Handle common termination signals
-        signal.signal(signal.SIGINT, signal_handler)   # Ctrl+C
-        signal.signal(signal.SIGTERM, signal_handler)  # Termination request
-
-        # On Windows, also handle SIGBREAK
-        if sys.platform == "win32":
-            signal.signal(signal.SIGBREAK, signal_handler)
-
-    def _cleanup_on_exit(self):
-        """Cleanup function called on program exit."""
-        try:
-            self._save_current_progress()
-        except Exception as e:
-            self.logger.error(f"Error during cleanup: {e}")
-
-    def _save_current_progress(self):
-        """Save current progress to file."""
-        with self._autosave_lock:
-            if self._current_qa_pairs and self._current_output_file:
-                try:
-                    # Create temporary QA set
-                    qa_set = QASet(
-                        document_id=self._current_session_id or "interrupted_session",
-                        qa_pairs=self._current_qa_pairs.copy(),
-                        created_at=datetime.now()
-                    )
-
-                    # Save to temporary file first
-                    temp_file = self._current_output_file.with_suffix('.temp.jsonl')
-                    self._save_qa_set(qa_set, temp_file)
-
-                    # Move to final location (Windows compatible)
-                    if temp_file.exists():
-                        # Use replace() for cross-platform compatibility
-                        temp_file.replace(self._current_output_file)
-                        self.logger.info(f"Progress saved: {len(self._current_qa_pairs)} QA pairs to {self._current_output_file}")
-
-                    # Update progress manager
-                    if self._current_session_id:
-                        self.progress_manager.save_progress()
-
-                except Exception as e:
-                    self.logger.error(f"Failed to save progress: {e}")
-
-    def _incremental_save(self, force=False):
-        """Perform incremental save if conditions are met."""
-        if not force and len(self._current_qa_pairs) % self._save_interval != 0:
-            return
-
-        self._save_current_progress()
 
     def setup_knowledge_base(self, documents_path: Path, working_dir: Optional[Path] = None) -> None:
         """
@@ -448,13 +372,14 @@ class AnswerService:
     def _load_questions_from_file(self, questions_file: Path) -> List[Question]:
         """Load questions from JSONL file (supports both single-line and multi-line formats)."""
         try:
-            # First try to load as standard JSONL (single line per JSON object)
             try:
                 data = FileUtils.load_jsonl(questions_file)
-            except:
-                # If that fails, try to parse as multi-line JSONL
-                data = self._load_multiline_jsonl(questions_file)
-            
+            except Exception:
+                # 兼容旧的“多行 JSON（每个对象被 json.dump(indent=2) 写出）”格式：
+                # 这种文件无法用标准 jsonlines 逐行解析，这里按空行分块回退解析。
+                raw = questions_file.read_text(encoding="utf-8")
+                blocks = [b.strip() for b in raw.split("\n\n") if b.strip()]
+                data = [json.loads(b) for b in blocks]
             questions = []
 
             for item in data:
@@ -465,7 +390,11 @@ class AnswerService:
                     question = Question(
                         question_id=item["question_id"],
                         content=question_text,
-                        source_document=item.get("source", questions_file.stem),
+                        # 优先使用 question 文件中显式写入的 source_document（通常是原始 .txt 路径或文档名）
+                        # 其次兼容旧字段 source
+                        source_document=item.get("source_document")
+                        or item.get("source")
+                        or questions_file.stem,
                         source_chunk_id=item.get("source_chunk_id", "unknown"),
                         question_index=item.get("question_index", 1),
                         created_at=datetime.now(),
@@ -510,29 +439,6 @@ class AnswerService:
 
         except Exception as e:
             raise AnswerServiceError(f"Failed to load questions from {questions_file}: {str(e)}")
-
-    def _load_multiline_jsonl(self, questions_file: Path) -> List[dict]:
-        """Load questions from multi-line JSONL file (each JSON object spans multiple lines)."""
-        import json
-        data = []
-        
-        with open(questions_file, 'r', encoding='utf-8') as f:
-            content = f.read()
-            
-        # Split by double newlines to separate JSON objects
-            json_objects = content.strip().split('\n\n')
-            
-        for json_str in json_objects:
-            json_str = json_str.strip()
-            if json_str:
-                try:
-                    obj = json.loads(json_str)
-                    data.append(obj)
-                except json.JSONDecodeError as e:
-                    self.logger.warning(f"Failed to parse JSON object in {questions_file}: {e}")
-                    continue
-        
-        return data
 
     def _load_existing_qa_pairs(self, output_file: Path) -> List[QAPair]:
         """Load existing QA pairs from output file for resuming."""
@@ -579,16 +485,12 @@ class AnswerService:
             raise AnswerServiceError(error_msg) from e
 
     def _generate_answers_batch(self, questions: List[Question], session_id: str, output_file: Path = None) -> QASet:
-        """Generate answers for a batch of questions with incremental saving."""
-        # Initialize incremental saving state
-        self._current_qa_pairs = []
-        self._current_output_file = output_file
-        self._current_session_id = session_id
-
+        """Generate answers for a batch of questions（单次写入，无增量保存）."""
         try:
             total_questions = len(questions)
             self.logger.info(f"🚀 开始为 {total_questions} 个问题生成答案")
             
+            qa_pairs: List[QAPair] = []
             for i, question in enumerate(questions, 1):
                 try:
                     self.logger.info(f"📝 处理问题 {i}/{total_questions}: {question.content[:100]}{'...' if len(question.content) > 100 else ''}")
@@ -596,83 +498,45 @@ class AnswerService:
                     
                     # 始终使用 RAG 生成答案（充分利用向量化和知识图谱）
                     raw_answer = None
-                    max_retries = 2
+                    max_retries = 0
                     
-                    # 使用 RAG 查询并进行答案质量验证和重试
-                    # 🔧 文档隔离：传入 source_document 以过滤检索结果
+                    # 使用 RAG 查询并进行答案质量验证
                     for attempt in range(max_retries + 1):
                         try:
-                            if question.source_document:
-                                self.logger.info(f"🔍 第 {attempt + 1} 次尝试使用 LightRAG 生成答案 [文档过滤: {question.source_document}]...")
-                            else:
-                                self.logger.info(f"🔍 第 {attempt + 1} 次尝试使用 LightRAG 生成答案...")
-                            
-                            # 🚀 优化：从问题 metadata 中提取 chunk_ids，优先使用精准检索
-                            chunk_ids = None
-                            metadata = getattr(question, "metadata", {}) or {}
-                            if metadata:
-                                # 获取主 chunk_id
-                                primary_chunk_id = metadata.get("lightrag_chunk_id")
-                                # 获取关联 chunk_ids
-                                related_chunk_ids = metadata.get("related_chunk_ids", [])
-                                
-                                # 合并所有 chunk_ids
-                                if primary_chunk_id or related_chunk_ids:
-                                    chunk_ids = []
-                                    if primary_chunk_id:
-                                        chunk_ids.append(primary_chunk_id)
-                                    if isinstance(related_chunk_ids, list):
-                                        chunk_ids.extend([cid for cid in related_chunk_ids if cid and cid not in chunk_ids])
-                                    
-                                    if chunk_ids:
-                                        self.logger.info(f"🎯 Using {len(chunk_ids)} chunk IDs for direct retrieval")
-                            
                             raw_answer = self.rag.query_single_question(
                                 question.content,
-                                source_document=question.source_document
+                                source_document=question.source_document,
                             )
                             
                             # Clean <think> tags before validation
                             cleaned_for_validation = self.markdown_processor.clean_llm_response(raw_answer)
                             
-                            # 🔍 轻量化的幻觉检测：只记录日志，不再直接判失败
+                            # 轻量化幻觉检测：仅记录关键提醒
                             if not self._verify_answer_authenticity(question.content, cleaned_for_validation):
-                                self.logger.warning(
-                                    f"⚠️ 第 {attempt + 1} 次尝试可能存在幻觉，但保留该答案以避免误杀技术术语"
-                                )
+                                self.logger.debug("可能存在幻觉：仅记录，不阻断")
                             
                             # Classify answer type
                             answer_type = self._classify_answer_type(cleaned_for_validation)
-                            
+
+                            # 不再因“无依据类答案”导致整题失败：允许负向/无依据答案正常落盘
                             if answer_type in [AnswerType.VALID_POSITIVE, AnswerType.VALID_NEGATIVE]:
-                                self.logger.info(f"✅ 第 {attempt + 1} 次尝试成功，答案有效且真实 (类型: {answer_type.value})")
-                                break  # Valid answer found
-                            else:
-                                if attempt < max_retries:
-                                    self.logger.warning(f"⚠️  第 {attempt + 1} 次尝试答案无效 (类型: {answer_type.value})，准备重试...")
-                                    self.logger.warning(f"📄 无效答案预览: {cleaned_for_validation[:100]}...")
-                                    raw_answer = None  # Reset for retry
-                                    continue
-                                else:
-                                    self.logger.error(f"❌ 所有 {max_retries + 1} 次尝试都失败，答案无效 (类型: {answer_type.value})")
-                                    raise ValueError(f"Invalid answer after {max_retries + 1} attempts: {cleaned_for_validation[:100]}...")
+                                break
+
+                            # 仍然保留最基础的兜底：记录后继续（不抛异常阻断整题）
+                            self.logger.warning(
+                                "[answers] 答案质量不佳，按原样保留并继续: type=%s, preview=%s",
+                                getattr(answer_type, "value", str(answer_type)),
+                                cleaned_for_validation[:100],
+                            )
+                            break
                                     
                         except Exception as e:
-                            if attempt < max_retries:
-                                self.logger.warning(f"⚠️  第 {attempt + 1} 次尝试失败: {e}，准备重试...")
-                                raw_answer = None  # Reset for retry
-                                continue
-                            else:
-                                self.logger.error(f"❌ 所有 {max_retries + 1} 次尝试都失败: {e}")
-                                raise e
+                            self.logger.warning(f"生成答案失败: {e}")
+                            raise e
 
                     # Process answer with markdown processor
-                    self.logger.info(f"🧹 开始清理答案格式...")
                     processed_answer = self.markdown_processor.clean_llm_response(raw_answer)
-                    self.logger.info(f"✅ 答案格式清理完成，最终长度: {len(processed_answer)} 字符")
 
-                    # Create QA pair
-                    self.logger.info(f"📦 创建QA对...")
                     qa_pair = QAPair(
                         question_id=question.question_id,
                         question=question.content,
@@ -686,65 +550,42 @@ class AnswerService:
                         }
                     )
 
-                    # Add to current pairs and perform incremental save
-                    with self._autosave_lock:
-                        self._current_qa_pairs.append(qa_pair)
+                    qa_pairs.append(qa_pair)
 
-                    # Perform incremental save
-                    self.logger.info(f"💾 执行增量保存...")
-                    self._incremental_save()
-
-                    self.logger.info(f"🎉 QA对 {i}/{total_questions} 生成完成:")
-                    self.logger.info(f"   📝 问题: {question.content[:80]}{'...' if len(question.content) > 80 else ''}")
-                    self.logger.info(f"   💬 答案: {processed_answer[:80]}{'...' if len(processed_answer) > 80 else ''}")
-                    self.logger.info(f"   📊 答案长度: {len(processed_answer)} 字符")
-                    self.logger.info(f"   🆔 QA对ID: {question.question_id}")
+                    if i % 10 == 0 or i == total_questions:
+                        self.logger.info(f"[answers] 进度 {i}/{total_questions}")
 
                     # Update progress only after successful generation
                     self.progress_manager.update_progress(session_id, 1)
 
                 except Exception as e:
-                    self.logger.error(f"❌ 问题 {i}/{total_questions} 生成失败:")
-                    self.logger.error(f"   🆔 问题ID: {question.question_id}")
-                    self.logger.error(f"   📝 问题内容: {question.content[:100]}{'...' if len(question.content) > 100 else ''}")
-                    self.logger.error(f"   💥 错误信息: {str(e)}")
+                    self.logger.warning(f"[answers] 问题 {i}/{total_questions} 失败: {e}")
                     self.progress_manager.add_error(session_id, f"Question {question.question_id}: {str(e)}")
                     # Don't update progress for failed questions
                     continue
 
-            # Final save
-            self.logger.info(f"💾 执行最终保存...")
-            self._incremental_save(force=True)
+            # Final save（批量一次写入）
+            qa_set = QASet(
+                document_id=session_id,
+                qa_pairs=qa_pairs.copy(),
+                created_at=datetime.now()
+            )
+            if output_file:
+                self.logger.info(f"[answers] 保存 {len(qa_pairs)} QA 对 -> {output_file}")
+                self._save_qa_set(qa_set, output_file)
 
             # Log generation summary
             total_questions = len(questions)
-            successful_qa_pairs = len(self._current_qa_pairs)
+            successful_qa_pairs = len(qa_pairs)
             failed_questions = total_questions - successful_qa_pairs
 
-            self.logger.info(f"📊 答案生成总结:")
-            self.logger.info(f"   ✅ 成功: {successful_qa_pairs}/{total_questions} 个QA对")
-            self.logger.info(f"   ❌ 失败: {failed_questions} 个问题")
-            self.logger.info(f"   📈 成功率: {(successful_qa_pairs/total_questions*100):.1f}%")
-
-            if failed_questions > 0:
-                self.logger.warning(f"⚠️  有 {failed_questions} 个问题生成失败，请查看上方日志了解详情")
-            else:
-                self.logger.info(f"🎉 所有问题都成功生成了答案！")
-
-            # Create QA set
-            qa_set = QASet(
-                document_id=session_id,
-                qa_pairs=self._current_qa_pairs.copy(),
-                created_at=datetime.now()
-            )
+            self.logger.info(f"[answers] 完成 {successful_qa_pairs}/{total_questions}, 失败 {failed_questions}")
 
             return qa_set
 
-        finally:
-            # Clear incremental saving state
-            self._current_qa_pairs = []
-            self._current_output_file = None
-            self._current_session_id = None
+        except Exception as e:
+            self.logger.error(f"[answers] 批量答案生成失败: {e}")
+            raise
 
     def _verify_answer_authenticity(self, question: str, answer: str) -> bool:
         """
@@ -760,7 +601,7 @@ class AnswerService:
         import re
         
         # 如果答案说找不到信息，认为是诚实的
-        no_info_keywords = ["无法找到", "找不到", "没有相关信息", "未提供", "文档中没有"]
+        no_info_keywords = ["未找到依据", "无法找到依据", "未检索到", "无法找到", "找不到", "没有相关信息", "未提供", "文档中没有"]
         if any(kw in answer for kw in no_info_keywords):
             return True
         
@@ -809,6 +650,30 @@ class AnswerService:
         """
         if not answer or not answer.strip():
             return AnswerType.INVALID_ERROR
+
+        answer_stripped = answer.strip()
+
+        # 先处理“诚实的无依据/无信息”回答：这在本项目中是允许的有效负向答案
+        # （与 answer_system_prompt 的“未找到依据”策略保持一致）
+        honest_no_info_patterns = [
+            "未找到依据",
+            "无法找到依据",
+            "未检索到依据",
+            "未检索到",
+            "无法从提供的内容中找到",
+            "无法从知识库中找到",
+            "文档中没有",
+            "文档中未包含",
+            "文档中未提及",
+            "未提供",
+            "没有提供",
+            "没有相关信息",
+            "找不到",
+            "未找到",
+            "未能找到",
+        ]
+        if any(p in answer_stripped for p in honest_no_info_patterns):
+            return AnswerType.VALID_NEGATIVE
         
         # First, check for technical negatives (valuable answers)
         technical_negative_patterns = [
@@ -820,9 +685,8 @@ class AnswerService:
         
         for pattern in technical_negative_patterns:
             if pattern in answer:
-                # Check if it's giving specific information (not just saying "no info")
-                if len(answer) > 30 and not any(p in answer for p in ["没有相关信息", "未提供", "文档中没有"]):
-                    return AnswerType.VALID_NEGATIVE
+                # 技术性否定不要求很长（常见的是一句话“XX不支持YY”）
+                return AnswerType.VALID_NEGATIVE
 
         # Check for common error messages and "no information" responses
         no_info_patterns = [
@@ -975,292 +839,31 @@ class AnswerService:
         return AnswerType.VALID_POSITIVE
 
     def _save_qa_set(self, qa_set: QASet, output_file: Path) -> None:
-        """Save QA set to JSONL file in readable multi-line format."""
+        """Save QA set to JSONL file (single-line JSON per QA)."""
         try:
-            # Create multi-line format - each QA pair as separate lines
-            jsonl_data = []
-            for qa_pair in qa_set.qa_pairs:
-                # Create a separate message pair for each QA
-                qa_data = {
-                    "question": qa_pair.question,
-                    "answer": qa_pair.answer,
-                    "source_document": qa_pair.source_document,
-                    "question_id": qa_pair.question_id,
-                    "confidence_score": qa_pair.confidence_score,
-                    "metadata": qa_pair.metadata,
-                    "created_at": qa_pair.created_at.isoformat() if qa_pair.created_at else None
-                }
-                jsonl_data.append(qa_data)
-
             # Ensure output directory exists
             FileUtils.ensure_directory(output_file.parent)
 
-            # Save to file with pretty formatting
             with open(output_file, 'w', encoding='utf-8') as f:
-                for qa_data in jsonl_data:
-                    # Write each QA pair as a formatted JSON object
-                    json.dump(qa_data, f, ensure_ascii=False, indent=2)
-                    f.write('\n\n')  # Add spacing between QA pairs
+                for qa_pair in qa_set.qa_pairs:
+                    qa_data = {
+                        "question": qa_pair.question,
+                        "answer": qa_pair.answer,
+                        "source_document": qa_pair.source_document,
+                        "question_id": qa_pair.question_id,
+                        "confidence_score": qa_pair.confidence_score,
+                        "metadata": qa_pair.metadata,
+                        "created_at": qa_pair.created_at.isoformat() if qa_pair.created_at else None
+                    }
+                    f.write(json.dumps(qa_data, ensure_ascii=False))
+                    f.write("\n")
 
-            self.logger.info(f"QA set saved to: {output_file} ({len(qa_set.qa_pairs)} QA pairs in multi-line format)")
+            self.logger.info(f"QA set saved to: {output_file} ({len(qa_set.qa_pairs)} QA pairs)")
 
         except Exception as e:
             self.logger.error(f"Failed to save QA set: {e}")
             raise
 
-    def insert_documents_to_working_dir(
-            self,
-            documents_path: Path,
-            working_dir: Path,
-            session_id: Optional[str] = None
-    ) -> Dict[str, Any]:
-        """
-        Insert documents into a specific working directory.
-        
-        Args:
-            documents_path: Path to directory containing documents or single document
-            working_dir: Working directory for the knowledge base
-            session_id: Optional session ID for progress tracking
-            
-        Returns:
-            Dictionary containing insertion statistics
-            
-        Raises:
-            AnswerServiceError: If insertion fails
-        """
-        try:
-            # 🔧 关键修复：初始化当前线程的事件循环
-            # 这确保该线程有独立的事件循环，不会与其他线程冲突
-            get_or_create_event_loop()
-            self.logger.info(f"Event loop initialized for thread {threading.current_thread().ident}")
-            
-            # Create session if not provided
-            if session_id is None:
-                session_id = f"insert_docs_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-
-            # 使用新的路径工具标准化路径
-            normalized_documents_path = PathUtils.normalize_path(documents_path)
-            normalized_working_dir = PathUtils.normalize_path(working_dir)
-            safe_docs_path_str = PathUtils.safe_path_string(normalized_documents_path)
-            safe_working_dir_str = PathUtils.safe_path_string(normalized_working_dir)
-
-            self.logger.info(f"Starting document insertion to working directory: {safe_working_dir_str}")
-            self.logger.info(f"Document source: {safe_docs_path_str}")
-
-            # Set working directory for RAG
-            self.rag.set_working_directory(normalized_working_dir)
-
-            # 验证文档路径
-            self.logger.info("Validating document paths...")
-            is_valid, error_msg = PathUtils.validate_path(
-                normalized_documents_path,
-                require_exists=True
-            )
-
-            if not is_valid:
-                raise AnswerServiceError(f"Invalid documents path: {error_msg}")
-
-            # Load documents
-            self.logger.info("Loading documents...")
-            if normalized_documents_path.is_file() and normalized_documents_path.suffix == '.txt':
-                # Single document
-                documents = [self._load_document_from_file(normalized_documents_path)]
-                self.logger.info(f"Loaded single document: {safe_docs_path_str}")
-            elif normalized_documents_path.is_dir():
-                # Directory of documents
-                documents = self._load_documents_from_directory(normalized_documents_path)
-                self.logger.info(f"Loaded {len(documents)} documents from directory")
-            else:
-                raise AnswerServiceError(f"Invalid documents path: {safe_docs_path_str} (not a .txt file or directory)")
-
-            if not documents:
-                raise AnswerServiceError(f"No valid documents found in {safe_docs_path_str}")
-
-            # Log document details
-            total_size = sum(doc.file_size for doc in documents if doc.file_size)
-            self.logger.info(f"Documents to process: {len(documents)} files, total size: {total_size / 1024 / 1024:.2f} MB")
-
-            # Check for existing session and resume logic
-            existing_session = self.progress_manager.get_session_progress(session_id)
-            if existing_session and existing_session.get("status") == "running":
-                # Check if there are any processed files
-                processed_files = self.progress_manager.get_processed_files(session_id)
-                if processed_files:
-                    self.logger.info(f"🔄 恢复现有文档插入会话: {session_id} (已处理: {len(processed_files)}个文档)")
-                    # Filter out already processed documents
-                    documents = [doc for doc in documents if str(doc.file_path) not in processed_files]
-                    if not documents:
-                        self.logger.info(f"✅ 所有文档都已处理完成")
-                        self.progress_manager.complete_session(session_id)
-                        return {"inserted_documents": len(processed_files), "failed_documents": 0, "total_attempted": len(processed_files)}
-                else:
-                    # No files processed, but session is running, might be stuck
-                    self.logger.warning(f"⚠️ 检测到卡住的会话: {session_id}，重新开始处理")
-                    # Reset the session
-                    self.progress_manager.complete_session(session_id, status="failed")
-                    # Create new session
-                    session_id = f"insert_docs_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-                    self.logger.info(f"🚀 创建新会话: {session_id}")
-
-            # Initialize progress
-            self.progress_manager.start_session(
-                session_id=session_id,
-                total_items=len(documents),
-                operation_type="document_insertion"
-            )
-
-            # Insert documents with detailed progress
-            success_count = 0
-            error_count = 0
-            start_time = time.time()
-
-            self.logger.info(f"Starting document processing ({len(documents)} documents)...")
-
-            for i, document in enumerate(documents, 1):
-                doc_start_time = time.time()
-                safe_doc_name = PathUtils.safe_path_string(document.file_path.name)
-                doc_size_mb = (document.file_size / 1024 / 1024) if document.file_size else 0
-
-                self.logger.info(f"Processing document {i}/{len(documents)}: {safe_doc_name} ({doc_size_mb:.2f} MB)")
-
-                try:
-                    # Insert document
-                    self.rag.insert_document(document)
-
-                    doc_end_time = time.time()
-                    doc_duration = doc_end_time - doc_start_time
-                    success_count += 1
-
-                    # Update progress
-                    self.progress_manager.update_session_progress(
-                        session_id, 
-                        str(document.file_path), 
-                        success=True
-                    )
-
-                    # Calculate ETA
-                    if i > 0:
-                        elapsed_time = doc_end_time - start_time
-                        avg_time_per_doc = elapsed_time / i
-                        remaining_docs = len(documents) - i
-                        eta_seconds = remaining_docs * avg_time_per_doc
-                        eta_minutes = eta_seconds / 60
-
-                        if eta_minutes < 1:
-                            eta_str = f"{eta_seconds:.0f}s"
-                        else:
-                            eta_str = f"{eta_minutes:.1f}min"
-
-                        self.logger.info(f"✓ Document {i} completed in {doc_duration:.1f}s | Progress: {i}/{len(documents)} ({i/len(documents)*100:.1f}%) | ETA: {eta_str}")
-                    else:
-                        self.logger.info(f"✓ Document {i} completed in {doc_duration:.1f}s | Progress: {i}/{len(documents)} ({i/len(documents)*100:.1f}%)")
-
-                except Exception as e:
-                    doc_end_time = time.time()
-                    doc_duration = doc_end_time - doc_start_time
-                    error_count += 1
-                    safe_doc_path = PathUtils.safe_path_string(document.file_path)
-
-                    error_msg = f"✗ Failed to insert document {i}/{len(documents)}: {safe_doc_name} in {doc_duration:.1f}s - {str(e)}"
-                    self.logger.error(error_msg)
-                    
-                    # Update progress with error
-                    self.progress_manager.update_session_progress(
-                        session_id, 
-                        str(safe_doc_path), 
-                        success=False, 
-                        error_message=str(e)
-                    )
-                    continue
-
-            # Complete session
-            self.progress_manager.complete_session(session_id)
-
-            # Calculate total processing time
-            total_time = time.time() - start_time
-            total_time_str = f"{total_time/60:.1f}min" if total_time > 60 else f"{total_time:.1f}s"
-
-            # Get final stats
-            stats = self.rag.get_knowledge_base_stats()
-            stats.update({
-                "inserted_documents": success_count,
-                "failed_documents": error_count,
-                "total_attempted": len(documents),
-                "processing_time_seconds": total_time,
-                "average_time_per_document": total_time / len(documents) if len(documents) > 0 else 0
-            })
-
-            self.logger.info(f"Document insertion completed in {total_time_str}: {success_count} success, {error_count} failed")
-            if error_count > 0:
-                self.logger.warning(f"⚠️  {error_count} documents failed to process - check errors above")
-            else:
-                self.logger.info("🎉 All documents processed successfully!")
-
-            return stats
-
-        except AnswerServiceError as e:
-            # 重新抛出已经格式化的错误
-            if session_id:
-                self.progress_manager.fail_session(session_id, str(e))
-            self.logger.error(f"A known application error occurred: {str(e)}")
-            raise
-        except Exception as e:
-            if session_id:
-                self.progress_manager.fail_session(session_id, str(e))
-            error_msg = f"Failed to insert documents: {str(e)}"
-            self.logger.error(error_msg, exc_info=True)
-            raise AnswerServiceError(error_msg) from e
-
-    def generate_answers_for_single_document(
-            self,
-            document_path: Path,
-            questions_file: Path,
-            working_dir: Path,
-            output_file: Path,
-            session_id: Optional[str] = None,
-            resume: bool = True
-    ) -> QASet:
-        """
-        为单个文档生成答案（独立知识库模式，文档隔离）
-        
-        工作流程：
-        1. 清空当前知识库
-        2. 只插入当前文档到知识库
-        3. 生成该文档问题的答案
-        
-        Args:
-            document_path: 文档路径
-            questions_file: 问题文件路径
-            working_dir: 知识库工作目录
-            output_file: 输出文件路径
-            session_id: 会话ID
-            resume: 是否恢复之前的进度
-            
-        Returns:
-            QASet: 生成的QA对集合
-        """
-        try:
-            self.logger.info(f"🔄 [文档隔离模式] 开始处理文档: {PathUtils.safe_path_string(document_path)}")
-            
-            # Step 1: 清空知识库以确保文档隔离
-            self.logger.info("🧹 清空知识库以确保文档隔离...")
-            self.rag.clear_knowledge_base()
-            
-            # Step 2: 设置知识库（只插入当前文档）
-            self.logger.info(f"📥 插入当前文档到知识库...")
-            self.setup_knowledge_base(document_path, working_dir)
-            
-            # Step 3: 生成答案
-            self.logger.info(f"🤖 开始为文档生成答案...")
-            return self.generate_answers_from_existing_kb(
-                questions_file, working_dir, output_file, session_id, resume
-            )
-            
-        except Exception as e:
-            error_msg = f"Failed to generate answers for single document: {str(e)}"
-            self.logger.error(error_msg)
-            raise AnswerServiceError(error_msg) from e
-    
     def generate_answers_from_existing_kb(
             self,
             questions_file: Path,

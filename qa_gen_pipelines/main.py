@@ -7,12 +7,10 @@ import os
 from pathlib import Path
 from typing import Optional
 from dotenv import load_dotenv
-import threading
-import concurrent.futures
 from datetime import datetime
 
 # 首先修复控制台编码问题
-from src.utils.console_utils import ConsoleOutputFixer, safe_print, console_log
+from src.utils.console_utils import ConsoleOutputFixer
 ConsoleOutputFixer.fix_console_encoding()
 
 from src.utils.path_utils import PathUtils
@@ -60,13 +58,6 @@ from src.implementations.simple_markdown_processor import SimpleMarkdownProcesso
 
 # Optional implementations
 try:
-    from src.implementations.tesseract_ocr import TesseractOCR
-    TESSERACT_AVAILABLE = True
-except ImportError:
-    TesseractOCR = None
-    TESSERACT_AVAILABLE = False
-
-try:
     from src.implementations.paddle_ocr import PaddleOCREngine
     PADDLE_AVAILABLE = True
 except ImportError:
@@ -86,27 +77,22 @@ def create_services(config: ConfigManager, logger: logging.Logger) -> tuple:
     progress_manager = ProgressManager(config)
     
     # Create implementations
-    ocr_provider = config.get("ocr.provider", "tesseract").lower()
+    ocr_provider = config.get("ocr.provider", "paddle").lower()
     ocr = None
 
-    if ocr_provider == "paddle":
+    if ocr_provider in ["paddle", "ppstructure", "ppstructurev3"]:
         if PADDLE_AVAILABLE:
-            ocr = PaddleOCREngine(config)
-            logger.info("PaddleOCR initialized successfully")
-        elif TESSERACT_AVAILABLE:
-            ocr = TesseractOCR(config)
-            logger.warning("PaddleOCR unavailable, falling back to Tesseract")
+            try:
+                ocr = PaddleOCREngine(config)
+                logger.info("PPStructureV3 (PaddleOCR) initialized successfully")
+            except Exception as e:
+                # 允许在缺少 PaddleX OCR 额外依赖时继续运行（例如仅跑已处理文本/问答生成）
+                ocr = None
+                logger.warning("PaddleOCR init failed - PDF processing will be disabled: %s", e)
         else:
-            logger.warning("No OCR engine available - PDF processing will be disabled")
+            logger.warning("PaddleOCR unavailable - PDF processing will be disabled")
     else:
-        if TESSERACT_AVAILABLE:
-            ocr = TesseractOCR(config)
-            logger.info("TesseractOCR initialized successfully")
-        elif PADDLE_AVAILABLE:
-            ocr = PaddleOCREngine(config)
-            logger.warning("TesseractOCR unavailable, using PaddleOCR instead")
-        else:
-            logger.warning("No OCR engine available - PDF processing will be disabled")
+        logger.warning("Unknown OCR provider '%s' - PDF processing will be disabled", ocr_provider)
     
     # 🚀 优化：初始化 ChunkRepository（如果配置了持久化）
     chunk_repository = None
@@ -126,12 +112,18 @@ def create_services(config: ConfigManager, logger: logging.Logger) -> tuple:
     provider = config.get("question_generator.provider", "local")
     if provider == "local":
         question_generator = LocalQuestionGenerator(config, rag=rag)
-        safe_print(f"使用本地模型: {config.get('question_generator.local.model_name', 'unknown')}")
+        logger.info(
+            "使用本地模型: %s",
+            config.get("question_generator.local.model_name", "unknown"),
+        )
     else:
         # 如果不是local，需要检查是否有DeepSeek实现，暂时使用local作为fallback
         logger.warning(f"Unknown question generator provider: {provider}, falling back to local")
         question_generator = LocalQuestionGenerator(config, rag=rag)
-        safe_print(f"使用本地模型 (fallback): {config.get('question_generator.local.model_name', 'unknown')}")
+        logger.info(
+            "使用本地模型 (fallback): %s",
+            config.get("question_generator.local.model_name", "unknown"),
+        )
     
     markdown_processor = SimpleMarkdownProcessor()
     
@@ -224,78 +216,24 @@ def generate_answers_command(args, services, logger):
     working_dir = Path(args.working_dir)
     output_path = Path(args.output)
     
-    if hasattr(args, 'insert_documents') and args.insert_documents:
-        # Mode 1: Insert documents and generate answers
-        documents_path = Path(args.insert_documents)
-        
-        logger.info(f"Generating answers with document insertion")
-        logger.info(f"Documents: {documents_path}, Working dir: {working_dir}")
-        
-        # Setup knowledge base with new working directory
-        answer_service.setup_knowledge_base(documents_path, working_dir)
-        
-        if questions_path.is_file():
-            # Single questions file
-            result = answer_service.generate_answers_for_questions(
-                questions_path, output_path, args.session_id, resume=not args.restart
-            )
-            logger.info(f"Generated {len(result.qa_pairs)} QA pairs")
-        else:
-            # Directory of question files
-            results = answer_service.generate_answers_for_directory(
-                questions_path, output_path, args.session_id
-            )
-            logger.info(f"Generated answers for {len(results)} question files")
-    else:
-        # Mode 2: Use existing knowledge base
-        logger.info(f"Generating answers from existing knowledge base: {working_dir}")
-        
-        if questions_path.is_file():
-            # Single questions file
-            result = answer_service.generate_answers_from_existing_kb(
-                questions_path, working_dir, output_path, args.session_id, resume=not args.restart
-            )
-            logger.info(f"Generated {len(result.qa_pairs)} QA pairs")
-        else:
-            # Directory of question files - need to implement this for existing KB
-            raise NotImplementedError("Directory processing with existing KB not yet implemented")
-
-
-def insert_documents_command(args, services, logger):
-    """Handle document insertion command."""
-    _, _, answer_service, _ = services
+    logger.info(f"Generating answers from existing knowledge base: {working_dir}")
     
-    # 使用PathUtils处理中文路径
-    try:
-        working_dir = PathUtils.normalize_path(args.working_dir)
-        documents_path = PathUtils.normalize_path(args.documents)
-        
-        safe_working_dir_str = PathUtils.safe_path_string(working_dir)
-        safe_documents_str = PathUtils.safe_path_string(documents_path)
-        
-        logger.info(f"Inserting documents from {safe_documents_str} to working directory {safe_working_dir_str}")
-        
-        # Insert documents to working directory
-        stats = answer_service.insert_documents_to_working_dir(
-            documents_path, working_dir, args.session_id
+    if questions_path.is_file():
+        result = answer_service.generate_answers_from_existing_kb(
+            questions_path, working_dir, output_path, args.session_id, resume=not args.restart
         )
-        
-        logger.info(f"Document insertion completed: {stats}")
-        
-    except Exception as e:
-        error_msg = f"Failed to insert documents: {str(e)}"
-        logger.error(error_msg)
-        logger.error(f"Application failed: {error_msg}")
-        raise
+        logger.info(f"Generated {len(result.qa_pairs)} QA pairs")
+    else:
+        raise NotImplementedError("Directory processing with existing KB not yet implemented")
 
 
 def full_pipeline_command(args, services, logger):
     """Handle full pipeline command."""
     pdf_processor, question_service, answer_service, progress_manager = services
     
-    if not TESSERACT_AVAILABLE:
-        logger.error("Full pipeline is not available because TesseractOCR dependencies are missing")
-        logger.error("Please install pytesseract, PIL, and pdf2image packages")
+    if pdf_processor is None:
+        logger.error("Full pipeline is not available because no OCR engine is configured")
+        logger.error("Please configure PaddleOCR (PPStructureV3) in your config file")
         return
     
     input_path = Path(args.input)
@@ -349,163 +287,6 @@ def full_pipeline_command(args, services, logger):
         logger.error(f"Full pipeline failed: {str(e)}")
         raise
 
-
-def show_progress_command(args, services, logger):
-    """Handle show progress command."""
-    _, _, _, progress_manager = services
-    
-    # Import progress display utilities
-    from src.utils.progress_display import (
-        RealTimeProgressMonitor, 
-        ProgressDisplayFormatter,
-        display_session_summary,
-        display_sessions_overview,
-        monitor_sessions_realtime
-    )
-    
-    if hasattr(args, 'monitor') and args.monitor:
-        # Real-time monitoring mode
-        try:
-            safe_print("🚀 启动实时进度监控...")
-            
-            # Get session IDs to monitor if specified
-            session_ids = None
-            if args.session_id:
-                session_ids = [args.session_id]
-            
-            # Start real-time monitoring
-            monitor_sessions_realtime(progress_manager, session_ids)
-            
-        except KeyboardInterrupt:
-            safe_print("\n📊 实时监控已停止")
-        except Exception as e:
-            logger.error(f"Real-time monitoring failed: {e}")
-    
-    elif hasattr(args, 'detailed') and args.detailed:
-        # Detailed view mode
-        if args.session_id:
-            # Show detailed summary for specific session
-            display_session_summary(progress_manager, args.session_id)
-        else:
-            # Show detailed overview for all sessions
-            display_sessions_overview(progress_manager)
-    
-    elif args.session_id:
-        # Show specific session (standard mode)
-        session = progress_manager.get_session_progress(args.session_id)
-        if session:
-            stats = progress_manager.get_session_stats(args.session_id)
-            
-            # Use enhanced formatting
-            summary = progress_manager.get_progress_summary(args.session_id)
-            safe_print(summary)
-            
-            # Display additional details
-            if stats.get('percentage_milestones'):
-                safe_print("\n📈 进度里程碑:")
-                for milestone in stats['percentage_milestones'][-5:]:  # Show last 5 milestones
-                    timestamp = datetime.fromisoformat(milestone['timestamp']).strftime('%H:%M:%S')
-                    safe_print(f"   {milestone['percentage']:3.0f}% - {timestamp}")
-            
-            if stats.get('failure_percentage', 0) > 0:
-                failed_files = progress_manager.get_failed_files(args.session_id)
-                if failed_files:
-                    safe_print(f"\n❌ 最近失败项目 (显示最后 3 个):")
-                    for failed in failed_files[-3:]:
-                        error_msg = failed.get('error', 'Unknown error')[:50]
-                        safe_print(f"   • {failed.get('file', 'Unknown')}: {error_msg}")
-        else:
-            logger.warning(f"Session not found: {args.session_id}")
-    
-    else:
-        # Show all sessions overview
-        sessions = progress_manager.list_sessions()
-        
-        if not sessions:
-            safe_print("📋 没有找到任何会话")
-            return
-        
-        # Enhanced overview display
-        safe_print("📊 会话概览")
-        safe_print("=" * 80)
-        
-        # Group sessions by status
-        running_sessions = [s for s in sessions if s['status'] == 'running']
-        completed_sessions = [s for s in sessions if s['status'] == 'completed']
-        failed_sessions = [s for s in sessions if s['status'] == 'failed']
-        
-        # Display running sessions with progress bars
-        if running_sessions:
-            safe_print("🔄 正在运行的会话:")
-            for session in running_sessions:
-                session_id = session['session_id']
-                stats = progress_manager.get_session_stats(session_id)
-                
-                # Create mini progress bar
-                percentage = stats['completion_percentage']
-                bar_width = 20
-                filled_width = int(bar_width * percentage / 100)
-                bar = "█" * filled_width + "░" * (bar_width - filled_width)
-                
-                # Format session info
-                operation_type = session['operation_type'][:15]
-                safe_print(f"   {session_id[:15]:15s} |{bar}| {percentage:5.1f}% {operation_type:15s}")
-            safe_print("")
-        
-        # Display completed sessions
-        if completed_sessions:
-            safe_print("✅ 已完成的会话:")
-            for session in completed_sessions:
-                session_id = session['session_id']
-                stats = progress_manager.get_session_stats(session_id)
-                
-                operation_type = session['operation_type'][:15]
-                completed = stats['completed_items']
-                total = stats['total_items']
-                duration = ""
-                
-                if stats.get('duration_seconds'):
-                    duration_seconds = stats['duration_seconds']
-                    if duration_seconds < 60:
-                        duration = f"{duration_seconds:.0f}s"
-                    elif duration_seconds < 3600:
-                        duration = f"{duration_seconds/60:.1f}m"
-                    else:
-                        duration = f"{duration_seconds/3600:.1f}h"
-                
-                safe_print(f"   {session_id[:15]:15s} {completed:4d}/{total:4d} {operation_type:15s} {duration:>8s}")
-            safe_print("")
-        
-        # Display failed sessions
-        if failed_sessions:
-            safe_print("❌ 失败的会话:")
-            for session in failed_sessions:
-                session_id = session['session_id']
-                stats = progress_manager.get_session_stats(session_id)
-                
-                operation_type = session['operation_type'][:15]
-                completed = stats['completed_items']
-                total = stats['total_items']
-                failed = stats['failed_items']
-                
-                safe_print(f"   {session_id[:15]:15s} {completed:4d}/{total:4d} (失败:{failed:2d}) {operation_type:15s}")
-            safe_print("")
-        
-        # Display summary statistics
-        total_sessions = len(sessions)
-        safe_print("📈 统计汇总:")
-        safe_print(f"   总会话数: {total_sessions}")
-        safe_print(f"   运行中: {len(running_sessions)}")
-        safe_print(f"   已完成: {len(completed_sessions)}")
-        safe_print(f"   失败: {len(failed_sessions)}")
-        
-        # Show tips for additional commands
-        safe_print("\n💡 提示:")
-        safe_print("   使用 --detailed 查看详细信息")
-        safe_print("   使用 --monitor 启动实时监控")
-        safe_print("   使用 --session-id <ID> 查看特定会话")
-
-
 def generate_qapairs_command(args, services, logger):
     """Handle QA pairs generation command."""
     pdf_processor, question_service, answer_service, progress_manager = services
@@ -552,115 +333,18 @@ def generate_qapairs_command(args, services, logger):
         
         # 生成会话ID
         session_id = args.session_id or f"qapairs_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-        
-        # 检查是否需要文档插入
-        if hasattr(args, 'insert_documents') and args.insert_documents:
-            # 模式1：并行执行问题生成和文档插入
-            logger.info("Mode: Parallel question generation and document insertion")
-            _parallel_question_and_insertion_mode(
-                args, services, logger, session_id, 
-                input_path, working_dir, safe_input_str, safe_working_dir_str
-            )
-        else:
-            # 模式2：仅问题生成和答案生成
-            logger.info("Mode: Question generation and answer generation only")
-            _sequential_question_and_answer_mode(
-                args, services, logger, session_id,
-                input_path, working_dir, safe_input_str, safe_working_dir_str
-            )
-        
+        logger.info("Mode: Question generation and answer generation only")
+        _sequential_question_and_answer_mode(
+            args, services, logger, session_id,
+            input_path, working_dir, safe_input_str, safe_working_dir_str
+        )
+
         logger.info(f"QA pairs generation completed: {session_id}")
         
     except Exception as e:
         error_msg = f"Failed to generate QA pairs: {str(e)}"
         logger.error(error_msg)
         raise
-
-
-def _parallel_question_and_insertion_mode(args, services, logger, session_id, 
-                                         input_path, working_dir, safe_input_str, safe_working_dir_str):
-    """并行执行问题生成和文档插入模式"""
-    _, question_service, answer_service, _ = services
-    
-    question_results = []
-    insertion_stats = None
-    
-    def generate_questions_task():
-        """问题生成任务"""
-        nonlocal question_results
-        try:
-            logger.info("Starting question generation task...")
-            
-            if hasattr(args, 'directory_mode') and args.directory_mode:
-                # 目录模式
-                output_questions_dir = PathUtils.normalize_path(args.output_questions_file)
-                question_results = question_service.generate_questions_for_directory(
-                    input_path, output_questions_dir, f"{session_id}_questions"
-                )
-            else:
-                # 文件模式
-                if input_path.is_file():
-                    output_questions_file = PathUtils.normalize_path(args.output_questions_file)
-                    output_questions_file.parent.mkdir(parents=True, exist_ok=True)
-                    result = question_service.generate_questions_for_document(
-                        input_path, output_questions_file.parent, f"{session_id}_questions"
-                    )
-                    if result:
-                        # 重命名生成的问题文件到指定位置
-                        default_name = output_questions_file.parent / f"{input_path.stem}_questions.jsonl"
-                        if default_name.exists() and default_name != output_questions_file:
-                            default_name.rename(output_questions_file)
-                        question_results = [result]
-                    else:
-                        question_results = []
-                else:
-                    raise ValueError(f"Input path is not a file in file mode: {input_path}")
-            
-            logger.info(f"Question generation completed: {len(question_results)} question sets")
-            
-        except Exception as e:
-            logger.error(f"Question generation task failed: {e}")
-            raise
-    
-    def insert_documents_task():
-        """文档插入任务"""
-        nonlocal insertion_stats
-        try:
-            logger.info("Starting document insertion task...")
-            insertion_stats = answer_service.insert_documents_to_working_dir(
-                input_path, working_dir, f"{session_id}_insertion"
-            )
-            logger.info(f"Document insertion completed: {insertion_stats}")
-            
-        except Exception as e:
-            logger.error(f"Document insertion task failed: {e}")
-            raise
-    
-    # 并行执行问题生成和文档插入
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-        question_future = executor.submit(generate_questions_task)
-        insertion_future = executor.submit(insert_documents_task)
-        
-        # 等待两个任务完成
-        try:
-            question_future.result()
-            insertion_future.result()
-        except Exception as e:
-            logger.error(f"Parallel execution failed: {e}")
-            raise
-    
-    # 验证两个任务都成功完成
-    if not question_results:
-        raise ValueError("No questions were generated")
-    
-    if insertion_stats is None:
-        raise ValueError("Document insertion failed")
-    
-    # 现在生成答案
-    logger.info("Starting answer generation...")
-    _generate_answers_from_questions(
-        args, services, logger, session_id, question_results
-    )
 
 
 def _sequential_question_and_answer_mode(args, services, logger, session_id,
@@ -805,7 +489,6 @@ def main():
     answers_parser.add_argument("questions", help="Questions file or directory (JSONL format)")
     answers_parser.add_argument("working_dir", help="Working directory containing knowledge base (for existing KB) or target directory (for new KB)")
     answers_parser.add_argument("output", help="Output file or directory for QA results")
-    answers_parser.add_argument("-i", "--insert-documents", help="Documents to insert into knowledge base (enables insertion mode - creates new KB in working_dir)")
     answers_parser.add_argument("--restart", action="store_true", help="Restart from beginning (ignore existing progress)")
     
     # QA pairs generation command (NEW)
@@ -816,26 +499,11 @@ def main():
     qapairs_parser.add_argument("output_file", help="Output QA pairs JSONL file or directory (use with -d)")
     qapairs_parser.add_argument("-d", "--directory-mode", action="store_true", 
                                 help="Directory mode: auto-generate filenames (input_name_questions.jsonl, input_name_qapairs.jsonl)")
-    qapairs_parser.add_argument("-i", "--insert-documents", action="store_true", 
-                                help="Parallel mode: simultaneously insert documents and generate questions, then generate answers")
-    
-    # Insert documents command
-    insert_parser = subparsers.add_parser("insert-documents", help="Insert documents into a knowledge base working directory")
-    insert_parser.add_argument("working_dir", help="Target working directory for the knowledge base")
-    insert_parser.add_argument("documents", help="Documents file or directory to insert")
     
     # Full pipeline command
     pipeline_parser = subparsers.add_parser("full-pipeline", help="Run full pipeline")
     pipeline_parser.add_argument("input", help="Input PDF file or directory")
     pipeline_parser.add_argument("output", help="Output directory")
-    
-    # Progress command
-    progress_parser = subparsers.add_parser("show-progress", help="Show progress")
-    progress_parser.add_argument("--session-id", help="Show specific session progress")
-    progress_parser.add_argument("--detailed", action="store_true", help="Show detailed progress information")
-    progress_parser.add_argument("--monitor", action="store_true", help="Start real-time progress monitoring")
-    progress_parser.add_argument("--refresh-interval", type=float, default=1.0, help="Refresh interval for monitoring (seconds)")
-    progress_parser.add_argument("--show-all", action="store_true", help="Show all sessions including completed ones")
     
     args = parser.parse_args()
     
@@ -867,12 +535,8 @@ def main():
             generate_answers_command(args, services, logger)
         elif args.command == "generate-qapairs":
             generate_qapairs_command(args, services, logger)
-        elif args.command == "insert-documents":
-            insert_documents_command(args, services, logger)
         elif args.command == "full-pipeline":
             full_pipeline_command(args, services, logger)
-        elif args.command == "show-progress":
-            show_progress_command(args, services, logger)
         else:
             logger.error(f"Unknown command: {args.command}")
             return

@@ -1,127 +1,69 @@
-"""PaddleOCR implementation."""
+"""PPStructureV3-based OCR implementation."""
 
 from __future__ import annotations
 
-import numpy as np
-from paddleocr import PaddleOCR
-from pdf2image import convert_from_path
-from PIL import Image
-from pathlib import Path
-from typing import List
 from datetime import datetime
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+import pandas as pd
 from loguru import logger
+from paddleocr import PPStructureV3
 from tqdm import tqdm
 
-from ..interfaces.ocr_interface import OCRInterface, OCRError
+from ..interfaces.ocr_interface import OCRError, OCRInterface
 from ..models.document import Document
 from ..utils.config import ConfigManager
+from .simple_markdown_processor import SimpleMarkdownProcessor
 
 
 class PaddleOCREngine(OCRInterface):
-    """PaddleOCR-based OCR implementation."""
+    """
+    OCR implementation using PaddleOCR's PPStructureV3 for structured PDF parsing.
+    """
 
     def __init__(self, config: ConfigManager):
-        """
-        Initialize PaddleOCR.
-
-        Args:
-            config: Configuration object.
-        """
         self.config = config
         paddle_cfg = config.get("ocr.paddle", {}) or {}
-
         self.lang = paddle_cfg.get("lang", "ch")
         self.use_angle_cls = paddle_cfg.get("use_angle_cls", True)
-        self.dpi = paddle_cfg.get("dpi", 200)  # 降低默认DPI到200，避免图片过大
 
-        # Initialize PaddleOCR engine
         try:
-            # 配置参数以支持高分辨率扫描文档
-            self.ocr = PaddleOCR(lang=self.lang)
-            logger.info(
-                "PaddleOCR initialized (lang=%s, dpi=%s)",
-                self.lang,
-                self.dpi,
-            )
+            self.pipeline = PPStructureV3(lang=self.lang)
+            logger.info("PPStructureV3 initialized (lang=%s)", self.lang)
         except Exception as e:
-            raise OCRError(f"Failed to initialize PaddleOCR: {e}")
+            raise OCRError(f"Failed to initialize PPStructureV3: {e}")
+
+        # Markdown -> plain text converter to feed downstream chunker/Q&A
+        self.markdown_processor = SimpleMarkdownProcessor()
 
     def extract_text_from_pdf(self, pdf_path: Path) -> str:
         """
-        Extract text from a single PDF file using PaddleOCR.
+        Extract plain text from a PDF using PPStructureV3.
+        """
+        markdown_text, plain_text, _ = self._process_pdf(pdf_path, output_dir=None)
+        return plain_text or markdown_text
 
-        Args:
-            pdf_path: Path to the PDF file.
-
-        Returns:
-            Extracted text content.
+    def process_pdf_to_document(self, pdf_path: Path, output_dir: Optional[Path] = None) -> Document:
+        """
+        Process a PDF into a Document, saving Markdown/images when output_dir is provided.
         """
         try:
-            logger.info("Starting PaddleOCR extraction for: %s", pdf_path)
-
-            images = convert_from_path(str(pdf_path), dpi=self.dpi)
-            logger.info("Converted PDF to %d images", len(images))
-
-            extracted_text: List[str] = []
-            for i, image in enumerate(tqdm(images, desc="PaddleOCR pages")):
-                page_text = self._extract_text_from_image(image)
-                if page_text:
-                    extracted_text.append(f"--- Page {i + 1} ---\n{page_text}")
-
-            full_text = "\n\n".join(extracted_text)
-            logger.info(
-                "PaddleOCR extraction completed. Total characters: %d", len(full_text)
+            markdown_text, plain_text, table_markdown = self._process_pdf(
+                pdf_path, output_dir=output_dir
             )
-            return full_text
 
-        except Exception as e:
-            raise OCRError(f"Failed to extract text from {pdf_path} using PaddleOCR: {e}")
+            # 去重主文本，附加表格和图片 OCR，避免重复向量化
+            content_parts: List[str] = []
+            if plain_text:
+                content_parts.append(plain_text)
+            else:
+                content_parts.append(self.markdown_processor.markdown_to_plain_text(markdown_text))
 
-    def _extract_text_from_image(self, image) -> str:
-        """Run PaddleOCR on a PIL image."""
-        # 如果图片太大，先缩小到合理尺寸
-        max_dimension = 3000  # 降低到3000避免被PaddleOCR自动缩小
-        width, height = image.size
-        if max(width, height) > max_dimension:
-            scale = max_dimension / max(width, height)
-            new_width = int(width * scale)
-            new_height = int(height * scale)
-            image = image.resize((new_width, new_height), Image.Resampling.LANCZOS)
-        
-        np_img = np.array(image)
-        result = self.ocr.predict(np_img)  # 使用新版 API
-        if not result:
-            return ""
+            if table_markdown:
+                content_parts.append("## 表格提取\n" + "\n\n".join(table_markdown))
 
-        lines: List[str] = []
-        # 新版 PaddleOCR 3.x 返回包含 OCRResult 对象的列表
-        if isinstance(result, list):
-            for ocr_result in result:
-                # OCRResult 对象包含 rec_texts 字段（识别的文本列表）
-                if hasattr(ocr_result, 'rec_texts'):
-                    for text in ocr_result.rec_texts:
-                        if text and text.strip():
-                            lines.append(text.strip())
-                # 兼容字典格式
-                elif isinstance(ocr_result, dict) and 'rec_texts' in ocr_result:
-                    for text in ocr_result['rec_texts']:
-                        if text and text.strip():
-                            lines.append(text.strip())
-
-        return "\n".join(lines)
-
-    def process_pdf_to_document(self, pdf_path: Path) -> Document:
-        """
-        Process PDF and create Document object.
-
-        Args:
-            pdf_path: Path to the PDF file.
-
-        Returns:
-            Document with extracted content and metadata.
-        """
-        try:
-            content = self.extract_text_from_pdf(pdf_path)
+            content = "\n\n".join([c for c in content_parts if c.strip()])
 
             file_size = pdf_path.stat().st_size
             created_at = datetime.fromtimestamp(pdf_path.stat().st_ctime)
@@ -139,49 +81,190 @@ class PaddleOCREngine(OCRInterface):
             return document
 
         except Exception as e:
-            raise OCRError(f"Failed to process PDF to document with PaddleOCR: {e}")
+            raise OCRError(f"Failed to process PDF with PPStructureV3: {e}")
 
     def process_batch(self, pdf_paths: List[Path], output_dir: Path) -> List[Document]:
         """
-        Process multiple PDF files in batch.
-
-        Args:
-            pdf_paths: List of PDF file paths.
-            output_dir: Directory to save extracted text files.
-
-        Returns:
-            List of processed Document objects.
+        Batch process PDFs; saves both .txt (plain) and .md (structured) plus images.
         """
         try:
             documents: List[Document] = []
             output_dir.mkdir(parents=True, exist_ok=True)
 
-            logger.info("Starting PaddleOCR batch processing for %d files", len(pdf_paths))
+            logger.info("Starting PPStructureV3 batch processing for %d files", len(pdf_paths))
 
-            for pdf_path in tqdm(pdf_paths, desc="Processing PDFs with PaddleOCR"):
+            for pdf_path in tqdm(pdf_paths, desc="Processing PDFs with PPStructureV3"):
                 try:
-                    document = self.process_pdf_to_document(pdf_path)
+                    document = self.process_pdf_to_document(pdf_path, output_dir=output_dir)
                     documents.append(document)
 
                     text_filename = pdf_path.stem + ".txt"
                     text_path = output_dir / text_filename
-                    with open(text_path, "w", encoding="utf-8") as f:
-                        f.write(document.content)
+                    text_path.write_text(document.content, encoding="utf-8")
 
-                    logger.info("Saved PaddleOCR extracted text to: %s", text_path)
-
+                    logger.info("Saved PPStructureV3 extracted text to: %s", text_path)
                 except Exception as e:
-                    logger.error("Failed to process %s with PaddleOCR: %s", pdf_path, e)
+                    logger.error("Failed to process %s with PPStructureV3: %s", pdf_path, e)
                     continue
 
-            logger.info("PaddleOCR batch processing completed. Processed %d documents", len(documents))
+            logger.info("PPStructureV3 batch processing completed. Processed %d documents", len(documents))
             return documents
 
         except Exception as e:
-            raise OCRError(f"PaddleOCR batch processing failed: {e}")
+            raise OCRError(f"PPStructureV3 batch processing failed: {e}")
 
     def is_supported_format(self, file_path: Path) -> bool:
         """Check if file format is supported."""
         supported_extensions = [".pdf"]
         return file_path.suffix.lower() in supported_extensions
+
+    def _process_pdf(self, pdf_path: Path, output_dir: Optional[Path] = None):
+        """
+        Run PPStructureV3 on a PDF and optionally save markdown and images.
+        """
+        logger.info("Starting PPStructureV3 extraction for: %s", pdf_path)
+
+        output = self.pipeline.predict(input=str(pdf_path))
+        if not output:
+            raise OCRError(f"PPStructureV3 returned empty result for {pdf_path}")
+
+        markdown_pages: List[Any] = []
+        markdown_images: List[Dict[str, Any]] = []
+
+        for res in output:
+            if hasattr(res, "markdown"):
+                md_info = res.markdown
+                markdown_pages.append(md_info)
+
+                if isinstance(md_info, dict):
+                    markdown_images.append(md_info.get("markdown_images", {}) or {})
+                elif hasattr(res, "markdown_images"):
+                    markdown_images.append(getattr(res, "markdown_images") or {})
+                else:
+                    markdown_images.append({})
+
+        table_markdown = self._extract_table_markdown(output)
+        markdown_text = self._concat_markdown_pages(markdown_pages)
+        if table_markdown:
+            markdown_text = f"{markdown_text}\n\n" + "\n\n".join(table_markdown)
+        plain_text = self.markdown_processor.markdown_to_plain_text(markdown_text)
+
+        if output_dir is not None:
+            self._save_markdown_and_images(
+                pdf_path=pdf_path,
+                base_output_dir=output_dir,
+                markdown_text=markdown_text,
+                markdown_images=markdown_images,
+            )
+
+        logger.info(
+            "PPStructureV3 extraction completed. Markdown length: %d, Plain length: %d",
+            len(markdown_text),
+            len(plain_text),
+        )
+        return markdown_text, plain_text, table_markdown
+
+    def _concat_markdown_pages(self, markdown_pages: List[Any]) -> str:
+        """Concatenate page-level markdown outputs safely."""
+        if hasattr(self.pipeline, "concatenate_markdown_pages"):
+            try:
+                return self.pipeline.concatenate_markdown_pages(markdown_pages)
+            except Exception as e:
+                logger.warning("Failed to use concatenate_markdown_pages: %s", e)
+
+        normalized = [self._markdown_to_string(md) for md in markdown_pages]
+        return "\n\n".join([m for m in normalized if m])
+
+    @staticmethod
+    def _markdown_to_string(md_info: Any) -> str:
+        """Normalize markdown output to a string."""
+        if md_info is None:
+            return ""
+        if isinstance(md_info, str):
+            return md_info
+        if isinstance(md_info, dict):
+            # Common keys used by PPStructureV3 markdown output
+            if "markdown" in md_info and isinstance(md_info["markdown"], str):
+                return md_info["markdown"]
+            if "md" in md_info and isinstance(md_info["md"], str):
+                return md_info["md"]
+            if "text" in md_info and isinstance(md_info["text"], str):
+                return md_info["text"]
+        return str(md_info)
+
+    def _extract_table_markdown(self, output: List[Any]) -> List[str]:
+        """
+        Extract table results from PPStructureV3 output and convert to markdown.
+        """
+        tables: List[str] = []
+
+        for res in output:
+            candidate = getattr(res, "res", None)
+            if not candidate:
+                continue
+
+            # Case 1: list of dict results
+            if isinstance(candidate, list):
+                for item in candidate:
+                    html = self._get_table_html(item)
+                    if html:
+                        self._append_table_from_html(html, tables)
+
+            # Case 2: dict result
+            if isinstance(candidate, dict):
+                html = self._get_table_html(candidate)
+                if html:
+                    self._append_table_from_html(html, tables)
+
+        return tables
+
+    @staticmethod
+    def _get_table_html(item: Dict[str, Any]) -> Optional[str]:
+        if not isinstance(item, dict):
+            return None
+        return (
+            item.get("res", {}).get("html")
+            or item.get("html")
+            or item.get("cell_html")
+        )
+
+    @staticmethod
+    def _append_table_from_html(html: str, tables: List[str]) -> None:
+        if not html:
+            return
+        try:
+            dfs = pd.read_html(html)
+            if dfs:
+                tables.append(dfs[0].to_markdown(index=False))
+        except Exception as e:
+            logger.debug("Failed to parse table html: %s", e)
+
+    def _save_markdown_and_images(
+        self,
+        pdf_path: Path,
+        base_output_dir: Path,
+        markdown_text: str,
+        markdown_images: List[Dict[str, Any]],
+    ) -> None:
+        """
+        Save markdown (.md) and extracted images to disk, mirroring the reference sample.
+        """
+        base_output_dir.mkdir(parents=True, exist_ok=True)
+
+        # Save markdown file
+        md_path = base_output_dir / f"{pdf_path.stem}.md"
+        md_path.write_text(markdown_text, encoding="utf-8")
+        logger.info("Markdown saved: %s", md_path)
+
+        # Save images
+        for item in markdown_images:
+            if not item:
+                continue
+            for img_rel_path, image in item.items():
+                file_path = base_output_dir / img_rel_path
+                file_path.parent.mkdir(parents=True, exist_ok=True)
+                try:
+                    image.save(file_path)
+                except Exception as e:
+                    logger.warning("Failed to save image %s: %s", file_path, e)
 

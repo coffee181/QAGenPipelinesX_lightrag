@@ -1,741 +1,407 @@
-"""Progress management service."""
+"""文件级进度管理（progress.jsonl）。
+
+以文件元数据（修改时间 + 大小）为第一层校验，不使用 MD5。
+每条记录使用 JSONL 存储，键为项目根路径下的相对路径。
+"""
+
+from __future__ import annotations
 
 import json
+import os
+import time
 from pathlib import Path
-from typing import Dict, Any, List, Optional, Callable
-from datetime import datetime
+from typing import Any, Dict, Iterable, List, Optional
+
 from loguru import logger
 
 from ..utils.config import ConfigManager
 from ..utils.file_utils import FileUtils
-from ..utils.console_utils import safe_print, console_log
 
 
 class ProgressManager:
-    """Manages processing progress for resumable operations."""
-    
-    def __init__(self, config: ConfigManager):
-        """
-        Initialize progress manager.
-        
-        Args:
-            config: Configuration object
-        """
-        self.config = config
-        self.progress_file = Path(config.get("progress.progress_file", "./progress.json"))
-        self.save_interval = config.get("progress.save_interval", 1)  # Save more frequently for better recovery
-        self.enable_percentage_display = config.get("progress.enable_percentage_display", True)
-        self.percentage_display_interval = config.get("progress.percentage_display_interval", 10)  # Display every 10%
-        
-        # Progress data structure
-        self.progress_data = {
-            "sessions": {},
-            "last_updated": None
+    """基于 JSONL 的文件进度管理器。"""
+
+    DEFAULT_STAGES = ("preprocess", "qa_gen", "vectorization")
+    OPERATION_STAGE_MAP = {
+        "pdf_processing": "preprocess",
+        "pdf_list_processing": "preprocess",
+        "question_generation": "qa_gen",
+        "question_doc_generation": "qa_gen",
+        "answer_generation": "vectorization",
+        "batch_answer_generation": "vectorization",
+        "document_insertion": "vectorization",
+    }
+
+    def __init__(
+        self,
+        config: Optional[ConfigManager] = None,
+        progress_file: Optional[Path | str] = None,
+        project_root: Optional[Path | str] = None,
+    ) -> None:
+        self.project_root = self._resolve_project_root(project_root)
+        progress_path = progress_file
+        if progress_path is None and config is not None:
+            progress_path = config.get("progress.progress_file", "progress.jsonl")
+        self.progress_file = self._resolve_storage_path(progress_path or "progress.jsonl")
+
+        self.records: Dict[str, Dict[str, Any]] = {}
+        self.sessions: Dict[str, Dict[str, Any]] = {}
+
+        self._load()
+        logger.info("ProgressManager initialized at %s", self.progress_file)
+
+    # ------------------------------------------------------------------#
+    # 核心 JSONL 读写
+    # ------------------------------------------------------------------#
+    def _resolve_project_root(self, root: Optional[Path | str]) -> Path:
+        if root:
+            return Path(root).resolve()
+        return Path(__file__).resolve().parents[2]
+
+    def _resolve_storage_path(self, path_like: Path | str) -> Path:
+        candidate = Path(path_like)
+        if not candidate.is_absolute():
+            candidate = (self.project_root / candidate).resolve()
+        return candidate
+
+    def _load(self) -> None:
+        if not self.progress_file.exists():
+            return
+
+        try:
+            with self.progress_file.open("r", encoding="utf-8") as fp:
+                for line in fp:
+                    if not line.strip():
+                        continue
+                    try:
+                        record = json.loads(line)
+                    except json.JSONDecodeError:
+                        logger.warning("跳过无法解析的 progress 行: %s", line.strip())
+                        continue
+                    normalized = self._normalize_record(record)
+                    self.records[normalized["file_path"]] = normalized
+        except Exception as exc:  # noqa: BLE001
+            logger.error("读取 progress.jsonl 失败: %s", exc)
+
+    def _persist(self) -> None:
+        tmp_path = self.progress_file.with_suffix(self.progress_file.suffix + ".tmp")
+        FileUtils.ensure_directory(tmp_path.parent)
+
+        try:
+            with tmp_path.open("w", encoding="utf-8") as fp:
+                for _, record in sorted(self.records.items(), key=lambda item: item[0]):
+                    fp.write(json.dumps(record, ensure_ascii=False))
+                    fp.write("\n")
+            tmp_path.replace(self.progress_file)
+        except Exception as exc:  # noqa: BLE001
+            logger.error("写入 progress.jsonl 失败: %s", exc)
+            if tmp_path.exists():
+                tmp_path.unlink(missing_ok=True)
+
+    # ------------------------------------------------------------------#
+    # 记录与元数据
+    # ------------------------------------------------------------------#
+    def _default_stage_states(self) -> Dict[str, Dict[str, Any]]:
+        return {stage: {"status": "pending"} for stage in self.DEFAULT_STAGES}
+
+    def _normalize_record(self, record: Dict[str, Any]) -> Dict[str, Any]:
+        stages = record.get("stages") or {}
+        for stage in self.DEFAULT_STAGES:
+            stages.setdefault(stage, {"status": "pending"})
+
+        return {
+            "file_path": record["file_path"],
+            "file_size": int(record.get("file_size", 0)),
+            "last_modified": float(record.get("last_modified", 0.0)),
+            "stages": stages,
         }
-        
-        # Progress display tracking
-        self.last_percentage_displayed = {}
-        self.progress_callbacks = {}
-        
-        # Load existing progress
-        self.load_progress()
-        
-        logger.info(f"Progress manager initialized with file: {self.progress_file}")
-    
-    def create_session(self, session_id: str, operation_type: str, total_items: int, 
-                      metadata: Optional[Dict[str, Any]] = None) -> None:
-        """
-        Create a new processing session.
-        
-        Args:
-            session_id: Unique identifier for the session
-            operation_type: Type of operation (e.g., 'pdf_processing', 'question_generation')
-            total_items: Total number of items to process
-            metadata: Additional metadata for the session
-        """
-        session_data = {
+
+    def _build_record(self, rel_path: str, meta: Dict[str, Any]) -> Dict[str, Any]:
+        return {
+            "file_path": rel_path,
+            "file_size": meta["file_size"],
+            "last_modified": meta["last_modified"],
+            "stages": self._default_stage_states(),
+        }
+
+    def _relative_path(self, file_path: Path) -> str:
+        try:
+            return str(file_path.resolve().relative_to(self.project_root))
+        except ValueError:
+            return os.path.relpath(file_path.resolve(), self.project_root)
+
+    def _get_metadata(self, file_path: Path) -> Dict[str, Any]:
+        stat = file_path.stat()
+        return {"file_size": stat.st_size, "last_modified": stat.st_mtime}
+
+    def _metadata_changed(self, record: Dict[str, Any], meta: Dict[str, Any]) -> bool:
+        return (
+            record.get("file_size") != meta["file_size"]
+            or record.get("last_modified") != meta["last_modified"]
+        )
+
+    # ------------------------------------------------------------------#
+    # 对外接口：跳过 / 更新
+    # ------------------------------------------------------------------#
+    def should_skip(self, file_path: Path | str, stage_name: str) -> bool:
+        """返回是否跳过给定阶段；必要时会创建或重置记录。"""
+        if not stage_name:
+            return False
+
+        path_obj = Path(file_path).expanduser().resolve()
+        if not path_obj.exists():
+            raise FileNotFoundError(f"文件不存在: {path_obj}")
+
+        stage = stage_name.lower()
+        rel_path = self._relative_path(path_obj)
+        meta = self._get_metadata(path_obj)
+
+        record = self.records.get(rel_path)
+        if record is None:
+            record = self._build_record(rel_path, meta)
+            self.records[rel_path] = record
+            self._persist()
+            return False
+
+        if self._metadata_changed(record, meta):
+            record["file_size"] = meta["file_size"]
+            record["last_modified"] = meta["last_modified"]
+            record["stages"] = self._default_stage_states()
+            self.records[rel_path] = record
+            self._persist()
+            return False
+
+        stage_state = record["stages"].setdefault(stage, {"status": "pending"})
+        return stage_state.get("status") == "done"
+
+    def update_status(self, file_path: Path | str, stage_name: str, status: str) -> None:
+        """更新阶段状态并持久化到 JSONL。"""
+        if not stage_name:
+            return
+
+        path_obj = Path(file_path).expanduser().resolve()
+        stage = stage_name.lower()
+        rel_path = self._relative_path(path_obj)
+        meta = self._get_metadata(path_obj)
+
+        record = self.records.get(rel_path)
+        if record is None:
+            record = self._build_record(rel_path, meta)
+        else:
+            record["file_size"] = meta["file_size"]
+            record["last_modified"] = meta["last_modified"]
+
+        stage_state = record["stages"].setdefault(stage, {"status": "pending"})
+        stage_state["status"] = status
+        stage_state["timestamp"] = time.time()
+        record["stages"][stage] = stage_state
+
+        self.records[rel_path] = record
+        self._persist()
+
+    # ------------------------------------------------------------------#
+    # 向后兼容的会话接口（仅内存，用于现有服务调用）
+    # ------------------------------------------------------------------#
+    def _stage_for_operation(self, operation_type: Optional[str]) -> Optional[str]:
+        if not operation_type:
+            return None
+        return self.OPERATION_STAGE_MAP.get(operation_type)
+
+    def create_session(
+        self,
+        session_id: str,
+        operation_type: str,
+        total_items: int,
+        metadata: Optional[Dict[str, Any]] = None,
+    ) -> None:
+        self.sessions[session_id] = {
+            "session_id": session_id,
             "operation_type": operation_type,
             "total_items": total_items,
             "completed_items": 0,
             "failed_items": 0,
             "processed_files": [],
             "failed_files": [],
-            "start_time": datetime.now().isoformat(),
-            "last_update": datetime.now().isoformat(),
             "status": "running",
             "metadata": metadata or {},
-            "percentage_milestones": []  # Track when certain percentages were reached
+            "start_time": time.time(),
+            "last_update": time.time(),
         }
-        
-        self.progress_data["sessions"][session_id] = session_data
-        self.progress_data["last_updated"] = datetime.now().isoformat()
-        
-        # Initialize percentage tracking
-        self.last_percentage_displayed[session_id] = 0
-        
-        self.save_progress()
-        
-        # Display initial progress
-        if self.enable_percentage_display:
-            console_log("INFO",f"🚀 开始会话: {session_id} ({operation_type})")
-            console_log("INFO",f"📊 总项目数: {total_items}")
-            console_log("INFO",f"⏱️ 开始时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-        
-        logger.info(f"Created session: {session_id} ({operation_type}) with {total_items} items")
-    
-    def start_session(self, session_id: str, total_items: int, operation_type: str, metadata: Optional[Dict[str, Any]] = None) -> None:
-        """
-        Start a new session (alias for create_session for backward compatibility).
-        
-        Args:
-            session_id: Unique session identifier
-            total_items: Total number of items to process
-            operation_type: Type of operation (e.g., 'pdf_processing', 'question_generation')
-            metadata: Optional metadata for the session
-        """
+
+    def start_session(
+        self,
+        session_id: str,
+        total_items: int,
+        operation_type: str,
+        metadata: Optional[Dict[str, Any]] = None,
+    ) -> None:
         self.create_session(session_id, operation_type, total_items, metadata)
-    
-    def update_session_progress(self, session_id: str, completed_file: str, 
-                               success: bool = True, error_message: str = None) -> None:
-        """
-        Update progress for a session.
-        
-        Args:
-            session_id: Session identifier
-            completed_file: File that was processed
-            success: Whether processing was successful
-            error_message: Error message if processing failed
-        """
-        if session_id not in self.progress_data["sessions"]:
-            logger.warning(f"Session {session_id} not found")
-            return
-        
-        session = self.progress_data["sessions"][session_id]
-        
-        if success:
-            session["completed_items"] += 1
-            session["processed_files"].append({
-                "file": completed_file,
-                "timestamp": datetime.now().isoformat()
-            })
-        else:
-            session["failed_items"] += 1
-            session["failed_files"].append({
-                "file": completed_file,
-                "error": error_message,
-                "timestamp": datetime.now().isoformat()
-            })
-        
-        session["last_update"] = datetime.now().isoformat()
-        self.progress_data["last_updated"] = datetime.now().isoformat()
-        
-        # Update percentage display
-        self._update_percentage_display(session_id)
-        
-        # Call progress callback if registered
-        if session_id in self.progress_callbacks:
-            try:
-                stats = self.get_session_stats(session_id)
-                self.progress_callbacks[session_id](stats)
-            except Exception as e:
-                logger.warning(f"Progress callback error for {session_id}: {e}")
-        
-        # Auto-save based on interval
-        if session["completed_items"] % self.save_interval == 0:
-            self.save_progress()
-        
-        logger.info(f"Session {session_id}: {session['completed_items']}/{session['total_items']} completed")
-    
-    def update_progress(self, session_id: str, increment: int = 1) -> None:
-        """
-        Update progress for a session by incrementing completed items.
-        
-        Args:
-            session_id: Session identifier
-            increment: Number of items to increment
-        """
-        if session_id not in self.progress_data["sessions"]:
-            logger.warning(f"Session {session_id} not found")
-            return
-        
-        session = self.progress_data["sessions"][session_id]
-        session["completed_items"] += increment
-        session["last_update"] = datetime.now().isoformat()
-        self.progress_data["last_updated"] = datetime.now().isoformat()
-        
-        # Update percentage display
-        self._update_percentage_display(session_id)
-        
-        # Call progress callback if registered
-        if session_id in self.progress_callbacks:
-            try:
-                stats = self.get_session_stats(session_id)
-                self.progress_callbacks[session_id](stats)
-            except Exception as e:
-                logger.warning(f"Progress callback error for {session_id}: {e}")
-        
-        # Auto-save based on interval
-        if session["completed_items"] % self.save_interval == 0:
-            self.save_progress()
-        
-        logger.info(f"Session {session_id}: {session['completed_items']}/{session['total_items']} completed")
-    
+
+    def get_session(self, session_id: str) -> Optional[Dict[str, Any]]:
+        """获取会话元数据；无则返回 None。"""
+        return self.sessions.get(session_id)
+
     def add_error(self, session_id: str, error_message: str) -> None:
         """
-        Add an error to a session.
-        
-        Args:
-            session_id: Session identifier
-            error_message: Error message to add
+        记录会话中的错误信息，便于调用方统计失败项。
+        若会话不存在则先以兼容模式创建。
         """
-        if session_id not in self.progress_data["sessions"]:
-            logger.warning(f"Session {session_id} not found")
-            return
-        
-        session = self.progress_data["sessions"][session_id]
+        session = self.sessions.get(session_id)
+        if session is None:
+            logger.debug("Session %s 不存在，自动创建用于记录错误（兼容模式）。", session_id)
+            self.create_session(session_id, "unknown", 0, {})
+            session = self.sessions[session_id]
+
         session["failed_items"] += 1
-        
-        if "errors" not in session:
-            session["errors"] = []
-        
-        session["errors"].append({
-            "message": error_message,
-            "timestamp": datetime.now().isoformat()
-        })
-        
-        session["last_update"] = datetime.now().isoformat()
-        self.progress_data["last_updated"] = datetime.now().isoformat()
-        
-        logger.error(f"Added error to session {session_id}: {error_message}")
-    
-    def reactivate_session(self, session_id: str, new_total_items: int = None) -> None:
-        """
-        Reactivate a completed session to continue processing.
-        
-        Args:
-            session_id: Session identifier to reactivate
-            new_total_items: New total items count (optional)
-        """
-        if session_id not in self.progress_data["sessions"]:
-            logger.warning(f"Session {session_id} not found for reactivation")
-            return
-        
-        session = self.progress_data["sessions"][session_id]
-        
-        # Update status back to running
-        session["status"] = "running"
-        
-        # Update total items if provided
-        if new_total_items and new_total_items > session["total_items"]:
-            session["total_items"] = new_total_items
-        
-        # Remove end_time if exists
-        if "end_time" in session:
-            del session["end_time"]
-        
-        session["last_update"] = datetime.now().isoformat()
-        self.progress_data["last_updated"] = datetime.now().isoformat()
-        
-        # Save immediately
-        self.save_progress()
-        
-        logger.info(f"Reactivated session {session_id} with {session['completed_items']} completed items")
+        session["failed_files"].append(
+            {
+                "error": error_message,
+                "timestamp": time.time(),
+            }
+        )
+        session["last_update"] = time.time()
 
-    def complete_session(self, session_id: str, status: str = "completed") -> None:
-        """
-        Mark a session as completed.
-        
-        Args:
-            session_id: Session identifier
-            status: Final status (completed, failed, cancelled)
-        """
-        if session_id not in self.progress_data["sessions"]:
-            logger.warning(f"Session {session_id} not found")
-            return
-        
-        session = self.progress_data["sessions"][session_id]
-        session["status"] = status
-        session["end_time"] = datetime.now().isoformat()
-        session["last_update"] = datetime.now().isoformat()
-        
-        self.progress_data["last_updated"] = datetime.now().isoformat()
-        self.save_progress()
-        
-        # Display completion summary
-        if self.enable_percentage_display:
-            self._display_completion_summary(session_id, status)
-        
-        # Clean up tracking data
-        if session_id in self.last_percentage_displayed:
-            del self.last_percentage_displayed[session_id]
-        if session_id in self.progress_callbacks:
-            del self.progress_callbacks[session_id]
-        
-        logger.info(f"Session {session_id} completed with status: {status}")
-    
-    def fail_session(self, session_id: str, error_message: str) -> None:
-        """
-        Mark a session as failed.
-        
-        Args:
-            session_id: Session identifier
-            error_message: Error message describing the failure
-        """
-        if session_id not in self.progress_data["sessions"]:
-            logger.warning(f"Session {session_id} not found")
-            return
-        
-        session = self.progress_data["sessions"][session_id]
-        session["status"] = "failed"
-        session["error_message"] = error_message
-        session["end_time"] = datetime.now().isoformat()
-        session["last_update"] = datetime.now().isoformat()
-        
-        self.progress_data["last_updated"] = datetime.now().isoformat()
-        self.save_progress()
-        
-        # Display failure summary
-        if self.enable_percentage_display:
-            console_log('ERROR',f"❌ 会话失败: {session_id}")
-            console_log('ERROR',f"📝 错误信息: {error_message}")
-        
-        logger.error(f"Session {session_id} failed: {error_message}")
-    
-    def register_progress_callback(self, session_id: str, callback: Callable[[Dict[str, Any]], None]) -> None:
-        """
-        Register a callback function to be called on progress updates.
-        
-        Args:
-            session_id: Session identifier
-            callback: Function to call with session stats on updates
-        """
-        self.progress_callbacks[session_id] = callback
-    
-    def unregister_progress_callback(self, session_id: str) -> None:
-        """
-        Unregister progress callback for a session.
-        
-        Args:
-            session_id: Session identifier
-        """
-        if session_id in self.progress_callbacks:
-            del self.progress_callbacks[session_id]
-    
-    def _update_percentage_display(self, session_id: str) -> None:
-        """
-        Update percentage display for a session.
-        
-        Args:
-            session_id: Session identifier
-        """
-        if not self.enable_percentage_display or session_id not in self.progress_data["sessions"]:
-            return
-        
-        session = self.progress_data["sessions"][session_id]
-        total = session["total_items"]
-        completed = session["completed_items"]
-        
-        if total == 0:
-            return
-        
-        current_percentage = (completed / total) * 100
-        last_displayed = self.last_percentage_displayed.get(session_id, 0)
-        
-        # Check if we should display a percentage milestone
-        percentage_thresholds = list(range(self.percentage_display_interval, 101, self.percentage_display_interval))
-        
-        for threshold in percentage_thresholds:
-            if current_percentage >= threshold and last_displayed < threshold:
-                # Record milestone
-                if "percentage_milestones" not in session:
-                    session["percentage_milestones"] = []
-                
-                milestone = {
-                    "percentage": threshold,
-                    "timestamp": datetime.now().isoformat(),
-                    "completed_items": completed,
-                    "total_items": total
-                }
-                session["percentage_milestones"].append(milestone)
-                
-                # Display progress
-                self._display_progress_milestone(session_id, threshold, completed, total)
-                
-                self.last_percentage_displayed[session_id] = threshold
-                break
-    
-    def _display_progress_milestone(self, session_id: str, percentage: float, completed: int, total: int) -> None:
-        """
-        Display a progress milestone.
-        
-        Args:
-            session_id: Session identifier
-            percentage: Percentage completed
-            completed: Number of items completed
-            total: Total number of items
-        """
-        # Calculate ETA
-        session = self.progress_data["sessions"][session_id]
-        start_time = datetime.fromisoformat(session["start_time"])
-        elapsed_time = (datetime.now() - start_time).total_seconds()
-        
-        if completed > 0:
-            estimated_total_time = elapsed_time * total / completed
-            remaining_time = estimated_total_time - elapsed_time
-            eta_str = self._format_duration(remaining_time)
-            speed = completed / elapsed_time if elapsed_time > 0 else 0
-            speed_str = f"{speed:.2f} 项/秒"
-        else:
-            eta_str = "--:--:--"
-            speed_str = "-- 项/秒"
-        
-        # Create progress bar
-        bar_width = 30
-        filled_width = int(bar_width * percentage / 100)
-        bar = "█" * filled_width + "░" * (bar_width - filled_width)
-        
-        # Display progress
-        console_log("INFO",f"📊 {session_id}: |{bar}| {percentage:5.1f}% ({completed}/{total}) "
-                   f"[速度: {speed_str}, ETA: {eta_str}]")
-    
-    def _display_completion_summary(self, session_id: str, status: str) -> None:
-        """
-        Display completion summary for a session.
-        
-        Args:
-            session_id: Session identifier
-            status: Final status
-        """
-        stats = self.get_session_stats(session_id)
-        
-        if status == "completed":
-            console_log("INFO", f"✅ 会话完成: {session_id}")
-        elif status == "failed":
-            console_log("ERROR",f"❌ 会话失败: {session_id}")
-        else:
-            console_log("INFO", f"🔄 会话状态: {session_id} - {status}")
-        
-        console_log("INFO", f"📊 最终统计:")
-        console_log("INFO", f"   总项目数: {stats['total_items']}")
-        console_log("INFO", f"   成功完成: {stats['completed_items']}")
-        console_log("INFO", f"   失败项目: {stats['failed_items']}")
-        console_log("INFO", f"   完成率: {stats['completion_percentage']:.1f}%")
-        
-        if stats.get('duration_seconds'):
-            duration_str = self._format_duration(stats['duration_seconds'])
-            console_log("INFO", f"   运行时长: {duration_str}")
+    def update_session_progress(
+        self,
+        session_id: str,
+        completed_file: str,
+        success: bool = True,
+        error_message: Optional[str] = None,
+    ) -> None:
+        session = self.sessions.get(session_id)
+        if session is None:
+            logger.debug("Session %s 不存在，自动创建（兼容模式）。", session_id)
+            self.create_session(session_id, "unknown", 0, {})
+            session = self.sessions[session_id]
 
-        print("")  # Empty line for spacingpython
-    
-    def _format_duration(self, seconds: float) -> str:
-        """
-        Format duration in human readable format.
-        
-        Args:
-            seconds: Duration in seconds
-            
-        Returns:
-            Formatted duration string
-        """
-        if seconds <= 0:
-            return "--:--:--"
-        
-        hours = int(seconds // 3600)
-        minutes = int((seconds % 3600) // 60)
-        seconds = int(seconds % 60)
-        
-        if hours > 0:
-            return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+        if success:
+            session["completed_items"] += 1
+            session["processed_files"].append({"file": completed_file, "timestamp": time.time()})
         else:
-            return f"{minutes:02d}:{seconds:02d}"
-    
+            session["failed_items"] += 1
+            session["failed_files"].append(
+                {"file": completed_file, "error": error_message, "timestamp": time.time()}
+            )
+
+        stage = self._stage_for_operation(session.get("operation_type"))
+        if stage:
+            self.update_status(completed_file, stage, "done" if success else "failed")
+
+        session["last_update"] = time.time()
+
+    def update_progress(self, session_id: str, increment: int = 1) -> None:
+        session = self.sessions.get(session_id)
+        if session is None:
+            return
+        session["completed_items"] += increment
+        session["last_update"] = time.time()
+
     def get_session_progress(self, session_id: str) -> Optional[Dict[str, Any]]:
-        """
-        Get progress information for a session.
-        
-        Args:
-            session_id: Session identifier
-            
-        Returns:
-            Session progress data or None if not found
-        """
-        return self.progress_data["sessions"].get(session_id)
-    
-    def get_processed_files(self, session_id: str) -> List[str]:
-        """
-        Get list of successfully processed files for a session.
-        
-        Args:
-            session_id: Session identifier
-            
-        Returns:
-            List of processed file paths
-        """
-        session = self.get_session_progress(session_id)
-        if not session:
-            return []
-        
-        return [item["file"] for item in session.get("processed_files", [])]
-    
-    def get_failed_files(self, session_id: str) -> List[Dict[str, str]]:
-        """
-        Get list of failed files for a session.
-        
-        Args:
-            session_id: Session identifier
-            
-        Returns:
-            List of failed file information
-        """
-        session = self.get_session_progress(session_id)
-        if not session:
-            return []
-        
-        return session.get("failed_files", [])
-    
-    def is_file_processed(self, session_id: str, file_path: str) -> bool:
-        """
-        Check if a file has already been processed in a session.
-        
-        Args:
-            session_id: Session identifier
-            file_path: File path to check
-            
-        Returns:
-            True if file was already processed successfully
-        """
-        processed_files = self.get_processed_files(session_id)
-        return str(file_path) in processed_files
-    
-    def get_remaining_files(self, session_id: str, all_files: List[str]) -> List[str]:
-        """
-        Get list of files that still need to be processed.
-        
-        Args:
-            session_id: Session identifier
-            all_files: Complete list of files to process
-            
-        Returns:
-            List of files that haven't been processed yet
-        """
-        processed_files = set(self.get_processed_files(session_id))
-        return [f for f in all_files if str(f) not in processed_files]
-    
+        return self.sessions.get(session_id)
+
+    def get_remaining_files(self, session_id: str, all_files: Iterable[str]) -> List[str]:
+        session = self.sessions.get(session_id)
+        stage = self._stage_for_operation(session.get("operation_type")) if session else None
+
+        remaining: List[str] = []
+        for file_path in all_files:
+            path_obj = Path(file_path)
+            if stage and self.should_skip(path_obj, stage):
+                continue
+            remaining.append(str(path_obj))
+        return remaining
+
     def get_session_stats(self, session_id: str) -> Dict[str, Any]:
-        """
-        Get statistics for a session.
-        
-        Args:
-            session_id: Session identifier
-            
-        Returns:
-            Dictionary with session statistics
-        """
-        session = self.get_session_progress(session_id)
-        if not session:
+        session = self.sessions.get(session_id)
+        if session is None:
             return {}
-        
+
         total = session["total_items"]
         completed = session["completed_items"]
         failed = session["failed_items"]
-        remaining = total - completed - failed
-        
-        stats = {
+        remaining = max(total - completed - failed, 0)
+        return {
+            "session_id": session_id,
+            "operation_type": session.get("operation_type"),
+            "status": session.get("status", "running"),
             "total_items": total,
             "completed_items": completed,
             "failed_items": failed,
             "remaining_items": remaining,
-            "completion_percentage": (completed / total * 100) if total > 0 else 0,
-            "failure_percentage": (failed / total * 100) if total > 0 else 0,
-            "status": session["status"],
-            "start_time": session["start_time"],
-            "last_update": session["last_update"],
-            "operation_type": session["operation_type"],
-            "metadata": session.get("metadata", {})
+            "completion_percentage": (completed / total * 100) if total else 0,
+            "failure_percentage": (failed / total * 100) if total else 0,
         }
-        
-        if "end_time" in session:
-            stats["end_time"] = session["end_time"]
-            
-            # Calculate duration
-            start_time = datetime.fromisoformat(session["start_time"])
-            end_time = datetime.fromisoformat(session["end_time"])
-            duration = end_time - start_time
-            stats["duration_seconds"] = duration.total_seconds()
-        
-        # Add milestone information
-        if "percentage_milestones" in session:
-            stats["percentage_milestones"] = session["percentage_milestones"]
-        
-        return stats
-    
+
+    def complete_session(self, session_id: str, status: str = "completed") -> None:
+        session = self.sessions.get(session_id)
+        if session is None:
+            return
+        session["status"] = status
+        session["end_time"] = time.time()
+        session["last_update"] = time.time()
+
+    def reactivate_session(self, session_id: str, new_total_items: Optional[int] = None) -> None:
+        session = self.sessions.get(session_id)
+        if session is None:
+            return
+        session["status"] = "running"
+        if new_total_items and new_total_items > session["total_items"]:
+            session["total_items"] = new_total_items
+        session.pop("end_time", None)
+        session["last_update"] = time.time()
+
+    def fail_session(self, session_id: str, error_message: str) -> None:
+        session = self.sessions.get(session_id)
+        if session is None:
+            return
+        session["status"] = "failed"
+        session["error_message"] = error_message
+        session["end_time"] = time.time()
+
+    def list_sessions(self) -> List[Dict[str, Any]]:
+        return list(self.sessions.values())
+
+    def get_processed_files(self, session_id: str) -> List[str]:
+        session = self.sessions.get(session_id)
+        if session is None:
+            return []
+        return [item["file"] for item in session.get("processed_files", [])]
+
+    def get_failed_files(self, session_id: str) -> List[Dict[str, Any]]:
+        session = self.sessions.get(session_id)
+        if session is None:
+            return []
+        return session.get("failed_files", [])
+
+    def is_file_processed(self, session_id: str, file_path: str) -> bool:
+        processed = self.get_processed_files(session_id)
+        return str(file_path) in processed
+
     def get_progress_summary(self, session_id: str) -> str:
-        """
-        Get a formatted progress summary for a session.
-        
-        Args:
-            session_id: Session identifier
-            
-        Returns:
-            Formatted progress summary string
-        """
         stats = self.get_session_stats(session_id)
         if not stats:
             return f"Session {session_id} not found"
-        
-        percentage = stats['completion_percentage']
-        completed = stats['completed_items']
-        total = stats['total_items']
-        failed = stats['failed_items']
-        status = stats['status']
-        
-        summary_lines = []
-        summary_lines.append(f"会话 {session_id}:")
-        summary_lines.append(f"  状态: {status}")
-        summary_lines.append(f"  进度: {completed}/{total} ({percentage:.1f}%)")
-        
-        if failed > 0:
-            summary_lines.append(f"  失败: {failed}")
-        
-        if status == "running" and total > 0:
-            # Calculate ETA
-            session = self.get_session_progress(session_id)
-            start_time = datetime.fromisoformat(session["start_time"])
-            elapsed_time = (datetime.now() - start_time).total_seconds()
-            
-            if completed > 0:
-                estimated_total_time = elapsed_time * total / completed
-                remaining_time = estimated_total_time - elapsed_time
-                eta_str = self._format_duration(remaining_time)
-                summary_lines.append(f"  预计完成: {eta_str}")
-        
-        return "\n".join(summary_lines)
-    
-    def list_sessions(self) -> List[Dict[str, Any]]:
-        """
-        List all sessions with basic information.
-        
-        Returns:
-            List of session summaries
-        """
-        sessions = []
-        
-        for session_id, session_data in self.progress_data["sessions"].items():
-            summary = {
-                "session_id": session_id,
-                "operation_type": session_data["operation_type"],
-                "status": session_data["status"],
-                "total_items": session_data["total_items"],
-                "completed_items": session_data["completed_items"],
-                "failed_items": session_data["failed_items"],
-                "start_time": session_data["start_time"],
-                "last_update": session_data["last_update"],
-                "metadata": session_data.get("metadata", {})
-            }
-            
-            if "end_time" in session_data:
-                summary["end_time"] = session_data["end_time"]
-            
-            sessions.append(summary)
-        
-        return sessions
-    
-    def cleanup_old_sessions(self, days_old: int = 30) -> None:
-        """
-        Remove old completed sessions.
-        
-        Args:
-            days_old: Remove sessions older than this many days
-        """
-        cutoff_date = datetime.now().timestamp() - (days_old * 24 * 60 * 60)
-        sessions_to_remove = []
-        
-        for session_id, session_data in self.progress_data["sessions"].items():
-            if session_data["status"] in ["completed", "failed", "cancelled"]:
-                last_update = datetime.fromisoformat(session_data["last_update"])
-                if last_update.timestamp() < cutoff_date:
-                    sessions_to_remove.append(session_id)
-        
-        for session_id in sessions_to_remove:
-            del self.progress_data["sessions"][session_id]
-            logger.info(f"Removed old session: {session_id}")
-        
-        if sessions_to_remove:
-            self.save_progress()
-    
-    def save_progress(self) -> None:
-        """Save progress data to file."""
-        try:
-            FileUtils.save_json_file(self.progress_data, self.progress_file)
-            # 强制刷新日志输出
-            from ..utils.logging_utils import UTF8Logger
-            UTF8Logger.force_flush_logs()
-        except Exception as e:
-            logger.error(f"Failed to save progress: {e}")
-    
-    def load_progress(self) -> None:
-        """Load progress data from file."""
-        try:
-            if self.progress_file.exists():
-                self.progress_data = FileUtils.load_json_file(self.progress_file)
-                logger.info(f"Loaded progress data with {len(self.progress_data.get('sessions', {}))} sessions")
-            else:
-                logger.info("No existing progress file found, starting fresh")
-        except Exception as e:
-            logger.error(f"Failed to load progress: {e}")
-            # Reset to default structure
-            self.progress_data = {
-                "sessions": {},
-                "last_updated": None
-            }
-    
-    def reset_session(self, session_id: str) -> None:
-        """
-        Reset a session to start over.
-        
-        Args:
-            session_id: Session identifier
-        """
-        if session_id in self.progress_data["sessions"]:
-            session = self.progress_data["sessions"][session_id]
-            session["completed_items"] = 0
-            session["failed_items"] = 0
-            session["processed_files"] = []
-            session["failed_files"] = []
-            session["status"] = "running"
-            session["start_time"] = datetime.now().isoformat()
-            session["last_update"] = datetime.now().isoformat()
-            session["percentage_milestones"] = []
-            
-            if "end_time" in session:
-                del session["end_time"]
-            
-            # Reset percentage tracking
-            self.last_percentage_displayed[session_id] = 0
-            
-            self.save_progress()
-            logger.info(f"Reset session: {session_id}")
-    
-    def delete_session(self, session_id: str) -> None:
-        """
-        Delete a session completely.
-        
-        Args:
-            session_id: Session identifier
-        """
-        if session_id in self.progress_data["sessions"]:
-            del self.progress_data["sessions"][session_id]
-            
-            # Clean up tracking data
-            if session_id in self.last_percentage_displayed:
-                del self.last_percentage_displayed[session_id]
-            if session_id in self.progress_callbacks:
-                del self.progress_callbacks[session_id]
-            
-            self.save_progress()
-            logger.info(f"Deleted session: {session_id}")
-    
-    def _generate_session_id(self) -> str:
-        """Generate a unique session ID."""
-        import uuid
-        return uuid.uuid4().hex[:8] 
+
+        summary = [
+            f"会话 {session_id}:",
+            f"  状态: {stats.get('status', 'unknown')}",
+            f"  进度: {stats.get('completed_items', 0)}/{stats.get('total_items', 0)}"
+            f" ({stats.get('completion_percentage', 0):.1f}%)",
+        ]
+        failed = stats.get("failed_items", 0)
+        if failed:
+            summary.append(f"  失败: {failed}")
+        return "\n".join(summary)
+
+    # ------------------------------------------------------------------#
+    # 辅助方法
+    # ------------------------------------------------------------------#
+    def reset_file_stages(self, file_path: Path | str) -> None:
+        """手动重置某个文件的所有阶段为 pending。"""
+        rel_path = self._relative_path(Path(file_path).resolve())
+        record = self.records.get(rel_path)
+        if record is None:
+            return
+        record["stages"] = self._default_stage_states()
+        self.records[rel_path] = record
+        self._persist()

@@ -114,10 +114,28 @@ def resolve_text_paths(input_path: Path, explicit_paths: Optional[Iterable[Path]
 
 def validate_text_paths(paths: Iterable[Path]) -> List[Path]:
     resolved: List[Path] = []
+
+    def _fix_mojibake(p: Path) -> Path:
+        """
+        修复部分终端/环境下中文路径被“UTF-8 字节按 GBK(cp936) 误解码”导致的乱码。
+        典型表现：'宝鸡机床' 变成 '瀹濋浮鏈哄簥'，从而导致 Path.exists() 失败。
+        """
+        s = str(p)
+        # 只在“路径不存在”时尝试修复，避免误改正常路径
+        try:
+            fixed = s.encode("cp936", errors="strict").decode("utf-8", errors="strict")
+        except Exception:
+            return p
+        return Path(fixed)
+
     for path in paths:
         candidate = path.expanduser().resolve()
         if not candidate.exists():
-            raise FileNotFoundError(f"Path does not exist: {candidate}")
+            candidate_fixed = _fix_mojibake(candidate).expanduser().resolve()
+            if candidate_fixed.exists():
+                candidate = candidate_fixed
+            else:
+                raise FileNotFoundError(f"Path does not exist: {candidate}")
         if candidate.is_dir():
             raise ValueError(
                 f"Explicit paths must refer to text files, not directories: {candidate}"
@@ -140,7 +158,7 @@ def main() -> None:
     logger = setup_logging(args.log_level)
     config = ConfigManager(args.config)
 
-    _, question_service, answer_service, _ = create_services(config, logger)
+    _, question_service, answer_service, progress_manager = create_services(config, logger)
 
     output_dir = args.output.expanduser().resolve()
     FileUtils.ensure_directory(output_dir)
@@ -169,29 +187,41 @@ def main() -> None:
 
     try:
         for idx, document_path in enumerate(documents, start=1):
+            if progress_manager.should_skip(document_path, "qa_gen"):
+                logger.info(
+                    "[%d/%d] 跳过（qa_gen 已完成）：%s", idx, len(documents), document_path
+                )
+                continue
+
             logger.info(f"[{idx}/{len(documents)}] 处理文档: {document_path}")
 
-            logger.info("步骤1: 生成问题")
-            question_service.generate_questions_from_text_file(document_path)
+            try:
+                logger.info("步骤1: 生成问题")
+                question_service.generate_questions_from_text_file(document_path)
 
-            question_file = questions_dir / f"{document_path.stem}_questions.jsonl"
-            if not question_file.exists():
-                raise FileNotFoundError(
-                    f"Expected questions file not found: {question_file}"
+                question_file = questions_dir / f"{document_path.stem}_questions.jsonl"
+                if not question_file.exists():
+                    raise FileNotFoundError(
+                        f"Expected questions file not found: {question_file}"
+                    )
+
+                qa_output_file = output_dir / f"{document_path.stem}_qa_pairs.jsonl"
+                session_id = get_session_id(args.session_id, document_path.stem)
+
+                logger.info("步骤2: 生成答案")
+                logger.info(f"使用向量库: {vector_dir}")
+                answer_service.generate_answers_from_existing_kb(
+                    question_file,
+                    vector_dir,
+                    qa_output_file,
+                    session_id=session_id,
+                    resume=args.resume,
                 )
-
-            qa_output_file = output_dir / f"{document_path.stem}_qa_pairs.jsonl"
-            session_id = get_session_id(args.session_id, document_path.stem)
-
-            logger.info("步骤2: 生成答案")
-            logger.info(f"使用向量库: {vector_dir}")
-            answer_service.generate_answers_from_existing_kb(
-                question_file,
-                vector_dir,
-                qa_output_file,
-                session_id=session_id,
-                resume=args.resume,
-            )
+                progress_manager.update_status(document_path, "qa_gen", "done")
+            except Exception:
+                logger.exception("生成 QA 失败：%s", document_path)
+                progress_manager.update_status(document_path, "qa_gen", "failed")
+                continue
     finally:
         question_service.output_dir = original_questions_output
 

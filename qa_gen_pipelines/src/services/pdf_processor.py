@@ -72,7 +72,7 @@ class PDFProcessor:
             
             logger.info(f"🔍 开始OCR文字提取...")
             # Process PDF to document
-            document = self.ocr.process_pdf_to_document(pdf_path)
+            document = self.ocr.process_pdf_to_document(pdf_path, output_dir=self.output_dir)
             
             ocr_time = time.time() - start_time
             logger.info(f"✅ OCR提取完成，耗时: {ocr_time:.2f} 秒")

@@ -50,6 +50,7 @@ class QuestionService:
         self.enable_deduplication = config.get("question_generator.enable_deduplication", True)
         self.dedup_similarity_threshold = config.get("question_generator.dedup_similarity_threshold", 0.85)
         self.enable_quality_filter = config.get("question_generator.enable_quality_filter", True)
+        # local_scope（*_scope.json）导出已移除：不再生成/维护局部检索范围文件
         
         # 🚀 优化：初始化 ChunkRepository（如果配置了持久化）
         self.chunk_repository = None
@@ -132,6 +133,8 @@ class QuestionService:
             # Save questions to JSONL file in multi-line format
             questions_file = self.output_dir / f"{document.name}_questions.jsonl"
             self._save_questions_multiline(question_set, questions_file)
+
+            # local_scope（*_scope.json）导出已移除
             
             # Update progress if session provided
             if session_id:
@@ -188,8 +191,12 @@ class QuestionService:
                 )
             return None
     
-    def generate_questions_from_directory(self, input_dir: Path, 
-                                        resume_session: bool = True) -> List[QuestionSet]:
+    def generate_questions_from_directory(
+        self,
+        input_dir: Path,
+        resume_session: bool = True,
+        skip_if_output_exists: bool = True,
+    ) -> List[QuestionSet]:
         """
         Generate questions from all text files in a directory.
         
@@ -211,7 +218,7 @@ class QuestionService:
                 logger.warning(f"No text files found in directory: {input_dir}")
                 return []
             
-            logger.info(f"Found {len(text_files)} text files in directory: {input_dir}")
+            logger.info(f"[questions] 待处理文件数: {len(text_files)} 目录: {input_dir}")
             
             # Create session ID
             session_id = f"question_generation_{uuid.uuid4().hex[:8]}"
@@ -246,22 +253,32 @@ class QuestionService:
             )
             remaining_paths = [Path(f) for f in remaining_files]
             
-            logger.info(f"Processing {len(remaining_paths)} remaining text files")
+            logger.info(f"[questions] 开始处理剩余文件: {len(remaining_paths)}")
             
             # Process files
             question_sets = []
             
-            for text_file in tqdm(remaining_paths, desc="Generating questions"):
+            for text_file in tqdm(remaining_paths, desc="Generating questions", leave=False):
+                # 增量保护：已有输出且未强制重新生成则跳过
+                if skip_if_output_exists:
+                    questions_file = self.output_dir / f"{text_file.stem}_questions.jsonl"
+                    if questions_file.exists() and questions_file.stat().st_mtime >= text_file.stat().st_mtime:
+                        logger.info(f"[skip] {text_file.name} 已有问题文件且未过期")
+                        # 标记进度为完成，避免后续重复
+                        self.progress_manager.update_status(text_file, "qa_gen", "done")
+                        continue
+
                 question_set = self.generate_questions_from_text_file(text_file, session_id)
                 if question_set:
                     question_sets.append(question_set)
+                    logger.info(f"[ok] {text_file.name} -> {len(question_set.questions)} questions")
             
             # Complete session
             self.progress_manager.complete_session(session_id, "completed")
             
             # Get final stats
             stats = self.progress_manager.get_session_stats(session_id)
-            logger.info(f"Question generation completed: {stats['completed_items']}/{stats['total_items']} successful")
+            logger.info(f"[questions] 完成: {stats['completed_items']}/{stats['total_items']} 文件")
             
             return question_sets
             
@@ -473,6 +490,41 @@ class QuestionService:
                 break
         
         if source_chunk:
+            # 5.1 运维“可答性”约束：
+            # 流程/配置/排查/恢复类问题，必须在该 chunk 中存在明确的“步骤/参数/报警/地址/菜单路径”等证据，
+            # 否则这类问题大概率无法在上下文内给出可验证短答案，最终会在答案阶段变成“未找到依据”。
+            procedural_triggers = [
+                "如何", "怎么", "怎样",
+                "配置", "设置", "设定", "启用", "开启", "关闭",
+                "排查", "诊断", "处理", "恢复", "解决",
+                "校准", "标定", "调试", "切换", "映射",
+                "注册", "管理", "导入", "导出",
+                "步骤", "流程",
+            ]
+            is_procedural_question = any(t in content for t in procedural_triggers)
+
+            if is_procedural_question:
+                chunk_text = source_chunk.content or ""
+
+                # 证据特征：参数号/报警号/位号地址/步骤编号/按键菜单等（满足其一即可）
+                evidence_patterns = [
+                    r"参数\s*\d{2,5}",
+                    r"\bP\d{2,5}\b",
+                    r"\b\d{4,5}\b",  # 常见报警号/参数号
+                    r"(报警|告警|ALM|Alarm)",
+                    r"(BIT\d+|Y地址|X地址|PLC|I/O|IO|从站|逻辑ID)",
+                    r"(步骤|按下|按键|软件键|菜单|页面|界面|选择|输入|确认|保存|加载|导入|导出)",
+                    r"(\(\d+\)|（\d+）|[a-zA-Z]\)|[一二三四五六七八九十]+、)",
+                ]
+
+                has_procedural_evidence = any(re.search(p, chunk_text, re.IGNORECASE) for p in evidence_patterns)
+                if not has_procedural_evidence:
+                    logger.debug(
+                        "Procedural question rejected (no actionable evidence in chunk): %s",
+                        content[:80],
+                    )
+                    return False
+
             # Extract potential entities from question (words longer than 2 characters)
             question_words = set(re.findall(r'[\u4e00-\u9fff]{3,}|[a-zA-Z0-9]{3,}', content))
             
@@ -533,20 +585,18 @@ class QuestionService:
         return True
     
     def _save_questions_multiline(self, question_set: QuestionSet, output_file: Path) -> None:
-        """Save questions to JSONL file in multi-line format."""
+        """Save questions to JSONL file (single-line JSON per line)."""
         try:
             # Ensure output directory exists
             FileUtils.ensure_directory(output_file.parent)
             
-            # Save to file with pretty formatting
             import json
-            with open(output_file, 'w', encoding='utf-8') as f:
+            with open(output_file, "w", encoding="utf-8") as f:
                 for question_data in question_set.to_jsonl_format():
-                    # Write each question as a formatted JSON object
-                    json.dump(question_data, f, ensure_ascii=False, indent=2)
-                    f.write('\n\n')  # Add spacing between questions
-            
-            logger.info(f"Questions saved to: {output_file} ({len(question_set.questions)} questions in multi-line format)")
+                    f.write(json.dumps(question_data, ensure_ascii=False))
+                    f.write("\n")
+
+            logger.info(f"Questions saved to: {output_file} ({len(question_set.questions)} questions)")
             
         except Exception as e:
             logger.error(f"Failed to save questions: {e}")

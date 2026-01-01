@@ -94,20 +94,13 @@ class ConfigManager:
         """Get default configuration."""
         return {
             "ocr": {
-                "provider": "tesseract",
-                "tesseract": {
-                    "lang": "chi_sim+eng",
-                    "config": "--psm 6",
-                    "timeout": 30,
-                    "dpi": 300,
-                    "enable_preprocess": True,
-                    "binarize_threshold": 180,
-                    "apply_median_filter": True,
-                },
+                "provider": "paddle",
                 "paddle": {
                     "lang": "chinese_english",  # PaddleOCR 中英混合模型
                     "use_angle_cls": True,
                     "dpi": 300,
+                    "ocr_images": True,
+                    "image_max_side": 1600,
                 },
             },
             "text_chunker": {
@@ -173,7 +166,7 @@ class ConfigManager:
             },
             "progress": {
                 "save_interval": 5,
-                "progress_file": "./progress.json"
+                "progress_file": "./progress.jsonl"
             },
             "logging": {
                 "level": "INFO",

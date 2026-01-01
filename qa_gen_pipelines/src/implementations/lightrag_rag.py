@@ -3,6 +3,7 @@
 import uuid
 import os
 import asyncio
+import inspect
 import re
 import threading
 from pathlib import Path
@@ -153,6 +154,9 @@ class LightRAGImplementation(RAGInterface):
         self.ollama_llm_max_tokens = int(llm_cfg.get("max_tokens", 2048))
         self.ollama_llm_timeout = float(llm_cfg.get("timeout", 1800))
         self.ollama_llm_max_retries = int(llm_cfg.get("max_retries", 5))
+        self.answer_system_prompt = (
+            config.get("prompts.answer_system_prompt", "") or ""
+        ).strip()
 
         # Query execution configuration
         query_cfg = config.get("rag.lightrag.query", {}) or {}
@@ -298,9 +302,17 @@ class LightRAGImplementation(RAGInterface):
             import json
 
             # 构建完整的提示词
+            effective_system_prompt = system_prompt
+            if self.answer_system_prompt:
+                effective_system_prompt = (
+                    f"{system_prompt}\n\n{self.answer_system_prompt}"
+                    if system_prompt
+                    else self.answer_system_prompt
+                )
+
             full_prompt = ""
-            if system_prompt:
-                full_prompt += f"{system_prompt}\n\n"
+            if effective_system_prompt:
+                full_prompt += f"{effective_system_prompt}\n\n"
             
             # 处理历史消息
             if history_messages:
@@ -742,7 +754,12 @@ class LightRAGImplementation(RAGInterface):
         except Exception as e:
             raise RAGError(f"Failed to insert from directory {directory_path}: {e}")
 
-    def query_single_question(self, question: str, source_document: Optional[str] = None) -> str:
+    def query_single_question(
+        self,
+        question: str,
+        source_document: Optional[str] = None,
+        allowed_chunk_ids: Optional[List[str]] = None,
+    ) -> str:
         """
         Query the knowledge base with a single question.
 
@@ -763,7 +780,8 @@ class LightRAGImplementation(RAGInterface):
                 logger.info(f"Querying question: {question[:100]}...")
             
             # Check cache if enabled
-            if self.enable_cache:
+            # 当指定 allowed_chunk_ids 时，避免复用全局缓存，确保检索范围受控
+            if self.enable_cache and not allowed_chunk_ids:
                 cached_response = self._check_cache(question)
                 if cached_response:
                     self.cache_hits += 1
@@ -807,7 +825,7 @@ class LightRAGImplementation(RAGInterface):
                     try:
                         logger.info("Trying local mode as final fallback...")
                         response = self._run_async(
-                            self.rag.aquery(question, param=self._build_query_param("local")),
+                        self.rag.aquery(question, param=self._build_query_param("local")),
                             timeout=self.query_timeout_local
                         )
                         logger.info("Query completed with local mode")
@@ -820,7 +838,7 @@ class LightRAGImplementation(RAGInterface):
             logger.info(f"Generated answer: {len(response)} characters")
             
             # Cache the response if enabled
-            if self.enable_cache:
+            if self.enable_cache and not allowed_chunk_ids:
                 self._update_cache(question, response)
             
             return response

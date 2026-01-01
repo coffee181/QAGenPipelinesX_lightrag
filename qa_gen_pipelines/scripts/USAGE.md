@@ -6,10 +6,15 @@
 ## 1. 预处理 PDF：`preprocess_pdfs.py`
 将 `working/raw` 目录中的 PDF 转为纯文本 (`working/processed/*.txt`)。
 
+> 目录约定（可选，但推荐）：  
+> - `working/raw/picture-pdf/`：包含图片的 PDF，走原有 PaddleOCR 结构化流程。  
+> - `working/raw/token-pdf/`：以文本/表格为主，使用 PyMuPDF 直接提取文本，显著加速。  
+> 若缺少 PyMuPDF，请先安装：`pip install pymupdf`。
+
 ### 常用参数
 | 参数 | 说明 | 默认值 |
 | --- | --- | --- |
-| `--input` | 指定单个 PDF 或包含 PDF 的目录 | `working/raw` |
+| `--input` | 指定单个 PDF 或包含 PDF 的目录（递归遍历子目录） | `working/raw` |
 | `--output` | 预处理文本输出目录 | `working/processed` |
 | `--paths` | 显式列出若干 PDF，优先级高于 `--input` | 无 |
 | `--config` | 配置文件路径 | `config.yaml` |
@@ -92,6 +97,28 @@ python scripts/generate_qa_pairs.py --input ../working/processed --vectors ../wo
 python scripts/preprocess_pdfs.py --input ../working/raw
 python scripts/vectorize_texts.py --input ../working/processed
 python scripts/generate_qa_pairs.py --input ../working/processed --vectors ../working/vectorized
+```
+
+## 4. 仅生成问题：`generate_questions.py`
+对已处理文本生成问题文件（不生成答案）。
+
+```bash
+# 针对 processed 目录全部文档生成问题 -> working/questions
+python scripts/generate_questions.py --input ../working/processed --output ../working/questions
+
+# 仅对单个文档生成问题
+python scripts/generate_questions.py --paths "../working/processed/01-宝鸡机床VMC850L.txt" --output ../working/questions
+```
+
+## 5. 仅生成答案：`generate_answers.py`
+基于已有问题文件（*_questions.jsonl）与已有向量库生成答案（QA 对）。
+
+```bash
+# 对 questions 目录全部 *_questions.jsonl 生成答案 -> working/qa-pairs
+python scripts/generate_answers.py --questions ../working/questions --vectors ../working/vectorized --output ../working/qa-pairs --resume
+
+# 指定单个问题文件生成答案
+python scripts/generate_answers.py --paths "../working/questions/01-宝鸡机床VMC850L_questions.jsonl" --vectors ../working/vectorized --output ../working/qa-pairs
 ```
 
 以上示例均可根据需要替换配置文件、会话 ID 与输出目录，满足单文档、多文档乃至全量处理的需求。

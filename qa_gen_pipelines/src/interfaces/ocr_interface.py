@@ -2,7 +2,7 @@
 
 from abc import ABC, abstractmethod
 from pathlib import Path
-from typing import List
+from typing import List, Optional
 from ..models.document import Document
 
 
@@ -26,7 +26,7 @@ class OCRInterface(ABC):
         pass
     
     @abstractmethod
-    def process_pdf_to_document(self, pdf_path: Path) -> Document:
+    def process_pdf_to_document(self, pdf_path: Path, output_dir: Optional[Path] = None) -> Document:
         """
         Process PDF and create Document object.
         

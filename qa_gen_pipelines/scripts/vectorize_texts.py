@@ -1,7 +1,7 @@
 """Vectorize processed text files into the LightRAG knowledge base.
 
-This script reuses the existing AnswerService (and therefore LightRAGImplementation)
-so we rely on the exact same embedding pipeline as the rest of the application.
+This script uses LightRAGImplementation directly so we rely on the exact same
+embedding pipeline as the rest of the application.
 It supports single files, explicit file lists, or entire directories of .txt files.
 The resulting vector store is persisted under the specified working directory
 (working/vectorized by default).
@@ -10,8 +10,9 @@ from __future__ import annotations
 
 import argparse
 import sys
+from datetime import datetime
 from pathlib import Path
-from typing import Iterable, List
+from typing import Iterable, List, Optional
 
 
 CURRENT_DIR = Path(__file__).resolve().parent
@@ -23,9 +24,8 @@ from main import setup_logging  # type: ignore  # noqa: E402
 from src.utils.config import ConfigManager  # type: ignore  # noqa: E402
 from src.utils.file_utils import FileUtils  # type: ignore  # noqa: E402
 from src.implementations.lightrag_rag import LightRAGImplementation  # type: ignore  # noqa: E402
-from src.services.answer_service import AnswerService  # type: ignore  # noqa: E402
-from src.implementations.simple_markdown_processor import SimpleMarkdownProcessor  # type: ignore  # noqa: E402
 from src.services.progress_manager import ProgressManager  # type: ignore  # noqa: E402
+from src.models.document import Document  # type: ignore  # noqa: E402
 
 
 DEFAULT_WORKING_DIR = (PROJECT_ROOT.parent / "working").resolve()
@@ -75,10 +75,26 @@ def parse_args() -> argparse.Namespace:
 
 def validate_text_paths(paths: Iterable[Path]) -> List[Path]:
     resolved: List[Path] = []
+
+    def _fix_mojibake(p: Path) -> Path:
+        """
+        修复部分终端/环境下中文路径被“UTF-8 字节按 GBK(cp936) 误解码”导致的乱码。
+        """
+        s = str(p)
+        try:
+            fixed = s.encode("cp936", errors="strict").decode("utf-8", errors="strict")
+        except Exception:
+            return p
+        return Path(fixed)
+
     for path in paths:
         candidate = path.expanduser().resolve()
         if not candidate.exists():
-            raise FileNotFoundError(f"Path does not exist: {candidate}")
+            candidate_fixed = _fix_mojibake(candidate).expanduser().resolve()
+            if candidate_fixed.exists():
+                candidate = candidate_fixed
+            else:
+                raise FileNotFoundError(f"Path does not exist: {candidate}")
         if candidate.is_dir():
             raise ValueError(
                 f"Explicit paths must refer to text files, not directories: {candidate}"
@@ -93,20 +109,47 @@ def collect_directory_documents(directory: Path) -> List[Path]:
     return sorted(p for p in directory.glob("*.txt") if p.is_file())
 
 
-def insert_documents(answer_service, documents: List[Path], working_dir: Path, session_id: str | None) -> None:
+def insert_documents(
+    rag: LightRAGImplementation,
+    progress_manager: ProgressManager,
+    logger,
+    documents: List[Path],
+) -> None:
     if not documents:
         raise ValueError("No text documents found to vectorize")
 
     for index, document_path in enumerate(documents, start=1):
-        answer_service.logger.info(
+        if progress_manager.should_skip(document_path, "vectorization"):
+            logger.info(
+                "[%d/%d] Skipping (vectorization already done): %s",
+                index,
+                len(documents),
+                document_path,
+            )
+            continue
+
+        logger.info(
             "[%d/%d] Inserting document into vector store: %s",
             index,
             len(documents),
             document_path,
         )
-        answer_service.insert_documents_to_working_dir(
-            document_path, working_dir, session_id
-        )
+        try:
+            content = document_path.read_text(encoding="utf-8")
+            document = Document(
+                file_path=document_path,
+                content=content,
+                file_type=document_path.suffix,
+                file_size=len(content),
+                created_at=datetime.fromtimestamp(document_path.stat().st_ctime),
+                processed_at=datetime.now(),
+            )
+            rag.insert_document(document)
+            progress_manager.update_status(document_path, "vectorization", "done")
+        except Exception:
+            logger.exception("Vectorization failed: %s", document_path)
+            progress_manager.update_status(document_path, "vectorization", "failed")
+            continue
 
 
 def main() -> None:
@@ -115,26 +158,20 @@ def main() -> None:
     logger = setup_logging(args.log_level)
     config = ConfigManager(args.config)
 
-    # Only need answer_service for vectorization
-    rag = LightRAGImplementation(config)
-    markdown_processor = SimpleMarkdownProcessor()
-    progress_manager = ProgressManager(config)
-    answer_service = AnswerService(
-        rag=rag,
-        markdown_processor=markdown_processor,
-        progress_manager=progress_manager,
-        logger=logger
-    )
-
     working_dir = args.output.expanduser().resolve()
     FileUtils.ensure_directory(working_dir)
+    progress_manager = ProgressManager(config)
+
+    # Use the requested LightRAG working directory (not only the one inside config)
+    rag = LightRAGImplementation(config)
+    rag.set_working_directory(working_dir)
 
     explicit_paths: List[Path] = []
     if args.paths:
         explicit_paths = validate_text_paths(args.paths)
 
     if explicit_paths:
-        insert_documents(answer_service, explicit_paths, working_dir, args.session_id)
+        insert_documents(rag, progress_manager, logger, explicit_paths)
         return
 
     input_path = args.input.expanduser().resolve()
@@ -144,12 +181,12 @@ def main() -> None:
     if input_path.is_file():
         if input_path.suffix.lower() != ".txt":
             raise ValueError(f"Input file must be a .txt document: {input_path}")
-        insert_documents(answer_service, [input_path], working_dir, args.session_id)
+        insert_documents(rag, progress_manager, logger, [input_path])
     else:
         documents = collect_directory_documents(input_path)
         if not documents:
             raise ValueError(f"No .txt files found under directory: {input_path}")
-        insert_documents(answer_service, documents, working_dir, args.session_id)
+        insert_documents(rag, progress_manager, logger, documents)
 
 
 if __name__ == "__main__":

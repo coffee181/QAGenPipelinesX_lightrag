@@ -2,6 +2,8 @@
 
 import re
 import uuid
+import json
+from pathlib import Path
 import requests
 from typing import Any, Dict, List, Optional, Sequence, TYPE_CHECKING
 from datetime import datetime
@@ -72,6 +74,10 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
         self.max_related_chunk_ids = config.get(
             "question_generator.local.max_related_chunk_ids", 6
         )
+        self.local_scope_dir = Path(
+            config.get("question_generator.local_scope_dir", "./working/local_scopes")
+        )
+        self.local_scope_dir.mkdir(parents=True, exist_ok=True)
 
         if not rag or not getattr(rag, "rag", None):
             self.enable_kg_context = False
@@ -132,7 +138,8 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
             human_message = self.human_prompt.format(
                 text=prompt_text,
                 prompt_context=prompt_context,
-                questions_per_chunk=self.questions_per_chunk
+                questions_per_chunk=self.questions_per_chunk,
+                document_id=chunk.document_id,
             )
             
             logger.info(f"📝 提示词长度: {len(human_message)} 字符")
@@ -216,6 +223,16 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
 
     def _compose_prompt_text(self, chunk_text: str) -> str:
         return (chunk_text or "").strip()
+
+    @staticmethod
+    def _strip_answer_from_text(text: str) -> str:
+        """移除模型输出中夹带的“答案：...”等片段，保留纯问题。"""
+        if not text:
+            return ""
+        cleaned = re.sub(r"(答案[:：].*)", "", text, flags=re.IGNORECASE | re.DOTALL)
+        cleaned = re.sub(r"(回答[:：].*)", "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+        cleaned = re.sub(r"(Answer[:：].*)", "", cleaned, flags=re.IGNORECASE | re.DOTALL)
+        return cleaned.strip(" \t\r\n。；;，,")
 
     def _build_question_object(
         self,
@@ -386,6 +403,7 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
                     question_content = match[1].strip()
                     question_content = re.sub(r"^问题[:：]\s*", "", question_content)
                     question_content = re.sub(r"\n+", " ", question_content).strip()
+                    question_content = self._strip_answer_from_text(question_content)
 
                     is_valid = (
                         question_content
@@ -394,6 +412,9 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
                         and not re.match(r"^#+\s", question_content)
                         and not re.match(r"^(复杂|中等|简单|关联|深度|事实).*问题", question_content)
                         and not question_content.startswith("【")
+                        and "答案" not in question_content
+                        and "解答" not in question_content
+                        and "Answer" not in question_content
                     )
 
                     if is_valid:
@@ -421,8 +442,11 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
                     for match in qa_matches:
                         qa_num = int(match[0])
                         question_content = re.sub(r"^问题[:：]\s*", "", match[1]).strip()
+                        question_content = self._strip_answer_from_text(question_content)
 
-                        if question_content:
+                        if question_content and all(
+                            bad not in question_content for bad in ["答案", "解答", "Answer"]
+                        ):
                             question = self._build_question_object(
                                 question_content=question_content,
                                 source_chunk=source_chunk,
@@ -506,6 +530,60 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
 
         return True
 
+    # === 局部子图/向量范围导出 ===
+    def build_local_scope(self, chunks: List[DocumentChunk]) -> Dict[str, Any]:
+        """
+        基于 chunk 与 LightRAG 上下文，构建局部检索范围（chunk_ids、实体）。
+        以文档粒度去重，避免按问题爆炸。
+        """
+        if not chunks:
+            return {}
+        document_id = chunks[0].document_id
+        primary_chunk_ids: List[str] = []
+        related_chunk_ids: List[str] = []
+        related_entities: List[str] = []
+
+        for chunk in chunks:
+            # 计算当前 chunk 的 lightrag id
+            cid = compute_lightrag_chunk_id(chunk.content)
+            if cid and cid not in primary_chunk_ids:
+                primary_chunk_ids.append(cid)
+
+            # 结合知识图谱上下文获取关联 chunk / 实体
+            context = self._build_context_for_chunk(chunk)
+            r_chunks = context.get("related_chunk_ids") or []
+            r_entities = context.get("related_entities") or []
+            for rc in r_chunks:
+                if rc and rc not in related_chunk_ids:
+                    related_chunk_ids.append(rc)
+            for ent in r_entities:
+                if ent and ent not in related_entities:
+                    related_entities.append(ent)
+
+        return {
+            "document_id": document_id,
+            "primary_chunk_ids": primary_chunk_ids,
+            "related_chunk_ids": related_chunk_ids,
+            "related_entities": related_entities,
+            "generated_at": datetime.now().isoformat(),
+        }
+
+    def save_local_scope(self, scope: Dict[str, Any]) -> Optional[Path]:
+        """将局部范围写入文件，便于答案阶段优先检索。"""
+        if not scope:
+            return None
+        doc_id = scope.get("document_id") or "unknown"
+        out_path = self.local_scope_dir / f"{doc_id}_scope.json"
+        try:
+            out_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(scope, f, ensure_ascii=False, indent=2)
+            logger.info(f"保存局部检索范围: {out_path} (primary={len(scope.get('primary_chunk_ids', []))}, related={len(scope.get('related_chunk_ids', []))})")
+            return out_path
+        except Exception as e:
+            logger.warning(f"保存局部范围失败: {e}")
+            return None
+
     def set_custom_prompts(self, system_prompt: str, human_prompt: str) -> None:
         """
         设置自定义提示词
@@ -580,7 +658,12 @@ class LocalQuestionGenerator(QuestionGeneratorInterface):
                 cleaned_line = re.sub(r'^问题\d+[:\：]\s*', '', cleaned_line)  # 移除"问题N:"前缀
 
                 # 必须有实质内容且包含问号
-                if len(cleaned_line) > 15 and ('?' in cleaned_line or '？' in cleaned_line):
+                if (
+                    len(cleaned_line) > 15
+                    and ('?' in cleaned_line or '？' in cleaned_line)
+                    and all(bad not in cleaned_line for bad in ["答案", "解答", "Answer"])
+                ):
+                    cleaned_line = self._strip_answer_from_text(cleaned_line)
                     question = self._build_question_object(
                         question_content=cleaned_line,
                         source_chunk=source_chunk,
