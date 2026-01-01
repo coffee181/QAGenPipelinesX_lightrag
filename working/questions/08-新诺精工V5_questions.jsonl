@@ -1,0 +1,51 @@
+{
+  "question_id": "afbe2846-f6d8-432f-b0ef-e179dd16044f",
+  "content": "VSEZME 机床的主轴锥孔类型是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-新诺精工V5.txt",
+  "source_chunk_id": "chunk-ab7f374bc63d04fe6438a317d4dbbc1a",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ab7f374bc63d04fe6438a317d4dbbc1a",
+    "related_entities": [
+      "VSEZME"
+    ],
+    "related_chunk_ids": [
+      "chunk-ab7f374bc63d04fe6438a317d4dbbc1a"
+    ]
+  },
+  "created_at": "2025-12-10T16:50:23.317858"
+}
+
+{
+  "question_id": "d2c1f4c4-57f0-4c47-b9a9-07d5b133ac21",
+  "content": "工作台面尺寸为720x380mm的情况下，X/Y/Z行程分别为多少毫米？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-新诺精工V5.txt",
+  "source_chunk_id": "chunk-ab7f374bc63d04fe6438a317d4dbbc1a",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ab7f374bc63d04fe6438a317d4dbbc1a",
+    "related_chunk_ids": [
+      "chunk-ab7f374bc63d04fe6438a317d4dbbc1a"
+    ]
+  },
+  "created_at": "2025-12-10T16:50:23.318296"
+}
+
+{
+  "question_id": "97cfc021-1f67-40ec-b6be-80247f26f750",
+  "content": "机床外形尺寸为高2150mm、宽2100mm、长2500mm的情况下，净重是多少千克？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-新诺精工V5.txt",
+  "source_chunk_id": "chunk-ab7f374bc63d04fe6438a317d4dbbc1a",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ab7f374bc63d04fe6438a317d4dbbc1a",
+    "related_chunk_ids": [
+      "chunk-ab7f374bc63d04fe6438a317d4dbbc1a"
+    ]
+  },
+  "created_at": "2025-12-10T16:50:23.320390"
+}
+

@@ -1,0 +1,64 @@
+{
+  "question_id": "e32f0bac-3ec1-4e37-8a2a-2953275814f2",
+  "content": "VMC850B加工中心的工作台面尺寸是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-山东威达VMC850B.txt",
+  "source_chunk_id": "chunk-0a6f14e889f99c01590fdd19a6881bcc",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0a6f14e889f99c01590fdd19a6881bcc",
+    "related_chunk_ids": [
+      "chunk-0a6f14e889f99c01590fdd19a6881bcc"
+    ]
+  },
+  "created_at": "2025-12-10T15:06:23.630987"
+}
+
+{
+  "question_id": "655ecb8a-f6fc-4ca5-b548-34d72736f2df",
+  "content": "VMC850B加工中心的定位精度和重复定位精度分别是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-山东威达VMC850B.txt",
+  "source_chunk_id": "chunk-0a6f14e889f99c01590fdd19a6881bcc",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0a6f14e889f99c01590fdd19a6881bcc",
+    "related_chunk_ids": [
+      "chunk-0a6f14e889f99c01590fdd19a6881bcc"
+    ]
+  },
+  "created_at": "2025-12-10T15:06:23.633161"
+}
+
+{
+  "question_id": "4f20572f-7f03-4df6-a62a-09b81cba1422",
+  "content": "行程X/Y/Z对定位精度±0.01 mm与重复定位±0.005 mm有何影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-山东威达VMC850B.txt",
+  "source_chunk_id": "chunk-0a6f14e889f99c01590fdd19a6881bcc",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0a6f14e889f99c01590fdd19a6881bcc",
+    "related_chunk_ids": [
+      "chunk-0a6f14e889f99c01590fdd19a6881bcc"
+    ]
+  },
+  "created_at": "2025-12-10T15:06:23.633505"
+}
+
+{
+  "question_id": "684c3f40-5e44-4457-9801-c57d04280fd3",
+  "content": "工作台最大负重500 kg与刀库容量24把对适用加工场景有什么限制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-山东威达VMC850B.txt",
+  "source_chunk_id": "chunk-0a6f14e889f99c01590fdd19a6881bcc",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0a6f14e889f99c01590fdd19a6881bcc",
+    "related_chunk_ids": [
+      "chunk-0a6f14e889f99c01590fdd19a6881bcc"
+    ]
+  },
+  "created_at": "2025-12-10T15:06:23.633771"
+}
+

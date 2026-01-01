@@ -1,0 +1,1248 @@
+{
+  "question_id": "33901ace-9cce-4bdd-b7e5-ed10f08ea7d5",
+  "content": "国内售后服务网点的24小时人员到位率和48小时人员到位率分别如何？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-bf6960195d86e61d92af8bf6e04f3063",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bf6960195d86e61d92af8bf6e04f3063",
+    "related_chunk_ids": [
+      "chunk-bf6960195d86e61d92af8bf6e04f3063"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:00.991410"
+}
+
+{
+  "question_id": "60d22da3-04f2-4f7a-a305-185328aedec3",
+  "content": "电话号码13808892746对应的是哪个地区的办事机构？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-bf6960195d86e61d92af8bf6e04f3063",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-bf6960195d86e61d92af8bf6e04f3063",
+    "related_chunk_ids": [
+      "chunk-bf6960195d86e61d92af8bf6e04f3063"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:00.992178"
+}
+
+{
+  "question_id": "ea06bc93-6aa4-4f76-b3e2-0a26cb7cc954",
+  "content": "上海市松江区荣乐中路120号201室的地址对应哪个办事处？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+    "related_chunk_ids": [
+      "chunk-96d994cdb7b98c0cd24630102ee763a9"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:16.841160"
+}
+
+{
+  "question_id": "1b3f8d49-31b9-4843-a3f7-f4424a109635",
+  "content": "杭州市富阳区街道广团结机104的具体位置是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+    "related_chunk_ids": [
+      "chunk-96d994cdb7b98c0cd24630102ee763a9"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:16.841405"
+}
+
+{
+  "question_id": "0809faf5-96ea-4a6e-b06e-50d903a3ef6b",
+  "content": "沈阳市沈河区八一路4-2-1号的电话号码是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+    "related_chunk_ids": [
+      "chunk-96d994cdb7b98c0cd24630102ee763a9"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:16.841626"
+}
+
+{
+  "question_id": "a34f32f6-90a5-4566-8450-172a366d72a5",
+  "content": "无锡市新吴区城区纺城大289号南方不锈钢市场的地址属于哪个办事处？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+    "related_chunk_ids": [
+      "chunk-96d994cdb7b98c0cd24630102ee763a9"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:16.841854"
+}
+
+{
+  "question_id": "2d63f72c-7b12-47ea-92c1-83de37459f43",
+  "content": "绍兴市新总县新大道西路215号的电话号码是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+    "related_chunk_ids": [
+      "chunk-96d994cdb7b98c0cd24630102ee763a9"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:16.842115"
+}
+
+{
+  "question_id": "56a3c873-6442-48a6-9b4a-946ada1b923a",
+  "content": "武汉市洪山区瑞丰路111号福星惠兴东湖城二期栋单元2903的具体地址是哪个办事处？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+    "related_chunk_ids": [
+      "chunk-96d994cdb7b98c0cd24630102ee763a9"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:16.842556"
+}
+
+{
+  "question_id": "c31012c7-28b7-4e1d-8d89-7027f3ec8958",
+  "content": "郑州市二七区西陈庄村前街院爱德花园小区号楼单元102的电话号码是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+    "related_chunk_ids": [
+      "chunk-96d994cdb7b98c0cd24630102ee763a9"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:16.842814"
+}
+
+{
+  "question_id": "d3c96512-090d-4911-a127-fbeeedb4dd12",
+  "content": "合肥市理海区当涂路金城港号1006室的地址属于哪个办事处？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+    "related_chunk_ids": [
+      "chunk-96d994cdb7b98c0cd24630102ee763a9"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:16.843091"
+}
+
+{
+  "question_id": "0cc331c2-f600-421a-98ea-702d14c86be7",
+  "content": "成都市成华区双庆路号干居朝阳单元902的具体位置是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-96d994cdb7b98c0cd24630102ee763a9",
+    "related_chunk_ids": [
+      "chunk-96d994cdb7b98c0cd24630102ee763a9"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:16.843321"
+}
+
+{
+  "question_id": "1805424f-7a67-453b-b2dd-e2b083884372",
+  "content": "DZY120-1.5DM主轴电机的额定功率是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+    "related_chunk_ids": [
+      "chunk-925dbfc102e829897de745e42eeb064c"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:39.630479"
+}
+
+{
+  "question_id": "1b84d6b1-f523-43ea-91d6-d1c735dee203",
+  "content": "DZY120-3.0DM的最大转矩参数是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+    "related_chunk_ids": [
+      "chunk-925dbfc102e829897de745e42eeb064c"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:39.630695"
+}
+
+{
+  "question_id": "7e6e3ad5-fac8-4c0e-bd3b-ddb89a6f37df",
+  "content": "DZY120-4.6FF的最高转速范围是怎样的？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+    "related_chunk_ids": [
+      "chunk-925dbfc102e829897de745e42eeb064c"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:39.630903"
+}
+
+{
+  "question_id": "e3d163de-1230-4c3e-8ef1-d50dafe8b6f0",
+  "content": "DZY120-16XN的转动惯量是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+    "related_chunk_ids": [
+      "chunk-925dbfc102e829897de745e42eeb064c"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:39.631310"
+}
+
+{
+  "question_id": "c97962f7-6b60-432a-836b-6c19468caca3",
+  "content": "在不同电压下的DZY120系列主轴电机参数如何变化？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+    "related_chunk_ids": [
+      "chunk-925dbfc102e829897de745e42eeb064c"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:39.631946"
+}
+
+{
+  "question_id": "3f9263d1-2d06-4e52-beea-4f8e45d993b1",
+  "content": "DZY146-3.7的最高转速范围是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-925dbfc102e829897de745e42eeb064c",
+    "related_chunk_ids": [
+      "chunk-925dbfc102e829897de745e42eeb064c"
+    ]
+  },
+  "created_at": "2025-12-10T13:58:39.632227"
+}
+
+{
+  "question_id": "88bd2959-00d0-4fea-a2ed-26813bc8252a",
+  "content": "DZY120-4.6FF 的最大转速为 3500 r/min，其额定功率是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+    "related_chunk_ids": [
+      "chunk-6326d6075049ef6eae13726400641896"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:12.769481"
+}
+
+{
+  "question_id": "c83a3587-a120-4c5e-8261-9012d0e0f8bc",
+  "content": "DZY180B-5.5BH 在 1500 r/min 转速下，具有哪些结构优化以提高加工效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+    "related_chunk_ids": [
+      "chunk-6326d6075049ef6eae13726400641896"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:12.769768"
+}
+
+{
+  "question_id": "b5fe3792-bae2-47c3-b069-002b4b941d91",
+  "content": "DZY156A-5.5BF 的动态刚性参数为 0.0176，其对应的额定功率是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+    "related_chunk_ids": [
+      "chunk-6326d6075049ef6eae13726400641896"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:12.770038"
+}
+
+{
+  "question_id": "89a6a1ab-6d6e-48b1-a890-62d22a82f831",
+  "content": "DZY240-11AM 的技术特点中提到的 \"高加速\" 是否适用于哪些特定转速范围？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+    "related_entities": [
+      "DZY240-11AM"
+    ],
+    "related_chunk_ids": [
+      "chunk-6326d6075049ef6eae13726400641896"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:12.770270"
+}
+
+{
+  "question_id": "c6d8bafa-d029-469b-8bab-d27a8bfba9e0",
+  "content": "DZY180B-10BH 的额定电压为 37 V（235V），其最大转速为多少 r/min？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+    "related_entities": [
+      "DZY180B-10BH"
+    ],
+    "related_chunk_ids": [
+      "chunk-6326d6075049ef6eae13726400641896"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:12.770508"
+}
+
+{
+  "question_id": "4521b040-c1fd-44ca-a7bb-a86685ab100c",
+  "content": "DZY146-3.7DF 的动态刚性参数为 0.0056，其对应的转子外圆尺寸是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+    "related_chunk_ids": [
+      "chunk-6326d6075049ef6eae13726400641896"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:12.770743"
+}
+
+{
+  "question_id": "d9b2b2e3-5bd5-4bca-b4e6-f1521e30531c",
+  "content": "DZY180B-7.5AM 的额定功率为 28.2 kW（235V），其最大转速范围是多少 r/min？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+    "related_chunk_ids": [
+      "chunk-6326d6075049ef6eae13726400641896"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:12.770964"
+}
+
+{
+  "question_id": "1e217a69-78a1-4a48-aa52-60f83e31c1cc",
+  "content": "DZY156A-2.2BF 的动态刚性参数为 0.0091，其对应的主轴转速范围是多少 r/min？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+    "related_chunk_ids": [
+      "chunk-6326d6075049ef6eae13726400641896"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:12.771186"
+}
+
+{
+  "question_id": "64760948-efd4-45c0-803e-3d929182ee2f",
+  "content": "DZY180B-5.5AM 的额定功率为 21.3 kW（235V），其最大转速为多少 r/min？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+    "related_chunk_ids": [
+      "chunk-6326d6075049ef6eae13726400641896"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:12.771435"
+}
+
+{
+  "question_id": "39e6d846-7789-4394-8f54-1f7a0890ea8a",
+  "content": "DZY160-11DM 的动态刚性参数为 0.022，其对应的主轴转速范围是多少 r/min？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-6326d6075049ef6eae13726400641896",
+    "related_entities": [
+      "DZY160-11DM"
+    ],
+    "related_chunk_ids": [
+      "chunk-6326d6075049ef6eae13726400641896"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:12.771663"
+}
+
+{
+  "question_id": "cee0fa20-7eec-4c7a-913e-93f200841476",
+  "content": "DZY120-1.5DM 型号的转子外圆尺寸为多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+    "related_chunk_ids": [
+      "chunk-c64252c24a2f976c75d31a778f3e3495"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:42.709626"
+}
+
+{
+  "question_id": "0458a6f7-c140-447e-815d-645c381fb5fb",
+  "content": "在 3500 r/min 的条件下，DZY300 系列转子的内孔尺寸公差范围是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+    "related_chunk_ids": [
+      "chunk-c64252c24a2f976c75d31a778f3e3495"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:42.709862"
+}
+
+{
+  "question_id": "bd2f4721-9cc9-4c58-9d61-f9348cfcc2e3",
+  "content": "DZY180B-5.5BH 型号的定子长度与 DZY180B-7.5BH 是否存在差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+    "related_chunk_ids": [
+      "chunk-c64252c24a2f976c75d31a778f3e3495"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:42.710086"
+}
+
+{
+  "question_id": "a40226cf-c61b-437c-a33d-b986017420d4",
+  "content": "2000 r/min 的条件下，DZY240 系列转子的平衡处理方式是否需要调整动平衡位置？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+    "related_chunk_ids": [
+      "chunk-c64252c24a2f976c75d31a778f3e3495"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:42.710320"
+}
+
+{
+  "question_id": "1aae517b-9f8e-4704-bbd6-3fc5f087e5dd",
+  "content": "在 HME SEAT 型号中，当速度达到 6000 r/min 时，转子的平衡环设计是否有所不同？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+    "related_entities": [
+      "HME",
+      "SEAT"
+    ],
+    "related_chunk_ids": [
+      "chunk-c64252c24a2f976c75d31a778f3e3495"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:42.710688"
+}
+
+{
+  "question_id": "2de28c79-bbd4-4947-a25e-a68193cc43aa",
+  "content": "DZY180B-10BH 型号的定子内孔尺寸是否与 DZY240-15WHD 相同？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+    "related_entities": [
+      "DZY180B-10BH",
+      "DZY240-15WHD"
+    ],
+    "related_chunk_ids": [
+      "chunk-c64252c24a2f976c75d31a778f3e3495"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:42.711049"
+}
+
+{
+  "question_id": "daf800b9-b893-4edb-84f0-9f09897617de",
+  "content": "在 12000 r/min 的高速运行条件下，DZY 系列转子的平衡处理是否需要特殊工艺？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+    "related_chunk_ids": [
+      "chunk-c64252c24a2f976c75d31a778f3e3495"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:42.711692"
+}
+
+{
+  "question_id": "2a4a686b-26b3-4c84-ab13-cc80f7aa51e5",
+  "content": "DZY300-12.5UE 型号的定子外圆尺寸与 DZY300-12.5TB 是否一致？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c64252c24a2f976c75d31a778f3e3495",
+    "related_chunk_ids": [
+      "chunk-c64252c24a2f976c75d31a778f3e3495"
+    ]
+  },
+  "created_at": "2025-12-10T13:59:42.712004"
+}
+
+{
+  "question_id": "8fbe9a6f-c6f6-4e66-9fc2-cf9a97024d0f",
+  "content": "DZY240-11AM 的转子尺寸是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+    "related_entities": [
+      "DZY240-11AM"
+    ],
+    "related_chunk_ids": [
+      "chunk-03e1818ed0cf937357c4aab0396e1045"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:01.714072"
+}
+
+{
+  "question_id": "0e934f44-c142-4577-a44d-06ab0f59052c",
+  "content": "DZY156A-5.5BF 的额定功率和最大转速分别是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+    "related_chunk_ids": [
+      "chunk-03e1818ed0cf937357c4aab0396e1045"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:01.714296"
+}
+
+{
+  "question_id": "c08e15ae-3183-4172-ad88-cdefc432a3af",
+  "content": "在DZY系列中，DZY180B-7.5BH的平衡环参数是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+    "related_chunk_ids": [
+      "chunk-03e1818ed0cf937357c4aab0396e1045"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:01.714509"
+}
+
+{
+  "question_id": "0152bec1-b651-4ebb-a494-a3122c33eadc",
+  "content": "DZY240-15WHD的最大转速是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+    "related_chunk_ids": [
+      "chunk-03e1818ed0cf937357c4aab0396e1045"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:01.714933"
+}
+
+{
+  "question_id": "1455ba78-dfae-4c4b-9f55-3b8ad3de9335",
+  "content": "在DZY系列中，DZY180B-10BH的额定功率和最大转速分别是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+    "related_chunk_ids": [
+      "chunk-03e1818ed0cf937357c4aab0396e1045"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:01.715147"
+}
+
+{
+  "question_id": "2425a109-5df1-458a-9ae1-215bdad19912",
+  "content": "DZY240-18.5WM的最大转速是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+    "related_chunk_ids": [
+      "chunk-03e1818ed0cf937357c4aab0396e1045"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:01.715553"
+}
+
+{
+  "question_id": "e3ef3da7-80cc-4ba1-bc5d-9a43c9c9cd0e",
+  "content": "在DZY系列中，DZY180B-5.5AM的额定功率和最大转速分别是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-03e1818ed0cf937357c4aab0396e1045",
+    "related_chunk_ids": [
+      "chunk-03e1818ed0cf937357c4aab0396e1045"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:01.715762"
+}
+
+{
+  "question_id": "5db35954-fa7d-44ba-85d4-766f059730ad",
+  "content": "DZY120-1.5DM 型电机在 4000 r/min 转速下的功率曲线与转矩曲线如何表现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+    "related_chunk_ids": [
+      "chunk-17e2041c21fb70061cb61e21560b0d06"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:31.861696"
+}
+
+{
+  "question_id": "309ba700-ebd8-4145-a2b8-7b9cde555129",
+  "content": "DZY146-3.7DF 型电机的功率曲线在 8000 r/min 转速时的最大值是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+    "related_chunk_ids": [
+      "chunk-17e2041c21fb70061cb61e21560b0d06"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:31.861952"
+}
+
+{
+  "question_id": "033babe7-6a5e-46dc-80c7-dd8e349bd6ad",
+  "content": "DZY120-16XN 型电机在 24000 r/min 转速下的转矩曲线如何变化？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+    "related_entities": [
+      "DZY120-16XN"
+    ],
+    "related_chunk_ids": [
+      "chunk-17e2041c21fb70061cb61e21560b0d06"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:31.862186"
+}
+
+{
+  "question_id": "ad33ffd7-dff6-4472-8d77-5e0e947948d7",
+  "content": "DZY156A-5.5BF 型电机的功率曲线在 18000 r/min 转速时是否达到峰值？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+    "related_chunk_ids": [
+      "chunk-17e2041c21fb70061cb61e21560b0d06"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:31.862418"
+}
+
+{
+  "question_id": "7d2fec33-6678-42e5-99f3-a0bb75b0cbae",
+  "content": "DZY240-11AM 型电机在 1000 r/min 转速下的转矩值是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+    "related_entities": [
+      "DZY240-11AM"
+    ],
+    "related_chunk_ids": [
+      "chunk-17e2041c21fb70061cb61e21560b0d06"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:31.862643"
+}
+
+{
+  "question_id": "2af7f1c3-a112-4150-9223-5e1ac67e374e",
+  "content": "在 6000 r/min 转速下，DZY120-1.5DM 和 DZY146-3.7DF 两种型号的功率曲线有何差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+    "related_chunk_ids": [
+      "chunk-17e2041c21fb70061cb61e21560b0d06"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:31.862872"
+}
+
+{
+  "question_id": "0b4d7497-c5a1-4db7-b67e-c4c95523762d",
+  "content": "DZY156A-5.5BF 型电机在连续工作状态下的转矩曲线如何影响其性能表现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+    "related_chunk_ids": [
+      "chunk-17e2041c21fb70061cb61e21560b0d06"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:31.863102"
+}
+
+{
+  "question_id": "5b5d330b-66a9-477b-adbb-8dbe29387fb7",
+  "content": "在 2000 r/min 转速下，DZY240-11AM 型电机的功率曲线是否与转矩曲线同步变化？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+    "related_chunk_ids": [
+      "chunk-17e2041c21fb70061cb61e21560b0d06"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:31.863330"
+}
+
+{
+  "question_id": "c63a6ddf-4bf5-45ec-89ed-36a953a04b15",
+  "content": "DZY120-16XN 型电机在 12000 r/min 转速下的功率值是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+    "related_entities": [
+      "DZY120-16XN"
+    ],
+    "related_chunk_ids": [
+      "chunk-17e2041c21fb70061cb61e21560b0d06"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:31.863588"
+}
+
+{
+  "question_id": "43717eac-dc7a-4b31-96c1-381c45fbc369",
+  "content": "在 8000 r/min 转速下，DZY146-3.7DF 和 DZY240-11AM 两种型号的转矩曲线有何不同？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17e2041c21fb70061cb61e21560b0d06",
+    "related_entities": [
+      "DZY240-11AM"
+    ],
+    "related_chunk_ids": [
+      "chunk-17e2041c21fb70061cb61e21560b0d06"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:31.863813"
+}
+
+{
+  "question_id": "6bf5ba3e-fc78-418a-9aca-7a6b62e9c96b",
+  "content": "DZY240-11WM 和 DZY240-18.5WM 的最大转速分别为多少，它们之间存在什么差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+    "related_entities": [
+      "DZY240-11WM"
+    ],
+    "related_chunk_ids": [
+      "chunk-8d18275ceb5e7f97b6343b84c2f79751"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:54.437235"
+}
+
+{
+  "question_id": "91f17391-e664-4750-acf3-d04c98037e7d",
+  "content": "主轴精度 0.01mm 和外锥径向跳动 0.003mm 如何影响加工表面质量？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+    "related_chunk_ids": [
+      "chunk-8d18275ceb5e7f97b6343b84c2f79751"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:54.437495"
+}
+
+{
+  "question_id": "53d00d5b-29ed-4a3e-8ca7-c16262bde78a",
+  "content": "编码器 GS04-A01MIS 的感应头如何影响速度反馈精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+    "related_entities": [
+      "GS04-A01MIS"
+    ],
+    "related_chunk_ids": [
+      "chunk-8d18275ceb5e7f97b6343b84c2f79751"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:54.437959"
+}
+
+{
+  "question_id": "94aaf0c3-211c-48d6-94df-42b7515d4b17",
+  "content": "齿轮 GR04-256.A01 在不同运行条件下的维护策略是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+    "related_chunk_ids": [
+      "chunk-8d18275ceb5e7f97b6343b84c2f79751"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:54.438441"
+}
+
+{
+  "question_id": "0e478dd1-acee-407a-9667-a395fa115b11",
+  "content": "最高转速 6000r/min 和最大输出扭矩 70Nm 如何相互作用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+    "related_chunk_ids": [
+      "chunk-8d18275ceb5e7f97b6343b84c2f79751"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:54.438716"
+}
+
+{
+  "question_id": "53106d79-2da6-4790-b0e5-e55a6941a71c",
+  "content": "主轴内孔直径 Φ41mm 对刀具夹持有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+    "related_chunk_ids": [
+      "chunk-8d18275ceb5e7f97b6343b84c2f79751"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:54.438971"
+}
+
+{
+  "question_id": "acba6848-9558-41b9-9931-b43e0d33be33",
+  "content": "DZY300-12.5TB 和 DCY180A(A2-5)-7.5BL 的最大转速有何差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8d18275ceb5e7f97b6343b84c2f79751",
+    "related_chunk_ids": [
+      "chunk-8d18275ceb5e7f97b6343b84c2f79751"
+    ]
+  },
+  "created_at": "2025-12-10T14:00:54.439506"
+}
+
+{
+  "question_id": "940bf18a-5f42-46e2-8034-1751a21b3286",
+  "content": "电主轴 DCY156A(A2-4)-5.5BL 的最高转速是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+    "related_chunk_ids": [
+      "chunk-b2283b25c6cff3f641cd78a0143c01a8"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:15.474581"
+}
+
+{
+  "question_id": "70022bcd-83b9-4f05-b9b7-62e70045533d",
+  "content": "DZY180B-7.5BH 电机的额定功率和额定转速分别是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+    "related_chunk_ids": [
+      "chunk-b2283b25c6cff3f641cd78a0143c01a8"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:15.474836"
+}
+
+{
+  "question_id": "e7cd14f3-97a9-405f-9431-1ecdb480eb38",
+  "content": "DCY180B(A2-6)-7.5BL 型号电主轴的前、后轴承型号分别是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+    "related_chunk_ids": [
+      "chunk-b2283b25c6cff3f641cd78a0143c01a8"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:15.475293"
+}
+
+{
+  "question_id": "c4764616-b75b-4149-ac3c-c5f1c5a56674",
+  "content": "测试棒在 300mm 处的径向跳动值是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+    "related_chunk_ids": [
+      "chunk-b2283b25c6cff3f641cd78a0143c01a8"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:15.475576"
+}
+
+{
+  "question_id": "05854750-a89d-4ec9-9555-0a8a0e5f0bb4",
+  "content": "主轴换热需求大于 1.5kW 的情况下，通孔直径是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+    "related_chunk_ids": [
+      "chunk-b2283b25c6cff3f641cd78a0143c01a8"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:15.475872"
+}
+
+{
+  "question_id": "487e47f9-b226-44ec-8459-09ac86a773a2",
+  "content": "型号 A2-6 的电主轴最高转速和额定转速分别是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+    "related_entities": [
+      "A2-6"
+    ],
+    "related_chunk_ids": [
+      "chunk-b2283b25c6cff3f641cd78a0143c01a8"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:15.476109"
+}
+
+{
+  "question_id": "ccef3a1f-dc8d-4146-a43a-f4e9ab34a341",
+  "content": "GSR 感应头 GS04-AO1MIS 在加锐主轴上的应用场景是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+    "related_entities": [
+      "GSR",
+      "GS04-AO1MIS"
+    ],
+    "related_chunk_ids": [
+      "chunk-b2283b25c6cff3f641cd78a0143c01a8"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:15.476339"
+}
+
+{
+  "question_id": "c9faa05c-326b-485c-8344-0b8182fce71d",
+  "content": "电机参数中，额定功率为 7.5kW 的情况下，额定转矩是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+    "related_chunk_ids": [
+      "chunk-b2283b25c6cff3f641cd78a0143c01a8"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:15.476581"
+}
+
+{
+  "question_id": "00ddbcff-c3d9-464a-a744-50bf965b9215",
+  "content": "主轴重量为 130kg 时，径向跳动值的最大允许范围是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b2283b25c6cff3f641cd78a0143c01a8",
+    "related_chunk_ids": [
+      "chunk-b2283b25c6cff3f641cd78a0143c01a8"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:15.476843"
+}
+
+{
+  "question_id": "9d6a01db-1381-4e75-9f47-483c712b25f1",
+  "content": "主轴重量为 130kg 的情况下，如何确保其安装与平衡以避免振动？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+    "related_chunk_ids": [
+      "chunk-4c9996f25c02f962fbb9dedaca4b0bd1"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:32.251920"
+}
+
+{
+  "question_id": "f260bd3d-2026-43aa-a09a-128ffd484285",
+  "content": "外锥径向跳动 0.003mm 和内锥孔径向跳动 0.003mm 在装配时需要哪些对准步骤？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+    "related_chunk_ids": [
+      "chunk-4c9996f25c02f962fbb9dedaca4b0bd1"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:32.252164"
+}
+
+{
+  "question_id": "41690dfe-d570-48d6-bb46-be0afc579c04",
+  "content": "省 LAR 测试棒在主轴端测试径向跳动为 0.004mm，如何校准以达到设计标准？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+    "related_entities": [
+      "LAR"
+    ],
+    "related_chunk_ids": [
+      "chunk-4c9996f25c02f962fbb9dedaca4b0bd1"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:32.252389"
+}
+
+{
+  "question_id": "b1e8c24e-4104-4704-a9ee-18566d159b78",
+  "content": "300mm 测量点的径向跳动 0.01mm 对加工精度有何影响及补偿措施？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+    "related_chunk_ids": [
+      "chunk-4c9996f25c02f962fbb9dedaca4b0bd1"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:32.252624"
+}
+
+{
+  "question_id": "44e496f3-cc5f-49e5-9a67-fb90223ada8a",
+  "content": "GR04-256.A01 齿轮在主轴系统中的应用对整体刚性有什么贡献？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+    "related_chunk_ids": [
+      "chunk-4c9996f25c02f962fbb9dedaca4b0bd1"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:32.252851"
+}
+
+{
+  "question_id": "639b8a4d-850b-4c2d-8885-90b799556750",
+  "content": "测试棒检测到的 0.004mm 径向跳动与设计要求的差异如何调整？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+    "related_chunk_ids": [
+      "chunk-4c9996f25c02f962fbb9dedaca4b0bd1"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:32.253282"
+}
+
+{
+  "question_id": "eebcaaa2-a0e7-435d-8cf9-8d2d706e3f90",
+  "content": "在不同长度测量点上（如主轴端和 300mm 点），径向跳动值的变化反映了什么特性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK DZY交流异步电主轴电机 20231016.txt",
+  "source_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4c9996f25c02f962fbb9dedaca4b0bd1",
+    "related_chunk_ids": [
+      "chunk-4c9996f25c02f962fbb9dedaca4b0bd1"
+    ]
+  },
+  "created_at": "2025-12-10T14:01:32.253495"
+}
+

@@ -1,0 +1,19 @@
+{
+  "question_id": "f7f7238c-1e36-48e7-ad9f-c91bb6885808",
+  "content": "BG46F 机床的床身布局形式是几度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\04-宝鸡机床BG46F.txt",
+  "source_chunk_id": "chunk-7f6a04c8648429f912e4699a5623dd71",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7f6a04c8648429f912e4699a5623dd71",
+    "related_entities": [
+      "BG46F"
+    ],
+    "related_chunk_ids": [
+      "chunk-7f6a04c8648429f912e4699a5623dd71"
+    ]
+  },
+  "created_at": "2025-12-10T07:34:48.302266"
+}
+

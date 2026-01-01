@@ -1,39 +1,660 @@
-{"question_id": "011022c9-fe89-48e3-b054-c05f5df370af", "content": "GSK 27i系列支持的最大通道数和轴数是多少？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "question_index": 1, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6"]}, "created_at": "2025-12-31T22:45:44.464822"}
-{"question_id": "0d8040dd-1f70-4622-b496-c9f4d1a62ed9", "content": "GSK 27i系列在复杂曲面加工时的有效速度和最佳速度分别是多少？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "question_index": 2, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6"]}, "created_at": "2025-12-31T22:45:44.464935"}
-{"question_id": "1a9aa444-9f47-4a42-8f58-edb2f0d63055", "content": "GSK 27i系列的最小进给量设置为多少微米？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "question_index": 3, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6"]}, "created_at": "2025-12-31T22:45:44.465036"}
-{"question_id": "57e19d1c-639f-428a-b3fa-15da23bf3d0d", "content": "GSK 27i系列PLC程序的最大容量是多少步？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "question_index": 4, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6"]}, "created_at": "2025-12-31T22:45:44.465117"}
-{"question_id": "72b05702-620e-450e-88cd-af79f4deb9e4", "content": "GSK 27i系列支持哪种类型的编码器及其精度？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "question_index": 5, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6"]}, "created_at": "2025-12-31T22:45:44.465196"}
-{"question_id": "351fbaa9-9cba-4dce-b3a8-b4026fa3793e", "content": "GSK 27i系列的插补预处理最多可以处理多少段？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "question_index": 6, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6"]}, "created_at": "2025-12-31T22:45:44.465276"}
-{"question_id": "6a394a41-d9f4-4be2-a658-24188bf625e7", "content": "GSK 27i系列是否支持语句式宏程序（宏B）？如果支持，编程上有何优势？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "question_index": 7, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6"]}, "created_at": "2025-12-31T22:45:44.465353"}
-{"question_id": "e6425caa-b5f8-45e2-a5a6-523223b97c6c", "content": "GSK 27i系列的RTCP功能包括哪些安全回退措施？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "question_index": 8, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6"]}, "created_at": "2025-12-31T22:45:44.465433"}
-{"question_id": "1a1fc13a-7407-4d24-9d27-64a31e614ce1", "content": "GSK 27i系列主要应用于哪些行业？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "question_index": 9, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6"]}, "created_at": "2025-12-31T22:45:44.465509"}
-{"question_id": "fb1e6a57-2296-4855-b921-a1cf44910508", "content": "GSK 27i系列支持哪些通信接口类型？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "question_index": 10, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-0e7f9bf15ac6dc4d33a064fbc4c2a0e6"]}, "created_at": "2025-12-31T22:45:44.465584"}
-{"question_id": "8d685dfe-6f6f-40fb-996c-970d59c0ca96", "content": "GSK27i数控系统的I/O单元IOR-44T型号的模拟电压输出范围是多少？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "question_index": 1, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "related_chunk_ids": ["chunk-0dac969b4d9ba93425b8921b17889bca"]}, "created_at": "2025-12-31T22:46:06.465022"}
-{"question_id": "2f7d63ae-0fcf-41dd-bffc-77076d9491ad", "content": "GSK27i数控系统支持哪些类型的主轴定位选型推荐配置？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "question_index": 2, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "related_chunk_ids": ["chunk-0dac969b4d9ba93425b8921b17889bca"]}, "created_at": "2025-12-31T22:46:06.465110"}
-{"question_id": "98b77018-7026-4372-9d1a-1e15dee3d5fc", "content": "GSK27i数控系统的在线圆度测试与分析功能如何帮助完成调试工作？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "question_index": 3, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "related_chunk_ids": ["chunk-0dac969b4d9ba93425b8921b17889bca"]}, "created_at": "2025-12-31T22:46:06.465189"}
-{"question_id": "113367f8-196f-4671-b094-a94b26759804", "content": "GSK27i数控系统的力矩控制功能涉及哪些参数设置？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "question_index": 4, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "related_chunk_ids": ["chunk-0dac969b4d9ba93425b8921b17889bca"]}, "created_at": "2025-12-31T22:46:06.465265"}
-{"question_id": "325b223f-48ea-4a31-b532-f9da33d18e78", "content": "GSK27i数控系统配套的IOR-44T I/O单元的尺寸是多少？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "question_index": 5, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "related_chunk_ids": ["chunk-0dac969b4d9ba93425b8921b17889bca"]}, "created_at": "2025-12-31T22:46:06.465344"}
-{"question_id": "47015649-aa60-4791-808a-bb83390eccea", "content": "GSK27i数控系统适配直线和力矩电机时具有哪些优势？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "question_index": 6, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "related_chunk_ids": ["chunk-0dac969b4d9ba93425b8921b17889bca"]}, "created_at": "2025-12-31T22:46:06.465419"}
-{"question_id": "100267c7-6b2d-4fee-a794-cbeb7ab5a356", "content": "GSK27i数控系统的主轴定位选型推荐配置有哪些具体方案？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "question_index": 7, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "related_chunk_ids": ["chunk-0dac969b4d9ba93425b8921b17889bca"]}, "created_at": "2025-12-31T22:46:06.465495"}
-{"question_id": "48e7d878-fe4e-4ed7-8886-29c97728f15e", "content": "GSK27i数控系统的擦补偿功能如何消除进给轴换向痕迹？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "question_index": 8, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "related_chunk_ids": ["chunk-0dac969b4d9ba93425b8921b17889bca"]}, "created_at": "2025-12-31T22:46:06.465570"}
-{"question_id": "9393b87a-564b-444d-85ba-381a2dc2ed9e", "content": "GSK27i数控系统支持的自动惯量识别和一键参数整定功能如何使用？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "question_index": 9, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "related_chunk_ids": ["chunk-0dac969b4d9ba93425b8921b17889bca"]}, "created_at": "2025-12-31T22:46:06.465644"}
-{"question_id": "484d5b38-4042-44fd-a2f9-42c5bc4c82ea", "content": "GSK27i数控系统的在线圆度测试与分析是否支持动态监控？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "question_index": 10, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-0dac969b4d9ba93425b8921b17889bca", "related_chunk_ids": ["chunk-0dac969b4d9ba93425b8921b17889bca"]}, "created_at": "2025-12-31T22:46:06.465720"}
-{"question_id": "f2df7dbd-1a29-44a5-a1dc-4b052a4461e6", "content": "GSK 27i高端多通道数控系统的输入输出数量是多少？高电平输出和模拟电压输出参数如何设置？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "question_index": 1, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-e224abef8060df10b587842aa8b0bfca"]}, "created_at": "2025-12-31T22:46:42.086878"}
-{"question_id": "470c8191-6a3f-42f3-8c3f-e8fbc3bfcea3", "content": "GSK-Link总线支持的最大从站设备数量是多少？连接时需要注意哪些兼容限制？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "question_index": 2, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "related_chunk_ids": ["chunk-e224abef8060df10b587842aa8b0bfca"]}, "created_at": "2025-12-31T22:46:42.086970"}
-{"question_id": "0a7c3957-80c0-4484-820d-64b41cbf8b97", "content": "GSK 27i系统如何实现双驱同步控制？平行轴功能的应用场景是什么？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "question_index": 4, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "related_entities": ["GSK"], "related_chunk_ids": ["chunk-e224abef8060df10b587842aa8b0bfca"]}, "created_at": "2025-12-31T22:46:42.087129"}
-{"question_id": "876413d5-b064-4cf2-a661-c52ef430c46e", "content": "自动对刀功能支持哪些类型的测量（高度及直径）？配置IO点时需要哪些参数设置？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "question_index": 5, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "related_chunk_ids": ["chunk-e224abef8060df10b587842aa8b0bfca"]}, "created_at": "2025-12-31T22:46:42.087206"}
-{"question_id": "97433afc-c5be-4d4f-bbf3-0f91a011fe9b", "content": "五轴RTCP插补控制采用什么算法？B样条转角光顺如何提升加工效果？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "question_index": 7, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "related_chunk_ids": ["chunk-e224abef8060df10b587842aa8b0bfca"]}, "created_at": "2025-12-31T22:46:42.087360"}
-{"question_id": "a3777fd5-aeda-4d44-9517-597350e7b3bf", "content": "GSK-Link光纤通讯的最大距离是多少？长距离通讯时如何确保信号稳定？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "question_index": 10, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-e224abef8060df10b587842aa8b0bfca", "related_chunk_ids": ["chunk-e224abef8060df10b587842aa8b0bfca"]}, "created_at": "2025-12-31T22:46:42.087593"}
-{"question_id": "487550c3-b219-4b20-9504-72448014a8b6", "content": "人性化总线配置中GSK-Link连接了哪些设备？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-e5f1139377769e782ea5c787bc073f4a", "question_index": 3, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-e5f1139377769e782ea5c787bc073f4a", "related_chunk_ids": ["chunk-e5f1139377769e782ea5c787bc073f4a"]}, "created_at": "2025-12-31T22:47:25.130919"}
-{"question_id": "1a986d0a-9594-4817-89aa-ebde7dcfe1ba", "content": "如何通过UKey进行权限注册和管理以防止密码泄露？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-46bcd792fd53bdefa8348953e3abb76d", "question_index": 4, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-46bcd792fd53bdefa8348953e3abb76d", "related_chunk_ids": ["chunk-46bcd792fd53bdefa8348953e3abb76d"]}, "created_at": "2025-12-31T22:47:44.121227"}
-{"question_id": "9a99e46b-6dbb-4be7-b853-faa53e12f24d", "content": "同一路径内，进给轴同步控制最多可以实现多少组的同步操作？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-46bcd792fd53bdefa8348953e3abb76d", "question_index": 10, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-46bcd792fd53bdefa8348953e3abb76d", "related_chunk_ids": ["chunk-46bcd792fd53bdefa8348953e3abb76d"]}, "created_at": "2025-12-31T22:47:44.121668"}
-{"question_id": "4c619d1b-d376-478a-a370-0ad08ba19c22", "content": "GSK27i数控系统的动轴数是多少？支持哪些类型的位置检测装置？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-49a820a23c79be958b898398d4023c59", "question_index": 1, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-49a820a23c79be958b898398d4023c59", "related_chunk_ids": ["chunk-49a820a23c79be958b898398d4023c59"]}, "created_at": "2025-12-31T22:48:00.493963"}
-{"question_id": "3d06cfe0-76f6-44cf-b249-a8e80c99e6be", "content": "最小指令单位IS-B在X、Y、Z轴上的精度分别是多少？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-49a820a23c79be958b898398d4023c59", "question_index": 3, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-49a820a23c79be958b898398d4023c59", "related_chunk_ids": ["chunk-49a820a23c79be958b898398d4023c59"]}, "created_at": "2025-12-31T22:48:00.494171"}
-{"question_id": "d28fe835-ac5b-4888-8c7b-5893e2728831", "content": "刀具中心点控制（RTCP）的有效范围是多少？需要配置哪些参数？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-49a820a23c79be958b898398d4023c59", "question_index": 6, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-49a820a23c79be958b898398d4023c59", "related_chunk_ids": ["chunk-49a820a23c79be958b898398d4023c59"]}, "created_at": "2025-12-31T22:48:00.494480"}
-{"question_id": "5bbec641-185a-4d05-88cc-ec80d9d6f196", "content": "GSK27i系统支持的工件坐标系数量有多少组？如何实现扩展？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-49a820a23c79be958b898398d4023c59", "question_index": 7, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-49a820a23c79be958b898398d4023c59", "related_chunk_ids": ["chunk-49a820a23c79be958b898398d4023c59"]}, "created_at": "2025-12-31T22:48:00.494582"}
-{"question_id": "8b19095c-f38b-4fec-8d73-d4f2c06588b6", "content": "五轴定位加工中3+2方式的特点是什么？需要注意哪些安全事项？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-49a820a23c79be958b898398d4023c59", "question_index": 8, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-49a820a23c79be958b898398d4023c59", "related_chunk_ids": ["chunk-49a820a23c79be958b898398d4023c59"]}, "created_at": "2025-12-31T22:48:00.494681"}
-{"question_id": "93055c8e-699c-443c-948c-226868c43bae", "content": "GSK27i数控系统支持的最大轴数是多少？如何实现通道内轴配置互换？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-f9bf0c55f31136f7f1338296536fbe1c", "question_index": 1, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-f9bf0c55f31136f7f1338296536fbe1c", "related_chunk_ids": ["chunk-f9bf0c55f31136f7f1338296536fbe1c"]}, "created_at": "2025-12-31T22:48:21.677933"}
-{"question_id": "8b0563e8-4ab9-4583-8aa8-624930b472d4", "content": "滚齿方式铣削齿轮（电子齿轮箱）功能需要满足什么前提条件？设置步骤是什么？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-f9bf0c55f31136f7f1338296536fbe1c", "question_index": 5, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-f9bf0c55f31136f7f1338296536fbe1c", "related_chunk_ids": ["chunk-f9bf0c55f31136f7f1338296536fbe1c"]}, "created_at": "2025-12-31T22:48:21.678294"}
-{"question_id": "9c1c2f07-fed1-48a3-b732-7e705127c91a", "content": "GSK-Link总线最大支持多少从站设备？连接时需要注意哪些信号匹配事项？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-f9bf0c55f31136f7f1338296536fbe1c", "question_index": 6, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-f9bf0c55f31136f7f1338296536fbe1c", "related_chunk_ids": ["chunk-f9bf0c55f31136f7f1338296536fbe1c"]}, "created_at": "2025-12-31T22:48:21.678369"}
-{"question_id": "898ff227-ad67-459d-bf67-ea7e92527d39", "content": "五轴RTCP功能的触发条件是什么？如何检查其运行状态是否正常？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-f9bf0c55f31136f7f1338296536fbe1c", "question_index": 7, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-f9bf0c55f31136f7f1338296536fbe1c", "related_chunk_ids": ["chunk-f9bf0c55f31136f7f1338296536fbe1c"]}, "created_at": "2025-12-31T22:48:21.678442"}
-{"question_id": "4c76545d-c5c3-4262-bc00-6bedc72c204b", "content": "GSK27i数控系统在实现通道间程序同步时，对通信延迟有什么要求？如何测试其稳定性？", "source_document": "D:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt", "source_chunk_id": "chunk-f9bf0c55f31136f7f1338296536fbe1c", "question_index": 10, "metadata": {"has_answer": false, "lightrag_chunk_id": "chunk-f9bf0c55f31136f7f1338296536fbe1c", "related_chunk_ids": ["chunk-f9bf0c55f31136f7f1338296536fbe1c"]}, "created_at": "2025-12-31T22:48:21.678724"}
+{
+  "question_id": "60f6612d-9cbc-4e81-8e7b-5fb43009d592",
+  "content": "YS7232 数控系统在加工汽车变速箱齿轮时的最高有效速度是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+    "related_entities": [
+      "YS7232"
+    ],
+    "related_chunk_ids": [
+      "chunk-068ec780867e317050fd7f7f2822102f"
+    ]
+  },
+  "created_at": "2025-12-10T00:01:05.008853"
+}
+
+{
+  "question_id": "ff10e164-f843-4ee5-bbf9-6cf863619dc5",
+  "content": "GSK 27i 系列支持的网络通信方式及其适配情况如何？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-068ec780867e317050fd7f7f2822102f"
+    ]
+  },
+  "created_at": "2025-12-10T00:01:05.009182"
+}
+
+{
+  "question_id": "2494aa9f-a2aa-412e-abdc-37a056e83059",
+  "content": "在船舶制造行业，YS7232 数控系统用于加工传动系统齿轮的具体应用场景是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+    "related_chunk_ids": [
+      "chunk-068ec780867e317050fd7f7f2822102f"
+    ]
+  },
+  "created_at": "2025-12-10T00:01:05.009479"
+}
+
+{
+  "question_id": "0996572e-053f-43fc-bfff-e59a2f3d067d",
+  "content": "GSK 27i 系列在五轴刀具旋转中心编程（RTCP）中的最高加工速度是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-068ec780867e317050fd7f7f2822102f"
+    ]
+  },
+  "created_at": "2025-12-10T00:01:05.009779"
+}
+
+{
+  "question_id": "d4790173-915f-4667-89a7-505a8790a2df",
+  "content": "在风力发电设备中，YS7232 数控系统用于齿轮传动系统的加工特点是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+    "related_chunk_ids": [
+      "chunk-068ec780867e317050fd7f7f2822102f"
+    ]
+  },
+  "created_at": "2025-12-10T00:01:05.010352"
+}
+
+{
+  "question_id": "c58a003b-13bd-498e-87d8-c88a3098e5f2",
+  "content": "GSK 27i 系列支持的最大插补预处理段数是多少？其对复杂曲面加工的影响是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-068ec780867e317050fd7f7f2822102f"
+    ]
+  },
+  "created_at": "2025-12-10T00:01:05.010636"
+}
+
+{
+  "question_id": "2a378d63-88cd-4615-8755-37da4c7bc331",
+  "content": "GSK-Link-PA 网络通信协议对构建自动化生产线的意义何在？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-068ec780867e317050fd7f7f2822102f",
+    "related_entities": [
+      "GSK-Link-PA"
+    ],
+    "related_chunk_ids": [
+      "chunk-068ec780867e317050fd7f7f2822102f"
+    ]
+  },
+  "created_at": "2025-12-10T00:01:05.011608"
+}
+
+{
+  "question_id": "a31c289b-1aa7-4fbb-91a0-19ebf5fffc81",
+  "content": "插补预处理数高达 1000 段时，在高速加工中如何分配插补段落以保证精度和速度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-376a72c55f513266d12a7301ed863ddd",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-376a72c55f513266d12a7301ed863ddd",
+    "related_chunk_ids": [
+      "chunk-376a72c55f513266d12a7301ed863ddd"
+    ]
+  },
+  "created_at": "2025-12-10T00:01:32.627550"
+}
+
+{
+  "question_id": "5c5e040b-9600-41de-b236-dc0fb6fbc2eb",
+  "content": "高达 8000 步的螺纹切削功能在何种应用场景下需要配合力矩控制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-376a72c55f513266d12a7301ed863ddd",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-376a72c55f513266d12a7301ed863ddd",
+    "related_chunk_ids": [
+      "chunk-376a72c55f513266d12a7301ed863ddd"
+    ]
+  },
+  "created_at": "2025-12-10T00:01:32.627879"
+}
+
+{
+  "question_id": "92c20e5a-f871-4114-b4b7-71f941f257d9",
+  "content": "支持 GSK-Link 以太网总线功能的情况下，通信接口的选择对系统扩展性有何影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-376a72c55f513266d12a7301ed863ddd",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-376a72c55f513266d12a7301ed863ddd",
+    "related_entities": [
+      "GSK-Link"
+    ],
+    "related_chunk_ids": [
+      "chunk-376a72c55f513266d12a7301ed863ddd"
+    ]
+  },
+  "created_at": "2025-12-10T00:01:32.628161"
+}
+
+{
+  "question_id": "55c52c43-dc85-4ef3-a25c-986a22986f18",
+  "content": "输入电压范围 AC380V~440V 的转换方式如何保证设备在不同电源环境下的稳定性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-376a72c55f513266d12a7301ed863ddd",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-376a72c55f513266d12a7301ed863ddd",
+    "related_chunk_ids": [
+      "chunk-376a72c55f513266d12a7301ed863ddd"
+    ]
+  },
+  "created_at": "2025-12-10T00:01:32.628457"
+}
+
+{
+  "question_id": "2c476920-4263-4cef-b457-09822f37e155",
+  "content": "IOR-04T、IOR-44T 和 IOR-44F 的输入/输出配置有何不同？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-d88963486f299ed5d7f01dea4fc3b290",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-d88963486f299ed5d7f01dea4fc3b290",
+    "related_entities": [
+      "IOR-44F"
+    ],
+    "related_chunk_ids": [
+      "chunk-d88963486f299ed5d7f01dea4fc3b290"
+    ]
+  },
+  "created_at": "2025-12-10T00:02:01.070274"
+}
+
+{
+  "question_id": "a2d8356d-4ee1-481c-a3ca-f73b89600bbc",
+  "content": "IOR系列设备的外形尺寸（90.2mm×305mm×80mm）是否支持特定类型的安装或集成？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-d88963486f299ed5d7f01dea4fc3b290",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-d88963486f299ed5d7f01dea4fc3b290",
+    "related_chunk_ids": [
+      "chunk-d88963486f299ed5d7f01dea4fc3b290"
+    ]
+  },
+  "created_at": "2025-12-10T00:02:01.071397"
+}
+
+{
+  "question_id": "c588232c-652a-4aa2-b297-d455bd9d86f0",
+  "content": "RTCP开启后，高速高精插补控制如何优化刀具中心点路径的转角光顺性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-d88963486f299ed5d7f01dea4fc3b290",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-d88963486f299ed5d7f01dea4fc3b290",
+    "related_chunk_ids": [
+      "chunk-d88963486f299ed5d7f01dea4fc3b290"
+    ]
+  },
+  "created_at": "2025-12-10T00:02:01.072037"
+}
+
+{
+  "question_id": "714b1b5e-9292-4aa2-8157-9044038c3314",
+  "content": "基于轨迹与速度规划算法的高速高精度插补控制如何实现加工时间缩短5%-30%的效果？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-d88963486f299ed5d7f01dea4fc3b290",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-d88963486f299ed5d7f01dea4fc3b290",
+    "related_chunk_ids": [
+      "chunk-d88963486f299ed5d7f01dea4fc3b290"
+    ]
+  },
+  "created_at": "2025-12-10T00:02:01.072316"
+}
+
+{
+  "question_id": "3aec6fbd-1889-4f41-92b3-d8b9e8eaef16",
+  "content": "GSK-Link以太网总线支持的光纤通讯最长距离是多少米？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-ea323ac5b25976f91708880830c75f3c",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ea323ac5b25976f91708880830c75f3c",
+    "related_chunk_ids": [
+      "chunk-ea323ac5b25976f91708880830c75f3c"
+    ]
+  },
+  "created_at": "2025-12-10T00:02:20.013636"
+}
+
+{
+  "question_id": "2cce57bd-8aa5-47e8-87ea-dde50400e82a",
+  "content": "UKey注册和权限管理的具体操作步骤是怎样的？如何确保用户身份的唯一性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-17310c61f1e2c307102a1b041d9830f2",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17310c61f1e2c307102a1b041d9830f2",
+    "related_chunk_ids": [
+      "chunk-17310c61f1e2c307102a1b041d9830f2"
+    ]
+  },
+  "created_at": "2025-12-10T00:02:43.135596"
+}
+
+{
+  "question_id": "49e13e0c-953d-41a8-8052-de0c6d4247fe",
+  "content": "加工程序加密功能是通过什么证书实现的？加密后的文件只能通过对应的UKey进行解密吗？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-17310c61f1e2c307102a1b041d9830f2",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-17310c61f1e2c307102a1b041d9830f2",
+    "related_chunk_ids": [
+      "chunk-17310c61f1e2c307102a1b041d9830f2"
+    ]
+  },
+  "created_at": "2025-12-10T00:02:43.135842"
+}
+
+{
+  "question_id": "a4a10f81-f2d8-4214-b114-122c0ae3f94d",
+  "content": "在任意进给速度下，主轴与加工台碰后30ms内的急停报警如何实现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-4e5616696fdc53001536ddb89e07aba6",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4e5616696fdc53001536ddb89e07aba6",
+    "related_chunk_ids": [
+      "chunk-4e5616696fdc53001536ddb89e07aba6"
+    ]
+  },
+  "created_at": "2025-12-10T00:03:09.164844"
+}
+
+{
+  "question_id": "4b839efd-4453-4e62-be10-0943401437fc",
+  "content": "在任意进给速度下，30ms内的急停报警效果对系统响应时间的要求是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-4e5616696fdc53001536ddb89e07aba6",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4e5616696fdc53001536ddb89e07aba6",
+    "related_chunk_ids": [
+      "chunk-4e5616696fdc53001536ddb89e07aba6"
+    ]
+  },
+  "created_at": "2025-12-10T00:03:09.166048"
+}
+
+{
+  "question_id": "5620b325-68f1-43c4-87a3-9602f6a4dfb1",
+  "content": "在五轴控制模式下，定位精度补偿功能如何确保插补预处理段数高达1000段的准确性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-421a8fc78ad9d37bdcdee2e730ebb07d",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-421a8fc78ad9d37bdcdee2e730ebb07d",
+    "related_chunk_ids": [
+      "chunk-421a8fc78ad9d37bdcdee2e730ebb07d"
+    ]
+  },
+  "created_at": "2025-12-10T00:03:35.030238"
+}
+
+{
+  "question_id": "dbd5c5ab-c9bc-4ebd-9437-934d128fdb09",
+  "content": "最大指令值为多少时，能够满足+999999.9999mm的范围要求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-421a8fc78ad9d37bdcdee2e730ebb07d",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-421a8fc78ad9d37bdcdee2e730ebb07d",
+    "related_chunk_ids": [
+      "chunk-421a8fc78ad9d37bdcdee2e730ebb07d"
+    ]
+  },
+  "created_at": "2025-12-10T00:03:35.031262"
+}
+
+{
+  "question_id": "954e0541-67f3-4e1f-a648-56db1f6b65c8",
+  "content": "进给轴的最大速度为200m/min时，如何实现快速进给和切部进给的分开补偿？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-421a8fc78ad9d37bdcdee2e730ebb07d",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-421a8fc78ad9d37bdcdee2e730ebb07d",
+    "related_chunk_ids": [
+      "chunk-421a8fc78ad9d37bdcdee2e730ebb07d"
+    ]
+  },
+  "created_at": "2025-12-10T00:03:35.031573"
+}
+
+{
+  "question_id": "34debdca-3ad3-4fb7-b7c2-55e81c0afc67",
+  "content": "程序存储容量为 4800M 时，最多可以存储多少个程序？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+    "related_chunk_ids": [
+      "chunk-18c33c2108cf822dcbf321f293d938d4"
+    ]
+  },
+  "created_at": "2025-12-10T00:03:55.325739"
+}
+
+{
+  "question_id": "7c4d065f-2642-49bc-9ad0-87a262608864",
+  "content": "扫描周期为 8ms 的情况下，基本指令执行时间是否支持 0.5us/步？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+    "related_chunk_ids": [
+      "chunk-18c33c2108cf822dcbf321f293d938d4"
+    ]
+  },
+  "created_at": "2025-12-10T00:03:55.325993"
+}
+
+{
+  "question_id": "a4a646dd-1b2b-415f-aada-be3bda495c70",
+  "content": "G27 返功能与 G23 功能之间的关系是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+    "related_entities": [
+      "G27",
+      "G23"
+    ],
+    "related_chunk_ids": [
+      "chunk-18c33c2108cf822dcbf321f293d938d4"
+    ]
+  },
+  "created_at": "2025-12-10T00:03:55.326536"
+}
+
+{
+  "question_id": "40316409-c4a3-4d7d-819a-f16c0fb2fc66",
+  "content": "程序存储容量为 4800M 时，是否支持调用子程序的层级限制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+    "related_chunk_ids": [
+      "chunk-18c33c2108cf822dcbf321f293d938d4"
+    ]
+  },
+  "created_at": "2025-12-10T00:03:55.327077"
+}
+
+{
+  "question_id": "0f72edf8-14ab-4fb3-a8af-0a2c02afa301",
+  "content": "G59 基本坐标系与 G54 P1-50 扩展坐标系之间如何切换或使用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+    "related_entities": [
+      "G59",
+      "G54",
+      "P1-50"
+    ],
+    "related_chunk_ids": [
+      "chunk-18c33c2108cf822dcbf321f293d938d4"
+    ]
+  },
+  "created_at": "2025-12-10T00:03:55.327533"
+}
+
+{
+  "question_id": "2d037db4-4714-406e-8b14-13f177906a74",
+  "content": "刀具长度自动测量功能是否支持倾斜面加工（如 DOEID255）？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-18c33c2108cf822dcbf321f293d938d4",
+    "related_entities": [
+      "DOEID255"
+    ],
+    "related_chunk_ids": [
+      "chunk-18c33c2108cf822dcbf321f293d938d4"
+    ]
+  },
+  "created_at": "2025-12-10T00:03:55.327826"
+}
+
+{
+  "question_id": "353d9d0c-db1d-49d6-af31-6a3bd0675129",
+  "content": "GSK 27i (21寸全触屏)与GSK 27i (17寸全触屏)在安装尺寸上的具体区别是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-40c0554774f79fc85177e15564c7ff37",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-40c0554774f79fc85177e15564c7ff37",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-40c0554774f79fc85177e15564c7ff37"
+    ]
+  },
+  "created_at": "2025-12-10T00:04:20.875006"
+}
+
+{
+  "question_id": "629d589a-eadc-418b-b098-81dd7afaf697",
+  "content": "双通道同步车削功能在加工整体铣刀、IT刀具及医疗五轴RTCP功能方面有哪些应用效果？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-40c0554774f79fc85177e15564c7ff37",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-40c0554774f79fc85177e15564c7ff37",
+    "related_chunk_ids": [
+      "chunk-40c0554774f79fc85177e15564c7ff37"
+    ]
+  },
+  "created_at": "2025-12-10T00:04:20.875906"
+}
+
+{
+  "question_id": "e781a484-63f6-4e24-9bf4-48699f1350dd",
+  "content": "五轴RTCP功能在端面铣削转换为柱面或斜轴转换时的具体实现方法是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-40c0554774f79fc85177e15564c7ff37",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-40c0554774f79fc85177e15564c7ff37",
+    "related_chunk_ids": [
+      "chunk-40c0554774f79fc85177e15564c7ff37"
+    ]
+  },
+  "created_at": "2025-12-10T00:04:20.876254"
+}
+
+{
+  "question_id": "9eac108e-750c-44ae-8a5c-870009b794f8",
+  "content": "实现直径210mm刀具的端面铣削转换为柱面或斜轴转换时，GSK系统需要哪些特定参数设置？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-40c0554774f79fc85177e15564c7ff37",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-40c0554774f79fc85177e15564c7ff37",
+    "related_chunk_ids": [
+      "chunk-40c0554774f79fc85177e15564c7ff37"
+    ]
+  },
+  "created_at": "2025-12-10T00:04:20.877314"
+}
+
+{
+  "question_id": "c6e304d0-e20d-4c46-92a9-6a5d706ea5a6",
+  "content": "最大支持多少个带力矩控制的固定点停止功能，并对直径210mm刀具起到节约材料的作用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-40c0554774f79fc85177e15564c7ff37",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-40c0554774f79fc85177e15564c7ff37",
+    "related_chunk_ids": [
+      "chunk-40c0554774f79fc85177e15564c7ff37"
+    ]
+  },
+  "created_at": "2025-12-10T00:04:20.878515"
+}
+
+{
+  "question_id": "41196950-7f42-491f-8f66-1ea433dea64e",
+  "content": "SADR通道间程序同步功能如何在刀具检测界面中实现加工参数的自动程序生成？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-a693beb4a66e5b514c8ec1da5c1df6a9",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-a693beb4a66e5b514c8ec1da5c1df6a9",
+    "related_chunk_ids": [
+      "chunk-a693beb4a66e5b514c8ec1da5c1df6a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:04:42.027435"
+}
+
+{
+  "question_id": "823480c6-0d29-4ddf-b1ae-98624819617b",
+  "content": "GSK-Link总线支持从站设备的最大连接数量是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-a693beb4a66e5b514c8ec1da5c1df6a9",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-a693beb4a66e5b514c8ec1da5c1df6a9",
+    "related_chunk_ids": [
+      "chunk-a693beb4a66e5b514c8ec1da5c1df6a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:04:42.027740"
+}
+
+{
+  "question_id": "a7164c6f-1f48-4018-8262-149fa4cbb976",
+  "content": "XH2519型立式定梁数控龙门加工中心的结构设计如何保证其精度稳定性和保持性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-a693beb4a66e5b514c8ec1da5c1df6a9",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-a693beb4a66e5b514c8ec1da5c1df6a9",
+    "related_chunk_ids": [
+      "chunk-a693beb4a66e5b514c8ec1da5c1df6a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:04:42.028244"
+}
+
+{
+  "question_id": "151c6cac-6a6a-465d-861e-30cf25ba9187",
+  "content": "SADR通道间程序同步功能如何缩短手动编程时间并提高生产效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-a693beb4a66e5b514c8ec1da5c1df6a9",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-a693beb4a66e5b514c8ec1da5c1df6a9",
+    "related_chunk_ids": [
+      "chunk-a693beb4a66e5b514c8ec1da5c1df6a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:04:42.029373"
+}
+
+{
+  "question_id": "ecbda6b7-9eab-4050-8090-70caca97ac85",
+  "content": "XH2519型立式定梁数控龙门加工中心在汽车模具制造中的应用特点是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01-GSK 27i高端多通道数控系统 20250226.txt",
+  "source_chunk_id": "chunk-a693beb4a66e5b514c8ec1da5c1df6a9",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-a693beb4a66e5b514c8ec1da5c1df6a9",
+    "related_chunk_ids": [
+      "chunk-a693beb4a66e5b514c8ec1da5c1df6a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:04:42.029628"
+}
+

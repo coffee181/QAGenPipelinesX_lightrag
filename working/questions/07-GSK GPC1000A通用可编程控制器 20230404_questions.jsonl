@@ -1,0 +1,483 @@
+{
+  "question_id": "0f7f223f-37f7-428b-ac6e-64314c4a9555",
+  "content": "售后人员在24小时内到位的比率是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-64e9861f6fbc33aad83534fb89e37ce6",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-64e9861f6fbc33aad83534fb89e37ce6",
+    "related_chunk_ids": [
+      "chunk-64e9861f6fbc33aad83534fb89e37ce6"
+    ]
+  },
+  "created_at": "2025-12-10T15:30:57.093099"
+}
+
+{
+  "question_id": "5012c894-a14d-4270-a920-1d08def35817",
+  "content": "江门市江海区德榜街204号的服务网点主要提供什么服务？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-64e9861f6fbc33aad83534fb89e37ce6",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-64e9861f6fbc33aad83534fb89e37ce6",
+    "related_chunk_ids": [
+      "chunk-64e9861f6fbc33aad83534fb89e37ce6"
+    ]
+  },
+  "created_at": "2025-12-10T15:30:57.094028"
+}
+
+{
+  "question_id": "4ac339d9-a3ed-4b5b-b389-8bbcb9f88eb9",
+  "content": "金华市永康市金色港湾小区1302单元的服务网点联系方式是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-64e9861f6fbc33aad83534fb89e37ce6",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-64e9861f6fbc33aad83534fb89e37ce6",
+    "related_chunk_ids": [
+      "chunk-64e9861f6fbc33aad83534fb89e37ce6"
+    ]
+  },
+  "created_at": "2025-12-10T15:30:57.094244"
+}
+
+{
+  "question_id": "c3903a14-1df3-4f4b-8f1b-54a23d8383c2",
+  "content": "上海市松江区荣乐中路120号201室的服务网点主要负责哪些地区的技术支持？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-64e9861f6fbc33aad83534fb89e37ce6",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-64e9861f6fbc33aad83534fb89e37ce6",
+    "related_chunk_ids": [
+      "chunk-64e9861f6fbc33aad83534fb89e37ce6"
+    ]
+  },
+  "created_at": "2025-12-10T15:30:57.095237"
+}
+
+{
+  "question_id": "18b2717d-f9c4-4642-9a6a-98441e67514f",
+  "content": "GSK GPC1000A通用可编程控制器支持多少个运动通道？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-5cf0d4f234eaf8ccd431471485de1080"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:41.115166"
+}
+
+{
+  "question_id": "6bc765bc-39c4-41f1-873d-25019ba7e565",
+  "content": "GSKLink控制总线可连接的伺服驱动单元数量是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+    "related_chunk_ids": [
+      "chunk-5cf0d4f234eaf8ccd431471485de1080"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:41.115719"
+}
+
+{
+  "question_id": "5f148a3b-629c-4bc7-9a5b-17485ee1c704",
+  "content": "通过GSKLink控制总线扩展的每个单元提供多少点输入和输出？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+    "related_chunk_ids": [
+      "chunk-5cf0d4f234eaf8ccd431471485de1080"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:41.116234"
+}
+
+{
+  "question_id": "43616e99-9599-4436-aeef-d176886a9691",
+  "content": "模拟电压范围是0~10V，如何实现数字通信管理？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+    "related_chunk_ids": [
+      "chunk-5cf0d4f234eaf8ccd431471485de1080"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:41.116459"
+}
+
+{
+  "question_id": "ca1667f5-ac7c-49e7-9230-a28207efc099",
+  "content": "GPC1000A支持哪些运动指令（如定位、直线跳转等）？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+    "related_chunk_ids": [
+      "chunk-5cf0d4f234eaf8ccd431471485de1080"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:41.116669"
+}
+
+{
+  "question_id": "0a665661-5624-4440-a7b3-33d8fb5bf9e9",
+  "content": "GSKLink控制总线和GSKLink-设备总线的主要区别是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-5cf0d4f234eaf8ccd431471485de1080",
+    "related_chunk_ids": [
+      "chunk-5cf0d4f234eaf8ccd431471485de1080"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:41.117268"
+}
+
+{
+  "question_id": "fc8e3fcc-dd1e-4659-8736-023e4e5eb0ce",
+  "content": "GSKLink-设备总线最多可以连接多少个从站SLA，并如何实现从站设备的集中监控与管理？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+    "related_chunk_ids": [
+      "chunk-95c2cec9ce142200c53fcaeecba4d942"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:59.172195"
+}
+
+{
+  "question_id": "c848285d-d7c6-4777-b8ac-1b2e312672d4",
+  "content": "GPC1000A控制器支持哪些I/O单元规格，每个单元提供多少点输入和输出？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+    "related_chunk_ids": [
+      "chunk-95c2cec9ce142200c53fcaeecba4d942"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:59.172538"
+}
+
+{
+  "question_id": "9f4f5f81-31b2-4809-a436-e694d77a6983",
+  "content": "GPC1000A控制器通过GSKLink控制总线最多可以连接多少个运动参数化智能自动编程技术的运动程序，并行执行时每个运动程序如何控制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+    "related_chunk_ids": [
+      "chunk-95c2cec9ce142200c53fcaeecba4d942"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:59.172866"
+}
+
+{
+  "question_id": "ff61eee2-1708-4550-8eb6-7f54c54d31c4",
+  "content": "支持TCP/IP协议的GPC1000A控制器接入车间局域网后，如何实现生产制造过程的网络化和信息化管理？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+    "related_chunk_ids": [
+      "chunk-95c2cec9ce142200c53fcaeecba4d942"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:59.173212"
+}
+
+{
+  "question_id": "8f5b068f-d015-4db4-aaab-5b3962dd93ae",
+  "content": "GPC1000A控制器支持哪些网络化管理功能，如远程监控、工艺管理等？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+    "related_chunk_ids": [
+      "chunk-95c2cec9ce142200c53fcaeecba4d942"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:59.173562"
+}
+
+{
+  "question_id": "a1f0df5e-170c-4ef4-a1ba-ed460b0fabcb",
+  "content": "手持式示教盒GHT065的功能特点有哪些，如何用于系统监控和操作？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+    "related_chunk_ids": [
+      "chunk-95c2cec9ce142200c53fcaeecba4d942"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:59.174144"
+}
+
+{
+  "question_id": "8dbadfec-a22a-4bf4-b375-e85d043046d3",
+  "content": "GSKLink控制总线最多可扩展多少个I/O单元，每个单元的具体规格是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+    "related_chunk_ids": [
+      "chunk-95c2cec9ce142200c53fcaeecba4d942"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:59.174470"
+}
+
+{
+  "question_id": "358ebc29-42bb-4668-a06f-7deafdac337f",
+  "content": "组态软件GPCCFG的主要功能是什么，支持哪些用户定制需求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+    "related_chunk_ids": [
+      "chunk-95c2cec9ce142200c53fcaeecba4d942"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:59.174792"
+}
+
+{
+  "question_id": "09b30a62-4b4e-4d0a-894f-b24668b9d42c",
+  "content": "GPC1000A控制器在网络化和信息化管理方面有哪些具体应用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-95c2cec9ce142200c53fcaeecba4d942",
+    "related_chunk_ids": [
+      "chunk-95c2cec9ce142200c53fcaeecba4d942"
+    ]
+  },
+  "created_at": "2025-12-10T15:31:59.175092"
+}
+
+{
+  "question_id": "78a221ee-f31d-4295-9973-96293b0a728c",
+  "content": "在定位精度为0.001mm的情况下，控制轴数最多能支持多少个？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+    "related_chunk_ids": [
+      "chunk-7d48bf828938ad7023decdbf4f51b921"
+    ]
+  },
+  "created_at": "2025-12-10T15:32:15.162389"
+}
+
+{
+  "question_id": "cbd7b1e1-35a3-49a9-a836-f767afd6b2bc",
+  "content": "绝对示教点在倍率100%时的最小输入单位是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+    "related_chunk_ids": [
+      "chunk-7d48bf828938ad7023decdbf4f51b921"
+    ]
+  },
+  "created_at": "2025-12-10T15:32:15.162639"
+}
+
+{
+  "question_id": "e333c942-342d-41b7-9c8b-4c0363c89b6b",
+  "content": "最大快速移动速度100m/min与过载能力之间如何平衡运行效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+    "related_chunk_ids": [
+      "chunk-7d48bf828938ad7023decdbf4f51b921"
+    ]
+  },
+  "created_at": "2025-12-10T15:32:15.163018"
+}
+
+{
+  "question_id": "a89b8335-18ea-401b-a3dc-f2b98102cc98",
+  "content": "同步控制功能在不同倍率（如100%与50%）下如何实现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+    "related_chunk_ids": [
+      "chunk-7d48bf828938ad7023decdbf4f51b921"
+    ]
+  },
+  "created_at": "2025-12-10T15:32:15.164067"
+}
+
+{
+  "question_id": "314ea833-6d4a-48e9-82e6-ec9c24eb7ffc",
+  "content": "最大通道数999与每通道控制轴数最多24轴的组合使用有什么限制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+    "related_chunk_ids": [
+      "chunk-7d48bf828938ad7023decdbf4f51b921"
+    ]
+  },
+  "created_at": "2025-12-10T15:32:15.164331"
+}
+
+{
+  "question_id": "48f85c97-f0a9-493d-95d5-50c3a79ec6c2",
+  "content": "两极PLC程序的刷新周期2ms对实时性要求的影响是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+    "related_chunk_ids": [
+      "chunk-7d48bf828938ad7023decdbf4f51b921"
+    ]
+  },
+  "created_at": "2025-12-10T15:32:15.164570"
+}
+
+{
+  "question_id": "3fe5fb2d-5295-4a7b-b63c-25aaf33722ff",
+  "content": "在最大输入/输出1024点时，模拟电压输出范围是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7d48bf828938ad7023decdbf4f51b921",
+    "related_chunk_ids": [
+      "chunk-7d48bf828938ad7023decdbf4f51b921"
+    ]
+  },
+  "created_at": "2025-12-10T15:32:15.164828"
+}
+
+{
+  "question_id": "d283861a-26c1-47e8-bf5e-edf859feffa4",
+  "content": "GPC1000A控制器如何实现双通道独立控制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-14af7323f49a66e78bd6bf4e0c92d17f",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-14af7323f49a66e78bd6bf4e0c92d17f",
+    "related_chunk_ids": [
+      "chunk-14af7323f49a66e78bd6bf4e0c92d17f"
+    ]
+  },
+  "created_at": "2025-12-10T15:32:35.136691"
+}
+
+{
+  "question_id": "e73528a0-85d9-4d59-814a-1cbf56a908b7",
+  "content": "在上下料控制系统中，GPC1000A如何协调双机械手的工作流程？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-14af7323f49a66e78bd6bf4e0c92d17f",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-14af7323f49a66e78bd6bf4e0c92d17f",
+    "related_chunk_ids": [
+      "chunk-14af7323f49a66e78bd6bf4e0c92d17f"
+    ]
+  },
+  "created_at": "2025-12-10T15:32:35.137507"
+}
+
+{
+  "question_id": "23e7f6ca-0fd9-46f1-bc23-ffacab03551d",
+  "content": "GPC1000A的双通道控制方式对系统稳定性和效率有何影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-14af7323f49a66e78bd6bf4e0c92d17f",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-14af7323f49a66e78bd6bf4e0c92d17f",
+    "related_chunk_ids": [
+      "chunk-14af7323f49a66e78bd6bf4e0c92d17f"
+    ]
+  },
+  "created_at": "2025-12-10T15:32:35.137770"
+}
+
+{
+  "question_id": "4ba37df4-29a9-4e86-ba0a-b170f3e7fbed",
+  "content": "双桥架结构中，GPC1000A如何实现对两个机械手的独立控制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\07-GSK GPC1000A通用可编程控制器 20230404.txt",
+  "source_chunk_id": "chunk-14af7323f49a66e78bd6bf4e0c92d17f",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-14af7323f49a66e78bd6bf4e0c92d17f",
+    "related_chunk_ids": [
+      "chunk-14af7323f49a66e78bd6bf4e0c92d17f"
+    ]
+  },
+  "created_at": "2025-12-10T15:32:35.138275"
+}
+

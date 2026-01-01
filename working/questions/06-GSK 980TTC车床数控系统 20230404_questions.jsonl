@@ -1,0 +1,602 @@
+{
+  "question_id": "684b86b6-b300-4a47-88fc-54b8b0b8cf0e",
+  "content": "售后人员到位率在24小时内达到99%，如何确保这一目标？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-c32dca8328120b9429b45eed9522552a",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c32dca8328120b9429b45eed9522552a",
+    "related_chunk_ids": [
+      "chunk-c32dca8328120b9429b45eed9522552a"
+    ]
+  },
+  "created_at": "2025-12-10T13:35:44.840747"
+}
+
+{
+  "question_id": "89293ee6-d60d-4341-a278-48918cb289c0",
+  "content": "用户满意度达到99.5%的具体原因是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-c32dca8328120b9429b45eed9522552a",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c32dca8328120b9429b45eed9522552a",
+    "related_chunk_ids": [
+      "chunk-c32dca8328120b9429b45eed9522552a"
+    ]
+  },
+  "created_at": "2025-12-10T13:35:44.841686"
+}
+
+{
+  "question_id": "361fa735-98f3-4af2-b257-427850b1ba1b",
+  "content": "辽宁沈阳办事处的电话号码13957324866对应的详细地址是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-eeea79cdabe32b91ae605a5c0f6c9940",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-eeea79cdabe32b91ae605a5c0f6c9940",
+    "related_chunk_ids": [
+      "chunk-eeea79cdabe32b91ae605a5c0f6c9940"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:13.208352"
+}
+
+{
+  "question_id": "e29b26de-f0f6-44e8-8591-fef9c477437e",
+  "content": "浙江省杭州市拱墅区康桥丽小区101室的办事处是否属于江苏嘉兴办事处？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-eeea79cdabe32b91ae605a5c0f6c9940",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-eeea79cdabe32b91ae605a5c0f6c9940",
+    "related_chunk_ids": [
+      "chunk-eeea79cdabe32b91ae605a5c0f6c9940"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:13.208784"
+}
+
+{
+  "question_id": "376c2921-9f0e-4ef2-8474-bdb7ec8bfb11",
+  "content": "标记为“iE: 15962525661”的地址是否位于江苏省无锡市新吴区纺城大道289号南方不锈钢市场108号？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-eeea79cdabe32b91ae605a5c0f6c9940",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-eeea79cdabe32b91ae605a5c0f6c9940",
+    "related_chunk_ids": [
+      "chunk-eeea79cdabe32b91ae605a5c0f6c9940"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:13.209574"
+}
+
+{
+  "question_id": "257a4a0b-b195-4ec5-856d-b965aa1927f9",
+  "content": "华中江苏办事处的电话号码13840399307对应的办公地点在哪个具体小区和单元号？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-eeea79cdabe32b91ae605a5c0f6c9940",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-eeea79cdabe32b91ae605a5c0f6c9940",
+    "related_chunk_ids": [
+      "chunk-eeea79cdabe32b91ae605a5c0f6c9940"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:13.209920"
+}
+
+{
+  "question_id": "9c8134ca-ab72-4329-99f4-b8638aa4cf4e",
+  "content": "浙江省绍兴市柯桥区新大道西路215号的办事处电话号码是否为13804081812？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-eeea79cdabe32b91ae605a5c0f6c9940",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-eeea79cdabe32b91ae605a5c0f6c9940",
+    "related_chunk_ids": [
+      "chunk-eeea79cdabe32b91ae605a5c0f6c9940"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:13.210770"
+}
+
+{
+  "question_id": "aa31de1e-3719-4ba8-ad1c-ce3f26e12abb",
+  "content": "GSK 980TTC 双通道车床数控系统支持的机床布局有哪些类型？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:33.289734"
+}
+
+{
+  "question_id": "578615d2-aa52-4402-aff6-27ddd3e9809d",
+  "content": "GSK 980TTC 横式、分体式和坚式机型在结构设计上有什么主要区别？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:33.289975"
+}
+
+{
+  "question_id": "4e29870d-cd34-4966-abfc-7fc38a1690af",
+  "content": "GSK 980TTC 系统如何实现双主轴同步控制功能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:33.290209"
+}
+
+{
+  "question_id": "f4ad6f54-a8ad-4141-b859-f1a0fff073b4",
+  "content": "在支持双刀架的应用场景下，GSK 980TTC 系统需要满足哪些同步检测条件？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+    "related_chunk_ids": [
+      "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:33.290473"
+}
+
+{
+  "question_id": "95bdb50f-c79c-414e-866b-be2a5cdb97cb",
+  "content": "GSK 980TTC 分体式机型的屏幕尺寸对操作便捷性有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:33.290723"
+}
+
+{
+  "question_id": "af6a588c-ac89-4cf8-bc25-e1d59b74a5e2",
+  "content": "主轴编码器反馈对GSK 980TTC系统定位精度有什么具体影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+    "related_chunk_ids": [
+      "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:33.291170"
+}
+
+{
+  "question_id": "ad176a10-80e8-4dbd-a04e-e54d31a39f63",
+  "content": "GSK 980TTC系统的检测功能在哪些应用场景下具有更高的优先级？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:33.291383"
+}
+
+{
+  "question_id": "de58089a-cd72-4401-8e49-9a927bad2277",
+  "content": "GSK 980TTC坚式机型的屏幕尺寸是否支持多点触控操作？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:33.291606"
+}
+
+{
+  "question_id": "ca1957f9-fad2-428b-b0e2-e2757f20b60c",
+  "content": "GSK 980TTC系统在扩展性方面如何适应不同的机床布局需求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8e7cf2d7e86bf9fdf6e6e7cb4f1e6b41"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:33.291828"
+}
+
+{
+  "question_id": "0d033d06-2700-4b30-8732-68be7d822617",
+  "content": "最小控制精度0.1微米与最高移动速度60m/min之间存在何种关系？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-18396507ffe041e1a2c52af000fca214",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-18396507ffe041e1a2c52af000fca214",
+    "related_chunk_ids": [
+      "chunk-18396507ffe041e1a2c52af000fca214"
+    ]
+  },
+  "created_at": "2025-12-10T13:36:50.069496"
+}
+
+{
+  "question_id": "d3d24c16-3798-4ea3-8688-fd0302ea38e5",
+  "content": "在坐标系选择中，最小输入单位为+99999999时，绝对增呈编程如何实现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-d0dd8246c703785122ca7f93fd106ed0",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-d0dd8246c703785122ca7f93fd106ed0",
+    "related_chunk_ids": [
+      "chunk-d0dd8246c703785122ca7f93fd106ed0"
+    ]
+  },
+  "created_at": "2025-12-10T13:37:14.551214"
+}
+
+{
+  "question_id": "edd695ca-78ca-4202-8af5-4bc6f5515637",
+  "content": "通道1与通道2在同步控制或混合控制时，如何实现任意轴的移动同步？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-d0dd8246c703785122ca7f93fd106ed0",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-d0dd8246c703785122ca7f93fd106ed0",
+    "related_chunk_ids": [
+      "chunk-d0dd8246c703785122ca7f93fd106ed0"
+    ]
+  },
+  "created_at": "2025-12-10T13:37:14.553104"
+}
+
+{
+  "question_id": "ef7c0076-9e69-45e6-ac6d-1c7b009e01dd",
+  "content": "GSK 980TTC 系列控制器支持多少个 PLC 程序同时运行？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+    "related_entities": [
+      "GSK",
+      "PLC"
+    ],
+    "related_chunk_ids": [
+      "chunk-e716b5d81782ae1b3820b7eb9bf41a3a"
+    ]
+  },
+  "created_at": "2025-12-10T13:37:38.814240"
+}
+
+{
+  "question_id": "fb8d6c12-32d5-4441-bbf6-6d5e1e83a567",
+  "content": "IOA-O1T 和 IOA-02T 在输入输出点数和模拟电压输出路数上有哪些差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+    "related_entities": [
+      "IOA-O1T",
+      "IOA-02T"
+    ],
+    "related_chunk_ids": [
+      "chunk-e716b5d81782ae1b3820b7eb9bf41a3a"
+    ]
+  },
+  "created_at": "2025-12-10T13:37:38.814779"
+}
+
+{
+  "question_id": "7d152a85-1886-411a-b247-8c357e824ff9",
+  "content": "GSK 980TTC-V 的屏幕尺寸是多少？是否支持多语言显示？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-e716b5d81782ae1b3820b7eb9bf41a3a"
+    ]
+  },
+  "created_at": "2025-12-10T13:37:38.815034"
+}
+
+{
+  "question_id": "3c0feac1-f052-4fe6-9ee5-81c01b8f88b1",
+  "content": "系统程序容量为 40M 和 10000MER，其中 MER 指的是什么单位？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+    "related_entities": [
+      "MER"
+    ],
+    "related_chunk_ids": [
+      "chunk-e716b5d81782ae1b3820b7eb9bf41a3a"
+    ]
+  },
+  "created_at": "2025-12-10T13:37:38.815483"
+}
+
+{
+  "question_id": "43d9b56f-6516-4e54-aa88-2fc0ac18293e",
+  "content": "GSK 980TTC-H 的外形安装尺寸是多少？与 GSK 980TTC-V 有何不同？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-e716b5d81782ae1b3820b7eb9bf41a3a"
+    ]
+  },
+  "created_at": "2025-12-10T13:37:38.815714"
+}
+
+{
+  "question_id": "afae24fc-beda-49c0-85ff-74dfabf5c06a",
+  "content": "GSK 980TTC 系列控制器支持哪些通讯接口？如何通过这些接口进行程序和参数传输？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e716b5d81782ae1b3820b7eb9bf41a3a",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-e716b5d81782ae1b3820b7eb9bf41a3a"
+    ]
+  },
+  "created_at": "2025-12-10T13:37:38.816377"
+}
+
+{
+  "question_id": "8b5d7c05-8213-4374-8c15-2bab3f8edbbd",
+  "content": "GSK 980TTC-H 操作面板的安装尺寸如何与机床特性中的双主轴设计配合使用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-e38adf4f3bc7becacc1dfcba8c2c7300"
+    ]
+  },
+  "created_at": "2025-12-10T13:38:03.707029"
+}
+
+{
+  "question_id": "fdf73efc-5e64-4930-be24-1bf9d30443a0",
+  "content": "GS2045T-NP1-130SJT-MZ075D(A2) 与 GS3100Y-NP2-ZJY265A-7.5AM 主轴在机床特性上有哪些具体差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+    "related_chunk_ids": [
+      "chunk-e38adf4f3bc7becacc1dfcba8c2c7300"
+    ]
+  },
+  "created_at": "2025-12-10T13:38:03.707300"
+}
+
+{
+  "question_id": "4dc29078-d34d-47d4-99e4-9dcd15d31550",
+  "content": "GS2045T-NP1-130SJT-MZ100B(A2) 与 GS2050T-NP1-130SJT-M150B(A2) 在轴设计上有哪些参数变化需要特别注意？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+    "related_chunk_ids": [
+      "chunk-e38adf4f3bc7becacc1dfcba8c2c7300"
+    ]
+  },
+  "created_at": "2025-12-10T13:38:03.707806"
+}
+
+{
+  "question_id": "1b2d2c28-abbc-4d2d-b949-b5720db5edac",
+  "content": "宁夏新瑞长城机床有限公司的 ZK8210M 打机在机 床 特 性 上如何实现人式车订用户的安装加工需求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+    "related_entities": [
+      "ZK8210M"
+    ],
+    "related_chunk_ids": [
+      "chunk-e38adf4f3bc7becacc1dfcba8c2c7300"
+    ]
+  },
+  "created_at": "2025-12-10T13:38:03.708048"
+}
+
+{
+  "question_id": "4a041180-5427-47cb-902b-1529d257df4b",
+  "content": "GS2100T-NP1-175SJT-MZ220B(A2) 主轴在 30KW 功率下如何确保 ZJY208A-5.5BM 结构的稳定性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+    "related_chunk_ids": [
+      "chunk-e38adf4f3bc7becacc1dfcba8c2c7300"
+    ]
+  },
+  "created_at": "2025-12-10T13:38:03.708319"
+}
+
+{
+  "question_id": "64ef60eb-de9d-4a60-99a2-380de0d3ffb4",
+  "content": "GSK 980TTC-H 的操作面板安装尺寸在双主轴组结构中需要满足哪些特定的技术要求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-e38adf4f3bc7becacc1dfcba8c2c7300"
+    ]
+  },
+  "created_at": "2025-12-10T13:38:03.708554"
+}
+
+{
+  "question_id": "56d1b1be-b653-42e5-8de0-02d0148a0ed7",
+  "content": "GS2045T-NP1-130SJT-MZ075D(A2) 在机床特性中的双铀双和中式轴箱设计如何影响加工精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+    "related_chunk_ids": [
+      "chunk-e38adf4f3bc7becacc1dfcba8c2c7300"
+    ]
+  },
+  "created_at": "2025-12-10T13:38:03.708816"
+}
+
+{
+  "question_id": "b04de222-6f07-45e0-8b98-eb4db738c36d",
+  "content": "宁夏新瑞长城机床有限公司的 ZK8210M 打机在 THER ARMS 配置下需要哪些特定的安装与维护步骤？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+    "related_entities": [
+      "ZK8210M",
+      "THER",
+      "ARMS"
+    ],
+    "related_chunk_ids": [
+      "chunk-e38adf4f3bc7becacc1dfcba8c2c7300"
+    ]
+  },
+  "created_at": "2025-12-10T13:38:03.709051"
+}
+
+{
+  "question_id": "08f61918-f1bf-480e-bb84-04c2c43ce83c",
+  "content": "GS3050Y-NP2-ZJY208A-5.5BM 主轴在双柱立式车床 CVT8050 上如何实现高效加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\06-GSK 980TTC车床数控系统 20230404.txt",
+  "source_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-e38adf4f3bc7becacc1dfcba8c2c7300",
+    "related_entities": [
+      "CVT8050"
+    ],
+    "related_chunk_ids": [
+      "chunk-e38adf4f3bc7becacc1dfcba8c2c7300"
+    ]
+  },
+  "created_at": "2025-12-10T13:38:03.709316"
+}
+

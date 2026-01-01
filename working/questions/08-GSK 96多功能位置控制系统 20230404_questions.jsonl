@@ -1,0 +1,260 @@
+{
+  "question_id": "df175429-a456-4f01-a601-65cf172764d1",
+  "content": "在24小时内，售后服务人员到位率达到99.9%，请问这是如何实现的？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-7f4aa8a6ed38afe5953cfa139b6efca5",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7f4aa8a6ed38afe5953cfa139b6efca5",
+    "related_chunk_ids": [
+      "chunk-7f4aa8a6ed38afe5953cfa139b6efca5"
+    ]
+  },
+  "created_at": "2025-12-10T16:33:29.731514"
+}
+
+{
+  "question_id": "696b89a3-da0f-43e6-bb66-eea7818b8b73",
+  "content": "广东江门办事处有三个电话号码（13822335346、15219903790、13808874681），这些号码分别对应哪些服务类型或联系人？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-7f4aa8a6ed38afe5953cfa139b6efca5",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7f4aa8a6ed38afe5953cfa139b6efca5",
+    "related_chunk_ids": [
+      "chunk-7f4aa8a6ed38afe5953cfa139b6efca5"
+    ]
+  },
+  "created_at": "2025-12-10T16:33:29.731797"
+}
+
+{
+  "question_id": "74a6e066-2760-4b77-a54d-19d69574b317",
+  "content": "广东江门办事处的地址“江门 市 区 德 街 204m”是否正确无误？请确认具体位置。",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-7f4aa8a6ed38afe5953cfa139b6efca5",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7f4aa8a6ed38afe5953cfa139b6efca5",
+    "related_chunk_ids": [
+      "chunk-7f4aa8a6ed38afe5953cfa139b6efca5"
+    ]
+  },
+  "created_at": "2025-12-10T16:33:29.732052"
+}
+
+{
+  "question_id": "dd7ac38a-8d7f-4620-84ea-8dd8d83b6f8b",
+  "content": "在24小时内和48小时内，如何保证售后人员到位率的不同服务质量标准？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-7f4aa8a6ed38afe5953cfa139b6efca5",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-7f4aa8a6ed38afe5953cfa139b6efca5",
+    "related_chunk_ids": [
+      "chunk-7f4aa8a6ed38afe5953cfa139b6efca5"
+    ]
+  },
+  "created_at": "2025-12-10T16:33:29.732864"
+}
+
+{
+  "question_id": "311a33e4-7a35-45eb-acdd-7a1895db8c43",
+  "content": "浙江温州办事处的地址中提到的金城港楼1006室是否有特殊用途？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-632a865b05b7c353c60b7911389fbe31",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-632a865b05b7c353c60b7911389fbe31",
+    "related_chunk_ids": [
+      "chunk-632a865b05b7c353c60b7911389fbe31"
+    ]
+  },
+  "created_at": "2025-12-10T16:33:46.279553"
+}
+
+{
+  "question_id": "47977cce-56db-41d4-bc28-5596ce6468d0",
+  "content": "GSK 多功能 位 置 控制 System 支持哪些多国语言界面转换？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-4447f3bc0a380d2c748480ebc21c5390",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4447f3bc0a380d2c748480ebc21c5390",
+    "related_entities": [
+      "GSK",
+      "System"
+    ],
+    "related_chunk_ids": [
+      "chunk-4447f3bc0a380d2c748480ebc21c5390"
+    ]
+  },
+  "created_at": "2025-12-10T16:34:06.189295"
+}
+
+{
+  "question_id": "99bf4ad5-ad3a-4b29-a11f-d46014c0f70b",
+  "content": "位置指令范围 -9999.999 mm~+9999.999 mm 的精度为 0.001 mm，如何实现这一高精度控制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+    "related_chunk_ids": [
+      "chunk-2534f2d4053bf816dda3dd034f8f3a01"
+    ]
+  },
+  "created_at": "2025-12-10T16:34:28.507965"
+}
+
+{
+  "question_id": "491a5f0f-e5aa-4756-bef3-b1ee49a5e6f2",
+  "content": "电子齿轮倍乘系数与分频系数均为 99999，这种设计对实际应用有何限制或优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+    "related_chunk_ids": [
+      "chunk-2534f2d4053bf816dda3dd034f8f3a01"
+    ]
+  },
+  "created_at": "2025-12-10T16:34:28.508200"
+}
+
+{
+  "question_id": "5fae9d5b-dc08-48c0-a004-76e32592299e",
+  "content": "快速移动速度最高可达 30000 mm/min，四级快速倍率（F0、25%、50%、100%）如何实现实时调节？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+    "related_chunk_ids": [
+      "chunk-2534f2d4053bf816dda3dd034f8f3a01"
+    ]
+  },
+  "created_at": "2025-12-10T16:34:28.508436"
+}
+
+{
+  "question_id": "bfc0171c-ddd6-45bd-b32e-7013f10d8f47",
+  "content": "组合切削进给速度最高为 15000 mm/min，十六级进给倍率实时调节对加工效率有何影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+    "related_chunk_ids": [
+      "chunk-2534f2d4053bf816dda3dd034f8f3a01"
+    ]
+  },
+  "created_at": "2025-12-10T16:34:28.508710"
+}
+
+{
+  "question_id": "dd71e116-5102-48f2-8137-034b356afb18",
+  "content": "手动进给速度 1260 mm/min 的十六级实时调节或自定义速度功能如何满足不同加工需求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+    "related_chunk_ids": [
+      "chunk-2534f2d4053bf816dda3dd034f8f3a01"
+    ]
+  },
+  "created_at": "2025-12-10T16:34:28.509031"
+}
+
+{
+  "question_id": "2341fb7a-953a-425b-ad5a-9955a671f5b6",
+  "content": "主轴编码器线数范围与主轴传动比反向间隙补偿精度为 0.001 mm~10.000 mm，如何实现精确补偿？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2534f2d4053bf816dda3dd034f8f3a01",
+    "related_chunk_ids": [
+      "chunk-2534f2d4053bf816dda3dd034f8f3a01"
+    ]
+  },
+  "created_at": "2025-12-10T16:34:28.509337"
+}
+
+{
+  "question_id": "26de8b3c-d087-4c16-8319-19115d9e20e6",
+  "content": "当刀架类型参数设为0时，系统是否会执行换刀动作？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-ec361c38f8e153544cb177cf1a7ec5d9",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ec361c38f8e153544cb177cf1a7ec5d9",
+    "related_chunk_ids": [
+      "chunk-ec361c38f8e153544cb177cf1a7ec5d9"
+    ]
+  },
+  "created_at": "2025-12-10T16:34:56.798545"
+}
+
+{
+  "question_id": "18e1940e-f334-48ae-a4f4-9f0b0b3ba966",
+  "content": "在什么情况下，系统会调用M60指令来执行换刀操作？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-ec361c38f8e153544cb177cf1a7ec5d9",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ec361c38f8e153544cb177cf1a7ec5d9",
+    "related_chunk_ids": [
+      "chunk-ec361c38f8e153544cb177cf1a7ec5d9"
+    ]
+  },
+  "created_at": "2025-12-10T16:34:56.798838"
+}
+
+{
+  "question_id": "a29f10b9-516a-4f81-ada6-11103a680170",
+  "content": "如何在转速模拟电压控制模式下实现主轴10V电压的输出？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-ec361c38f8e153544cb177cf1a7ec5d9",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ec361c38f8e153544cb177cf1a7ec5d9",
+    "related_chunk_ids": [
+      "chunk-ec361c38f8e153544cb177cf1a7ec5d9"
+    ]
+  },
+  "created_at": "2025-12-10T16:34:56.799506"
+}
+
+{
+  "question_id": "cf518c94-3e1e-4c37-8da0-33434c266bb6",
+  "content": "如何配置伺服驱动适配脉冲方向信号输入的GSK DA98系列数字式交流伺服电动机？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\08-GSK 96多功能位置控制系统 20230404.txt",
+  "source_chunk_id": "chunk-ec361c38f8e153544cb177cf1a7ec5d9",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ec361c38f8e153544cb177cf1a7ec5d9",
+    "related_chunk_ids": [
+      "chunk-ec361c38f8e153544cb177cf1a7ec5d9"
+    ]
+  },
+  "created_at": "2025-12-10T16:34:56.800723"
+}
+

@@ -1,0 +1,2806 @@
+{
+  "question_id": "ccef20ed-bb8b-4061-a1e3-9210490066d8",
+  "content": "青岛市市北区后仁路二单元201户是否为青岛办事处地址？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-3c93b9d3699cce500bce38a82dee09fc",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3c93b9d3699cce500bce38a82dee09fc",
+    "related_chunk_ids": [
+      "chunk-3c93b9d3699cce500bce38a82dee09fc"
+    ]
+  },
+  "created_at": "2025-12-10T00:34:22.565577"
+}
+
+{
+  "question_id": "b95c8606-ad5c-450e-bbaf-7cdd2222d35b",
+  "content": "河北任丘金台园小区几号楼一单元903室是否为任丘办事处地址？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-3c93b9d3699cce500bce38a82dee09fc",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3c93b9d3699cce500bce38a82dee09fc",
+    "related_chunk_ids": [
+      "chunk-3c93b9d3699cce500bce38a82dee09fc"
+    ]
+  },
+  "created_at": "2025-12-10T00:34:22.567202"
+}
+
+{
+  "question_id": "c8240792-611b-4172-ad19-f2123a66394f",
+  "content": "GSK 25i 系列在铣削应用中的主轴最高转速和定位精度分别是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fb4a042a3df93073abaa7ac8f784b021"
+    ]
+  },
+  "created_at": "2025-12-10T00:34:43.274853"
+}
+
+{
+  "question_id": "2797996e-acc3-44ae-b9f1-5f99a9895e22",
+  "content": "GSK 988MA 系列与 GSK 980MDi 在伺服驱动配置上有哪些主要区别？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fb4a042a3df93073abaa7ac8f784b021"
+    ]
+  },
+  "created_at": "2025-12-10T00:34:43.275122"
+}
+
+{
+  "question_id": "a1d9471f-6562-440e-8d94-acd33512377c",
+  "content": "GSK 980TTC 的磨削加工适用场景是什么？其控制精度如何保证？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fb4a042a3df93073abaa7ac8f784b021"
+    ]
+  },
+  "created_at": "2025-12-10T00:34:43.275363"
+}
+
+{
+  "question_id": "3614a5e2-0255-43c4-83fc-478d5a4aa322",
+  "content": "GSK 928Ti 磨削数控系统的参数设置对齿轮加工效率有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fb4a042a3df93073abaa7ac8f784b021"
+    ]
+  },
+  "created_at": "2025-12-10T00:34:43.275840"
+}
+
+{
+  "question_id": "d073483f-a162-484a-a384-921e7002bd57",
+  "content": "GSK 25jiG 在木工机械领域的应用中需要哪些特定的伺服电机配置？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fb4a042a3df93073abaa7ac8f784b021"
+    ]
+  },
+  "created_at": "2025-12-10T00:34:43.276084"
+}
+
+{
+  "question_id": "397c5e08-0842-4049-b631-8b8603be4eab",
+  "content": "GSK 980HC 齿轮加工数控系统的设计特点是什么？其重复定位精度如何？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fb4a042a3df93073abaa7ac8f784b021"
+    ]
+  },
+  "created_at": "2025-12-10T00:34:43.276432"
+}
+
+{
+  "question_id": "bde81de6-4d19-48be-aa88-bf76e716ffd2",
+  "content": "GSK 988TD 的行程参数对复杂曲面加工能力有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fb4a042a3df93073abaa7ac8f784b021"
+    ]
+  },
+  "created_at": "2025-12-10T00:34:43.276765"
+}
+
+{
+  "question_id": "7ddbfb1f-ca3b-43d5-a30f-8e4b8e63f7ce",
+  "content": "全国服务热线 (020)81798010 在多线布局下如何实现高效响应？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fb4a042a3df93073abaa7ac8f784b021",
+    "related_chunk_ids": [
+      "chunk-fb4a042a3df93073abaa7ac8f784b021"
+    ]
+  },
+  "created_at": "2025-12-10T00:34:43.277401"
+}
+
+{
+  "question_id": "e7d1c885-7c08-4107-a91a-0afc5fbf8bdc",
+  "content": "GSK 928Ti 数控系统的主要功能特点是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8cfce0c99403a044b7eae3a21c7e1581"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:03.820097"
+}
+
+{
+  "question_id": "66b25354-cb03-40c5-a11b-a7081fdff5e7",
+  "content": "GSK 928TD-L 和 GSK 928TA2 在控制设备类型上有什么区别？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8cfce0c99403a044b7eae3a21c7e1581"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:03.820338"
+}
+
+{
+  "question_id": "d434264c-9da5-4017-aef5-fededa8a12a6",
+  "content": "GSK 986G/GSK 986GS 适用于哪些类型的加工设备？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8cfce0c99403a044b7eae3a21c7e1581"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:03.820579"
+}
+
+{
+  "question_id": "ef126766-7549-4891-bdcf-13e93e766f66",
+  "content": "GSK 980HC 齿轮加工数控系统在齿轮制造中有哪些技术优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8cfce0c99403a044b7eae3a21c7e1581"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:03.820797"
+}
+
+{
+  "question_id": "5d49a968-0d32-4759-bdaf-21b0e0ba5cf0",
+  "content": "GSK 25jiG 木工机械数控系统支持哪些木工加工工艺？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8cfce0c99403a044b7eae3a21c7e1581"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:03.821014"
+}
+
+{
+  "question_id": "6df28804-782f-49ad-8cc0-3045e0c78f78",
+  "content": "GSK 988W 在自动化生产线控制系统中的应用特点是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8cfce0c99403a044b7eae3a21c7e1581"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:03.821230"
+}
+
+{
+  "question_id": "b47bb168-fb7c-4c0a-9596-ae8a9e5edfdc",
+  "content": "GSK 980MDc 木工数控系统获得国家科学技术进步奖的原因是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8cfce0c99403a044b7eae3a21c7e1581"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:03.821450"
+}
+
+{
+  "question_id": "d65d60a8-d962-473f-bd52-c8a418a49026",
+  "content": "GSK 2ZJY 系列伺服驱动单元的技术参数有哪些改进？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8cfce0c99403a044b7eae3a21c7e1581"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:03.821668"
+}
+
+{
+  "question_id": "a58adfe1-b21b-4bc8-bf09-b0cc5a851e8e",
+  "content": "新一代 CNC 控制器（如 GSK 235i 系列）如何实现更高的数据处理速度和系统稳定性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8cfce0c99403a044b7eae3a21c7e1581",
+    "related_entities": [
+      "CNC",
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-8cfce0c99403a044b7eae3a21c7e1581"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:03.822122"
+}
+
+{
+  "question_id": "aab95519-e5c1-4f32-bf26-254907692196",
+  "content": "25iMc系列系统的启动时间从25iMb系列的17ms缩短到了多少秒？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+    "related_chunk_ids": [
+      "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:26.706986"
+}
+
+{
+  "question_id": "4cfd4751-06be-4493-a5a0-ce107957c212",
+  "content": "在抗干扰性方面，25iMc系列相比之前的系统有什么提升？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+    "related_chunk_ids": [
+      "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:26.707552"
+}
+
+{
+  "question_id": "c7beef20-347d-4f8e-8ef1-2a7fdf5967bd",
+  "content": "该系统的网络接口GSK-Link-PA在实际应用中能提供哪些性能表现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+    "related_chunk_ids": [
+      "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:26.707827"
+}
+
+{
+  "question_id": "227a65bb-ba35-45a3-8df3-7bce3813fd16",
+  "content": "五轴RTCP功能对刀具中心点路径的误差分析和数据可视化有哪些具体支持？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+    "related_chunk_ids": [
+      "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:26.708062"
+}
+
+{
+  "question_id": "78e577b2-f594-4342-8a4b-d8a1ba78167d",
+  "content": "25iMc系列系统的存储空间从25iMb的511MB扩容到4GB以上，这对广大用户有什么实际帮助？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+    "related_chunk_ids": [
+      "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:26.708499"
+}
+
+{
+  "question_id": "d61de4ae-da62-4c6c-831d-c3d579089b9d",
+  "content": "在处理效率方面，系统从1.7秒缩减至0.6秒，这为用户带来了哪些优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+    "related_chunk_ids": [
+      "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:26.708749"
+}
+
+{
+  "question_id": "3cdeb15e-08cb-4fb9-831d-a570f7171f82",
+  "content": "独立式按键设计和8.4寸屏幕如何共同提升人机交互体验？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b",
+    "related_chunk_ids": [
+      "chunk-8783c1c36fb1c74c9aec4c4f9aa3f69b"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:26.708976"
+}
+
+{
+  "question_id": "2a9ba28b-4dc3-4457-92b8-4abed2833bd5",
+  "content": "在RTCP开启状态下，五轴机床的进给速度自适应控制是否支持一键加载对应轴选REN文件？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-b0264706c8d8c99217c1bfe2208b08d3",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b0264706c8d8c99217c1bfe2208b08d3",
+    "related_chunk_ids": [
+      "chunk-b0264706c8d8c99217c1bfe2208b08d3"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:47.135045"
+}
+
+{
+  "question_id": "797194d7-f63a-4735-9b42-a5cd9ff0e0a4",
+  "content": "在RTCP关闭状态下，系统如何实现螺补参数及数据的零操作写入以提高加工效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-b0264706c8d8c99217c1bfe2208b08d3",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b0264706c8d8c99217c1bfe2208b08d3",
+    "related_chunk_ids": [
+      "chunk-b0264706c8d8c99217c1bfe2208b08d3"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:47.135583"
+}
+
+{
+  "question_id": "fc956459-d1ad-4ca6-8b62-3d95582ecf8f",
+  "content": "横向进给控制（G160、G161）如何影响五轴定位加工中的进给速度和加减速性能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-b0264706c8d8c99217c1bfe2208b08d3",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b0264706c8d8c99217c1bfe2208b08d3",
+    "related_chunk_ids": [
+      "chunk-b0264706c8d8c99217c1bfe2208b08d3"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:47.136304"
+}
+
+{
+  "question_id": "3416e79d-be43-4ca1-b6d5-a41c916c4f10",
+  "content": "在使用振荡直园定尺尺寸削循环G74时，用户是否只需通过代码设定即可完成加工平面定位？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-b0264706c8d8c99217c1bfe2208b08d3",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b0264706c8d8c99217c1bfe2208b08d3",
+    "related_chunk_ids": [
+      "chunk-b0264706c8d8c99217c1bfe2208b08d3"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:47.136814"
+}
+
+{
+  "question_id": "2392e2f7-2f81-43e2-9f7c-4ccd29ab822a",
+  "content": "支持的高速高精加工模式下，1000段程序前插补的加速度控制如何实现轨迹光顺处理？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-b0264706c8d8c99217c1bfe2208b08d3",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b0264706c8d8c99217c1bfe2208b08d3",
+    "related_chunk_ids": [
+      "chunk-b0264706c8d8c99217c1bfe2208b08d3"
+    ]
+  },
+  "created_at": "2025-12-10T00:35:47.137068"
+}
+
+{
+  "question_id": "7d3850ab-c939-4c23-98f4-f80844754f7a",
+  "content": "横向磨削循环 G72 和纵向走刀磨削循环 G71 在进给方式和固定尺寸处理上有何不同？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-4397c0d7b1734d0282b4384b6ffd1382",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4397c0d7b1734d0282b4384b6ffd1382",
+    "related_entities": [
+      "G72",
+      "G71"
+    ],
+    "related_chunk_ids": [
+      "chunk-4397c0d7b1734d0282b4384b6ffd1382"
+    ]
+  },
+  "created_at": "2025-12-10T00:36:10.659204"
+}
+
+{
+  "question_id": "60af6df5-d669-4d41-bec0-ddbe74a08830",
+  "content": "异步震荡磨削（G101）与其他磨削循环（如 G71、G72、G73 等）相比，在加工效率和表面质量上有哪些特点？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-4397c0d7b1734d0282b4384b6ffd1382",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4397c0d7b1734d0282b4384b6ffd1382",
+    "related_chunk_ids": [
+      "chunk-4397c0d7b1734d0282b4384b6ffd1382"
+    ]
+  },
+  "created_at": "2025-12-10T00:36:10.659968"
+}
+
+{
+  "question_id": "9d3e5157-5875-4a4d-bbe9-02c11d964927",
+  "content": "摆动磨循环（G74）与普通模式 GO5P3 在直接固定尺寸处理上的差异是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-4397c0d7b1734d0282b4384b6ffd1382",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4397c0d7b1734d0282b4384b6ffd1382",
+    "related_entities": [
+      "GO5P3"
+    ],
+    "related_chunk_ids": [
+      "chunk-4397c0d7b1734d0282b4384b6ffd1382"
+    ]
+  },
+  "created_at": "2025-12-10T00:36:10.660462"
+}
+
+{
+  "question_id": "60964da2-8a17-4fbe-8be2-67a8addb6422",
+  "content": "连续进给表面麻点（G78）和切入式固定尺寸循环（G77）在加工时如何选择合适的参数以达到最佳效果？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-4397c0d7b1734d0282b4384b6ffd1382",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4397c0d7b1734d0282b4384b6ffd1382",
+    "related_chunk_ids": [
+      "chunk-4397c0d7b1734d0282b4384b6ffd1382"
+    ]
+  },
+  "created_at": "2025-12-10T00:36:10.660915"
+}
+
+{
+  "question_id": "f2cd85ce-3c5c-4c0e-b230-0072d99792ee",
+  "content": "SSK25i系列数控系统的人性化操作界面中，远程监控和调试功能的具体实现方式是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-b0bda817376112f1bfba0ac67f9ba6ec",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b0bda817376112f1bfba0ac67f9ba6ec",
+    "related_chunk_ids": [
+      "chunk-b0bda817376112f1bfba0ac67f9ba6ec"
+    ]
+  },
+  "created_at": "2025-12-10T00:36:29.220259"
+}
+
+{
+  "question_id": "c12a04f3-1828-40e7-8de4-78edc2e4ae96",
+  "content": "SSK25i系列数控系统的图形分析功能如何辅助调试加工过程中的同步性圆度误差？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-b0bda817376112f1bfba0ac67f9ba6ec",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-b0bda817376112f1bfba0ac67f9ba6ec",
+    "related_chunk_ids": [
+      "chunk-b0bda817376112f1bfba0ac67f9ba6ec"
+    ]
+  },
+  "created_at": "2025-12-10T00:36:29.222145"
+}
+
+{
+  "question_id": "26a900ad-b7b9-4c71-8c62-b1c10443e8ae",
+  "content": "伺服单元支持的最大进给速度为200m/min，插补前后的加减速控制方式是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-d5fc5ef7401f7c609fe5871d6f01529c",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-d5fc5ef7401f7c609fe5871d6f01529c",
+    "related_chunk_ids": [
+      "chunk-d5fc5ef7401f7c609fe5871d6f01529c"
+    ]
+  },
+  "created_at": "2025-12-10T00:36:51.757149"
+}
+
+{
+  "question_id": "047f5f5b-93a0-46f4-be4b-ec8824a8d12e",
+  "content": "最大进给速度 200m/min 对加工效率和表面质量的影响分别是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-236d4d01bce35624817d66646befbd28",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-236d4d01bce35624817d66646befbd28",
+    "related_chunk_ids": [
+      "chunk-236d4d01bce35624817d66646befbd28"
+    ]
+  },
+  "created_at": "2025-12-10T00:37:16.157762"
+}
+
+{
+  "question_id": "1ea9d753-6bd2-4d97-ad79-e565fede7b93",
+  "content": "高速小线段前轨迹平滑处理与预读高达 1000 段功能在复杂曲面加工中如何配合使用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-236d4d01bce35624817d66646befbd28",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-236d4d01bce35624817d66646befbd28",
+    "related_chunk_ids": [
+      "chunk-236d4d01bce35624817d66646befbd28"
+    ]
+  },
+  "created_at": "2025-12-10T00:37:16.158223"
+}
+
+{
+  "question_id": "757e1d1a-d0b7-4c80-b319-4bd6d0330b0f",
+  "content": "RTCP 功能与刀具中心点控制 G43.4 在五轴加工中的具体应用场景是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-236d4d01bce35624817d66646befbd28",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-236d4d01bce35624817d66646befbd28",
+    "related_entities": [
+      "RTCP"
+    ],
+    "related_chunk_ids": [
+      "chunk-236d4d01bce35624817d66646befbd28"
+    ]
+  },
+  "created_at": "2025-12-10T00:37:16.158474"
+}
+
+{
+  "question_id": "13c05b32-4f02-487e-8733-a8bb23dcc786",
+  "content": "倾斜面加工与 (3+2) 定位功能在不同工况下的适用性差异是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-236d4d01bce35624817d66646befbd28",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-236d4d01bce35624817d66646befbd28",
+    "related_chunk_ids": [
+      "chunk-236d4d01bce35624817d66646befbd28"
+    ]
+  },
+  "created_at": "2025-12-10T00:37:16.158693"
+}
+
+{
+  "question_id": "0e532b76-06d9-45b8-9572-2c7fd6f4ca96",
+  "content": "高速高精度加工 G05 与主轴模拟电压输出 10V 的控制逻辑如何关联？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-236d4d01bce35624817d66646befbd28",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-236d4d01bce35624817d66646befbd28",
+    "related_entities": [
+      "G05"
+    ],
+    "related_chunk_ids": [
+      "chunk-236d4d01bce35624817d66646befbd28"
+    ]
+  },
+  "created_at": "2025-12-10T00:37:16.158909"
+}
+
+{
+  "question_id": "302b94e8-feea-4b09-9e3d-47a2a175783f",
+  "content": "GSK25i系列数控系统支持哪些类型的通信协议？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-61a651aa3525c23298327888cac0d62c",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-61a651aa3525c23298327888cac0d62c",
+    "related_chunk_ids": [
+      "chunk-61a651aa3525c23298327888cac0d62c"
+    ]
+  },
+  "created_at": "2025-12-10T00:37:30.228370"
+}
+
+{
+  "question_id": "65e8d1b4-1f37-4e70-ad60-599c3f5e3d20",
+  "content": "以太网总线接口GSK-Link适用于哪种类型的传感器？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-61a651aa3525c23298327888cac0d62c",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-61a651aa3525c23298327888cac0d62c",
+    "related_chunk_ids": [
+      "chunk-61a651aa3525c23298327888cac0d62c"
+    ]
+  },
+  "created_at": "2025-12-10T00:37:30.228834"
+}
+
+{
+  "question_id": "258800bb-a4be-40ce-bd69-fd78ca3ff988",
+  "content": "GSK25iMc支持的接口类型有哪些？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-61a651aa3525c23298327888cac0d62c",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-61a651aa3525c23298327888cac0d62c",
+    "related_chunk_ids": [
+      "chunk-61a651aa3525c23298327888cac0d62c"
+    ]
+  },
+  "created_at": "2025-12-10T00:37:30.230435"
+}
+
+{
+  "question_id": "db94550f-8b2b-4e3d-ac93-3bf16153d177",
+  "content": "GSK 25iMc 横式与竖式 10.4 寸屏独立按键操作面板的安装尺寸有何不同？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fa8fe43965ddef8eecde6c97b54fbcef"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:03.677803"
+}
+
+{
+  "question_id": "f366d7f8-9b65-4de0-9c29-b13f8ac233d0",
+  "content": "独立按键和面膜按键的操作面板在 GSK 25iMc 系统中分别适用于哪些加工场景？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fa8fe43965ddef8eecde6c97b54fbcef"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:03.678070"
+}
+
+{
+  "question_id": "9efe268c-c0ed-4bfe-a865-de823c0758c1",
+  "content": "RTCP 功能如何实现刀尖点及刀轴矢量的精确控制？请结合 GSK 25iMc 系统的实际应用说明。",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+    "related_entities": [
+      "RTCP",
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fa8fe43965ddef8eecde6c97b54fbcef"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:03.678359"
+}
+
+{
+  "question_id": "65c0efd8-d27f-4174-8ea4-6a11f57e9f2e",
+  "content": "GSK 25iMc 竖式 10.4 寸屏操作面板的安装开孔尺寸是多少？请提供具体参数。",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fa8fe43965ddef8eecde6c97b54fbcef"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:03.678640"
+}
+
+{
+  "question_id": "bf73e7ef-c49b-457a-b41d-1b0b5de80e10",
+  "content": "在五轴联动应用中，GSK 25iMc 系统如何保证复杂零件加工的质量与效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+    "related_chunk_ids": [
+      "chunk-fa8fe43965ddef8eecde6c97b54fbcef"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:03.678962"
+}
+
+{
+  "question_id": "9ebfaf15-efdb-4b67-b163-bd13ce246b9b",
+  "content": "GSK 25iMc 系统支持哪些类型的多轴定位与联动加工？请结合实际应用说明。",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fa8fe43965ddef8eecde6c97b54fbcef"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:03.679306"
+}
+
+{
+  "question_id": "4f4c8f92-6f86-4aea-8078-d6c7c2b768c5",
+  "content": "如何在 GSK 25iMc 系统中避免过切和欠切现象？请详细说明相关功能的使用方法。",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fa8fe43965ddef8eecde6c97b54fbcef"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:03.679645"
+}
+
+{
+  "question_id": "c21f93e7-e2a2-4720-9f5b-31b1b36dd510",
+  "content": "GSK 25iMc 系统中的五轴联动功能如何处理刀轴摆动剧烈的情况？请结合实际应用说明。",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fa8fe43965ddef8eecde6c97b54fbcef"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:03.680316"
+}
+
+{
+  "question_id": "a35ae12e-e058-4136-8f99-0bb119da60dc",
+  "content": "GSK 25iMc 横式与竖式操作面板在安装尺寸和按键布局上有哪些具体差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-fa8fe43965ddef8eecde6c97b54fbcef",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-fa8fe43965ddef8eecde6c97b54fbcef"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:03.680692"
+}
+
+{
+  "question_id": "74d9130f-dcaf-49e0-a9d2-842afc3ab9cc",
+  "content": "Z1 和 Z2 轴与 A1、A2 轴的同步双驱结构在全闭环控制下如何实现高精度加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+    "related_entities": [
+      "Z1",
+      "Z2"
+    ],
+    "related_chunk_ids": [
+      "chunk-3f764c0ee977fa0670cafcdabf5b2db3"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:23.098873"
+}
+
+{
+  "question_id": "44227a2a-0006-4c21-95a7-030910890370",
+  "content": "力矩电机在 A1 和 A2 轴上的应用，相比传统电机有哪些性能优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+    "related_entities": [
+      "A1",
+      "A2"
+    ],
+    "related_chunk_ids": [
+      "chunk-3f764c0ee977fa0670cafcdabf5b2db3"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:23.099190"
+}
+
+{
+  "question_id": "7c276e85-4125-4a94-ba8c-8f46c7ff007d",
+  "content": "54Kw 电主轴在 24000 转运行时，对工件的表面质量和加工效率有什么影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+    "related_chunk_ids": [
+      "chunk-3f764c0ee977fa0670cafcdabf5b2db3"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:23.099506"
+}
+
+{
+  "question_id": "b432a384-7862-44dd-a78e-b79ef10fc829",
+  "content": "工作台直径为 400mm 的五轴加工中心在加工叶片和叶轮时，如何确保复杂曲面的高精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+    "related_chunk_ids": [
+      "chunk-3f764c0ee977fa0670cafcdabf5b2db3"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:23.100038"
+}
+
+{
+  "question_id": "8bfadda3-c13e-422e-b556-03f500425cfc",
+  "content": "HBC-U150 五轴加工中心采用非正交双转台结构，在加工复杂零件时有什么独特优势？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+    "related_entities": [
+      "HBC-U150"
+    ],
+    "related_chunk_ids": [
+      "chunk-3f764c0ee977fa0670cafcdabf5b2db3"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:23.100548"
+}
+
+{
+  "question_id": "4675ffe5-8e94-4961-8dbb-1af2e93e573f",
+  "content": "TG55-CNC 加工硬质合金和木工成型时，主轴摆动范围 -5~+110 度对加工效率有何影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+    "related_entities": [
+      "TG55-CNC"
+    ],
+    "related_chunk_ids": [
+      "chunk-3f764c0ee977fa0670cafcdabf5b2db3"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:23.100806"
+}
+
+{
+  "question_id": "fada2f9c-b307-44aa-811d-1662e94dae6f",
+  "content": "ED54-CNC 五轴电火花机动采用独立油冷却主轴系统，在高精度磨削过程中如何确保热变形控制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-3f764c0ee977fa0670cafcdabf5b2db3",
+    "related_entities": [
+      "ED54-CNC"
+    ],
+    "related_chunk_ids": [
+      "chunk-3f764c0ee977fa0670cafcdabf5b2db3"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:23.101293"
+}
+
+{
+  "question_id": "aeea09a2-efa1-4556-b77e-1cb7479bd1a6",
+  "content": "GSK 218MC 系列五轴联动加工中心的最高定位速度是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-61fc40019ddb86b290e10569ba593424"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:47.867853"
+}
+
+{
+  "question_id": "665cddd1-7db0-4068-98b5-21aa8b849e5d",
+  "content": "高速立式加工中心在最佳加工速度4m/min时，如何实现复杂曲面的高效加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+    "related_chunk_ids": [
+      "chunk-61fc40019ddb86b290e10569ba593424"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:47.868090"
+}
+
+{
+  "question_id": "04170f80-171a-4245-8678-f85be9afaade",
+  "content": "GSK 218MC-V 和 GSK218MC-H 在主轴模拟电压和组 PMC 轴适配上的差异是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+    "related_entities": [
+      "GSK",
+      "GSK218MC-H",
+      "PMC"
+    ],
+    "related_chunk_ids": [
+      "chunk-61fc40019ddb86b290e10569ba593424"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:47.868584"
+}
+
+{
+  "question_id": "d7333425-cb1e-42f7-8872-dbb630c8accd",
+  "content": "GSK 208D 系列在同一系统内实现铣削和车削自由切换的具体代码是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-61fc40019ddb86b290e10569ba593424"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:47.869042"
+}
+
+{
+  "question_id": "83c3c9ae-34b9-4d33-bbc6-0edc6a9c0dea",
+  "content": "支持在线监视、编辑和编译功能的情况下，GSK 990MC 如何通过开放 PLC 实现高效监控？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+    "related_entities": [
+      "PLC"
+    ],
+    "related_chunk_ids": [
+      "chunk-61fc40019ddb86b290e10569ba593424"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:47.869261"
+}
+
+{
+  "question_id": "76c65be2-c69f-4310-ae92-e2cae3a1d9d0",
+  "content": "GSK-Link 总线功能在支持绝对式电机时的扩展性如何体现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+    "related_entities": [
+      "GSK-Link"
+    ],
+    "related_chunk_ids": [
+      "chunk-61fc40019ddb86b290e10569ba593424"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:47.869764"
+}
+
+{
+  "question_id": "50f1cd1a-2875-4f58-97c2-f6152b98d346",
+  "content": "插补预处理段数高达 1000 段的情况下，GSK 25i 系列 CNC 系统的前瞻功能如何优化加工流程？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-61fc40019ddb86b290e10569ba593424",
+    "related_entities": [
+      "CNC"
+    ],
+    "related_chunk_ids": [
+      "chunk-61fc40019ddb86b290e10569ba593424"
+    ]
+  },
+  "created_at": "2025-12-10T00:38:47.870026"
+}
+
+{
+  "question_id": "0bdf00c5-0106-4f2c-aa24-d0de96a8e1e8",
+  "content": "GSK-Link总线功能支持哪些类型的驱动器进行混合连接和使用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+    "related_chunk_ids": [
+      "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25"
+    ]
+  },
+  "created_at": "2025-12-10T00:39:12.365096"
+}
+
+{
+  "question_id": "1940d47f-8233-4925-af53-b629e3f3173c",
+  "content": "高速样条插补算法如何影响GSK 218MC-H2系列的加工表面光洁度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+    "related_chunk_ids": [
+      "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25"
+    ]
+  },
+  "created_at": "2025-12-10T00:39:12.365341"
+}
+
+{
+  "question_id": "add273c5-7814-419c-85d8-9c9bd243a25a",
+  "content": "GSK-Link总线配置针对异型螺杆机床时，运动控制插补时间大幅缩短的原因是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+    "related_chunk_ids": [
+      "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25"
+    ]
+  },
+  "created_at": "2025-12-10T00:39:12.365806"
+}
+
+{
+  "question_id": "232d1775-5fde-43cd-8594-954b5b97da15",
+  "content": "采用G07抛物线旋插补指令和G01螺旋插补指令后，如何根据螺杆要求调整加工功能参数？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+    "related_chunk_ids": [
+      "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25"
+    ]
+  },
+  "created_at": "2025-12-10T00:39:12.366052"
+}
+
+{
+  "question_id": "8636ce02-2adb-451f-8985-49fd60abe6fe",
+  "content": "GSK 218MC-H2的高速插补技术对复杂曲面加工的有效速度和最佳加工速度有何具体影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25"
+    ]
+  },
+  "created_at": "2025-12-10T00:39:12.366775"
+}
+
+{
+  "question_id": "43d2b361-0e13-46c5-9474-cf92cb8e2773",
+  "content": "在使用RJ45接口进行总线连接时，如何设置从机号和里号以实现稳定通信？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+    "related_chunk_ids": [
+      "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25"
+    ]
+  },
+  "created_at": "2025-12-10T00:39:12.367058"
+}
+
+{
+  "question_id": "e8e39a7b-45e0-48c6-92b1-4459e57a3d62",
+  "content": "高速样条插补算法在GSK 218MC-H2系列中的预处理段数提升对加工效率的改善有哪些具体表现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+    "related_chunk_ids": [
+      "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25"
+    ]
+  },
+  "created_at": "2025-12-10T00:39:12.367361"
+}
+
+{
+  "question_id": "d18d3119-58ac-481a-83f0-621d89cbe4a4",
+  "content": "GSK-Link总线适配GR/GE驱动器时，在CNC中如何实现在线伺服参数的查看、设置和备份还原操作？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25",
+    "related_chunk_ids": [
+      "chunk-cb5f0405e10c2f3fc6b5ac7774fbde25"
+    ]
+  },
+  "created_at": "2025-12-10T00:39:12.367663"
+}
+
+{
+  "question_id": "6d343f90-a8ba-4502-b66d-56aba26cf82c",
+  "content": "RS232、USB和RJ45三种通信接口在DNC加工中的适用场景有何差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-4510b329cb27c1b3ae509b92a498c2f0",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4510b329cb27c1b3ae509b92a498c2f0",
+    "related_chunk_ids": [
+      "chunk-4510b329cb27c1b3ae509b92a498c2f0"
+    ]
+  },
+  "created_at": "2025-12-10T00:39:36.047959"
+}
+
+{
+  "question_id": "3c5e8518-3563-4df5-bdb5-0c01d79b60f6",
+  "content": "加工时间比以往缩短5-30%的效果在进给速度提升时如何体现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-4510b329cb27c1b3ae509b92a498c2f0",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-4510b329cb27c1b3ae509b92a498c2f0",
+    "related_chunk_ids": [
+      "chunk-4510b329cb27c1b3ae509b92a498c2f0"
+    ]
+  },
+  "created_at": "2025-12-10T00:39:36.048186"
+}
+
+{
+  "question_id": "63b28bd1-9714-4593-b5f9-10a18b195213",
+  "content": "GSK 218MC 系统在使用广数绝对式光栅尺时，如何避免因数据处理导致的过切现象？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-1e4dba49742f9a9b914c71511beb168f"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:13.393304"
+}
+
+{
+  "question_id": "78c13454-e930-4dc1-84de-d230b3d87d9a",
+  "content": "GSK 990MC 系统在平面移动时，法线方向控制功能如何确保刀具始终垂直切削面？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-1e4dba49742f9a9b914c71511beb168f"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:13.394004"
+}
+
+{
+  "question_id": "4faaca6d-b32b-435f-8267-b760d74a7f1c",
+  "content": "GSK 218MC-H2 系统与 GSK 218MC 系统相比，在屏幕尺寸和安装尺寸上有哪些差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-1e4dba49742f9a9b914c71511beb168f"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:13.394327"
+}
+
+{
+  "question_id": "488bbeac-1c9c-45dd-91ff-a6e55d650080",
+  "content": "GSK 208D 系统在配备广数绝对式变频主轴驱动器时，如何处理低速光栅尺数据？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-1e4dba49742f9a9b914c71511beb168f"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:13.394664"
+}
+
+{
+  "question_id": "79e05a00-c41d-4719-991b-75424e539b52",
+  "content": "GSK 218MC-V 坚固式系统在使用继电器输出板时，可扩展的主轴数量是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-1e4dba49742f9a9b914c71511beb168f"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:13.395302"
+}
+
+{
+  "question_id": "c7aa782a-9c96-44b3-afff-9828138abdcb",
+  "content": "GSK 208D 系统在实现自动上下料时，如何利用梅架功能节省设备成本？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-1e4dba49742f9a9b914c71511beb168f"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:13.395615"
+}
+
+{
+  "question_id": "e8e8ca82-b092-4d12-8479-7c117aa1d473",
+  "content": "GSK 218MC 系统支持的双向螺纹补偿和分式间隙补偿功能在实际加工中有什么作用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1e4dba49742f9a9b914c71511beb168f",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-1e4dba49742f9a9b914c71511beb168f"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:13.395920"
+}
+
+{
+  "question_id": "3e3d91bf-e443-4ba3-b883-793d174dcc31",
+  "content": "GSK 218MC-H 横式安装尺寸中，屏幕、面膜、按键和主机面板的具体尺寸参数是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-12284ca163a66fcf7b4decf0ecc463a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:35.386130"
+}
+
+{
+  "question_id": "57ec27d1-ca2b-4eeb-8874-5256bc63dfe7",
+  "content": "GSK 990MC 横式与坚式安装方式下，操作面板的布局差异体现在哪些方面？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-12284ca163a66fcf7b4decf0ecc463a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:35.386445"
+}
+
+{
+  "question_id": "b44ef7ab-b8aa-4f65-bd12-5517751a26d3",
+  "content": "支持 Aaa 网络的情况下，GSK 218MC-H 如何实现手轮模拟功能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+    "related_entities": [
+      "Aaa"
+    ],
+    "related_chunk_ids": [
+      "chunk-12284ca163a66fcf7b4decf0ecc463a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:35.386676"
+}
+
+{
+  "question_id": "271f2e84-7cb4-402b-be5d-e569a91d4045",
+  "content": "GSK 208D-V 坚式安装尺寸中，用户开孔图的具体参数有哪些？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-12284ca163a66fcf7b4decf0ecc463a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:35.386906"
+}
+
+{
+  "question_id": "d0c31001-9de5-45a8-a4c9-9faa9ca719da",
+  "content": "GSK 218MC 和 GSK 208D 在支持双向控制时，系统外形和安装尺寸有何差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-12284ca163a66fcf7b4decf0ecc463a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:35.387122"
+}
+
+{
+  "question_id": "48c98414-9f69-4d2e-a242-4816fd6f7410",
+  "content": "GSK 990MC 的 8.4 寸屏幕面板与 GSK 218MC-H 的 10.4 寸屏幕面板在安装尺寸上有哪些不同？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-12284ca163a66fcf7b4decf0ecc463a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:35.387344"
+}
+
+{
+  "question_id": "9c32f3a3-ce7d-4247-ba03-3e697b424cc0",
+  "content": "在支持 Aaa 网络的条件下，GSK 208D-H 横式安装尺寸的具体数值是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+    "related_entities": [
+      "Aaa"
+    ],
+    "related_chunk_ids": [
+      "chunk-12284ca163a66fcf7b4decf0ecc463a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:35.387560"
+}
+
+{
+  "question_id": "12f5e001-bfd6-4deb-949b-96ecf9fcfb3f",
+  "content": "GSK 208D-V 坚式操作面板与 GSK 218MC-H2 横式操作面板在用户开孔图上的参数差异是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-12284ca163a66fcf7b4decf0ecc463a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:35.387779"
+}
+
+{
+  "question_id": "58bccb6f-7457-4fed-8524-37884052e02d",
+  "content": "支持 Aaa 网络时，GSK 218MC 和 GSK 208D 在系统外形和安装尺寸上如何区分？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+    "related_entities": [
+      "Aaa",
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-12284ca163a66fcf7b4decf0ecc463a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:35.388029"
+}
+
+{
+  "question_id": "47828011-10b0-4f12-af95-8518c4388b5b",
+  "content": "GSK 208D-H 横式面板在支持手轮模拟功能时，其安装尺寸的具体数值是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12284ca163a66fcf7b4decf0ecc463a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-12284ca163a66fcf7b4decf0ecc463a9"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:35.388295"
+}
+
+{
+  "question_id": "9d61516f-5991-442f-a824-370f9efa385c",
+  "content": "GSK 218MC 数控系统在滚齿机上支持哪些类型的齿轮加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f7447264fa038d828d03ac5733c31650",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f7447264fa038d828d03ac5733c31650",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-f7447264fa038d828d03ac5733c31650"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:57.040098"
+}
+
+{
+  "question_id": "5fe8ce59-ef59-4d0e-a9c0-9a1a21c60a21",
+  "content": "系统如何通过自动对齿功能提高加工精度以满足GB10095-2001标准的6-7级要求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f7447264fa038d828d03ac5733c31650",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f7447264fa038d828d03ac5733c31650",
+    "related_chunk_ids": [
+      "chunk-f7447264fa038d828d03ac5733c31650"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:57.040716"
+}
+
+{
+  "question_id": "d2e3d262-2fd0-4712-8730-1b31d5fe4f93",
+  "content": "EtherCAT总线适配CoE接口在伺服驱动单元中的应用场景是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f7447264fa038d828d03ac5733c31650",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f7447264fa038d828d03ac5733c31650",
+    "related_chunk_ids": [
+      "chunk-f7447264fa038d828d03ac5733c31650"
+    ]
+  },
+  "created_at": "2025-12-10T00:40:57.041007"
+}
+
+{
+  "question_id": "b6653d9d-6087-4614-924f-d19537c98f63",
+  "content": "GSK988MA系列铣床加工中心系统支持哪两种屏幕尺寸？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1394d23eb7d7fba6a88adcf702603cff",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1394d23eb7d7fba6a88adcf702603cff",
+    "related_chunk_ids": [
+      "chunk-1394d23eb7d7fba6a88adcf702603cff"
+    ]
+  },
+  "created_at": "2025-12-10T00:41:14.748861"
+}
+
+{
+  "question_id": "9e26133a-9c50-4f84-9824-47659bb76100",
+  "content": "8.4寸和10.4寸液晶屏在显示效果上有何区别？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1394d23eb7d7fba6a88adcf702603cff",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1394d23eb7d7fba6a88adcf702603cff",
+    "related_chunk_ids": [
+      "chunk-1394d23eb7d7fba6a88adcf702603cff"
+    ]
+  },
+  "created_at": "2025-12-10T00:41:14.749129"
+}
+
+{
+  "question_id": "135c3898-084a-450b-9611-5b0e7e6c0073",
+  "content": "系统支持的look-ahead技术如何实现高速小线段模具加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1394d23eb7d7fba6a88adcf702603cff",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1394d23eb7d7fba6a88adcf702603cff",
+    "related_chunk_ids": [
+      "chunk-1394d23eb7d7fba6a88adcf702603cff"
+    ]
+  },
+  "created_at": "2025-12-10T00:41:14.749454"
+}
+
+{
+  "question_id": "adce19be-e5c5-4d69-9786-0aaa9eadca3f",
+  "content": "样条拟合技术在GSK988MA系统中如何提高加工精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1394d23eb7d7fba6a88adcf702603cff",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1394d23eb7d7fba6a88adcf702603cff",
+    "related_chunk_ids": [
+      "chunk-1394d23eb7d7fba6a88adcf702603cff"
+    ]
+  },
+  "created_at": "2025-12-10T00:41:14.749722"
+}
+
+{
+  "question_id": "0345e0f4-3378-46d3-913c-910a5a44b6c6",
+  "content": "GSK988MA系统支持的最大进给速度是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-1394d23eb7d7fba6a88adcf702603cff",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-1394d23eb7d7fba6a88adcf702603cff",
+    "related_chunk_ids": [
+      "chunk-1394d23eb7d7fba6a88adcf702603cff"
+    ]
+  },
+  "created_at": "2025-12-10T00:41:14.750257"
+}
+
+{
+  "question_id": "b3136bcf-8e82-4b6d-939f-45734ddd6498",
+  "content": "在伺服电机中，多圈绝对式编码器与磁阻编码器、栅码器接入如何实现高精度轴GS2000 HER rms的控制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2f020dbc38757e7ddb1a62bf50d1a40d",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2f020dbc38757e7ddb1a62bf50d1a40d",
+    "related_entities": [
+      "HER"
+    ],
+    "related_chunk_ids": [
+      "chunk-2f020dbc38757e7ddb1a62bf50d1a40d"
+    ]
+  },
+  "created_at": "2025-12-10T00:41:43.483588"
+}
+
+{
+  "question_id": "35279e2c-c36a-4723-9dba-119ddc5a7644",
+  "content": "GR3000-L系列主轴驱动单元的接入对高精度位置控制有何具体支持？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2f020dbc38757e7ddb1a62bf50d1a40d",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2f020dbc38757e7ddb1a62bf50d1a40d",
+    "related_chunk_ids": [
+      "chunk-2f020dbc38757e7ddb1a62bf50d1a40d"
+    ]
+  },
+  "created_at": "2025-12-10T00:41:43.483992"
+}
+
+{
+  "question_id": "1e34bcf7-4fe2-4f8b-a372-7f3b213c9d03",
+  "content": "在不同I/O单元中，16点输入/输出与32点输入/输出的应用场景有何差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2f020dbc38757e7ddb1a62bf50d1a40d",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2f020dbc38757e7ddb1a62bf50d1a40d",
+    "related_chunk_ids": [
+      "chunk-2f020dbc38757e7ddb1a62bf50d1a40d"
+    ]
+  },
+  "created_at": "2025-12-10T00:41:43.484882"
+}
+
+{
+  "question_id": "11139f54-e48d-4fe2-bd4d-3acdfb9178b8",
+  "content": "8.4寸屏幕和10.4寸屏幕的操作面板在安装布局上有哪些区别？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2f020dbc38757e7ddb1a62bf50d1a40d",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2f020dbc38757e7ddb1a62bf50d1a40d",
+    "related_chunk_ids": [
+      "chunk-2f020dbc38757e7ddb1a62bf50d1a40d"
+    ]
+  },
+  "created_at": "2025-12-10T00:41:43.485493"
+}
+
+{
+  "question_id": "465fd0df-b6bc-4651-bd5e-e8fb9d37122d",
+  "content": "GSK 988MA 系列支持的最小插补精度为 0.1um，结合 1ms 的插补周期，如何优化运动控制算法以实现高精度加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-16da6a332b8b7140858c10f39a44ff78",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-16da6a332b8b7140858c10f39a44ff78",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-16da6a332b8b7140858c10f39a44ff78"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:06.197741"
+}
+
+{
+  "question_id": "da55f840-8d02-4c25-875e-23754b5e7634",
+  "content": "JERK 控制功能在加速、减速和停止阶段分别采用哪些控制策略来保证机床运行的稳定性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-16da6a332b8b7140858c10f39a44ff78",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-16da6a332b8b7140858c10f39a44ff78",
+    "related_entities": [
+      "JERK"
+    ],
+    "related_chunk_ids": [
+      "chunk-16da6a332b8b7140858c10f39a44ff78"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:06.198521"
+}
+
+{
+  "question_id": "a3b19ec1-ac10-4b93-87cc-ea40a5d896b0",
+  "content": "GSK-Link 总线支持双通道控制，如何实现铣床加工程序与机械手控制的同步运行？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-16da6a332b8b7140858c10f39a44ff78",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-16da6a332b8b7140858c10f39a44ff78",
+    "related_entities": [
+      "GSK-Link"
+    ],
+    "related_chunk_ids": [
+      "chunk-16da6a332b8b7140858c10f39a44ff78"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:06.198760"
+}
+
+{
+  "question_id": "4ece7308-6b82-49f5-aa7e-87c0cd61de6d",
+  "content": "GSK988MA系列数控系统支持双通道控制功能，每个通道最多可以控制多少个轴？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+    "related_chunk_ids": [
+      "chunk-2e915e49191253b4970fd664d2382f9c"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:25.443082"
+}
+
+{
+  "question_id": "1caf4dc1-74c8-4ab9-9de4-853ae8475552",
+  "content": "在GSK988MA系列中，单通道最多能控制多少个主轴？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+    "related_chunk_ids": [
+      "chunk-2e915e49191253b4970fd664d2382f9c"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:25.443337"
+}
+
+{
+  "question_id": "57ba5dd7-d86b-4215-b500-ad6d88ee10e3",
+  "content": "GSK988MA系列的宏指令如何实现直线插补功能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+    "related_chunk_ids": [
+      "chunk-2e915e49191253b4970fd664d2382f9c"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:25.443546"
+}
+
+{
+  "question_id": "90c712fc-cdde-4c08-85d0-0600c19213ce",
+  "content": "GSK988MA系列在轮廓控制同步方面有哪些具体的技术特点？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+    "related_chunk_ids": [
+      "chunk-2e915e49191253b4970fd664d2382f9c"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:25.443983"
+}
+
+{
+  "question_id": "1b88428d-dce7-474e-b329-7be7448f27c7",
+  "content": "GSK988MA系列中，主轴模拟输出如何实现多边形加工的周速恒定控制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+    "related_chunk_ids": [
+      "chunk-2e915e49191253b4970fd664d2382f9c"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:25.444191"
+}
+
+{
+  "question_id": "dba20c24-1091-41ec-a95b-1346324b1d77",
+  "content": "GSK988MA系列在紧急超程检测方面有哪些行程安全保护措施？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+    "related_chunk_ids": [
+      "chunk-2e915e49191253b4970fd664d2382f9c"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:25.444719"
+}
+
+{
+  "question_id": "5cc60438-6e50-4713-aba6-542c39f7824f",
+  "content": "GSK988MA系列如何实现镜像和倒角路径间的干涉检测？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+    "related_chunk_ids": [
+      "chunk-2e915e49191253b4970fd664d2382f9c"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:25.445052"
+}
+
+{
+  "question_id": "430c0d22-7b86-4992-823f-c3f0376d3b1d",
+  "content": "在GSK988MA系列中，最多可以控制多少个路径内的轴？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2e915e49191253b4970fd664d2382f9c",
+    "related_chunk_ids": [
+      "chunk-2e915e49191253b4970fd664d2382f9c"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:25.445303"
+}
+
+{
+  "question_id": "7b2b228d-199d-4d41-a38e-c32c5a30959b",
+  "content": "GSK 980MDi 的伺服驱动单元如何实现轴联动直线的最小控制精度 0.1um？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-f27f78131d98d3436f3d78877d805be3"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:45.027124"
+}
+
+{
+  "question_id": "ec85a82e-5aea-4e66-a560-262ab1618c94",
+  "content": "在最高运行速度 100m/min 的情况下，GSK 980MDi 如何保证高精运动控制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+    "related_chunk_ids": [
+      "chunk-f27f78131d98d3436f3d78877d805be3"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:45.027374"
+}
+
+{
+  "question_id": "ead3aa39-7aeb-41f9-91b7-03fd191dabc2",
+  "content": "GSK 980MDi 支持哪些类型的刀库？这些刀库如何满足加工中心和外围凸件的加工需求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-f27f78131d98d3436f3d78877d805be3"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:45.027605"
+}
+
+{
+  "question_id": "47451255-c034-4d35-bf72-674a2c33d86b",
+  "content": "GSK 980MDi 配置的伺服电机使用了哪些特性以实现绝对式编码器的应用？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-f27f78131d98d3436f3d78877d805be3"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:45.027861"
+}
+
+{
+  "question_id": "c4e65fe4-946c-4acb-832f-5151a8020f36",
+  "content": "在支持刚性攻丝的情况下，GSK 980MDi 如何处理高次样条曲线的模具加工？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+    "related_chunk_ids": [
+      "chunk-f27f78131d98d3436f3d78877d805be3"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:45.028096"
+}
+
+{
+  "question_id": "f55aebfa-9c30-4379-8533-a97f3401a785",
+  "content": "GSK 980MDi 的在线 CAM 功能如何读取 DXF 文件并生成加工程序？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+    "related_entities": [
+      "GSK",
+      "CAM",
+      "DXF"
+    ],
+    "related_chunk_ids": [
+      "chunk-f27f78131d98d3436f3d78877d805be3"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:45.028331"
+}
+
+{
+  "question_id": "9a94831e-4f5a-4c8b-bedb-5f4b0f70dfae",
+  "content": "GSK 980MDi 的伺服参数在线配置和状态实时监测功能具体有哪些应用场景？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-f27f78131d98d3436f3d78877d805be3"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:45.028567"
+}
+
+{
+  "question_id": "b3368c4c-c164-479e-8f44-eca8f784efb0",
+  "content": "GSK 980MDi 的高次样条曲线加工需要哪些特定的伺服控制策略？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-f27f78131d98d3436f3d78877d805be3"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:45.028816"
+}
+
+{
+  "question_id": "ba9f0f2b-6ac2-48e3-aaba-d8f429c44871",
+  "content": "在支持高速小线段程序的情况下，GSK 980MDi 如何优化模具加工效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+    "related_chunk_ids": [
+      "chunk-f27f78131d98d3436f3d78877d805be3"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:45.029048"
+}
+
+{
+  "question_id": "0dc6877b-a2a6-42f7-a617-fd9a5762fc76",
+  "content": "GSK 980MDi 的扭距保护功能在自动对刀时如何确保加工精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f27f78131d98d3436f3d78877d805be3",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-f27f78131d98d3436f3d78877d805be3"
+    ]
+  },
+  "created_at": "2025-12-10T00:42:45.029288"
+}
+
+{
+  "question_id": "cd7a0e1c-66a3-42ff-a16a-647aef05d502",
+  "content": "GSL-Link 工业以太网总线最高运行速度 100m/min 的情况下，如何优化伺服电机的进给轴控制精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-24caa1d18b927f79f80912e6a43c57b2",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-24caa1d18b927f79f80912e6a43c57b2",
+    "related_entities": [
+      "GSL-Link"
+    ],
+    "related_chunk_ids": [
+      "chunk-24caa1d18b927f79f80912e6a43c57b2"
+    ]
+  },
+  "created_at": "2025-12-10T00:43:12.706060"
+}
+
+{
+  "question_id": "a45cb1e2-e0b1-4206-b772-ea082237a93f",
+  "content": "SINAC EEG FLAS 直线连续钻孔指令 (G140/G141) 和 GROOOO tal AREY HMR RES GSK-Link 总线棋盘孔循环指令 (G144) 在编程复杂性上有何差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-24caa1d18b927f79f80912e6a43c57b2",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-24caa1d18b927f79f80912e6a43c57b2",
+    "related_entities": [
+      "SINAC",
+      "EEG",
+      "FLAS",
+      "GROOOO",
+      "AREY",
+      "HMR",
+      "RES",
+      "GSK-Link",
+      "G144"
+    ],
+    "related_chunk_ids": [
+      "chunk-24caa1d18b927f79f80912e6a43c57b2"
+    ]
+  },
+  "created_at": "2025-12-10T00:43:12.706660"
+}
+
+{
+  "question_id": "300d33f0-9cf6-4fb3-8ac8-ea67cb6ee17a",
+  "content": "针对高速小线段模具加工（gGox gel），如何优化 UG 或 Mastercam 等编程软件生成的小线段程序的执行效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-24caa1d18b927f79f80912e6a43c57b2",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-24caa1d18b927f79f80912e6a43c57b2",
+    "related_entities": [
+      "Mastercam"
+    ],
+    "related_chunk_ids": [
+      "chunk-24caa1d18b927f79f80912e6a43c57b2"
+    ]
+  },
+  "created_at": "2025-12-10T00:43:12.707176"
+}
+
+{
+  "question_id": "b62edb86-712d-4604-bf7b-8387a4c0a50e",
+  "content": "在直线连续钻孔指令 (G140/G141) 和圆连续钻孔指令 (G144) 的应用中，如何设置参数以实现最佳加工效果？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-24caa1d18b927f79f80912e6a43c57b2",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-24caa1d18b927f79f80912e6a43c57b2",
+    "related_entities": [
+      "G144"
+    ],
+    "related_chunk_ids": [
+      "chunk-24caa1d18b927f79f80912e6a43c57b2"
+    ]
+  },
+  "created_at": "2025-12-10T00:43:12.707447"
+}
+
+{
+  "question_id": "7532c3bf-86ae-4c27-8bd8-171d7701d0b1",
+  "content": "主轴转速范围 0rpm~99999rpm 的具体应用场景是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-19e46331c4f7b56da621072e17dc01cd",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-19e46331c4f7b56da621072e17dc01cd",
+    "related_chunk_ids": [
+      "chunk-19e46331c4f7b56da621072e17dc01cd"
+    ]
+  },
+  "created_at": "2025-12-10T00:43:30.953404"
+}
+
+{
+  "question_id": "85d945e3-57e7-4c75-9336-d80da8dad42e",
+  "content": "主轴编码器反馈线数可设定为2500或5000 ppr，这两者在伺服参数调试时如何选择？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-19e46331c4f7b56da621072e17dc01cd",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-19e46331c4f7b56da621072e17dc01cd",
+    "related_chunk_ids": [
+      "chunk-19e46331c4f7b56da621072e17dc01cd"
+    ]
+  },
+  "created_at": "2025-12-10T00:43:30.953648"
+}
+
+{
+  "question_id": "9960faf1-38e1-4652-a647-5c26290f5a0d",
+  "content": "程序容量达到64M时，最多可以存储多少个程序？包括子程序吗？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-19e46331c4f7b56da621072e17dc01cd",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-19e46331c4f7b56da621072e17dc01cd",
+    "related_chunk_ids": [
+      "chunk-19e46331c4f7b56da621072e17dc01cd"
+    ]
+  },
+  "created_at": "2025-12-10T00:43:30.954833"
+}
+
+{
+  "question_id": "86786965-2d5b-401d-8354-76c9948cbb01",
+  "content": "在反向间隙补偿 mm~2 或 inch~0.2 inch 方式下，如何通过宏程序调用实现补偿参数的动态调整？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-c7d44ce8fee8951d933e791b3fd36894",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c7d44ce8fee8951d933e791b3fd36894",
+    "related_chunk_ids": [
+      "chunk-c7d44ce8fee8951d933e791b3fd36894"
+    ]
+  },
+  "created_at": "2025-12-10T00:43:53.872144"
+}
+
+{
+  "question_id": "291773db-8430-4874-9e0c-10d11b76f3ff",
+  "content": "直线插补 mm/min ~100000 mm/min 的快速定位速度，与螺旋线插补 mm/min ~15000 mm/min 的切削进给速度，在精度控制上有何差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-c7d44ce8fee8951d933e791b3fd36894",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c7d44ce8fee8951d933e791b3fd36894",
+    "related_chunk_ids": [
+      "chunk-c7d44ce8fee8951d933e791b3fd36894"
+    ]
+  },
+  "created_at": "2025-12-10T00:43:53.872846"
+}
+
+{
+  "question_id": "3add594d-3e12-4d4b-b8ca-c65eb93da7fb",
+  "content": "各轴补偿点数由参数设定时，如何在 1024 个补偿点中分配以实现最优的螺距误差校正？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-c7d44ce8fee8951d933e791b3fd36894",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c7d44ce8fee8951d933e791b3fd36894",
+    "related_chunk_ids": [
+      "chunk-c7d44ce8fee8951d933e791b3fd36894"
+    ]
+  },
+  "created_at": "2025-12-10T00:43:53.873126"
+}
+
+{
+  "question_id": "799bc811-f03b-43d8-9747-8923c628091d",
+  "content": "局部坐标系、机床坐标系与工件坐标系（G54~G59）的选择与转换，在复杂零件加工中如何提高编程效率和加工精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-c7d44ce8fee8951d933e791b3fd36894",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c7d44ce8fee8951d933e791b3fd36894",
+    "related_chunk_ids": [
+      "chunk-c7d44ce8fee8951d933e791b3fd36894"
+    ]
+  },
+  "created_at": "2025-12-10T00:43:53.874940"
+}
+
+{
+  "question_id": "55b7b0b5-9faf-4405-b15b-786175050564",
+  "content": "G02代码（顺时针圆弧/螺旋线插补）与G03代码（逆时针圆弧插补）在应用过程中有哪些关键参数需要特别注意？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-13869b28c250b5a9ff804d44e6df00f8",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-13869b28c250b5a9ff804d44e6df00f8",
+    "related_chunk_ids": [
+      "chunk-13869b28c250b5a9ff804d44e6df00f8"
+    ]
+  },
+  "created_at": "2025-12-10T00:44:14.428000"
+}
+
+{
+  "question_id": "e78fa432-4924-43e8-a081-f36970ac3dd8",
+  "content": "G53选择机床坐标系与G54工件坐标系在编程应用中有哪些主要区别？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-13869b28c250b5a9ff804d44e6df00f8",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-13869b28c250b5a9ff804d44e6df00f8",
+    "related_chunk_ids": [
+      "chunk-13869b28c250b5a9ff804d44e6df00f8"
+    ]
+  },
+  "created_at": "2025-12-10T00:44:14.428512"
+}
+
+{
+  "question_id": "b4155f0e-4598-4a48-9e71-ea838dc43bc2",
+  "content": "数控系统RJ45网口和GSK-LINK网口在数据传输速度和通信协议上有哪些不同？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-13869b28c250b5a9ff804d44e6df00f8",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-13869b28c250b5a9ff804d44e6df00f8",
+    "related_chunk_ids": [
+      "chunk-13869b28c250b5a9ff804d44e6df00f8"
+    ]
+  },
+  "created_at": "2025-12-10T00:44:14.428743"
+}
+
+{
+  "question_id": "3192cc33-e6d9-4e93-b356-65c6cc6fa926",
+  "content": "G01直线插补和G02顺时针圆弧插补在进给速度控制上有何技术差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-13869b28c250b5a9ff804d44e6df00f8",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-13869b28c250b5a9ff804d44e6df00f8",
+    "related_chunk_ids": [
+      "chunk-13869b28c250b5a9ff804d44e6df00f8"
+    ]
+  },
+  "created_at": "2025-12-10T00:44:14.428962"
+}
+
+{
+  "question_id": "c9fe7862-4884-4e0f-ab05-478499fc193b",
+  "content": "用户安装加工图的尺寸在使用不同屏幕尺寸（8.4英寸 vs 10.4英寸）时如何进行适配调整？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-13869b28c250b5a9ff804d44e6df00f8",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-13869b28c250b5a9ff804d44e6df00f8",
+    "related_chunk_ids": [
+      "chunk-13869b28c250b5a9ff804d44e6df00f8"
+    ]
+  },
+  "created_at": "2025-12-10T00:44:14.429182"
+}
+
+{
+  "question_id": "820753e8-3722-41d4-8fb3-798d1abf3d32",
+  "content": "标准钻铣床在各轴相关参数中，轴移动距离为700mm时，其扭距是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+    "related_chunk_ids": [
+      "chunk-831c6e10c6ad6b0975dd682994bf5f47"
+    ]
+  },
+  "created_at": "2025-12-10T00:44:31.250126"
+}
+
+{
+  "question_id": "c3fe9982-1696-4f4c-bdd5-72a072b2b80f",
+  "content": "GSK 980MDc 系列产品支持哪几种屏幕类型？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-831c6e10c6ad6b0975dd682994bf5f47"
+    ]
+  },
+  "created_at": "2025-12-10T00:44:31.250633"
+}
+
+{
+  "question_id": "3a93c1a7-260d-477f-a896-726c8fcd600f",
+  "content": "固定循环指令和复合循环指令在GSK 980MDc数控系统中如何简化编程？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+    "related_chunk_ids": [
+      "chunk-831c6e10c6ad6b0975dd682994bf5f47"
+    ]
+  },
+  "created_at": "2025-12-10T00:44:31.250850"
+}
+
+{
+  "question_id": "31ad2234-bb24-4523-a282-1db9d2dc3796",
+  "content": "GSK 980MDc系列产品的内置PLC梯形图在线显示功能有什么特点？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-831c6e10c6ad6b0975dd682994bf5f47"
+    ]
+  },
+  "created_at": "2025-12-10T00:44:31.251278"
+}
+
+{
+  "question_id": "1bf8ea78-2c8f-49b5-bb44-608c340435f5",
+  "content": "GSK 980MDc数控系统的主轴定向刚性攻丝功能如何实现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-831c6e10c6ad6b0975dd682994bf5f47"
+    ]
+  },
+  "created_at": "2025-12-10T00:44:31.251744"
+}
+
+{
+  "question_id": "db708688-d2c5-4238-b511-bda9b31f8f84",
+  "content": "支持圆盘式刀库和斗式刀库的GSK 980MDc系列产品的适用场景有哪些？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-831c6e10c6ad6b0975dd682994bf5f47",
+    "related_chunk_ids": [
+      "chunk-831c6e10c6ad6b0975dd682994bf5f47"
+    ]
+  },
+  "created_at": "2025-12-10T00:44:31.252252"
+}
+
+{
+  "question_id": "0a78ec1d-98af-4c68-bf72-549fd25d0a9d",
+  "content": "32次限时停机设置分别用于哪些紧急情况或维护任务？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-ed8cfd519f89a7af159c1bf1dfd9a231",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ed8cfd519f89a7af159c1bf1dfd9a231",
+    "related_chunk_ids": [
+      "chunk-ed8cfd519f89a7af159c1bf1dfd9a231"
+    ]
+  },
+  "created_at": "2025-12-10T00:45:01.368696"
+}
+
+{
+  "question_id": "cc64a935-7954-4848-b1a4-67dd7319d3bc",
+  "content": "主轴编码器反馈的线数可设定为2000或5000，如何选择合适的线数以满足精度需求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-ed8cfd519f89a7af159c1bf1dfd9a231",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ed8cfd519f89a7af159c1bf1dfd9a231",
+    "related_chunk_ids": [
+      "chunk-ed8cfd519f89a7af159c1bf1dfd9a231"
+    ]
+  },
+  "created_at": "2025-12-10T00:45:01.369424"
+}
+
+{
+  "question_id": "43d0bb88-2e54-4918-baaf-8a2ab22bc8e7",
+  "content": "位置指令范围从-99999999到+99999999，最小输入单位0.1mm，如何处理超过该范围的情况？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-ed8cfd519f89a7af159c1bf1dfd9a231",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ed8cfd519f89a7af159c1bf1dfd9a231",
+    "related_chunk_ids": [
+      "chunk-ed8cfd519f89a7af159c1bf1dfd9a231"
+    ]
+  },
+  "created_at": "2025-12-10T00:45:01.370224"
+}
+
+{
+  "question_id": "6f397fb1-5a3e-4eda-967a-fc34eab2d9f0",
+  "content": "主轴转速的实时调速分为5级（如50%、120%），如何选择合适的调速级别以优化加工效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-ed8cfd519f89a7af159c1bf1dfd9a231",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-ed8cfd519f89a7af159c1bf1dfd9a231",
+    "related_chunk_ids": [
+      "chunk-ed8cfd519f89a7af159c1bf1dfd9a231"
+    ]
+  },
+  "created_at": "2025-12-10T00:45:01.370637"
+}
+
+{
+  "question_id": "9ae6070d-8687-4855-838a-78405823ffd6",
+  "content": "在PLC程序最多5000步的情况下，如何处理超出此限制的复杂加工任务？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2a68d446dfe8f49c4baf6c149bc5b66f",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2a68d446dfe8f49c4baf6c149bc5b66f",
+    "related_chunk_ids": [
+      "chunk-2a68d446dfe8f49c4baf6c149bc5b66f"
+    ]
+  },
+  "created_at": "2025-12-10T00:45:20.216715"
+}
+
+{
+  "question_id": "ad75ed50-21ac-4b6f-bbd4-d3c4e8f5767a",
+  "content": "当PLC程序刷新周期为8ms时，在高精度加工中应采取哪些优化措施？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2a68d446dfe8f49c4baf6c149bc5b66f",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2a68d446dfe8f49c4baf6c149bc5b66f",
+    "related_chunk_ids": [
+      "chunk-2a68d446dfe8f49c4baf6c149bc5b66f"
+    ]
+  },
+  "created_at": "2025-12-10T00:45:20.216957"
+}
+
+{
+  "question_id": "762c4eae-505f-45ef-ad10-3d65265dd1f2",
+  "content": "IOA-O1T与IOA-02T在输入输出点数上的差异对机床控制有何影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2a68d446dfe8f49c4baf6c149bc5b66f",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2a68d446dfe8f49c4baf6c149bc5b66f",
+    "related_chunk_ids": [
+      "chunk-2a68d446dfe8f49c4baf6c149bc5b66f"
+    ]
+  },
+  "created_at": "2025-12-10T00:45:20.217180"
+}
+
+{
+  "question_id": "e7e91b43-dfb7-41a6-a633-9471a05908e3",
+  "content": "显示屏8.4英寸真彩LCD在多语言显示中如何实现界面布局的最佳适应性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-2a68d446dfe8f49c4baf6c149bc5b66f",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-2a68d446dfe8f49c4baf6c149bc5b66f",
+    "related_chunk_ids": [
+      "chunk-2a68d446dfe8f49c4baf6c149bc5b66f"
+    ]
+  },
+  "created_at": "2025-12-10T00:45:20.217938"
+}
+
+{
+  "question_id": "4be32ade-a910-45f7-85c4-d6b00b4ff6f0",
+  "content": "各轴的定位精度均为0.001mm，这在实际应用中如何保证？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\01系统综合-铣削.txt",
+  "source_chunk_id": "chunk-c1f13ba0c4c8ade2d1c68475dbf346b5",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c1f13ba0c4c8ade2d1c68475dbf346b5",
+    "related_chunk_ids": [
+      "chunk-c1f13ba0c4c8ade2d1c68475dbf346b5"
+    ]
+  },
+  "created_at": "2025-12-10T00:45:36.288071"
+}
+

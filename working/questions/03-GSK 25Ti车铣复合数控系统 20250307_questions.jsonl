@@ -1,0 +1,761 @@
+{
+  "question_id": "718e0d0b-be45-4aac-93ea-2b54dce90d1b",
+  "content": "GSK 25Ti 车铣复合数控系统的两种液晶显示屏尺寸分别是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-036cddd1775f620784ee27e5ad8eb08b"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:10.297134"
+}
+
+{
+  "question_id": "ccd06b29-353f-4064-8ef9-008441c1d919",
+  "content": "在C、X、Z轴的小线段插补加工中，编程精度为0.1mm时如何保证切削间距特点0.05mm的实现？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+    "related_chunk_ids": [
+      "chunk-036cddd1775f620784ee27e5ad8eb08b"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:10.297380"
+}
+
+{
+  "question_id": "ad9d5c21-61cd-457a-87fe-5709b853acde",
+  "content": "双耳水电主轴后置电主轴电机一机BH: 304的设计是否适用于不锈钢加工方案中的特定工况？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+    "related_chunk_ids": [
+      "chunk-036cddd1775f620784ee27e5ad8eb08b"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:10.297616"
+}
+
+{
+  "question_id": "6b73a0cb-3c1e-4d6f-80e3-30405613d7f7",
+  "content": "GSK-Link-PA网络支持最多可以扩展多少个单元从站设备？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+    "related_chunk_ids": [
+      "chunk-036cddd1775f620784ee27e5ad8eb08b"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:10.297839"
+}
+
+{
+  "question_id": "7eb1cefc-23b1-41f8-b695-0bfab3264051",
+  "content": "在GSK 25Ti系统中，独立按键设计对外观结构有何影响？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+    "related_chunk_ids": [
+      "chunk-036cddd1775f620784ee27e5ad8eb08b"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:10.298058"
+}
+
+{
+  "question_id": "52589691-4c8b-4c27-bbba-9f3a5b03ec70",
+  "content": "GSK 25Ti车铣复合数控系统的轨迹预览功能如何辅助编程效率提升？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-036cddd1775f620784ee27e5ad8eb08b"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:10.298516"
+}
+
+{
+  "question_id": "7608c681-79fa-47f0-b338-26b16aff751f",
+  "content": "工业以太网总线（GSK-Link）在构建自动化生产线时需要哪些网络适配配置？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+    "related_chunk_ids": [
+      "chunk-036cddd1775f620784ee27e5ad8eb08b"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:10.298956"
+}
+
+{
+  "question_id": "de247d0f-41fb-4a3a-972e-613bce913cc9",
+  "content": "GSK 25Ti系统中，用户自定义界面功能是否影响文件传输速度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-036cddd1775f620784ee27e5ad8eb08b",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-036cddd1775f620784ee27e5ad8eb08b"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:10.299176"
+}
+
+{
+  "question_id": "1c11fcc2-a13a-4f17-9a42-a3e10e95218d",
+  "content": "GSK 25Ti系列支持的最大进给轴和主轴数量分别是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:28.942308"
+}
+
+{
+  "question_id": "1d32b213-7688-4dee-a2e1-aef7a5214d02",
+  "content": "GSK-Link高速现场总线支持的电压输入范围是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e",
+    "related_chunk_ids": [
+      "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:28.943207"
+}
+
+{
+  "question_id": "600224d1-c24b-41d2-9190-0118138cdb3f",
+  "content": "GR2000-L系列总线式伺服单元支持哪些高精度控制功能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e",
+    "related_chunk_ids": [
+      "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:28.943901"
+}
+
+{
+  "question_id": "407f6eb9-9ff6-40f4-b421-992f973ac123",
+  "content": "GSK 25Ti系统如何实现主轴的正余弦编码器校正？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-54d0aa58557cb12a5ea4f16eecb3ea1e"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:28.944397"
+}
+
+{
+  "question_id": "f2e5a59e-0e81-40cf-aaa6-c390def52cf3",
+  "content": "IOR-26T、IOR-44T 和 IOR-44F 型号的高分辨率编码器如何实现消除共振振动和噪声的技术效果？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+    "related_entities": [
+      "IOR-44F"
+    ],
+    "related_chunk_ids": [
+      "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:53.399369"
+}
+
+{
+  "question_id": "35b28d95-9a19-45f3-a2d8-048553a7c7ec",
+  "content": "在主轴伺服驱动装置中，32 点输入/32 点输出与 10V 模拟电压输出之间的控制精度有何差异？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+    "related_chunk_ids": [
+      "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:53.399611"
+}
+
+{
+  "question_id": "b82927ef-cc20-420b-b91a-57ce4c5ab307",
+  "content": "GSK 25Ti 系统支持的精车断屑功能如何避免切削过程中工件表面缠绕的问题？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:53.399840"
+}
+
+{
+  "question_id": "7e1bcf60-bf50-44db-a604-68d42f5f7e1f",
+  "content": "GSK 25Ti 系统中的铣削循环指令对用户编程效率的提升体现在哪些方面？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:53.400286"
+}
+
+{
+  "question_id": "e5c70df8-1e91-4b08-b823-d586d9631e43",
+  "content": "GSK 25Ti 系统支持的车铣钻攻丝等功能对一次装夹完成多种加工的操作流程有何优化？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:53.400945"
+}
+
+{
+  "question_id": "18a2487a-b572-4434-9b1e-d207b8e710b4",
+  "content": "主轴转速浮动功能在 GSK 25Ti 系统中对工件表面质量和加工效率的具体影响是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+  "question_index": 10,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-f3e02b4c0e1e741f1c47bdbd65f959a9"
+    ]
+  },
+  "created_at": "2025-12-10T06:02:53.401385"
+}
+
+{
+  "question_id": "4ecd07de-fe9a-4682-ad24-5f9c5ed96e65",
+  "content": "M100预告功能无效时，如何通过T0101设置恢复其有效状态？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+    "related_chunk_ids": [
+      "chunk-0c270310be96d52a153e70cbfbede281"
+    ]
+  },
+  "created_at": "2025-12-10T06:03:34.756803"
+}
+
+{
+  "question_id": "3ca52d06-b750-4ba1-85ab-dbd1fc5bde02",
+  "content": "GSK 25Ti车铣复合数控系统支持哪些中文输入方式来提高编程效率？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-0c270310be96d52a153e70cbfbede281"
+    ]
+  },
+  "created_at": "2025-12-10T06:03:34.757037"
+}
+
+{
+  "question_id": "a35ddc00-c659-4997-8687-333f5dac53e3",
+  "content": "在G86SIT模式下，远程监控软件对多台系统的文件上传下载有哪些具体限制？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+    "related_chunk_ids": [
+      "chunk-0c270310be96d52a153e70cbfbede281"
+    ]
+  },
+  "created_at": "2025-12-10T06:03:34.757256"
+}
+
+{
+  "question_id": "fe11e6ab-0e14-434c-b1ba-9c2a95873311",
+  "content": "倾斜轴相对于正交轴安装角度超过90度时，如何调整倾斜轴控制参数以保持运动精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+  "question_index": 6,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+    "related_chunk_ids": [
+      "chunk-0c270310be96d52a153e70cbfbede281"
+    ]
+  },
+  "created_at": "2025-12-10T06:03:34.757475"
+}
+
+{
+  "question_id": "60f57352-322b-49d2-8c84-39254da6a263",
+  "content": "GSK 25Ti车铣复合数控系统的轨迹预览功能对加工程序的语法检查有什么具体帮助？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-0c270310be96d52a153e70cbfbede281"
+    ]
+  },
+  "created_at": "2025-12-10T06:03:34.757929"
+}
+
+{
+  "question_id": "7c1eca96-4df7-45d6-a852-b9c0ac76f115",
+  "content": "M101无效状态下，如何通过调整预设次数参数重新启用该功能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-0c270310be96d52a153e70cbfbede281",
+    "related_chunk_ids": [
+      "chunk-0c270310be96d52a153e70cbfbede281"
+    ]
+  },
+  "created_at": "2025-12-10T06:03:34.758232"
+}
+
+{
+  "question_id": "180d4691-e178-4c13-9951-d7d4c612417f",
+  "content": "刀具长度补偿 (TARE) 和刀尖半径补偿 (CB) 的具体执行方式是什么？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-05457ffff947a4ef0612a42823b7d97b",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-05457ffff947a4ef0612a42823b7d97b",
+    "related_entities": [
+      "TARE"
+    ],
+    "related_chunk_ids": [
+      "chunk-05457ffff947a4ef0612a42823b7d97b"
+    ]
+  },
+  "created_at": "2025-12-10T06:03:50.791931"
+}
+
+{
+  "question_id": "70d3e258-b9fa-4f5a-a3a5-161af1cc74c1",
+  "content": "GSK-Link-PA 网络接口支持哪些类型的自动化设备连接？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-05457ffff947a4ef0612a42823b7d97b",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-05457ffff947a4ef0612a42823b7d97b",
+    "related_entities": [
+      "GSK-Link-PA"
+    ],
+    "related_chunk_ids": [
+      "chunk-05457ffff947a4ef0612a42823b7d97b"
+    ]
+  },
+  "created_at": "2025-12-10T06:03:50.793093"
+}
+
+{
+  "question_id": "8908e3bb-b7ea-482d-bbf5-53eadd41f54f",
+  "content": "GSK-Link 网关如何实现数控机床与其他自动化设备的连接？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-05457ffff947a4ef0612a42823b7d97b",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-05457ffff947a4ef0612a42823b7d97b",
+    "related_entities": [
+      "GSK-Link"
+    ],
+    "related_chunk_ids": [
+      "chunk-05457ffff947a4ef0612a42823b7d97b"
+    ]
+  },
+  "created_at": "2025-12-10T06:03:50.794418"
+}
+
+{
+  "question_id": "875beca0-d48b-4836-8cab-bb730047fbcf",
+  "content": "程序的最大存储容量为300M时，支持的程序数量上限是多少个（包括子程序和宏程序）？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-8d051af78035e4df23b51c6fd4681c22",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8d051af78035e4df23b51c6fd4681c22",
+    "related_chunk_ids": [
+      "chunk-8d051af78035e4df23b51c6fd4681c22"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:15.756202"
+}
+
+{
+  "question_id": "016ee1b9-6963-4df5-9f13-777eb2a75d9b",
+  "content": "程序倍率调整到150%时，刀具路径会发生哪些变化？需要进行哪些参数校准？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-8d051af78035e4df23b51c6fd4681c22",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-8d051af78035e4df23b51c6fd4681c22",
+    "related_chunk_ids": [
+      "chunk-8d051af78035e4df23b51c6fd4681c22"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:15.758360"
+}
+
+{
+  "question_id": "9b87d85b-b4a0-46d9-b3b6-a723b17b380e",
+  "content": "GSK 25Ti CNC系统支持的螺纹类型包括哪些？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:31.068205"
+}
+
+{
+  "question_id": "ced956a7-6b55-4d07-ade1-08e654afa3f2",
+  "content": "GSK 25Ti CNC系统的螺纹头数最多可以达到多少个？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:31.069501"
+}
+
+{
+  "question_id": "3c54500e-edf9-48cf-a2b5-b912ab84036e",
+  "content": "GSK 25Ti CNC系统的主轴通信接口数量是多少？这些接口在实际应用中如何配置？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:31.070444"
+}
+
+{
+  "question_id": "b34a8edd-636b-42e6-b540-175bec3811ea",
+  "content": "如何通过eID对GSKLink总线进行通信接口的配置和管理？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4",
+    "related_chunk_ids": [
+      "chunk-c4d3afdfc17e89f15ad3e7d0ba912bf4"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:31.070744"
+}
+
+{
+  "question_id": "aa68d5a9-1717-4b55-b76f-d987cee9e77a",
+  "content": "GSK 25Ti车铣复合数控系统的定位精度为多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+  "question_index": 1,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+    "related_entities": [
+      "GSK"
+    ],
+    "related_chunk_ids": [
+      "chunk-91f1fb87ac98451339e3cd4200685cf8"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:48.731671"
+}
+
+{
+  "question_id": "0ffcd7f1-70bd-4b64-9084-f643ae68f0e6",
+  "content": "在加工Ra0.3um的表面粗糙度时，主轴转速需要达到什么要求？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+  "question_index": 2,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+    "related_chunk_ids": [
+      "chunk-91f1fb87ac98451339e3cd4200685cf8"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:48.731963"
+}
+
+{
+  "question_id": "692ed3e9-f76f-449b-b12d-931a3469c564",
+  "content": "砂轮主轴转速为40000r/min时，如何确保砂轮自转的旋转精度？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+  "question_index": 3,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+    "related_chunk_ids": [
+      "chunk-91f1fb87ac98451339e3cd4200685cf8"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:48.732219"
+}
+
+{
+  "question_id": "6e6737ab-fe63-49b5-bd5d-249ddf5340f7",
+  "content": "加工M10X0.75内轴时，砂轮主轴的转速应设置为多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+  "question_index": 4,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+    "related_chunk_ids": [
+      "chunk-91f1fb87ac98451339e3cd4200685cf8"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:48.732473"
+}
+
+{
+  "question_id": "d61edefb-48be-4626-a4ae-d201ae780714",
+  "content": "采用6063铝材料加工表面光亮、纹理清晰的特征时，需要哪些特定工艺参数？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+    "related_chunk_ids": [
+      "chunk-91f1fb87ac98451339e3cd4200685cf8"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:48.732721"
+}
+
+{
+  "question_id": "c83be228-b2a2-439a-8d8c-72cfd59c97d5",
+  "content": "定位精度为0.01mm时，重复定位精度是多少？如何在动态下保持稳定？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+  "question_index": 7,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+    "related_chunk_ids": [
+      "chunk-91f1fb87ac98451339e3cd4200685cf8"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:48.733189"
+}
+
+{
+  "question_id": "04986f3f-f417-4bff-9b8a-546a81cc4992",
+  "content": "砂轮主轴转速为40000r/min的情况下，如何控制热变形以确保加工稳定性？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+    "related_chunk_ids": [
+      "chunk-91f1fb87ac98451339e3cd4200685cf8"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:48.733434"
+}
+
+{
+  "question_id": "c9cf8aba-0a1b-45e1-be49-12b7a1f68dc6",
+  "content": "加工内孔径向误差为0.003mm时，中心孔的粗糙度应达到什么标准？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-91f1fb87ac98451339e3cd4200685cf8",
+    "related_chunk_ids": [
+      "chunk-91f1fb87ac98451339e3cd4200685cf8"
+    ]
+  },
+  "created_at": "2025-12-10T06:04:48.733689"
+}
+
+{
+  "question_id": "2e3f92ea-1914-4a1b-9f2f-b667a0aa3d00",
+  "content": "轧辊材料45#钢在切光形状精度上达到什么标准？表面光洁度是多少？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-12aecac2146d452c079bcd9ba9a47902",
+  "question_index": 5,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12aecac2146d452c079bcd9ba9a47902",
+    "related_chunk_ids": [
+      "chunk-12aecac2146d452c079bcd9ba9a47902"
+    ]
+  },
+  "created_at": "2025-12-10T06:05:13.868760"
+}
+
+{
+  "question_id": "381366d3-ccd3-45ab-bfab-56ae1240956b",
+  "content": "CK40S/CK50S机床安装八工位液压刀塔后可以进行哪些复合加工功能？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-12aecac2146d452c079bcd9ba9a47902",
+  "question_index": 8,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12aecac2146d452c079bcd9ba9a47902",
+    "related_chunk_ids": [
+      "chunk-12aecac2146d452c079bcd9ba9a47902"
+    ]
+  },
+  "created_at": "2025-12-10T06:05:13.869585"
+}
+
+{
+  "question_id": "28151939-5bba-42b2-ba5d-84226495964a",
+  "content": "宽矩形淬硬导轨在CK40S/CK50S中的应用对加工何种类型零件最为适合？",
+  "source_document": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\03-GSK 25Ti车铣复合数控系统 20250307.txt",
+  "source_chunk_id": "chunk-12aecac2146d452c079bcd9ba9a47902",
+  "question_index": 9,
+  "metadata": {
+    "has_answer": false,
+    "lightrag_chunk_id": "chunk-12aecac2146d452c079bcd9ba9a47902",
+    "related_chunk_ids": [
+      "chunk-12aecac2146d452c079bcd9ba9a47902"
+    ]
+  },
+  "created_at": "2025-12-10T06:05:13.869863"
+}
+

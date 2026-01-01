@@ -1,360 +1,516 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-GraphML Knowledge Graph Visualizer (Stream Loading Edition)
+GraphML Knowledge Graph Visualizer (Optimized)
 
-特性：
-1. 【流式加载】解决大数据白屏问题，节点快速逐批出现（动画效果）。
-2. 【聚焦模式】点击节点，仅保留其邻居，双击空白还原。
-3. 【性能优化】加载完成后自动冻结物理引擎，不再持续占用 CPU。
+这是一个用于将 GraphML 文件转换为高颜值、交互式 HTML 或静态 PNG 的可视化工具。
+主要特点：
+1. 现代化的 UI 设计（侧边栏、磨砂玻璃效果）。
+2. HTML 模式支持双向交互（点击列表聚焦节点，搜索过滤）。
+3. PNG 模式支持基于节点重要性的动态大小和曲线边。
 
 Usage:
-    python visualize_stream.py data.graphml --output graph.html
+    python visualize.py data.graphml --format html
+    python visualize.py data.graphml --format png
 """
 
 import argparse
 import sys
 import json
 import random
+from html import escape
 from pathlib import Path
+from typing import Dict, Any, Optional, List
+
 import networkx as nx
 
-# --- 配色方案 ---
+# --- 配色方案 (Morandi/Modern Palette) ---
 PALETTE = [
-    "#3b82f6", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", 
-    "#ec4899", "#06b6d4", "#84cc16", "#6366f1", "#14b8a6"
+    "#6366f1", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6",
+    "#ec4899", "#06b6d4", "#84cc16", "#f97316", "#14b8a6"
 ]
 
-HTML_TEMPLATE = """
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>知识图谱 - 流式加载</title>
-    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+# --- 布局算法映射 ---
+LAYOUTS_2D = {
+    "spring": nx.spring_layout,
+    "kamada_kawai": nx.kamada_kawai_layout,
+    "circular": nx.circular_layout,
+    "shell": nx.shell_layout,
+}
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="生成精美的知识图谱可视化")
+    parser.add_argument("graphml", type=Path, help="GraphML 文件路径")
+    parser.add_argument("--format", choices=["html", "png"], default="html", help="输出格式 (默认: html)")
+    parser.add_argument("--output", type=Path, help="输出文件路径")
+    parser.add_argument("--layout", choices=LAYOUTS_2D.keys(), default="spring", help="PNG 布局算法")
+    parser.add_argument("--title-field", default="description", help="用作悬浮提示的属性")
+    parser.add_argument("--label-field", default="entity_id", help="用作标签的属性")
+    return parser.parse_args()
+
+def ensure_graph_exists(path: Path) -> Path:
+    if not path.exists():
+        print(f"❌ 错误: 文件不存在: {path}", file=sys.stderr)
+        sys.exit(1)
+    return path
+
+def load_graph(graph_path: Path) -> nx.Graph:
+    print(f"📂 读取图谱: {graph_path.name} ...", end="", flush=True)
+    graph = nx.read_graphml(graph_path)
+    print(f" 完成 (节点: {graph.number_of_nodes()}, 边: {graph.number_of_edges()})")
+    return graph
+
+# ==============================================================================
+# HTML Visualization Logic (PyVis + Custom JS/CSS)
+# ==============================================================================
+
+def visualize_html(graph: nx.Graph, output_path: Path, title_field: str, label_field: str) -> None:
+    try:
+        from pyvis.network import Network
+    except ImportError:
+        print("❌ 错误: 请安装 pyvis (pip install pyvis)", file=sys.stderr)
+        sys.exit(1)
+
+    # 1. 初始化 PyVis 网络
+    net = Network(height="100vh", width="100%", bgcolor="#f8fafc", font_color="#334155", notebook=False)
+    net.from_nx(graph)
+
+    # 2. 预处理数据以增强视觉效果
+    # 计算度中心性以调整节点大小
+    degrees = dict(graph.degree())
+    max_degree = max(degrees.values()) if degrees else 1
+    
+    # 颜色映射缓存
+    type_color_map = {}
+
+    def get_color(e_type: str) -> str:
+        if not e_type: return "#94a3b8" # Default gray
+        if e_type not in type_color_map:
+            type_color_map[e_type] = PALETTE[len(type_color_map) % len(PALETTE)]
+        return type_color_map[e_type]
+
+    for node in net.nodes:
+        nid = node["id"]
+        nx_data = graph.nodes[nid]
+        
+        # 获取标签和属性
+        lbl = str(nx_data.get(label_field, nid))
+        desc = str(nx_data.get(title_field, ""))
+        e_type = str(nx_data.get("entity_type", "Unknown"))
+        
+        # 视觉样式
+        node["label"] = lbl
+        node["title"] = f"<b>{lbl}</b><br><i>{e_type}</i><br><br>{desc}"
+        node["color"] = get_color(e_type)
+        node["group"] = e_type  # 用于 PyVis 图例
+        
+        # 动态大小 (基础大小 15 + 基于度的增量)
+        deg = degrees.get(nid, 0)
+        node["size"] = 15 + (deg / max_degree) * 25
+        node["borderWidth"] = 2
+        node["borderWidthSelected"] = 4
+
+    # 3. 配置物理引擎 (力导向图参数)
+    options = {
+        "nodes": {
+            "font": {"face": "Inter, system-ui", "size": 14, "strokeWidth": 0, "color": "#1e293b"},
+            "shadow": {"enabled": True, "color": "rgba(0,0,0,0.1)", "size": 10, "x": 5, "y": 5}
+        },
+        "edges": {
+            "color": {"color": "#cbd5e1", "highlight": "#6366f1"},
+            "width": 1,
+            "smooth": {"type": "continuous", "roundness": 0.5},
+            "selectionWidth": 2
+        },
+        "physics": {
+            "forceAtlas2Based": {
+                "gravitationalConstant": -100,
+                "centralGravity": 0.01,
+                "springLength": 100,
+                "springConstant": 0.08,
+                "damping": 0.4
+            },
+            "solver": "forceAtlas2Based",
+            "stabilization": {"enabled": True, "iterations": 200}
+        },
+        "interaction": {
+            "hover": True, 
+            "navigationButtons": True, 
+            "keyboard": False
+        }
+    }
+    net.set_options(json.dumps(options))
+
+    # 4. 生成临时 HTML
+    # PyVis write_html 会生成包含 graph 数据的 HTML
+    net.write_html(str(output_path), notebook=False)
+
+    # 5. 注入自定义 UI (侧边栏 + JS 交互)
+    inject_custom_interface(output_path, graph, label_field, title_field)
+    print(f"✨ HTML 可视化已生成: {output_path}")
+
+
+def inject_custom_interface(html_path: Path, graph: nx.Graph, label_field: str, title_field: str):
+    """
+    读取 PyVis 生成的 HTML，强力注入现代化的侧边栏 UI 和交互 JS 代码。
+    """
+    
+    # 准备数据列表
+    nodes_data = []
+    for nid, data in graph.nodes(data=True):
+        nodes_data.append({
+            "id": nid,
+            "label": str(data.get(label_field, nid)),
+            "type": str(data.get("entity_type", "N/A")),
+            "desc": str(data.get(title_field, ""))
+        })
+    # 按标签排序
+    nodes_data.sort(key=lambda x: x["label"])
+
+    edges_data = []
+    for u, v, data in graph.edges(data=True):
+        edges_data.append({
+            "source": u,
+            "target": v,
+            "desc": str(data.get("description", ""))
+        })
+
+    # 将数据转为 JSON 嵌入 HTML，供前端 JS 使用
+    json_nodes = json.dumps(nodes_data)
+    json_edges = json.dumps(edges_data)
+
+    # --- CSS 样式 (Tailwind-like + Glassmorphism) ---
+    css_styles = """
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #2563eb; --glass: rgba(255, 255, 255, 0.9); }
-        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; font-family: 'Inter', sans-serif; background: #0f172a; }
+        body, html { margin: 0; padding: 0; font-family: 'Inter', sans-serif; overflow: hidden; }
         
-        /* 1. 加载遮罩层 */
-        #loader {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: #0f172a; z-index: 999;
-            display: flex; flex-direction: column; align-items: center; justify-content: center;
-            transition: opacity 0.5s;
+        /* 侧边栏容器 */
+        #ui-container {
+            position: absolute; top: 20px; right: 20px; bottom: 20px; width: 380px;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            display: flex; flex-direction: column;
+            z-index: 999;
+            transition: transform 0.3s ease;
         }
-        .loader-text { color: white; font-size: 24px; margin-bottom: 20px; font-weight: 600; }
-        .progress-bar { width: 300px; height: 6px; background: #334155; border-radius: 3px; overflow: hidden; }
-        .progress-fill { height: 100%; background: #3b82f6; width: 0%; transition: width 0.1s; }
         
-        /* 2. 画布 */
-        #mynetwork { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1; }
+        /* 收起/展开按钮 */
+        #toggle-btn {
+            position: absolute; top: 15px; left: -40px; width: 32px; height: 32px;
+            background: white; border-radius: 8px; border: none; cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: bold; color: #64748b;
+        }
 
-        /* 3. 顶部状态栏 */
-        #status-bar {
-            position: absolute; top: 20px; left: 50%; transform: translateX(-50%);
-            background: var(--glass); padding: 8px 20px; border-radius: 30px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5); z-index: 10;
-            display: flex; align-items: center; gap: 15px;
-            opacity: 0; pointer-events: none; transition: opacity 0.3s;
-        }
-        #status-bar.visible { opacity: 1; pointer-events: auto; }
-        .status-text { color: #1e293b; font-size: 14px; font-weight: 600; }
-        .btn-reset {
-            background: #ef4444; color: white; border: none; padding: 5px 12px;
-            border-radius: 15px; cursor: pointer; font-size: 12px;
-        }
-        .btn-reset:hover { background: #dc2626; }
+        /* 头部 */
+        .ui-header { padding: 20px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .ui-title { margin: 0; font-size: 18px; font-weight: 600; color: #0f172a; }
+        .ui-subtitle { margin: 4px 0 0; font-size: 13px; color: #64748b; }
 
-        /* 4. 侧边栏 (极简版) */
-        #sidebar {
-            position: absolute; top: 20px; right: 20px; width: 300px; bottom: 20px;
-            background: var(--glass); backdrop-filter: blur(10px);
-            border-radius: 12px; padding: 20px; display: flex; flex-direction: column;
-            transform: translateX(120%); transition: transform 0.3s; z-index: 10;
+        /* 搜索框 */
+        .search-box {
+            margin: 15px 20px 10px;
+            position: relative;
         }
-        #sidebar.open { transform: translateX(0); }
-        .sidebar-title { margin: 0 0 10px 0; font-size: 18px; color: #1e293b; }
-        .list-container { flex: 1; overflow-y: auto; }
-        .list-item { 
-            padding: 8px; border-bottom: 1px solid #e2e8f0; cursor: pointer; font-size: 13px;
+        .search-input {
+            width: 100%; padding: 10px 15px; border-radius: 8px;
+            border: 1px solid #e2e8f0; background: rgba(255,255,255,0.6);
+            outline: none; font-size: 14px; box-sizing: border-box;
+            transition: border-color 0.2s;
         }
-        .list-item:hover { background: #eff6ff; color: var(--primary); }
+        .search-input:focus { border-color: #6366f1; background: white; }
 
-        /* 右下角工具 */
-        .tools { position: absolute; bottom: 20px; right: 20px; z-index: 20; display: flex; gap: 10px; }
-        .btn-tool { background: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 18px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        /* Tabs */
+        .tabs { display: flex; padding: 0 20px; gap: 15px; margin-bottom: 10px; border-bottom: 1px solid #f1f5f9; }
+        .tab { 
+            padding: 10px 0; font-size: 14px; font-weight: 500; color: #94a3b8; 
+            cursor: pointer; position: relative; 
+        }
+        .tab.active { color: #6366f1; }
+        .tab.active::after {
+            content: ''; position: absolute; bottom: -1px; left: 0; width: 100%; height: 2px; background: #6366f1;
+        }
+
+        /* 列表区域 */
+        .list-viewport { flex: 1; overflow-y: auto; padding: 10px 20px; scroll-behavior: smooth; }
+        
+        /* 列表项卡片 */
+        .list-item {
+            background: rgba(255,255,255,0.5); border: 1px solid rgba(0,0,0,0.02);
+            border-radius: 8px; padding: 12px; margin-bottom: 10px;
+            cursor: pointer; transition: all 0.2s;
+        }
+        .list-item:hover { background: white; transform: translateY(-1px); box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .list-item.active { border-left: 3px solid #6366f1; background: white; }
+        
+        .item-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+        .item-name { font-weight: 600; font-size: 14px; color: #334155; }
+        .item-tag { 
+            font-size: 11px; padding: 2px 6px; border-radius: 4px; 
+            background: #e0e7ff; color: #4338ca; text-transform: uppercase;
+        }
+        .item-desc { font-size: 12px; color: #64748b; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+        /* 滚动条美化 */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     </style>
-</head>
-<body>
+    """
 
-    <!-- 加载页 -->
-    <div id="loader">
-        <div class="loader-text">正在构建知识宇宙...</div>
-        <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
-        <div style="color:#64748b; margin-top:10px; font-size:12px;" id="loader-status">0 / 0</div>
+    # --- HTML 结构 ---
+    html_structure = f"""
+    <div id="ui-container">
+        <button id="toggle-btn" onclick="toggleSidebar()">⇄</button>
+        <div class="ui-header">
+            <h1 class="ui-title">知识图谱浏览器</h1>
+            <p class="ui-subtitle">包含 {len(nodes_data)} 个实体，{len(edges_data)} 条关系</p>
+        </div>
+        
+        <div class="search-box">
+            <input type="text" id="search-input" class="search-input" placeholder="搜索实体..." onkeyup="filterList()">
+        </div>
+
+        <div class="tabs">
+            <div class="tab active" onclick="switchTab('nodes')">实体列表</div>
+            <div class="tab" onclick="switchTab('edges')">关系详情</div>
+        </div>
+
+        <div id="nodes-list" class="list-viewport">
+            <!-- JS Populated -->
+        </div>
+        <div id="edges-list" class="list-viewport" style="display:none;">
+            <!-- JS Populated -->
+        </div>
     </div>
-
-    <!-- 聚焦状态条 -->
-    <div id="status-bar">
-        <span class="status-text" id="focus-name">节点名</span>
-        <button class="btn-reset" onclick="resetGraph()">重置视图</button>
-    </div>
-
-    <div id="mynetwork"></div>
-
-    <div class="tools">
-        <button class="btn-tool" onclick="togglePhysics()" title="开启/停止物理运动">❄️</button>
-        <button class="btn-tool" onclick="network.fit()" title="全图适配">🔍</button>
-    </div>
-
-    <!-- 数据源 -->
-    <script id="graph-data" type="application/json">__GRAPH_JSON__</script>
 
     <script>
-        // 1. 数据解析
-        const rawData = JSON.parse(document.getElementById('graph-data').textContent);
-        const allNodes = rawData.nodes;
-        const allEdges = rawData.edges;
+        const nodesData = {json_nodes};
+        const edgesData = {json_edges};
+        let networkInstance = null; // Will hold the pyvis network
 
-        // 初始化 DataSet (一开始是空的)
-        const nodesDataSet = new vis.DataSet([]);
-        const edgesDataSet = new vis.DataSet([]);
-
-        // 创建 View 用于聚焦过滤
-        // 核心逻辑：filterFunction 决定显示哪些节点
-        let filterState = {
-            active: false,
-            allowedIds: new Set()
-        };
-
-        const nodesView = new vis.DataView(nodesDataSet, {
-            filter: function (node) {
-                if (!filterState.active) return true;
-                return filterState.allowedIds.has(node.id);
-            }
-        });
-
-        const edgesView = new vis.DataView(edgesDataSet, {
-            filter: function (edge) {
-                if (!filterState.active) return true;
-                return filterState.allowedIds.has(edge.from) && filterState.allowedIds.has(edge.to);
-            }
-        });
-
-        // 2. 初始化 Network
-        const container = document.getElementById('mynetwork');
-        const data = { nodes: nodesView, edges: edgesView };
-        
-        const options = {
-            nodes: {
-                shape: 'dot',
-                font: { face: 'Inter', size: 14, color: '#e2e8f0' }, // 深色背景下的字体
-                shadow: { enabled: false }
-            },
-            edges: {
-                color: { color: '#475569', highlight: '#3b82f6', opacity: 0.5 },
-                width: 1,
-                smooth: { type: 'continuous' }
-            },
-            physics: {
-                enabled: true,
-                solver: 'forceAtlas2Based', // 适合这种“爆炸”式出现的布局
-                forceAtlas2Based: {
-                    gravitationalConstant: -50,
-                    centralGravity: 0.005,
-                    springLength: 100,
-                    springConstant: 0.08,
-                    damping: 0.4
-                },
-                stabilization: { enabled: false } // 关闭初始稳定化，实现动态出现效果
-            },
-            interaction: { hover: true, tooltipDelay: 200 }
-        };
-
-        const network = new vis.Network(container, data, options);
-
-        // 3. 流式加载逻辑 (Streaming Animation)
-        let loadedCount = 0;
-        const totalNodes = allNodes.length;
-        const BATCH_SIZE = 50; // 每次加载 50 个，保证速度快且有动画感
-        
-        function loadNextBatch() {
-            if (loadedCount >= totalNodes) {
-                // 加载完毕
-                finishLoading();
-                return;
-            }
-
-            // 提取一批数据
-            const end = Math.min(loadedCount + BATCH_SIZE, totalNodes);
-            const nodeBatch = allNodes.slice(loadedCount, end);
-            
-            // 找出这批节点相关的边 (为了让边和节点一起出现)
-            // 简单的做法是：只要边的两个端点都已经在 DataSet 里了，就添加
-            // 但为了速度，我们可以先全部把节点加完，最后统一加边；或者分批加。
-            // 这里的策略：先加节点，让它们飘一会儿
-            
-            nodesDataSet.add(nodeBatch);
-            
-            loadedCount = end;
-            
-            // 更新 UI
-            const pct = Math.round((loadedCount / totalNodes) * 100);
-            document.getElementById('progress').style.width = pct + '%';
-            document.getElementById('loader-status').innerText = `${loadedCount} / ${totalNodes}`;
-
-            // 下一帧继续
-            requestAnimationFrame(loadNextBatch);
-        }
-
-        function finishLoading() {
-            // 节点加完了，现在一次性把边加上（或者也分批，但边一般不影响渲染崩溃，只影响物理）
-            document.querySelector('.loader-text').innerText = "正在建立连接...";
-            
-            setTimeout(() => {
-                edgesDataSet.add(allEdges);
+        // 等待 PyVis 初始化
+        window.addEventListener("load", function() {{
+            // PyVis creates a global 'network' variable in the script it generates
+            if (typeof network !== 'undefined') {{
+                networkInstance = network;
                 
-                // 隐藏遮罩
-                document.getElementById('loader').style.opacity = 0;
-                setTimeout(() => { 
-                    document.getElementById('loader').style.display = 'none'; 
-                    // 开启物理引擎跑一会，整理形状
-                    network.fit();
-                }, 500);
+                // 绑定点击事件：图 -> 列表
+                networkInstance.on("click", function(params) {{
+                    if (params.nodes.length > 0) {{
+                        const nodeId = params.nodes[0];
+                        highlightListItem(nodeId);
+                    }}
+                }});
+            }}
+            renderNodes(nodesData);
+            renderEdges(edgesData);
+        }});
 
-                // 5秒后自动冻结物理引擎，防止发热
-                setTimeout(() => {
-                    console.log("自动冻结物理引擎");
-                    network.setOptions({ physics: { enabled: false } });
-                }, 5000);
-            }, 100);
-        }
+        function renderNodes(data) {{
+            const container = document.getElementById('nodes-list');
+            container.innerHTML = data.map(n => `
+                <div class="list-item" id="item-${{n.id}}" onclick="focusNode('${{n.id}}')">
+                    <div class="item-head">
+                        <span class="item-name">${{n.label}}</span>
+                        <span class="item-tag">${{n.type}}</span>
+                    </div>
+                    <div class="item-desc">${{n.desc || '暂无描述'}}</div>
+                </div>
+            `).join('');
+        }}
 
-        // 开始加载
-        requestAnimationFrame(loadNextBatch);
+        function renderEdges(data) {{
+            const container = document.getElementById('edges-list');
+            container.innerHTML = data.map((e, idx) => `
+                <div class="list-item">
+                    <div class="item-head">
+                        <span class="item-name">${{e.source}} ➝ ${{e.target}}</span>
+                    </div>
+                    <div class="item-desc">${{e.desc || '...'}}</div>
+                </div>
+            `).join('');
+        }}
 
-
-        // 4. 交互逻辑：聚焦模式
-        network.on("click", function (params) {
-            if (params.nodes.length > 0) {
-                const nodeId = params.nodes[0];
-                enterFocusMode(nodeId);
-            } else {
-                // 点击空白
-                resetGraph();
-            }
-        });
-
-        function enterFocusMode(nodeId) {
-            const node = nodesDataSet.get(nodeId);
+        // 交互：列表 -> 图
+        function focusNode(nodeId) {{
+            if (!networkInstance) return;
             
-            // 获取邻居
-            const connected = network.getConnectedNodes(nodeId);
-            const neighborhood = new Set(connected);
-            neighborhood.add(nodeId);
+            // 高亮列表项
+            document.querySelectorAll('.list-item').forEach(el => el.classList.remove('active'));
+            const el = document.getElementById('item-' + nodeId);
+            if (el) {{
+                el.classList.add('active');
+                el.scrollIntoView({{behavior: "smooth", block: "center"}});
+            }}
 
-            // 设置过滤器
-            filterState.active = true;
-            filterState.allowedIds = neighborhood;
+            // 聚焦图谱
+            networkInstance.focus(nodeId, {{
+                scale: 1.2,
+                animation: {{ duration: 1000, easingFunction: "easeInOutQuad" }}
+            }});
+            networkInstance.selectNodes([nodeId]);
+        }}
+
+        // 交互：图 -> 列表 (反向高亮)
+        function highlightListItem(nodeId) {{
+            switchTab('nodes');
+            const el = document.getElementById('item-' + nodeId);
+            if (el) {{
+                document.querySelectorAll('.list-item').forEach(e => e.classList.remove('active'));
+                el.classList.add('active');
+                el.scrollIntoView({{behavior: "smooth", block: "center"}});
+            }}
+        }}
+
+        // 搜索过滤
+        function filterList() {{
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const filtered = nodesData.filter(n => 
+                n.label.toLowerCase().includes(query) || 
+                n.desc.toLowerCase().includes(query)
+            );
+            renderNodes(filtered);
+        }}
+
+        // Tab 切换
+        function switchTab(tab) {{
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            event.target.classList.add('active');
             
-            // 刷新视图
-            nodesView.refresh();
-            edgesView.refresh();
-
-            // UI
-            document.getElementById('status-bar').classList.add('visible');
-            document.getElementById('focus-name').innerText = node.label;
-            
-            // 开启一点点物理，让它们聚拢，然后fit
-            network.setOptions({ physics: { enabled: true } });
-            setTimeout(() => {
-                network.fit({ animation: true });
-                // 再次冻结
-                // network.setOptions({ physics: { enabled: false } }); 
-            }, 500);
-        }
-
-        window.resetGraph = function() {
-            filterState.active = false;
-            filterState.allowedIds.clear();
-            nodesView.refresh();
-            edgesView.refresh();
-            document.getElementById('status-bar').classList.remove('visible');
-            network.fit();
-        };
-
-        window.togglePhysics = function() {
-            const status = network.physics.physicsEnabled;
-            network.setOptions({ physics: { enabled: !status } });
-        };
-
+            document.getElementById('nodes-list').style.display = tab === 'nodes' ? 'block' : 'none';
+            document.getElementById('edges-list').style.display = tab === 'edges' ? 'block' : 'none';
+        }}
+        
+        // 侧边栏开关
+        function toggleSidebar() {{
+            const ui = document.getElementById('ui-container');
+            if (ui.style.transform === 'translateX(110%)') {{
+                ui.style.transform = 'translateX(0)';
+            }} else {{
+                ui.style.transform = 'translateX(110%)';
+            }}
+        }}
     </script>
-</body>
-</html>
-"""
+    """
 
-def process(graph_path, output_path=None):
-    if not Path(graph_path).exists():
-        print(f"Error: {graph_path} not found.")
-        return
-
-    print(f"Reading {graph_path}...")
-    G = nx.read_graphml(graph_path)
+    # 读取文件，替换 Body 结束标签
+    with open(html_path, "r", encoding="utf-8") as f:
+        content = f.read()
     
-    # 预处理数据
-    nodes = []
-    # 计算度用于大小
-    degrees = dict(G.degree())
-    max_deg = max(degrees.values()) if degrees else 1
-
-    # 颜色
-    types = list(set([str(G.nodes[n].get("entity_type", "Unknown")) for n in G.nodes]))
-    color_map = {t: PALETTE[i % len(PALETTE)] for i, t in enumerate(types)}
-
-    for n, data in G.nodes(data=True):
-        lbl = str(data.get("label", n))
-        # 兼容性处理
-        if lbl == str(n) and "name" in data: lbl = data["name"]
-        
-        etype = str(data.get("entity_type", "Unknown"))
-        
-        nodes.append({
-            "id": n,
-            "label": lbl,
-            "group": etype,
-            "title": f"{lbl} ({etype})\n{str(data.get('description', ''))[:50]}...",
-            "value": 10 + (degrees.get(n, 0) / max_deg) * 40,
-            "color": color_map.get(etype, "#64748b")
-        })
+    # 插入 CSS 到 Head，插入 UI 到 Body
+    content = content.replace("</head>", f"{css_styles}</head>")
+    content = content.replace("</body>", f"{html_structure}</body>")
     
-    edges = []
-    for u, v, data in G.edges(data=True):
-        edges.append({
-            "from": u, 
-            "to": v,
-            "id": f"{u}-{v}-{random.randint(0,100000)}"
-        })
+    with open(html_path, "w", encoding="utf-8") as f:
+        f.write(content)
 
-    # 打乱顺序，让出现效果更随机好看
-    random.shuffle(nodes)
+# ==============================================================================
+# PNG Visualization Logic (Matplotlib Optimized)
+# ==============================================================================
 
-    data_json = json.dumps({"nodes": nodes, "edges": edges}, ensure_ascii=False)
+def visualize_png(graph: nx.Graph, output_path: Path, layout_name: str) -> None:
+    try:
+        import matplotlib.pyplot as plt
+        import matplotlib.colors as mcolors
+    except ImportError:
+        print("❌ 错误: 请安装 matplotlib", file=sys.stderr)
+        sys.exit(1)
+
+    print(f"🎨 正在绘制 PNG (Layout: {layout_name})...")
     
-    html = HTML_TEMPLATE.replace("__GRAPH_JSON__", data_json)
+    plt.figure(figsize=(16, 12), dpi=200) # 高清画布
     
-    if not output_path:
-        output_path = Path(graph_path).with_suffix(".html")
+    # 1. 布局计算
+    layout_func = LAYOUTS_2D.get(layout_name, nx.spring_layout)
+    # k 参数控制节点间距，iterations 控制迭代次数让图更展开
+    pos = layout_func(graph, k=0.5, iterations=50) if layout_name == "spring" else layout_func(graph)
+
+    # 2. 节点样式逻辑
+    # 获取度数用于计算大小
+    d = dict(graph.degree)
+    # 归一化大小: 最小 300, 最大 3000
+    node_sizes = [300 + (d.get(n, 0) * 100) for n in graph.nodes()]
     
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(html)
-    print(f"Success! Open {output_path} to see the animation.")
+    # 获取实体类型用于颜色
+    types = [graph.nodes[n].get("entity_type", "default") for n in graph.nodes()]
+    unique_types = list(set(types))
+    # 建立颜色映射
+    color_map = {t: PALETTE[i % len(PALETTE)] for i, t in enumerate(unique_types)}
+    node_colors = [color_map[t] for t in types]
+
+    # 3. 绘制边 (使用弧线 connectionstyle="arc3,rad=0.1" 增加美感)
+    nx.draw_networkx_edges(
+        graph, pos, 
+        alpha=0.4, 
+        edge_color="#94a3b8", 
+        width=1.0, 
+        connectionstyle="arc3,rad=0.1"
+    )
+
+    # 4. 绘制节点
+    nx.draw_networkx_nodes(
+        graph, pos, 
+        node_size=node_sizes, 
+        node_color=node_colors, 
+        alpha=0.9, 
+        edgecolors="white", # 节点白色描边
+        linewidths=2
+    )
+
+    # 5. 绘制标签 (只有大节点才显示标签，避免拥挤)
+    # 计算度数阈值，只显示 Top 80% 重要的节点标签
+    # 或者简单点：全部显示但调整字体
+    labels = {n: n for n in graph.nodes()}
+    nx.draw_networkx_labels(
+        graph, pos, 
+        labels=labels, 
+        font_size=8, 
+        font_family="sans-serif",
+        font_color="#1e293b",
+        bbox=dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
+    )
+
+    # 6. 添加图例
+    legend_elements = [
+        plt.Line2D([0], [0], marker='o', color='w', label=t,
+                   markerfacecolor=color_map[t], markersize=10)
+        for t in unique_types
+    ]
+    plt.legend(handles=legend_elements, loc='upper left', frameon=False, fontsize=10)
+
+    plt.axis("off")
+    plt.tight_layout()
+    plt.savefig(output_path, bbox_inches="tight", pad_inches=0.1)
+    plt.close()
+    print(f"✨ PNG 图片已导出: {output_path}")
+
+# ==============================================================================
+# Main
+# ==============================================================================
+
+def main():
+    args = parse_args()
+    graph_path = ensure_graph_exists(args.graphml)
+    
+    # 自动确定输出路径
+    output_path = args.output
+    if output_path is None:
+        suffix = ".html" if args.format == "html" else ".png"
+        output_path = graph_path.with_suffix(suffix)
+
+    graph = load_graph(graph_path)
+
+    if args.format == "html":
+        visualize_html(graph, output_path, args.title_field, args.label_field)
+    else:
+        visualize_png(graph, output_path, args.layout)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("graphml", type=Path)
-    parser.add_argument("--output", type=Path, default=None)
-    args = parser.parse_args()
-    process(args.graphml, args.output)
+    main()
