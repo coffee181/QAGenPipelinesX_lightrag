@@ -146,7 +146,7 @@ def main() -> None:
 
     # 当指定 domain 时，自动切换默认目录，并隔离 progress 文件
     if args.domain:
-        domain_raw = DEFAULT_RAW_DIR / args.domain / "picture-pdf"
+        domain_raw = DEFAULT_RAW_DIR / args.domain
         domain_processed = DEFAULT_PROCESSED_DIR / args.domain
         if args.input == DEFAULT_RAW_DIR:
             args.input = domain_raw
