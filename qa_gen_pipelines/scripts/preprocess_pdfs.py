@@ -40,6 +40,10 @@ def parse_args() -> argparse.Namespace:
         description="Preprocess PDF documents into plain-text files"
     )
     parser.add_argument(
+        "--domain",
+        help="行业/领域名称。提供后默认路径自动切换到 working/<stage>/<domain>/",
+    )
+    parser.add_argument(
         "--input",
         type=Path,
         default=DEFAULT_RAW_DIR,
@@ -96,33 +100,6 @@ def collect_pdf_files(directory: Path) -> List[Path]:
     return sorted(p for p in directory.rglob("*.pdf") if p.is_file())
 
 
-def is_token_pdf(pdf_path: Path, raw_root: Optional[Path]) -> bool:
-    """
-    判断文件是否位于 token-pdf 目录，用于决定是否走快速提取通道。
-    """
-    target = "token-pdf"
-    try:
-        if raw_root:
-            rel = pdf_path.resolve().relative_to(raw_root.resolve())
-            if target in rel.parts:
-                return True
-    except Exception:
-        pass
-    return target in [p.name for p in pdf_path.resolve().parents]
-
-
-def fast_extract_text(pdf_path: Path) -> str:
-    """使用 PyMuPDF 快速提取全文文本。"""
-    if fitz is None:
-        raise RuntimeError("PyMuPDF 未安装，无法执行快速文本提取。请安装 `pip install pymupdf`。")
-
-    doc = fitz.open(pdf_path)
-    pages = []
-    for page in doc:
-        pages.append(page.get_text("text"))
-    return "\n\n".join(pages)
-
-
 def preprocess_raw_pdfs_with_paddle(
     raw_dir: Path = DEFAULT_RAW_DIR,
     output_dir: Path = DEFAULT_PROCESSED_DIR,
@@ -167,6 +144,22 @@ def main() -> None:
     logger = setup_logging(args.log_level)
     config = ConfigManager(args.config)
 
+    # 当指定 domain 时，自动切换默认目录，并隔离 progress 文件
+    if args.domain:
+        domain_raw = DEFAULT_RAW_DIR / args.domain / "picture-pdf"
+        domain_processed = DEFAULT_PROCESSED_DIR / args.domain
+        if args.input == DEFAULT_RAW_DIR:
+            args.input = domain_raw
+        if args.output == DEFAULT_PROCESSED_DIR:
+            args.output = domain_processed
+
+        progress_path = DEFAULT_WORKING_DIR / "progress" / args.domain / "progress.jsonl"
+        config.set("progress.progress_file", str(progress_path))
+
+    # progress 文件夹若更改，需要确保目录存在
+    progress_file = Path(config.get("progress.progress_file", "progress.jsonl"))
+    FileUtils.ensure_directory(progress_file.expanduser().resolve().parent)
+
     pdf_processor, _, _, progress_manager = create_services(config, logger)
     if pdf_processor is None:
         raise RuntimeError(
@@ -198,17 +191,11 @@ def main() -> None:
                 continue
 
             try:
-                if is_token_pdf(pdf_path, raw_root):
-                    logger.info("[%d/%d] (token-pdf 快速提取) %s", index, total, pdf_path)
-                    text = fast_extract_text(pdf_path)
-                    FileUtils.save_text_file(text, output_dir / f"{pdf_path.stem}.txt")
-                    progress_manager.update_status(pdf_path, "preprocess", "done")
-                else:
-                    logger.info("[%d/%d] Processing PDF: %s", index, total, pdf_path)
-                    result = pdf_processor.process_pdf(pdf_path, output_dir, None)
-                    progress_manager.update_status(
-                        pdf_path, "preprocess", "done" if result else "failed"
-                    )
+                logger.info("[%d/%d] Processing PDF: %s", index, total, pdf_path)
+                result = pdf_processor.process_pdf(pdf_path, output_dir, None)
+                progress_manager.update_status(
+                    pdf_path, "preprocess", "done" if result else "failed"
+                )
             except Exception:
                 logger.exception("Failed to preprocess PDF: %s", pdf_path)
                 progress_manager.update_status(pdf_path, "preprocess", "failed")
@@ -252,17 +239,11 @@ def main() -> None:
                 continue
 
             try:
-                if is_token_pdf(pdf_path, raw_root):
-                    logger.info("[%d/%d] (token-pdf 快速提取) %s", index, total, pdf_path)
-                    text = fast_extract_text(pdf_path)
-                    FileUtils.save_text_file(text, output_dir / f"{pdf_path.stem}.txt")
-                    progress_manager.update_status(pdf_path, "preprocess", "done")
-                else:
-                    logger.info("[%d/%d] Processing PDF: %s", index, total, pdf_path)
-                    result = pdf_processor.process_pdf(pdf_path, output_dir, None)
-                    progress_manager.update_status(
-                        pdf_path, "preprocess", "done" if result else "failed"
-                    )
+                logger.info("[%d/%d] Processing PDF: %s", index, total, pdf_path)
+                result = pdf_processor.process_pdf(pdf_path, output_dir, None)
+                progress_manager.update_status(
+                    pdf_path, "preprocess", "done" if result else "failed"
+                )
             except Exception:
                 logger.exception("Failed to preprocess PDF: %s", pdf_path)
                 progress_manager.update_status(pdf_path, "preprocess", "failed")

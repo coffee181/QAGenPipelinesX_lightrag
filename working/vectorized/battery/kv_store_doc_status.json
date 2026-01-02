@@ -1,0 +1,44 @@
+{
+  "01-GSK 27i高端多通道数控系统 20250226": {
+    "status": "processed",
+    "chunks_count": 9,
+    "chunks_list": [
+      "chunk-467523997cd1549a35c41ef9990cecb7",
+      "chunk-e61f2688a2d80279b2485fda40896984",
+      "chunk-e699a38415101d5d6f2e852584d69e0f",
+      "chunk-3358d6a51e7477e7568adad5a5e6bad6",
+      "chunk-5cec6b369e515b337f057480fba72175",
+      "chunk-3f38c28fb7366cbe9091fb7fc0e44987",
+      "chunk-868fe2e2e160e84dcce13039e7e24b1a",
+      "chunk-add367820cdf3779d7b80e83547894a3",
+      "chunk-49d98d665ecdadcb3ed06f76ff769897"
+    ],
+    "content_summary": "址：广州市黄埔区观达路22号编：510530\n\n数控系统营销中心\n\n销售热线：（020)81990819/(020)81986922\n\n传真：（020）81993683\n\n<div style=\"text-align: center;\"><img src=\"imgs/imginimagebox7681544996_1624.jpg\" alt=\"Image\" width=\"9%\" /></div>\n\n高端多通道数控系统GSK 27i系列\n\n<div style=\"text-align: cente...",
+    "content_length": 19238,
+    "created_at": "2026-01-01T17:21:20.853510+00:00",
+    "updated_at": "2026-01-01T17:28:43.672753+00:00",
+    "file_path": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\battery\\01-GSK 27i高端多通道数控系统 20250226.txt",
+    "track_id": "insert_20260102_012120_d77d0027",
+    "metadata": {
+      "processing_start_time": 1767288080,
+      "processing_end_time": 1767288523
+    }
+  },
+  "01-宝鸡机床VMC850L": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-d9e135cc84881731c2645869e70e0215"
+    ],
+    "content_summary": "热卖爆款名优产品质量稳定\n\n机床整体结构采用树脂砂型铸造，箱形结构，厚壁多筋，并经多道应力消除工序，使得机床具有良好的刚性；\n\n·整机针对高速、高刚性专门设计，主轴最高转速达800Or/min，X/Y采用滚珠线轨，Z轴超宽硬轨，XY轴快速移动达24m/min，Z轴快速移动15m/min；采用配重平衡系统，机床高速动态稳定性好；\n\n主轴锥孔及工作台面的淬火等方面拥有专有技术，保证了其硬度和精度稳定性；\n\n加工中心关键零件和出厂精度均由美国布朗·夏普BROWN&SHARPE 三坐标测量和英国雷尼绍R...",
+    "content_length": 605,
+    "created_at": "2026-01-01T17:28:43.733806+00:00",
+    "updated_at": "2026-01-01T17:29:31.621481+00:00",
+    "file_path": "F:\\QAGenPipelinesX_lightrag\\working\\processed\\battery\\01-宝鸡机床VMC850L.txt",
+    "track_id": "insert_20260102_012843_5545dfbc",
+    "metadata": {
+      "processing_start_time": 1767288523,
+      "processing_end_time": 1767288571
+    }
+  }
+}

@@ -38,6 +38,10 @@ def parse_args() -> argparse.Namespace:
         description="Vectorize processed .txt documents into a LightRAG KB"
     )
     parser.add_argument(
+        "--domain",
+        help="行业/领域名称。提供后默认路径自动切换到 working/<stage>/<domain>/",
+    )
+    parser.add_argument(
         "--input",
         type=Path,
         default=DEFAULT_PROCESSED_DIR,
@@ -157,6 +161,22 @@ def main() -> None:
 
     logger = setup_logging(args.log_level)
     config = ConfigManager(args.config)
+
+    if args.domain:
+        domain_processed = DEFAULT_PROCESSED_DIR / args.domain
+        domain_vector = DEFAULT_VECTOR_DIR / args.domain
+        if args.input == DEFAULT_PROCESSED_DIR:
+            args.input = domain_processed
+        if args.output == DEFAULT_VECTOR_DIR:
+            args.output = domain_vector
+
+        progress_path = DEFAULT_WORKING_DIR / "progress" / args.domain / "progress.jsonl"
+        config.set("progress.progress_file", str(progress_path))
+        config.set("rag.lightrag.working_dir", str(domain_vector))
+
+    # 确保 progress 路径存在
+    progress_file = Path(config.get("progress.progress_file", "progress.jsonl"))
+    FileUtils.ensure_directory(progress_file.expanduser().resolve().parent)
 
     working_dir = args.output.expanduser().resolve()
     FileUtils.ensure_directory(working_dir)

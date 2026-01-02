@@ -30,6 +30,10 @@ DEFAULT_QUESTIONS_DIR = DEFAULT_WORKING_DIR / "questions"
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate questions from .txt documents")
     parser.add_argument(
+        "--domain",
+        help="行业/领域名称。提供后默认路径自动切换到 working/<stage>/<domain>/",
+    )
+    parser.add_argument(
         "--input",
         type=Path,
         default=DEFAULT_PROCESSED_DIR,
@@ -145,6 +149,20 @@ def main() -> None:
     args = parse_args()
     logger = setup_logging(args.log_level)
     config = ConfigManager(args.config)
+
+    if args.domain:
+        domain_processed = DEFAULT_PROCESSED_DIR / args.domain
+        domain_questions = DEFAULT_QUESTIONS_DIR / args.domain
+        if args.input == DEFAULT_PROCESSED_DIR:
+            args.input = domain_processed
+        if args.output == DEFAULT_QUESTIONS_DIR:
+            args.output = domain_questions
+
+        progress_path = DEFAULT_WORKING_DIR / "progress" / args.domain / "progress.jsonl"
+        config.set("progress.progress_file", str(progress_path))
+
+    progress_file = Path(config.get("progress.progress_file", "progress.jsonl"))
+    FileUtils.ensure_directory(progress_file.expanduser().resolve().parent)
 
     _, question_service, _, progress_manager = create_services(config, logger)
 
