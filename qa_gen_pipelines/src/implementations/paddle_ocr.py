@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
@@ -41,7 +42,7 @@ class PaddleOCREngine(OCRInterface):
         """
         Extract plain text from a PDF using PPStructureV3.
         """
-        markdown_text, plain_text, _ = self._process_pdf(pdf_path, output_dir=None)
+        markdown_text, plain_text, _, _ = self._process_pdf(pdf_path, output_dir=None)
         return plain_text or markdown_text
 
     def process_pdf_to_document(self, pdf_path: Path, output_dir: Optional[Path] = None) -> Document:
@@ -49,7 +50,7 @@ class PaddleOCREngine(OCRInterface):
         Process a PDF into a Document, saving Markdown/images when output_dir is provided.
         """
         try:
-            markdown_text, plain_text, table_markdown = self._process_pdf(
+            markdown_text, plain_text, table_markdown, image_texts = self._process_pdf(
                 pdf_path, output_dir=output_dir
             )
 
@@ -62,6 +63,9 @@ class PaddleOCREngine(OCRInterface):
 
             if table_markdown:
                 content_parts.append("## 表格提取\n" + "\n\n".join(table_markdown))
+
+            if image_texts:
+                content_parts.append("## 图片OCR\n" + "\n\n".join(image_texts))
 
             content = "\n\n".join([c for c in content_parts if c.strip()])
 
@@ -147,10 +151,14 @@ class PaddleOCREngine(OCRInterface):
         markdown_text = self._concat_markdown_pages(markdown_pages)
         if table_markdown:
             markdown_text = f"{markdown_text}\n\n" + "\n\n".join(table_markdown)
-        plain_text = self.markdown_processor.markdown_to_plain_text(markdown_text)
 
+        # 先移除 img 标签，避免在纯文本中留下占位符
+        cleaned_markdown = re.sub(r"<img[^>]*>", " ", markdown_text, flags=re.IGNORECASE | re.DOTALL)
+        plain_text = self.markdown_processor.markdown_to_plain_text(cleaned_markdown)
+
+        image_texts: List[str] = []
         if output_dir is not None:
-            self._save_markdown_and_images(
+            image_texts = self._save_markdown_and_images(
                 pdf_path=pdf_path,
                 base_output_dir=output_dir,
                 markdown_text=markdown_text,
@@ -162,7 +170,7 @@ class PaddleOCREngine(OCRInterface):
             len(markdown_text),
             len(plain_text),
         )
-        return markdown_text, plain_text, table_markdown
+        return markdown_text, plain_text, table_markdown, image_texts
 
     def _concat_markdown_pages(self, markdown_pages: List[Any]) -> str:
         """Concatenate page-level markdown outputs safely."""
@@ -245,7 +253,7 @@ class PaddleOCREngine(OCRInterface):
         base_output_dir: Path,
         markdown_text: str,
         markdown_images: List[Dict[str, Any]],
-    ) -> None:
+    ) -> List[str]:
         """
         Save markdown (.md) and extracted images to disk, mirroring the reference sample.
         """
@@ -256,6 +264,8 @@ class PaddleOCREngine(OCRInterface):
         md_path.write_text(markdown_text, encoding="utf-8")
         logger.info("Markdown saved: %s", md_path)
 
+        image_texts: List[str] = []
+
         # Save images
         for item in markdown_images:
             if not item:
@@ -265,6 +275,23 @@ class PaddleOCREngine(OCRInterface):
                 file_path.parent.mkdir(parents=True, exist_ok=True)
                 try:
                     image.save(file_path)
+                    ocr_text = self._ocr_image(image)
+                    if ocr_text:
+                        image_texts.append(f"[图片OCR] {img_rel_path}: {ocr_text}")
                 except Exception as e:
                     logger.warning("Failed to save image %s: %s", file_path, e)
+
+        return image_texts
+
+    def _ocr_image(self, image) -> str:
+        """Run OCR on a PIL image using Tesseract and return concatenated text."""
+        try:
+            import pytesseract
+
+            text = pytesseract.image_to_string(image, lang=self.lang)
+            lines = [line.strip() for line in text.splitlines() if line.strip()]
+            return "\n".join(lines)
+        except Exception as exc:  # noqa: BLE001
+            logger.debug("Image OCR (tesseract) failed: %s", exc)
+            return ""
 

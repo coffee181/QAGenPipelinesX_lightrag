@@ -46,7 +46,8 @@ class SimpleTextChunker(TextChunkerInterface):
             chunk_repository: Optional ChunkRepository for persisting chunks
         """
         self.config = config
-        self.chunk_repository = chunk_repository
+        # 本地 chunk 持久化关闭
+        self.chunk_repository = None
         
         # 🚀 优化：支持 token 级切分（与 LightRAG 一致）
         self.use_token_chunking = config.get("text_chunker.use_token_chunking", False)
@@ -82,11 +83,8 @@ class SimpleTextChunker(TextChunkerInterface):
             logger.info(f"Character chunker initialized: max_size={self.max_chunk_size}, "
                       f"overlap={self.overlap_size}, sentences={self.chunk_on_sentences}")
         
-        # Chunk 持久化配置
-        self.persist_chunks = config.get("text_chunker.persist_chunks", False)
-        if self.persist_chunks and not self.chunk_repository:
-            logger.warning("persist_chunks is enabled but no chunk_repository provided")
-            self.persist_chunks = False
+        # Chunk 持久化关闭
+        self.persist_chunks = False
     
     def chunk_text(self, text: str, document_id: str) -> List[DocumentChunk]:
         """

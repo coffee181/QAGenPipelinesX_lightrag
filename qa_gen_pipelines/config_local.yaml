@@ -23,7 +23,7 @@ text_chunker:
   chunk_on_sentences: true # 按句子分块（仅字符级切分时生效）
   
   # Chunk 持久化配置
-  persist_chunks: true  # 是否持久化 chunk 到仓库
+  persist_chunks: false  # 已关闭本地chunk持久化
   chunk_store:
     type: "json"  # 存储类型：json, sqlite, postgres, redis
     path: "./lightrag_cache/chunks"  # 存储路径（使用已存在的lightrag_cache目录）
@@ -57,7 +57,7 @@ question_generator:
 # RAG Configuration
 rag:
   lightrag:
-    working_dir: "D:/QAGenPipelinesX_lightrag/working/vectorized" # 你可以把它改成你自己向量化的路径"
+    working_dir: "F:/QAGenPipelinesX_lightrag/working/vectorized" # 你可以把它改成你自己向量化的路径"
     llm_model: "deepseek-chat"
     embed_model: "text-embedding-3-large"  # 仍然作为 OpenAI 回退模型
     enable_cache: true          # 是否开启检索结果缓存

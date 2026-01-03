@@ -15,7 +15,6 @@ from ..models.document import Document
 from ..models.question import Question, QuestionSet
 from ..utils.config import ConfigManager
 from ..utils.file_utils import FileUtils
-from ..utils.chunk_repository import ChunkRepository
 from .progress_manager import ProgressManager
 
 
@@ -51,15 +50,6 @@ class QuestionService:
         self.dedup_similarity_threshold = config.get("question_generator.dedup_similarity_threshold", 0.85)
         self.enable_quality_filter = config.get("question_generator.enable_quality_filter", True)
         # local_scope（*_scope.json）导出已移除：不再生成/维护局部检索范围文件
-        
-        # 🚀 优化：初始化 ChunkRepository（如果配置了持久化）
-        self.chunk_repository = None
-        if config.get("text_chunker.persist_chunks", False):
-            try:
-                self.chunk_repository = ChunkRepository(config)
-                logger.info("ChunkRepository initialized for question generation")
-            except Exception as e:
-                logger.warning(f"Failed to initialize ChunkRepository: {e}")
         
         # Ensure output directory exists
         FileUtils.ensure_directory(self.output_dir)

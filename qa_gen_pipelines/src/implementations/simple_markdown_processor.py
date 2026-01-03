@@ -1,9 +1,10 @@
 """Simple markdown processor implementation."""
 
 import re
-from typing import Dict, Any
+from typing import Dict, Any, List
 from loguru import logger
 import markdown
+import pandas as pd
 
 from ..interfaces.markdown_processor_interface import MarkdownProcessorInterface, MarkdownProcessingError
 
@@ -33,8 +34,17 @@ class SimpleMarkdownProcessor(MarkdownProcessorInterface):
             if not markdown_text:
                 return ""
             
+            text = markdown_text
+
+            # 先处理 HTML 表格与图片，尽量保留关键信息
+            text = self._convert_html_tables(text)
+            text = self._replace_html_images(text)
+
+            # 移除残余 HTML 标签
+            text = self._strip_html_tags(text)
+
             # Remove markdown formatting patterns
-            text = self._remove_markdown_formatting(markdown_text)
+            text = self._remove_markdown_formatting(text)
             
             # Clean up extra whitespace
             text = self._clean_whitespace(text)
@@ -294,6 +304,53 @@ class SimpleMarkdownProcessor(MarkdownProcessorInterface):
         text = re.sub(r'^[-\s|:]+$', '', text, flags=re.MULTILINE)
         
         return text
+
+    def _convert_html_tables(self, text: str) -> str:
+        """将 HTML 表格转为 markdown，再退化为纯文本。"""
+        if "<table" not in text.lower():
+            return text
+
+        def _replace_table(match: re.Match) -> str:
+            html = match.group(0)
+            try:
+                dfs: List[pd.DataFrame] = pd.read_html(html)
+                if dfs:
+                    return "\n" + dfs[0].to_markdown(index=False) + "\n"
+            except Exception as exc:  # noqa: BLE001
+                logger.debug("parse html table failed: %s", exc)
+            # 退化：去标签保留文本
+            return re.sub(r"<[^>]+>", " ", html)
+
+        pattern = re.compile(r"<table.*?>.*?</table>", flags=re.IGNORECASE | re.DOTALL)
+        return pattern.sub(_replace_table, text)
+
+    def _replace_html_images(self, text: str) -> str:
+        """将 HTML img 标签转为可索引的占位文本，避免直接丢失信息。"""
+        if "<img" not in text.lower():
+            return text
+
+        def _extract_attr(raw: str, name: str) -> str:
+            m = re.search(rf'{name}\s*=\s*"([^"]*)"', raw, flags=re.IGNORECASE)
+            return m.group(1) if m else ""
+
+        def _replace_img(match: re.Match) -> str:
+            raw = match.group(0)
+            alt = _extract_attr(raw, "alt")
+            src = _extract_attr(raw, "src")
+            parts = ["[图片"]
+            if alt:
+                parts.append(f"alt:{alt}")
+            if src:
+                parts.append(f"src:{src}")
+            parts.append("]")
+            return " ".join(parts)
+
+        pattern = re.compile(r"<img[^>]*>", flags=re.IGNORECASE | re.DOTALL)
+        return pattern.sub(_replace_img, text)
+
+    def _strip_html_tags(self, text: str) -> str:
+        """粗粒度移除残余 HTML 标签，保留文本内容。"""
+        return re.sub(r"<[^>]+>", " ", text)
     
     def _clean_whitespace(self, text: str) -> str:
         """Clean up extra whitespace."""

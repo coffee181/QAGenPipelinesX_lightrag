@@ -21,21 +21,28 @@ class FileUtils:
         directory.mkdir(parents=True, exist_ok=True)
     
     @staticmethod
-    def get_files_by_extension(directory: Path, extensions: List[str]) -> List[Path]:
+    def get_files_by_extension(directory: Path, extensions: List[str], recursive: bool = True) -> List[Path]:
         """
         Get all files with specified extensions from directory.
         
         Args:
             directory: Directory to search
             extensions: List of file extensions (e.g., ['.pdf', '.txt'])
+            recursive: Whether to search recursively in subdirectories (default: True)
             
         Returns:
             List of file paths
         """
         files = []
         for ext in extensions:
-            files.extend(directory.glob(f"*{ext}"))
-        return sorted(files)
+            if recursive:
+                # 递归搜索所有子目录
+                files.extend(directory.rglob(f"*{ext}"))
+            else:
+                # 仅搜索当前目录
+                files.extend(directory.glob(f"*{ext}"))
+        # 过滤出文件（排除目录）
+        return sorted([f for f in files if f.is_file()])
     
     @staticmethod
     def save_text_file(content: str, file_path: Path) -> None:
