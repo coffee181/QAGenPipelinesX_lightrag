@@ -1,1 +1,1 @@
-
+基于lightrag的问答对生成系统，其中包括预处理，向量化和问答对生成三大步骤，需要在config文件里面配置对应的模型，其次需要安装lightrag库和paddleocr，之后下载requirement.txt里面的依赖即可跑动程序，跑动规则如used.md所示，其中包含进度管理等内容。
