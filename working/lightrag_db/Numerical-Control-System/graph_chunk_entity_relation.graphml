@@ -1,0 +1,2755 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="广州市黄埔区观达路22号">
+  <data key="d0">广州市黄埔区观达路22号</data>
+  <data key="d1">location</data>
+  <data key="d2">The address of Guangzhou Huadu Road 22, Huangpu District, Guangzhou.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901088</data>
+  <data key="d6"></data>
+</node>
+<node id="数控系统营销中心">
+  <data key="d0">数控系统营销中心</data>
+  <data key="d1">organization</data>
+  <data key="d2">A marketing center for CNC systems.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901088</data>
+  <data key="d6"></data>
+</node>
+<node id="GSK 27i系列">
+  <data key="d0">GSK 27i系列</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The GSK 27i series is a high-end multi-channel CNC system platform designed for complex, precision, and intelligent equipment processing.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901088</data>
+  <data key="d6"></data>
+</node>
+<node id="磨齿机机床">
+  <data key="d0">磨齿机机床</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A gear hobbing machine tool used for gear manufacturing.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901088</data>
+  <data key="d6"></data>
+</node>
+<node id="重庆机床YS7232">
+  <data key="d0">重庆机床YS7232</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The YS7232 CNC machine tool produced by Chongqing Machine Tool Co., Ltd.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901088</data>
+  <data key="d6"></data>
+</node>
+<node id="汽车制造">
+  <data key="d0">汽车制造</data>
+  <data key="d1">concept</data>
+  <data key="d2">Automobile manufacturing industry.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901088</data>
+  <data key="d6"></data>
+</node>
+<node id="船舶制造">
+  <data key="d0">船舶制造</data>
+  <data key="d1">concept</data>
+  <data key="d2">Shipbuilding industry.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901088</data>
+  <data key="d6"></data>
+</node>
+<node id="风力发电">
+  <data key="d0">风力发电</data>
+  <data key="d1">concept</data>
+  <data key="d2">Wind power generation industry.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901088</data>
+  <data key="d6"></data>
+</node>
+<node id="矿山机械">
+  <data key="d0">矿山机械</data>
+  <data key="d1">concept</data>
+  <data key="d2">Mining machinery industry.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="钢铁冶金">
+  <data key="d0">钢铁冶金</data>
+  <data key="d1">concept</data>
+  <data key="d2">Iron and steel metallurgy industry.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="汽车变速箱">
+  <data key="d0">汽车变速箱</data>
+  <data key="d1">artifact</data>
+  <data key="d2">An automobile transmission system component.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="差速器">
+  <data key="d0">差速器</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A differential gear used in vehicles.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="传动轴">
+  <data key="d0">传动轴</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A driveshaft component used in vehicles.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="齿轮零部件">
+  <data key="d0">齿轮零部件</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Gear components used in machinery.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="船舶的传动系统齿轮">
+  <data key="d0">船舶的传动系统齿轮</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Transmission system gears used in ships.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="风力发电设备中的齿轮传动系统">
+  <data key="d0">风力发电设备中的齿轮传动系统</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Gear transmission systems used in wind power generation equipment.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="GSK27i系列高端多通道数控系统">
+  <data key="d0">GSK27i系列高端多通道数控系统</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A high-end multi-channel CNC system platform designed for complex, precision, and intelligent equipment processing.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="17寸屏黑晶面板">
+  <data key="d0">17寸屏黑晶面板</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A 17-inch black crystal panel display used in the GSK27i series.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="21寸全触屏">
+  <data key="d0">21寸全触屏</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A 21-inch full touchscreen used in the GSK27i series.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="15寸屏独立式按键">
+  <data key="d0">15寸屏独立式按键</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A 15-inch screen with independent keys used in the GSK27i series.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="I/O单元设备IOR-04T">
+  <data key="d0">I/O单元设备IOR-04T</data>
+  <data key="d1">artifact</data>
+  <data key="d2">An I/O unit device model IOR-04T used in the GSK27i series.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="IOR-44T">
+  <data key="d0">IOR-44T</data>
+  <data key="d1">artifact</data>
+  <data key="d2">An I/O unit device model IOR-44T used in the GSK27i series.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="IOR-44F">
+  <data key="d0">IOR-44F</data>
+  <data key="d1">artifact</data>
+  <data key="d2">An I/O unit device model IOR-44F used in the GSK27i series.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="直线电机">
+  <data key="d0">直线电机</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A linear motor used in CNC systems.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="力矩电机">
+  <data key="d0">力矩电机</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A torque motor used in CNC systems.</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="成品">
+  <data key="d0">成品</data>
+  <data key="d1">concept</data>
+  <data key="d2">成品refers to finished products or goods resulting from manufacturing processes.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901092</data>
+  <data key="d6"></data>
+</node>
+<node id="四通道多工位高效精密机床戴傑B2000">
+  <data key="d0">四通道多工位高效精密机床戴傑B2000</data>
+  <data key="d1">artifact</data>
+  <data key="d2">This is a high-efficiency precision machine tool model produced by戴傑, capable of multi-position and multi-channel processing.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="整体铣刀">
+  <data key="d0">整体铣刀</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A type of milling cutter used for machining operations.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="IT刀具">
+  <data key="d0">IT刀具</data>
+  <data key="d1">artifact</data>
+  <data key="d2">IT tools or cutting tools designed for specific machining applications.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="木工刀具">
+  <data key="d0">木工刀具</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Woodworking tools used in the production of wooden components.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="医疗工具">
+  <data key="d0">医疗工具</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Medical tools or instruments used in medical manufacturing.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="钻头">
+  <data key="d0">钻头</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Drilling bits used for creating holes in various materials.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="铰刀">
+  <data key="d0">铰刀</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Reamers used to enlarge and finish drilled holes.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="五轴RTCP功能">
+  <data key="d0">五轴RTCP功能</data>
+  <data key="d1">concept</data>
+  <data key="d2">Five-axis RTCP (Real-Time Coordinate Programming) functionality enabling precise machining operations.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="九轴五联动车铣复合大连机床B70ST">
+  <data key="d0">九轴五联动车铣复合大连机床B70ST</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A nine-axis, five-linked turning and milling composite machine tool produced by大连机床.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="电子齿轮箱">
+  <data key="d0">电子齿轮箱</data>
+  <data key="d1">artifact</data>
+  <data key="d2">An electronic gearbox used in machinery for controlling rotational speed.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="GSK-Link总线支持32从站以上功能">
+  <data key="d0">GSK-Link总线支持32从站以上功能</data>
+  <data key="d1">concept</data>
+  <data key="d2">A communication bus system supporting up to 32 slave stations, enhancing machine tool functionality.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="高速高精卧式加工中心青岛云科SH50">
+  <data key="d0">高速高精卧式加工中心青岛云科SH50</data>
+  <data key="d1">artifact</data>
+  <data key="d2">High-speed and high-precision horizontal processing center produced by青岛云科.</data>
+  <data key="d3">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="GSK27i系列">
+  <data key="d0">GSK27i系列</data>
+  <data key="d3">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d2">The GSK27i series is applied in the automobile manufacturing industry for gear processing.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901093</data>
+  <data key="d6"></data>
+</node>
+<node id="通信和数据输入输出接口功能">
+  <data key="d0">通信和数据输入输出接口功能</data>
+  <data key="d3">chunk-6ac6836cbb7605170f2eaae7549543c6</data>
+  <data key="d2">通信和数据输入输出接口功能包含数据接口功能</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901096</data>
+  <data key="d6"></data>
+</node>
+<node id="通信和数据输入输出接口功能与数据接口功能的关系">
+  <data key="d0">通信和数据输入输出接口功能与数据接口功能的关系</data>
+  <data key="d3">chunk-6ac6836cbb7605170f2eaae7549543c6</data>
+  <data key="d2">通信和数据输入输出接口功能包含数据接口功能</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901097</data>
+  <data key="d6"></data>
+</node>
+<node id="数据接口功能">
+  <data key="d0">数据接口功能</data>
+  <data key="d3">chunk-6ac6836cbb7605170f2eaae7549543c6</data>
+  <data key="d2">数据接口功能实现以太网功能</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901097</data>
+  <data key="d6"></data>
+</node>
+<node id="数据接口功能与以太网的关系">
+  <data key="d0">数据接口功能与以太网的关系</data>
+  <data key="d3">chunk-6ac6836cbb7605170f2eaae7549543c6</data>
+  <data key="d2">数据接口功能实现以太网功能</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901097</data>
+  <data key="d6"></data>
+</node>
+<node id="数据接口功能与USB的关系">
+  <data key="d0">数据接口功能与USB的关系</data>
+  <data key="d3">chunk-6ac6836cbb7605170f2eaae7549543c6</data>
+  <data key="d2">数据接口功能支持USB接口</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d5">1768901098</data>
+  <data key="d6"></data>
+</node>
+<node id="宝鸡机床VMC850L">
+  <data key="d0">宝鸡机床VMC850L</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A high-speed and high-rigidity CNC machine tool with features such as resin sand casting, box structure, thick walls, multiple stress-relief processes, and advanced measurement systems.</data>
+  <data key="d3">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1768901170</data>
+  <data key="d6"></data>
+</node>
+<node id="BROWN&amp;SHARPE">
+  <data key="d0">BROWN&amp;SHARPE</data>
+  <data key="d1">organization</data>
+  <data key="d2">An organization providing coordinate measuring machines for strict quality control of the machining center.</data>
+  <data key="d3">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1768901170</data>
+  <data key="d6"></data>
+</node>
+<node id="RENISHAW">
+  <data key="d0">RENISHAW</data>
+  <data key="d1">organization</data>
+  <data key="d2">A company that supplies dual-frequency laser interferometers to ensure machine accuracy and precision.</data>
+  <data key="d3">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1768901170</data>
+  <data key="d6"></data>
+</node>
+<node id="三坐标测量">
+  <data key="d0">三坐标测量</data>
+  <data key="d1">method</data>
+  <data key="d2">A measurement method used by BROWN&amp;SHARPE to inspect geometric and working precision of the machine tool.</data>
+  <data key="d3">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1768901170</data>
+  <data key="d6"></data>
+</node>
+<node id="双频激光干涉仪">
+  <data key="d0">双频激光干涉仪</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A device provided by RENISHAW for precise detection of machine accuracy.</data>
+  <data key="d3">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1768901170</data>
+  <data key="d6"></data>
+</node>
+<node id="机床整体结构">
+  <data key="d0">机床整体结构</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The structural design of the machine tool featuring resin sand casting, box-type structure, thick walls with multiple ribs, and stress-relief processes for enhanced rigidity.</data>
+  <data key="d3">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1768901170</data>
+  <data key="d6"></data>
+</node>
+<node id="高速、高刚性设计">
+  <data key="d0">高速、高刚性设计</data>
+  <data key="d1">concept</data>
+  <data key="d2">A design concept emphasizing high-speed performance and robust rigidity tailored for machining centers.</data>
+  <data key="d3">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1768901170</data>
+  <data key="d6"></data>
+</node>
+<node id="淬火技术">
+  <data key="d0">淬火技术</data>
+  <data key="d1">method</data>
+  <data key="d2">A heat treatment method applied to the spindle taper hole and worktable surface to ensure hardness and precision stability.</data>
+  <data key="d3">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1768901170</data>
+  <data key="d6"></data>
+</node>
+<node id="配重平衡系统">
+  <data key="d0">配重平衡系统</data>
+  <data key="d1">method</data>
+  <data key="d2">A dynamic balancing system designed to enhance machine stability during high-speed operations.</data>
+  <data key="d3">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1768901170</data>
+  <data key="d6"></data>
+</node>
+<node id="加工中心关键零件">
+  <data key="d0">加工中心关键零件</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Critical components of the machining center, essential for its functionality and precision.</data>
+  <data key="d3">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1768901170</data>
+  <data key="d6"></data>
+</node>
+<node id="出厂精度检测">
+  <data key="d0">出厂精度检测</data>
+  <data key="d1">method</data>
+  <data key="d2">The process of inspecting geometric and working precision at factory exit to ensure machine quality.</data>
+  <data key="d3">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d5">1768901170</data>
+  <data key="d6"></data>
+</node>
+<node id="GSK980MDc钻铣床数控系统">
+  <data key="d0">GSK980MDc钻铣床数控系统</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A CNC system for drilling and milling machines with 5-axis联动control, supporting online CAM functionality and various programming features.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903011</data>
+  <data key="d6"></data>
+</node>
+<node id="伺服主轴">
+  <data key="d0">伺服主轴</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A servo spindle used in the GSK980MDc system to provide high precision and efficiency in machining operations.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903011</data>
+  <data key="d6"></data>
+</node>
+<node id="圆盘式刀库">
+  <data key="d0">圆盘式刀库</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A disc-type tool magazine compatible with the GSK980MDc CNC system for storing and selecting cutting tools during machining.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903011</data>
+  <data key="d6"></data>
+</node>
+<node id="斗笠式刀库">
+  <data key="d0">斗笠式刀库</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A turret-style tool magazine designed to work with the GSK980MDc system, offering flexibility in tool selection and management.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903011</data>
+  <data key="d6"></data>
+</node>
+<node id="5轴5联动控制">
+  <data key="d0">5轴5联动控制</data>
+  <data key="d1">concept</data>
+  <data key="d2">A control method enabling simultaneous movement of five axes for complex machining operations in the GSK980MDc system.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903011</data>
+  <data key="d6"></data>
+</node>
+<node id="在线式CAM功能">
+  <data key="d0">在线式CAM功能</data>
+  <data key="d1">method</data>
+  <data key="d2">An online CAD-to-CAM conversion feature that allows direct import and processing of CAD files to generate machining programs without manual programming.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903011</data>
+  <data key="d6"></data>
+</node>
+<node id="平面铣自动编程">
+  <data key="d0">平面铣自动编程</data>
+  <data key="d1">method</data>
+  <data key="d2">A programming function in the GSK980MDc system that automatically generates milling programs based on selected points for planar surfaces.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903011</data>
+  <data key="d6"></data>
+</node>
+<node id="固定循环指令">
+  <data key="d0">固定循环指令</data>
+  <data key="d1">concept</data>
+  <data key="d2">Predefined machining cycles provided by the GSK980MDc system to simplify operations such as drilling, boring, and tapping.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903011</data>
+  <data key="d6"></data>
+</node>
+<node id="复合循环指令">
+  <data key="d0">复合循环指令</data>
+  <data key="d1">concept</data>
+  <data key="d2">Advanced multi-operation cycles in the GSK980MDc system for efficient execution of complex machining tasks like rough milling and finishing.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="4寸真彩LCD">
+  <data key="d0">4寸真彩LCD</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A 4-inch color LCD display unit supporting multilingual interfaces on the GSK980MDc CNC system.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="刚性攻丝功能">
+  <data key="d0">刚性攻丝功能</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A rigid tapping feature in the GSK980MDc system that enhances machining precision and efficiency using servo spindle interpolation.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="自动找中心点">
+  <data key="d0">自动找中心点</data>
+  <data key="d1">method</data>
+  <data key="d2">An automatic center point calculation function in the GSK980MDc system for accurately determining rectangular or circular workpiece centers during tool setting operations.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="方便灵活的PLC">
+  <data key="d0">方便灵活的PLC</data>
+  <data key="d1">concept</data>
+  <data key="d2">A flexible programmable logic controller (PLC) feature in the GSK980MDc system that supports online monitoring and updating of ladder diagrams for enhanced system customization and control.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="适配高速刀库">
+  <data key="d0">适配高速刀库</data>
+  <data key="d1">artifact</data>
+  <data key="d2">High-speed tool magazine compatibility provided by the GSK980MDc system to support efficient tool changing during machining operations.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="技术规格">
+  <data key="d0">技术规格</data>
+  <data key="d1">concept</data>
+  <data key="d2">Technical specifications defining the capabilities and parameters of the GSK980MDc CNC system, including control axes, coordinate systems, and dimensional limits.</data>
+  <data key="d3">chunk-0f152321a6b2fbd9923773ad3b207ca5&lt;SEP&gt;chunk-292e6766cf954af52018ccf67c6752d7</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="GSK980MDc">
+  <data key="d0">GSK980MDc</data>
+  <data key="d1">artifact</data>
+  <data key="d2">GSK980MDc is a machine tool equipped with银川大河立式钻铣中心, featuring programming simplicity and ease of operation.</data>
+  <data key="d3">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="银川大河立式钻铣中心">
+  <data key="d0">银川大河立式钻铣中心</data>
+  <data key="d1">artifact</data>
+  <data key="d2">银川大河立式钻铣中心is a vertical machining center designed for drilling, tapping, milling, and boring operations.</data>
+  <data key="d3">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="Programming Simplicity">
+  <data key="d0">Programming Simplicity</data>
+  <data key="d1">concept</data>
+  <data key="d2">Programming Simplicity refers to the ease with which GSK980MDc can be programmed for various machining tasks.</data>
+  <data key="d3">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="Ease of Operation">
+  <data key="d0">Ease of Operation</data>
+  <data key="d1">concept</data>
+  <data key="d2">Ease of Operation describes the user-friendly interface and straightforward functionality of GSK980MDc.</data>
+  <data key="d3">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="Single Clamping Process">
+  <data key="d0">Single Clamping Process</data>
+  <data key="d1">concept</data>
+  <data key="d2">Single Clamping Process refers to the ability of GSK980MDc to complete multiple machining operations with one setup.</data>
+  <data key="d3">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="X轴">
+  <data key="d0">X轴</data>
+  <data key="d1">artifact</data>
+  <data key="d2">X轴is a component of GSK980MDc with specifications including 850mm travel, 15N.m torque, and 0.001mm positioning accuracy.</data>
+  <data key="d3">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="Y轴">
+  <data key="d0">Y轴</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Y轴is a component of GSK980MDc with specifications including 650mm travel, 15N.m torque, and 0.001mm positioning accuracy.</data>
+  <data key="d3">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="Z轴">
+  <data key="d0">Z轴</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Z轴is a component of GSK980MDc with specifications including 510mm travel, 15N.m torque, and 0.001mm positioning accuracy.</data>
+  <data key="d3">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="C轴">
+  <data key="d0">C轴</data>
+  <data key="d1">artifact</data>
+  <data key="d2">C轴is a component of GSK980MDc with specifications including 360° rotation, 48N.m torque, and 0.001° positioning accuracy.</data>
+  <data key="d3">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="滚齿机">
+  <data key="d0">滚齿机</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A type of machine tool used for cutting gears.</data>
+  <data key="d3">chunk-0f43bea2151b18cd33d6b4ce04939086</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="数控滚齿机精度规范">
+  <data key="d0">数控滚齿机精度规范</data>
+  <data key="d1">concept</data>
+  <data key="d2">Precision standards for numerical control gear-cutting machines.</data>
+  <data key="d3">chunk-0f43bea2151b18cd33d6b4ce04939086</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="GSK218MC在重庆机床(集团)有限责任公司滚齿机上的应用">
+  <data key="d0">GSK218MC在重庆机床(集团)有限责任公司滚齿机上的应用</data>
+  <data key="d1">content</data>
+  <data key="d2">Case study demonstrating the application of GSK systems in a specific machine tool.</data>
+  <data key="d3">chunk-0f43bea2151b18cd33d6b4ce04939086</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="GSK218MC在异型螺杆铣床上的改造应用">
+  <data key="d0">GSK218MC在异型螺杆铣床上的改造应用</data>
+  <data key="d1">content</data>
+  <data key="d2">Application case showing the adaptation of GSK systems in unconventional screw milling machines.</data>
+  <data key="d3">chunk-0f43bea2151b18cd33d6b4ce04939086</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="precision CNC machining services">
+  <data key="d0">precision CNC machining services</data>
+  <data key="d1">service</data>
+  <data key="d2">Precision CNC machining services refer to high-accuracy manufacturing processes used to create custom parts from various materials.`&lt;SEP&gt;Precision CNC machining services refer to high-accuracy manufacturing processes used to create custom parts from various materials.</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="aerospace">
+  <data key="d0">aerospace</data>
+  <data key="d1">industry</data>
+  <data key="d2">The aerospace industry involves the design, development, production, operation, and maintenance of aircraft and spacecraft.`&lt;SEP&gt;The aerospace industry involves the design, development, production, operation, and maintenance of aircraft and spacecraft.</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="medical devices">
+  <data key="d0">medical devices</data>
+  <data key="d1">industry</data>
+  <data key="d2">Medical device manufacturing focuses on creating instruments and equipment used in healthcare settings for diagnosis, monitoring, treatment, and prevention of diseases.`&lt;SEP&gt;Medical device manufacturing focuses on creating instruments and equipment used in healthcare settings for diagnosis, monitoring, treatment, and prevention of diseases.</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="CNC turning">
+  <data key="d0">CNC turning</data>
+  <data key="d1">manufacturingprocess</data>
+  <data key="d2">CNC Turning is a machining process that rotates the workpiece around a single axis while cutting tools are applied to produce cylindrical shapes.`&lt;SEP&gt;CNC Turning is a machining process that rotates the workpiece around a single axis while cutting tools are applied to produce cylindrical shapes.</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="milling">
+  <data key="d0">milling</data>
+  <data key="d1">manufacturingprocess</data>
+  <data key="d2">Milling is a manufacturing process that uses rotating cutters to remove material from the surface of a workpiece, creating various shapes and features.`&lt;SEP&gt;Milling is a manufacturing process that uses rotating cutters to remove material from the surface of a workpiece, creating various shapes and features.</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903015</data>
+  <data key="d6"></data>
+</node>
+<node id="stainless steel">
+  <data key="d0">stainless steel</data>
+  <data key="d1">material</data>
+  <data key="d2">Stainless steel is a type of steel alloy with a minimum chromium content of 10.5%, known for its corrosion resistance and durability.`&lt;SEP&gt;Stainless steel is a type of steel alloy with a minimum chromium content of 10.5%, known for its corrosion resistance and durability.</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="aluminum">
+  <data key="d0">aluminum</data>
+  <data key="d1">material</data>
+  <data key="d2">Aluminum is a lightweight, durable metal commonly used in manufacturing due to its high strength-to-weight ratio and resistance to corrosion.`&lt;SEP&gt;Aluminum is a lightweight, durable metal commonly used in manufacturing due to its high strength-to-weight ratio and resistance to corrosion.</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="titanium">
+  <data key="d0">titanium</data>
+  <data key="d1">material</data>
+  <data key="d2">Titanium is a strong, lightweight, and corrosion-resistant metal often used in aerospace, medical, and other high-performance applications.`&lt;SEP&gt;Titanium is a strong, lightweight, and corrosion-resistant metal often used in aerospace, medical, and other high-performance applications.</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="tight tolerances">
+  <data key="d0">tight tolerances</data>
+  <data key="d1">manufacturingfeature</data>
+  <data key="d2">Tight tolerances refer to the precise control of dimensions and geometric characteristics in manufacturing to ensure parts fit together correctly and function as intended.`&lt;SEP&gt;Tight tolerances refer to the precise control of dimensions and geometric characteristics in manufacturing to ensure parts fit together correctly and function as intended.</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="high-quality surface finishes">
+  <data key="d0">high-quality surface finishes</data>
+  <data key="d1">manufacturingfeature</data>
+  <data key="d2">High-quality surface finishes are smooth, polished surfaces on manufactured parts that enhance appearance, reduce friction, and improve functionality.`&lt;SEP&gt;High-quality surface finishes are smooth, polished surfaces on manufactured parts that enhance appearance, reduce friction, and improve functionality.</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="5-axis linkage">
+  <data key="d0">5-axis linkage</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A type of machine control system used for multi-axis machining.</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="PLC axis control number">
+  <data key="d0">PLC axis control number</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The number of axes controlled by a programmable logic controller (PLC).</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="Feed axis synchronous control">
+  <data key="d0">Feed axis synchronous control</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A feature enabling synchronized control over multiple feed axes in machining systems.</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="Full closed-loop control">
+  <data key="d0">Full closed-loop control</data>
+  <data key="d1">method</data>
+  <data key="d2">A control method ensuring precise positioning through feedback mechanisms.</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="Incremental encoder">
+  <data key="d0">Incremental encoder</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A type of position sensor used to measure changes in motion.</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="Absolute encoder">
+  <data key="d0">Absolute encoder</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A position sensor providing absolute position measurements.</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="Grating ruler">
+  <data key="d0">Grating ruler</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A precision measurement device using grating technology for high accuracy.</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="Minimum command unit IS-B">
+  <data key="d0">Minimum command unit IS-B</data>
+  <data key="d1">data</data>
+  <data key="d2">The smallest increment of movement defined for model IS-B.</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="Minimum command unit IS-C">
+  <data key="d0">Minimum command unit IS-C</data>
+  <data key="d1">data</data>
+  <data key="d2">The smallest increment of movement defined for model IS-C.</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="Maximum feed speed">
+  <data key="d0">Maximum feed speed</data>
+  <data key="d1">data</data>
+  <data key="d2">The highest speed at which the machine can move during operation, specified as 200m/min.</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="G43.4">
+  <data key="d0">G43.4</data>
+  <data key="d1">method</data>
+  <data key="d2">A programming command for tool center point control.</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="G68.2">
+  <data key="d0">G68.2</data>
+  <data key="d1">method</data>
+  <data key="d2">A programming command enabling five-axis positioning (3+2 axis).</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="ISO instruction standard">
+  <data key="d0">ISO instruction standard</data>
+  <data key="d1">content</data>
+  <data key="d2">Programming standards adhering to ISO specifications for machine tool operation.</data>
+  <data key="d3">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903016</data>
+  <data key="d6"></data>
+</node>
+<node id="Concept">
+  <data key="d0">Concept</data>
+  <data key="d1">自动化生产线</data>
+  <data key="d2">support seamless integration&lt;SEP&gt;remote monitoring function&lt;SEP&gt;automated production line</data>
+  <data key="d3">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="主轴倍率">
+  <data key="d0">主轴倍率</data>
+  <data key="d1">concept</data>
+  <data key="d2">Spindle speed multiplier settings&lt;SEP&gt;Spindle speed adjustment range and control features.</data>
+  <data key="d3">chunk-292e6766cf954af52018ccf67c6752d7&lt;SEP&gt;chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="给进功能">
+  <data key="d0">给进功能</data>
+  <data key="d1">concept</data>
+  <data key="d2">Feed rate functions including rapid movement and cutting speeds.</data>
+  <data key="d3">chunk-292e6766cf954af52018ccf67c6752d7</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="补偿功能">
+  <data key="d0">补偿功能</data>
+  <data key="d1">concept</data>
+  <data key="d2">Compensation features for backlash and tool radius.</data>
+  <data key="d3">chunk-292e6766cf954af52018ccf67c6752d7</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="十六级实时修调">
+  <data key="d0">十六级实时修调</data>
+  <data key="d1">method</data>
+  <data key="d2">A real-time adjustment method for 16 levels of control</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="进给功能">
+  <data key="d0">进给功能</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Feed function component</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="直线型加减速">
+  <data key="d0">直线型加减速</data>
+  <data key="d1">method</data>
+  <data key="d2">Linear acceleration/deceleration control method</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="S型加减速">
+  <data key="d0">S型加减速</data>
+  <data key="d1">method</data>
+  <data key="d2">S-curve acceleration/deceleration control method</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="指数型加减速">
+  <data key="d0">指数型加减速</data>
+  <data key="d1">method</data>
+  <data key="d2">Exponential acceleration/deceleration control method</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="伺服电机">
+  <data key="d0">伺服电机</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Servo motor component</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="多圈绝对位置编码器">
+  <data key="d0">多圈绝对位置编码器</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Multi-turn absolute position encoder</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="绝对坐标系自动恢复">
+  <data key="d0">绝对坐标系自动恢复</data>
+  <data key="d1">method</data>
+  <data key="d2">Automatic recovery of absolute coordinate system</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="无档块机械回零">
+  <data key="d0">无档块机械回零</data>
+  <data key="d1">method</data>
+  <data key="d2">Mechanical zero return without挡块</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="伺服参数在线修改">
+  <data key="d0">伺服参数在线修改</data>
+  <data key="d1">method</data>
+  <data key="d2">Online modification of servo parameters</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="伺服状态在线诊断">
+  <data key="d0">伺服状态在线诊断</data>
+  <data key="d1">method</data>
+  <data key="d2">Online diagnosis of servo status</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="远程监控">
+  <data key="d0">远程监控</data>
+  <data key="d1">method</data>
+  <data key="d2">Remote monitoring function</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="故障诊断功能">
+  <data key="d0">故障诊断功能</data>
+  <data key="d1">method</data>
+  <data key="d2">Fault diagnosis functionality</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="模拟电压输出">
+  <data key="d0">模拟电压输出</data>
+  <data key="d1">method</data>
+  <data key="d2">Analog voltage output function</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="主轴编码器反馈">
+  <data key="d0">主轴编码器反馈</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Spindle encoder feedback system</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="刀具磨损补偿">
+  <data key="d0">刀具磨损补偿</data>
+  <data key="d1">concept</data>
+  <data key="d2">Tool wear compensation concept</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="C型刀尖半径补偿">
+  <data key="d0">C型刀尖半径补偿</data>
+  <data key="d1">method</data>
+  <data key="d2">C-type tool radius compensation method</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="刀具功能">
+  <data key="d0">刀具功能</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Tool-related functionalities</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="PLC功能">
+  <data key="d0">PLC功能</data>
+  <data key="d1">method</data>
+  <data key="d2">Programmable Logic Controller functions</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="基本指令">
+  <data key="d0">基本指令</data>
+  <data key="d1">content</data>
+  <data key="d2">Basic programming instructions</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="功能指令">
+  <data key="d0">功能指令</data>
+  <data key="d1">content</data>
+  <data key="d2">Functional programming instructions</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903017</data>
+  <data key="d6"></data>
+</node>
+<node id="操作日志">
+  <data key="d0">操作日志</data>
+  <data key="d1">data</data>
+  <data key="d2">Operation log data</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="运行日志">
+  <data key="d0">运行日志</data>
+  <data key="d1">data</data>
+  <data key="d2">Runtime log data</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="程序容量">
+  <data key="d0">程序容量</data>
+  <data key="d1">data</data>
+  <data key="d2">Program capacity specifications</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="宏程序">
+  <data key="d0">宏程序</data>
+  <data key="d1">method</data>
+  <data key="d2">Macro program functionality</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="子程序调用">
+  <data key="d0">子程序调用</data>
+  <data key="d1">method</data>
+  <data key="d2">Subroutine calling feature</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="反向间隙补偿">
+  <data key="d0">反向间隙补偿</data>
+  <data key="d1">concept</data>
+  <data key="d2">Backlash compensation concept</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="螺距误差补偿">
+  <data key="d0">螺距误差补偿</data>
+  <data key="d1">concept</data>
+  <data key="d2">Pitch error compensation</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="人机界面">
+  <data key="d0">人机界面</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Human-machine interface component</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="支持中文显示">
+  <data key="d0">支持中文显示</data>
+  <data key="d1">method</data>
+  <data key="d2">Support for Chinese language display</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="加工轨迹显示">
+  <data key="d0">加工轨迹显示</data>
+  <data key="d1">function</data>
+  <data key="d2">Machining trajectory display feature</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="操作管理">
+  <data key="d0">操作管理</data>
+  <data key="d1">management</data>
+  <data key="d2">Operation management functions</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="USB文件操作">
+  <data key="d0">USB文件操作</data>
+  <data key="d1">method</data>
+  <data key="d2">USB file operation capabilities</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="远程文件传输">
+  <data key="d0">远程文件传输</data>
+  <data key="d1">method</data>
+  <data key="d2">Remote file transfer functionality</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="紧急停止">
+  <data key="d0">紧急停止</data>
+  <data key="d1">safetymeasure</data>
+  <data key="d2">Emergency stop function</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="外形尺寸">
+  <data key="d0">外形尺寸</data>
+  <data key="d1">data</data>
+  <data key="d2">Physical dimensions data</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="Method">
+  <data key="d0">Method</data>
+  <data key="d1">rigidtappingwaveformdiagnosis</data>
+  <data key="d2">A process for measuring tool length and setting the origin of the workpiece coordinate system.&lt;SEP&gt;A function enabling synchronized motion between multiple axes in machine tool operation.&lt;SEP&gt;An algorithm used to optimize synchronization between dual motors in gear加工applications.&lt;SEP&gt;A diagnostic method for monitoring the state of tapping processes in machining.</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903018</data>
+  <data key="d6"></data>
+</node>
+<node id="Artifact">
+  <data key="d0">Artifact</data>
+  <data key="d1">桁架机械手</data>
+  <data key="d2">The term "Artifact" encompasses a wide range of tools, technologies, and systems used in manufacturing and industrial settings. It refers to both physical devices and software solutions designed to enhance production efficiency, precision, and automation.
+
+1. **Software Systems**: Artifact can describe PC-based remote monitoring software or control units like the GPC main control unit. These systems enable networked management, allowing for the optimization of multiple machine tools in a workshop environment. They facilitate real-time monitoring of programmable logic controllers (PLCs), ensuring efficient signal sampling and system operation.
+
+2. **Control Methods**: In some contexts, Artifact refers to specific control methods, such as those that ensure precise tool movement perpendicular to cutting surfaces. This enhances machining accuracy during operations.
+
+3. **Measurement Instruments**: Artifact can also denote instruments designed for automatic measurement of cutting tools' length and diameter, aiding in quality control and tool maintenance.
+
+4. **Machine Tools**: Certain artifacts are specialized machine tools, such as those used for gear cutting and shaping, which play a critical role in producing precise mechanical components.
+
+5. **Robotic Systems**: Additionally, Artifact encompasses robotic solutions like gantry manipulators and industrial robots. These systems automate various tasks, improving productivity and flexibility in manufacturing processes.
+
+In summary, the term "Artifact" broadly refers to the diverse tools, technologies, and software systems that drive modern manufacturing, ranging from precision measurement instruments to advanced robotics and automation software.</data>
+  <data key="d3">chunk-ead472d52c46d9287dc02b11f7d8d87c&lt;SEP&gt;chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903042</data>
+  <data key="d6"></data>
+</node>
+<node id="Technical Parameters">
+  <data key="d0">Technical Parameters</data>
+  <data key="d3">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d2">X轴technical parameters include 850mm travel, 15N.m torque, and 0.001mm positioning accuracy.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903046</data>
+  <data key="d6"></data>
+</node>
+<node id="provide">
+  <data key="d0">provide</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d2">Precision CNC machining services provide solutions for the aerospace industry by manufacturing high-accuracy components.`&lt;SEP&gt;Precision CNC machining services provide solutions for the aerospace industry by manufacturing high-accuracy components.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903046</data>
+  <data key="d6"></data>
+</node>
+<node id="used in">
+  <data key="d0">used in</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d2">CNC Turning is a key process used in precision CNC machining services to produce cylindrical parts with high accuracy.`&lt;SEP&gt;CNC Turning is a key process used in precision CNC machining services to produce cylindrical parts with high accuracy.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903046</data>
+  <data key="d6"></data>
+</node>
+<node id="commonly used in">
+  <data key="d0">commonly used in</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d2">Stainless steel is a commonly used material in CNC Turning due to its corrosion resistance and mechanical properties.`</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903046</data>
+  <data key="d6"></data>
+</node>
+<node id="offer">
+  <data key="d0">offer</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d2">Precision CNC machining services offer specialized manufacturing for medical device components requiring strict tolerances and biocompatibility.`&lt;SEP&gt;Precision CNC machining services offer specialized manufacturing for medical device components requiring strict tolerances and biocompatibility.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903046</data>
+  <data key="d6"></data>
+</node>
+<node id="used for">
+  <data key="d0">used for</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d2">Titanium is often used in high-performance applications due to its strength-to-weight ratio and resistance to corrosion.`</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903046</data>
+  <data key="d6"></data>
+</node>
+<node id="achieved through">
+  <data key="d0">achieved through</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d2">Tight tolerances are achieved through the use of precision CNC machining services, ensuring parts meet exact specifications.`</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903047</data>
+  <data key="d6"></data>
+</node>
+<node id="result from">
+  <data key="d0">result from</data>
+  <data key="d3">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d2">High-quality surface finishes result from advanced CNC Turning and Milling processes that ensure smooth and polished surfaces.`</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903047</data>
+  <data key="d6"></data>
+</node>
+<node id="CNC机床">
+  <data key="d0">CNC机床</data>
+  <data key="d3">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d2">control connection, build automated production line</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903047</data>
+  <data key="d6"></data>
+</node>
+<node id="PC端远程监控软件">
+  <data key="d0">PC端远程监控软件</data>
+  <data key="d3">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d2">realize remote control and status monitoring</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903047</data>
+  <data key="d6"></data>
+</node>
+<node id="工业机器人">
+  <data key="d0">工业机器人</data>
+  <data key="d3">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d2">support seamless integration, improve production efficiency</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903047</data>
+  <data key="d6"></data>
+</node>
+<node id="GPC总控单元">
+  <data key="d0">GPC总控单元</data>
+  <data key="d3">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d2">control connection, build automated production line</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903047</data>
+  <data key="d6"></data>
+</node>
+<node id="使用">
+  <data key="d0">使用</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d2">来实现位置反馈</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903047</data>
+  <data key="d6"></data>
+</node>
+<node id="远程监控功能">
+  <data key="d0">远程监控功能</data>
+  <data key="d3">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d2">realize remote control and status monitoring</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903047</data>
+  <data key="d6"></data>
+</node>
+<node id="自动化生产线">
+  <data key="d0">自动化生产线</data>
+  <data key="d3">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d2">support seamless integration, improve production efficiency</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903048</data>
+  <data key="d6"></data>
+</node>
+<node id="描述">
+  <data key="d0">描述</data>
+  <data key="d3">chunk-292e6766cf954af52018ccf67c6752d7</data>
+  <data key="d2">Technical specifications describe the spindle speed adjustment capabilities.&lt;SEP&gt;Technical specifications include details about feed rate functions.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903048</data>
+  <data key="d6"></data>
+</node>
+<node id="实时修调">
+  <data key="d0">实时修调</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d2">和主轴倍率</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903048</data>
+  <data key="d6"></data>
+</node>
+<node id="Rigid Tapping Waveform Diagnosis">
+  <data key="d0">Rigid Tapping Waveform Diagnosis</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d2">The rolling gear machine uses the rigid tapping waveform diagnosis method to monitor and improve machining processes.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903048</data>
+  <data key="d6"></data>
+</node>
+<node id="Automatic Tool Setting">
+  <data key="d0">Automatic Tool Setting</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d2">The PLC signal sampling function enables accurate tool setting by monitoring critical signals during the automatic tool setting process.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903048</data>
+  <data key="d6"></data>
+</node>
+<node id="被应用于">
+  <data key="d0">被应用于</data>
+  <data key="d3">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d2">和主轴倍率</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903048</data>
+  <data key="d6"></data>
+</node>
+<node id="Rolling Gear Machine">
+  <data key="d0">Rolling Gear Machine</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d2">The rolling gear machine uses the rigid tapping waveform diagnosis method to monitor and improve machining processes.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903048</data>
+  <data key="d6"></data>
+</node>
+<node id="PLC Signal Sampling Function">
+  <data key="d0">PLC Signal Sampling Function</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d2">The PLC signal sampling function enables accurate tool setting by monitoring critical signals during the automatic tool setting process.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903048</data>
+  <data key="d6"></data>
+</node>
+<node id="桁架机械手">
+  <data key="d0">桁架机械手</data>
+  <data key="d3">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d2">control connection, build automated production line</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903048</data>
+  <data key="d6"></data>
+</node>
+<node id="Adaptive Phase Error Compensation">
+  <data key="d0">Adaptive Phase Error Compensation</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d2">The adaptive phase error compensation algorithm is applied in gear加工applications to optimize motor synchronization after power interruptions.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903048</data>
+  <data key="d6"></data>
+</node>
+<node id="Gear加工Application">
+  <data key="d0">Gear加工Application</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d2">The adaptive phase error compensation algorithm is applied in gear加工applications to optimize motor synchronization after power interruptions.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903049</data>
+  <data key="d6"></data>
+</node>
+<node id="Synchronous Drive Function">
+  <data key="d0">Synchronous Drive Function</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d2">The rolling gear machine integrates the synchronous drive function to enable coordinated motion between multiple axes for efficient machining operations.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903049</data>
+  <data key="d6"></data>
+</node>
+<node id="Tool Length Measurement Instrument">
+  <data key="d0">Tool Length Measurement Instrument</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d2">The automatic tool setting method utilizes a tool length measurement instrument to ensure precise measurements and origin settings.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903049</data>
+  <data key="d6"></data>
+</node>
+<node id="Electronic Gearbox (EGB) Function">
+  <data key="d0">Electronic Gearbox (EGB) Function</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d2">The electronic gearbox function is incorporated into the rolling gear machine to ensure precise and synchronized rotation during gear加工.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903049</data>
+  <data key="d6"></data>
+</node>
+<node id="Cutting Feed Normal Control">
+  <data key="d0">Cutting Feed Normal Control</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d2">The rolling gear machine employs the cutting feed normal control method to prevent over-cutting and ensure high-quality machining results.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903050</data>
+  <data key="d6"></data>
+</node>
+<node id="Workshop Management Application">
+  <data key="d0">Workshop Management Application</data>
+  <data key="d3">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d2">The workshop management application integrates with the rolling gear machine to facilitate networked monitoring, control, and optimization of multiple machines in a production environment.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d5">1768903050</data>
+  <data key="d6"></data>
+</node>
+<node id="宝鸡机床">
+  <data key="d0">宝鸡机床</data>
+  <data key="d1">organization</data>
+  <data key="d2">宝鸡机床is a company known for producing high-quality machine tools, including models like TK 36S COMMAND THE FUTURE.</data>
+  <data key="d3">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d5">1768903130</data>
+  <data key="d6"></data>
+</node>
+<node id="TK 36S COMMAND THE FUTURE">
+  <data key="d0">TK 36S COMMAND THE FUTURE</data>
+  <data key="d1">artifact</data>
+  <data key="d2">TK 36S COMMAND THE FUTURE is a machine tool characterized by its precision spindle structure, smooth operation, and high-speed performance, designed for non-ferrous metal加工.</data>
+  <data key="d3">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d5">1768903130</data>
+  <data key="d6"></data>
+</node>
+<node id="精密通孔式主轴结构">
+  <data key="d0">精密通孔式主轴结构</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Precision through-spindle structure used in the machine tool for stability and performance.</data>
+  <data key="d3">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d5">1768903130</data>
+  <data key="d6"></data>
+</node>
+<node id="主轴轴承">
+  <data key="d0">主轴轴承</data>
+  <data key="d1">artifact</data>
+  <data key="d2">High-precision spindle bearings ensuring durability and accuracy.</data>
+  <data key="d3">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d5">1768903130</data>
+  <data key="d6"></data>
+</node>
+<node id="床身导轨">
+  <data key="d0">床身导轨</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Bedway guide rails treated with medium-frequency quenching for precision maintenance.</data>
+  <data key="d3">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d5">1768903130</data>
+  <data key="d6"></data>
+</node>
+<node id="电动刀架">
+  <data key="d0">电动刀架</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Electric toolpost with high positioning accuracy and reliability.</data>
+  <data key="d3">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d5">1768903130</data>
+  <data key="d6"></data>
+</node>
+<node id="分离式冷却水箱">
+  <data key="d0">分离式冷却水箱</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Separate cooling tank for easy maintenance and cleaning.</data>
+  <data key="d3">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d5">1768903130</data>
+  <data key="d6"></data>
+</node>
+<node id="数控机床">
+  <data key="d0">数控机床</data>
+  <data key="d1">concept</data>
+  <data key="d2">CNC machine tools, a category that includes the models produced by宝鸡机床.</data>
+  <data key="d3">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d5">1768903130</data>
+  <data key="d6"></data>
+</node>
+<node id="TK36">
+  <data key="d0">TK36</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Another model of CNC machine tool.</data>
+  <data key="d3">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d5">1768903130</data>
+  <data key="d6"></data>
+</node>
+<node id="TK36(S)">
+  <data key="d0">TK36(S)</data>
+  <data key="d1">artifact</data>
+  <data key="d2">A variant model of the TK36 series.</data>
+  <data key="d3">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d4">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d5">1768903130</data>
+  <data key="d6"></data>
+</node>
+<edge source="汽车制造" target="GSK27i系列">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series is applied in the automobile manufacturing industry for gear processing.</data>
+  <data key="d9">application领域,industry usage</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901093</data>
+  <data key="d13"></data>
+</edge>
+<edge source="船舶制造" target="GSK27i系列">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series is applied in the shipbuilding industry for gear processing.</data>
+  <data key="d9">application领域,industry usage</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901094</data>
+  <data key="d13"></data>
+</edge>
+<edge source="风力发电" target="GSK27i系列">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series is applied in the wind power generation industry for gear processing.</data>
+  <data key="d9">application领域,industry usage</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901094</data>
+  <data key="d13"></data>
+</edge>
+<edge source="矿山机械" target="GSK27i系列">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series is applied in the mining machinery industry for gear processing.</data>
+  <data key="d9">application领域,industry usage</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901094</data>
+  <data key="d13"></data>
+</edge>
+<edge source="钢铁冶金" target="GSK27i系列">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series is applied in the iron and steel metallurgy industry for gear processing.</data>
+  <data key="d9">application领域,industry usage</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901094</data>
+  <data key="d13"></data>
+</edge>
+<edge source="汽车变速箱" target="GSK27i系列">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series is used for processing automobile transmission systems components like gearboxes.</data>
+  <data key="d9">component manufacturing,product application</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="差速器" target="GSK27i系列">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series is used for processing differential gears in vehicles.</data>
+  <data key="d9">component manufacturing,product application</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="传动轴" target="GSK27i系列">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series is used for processing driveshaft components in vehicles.</data>
+  <data key="d9">component manufacturing,product application</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="齿轮零部件" target="GSK27i系列">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series is used for processing gear components in machinery.</data>
+  <data key="d9">component manufacturing,product application</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="船舶的传动系统齿轮" target="GSK27i系列">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series is used for processing transmission system gears in ships.</data>
+  <data key="d9">component manufacturing,product application</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="风力发电设备中的齿轮传动系统" target="GSK27i系列">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series is used for processing gear transmission systems in wind power generation equipment.</data>
+  <data key="d9">component manufacturing,product application</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK27i系列高端多通道数控系统" target="17寸屏黑晶面板">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series incorporates a 17-inch black crystal panel display for enhanced user interface and control.</data>
+  <data key="d9">display technology,hardware integration</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901094</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK27i系列高端多通道数控系统" target="21寸全触屏">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series incorporates a 21-inch full touchscreen for intuitive user interaction and control.</data>
+  <data key="d9">display technology,hardware integration</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK27i系列高端多通道数控系统" target="15寸屏独立式按键">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series incorporates a 15-inch screen with independent keys for precise control and operation.</data>
+  <data key="d9">display technology,hardware integration</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK27i系列高端多通道数控系统" target="I/O单元设备IOR-04T">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series integrates the IOR-04T I/O unit device for input/output operations.</data>
+  <data key="d9">I/O functionality,hardware integration</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK27i系列高端多通道数控系统" target="IOR-44T">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series integrates the IOR-44T I/O unit device for advanced input/output operations.</data>
+  <data key="d9">I/O functionality,hardware integration</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK27i系列高端多通道数控系统" target="IOR-44F">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK27i series integrates the IOR-44F I/O unit device for advanced input/output operations.</data>
+  <data key="d9">I/O functionality,hardware integration</data>
+  <data key="d10">chunk-ba71590d7712b95beea8e73f40e6e0f2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="四通道多工位高效精密机床戴傑B2000" target="整体铣刀">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool supports the加工of整体铣刀.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="四通道多工位高效精密机床戴傑B2000" target="IT刀具">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool is capable of machining IT刀具.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901095</data>
+  <data key="d13"></data>
+</edge>
+<edge source="四通道多工位高效精密机床戴傑B2000" target="木工刀具">
+  <data key="d7">1.0</data>
+  <data key="d8">This machine tool can process木工刀具.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="四通道多工位高效精密机床戴傑B2000" target="医疗工具">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool supports the加工of医疗tools.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="四通道多工位高效精密机床戴傑B2000" target="钻头">
+  <data key="d7">1.0</data>
+  <data key="d8">This machine tool can process钻头.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="四通道多工位高效精密机床戴傑B2000" target="铰刀">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool supports the加工of铰刀.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="整体铣刀" target="九轴五联动车铣复合大连机床B70ST">
+  <data key="d7">1.0</data>
+  <data key="d8">This machine tool can process整体铣刀.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="整体铣刀" target="高速高精卧式加工中心青岛云科SH50">
+  <data key="d7">1.0</data>
+  <data key="d8">This machine tool can process整体铣刀.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="IT刀具" target="九轴五联动车铣复合大连机床B70ST">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool supports the加工of IT刀具.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="IT刀具" target="高速高精卧式加工中心青岛云科SH50">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool supports the加工of IT刀具.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="木工刀具" target="九轴五联动车铣复合大连机床B70ST">
+  <data key="d7">1.0</data>
+  <data key="d8">This machine tool can process木工刀具.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="木工刀具" target="高速高精卧式加工中心青岛云科SH50">
+  <data key="d7">1.0</data>
+  <data key="d8">This machine tool can process木工刀具.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901097</data>
+  <data key="d13"></data>
+</edge>
+<edge source="医疗工具" target="高速高精卧式加工中心青岛云科SH50">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool supports the加工of medical tools.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901096</data>
+  <data key="d13"></data>
+</edge>
+<edge source="医疗工具" target="九轴五联动车铣复合大连机床B70ST">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool supports the加工of medical tools.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901097</data>
+  <data key="d13"></data>
+</edge>
+<edge source="钻头" target="高速高精卧式加工中心青岛云科SH50">
+  <data key="d7">1.0</data>
+  <data key="d8">This machine tool can process钻头.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901097</data>
+  <data key="d13"></data>
+</edge>
+<edge source="钻头" target="九轴五联动车铣复合大连机床B70ST">
+  <data key="d7">1.0</data>
+  <data key="d8">This machine tool can process钻头.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901097</data>
+  <data key="d13"></data>
+</edge>
+<edge source="铰刀" target="高速高精卧式加工中心青岛云科SH50">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool supports the加工of铰刀.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901097</data>
+  <data key="d13"></data>
+</edge>
+<edge source="铰刀" target="九轴五联动车铣复合大连机床B70ST">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool supports the加工of铰刀.</data>
+  <data key="d9">machining capability,tool support</data>
+  <data key="d10">chunk-d6ee1113a7154536bcb38505e7673630</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901097</data>
+  <data key="d13"></data>
+</edge>
+<edge source="通信和数据输入输出接口功能" target="通信和数据输入输出接口功能与数据接口功能的关系">
+  <data key="d7">1.0</data>
+  <data key="d8">通信和数据输入输出接口功能包含数据接口功能</data>
+  <data key="d9">数据接口功能</data>
+  <data key="d10">chunk-6ac6836cbb7605170f2eaae7549543c6</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901097</data>
+  <data key="d13"></data>
+</edge>
+<edge source="数据接口功能" target="数据接口功能与以太网的关系">
+  <data key="d7">1.0</data>
+  <data key="d8">数据接口功能实现以太网功能</data>
+  <data key="d9">以太网</data>
+  <data key="d10">chunk-6ac6836cbb7605170f2eaae7549543c6</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901097</data>
+  <data key="d13"></data>
+</edge>
+<edge source="数据接口功能" target="数据接口功能与USB的关系">
+  <data key="d7">1.0</data>
+  <data key="d8">数据接口功能支持USB接口</data>
+  <data key="d9">USB</data>
+  <data key="d10">chunk-6ac6836cbb7605170f2eaae7549543c6</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-GSK 27i高端多通道数控系统 20250226.txt</data>
+  <data key="d12">1768901098</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床VMC850L" target="BROWN&amp;SHARPE">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool is inspected using BROWN&amp;SHARPE's coordinate measuring machines to ensure precision.</data>
+  <data key="d9">measurement technology,quality control</data>
+  <data key="d10">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1768901170</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床VMC850L" target="RENISHAW">
+  <data key="d7">1.0</data>
+  <data key="d8">The machine tool undergoes strict testing with RENISHAW's dual-frequency laser interferometers to verify its performance and stability.</data>
+  <data key="d9">accuracy verification,laser interferometry</data>
+  <data key="d10">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1768901171</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床VMC850L" target="机床整体结构">
+  <data key="d7">1.0</data>
+  <data key="d8">The robust structural features contribute to the high-rigidity performance of the VMC850L.</data>
+  <data key="d9">rigidity enhancement,structural design</data>
+  <data key="d10">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1768901171</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床VMC850L" target="高速、高刚性设计">
+  <data key="d7">1.0</data>
+  <data key="d8">This design concept drives the machine's high-speed and high-rigidity capabilities.</data>
+  <data key="d9">design philosophy,performance optimization</data>
+  <data key="d10">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1768901171</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床VMC850L" target="淬火技术">
+  <data key="d7">1.0</data>
+  <data key="d8">The quenching technology ensures critical parts maintain hardness and stability.</data>
+  <data key="d9">hardening process,precision maintenance</data>
+  <data key="d10">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1768901171</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床VMC850L" target="配重平衡系统">
+  <data key="d7">1.0</data>
+  <data key="d8">This system enhances the machine's dynamic performance during high-speed operations.</data>
+  <data key="d9">dynamic balance,stability improvement</data>
+  <data key="d10">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1768901171</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床VMC850L" target="加工中心关键零件">
+  <data key="d7">1.0</data>
+  <data key="d8">Key parts are integral to achieving precise machining on the VMC850L.</data>
+  <data key="d9">component functionality,precision assurance</data>
+  <data key="d10">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1768901172</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床VMC850L" target="出厂精度检测">
+  <data key="d7">1.0</data>
+  <data key="d8">Factory exit inspections ensure the machine meets stringent geometric and working precision standards.</data>
+  <data key="d9">accuracy verification,quality control</data>
+  <data key="d10">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1768901172</data>
+  <data key="d13"></data>
+</edge>
+<edge source="BROWN&amp;SHARPE" target="三坐标测量">
+  <data key="d7">1.0</data>
+  <data key="d8">BROWN&amp;SHARPE provides the necessary tools for comprehensive coordinate measurement to ensure machine accuracy.</data>
+  <data key="d9">measurement technology,quality assurance</data>
+  <data key="d10">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1768901171</data>
+  <data key="d13"></data>
+</edge>
+<edge source="RENISHAW" target="双频激光干涉仪">
+  <data key="d7">1.0</data>
+  <data key="d8">RENISHAW supplies advanced dual-frequency laser interferometers for precise and reliable measurements.</data>
+  <data key="d9">laser technology,precision measurement</data>
+  <data key="d10">chunk-b0cc63d131518ec4c69dae86513f2508</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01-宝鸡机床VMC850L.txt</data>
+  <data key="d12">1768901171</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="伺服主轴">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc CNC system integrates a servo spindle for precise and efficient machining operations.</data>
+  <data key="d9">high-precision spindle integration,system component</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903043</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="圆盘式刀库">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc system supports the use of a disc-type tool magazine for efficient tool selection and storage.</data>
+  <data key="d9">compatible tool management,disc-type magazine support</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903043</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="斗笠式刀库">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc system is compatible with a turret-style tool magazine for flexible tool management.</data>
+  <data key="d9">compatible tool management,turret-style magazine support</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903043</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="5轴5联动控制">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc CNC system features 5-axis simultaneous control for complex and precise machining operations.</data>
+  <data key="d9">advanced control capability,system feature</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903043</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="在线式CAM功能">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc system includes an online CAM function that enables direct processing of CAD files for efficient program generation.</data>
+  <data key="d9">CAD-to-CAM conversion capability,built-in functionality</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903044</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="平面铣自动编程">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc system provides an automatic programming function for planar milling operations based on selected measurement points.</data>
+  <data key="d9">automatic programming feature,built-in functionality</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903044</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="固定循环指令">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc system includes fixed cycle instructions to simplify common machining operations like drilling and tapping.</data>
+  <data key="d9">built-in functionality,predefined machining cycles</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903044</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="复合循环指令">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc system offers composite cycle instructions for efficient execution of complex machining tasks.</data>
+  <data key="d9">advanced multi-operation cycles,built-in functionality</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903044</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="4寸真彩LCD">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc CNC system features a 4-inch color LCD display for intuitive operation and multilingual support.</data>
+  <data key="d9">system component,user interface display</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903044</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="刚性攻丝功能">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc CNC system incorporates a rigid tapping function that enhances machining precision and efficiency by combining servo spindle interpolation with tapping operations.</data>
+  <data key="d9">rigid tapping functionality integration,system feature</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903045</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="自动找中心点">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc system includes an automatic center point calculation function that simplifies tool setting for rectangular and circular workpieces by deriving center coordinates from measured points.</data>
+  <data key="d9">automatic center point calculation feature,built-in functionality</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903045</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="方便灵活的PLC">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc system features a flexible programmable logic controller (PLC) that enables real-time monitoring and updating of ladder diagrams for customized control operations.</data>
+  <data key="d9">flexible PLC functionality,system feature</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903045</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="适配高速刀库">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc system supports the use of high-speed tool magazines to ensure efficient and rapid tool changes during complex machining tasks.</data>
+  <data key="d9">compatible component,high-speed tool magazine support</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903046</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc钻铣床数控系统" target="技术规格">
+  <data key="d7">1.0</data>
+  <data key="d8">The GSK980MDc CNC system is defined by its comprehensive technical specifications, which outline control axes, coordinate systems, and dimensional limits to guide machine operation and programming.</data>
+  <data key="d9">system specification,technical parameters definition</data>
+  <data key="d10">chunk-0f152321a6b2fbd9923773ad3b207ca5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903046</data>
+  <data key="d13"></data>
+</edge>
+<edge source="技术规格" target="描述">
+  <data key="d7">2.0</data>
+  <data key="d8">Technical specifications describe the spindle speed adjustment capabilities.&lt;SEP&gt;Technical specifications include details about feed rate functions.</data>
+  <data key="d9">主轴倍率,给进功能</data>
+  <data key="d10">chunk-292e6766cf954af52018ccf67c6752d7</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903048</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc" target="银川大河立式钻铣中心">
+  <data key="d7">1.0</data>
+  <data key="d8">GSK980MDc is paired with银川大河立式钻铣中心for advanced machining operations.</data>
+  <data key="d9">equipment pairing,machine tool integration</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903044</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc" target="Programming Simplicity">
+  <data key="d7">1.0</data>
+  <data key="d8">GSK980MDc incorporates Programming Simplicity to enhance user experience and efficiency.</data>
+  <data key="d9">feature,functionality</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903044</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc" target="Ease of Operation">
+  <data key="d7">1.0</data>
+  <data key="d8">GSK980MDc is designed with Ease of Operation in mind for smooth and intuitive control.</data>
+  <data key="d9">feature,functionality</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903045</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc" target="Single Clamping Process">
+  <data key="d7">1.0</data>
+  <data key="d8">GSK980MDc supports Single Clamping Process to reduce setup time and improve efficiency.</data>
+  <data key="d9">machining capability</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903045</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc" target="X轴">
+  <data key="d7">1.0</data>
+  <data key="d8">X轴is an integral part of GSK980MDc with specific technical parameters.</data>
+  <data key="d9">component relationship,ownership</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903045</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc" target="Y轴">
+  <data key="d7">1.0</data>
+  <data key="d8">Y轴is a key component of GSK980MDc designed for precise machining operations.</data>
+  <data key="d9">component relationship,ownership</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903046</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc" target="Z轴">
+  <data key="d7">1.0</data>
+  <data key="d8">Z轴is a critical axis in GSK980MDc for vertical machining tasks.</data>
+  <data key="d9">component relationship,ownership</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903046</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GSK980MDc" target="C轴">
+  <data key="d7">1.0</data>
+  <data key="d8">C轴is an essential rotating axis in GSK980MDc for multi-angle machining operations.</data>
+  <data key="d9">component relationship,ownership</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903046</data>
+  <data key="d13"></data>
+</edge>
+<edge source="银川大河立式钻铣中心" target="Programming Simplicity">
+  <data key="d7">1.0</data>
+  <data key="d8">银川大河立式钻铣中心leverages Programming Simplicity to streamline machining processes.</data>
+  <data key="d9">technological capability</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903045</data>
+  <data key="d13"></data>
+</edge>
+<edge source="银川大河立式钻铣中心" target="Ease of Operation">
+  <data key="d7">1.0</data>
+  <data key="d8">银川大河立式钻铣中心is equipped with Ease of Operation features for user-friendly operation.</data>
+  <data key="d9">technological capability</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903045</data>
+  <data key="d13"></data>
+</edge>
+<edge source="X轴" target="Technical Parameters">
+  <data key="d7">1.0</data>
+  <data key="d8">X轴technical parameters include 850mm travel, 15N.m torque, and 0.001mm positioning accuracy.</data>
+  <data key="d9">specification details</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903046</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Y轴" target="Technical Parameters">
+  <data key="d7">1.0</data>
+  <data key="d8">Y轴technical parameters include 650mm travel, 15N.m torque, and 0.001mm positioning accuracy.</data>
+  <data key="d9">specification details</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903046</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Z轴" target="Technical Parameters">
+  <data key="d7">1.0</data>
+  <data key="d8">Z轴technical parameters include 510mm travel, 15N.m torque, and 0.001mm positioning accuracy.</data>
+  <data key="d9">specification details</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903046</data>
+  <data key="d13"></data>
+</edge>
+<edge source="C轴" target="Technical Parameters">
+  <data key="d7">1.0</data>
+  <data key="d8">C轴technical parameters include 360° rotation, 48N.m torque, and 0.001° positioning accuracy.</data>
+  <data key="d9">specification details</data>
+  <data key="d10">chunk-69a38457d607d51891412fba6fd143c2</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="precision CNC machining services" target="provide">
+  <data key="d7">2.0</data>
+  <data key="d8">Precision CNC machining services provide solutions for the aerospace industry by manufacturing high-accuracy components.`&lt;SEP&gt;Precision CNC machining services provide solutions for the aerospace industry by manufacturing high-accuracy components.</data>
+  <data key="d9">aerospace</data>
+  <data key="d10">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903046</data>
+  <data key="d13"></data>
+</edge>
+<edge source="precision CNC machining services" target="offer">
+  <data key="d7">2.0</data>
+  <data key="d8">Precision CNC machining services offer specialized manufacturing for medical device components requiring strict tolerances and biocompatibility.`&lt;SEP&gt;Precision CNC machining services offer specialized manufacturing for medical device components requiring strict tolerances and biocompatibility.</data>
+  <data key="d9">medical devices</data>
+  <data key="d10">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="CNC turning" target="used in">
+  <data key="d7">2.0</data>
+  <data key="d8">CNC Turning is a key process used in precision CNC machining services to produce cylindrical parts with high accuracy.`&lt;SEP&gt;CNC Turning is a key process used in precision CNC machining services to produce cylindrical parts with high accuracy.</data>
+  <data key="d9">precision CNC machining services</data>
+  <data key="d10">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903046</data>
+  <data key="d13"></data>
+</edge>
+<edge source="milling" target="used in">
+  <data key="d7">2.0</data>
+  <data key="d8">Milling is another essential manufacturing process utilized in precision CNC machining services for creating complex shapes and features.`&lt;SEP&gt;M</data>
+  <data key="d9">precision CNC machining services</data>
+  <data key="d10">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="stainless steel" target="commonly used in">
+  <data key="d7">1.0</data>
+  <data key="d8">Stainless steel is a commonly used material in CNC Turning due to its corrosion resistance and mechanical properties.`</data>
+  <data key="d9">CNC turning</data>
+  <data key="d10">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="aluminum" target="commonly used in">
+  <data key="d7">1.0</data>
+  <data key="d8">Aluminum is frequently used in milling processes because of its lightweight and excellent machinability.`</data>
+  <data key="d9">milling</data>
+  <data key="d10">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="titanium" target="used for">
+  <data key="d7">1.0</data>
+  <data key="d8">Titanium is often used in high-performance applications due to its strength-to-weight ratio and resistance to corrosion.`</data>
+  <data key="d9">high-performance applications</data>
+  <data key="d10">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="tight tolerances" target="achieved through">
+  <data key="d7">1.0</data>
+  <data key="d8">Tight tolerances are achieved through the use of precision CNC machining services, ensuring parts meet exact specifications.`</data>
+  <data key="d9">precision CNC machining services</data>
+  <data key="d10">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="high-quality surface finishes" target="result from">
+  <data key="d7">1.0</data>
+  <data key="d8">High-quality surface finishes result from advanced CNC Turning and Milling processes that ensure smooth and polished surfaces.`</data>
+  <data key="d9">CNC turning and milling processes</data>
+  <data key="d10">chunk-360534a22c794b45251d96c1e9f54a02</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="5-axis linkage" target="PLC axis control number">
+  <data key="d7">1.0</data>
+  <data key="d8">The 5-axis linkage system utilizes PLC axis control numbers for coordinated operations.</data>
+  <data key="d9">axis control,system component</data>
+  <data key="d10">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="5-axis linkage" target="Minimum command unit IS-B">
+  <data key="d7">1.0</data>
+  <data key="d8">The 5-axis linkage system has a minimum command unit of 0.001mm for model IS-B.</data>
+  <data key="d9">machine precision,specification</data>
+  <data key="d10">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Feed axis synchronous control" target="Maximum feed speed">
+  <data key="d7">1.0</data>
+  <data key="d8">The maximum feed speed of 200m/min is supported by the feed axis synchronous control feature.</data>
+  <data key="d9">performance parameter,speed capability</data>
+  <data key="d10">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Full closed-loop control" target="Incremental encoder">
+  <data key="d7">1.0</data>
+  <data key="d8">Full closed-loop control integrates incremental encoders to ensure accurate positioning.</data>
+  <data key="d9">control mechanism,position feedback</data>
+  <data key="d10">chunk-b6584dad8382450d7ea3fa81f8debc1f</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903047</data>
+  <data key="d13"></data>
+</edge>
+<edge source="伺服电机" target="使用">
+  <data key="d7">1.0</data>
+  <data key="d8">来实现位置反馈</data>
+  <data key="d9">编码器</data>
+  <data key="d10">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903048</data>
+  <data key="d13"></data>
+</edge>
+<edge source="CNC机床" target="GPC总控单元">
+  <data key="d7">1.0</data>
+  <data key="d8">control connection, build automated production line</data>
+  <data key="d9">控制连接,构建自动化生产线</data>
+  <data key="d10">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903048</data>
+  <data key="d13"></data>
+</edge>
+<edge source="CNC机床" target="自动化生产线">
+  <data key="d7">1.0</data>
+  <data key="d8">support seamless integration, improve production efficiency</data>
+  <data key="d9">提高生产效率,支持无缝接入</data>
+  <data key="d10">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903048</data>
+  <data key="d13"></data>
+</edge>
+<edge source="PC端远程监控软件" target="远程监控功能">
+  <data key="d7">1.0</data>
+  <data key="d8">realize remote control and status monitoring</data>
+  <data key="d9">实现远程控制和状态监视</data>
+  <data key="d10">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903048</data>
+  <data key="d13"></data>
+</edge>
+<edge source="工业机器人" target="自动化生产线">
+  <data key="d7">1.0</data>
+  <data key="d8">support seamless integration, improve production efficiency</data>
+  <data key="d9">提高生产效率,支持无缝接入</data>
+  <data key="d10">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903048</data>
+  <data key="d13"></data>
+</edge>
+<edge source="工业机器人" target="GPC总控单元">
+  <data key="d7">1.0</data>
+  <data key="d8">control connection, build automated production line</data>
+  <data key="d9">控制连接,构建自动化生产线</data>
+  <data key="d10">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903048</data>
+  <data key="d13"></data>
+</edge>
+<edge source="GPC总控单元" target="桁架机械手">
+  <data key="d7">1.0</data>
+  <data key="d8">control connection, build automated production line</data>
+  <data key="d9">控制连接,构建自动化生产线</data>
+  <data key="d10">chunk-ead472d52c46d9287dc02b11f7d8d87c</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903049</data>
+  <data key="d13"></data>
+</edge>
+<edge source="实时修调" target="被应用于">
+  <data key="d7">1.0</data>
+  <data key="d8">和主轴倍率</data>
+  <data key="d9">进给功能</data>
+  <data key="d10">chunk-c1593ddd4bc7f6024d3a71606b26d291</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903048</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Rigid Tapping Waveform Diagnosis" target="Rolling Gear Machine">
+  <data key="d7">1.0</data>
+  <data key="d8">The rolling gear machine uses the rigid tapping waveform diagnosis method to monitor and improve machining processes.</data>
+  <data key="d9">method_utilization</data>
+  <data key="d10">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903048</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Automatic Tool Setting" target="PLC Signal Sampling Function">
+  <data key="d7">1.0</data>
+  <data key="d8">The PLC signal sampling function enables accurate tool setting by monitoring critical signals during the automatic tool setting process.</data>
+  <data key="d9">function_enables</data>
+  <data key="d10">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903048</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Automatic Tool Setting" target="Tool Length Measurement Instrument">
+  <data key="d7">1.0</data>
+  <data key="d8">The automatic tool setting method utilizes a tool length measurement instrument to ensure precise measurements and origin settings.</data>
+  <data key="d9">instrument_usage</data>
+  <data key="d10">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903049</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Rolling Gear Machine" target="Synchronous Drive Function">
+  <data key="d7">1.0</data>
+  <data key="d8">The rolling gear machine integrates the synchronous drive function to enable coordinated motion between multiple axes for efficient machining operations.</data>
+  <data key="d9">method_integration</data>
+  <data key="d10">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903049</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Rolling Gear Machine" target="Electronic Gearbox (EGB) Function">
+  <data key="d7">1.0</data>
+  <data key="d8">The electronic gearbox function is incorporated into the rolling gear machine to ensure precise and synchronized rotation during gear加工.</data>
+  <data key="d9">function_incorporation</data>
+  <data key="d10">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903049</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Rolling Gear Machine" target="Cutting Feed Normal Control">
+  <data key="d7">1.0</data>
+  <data key="d8">The rolling gear machine employs the cutting feed normal control method to prevent over-cutting and ensure high-quality machining results.</data>
+  <data key="d9">control_method</data>
+  <data key="d10">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Rolling Gear Machine" target="Workshop Management Application">
+  <data key="d7">1.0</data>
+  <data key="d8">The workshop management application integrates with the rolling gear machine to facilitate networked monitoring, control, and optimization of multiple machines in a production environment.</data>
+  <data key="d9">system_integration</data>
+  <data key="d10">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903050</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Adaptive Phase Error Compensation" target="Gear加工Application">
+  <data key="d7">1.0</data>
+  <data key="d8">The adaptive phase error compensation algorithm is applied in gear加工applications to optimize motor synchronization after power interruptions.</data>
+  <data key="d9">algorithm_application</data>
+  <data key="d10">chunk-b5cd623256f44dff7d06cfeaa10618d4</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\01系统综合-铣削.txt</data>
+  <data key="d12">1768903049</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床" target="TK 36S COMMAND THE FUTURE">
+  <data key="d7">1.0</data>
+  <data key="d8">宝鸡机床manufactures the TK 36S COMMAND THE FUTURE machine tool, emphasizing its precision and high-quality performance.</data>
+  <data key="d9">manufacturing,product development</data>
+  <data key="d10">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d12">1768903131</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床" target="精密通孔式主轴结构">
+  <data key="d7">1.0</data>
+  <data key="d8">宝鸡机床incorporates a precision through-spindle structure as a key feature of their machine tools.</data>
+  <data key="d9">component,feature</data>
+  <data key="d10">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d12">1768903131</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床" target="主轴轴承">
+  <data key="d7">1.0</data>
+  <data key="d8">宝鸡机床uses high-precision spindle bearings in their machine tools for enhanced performance.</data>
+  <data key="d9">component,feature</data>
+  <data key="d10">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d12">1768903131</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床" target="床身导轨">
+  <data key="d7">1.0</data>
+  <data key="d8">宝鸡机床employs bedway guide rails with medium-frequency quenching in their machine tools.</data>
+  <data key="d9">component,feature</data>
+  <data key="d10">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d12">1768903131</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床" target="电动刀架">
+  <data key="d7">1.0</data>
+  <data key="d8">宝鸡机床integrates an electric toolpost for accurate and reliable operation in their machine tools.</data>
+  <data key="d9">component,feature</data>
+  <data key="d10">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d12">1768903132</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床" target="分离式冷却水箱">
+  <data key="d7">1.0</data>
+  <data key="d8">宝鸡机床includes a separate cooling water tank in their machine tools for convenient maintenance.</data>
+  <data key="d9">component,feature</data>
+  <data key="d10">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d12">1768903132</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床" target="数控机床">
+  <data key="d7">1.0</data>
+  <data key="d8">宝鸡机床produces CNC machine tools, including various models and variants.</data>
+  <data key="d9">product type</data>
+  <data key="d10">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d12">1768903132</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床" target="TK36">
+  <data key="d7">1.0</data>
+  <data key="d8">宝鸡机床manufactures the TK36 model as part of their CNC machine tools lineup.</data>
+  <data key="d9">manufacturing,product development</data>
+  <data key="d10">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d12">1768903132</data>
+  <data key="d13"></data>
+</edge>
+<edge source="宝鸡机床" target="TK36(S)">
+  <data key="d7">1.0</data>
+  <data key="d8">宝鸡机床offers the TK36(S) variant as part of their CNC machine tools.</data>
+  <data key="d9">manufacturing,product development</data>
+  <data key="d10">chunk-49e578aa70876d0dae1cafbc5edfdba5</data>
+  <data key="d11">F:\QAGenPipelinesX_lightrag\working\processed\Numerical-Control-System\02-7宝鸡TK36S.txt</data>
+  <data key="d12">1768903133</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

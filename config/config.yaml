@@ -1,0 +1,140 @@
+# QAGen Pipeline 全局配置
+
+# 路径配置
+paths:
+  working_dir: "./working"           # 工作目录根路径
+  raw_dir: "raw"                     # PDF输入目录 (相对于working_dir)
+  processed_dir: "processed"         # OCR输出目录 (相对于working_dir)
+  lightrag_db_dir: "lightrag_db"     # LightRAG存储目录 (相对于working_dir)
+  output_dir: "output"               # 最终输出目录 (相对于working_dir)
+  progress_file: "progress/progress.jsonl"  # 进度文件 (相对于working_dir)
+
+# OCR 配置
+ocr:
+  lang: "ch"                         # PaddleOCR 语言 (ch=中文)
+  use_angle_cls: true                # 是否使用角度分类
+  dpi: 300                           # PDF渲染DPI
+
+# 文本分块配置
+chunking:
+  use_token_chunking: true           # 使用token级切分
+  tokenizer_model: "cl100k_base"     # Tokenizer模型
+  chunk_token_size: 1200             # 每个chunk的最大token数
+  chunk_overlap_token_size: 100      # Chunk重叠token数
+
+# LightRAG 配置
+lightrag:
+  # Embedding配置
+  embedding:
+    provider: "ollama"
+    model: "bge-m3"
+    dim: 1024
+    base_url: "http://localhost:11434"
+    timeout: 1200
+    max_retries: 3
+
+  # LLM配置 (用于知识图谱构建)
+  llm:
+    base_url: "http://localhost:11434"
+    model: "deepseek-r1:32b"
+    temperature: 0.7
+    max_tokens: 2048
+    timeout: 1800
+    max_retries: 5
+
+  # 查询配置
+  query:
+    top_k: 20
+    chunk_top_k: 10
+    max_entity_tokens: 10000
+    max_relation_tokens: 10000
+    max_total_tokens: 40000
+    cosine_threshold: 0.2
+    related_chunk_number: 2
+
+# 问题生成配置
+question_gen:
+  # LLM配置
+  llm:
+    base_url: "http://localhost:11434"
+    model: "deepseek-r1:32b"
+    max_tokens: 2048
+    temperature: 0.7
+    timeout: 30000                   # 本地模型需要较长超时
+
+  questions_per_chunk: 10            # 每个chunk生成的问题数
+
+  # 知识图谱上下文配置
+  kg_context:
+    enabled: true
+    max_entities: 5
+    max_relations: 5
+    max_snippets: 2
+    snippet_chars: 200
+    max_related_chunk_ids: 10
+
+  # 问题质量控制
+  quality:
+    enable_deduplication: true
+    dedup_similarity_threshold: 0.85
+    enable_quality_filter: true
+
+# Prompts 配置
+prompts:
+  system_prompt: |
+    你是一名一线工业设备/数控系统的技术运维工程师，擅长把"现场现象 + 参数/工况 + 约束条件"组织成可落地的排障/优化问题。
+    你深度理解 LightRAG 架构，能够从「已切分的 chunk 文本」与「知识图谱上下文」中提炼运维场景问答点。
+
+    你生成的问题要像真实工程师在现场提问（参考：结论 + 操作建议 +（可选：推理依据、验证方案）的问法），但注意：你只输出问题，不输出答案。
+
+    核心原则（必须遵守）：
+    1. 严格基于提供的 <chunk>/<knowledge_graph> 提问；上下文缺什么就不要问，不允许推测补全
+    2. 每个问题必须能在上下文内得到可验证回答：预期答案 ≤200 字，能直接给结论/参数建议/步骤/检查项
+    3. 优先生成"诊断/优化型"运维问题：给出已知现象与关键参数，提出 1-2 个候选根因，并要求给出验证方案与不停机/最小干预的调整建议
+    4. 避免泛化空问（"有哪些特点/为什么更好/适合哪些材料"）；问题必须具备可执行的检查点或可配置项
+    5. 禁止引入上下文未出现的新型号/新参数/新名词
+
+    文档标识：{document_id}（若chunk中没有具体实体信息，请在问题中明确指向该对象，而非泛指）
+
+  human_prompt: |
+    你是一名工业设备/数控系统技术运维工程师。请基于以下两个来源的上下文，生成 {questions_per_chunk} 个"运维诊断/优化型"的高质量问题。
+
+    来源1：文档切分内容（chunk）
+    <chunk>
+    {text}
+    </chunk>
+
+    来源2：知识图谱上下文（来自LightRAG的实体、关系和相关chunk摘要）
+    <knowledge_graph>
+    {prompt_context}
+    </knowledge_graph>
+
+    文档标识：{document_id}（若chunk中没有具体实体信息，请在问题中明确指向该对象，而非泛指）
+
+    严格禁止：
+    1. 绝对不要编造、虚构、推测任何文档或知识图谱中没有的型号、参数或信息
+    2. 不要使用类似 "RMD08"、"J1型号"、"J2型号" 等文档中不存在的名称
+    3. 不要创造性地组合文档中的信息来生成新的型号或参数
+    4. 如果文档中某个型号只有部分参数，不要为它编造其他参数的问题
+    5. 禁止使用"这台/该/此/这个"等代词指代未在上下文出现的实体；必须点名具体对象
+    6. 只输出问题，不要输出答案/Answer/解答，不要在问题行包含"答案"字样
+
+    必须遵守：
+    1. 只使用文档或知识图谱中明确出现的型号名称（例如：VMC850L、GSK 980TDi）
+    2. 只使用文档或知识图谱中明确给出的参数和数值
+    3. 问题中提到的每个实体和参数都必须能在<chunk>或<knowledge_graph>中找到
+    4. 如果上下文缺少可用实体/数字，请少生成或返回空，不要编造
+    5. 问题必须能在<chunk>或<knowledge_graph>中找到依据
+
+    输出格式（严格遵守，不要输出任何其他内容）：
+
+    问题1: [具体问题内容]
+    问题2: [具体问题内容]
+    问题3: [具体问题内容]
+    ...（依此类推）
+
+# 日志配置
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}"
+

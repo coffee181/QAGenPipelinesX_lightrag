@@ -1,0 +1,494 @@
+{
+  "01-GSK 27i高端多通道数控系统 20250226": {
+    "relation_pairs": [
+      [
+        "IT刀具",
+        "四通道多工位高效精密机床戴傑B2000"
+      ],
+      [
+        "GSK27i系列高端多通道数控系统",
+        "I/O单元设备IOR-04T"
+      ],
+      [
+        "九轴五联动车铣复合大连机床B70ST",
+        "木工刀具"
+      ],
+      [
+        "九轴五联动车铣复合大连机床B70ST",
+        "医疗工具"
+      ],
+      [
+        "17寸屏黑晶面板",
+        "GSK27i系列高端多通道数控系统"
+      ],
+      [
+        "GSK27i系列",
+        "汽车变速箱"
+      ],
+      [
+        "数据接口功能",
+        "数据接口功能与以太网的关系"
+      ],
+      [
+        "GSK27i系列",
+        "传动轴"
+      ],
+      [
+        "医疗工具",
+        "高速高精卧式加工中心青岛云科SH50"
+      ],
+      [
+        "GSK27i系列",
+        "船舶制造"
+      ],
+      [
+        "整体铣刀",
+        "高速高精卧式加工中心青岛云科SH50"
+      ],
+      [
+        "四通道多工位高效精密机床戴傑B2000",
+        "铰刀"
+      ],
+      [
+        "钻头",
+        "高速高精卧式加工中心青岛云科SH50"
+      ],
+      [
+        "医疗工具",
+        "四通道多工位高效精密机床戴傑B2000"
+      ],
+      [
+        "铰刀",
+        "高速高精卧式加工中心青岛云科SH50"
+      ],
+      [
+        "四通道多工位高效精密机床戴傑B2000",
+        "钻头"
+      ],
+      [
+        "GSK27i系列",
+        "差速器"
+      ],
+      [
+        "GSK27i系列",
+        "风力发电"
+      ],
+      [
+        "四通道多工位高效精密机床戴傑B2000",
+        "整体铣刀"
+      ],
+      [
+        "九轴五联动车铣复合大连机床B70ST",
+        "铰刀"
+      ],
+      [
+        "15寸屏独立式按键",
+        "GSK27i系列高端多通道数控系统"
+      ],
+      [
+        "GSK27i系列",
+        "钢铁冶金"
+      ],
+      [
+        "GSK27i系列",
+        "船舶的传动系统齿轮"
+      ],
+      [
+        "GSK27i系列高端多通道数控系统",
+        "IOR-44T"
+      ],
+      [
+        "数据接口功能",
+        "数据接口功能与USB的关系"
+      ],
+      [
+        "GSK27i系列",
+        "汽车制造"
+      ],
+      [
+        "GSK27i系列",
+        "齿轮零部件"
+      ],
+      [
+        "九轴五联动车铣复合大连机床B70ST",
+        "钻头"
+      ],
+      [
+        "IT刀具",
+        "高速高精卧式加工中心青岛云科SH50"
+      ],
+      [
+        "IT刀具",
+        "九轴五联动车铣复合大连机床B70ST"
+      ],
+      [
+        "四通道多工位高效精密机床戴傑B2000",
+        "木工刀具"
+      ],
+      [
+        "通信和数据输入输出接口功能",
+        "通信和数据输入输出接口功能与数据接口功能的关系"
+      ],
+      [
+        "九轴五联动车铣复合大连机床B70ST",
+        "整体铣刀"
+      ],
+      [
+        "木工刀具",
+        "高速高精卧式加工中心青岛云科SH50"
+      ],
+      [
+        "GSK27i系列",
+        "风力发电设备中的齿轮传动系统"
+      ],
+      [
+        "GSK27i系列",
+        "矿山机械"
+      ],
+      [
+        "GSK27i系列高端多通道数控系统",
+        "IOR-44F"
+      ],
+      [
+        "21寸全触屏",
+        "GSK27i系列高端多通道数控系统"
+      ]
+    ],
+    "count": 38,
+    "create_time": 1768901098,
+    "update_time": 1768901098,
+    "_id": "01-GSK 27i高端多通道数控系统 20250226"
+  },
+  "01-宝鸡机床VMC850L": {
+    "relation_pairs": [
+      [
+        "BROWN&SHARPE",
+        "三坐标测量"
+      ],
+      [
+        "宝鸡机床VMC850L",
+        "淬火技术"
+      ],
+      [
+        "宝鸡机床VMC850L",
+        "高速、高刚性设计"
+      ],
+      [
+        "BROWN&SHARPE",
+        "宝鸡机床VMC850L"
+      ],
+      [
+        "加工中心关键零件",
+        "宝鸡机床VMC850L"
+      ],
+      [
+        "宝鸡机床VMC850L",
+        "机床整体结构"
+      ],
+      [
+        "出厂精度检测",
+        "宝鸡机床VMC850L"
+      ],
+      [
+        "RENISHAW",
+        "双频激光干涉仪"
+      ],
+      [
+        "宝鸡机床VMC850L",
+        "配重平衡系统"
+      ],
+      [
+        "RENISHAW",
+        "宝鸡机床VMC850L"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1768901172,
+    "update_time": 1768901172,
+    "_id": "01-宝鸡机床VMC850L"
+  },
+  "01系统综合-铣削": {
+    "relation_pairs": [
+      [
+        "GSK980MDc钻铣床数控系统",
+        "固定循环指令"
+      ],
+      [
+        "offer",
+        "precision CNC machining services"
+      ],
+      [
+        "GSK980MDc钻铣床数控系统",
+        "圆盘式刀库"
+      ],
+      [
+        "GSK980MDc钻铣床数控系统",
+        "复合循环指令"
+      ],
+      [
+        "Technical Parameters",
+        "X轴"
+      ],
+      [
+        "Full closed-loop control",
+        "Incremental encoder"
+      ],
+      [
+        "Feed axis synchronous control",
+        "Maximum feed speed"
+      ],
+      [
+        "GSK980MDc",
+        "Z轴"
+      ],
+      [
+        "commonly used in",
+        "stainless steel"
+      ],
+      [
+        "CNC机床",
+        "GPC总控单元"
+      ],
+      [
+        "GSK980MDc钻铣床数控系统",
+        "适配高速刀库"
+      ],
+      [
+        "GSK980MDc",
+        "Y轴"
+      ],
+      [
+        "技术规格",
+        "描述"
+      ],
+      [
+        "GSK980MDc钻铣床数控系统",
+        "自动找中心点"
+      ],
+      [
+        "Cutting Feed Normal Control",
+        "Rolling Gear Machine"
+      ],
+      [
+        "Electronic Gearbox (EGB) Function",
+        "Rolling Gear Machine"
+      ],
+      [
+        "GSK980MDc钻铣床数控系统",
+        "刚性攻丝功能"
+      ],
+      [
+        "milling",
+        "used in"
+      ],
+      [
+        "titanium",
+        "used for"
+      ],
+      [
+        "aluminum",
+        "commonly used in"
+      ],
+      [
+        "Ease of Operation",
+        "GSK980MDc"
+      ],
+      [
+        "GSK980MDc钻铣床数控系统",
+        "技术规格"
+      ],
+      [
+        "CNC turning",
+        "used in"
+      ],
+      [
+        "伺服电机",
+        "使用"
+      ],
+      [
+        "GSK980MDc",
+        "X轴"
+      ],
+      [
+        "5-axis linkage",
+        "Minimum command unit IS-B"
+      ],
+      [
+        "PC端远程监控软件",
+        "远程监控功能"
+      ],
+      [
+        "4寸真彩LCD",
+        "GSK980MDc钻铣床数控系统"
+      ],
+      [
+        "GSK980MDc",
+        "Programming Simplicity"
+      ],
+      [
+        "GSK980MDc钻铣床数控系统",
+        "在线式CAM功能"
+      ],
+      [
+        "high-quality surface finishes",
+        "result from"
+      ],
+      [
+        "Rigid Tapping Waveform Diagnosis",
+        "Rolling Gear Machine"
+      ],
+      [
+        "achieved through",
+        "tight tolerances"
+      ],
+      [
+        "Automatic Tool Setting",
+        "Tool Length Measurement Instrument"
+      ],
+      [
+        "工业机器人",
+        "自动化生产线"
+      ],
+      [
+        "C轴",
+        "Technical Parameters"
+      ],
+      [
+        "Adaptive Phase Error Compensation",
+        "Gear加工Application"
+      ],
+      [
+        "Ease of Operation",
+        "银川大河立式钻铣中心"
+      ],
+      [
+        "实时修调",
+        "被应用于"
+      ],
+      [
+        "GPC总控单元",
+        "工业机器人"
+      ],
+      [
+        "GSK980MDc",
+        "Single Clamping Process"
+      ],
+      [
+        "GSK980MDc钻铣床数控系统",
+        "平面铣自动编程"
+      ],
+      [
+        "Rolling Gear Machine",
+        "Synchronous Drive Function"
+      ],
+      [
+        "5-axis linkage",
+        "PLC axis control number"
+      ],
+      [
+        "CNC机床",
+        "自动化生产线"
+      ],
+      [
+        "Rolling Gear Machine",
+        "Workshop Management Application"
+      ],
+      [
+        "precision CNC machining services",
+        "provide"
+      ],
+      [
+        "Automatic Tool Setting",
+        "PLC Signal Sampling Function"
+      ],
+      [
+        "GPC总控单元",
+        "桁架机械手"
+      ],
+      [
+        "5轴5联动控制",
+        "GSK980MDc钻铣床数控系统"
+      ],
+      [
+        "GSK980MDc钻铣床数控系统",
+        "方便灵活的PLC"
+      ],
+      [
+        "GSK980MDc钻铣床数控系统",
+        "斗笠式刀库"
+      ],
+      [
+        "GSK980MDc钻铣床数控系统",
+        "伺服主轴"
+      ],
+      [
+        "Technical Parameters",
+        "Z轴"
+      ],
+      [
+        "Programming Simplicity",
+        "银川大河立式钻铣中心"
+      ],
+      [
+        "Technical Parameters",
+        "Y轴"
+      ],
+      [
+        "GSK980MDc",
+        "银川大河立式钻铣中心"
+      ],
+      [
+        "C轴",
+        "GSK980MDc"
+      ]
+    ],
+    "count": 58,
+    "create_time": 1768903051,
+    "update_time": 1768903051,
+    "_id": "01系统综合-铣削"
+  },
+  "02-7宝鸡TK36S": {
+    "relation_pairs": [
+      [
+        "TK36(S)",
+        "宝鸡机床"
+      ],
+      [
+        "宝鸡机床",
+        "电动刀架"
+      ],
+      [
+        "宝鸡机床",
+        "床身导轨"
+      ],
+      [
+        "宝鸡机床",
+        "数控机床"
+      ],
+      [
+        "宝鸡机床",
+        "精密通孔式主轴结构"
+      ],
+      [
+        "TK 36S COMMAND THE FUTURE",
+        "宝鸡机床"
+      ],
+      [
+        "主轴轴承",
+        "宝鸡机床"
+      ],
+      [
+        "TK36",
+        "宝鸡机床"
+      ],
+      [
+        "分离式冷却水箱",
+        "宝鸡机床"
+      ]
+    ],
+    "count": 9,
+    "create_time": 1768903133,
+    "update_time": 1768903133,
+    "_id": "02-7宝鸡TK36S"
+  }
+}
